@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2019-02-20T13:27:58-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/whats-new/</loc>
+    <lastmod>2019-02-20T13:45:32-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/</loc>
+    <lastmod>2019-02-20T13:28:08-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/Quick_Start_Guide/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/installation-management/Using_Snapshots/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/Setting_Date_and_Time/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,699 @@
+<!DOCTYPE html><html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Network Command Line Utility N C L U | Cumulus Networks Documentation</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+<link rel="stylesheet" href="/book.min.a18490132473d2fe1089e304811d46dfc800e9c537ea7d32bff9c87b09d4bc6b.css">
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+<h2 class="book-brand">
+  <a href="http://example.org/">Cumulus Networks Documentation</a>
+</h2>
+
+
+
+    
+
+
+  
+  
+    
+  
+ 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/whats-new/">What&#39;s New</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/Quick_Start_Guide/">Quick Start Guide</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/">Adding and Updating Packages</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/">Installing a New Cumulus Linux Image</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/">Managing Cumulus Linux Disk Images</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/">Upgrading Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Using_Snapshots/">Using Snapshots</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/">Zero Touch Provisioning Z T P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/" class="active">Network Command Line Utility N C L U</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Setting_Date_and_Time/">Setting Date and Time</a>
+    </li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+</nav>
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" />
+  </label>
+  <strong>Network Command Line Utility N C L U</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="network-command-line-utility-nclu">Network Command Line Utility - NCLU</h1>
+
+<p> </p>
+
+<p>The Network Command Line Utility (NCLU) is a command line interface for
+Cumulus Networks products that simplifies the networking configuration
+process for all users.</p>
+
+<p>NCLU resides in the Linux user space and provides consistent access to
+networking commands directly through bash, making configuration and
+troubleshooting simple and easy; no need to edit files or enter modes
+and sub-modes. NCLU provides these benefits:</p>
+
+<ul>
+<li>Embeds help, examples, and automatic command checking with
+suggestions in case you enter a typo.</li>
+<li>Runs directly from and integrates with bash, while being
+interoperable with the regular way of accessing underlying
+configuration files and automation.</li>
+<li>Configures dependent features automatically so that you don&rsquo;t have
+to.</li>
+</ul>
+
+<p><img src="attachments/8362580/8362581.png" alt="" />{height=&ldquo;400&rdquo;}</p>
+
+<p>The NCLU wrapper utility called <code>net</code> is capable of configuring layer 2
+and layer 3 features of the networking stack, installing ACLs and
+VXLANs, rolling back and deleting snapshots, as well as providing
+monitoring and troubleshooting functionality for these features. You can
+configure both
+the <code>/etc/network/interfaces</code> and <code>/etc/frr/frr.conf</code> files with <code>net</code>,
+in addition to running show and clear commands related
+to <code>ifupdown2</code> and FRRouting.</p>
+
+<h2 id="contents">Contents</h2>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}This topic
+describes &hellip;</p>
+
+<ul>
+<li><a href="#NetworkCommandLineUtility-NCLU-InstallNCLU">Install NCLU</a></li>
+<li><a href="#NetworkCommandLineUtility-NCLU-NCLUBasics">NCLU Basics</a>
+
+<ul>
+<li><a href="#NetworkCommandLineUtility-NCLU-TabCompletion,Verification,andInlineHelp">Tab Completion, Verification, and Inline
+Help</a></li>
+<li><a href="#NetworkCommandLineUtility-NCLU-questionmarkAdd?(QuestionMark)AbilitytoNCLU">Add ? (Question Mark) Ability to
+NCLU</a></li>
+<li><a href="#NetworkCommandLineUtility-NCLU-Built-InExamples">Built-In
+Examples</a></li>
+</ul></li>
+<li><a href="#NetworkCommandLineUtility-NCLU-configure-user-accountsConfigureUserAccounts">Configure User
+Accounts</a></li>
+<li><a href="#NetworkCommandLineUtility-NCLU-Editthenetd.confFile">Edit the netd.conf
+File</a></li>
+<li><a href="#NetworkCommandLineUtility-NCLU-restartRestartthenetdService">Restart the netd
+Service</a></li>
+<li><a href="#NetworkCommandLineUtility-NCLU-backuptofileBackUptheConfigurationtoaSingleFile">Back Up the Configuration to a Single
+File</a></li>
+<li><a href="#NetworkCommandLineUtility-NCLU-confAdvancedConfiguration">Advanced
+Configuration</a></li>
+</ul>
+
+<h2 id="install-nclu">Install NCLU</h2>
+
+<p>If you upgraded Cumulus Linux from a version earlier than 3.2 instead of
+performing a full disk image install, you need to install the <code>nclu</code>
+package on your switch:</p>
+
+<pre><code class="language-text">cumulus@switch:~$ sudo -E apt-get update
+cumulus@switch:~$ sudo -E apt-get install nclu
+cumulus@switch:~$ sudo -E apt-get upgrade
+</code></pre>
+
+<p>The  <code>nclu</code> package installs a new bash completion script and displays
+the following message:</p>
+
+<pre><code class="language-text">Setting up nclu (1.0-cl3u3) ...
+To enable the newly installed bash completion for nclu in this shell, execute...
+ source /etc/bash_completion
+</code></pre>
+
+<h2 id="nclu-basics">NCLU Basics</h2>
+
+<p>Use the following workflow to stage and commit changes to Cumulus Linux
+with NCLU:</p>
+
+<ol>
+<li><p>Use the <code>net add</code> and <code>net del</code> commands to stage and remove
+configuration changes.</p></li>
+
+<li><p>Use the <code>net pending</code> command to review staged changes.</p></li>
+
+<li><p>Use <code>net commit</code> and <code>net abort</code> to commit and delete staged
+changes.  </p></li>
+</ol>
+
+<p><code>net commit</code> applies the changes to the relevant configuration files,
+such as <code>/etc/network/interfaces</code>, then runs necessary follow on
+commands to enable the configuration, such as <code>ifreload -a</code>.</p>
+
+<p>If two different users try to commit a change at the same time, NCLU
+displays a warning but implements the change according to the first
+commit received. The second user will need to abort the commit.</p>
+
+<p>When you have a running configuration, you can review and update the
+configuration with the following commands:</p>
+
+<ul>
+<li><code>net show</code>is a series of commands for viewing various parts of the
+network configuration. For example, use <code>net show configuration</code> to
+view the complete network
+configuration,<code>net show commit history</code>to view a history of
+commits using NCLU, and <code>net show bgp</code> to view BGP status.</li>
+<li><code>net clear</code> provides a way to clear <code>net show</code> counters, BGP and
+OSPF neighbor content, and more.</li>
+<li><code>net rollback</code> provides a mechanism to <a href="Using-Snapshots_8362648.html#UsingSnapshots-rollback">revert
+back</a> to an
+earlier configuration.</li>
+<li><code>net commit confirm</code> requires you to press *Enter* to commit changes
+using NCLU. If you run <code>net commit confirm</code> but do not press <em>Enter</em>
+within 10 seconds, the commit automatically reverts and no changes
+are made.</li>
+<li><code>net commit description &lt;description&gt;</code> enables you to provide a
+descriptive summary of the changes you are about to commit. </li>
+<li><code>net commit permanent</code> retains the <a href="Using_Snapshots">snapshot</a> taken
+when committing the change. Otherwise, the snapshots created from
+NCLU commands are cleaned up periodically with a snapper cron job. </li>
+<li><code>net commit delete</code> deletes one or more snapshots created when
+committing changes with NCLU.</li>
+
+<li><p><code>net del all</code> deletes all configurations and stops the IEEE 802.1X
+service.</p>
+
+<p>The net del all command does not remove management VRF
+configurations; NCLU does not interact with eth0 interfaces and
+management VRF.</p></li>
+</ul>
+
+<h3 id="tab-completion-verification-and-inline-help">Tab Completion, Verification, and Inline Help</h3>
+
+<p>In addition to tab completion and partial keyword command
+identification, NCLU includes verification checks to ensure correct
+syntax is used. The examples below show the output for incorrect
+commands:</p>
+
+<pre><code class="language-text">cumulus@switch:~$ net add bgp router-id 1.1.1.1/32
+ERROR: Command not found
+
+Did you mean one of the following?
+
+    net add bgp router-id &lt;ipv4&gt;
+        This command is looking for an IP address, not an IP/prefixlen
+
+cumulus@switch:~$ net add bgp router-id 1.1.1.1
+cumulus@switch:~$ net add int swp10 mtu &lt;TAB&gt;
+    &lt;552-9216&gt; : 
+cumulus@switch:~$ net add int swp10 mtu 9300
+ERROR: Command not found
+ 
+Did you mean one of the following?
+    net add interface &lt;interface&gt; mtu &lt;552-9216&gt;
+</code></pre>
+
+<p>NCLU has a comprehensive built in help system. In addition to the net
+man page, you can use <code>?</code>and <code>help</code> to display available commands:</p>
+
+<pre><code class="language-text">cumulus@switch:~$ net help
+
+Usage:
+    # net &lt;COMMAND&gt; [&lt;ARGS&gt;] [help]
+    #
+    # net is a command line utility for networking on Cumulus Linux switches.
+    #
+    # COMMANDS are listed below and have context specific arguments which can
+    # be explored by typing &quot;&lt;TAB&gt;&quot; or &quot;help&quot; anytime while using net.
+    #
+    # Use 'man net' for a more comprehensive overview.
+
+
+    net abort
+    net commit [verbose] [confirm] [description &lt;wildcard&gt;]
+    net commit delete (&lt;number&gt;|&lt;number-range&gt;)
+    net help [verbose]
+    net pending
+    net rollback (&lt;number&gt;|last)
+    net show commit (history|&lt;number&gt;|&lt;number-range&gt;|last)
+    net show rollback (&lt;number&gt;|last)
+    net show configuration [commands|files|acl|bgp|ospf|ospf6|interface &lt;interface&gt;]
+
+
+Options:
+
+    # Help commands
+    help     : context sensitive information; see section below
+    example  : detailed examples of common workflows
+
+
+    # Configuration commands
+    add      : add/modify configuration
+    del      : remove configuration
+
+
+    # Commit buffer commands
+    abort    : abandon changes in the commit buffer
+    commit   : apply the commit buffer to the system
+    pending  : show changes staged in the commit buffer
+    rollback : revert to a previous configuration state
+
+
+    # Status commands
+    show     : show command output
+    clear    : clear counters, BGP neighbors, etc
+
+cumulus@switch:~$ net help bestpath
+The following commands contain keyword(s) 'bestpath'
+
+    net (add|del) bgp bestpath as-path multipath-relax [as-set|no-as-set]
+    net (add|del) bgp bestpath compare-routerid
+    net (add|del) bgp bestpath med missing-as-worst
+    net (add|del) bgp vrf &lt;text&gt; bestpath as-path multipath-relax [as-set|no-as-set]
+    net (add|del) bgp vrf &lt;text&gt; bestpath compare-routerid
+    net (add|del) bgp vrf &lt;text&gt; bestpath med missing-as-worst
+    net add bgp debug bestpath &lt;ip/prefixlen&gt;
+    net del bgp debug bestpath [&lt;ip/prefixlen&gt;]
+    net show bgp (&lt;ipv4&gt;|&lt;ipv4/prefixlen&gt;) [bestpath|multipath] [json]
+    net show bgp (&lt;ipv6&gt;|&lt;ipv6/prefixlen&gt;) [bestpath|multipath] [json]
+    net show bgp vrf &lt;text&gt; (&lt;ipv4&gt;|&lt;ipv4/prefixlen&gt;) [bestpath|multipath] [json]
+</code></pre>
+
+<p>You can configure multiple interfaces at once:</p>
+
+<pre><code class="language-text">cumulus@switch:~$ net add int swp7-9,12,15-17,22 mtu 9216
+</code></pre>
+
+<h3 id="add-question-mark-ability-to-nclu">Add ? (Question Mark) Ability to NCLU</h3>
+
+<p>While tab completion is enabled by default, you can also configure NCLU
+to use the <strong>?</strong> (question mark character) to look at available
+commands. To enable this feature for the *cumulus* user, open the
+following file:</p>
+
+<pre><code class="language-text">cumulus@leaf01:~$ sudo nano ~/.inputrc
+</code></pre>
+
+<p>Uncomment the very last line in the <code>.inputrc</code> file so that the file
+changes from this:</p>
+
+<pre><code class="language-text"># Uncomment to use ? as an alternative to 
+# ?: complete
+</code></pre>
+
+<p>to this:</p>
+
+<pre><code class="language-text"># Uncomment to use ? as an alternative to 
+ ?: complete
+</code></pre>
+
+<p>Save the file and reconnect to the switch. The ? (question mark) ability
+will work on all subsequent sessions on the switch.</p>
+
+<pre><code class="language-text">cumulus@leaf01:~$ net
+    abort     :  abandon changes in the commit buffer
+    add       :  add/modify configuration
+    clear     :  clear counters, BGP neighbors, etc
+    commit    :  apply the commit buffer to the system
+    del       :  remove configuration
+    example   :  detailed examples of common workflows
+    help      :  Show this screen and exit
+    pending   :  show changes staged in the commit buffer
+    rollback  :  revert to a previous configuration state
+    show      :  show command output
+</code></pre>
+
+<p>When the question mark is typed, NCLU autocompletes and shows all
+available options, but the question mark does not actually appear on the
+terminal. This is normal, expected behavior.</p>
+
+<h3 id="built-in-examples">Built-In Examples</h3>
+
+<p>NCLU has a number of built in examples to guide users through basic
+configuration setup:</p>
+
+<pre><code class="language-text">cumulus@switch:~$ net example 
+    acl              :  access-list
+    bgp              :  Border Gateway Protocol
+    bond             :  Bond, port-channel, etc
+    bridge           :  A layer2 bridge
+    clag             :  Multi-Chassis Link Aggregation
+    dot1x            :  Configure, Enable, Delete or Show IEEE 802.1X EAPOL
+    link-settings    :  Physical link parameters
+    lnv              :  Lightweight Network Virtualization
+    management-vrf   :  Management VRF
+    mlag             :  Multi-Chassis Link Aggregation
+    ospf             :  Open Shortest Path First (OSPFv2)
+    vlan-interfaces  :  IP interfaces for VLANs
+
+cumulus@switch:~$ net example bridge 
+
+Scenario
+========
+We are configuring switch1 and would like to configure the following
+- configure switch1 as an L2 switch for host-11 and host-12
+- enable vlans 10-20
+- place host-11 in vlan 10
+- place host-12 in vlan 20
+- create an SVI interface for vlan 10
+- create an SVI interface for vlan 20
+- assign IP 10.0.0.1/24 to the SVI for vlan 10
+- assign IP 20.0.0.1/24 to the SVI for vlan 20
+- configure swp3 as a trunk for vlans 10, 11, 12 and 20
+              swp3
+     *switch1 --------- switch2
+        /\
+  swp1 /  \ swp2
+      /    \
+     /      \
+ host-11   host-12
+
+switch1 net commands
+====================
+- enable vlans 10-20
+switch1# net add vlan 10-20
+- place host-11 in vlan 10
+- place host-12 in vlan 20
+switch1# net add int swp1 bridge access 10
+switch1# net add int swp2 bridge access 20
+- create an SVI interface for vlan 10
+- create an SVI interface for vlan 20
+- assign IP 10.0.0.1/24 to the SVI for vlan 10
+- assign IP 20.0.0.1/24 to the SVI for vlan 20
+switch1# net add vlan 10 ip address 10.0.0.1/24
+switch1# net add vlan 20 ip address 20.0.0.1/24
+- configure swp3 as a trunk for vlans 10, 11, 12 and 20
+switch1# net add int swp3 bridge trunk vlans 10-12,20
+# Review and commit changes
+switch1# net pending
+switch1# net commit
+
+Verification
+============
+switch1# net show interface
+switch1# net show bridge macs
+</code></pre>
+
+<h2 id="configure-user-accounts">Configure User Accounts</h2>
+
+<p>You can configure user accounts in Cumulus Linux with read-only or edit
+permissions for NCLU:</p>
+
+<ul>
+<li>You create user accounts with <strong>read-only</strong> permissions for NCLU by
+adding them to the <code>netshow</code> group. A user in the <code>netshow</code> group
+can run NCLU <code>net show</code> commands, such
+as <code>net show interface</code> or <code>net show config</code>, and certain general
+Linux commands, such as <code>ls</code>, <code>cd</code> or  <code>man</code>, but cannot
+run <code>net add</code>, <code>net del</code> or  <code>net commit</code> commands.</li>
+<li>You create user accounts with <strong>edit</strong> permissions for NCLU by
+adding them to the <code>netedit</code> group. A user in the <code>netedit</code> group
+can run NCLU configuration commands,
+such <code>net add</code>, <code>net del</code> or <code>net commit</code> in addition to
+NCLU <code>net show</code> commands.</li>
+</ul>
+
+<p>The examples below demonstrate how to add a new user account or modify
+an existing user account called <em>myuser</em>.</p>
+
+<p>To add a new user account with NCLU show permissions:</p>
+
+<pre><code class="language-text">cumulus@switch:~$ sudo adduser --ingroup netshow myuser
+Adding user `myuser' ...
+Adding new user `myuser' (1001) with group `netshow' …
+</code></pre>
+
+<p>To add NCLU show permissions to a user account that already exists:</p>
+
+<pre><code class="language-text">cumulus@switch:~$ sudo addgroup myuser netshow
+Adding user `myuser' to group `netshow' ...
+Adding user myuser to group netshow
+Done
+</code></pre>
+
+<p>To add a new user account with NCLU edit permissions:</p>
+
+<pre><code class="language-text">cumulus@switch:~$ sudo adduser --ingroup netedit myuser
+Adding user `myuser' ...
+Adding new user `myuser' (1001) with group `netedit' …
+</code></pre>
+
+<p>To add NCLU edit permissions to a user account that already exists:</p>
+
+<pre><code class="language-text">cumulus@switch:~$ sudo addgroup myuser netedit
+Adding user `myuser' to group `netedit' ...
+Adding user myuser to group netedit
+Done
+</code></pre>
+
+<p>You can use the <code>adduser</code> command for local user accounts only. You can
+use the <code>addgroup</code> command for both local and remote user accounts. For
+a remote user account, you must use the mapping username, such as
+<code>tacacs3</code> or <code>radius_user</code>, not the <a href="TACACS_Plus">TACACS</a> or
+<a href="RADIUS_AAA">RADIUS</a> account name.</p>
+
+<p>If the user tries to run commands that are not allowed, the following
+error displays:</p>
+
+<pre><code class="language-text">myuser@switch:~$ net add hostname host01
+ERROR: User username does not have permission to make networking changes.
+</code></pre>
+
+<h2 id="edit-the-netd-conf-file">Edit the netd.conf File</h2>
+
+<p>Instead of using the NCLU commands described above, you can manually
+configure users and groups to be able to run NCLU commands. </p>
+
+<p>Edit the <code>/etc/netd.conf</code> file to add users to the <em>users_with_edit</em>
+and <em>users_with_show</em> lines in the file, then save the file.</p>
+
+<p>For example, if you want the user <em>netoperator</em> to be able to run both
+edit and show commands, add the user to the <code>users_with_edit</code> and
+<code>users_with_show</code> lines in the <code>/etc/netd.conf</code> file:</p>
+
+<pre><code class="language-text">cumulus@switch:~$ sudo nano /etc/netd.conf
+ 
+# Control which users/groups are allowed to run 'add', 'del',
+# 'clear', 'net abort', 'net commit' and restart services
+# to apply those changes
+users_with_edit = root, cumulus, netoperator
+groups_with_edit = root, cumulus
+
+
+# Control which users/groups are allowed to run 'show' commands
+users_with_show = root, cumulus, netoperator
+groups_with_show = root, cumulus
+</code></pre>
+
+<p>To configure a new user group to use NCLU, add that group to the
+<code>groups_with_edit</code> and <code>groups_with_show</code> lines in the file.</p>
+
+<p>Use caution giving edit permissions to groups. For example, don&rsquo;t give
+edit permissions to the <a href="TACACS-Plus_8362558.html#TACACSPlus-nclu"><em>tacacs</em>
+group</a>.</p>
+
+<h2 id="restart-the-netd-service">Restart the netd Service</h2>
+
+<p>Whenever you modify <code>netd.conf</code>, you must restart the <code>netd</code> service for
+the changes to take effect:</p>
+
+<pre><code class="language-text">cumulus@switch:~$ sudo systemctl restart netd.service
+</code></pre>
+
+<h2 id="back-up-the-configuration-to-a-single-file">Back Up the Configuration to a Single File</h2>
+
+<p>You can easily back up your NCLU configuration to a file by outputting
+the results of <code>net show configuration commands</code> to a file, then
+retrieving the contents of the file using the <code>source</code> command. You can
+then view the configuration at any time or copy it to other switches and
+use the <code>source</code> command to apply that configuration to those switches. </p>
+
+<p>For example, to copy the configuration of a leaf switch called leaf01, 
+run the following command:</p>
+
+<pre><code class="language-text">cumulus@leaf01:~$ net show configuration commands &gt;&gt; leaf01.txt
+</code></pre>
+
+<p>With the commands all stored in a single file, you can now copy this
+file to another ToR switch in your network called leaf01 and apply the
+configuration by running:</p>
+
+<pre><code class="language-text">cumulus@leaf01:~$ source leaf01.txt
+</code></pre>
+
+<h2 id="advanced-configuration">Advanced Configuration</h2>
+
+<p>NCLU needs no initial configuration; however, if you need to modify its
+configuration, you must manually update the <code>/etc/netd.conf</code> file. You
+can configure this file to allow different permission levels for users
+to edit configurations and run <code>show</code> commands. The file also contains a
+blacklist that hides less frequently used terms from the tabbed
+autocomplete. </p>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><p>Configuration Variable</p></th>
+<th><p>Default Setting</p></th>
+<th><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>show_linux_command</p></td>
+<td><p>False</p></td>
+<td><p>When true, displays the Linux command running in the background.</p></td>
+</tr>
+<tr class="even">
+<td><p>enable_ifupdown2</p></td>
+<td><p>True</p></td>
+<td><p>Enables <code>net</code> wrapping of <code>ifupdown2</code> commands.</p></td>
+</tr>
+<tr class="odd">
+<td><p>enable_frr</p></td>
+<td><p>True</p></td>
+<td><p>Enables <code>net</code> wrapping of FRRouting commands.</p></td>
+</tr>
+<tr class="even">
+<td><p>users_with_edit</p></td>
+<td><p>root, cumulus</p></td>
+<td><p>Sets the Linux users with root edit privileges.</p></td>
+</tr>
+<tr class="odd">
+<td><p>groups_with_edit</p></td>
+<td><p>root, cumulus</p></td>
+<td><p>Sets the Linux groups with root edit privileges.</p></td>
+</tr>
+<tr class="even">
+<td>users_with_show</td>
+<td>root, cumulus</td>
+<td>Controls which users are allowed to run <code>show</code> commands.</td>
+</tr>
+<tr class="odd">
+<td>groups_with_show</td>
+<td>root, cumulus</td>
+<td>Controls which groups are allowed to run <code>show</code> commands.</td>
+</tr>
+<tr class="even">
+<td><p>ifupdown_blacklist</p></td>
+<td><p>address-purge, bond-ad-actor-sys-prio, bond-ad-actor-system, bond-mode, bond-num-grat-arp, bond-num-unsol-na, bond-use-carrier, bond-xmit-hash-policy, bridge-bridgeprio, bridge-fd, bridge-hashel, bridge-hashmax, bridge-hello, bridge-maxage, bridge-maxwait, bridge-mclmc, bridge-mclmi, bridge-mcmi, bridge-mcqi, bridge-mcqpi, bridge-mcqri, bridge-mcrouter, bridge-mcsqc, bridge-mcsqi, bridge-pathcosts, bridge-port-pvids, bridge-port-vids, bridge-portprios, bridge-stp, bridge-waitport, broadcast, hwaddress, link-type, mstpctl-ageing, mstpctl-fdelay, mstpctl-forcevers, mstpctl-hello, mstpctl-maxage, mstpctl-maxhops, mstpctl-portp2p, mstpctl-portpathcost, mstpctl-portrestrrole, mstpctl-portrestrtcn, mstpctl-treeportcost, mstpctl-treeportprio, mstpctl-txholdcount, netmask, preferred-lifetime, scope, vxlan-ageing, vxlan-learning, up, down, bridge-ageing, bridge-gcint, bridge-mcqifaddr, bridge-mcqv4src</p></td>
+<td><p>Hides corner case command options from tab complete, to simplify and streamline output.</p></td>
+</tr>
+</tbody>
+</table>
+
+<p>Net Tab Complete Output</p>
+
+<p><code>net</code> provides an environment variable to set where the <code>net</code> output is
+directed. To only use <code>stdout</code>, set the <code>NCLU_TAB_STDOUT</code> environment
+variable to <em>true</em>. The value is not case sensitive.</p>
+
+<p> </p>
+
+<h2 id="attachments">Attachments:</h2>
+
+<p><img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362580/8362581.png">Linux-NCLU-Architecture.png</a>
+(image/png)</p>
+</article>
+
+      
+
+    </div>
+
+    
+  
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#network-command-line-utility-nclu">Network Command Line Utility - NCLU</a>
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#install-nclu">Install NCLU</a></li>
+<li><a href="#nclu-basics">NCLU Basics</a>
+<ul>
+<li><a href="#tab-completion-verification-and-inline-help">Tab Completion, Verification, and Inline Help</a></li>
+<li><a href="#add-question-mark-ability-to-nclu">Add ? (Question Mark) Ability to NCLU</a></li>
+<li><a href="#built-in-examples">Built-In Examples</a></li>
+</ul></li>
+<li><a href="#configure-user-accounts">Configure User Accounts</a></li>
+<li><a href="#edit-the-netd-conf-file">Edit the netd.conf File</a></li>
+<li><a href="#restart-the-netd-service">Restart the netd Service</a></li>
+<li><a href="#back-up-the-configuration-to-a-single-file">Back Up the Configuration to a Single File</a></li>
+<li><a href="#advanced-configuration">Advanced Configuration</a></li>
+<li><a href="#attachments">Attachments:</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+  
+</body>
+
+</html>
