@@ -1,0 +1,436 @@
+<!DOCTYPE html><html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Managing Cumulus Linux Disk Images | Cumulus Networks Documentation</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+<link rel="stylesheet" href="/book.min.8554ed604dddec424129c0ae95ae196de13a903ee7ad66cc3ac2e4c33a935597.css">
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+<h2 class="book-brand">
+  <a href="http://example.org/">Cumulus Networks Documentation</a>
+</h2>
+
+
+
+    
+
+
+  
+  
+    
+    
+  
+ 
+  <ul>
+    
+    <li><a href="/docs/Cumulus-Linux/">
+    Cumulus Linux</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/whats-new/">What&#39;s New</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/Quick_Start_Guide/">Quick Start Guide</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/">Adding and Updating Packages</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/">Installing a New Cumulus Linux Image</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/" class="active">Managing Cumulus Linux Disk Images</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/">Upgrading Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/installation-management/Using_Snapshots/">Using Snapshots</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/">Zero Touch Provisioning Z T P</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/">Network Command Line Utility N C L U</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/system-config/Setting_Date_and_Time/">Setting Date and Time</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/docs/NetQ/">
+    Net Q</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/docs/NetQ/deployment_guide/Cumulus_NetQ_Deployment_Guide/">Cumulus Net Q Deployment Guide</a>
+    </li>
+    
+    <li>
+      <a href="/docs/NetQ/deployment_guide/config_optional_netq/Configuring_Optional_NetQ_Capabilities/">Configuring Optional Net Q Capabilities</a>
+    </li>
+    
+    <li>
+      <a href="/docs/NetQ/deployment_guide/deployment_preface/Deployment_Preface/">Deployment Preface</a>
+    </li>
+    
+    <li>
+      <a href="/docs/NetQ/deployment_guide/install_netq/Install_NetQ/">Install Net Q</a>
+    </li>
+    
+    <li>
+      <a href="/docs/NetQ/deployment_guide/maintain_netq/Maintain_NetQ/">Maintain Net Q</a>
+    </li>
+    
+    <li>
+      <a href="/docs/NetQ/deployment_guide/netq_primer/Cumulus_NetQ_Primer/">Cumulus Net Q Primer</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+
+    
+  </ul>
+
+
+
+
+
+
+
+
+</nav>
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" />
+  </label>
+  <strong>Managing Cumulus Linux Disk Images</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="managing-cumulus-linux-disk-images">Managing Cumulus Linux Disk Images</h1>
+
+<p>The Cumulus Linux operating system resides on a switch as a <em>disk
+image</em>. This section discusses how to manage the disk image.</p>
+
+<p>For information on installing a new Cumulus Linux disk image, refer
+to <a href="Installing_a_New_Cumulus_Linux_Image">Installing a New Cumulus Linux
+Image</a>. For information on
+upgrading Cumulus Linux, refer to <a href="Upgrading_Cumulus_Linux">Upgrading Cumulus
+Linux</a>.</p>
+
+<p>Contents</p>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}This topic
+describes &hellip;</p>
+
+<ul>
+<li><a href="#ManagingCumulusLinuxDiskImages-DeterminetheSwitchPlatform">Determine the Switch
+Platform</a></li>
+<li><a href="#ManagingCumulusLinuxDiskImages-ReprovisiontheSystem(RestarttheInstaller)">Reprovision the System (Restart the
+Installer)</a></li>
+<li><a href="#ManagingCumulusLinuxDiskImages-UninstallAllImagesandRemovetheConfiguration">Uninstall All Images and Remove the
+Configuration</a></li>
+<li><a href="#ManagingCumulusLinuxDiskImages-BootintoRescueMode">Boot into Rescue
+Mode</a></li>
+<li><a href="#ManagingCumulusLinuxDiskImages-InspectImageFileContents">Inspect Image File
+Contents</a></li>
+<li><a href="#ManagingCumulusLinuxDiskImages-RelatedInformation">Related
+Information</a></li>
+</ul>
+
+<h2 id="determine-the-switch-platform">Determine the Switch Platform</h2>
+
+<p>To determine if your switch is on an x86 or ARM platform, run
+the <code>uname -m</code> command.</p>
+
+<p>For example, on an x86 platform, <code>uname -m</code> outputs <em>x86_64</em>:</p>
+
+<pre><code>cumulus@x86switch$ uname -m
+ x86_64
+</code></pre>
+
+<p>On an ARM platform, <code>uname -m</code> outputs <em>armv7l</em>:</p>
+
+<pre><code>cumulus@ARMswitch$ uname -m
+ armv7l
+</code></pre>
+
+<p>You can also visit the HCL (<a href="http://cumulusnetworks.com/support/linux-hardware-compatibility-list/">hardware compatibility
+list</a>)
+to look at your hardware and determine the processor type.</p>
+
+<h2 id="reprovision-the-system-restart-the-installer">Reprovision the System (Restart the Installer)</h2>
+
+<p>Reprovisioning the system deletes all system data from the switch.</p>
+
+<p>To initiate the provisioning and installation process, run
+the <code>onie-select -i</code> command:</p>
+
+<pre><code>cumulus@switch:~$ sudo onie-select -i
+WARNING:
+WARNING: Operating System install requested.
+WARNING: This will wipe out all system data.
+WARNING:
+Are you sure (y/N)? y
+Enabling install at next reboot...done.
+Reboot required to take effect.
+</code></pre>
+
+<p>A reboot is required for the reinstall to begin.</p>
+
+<p>To cancel a pending reinstall operation, run the <code>onie-select -c</code>
+command:</p>
+
+<pre><code>cumulus@switch:~$ sudo onie-select -c
+Cancelling pending install at next reboot...done.
+</code></pre>
+
+<h2 id="uninstall-all-images-and-remove-the-configuration">Uninstall All Images and Remove the Configuration</h2>
+
+<p>To remove all installed images and configurations and return the switch
+to its factory defaults, run the <code>onie-select -k</code> command:</p>
+
+<pre><code>cumulus@switch:~$ sudo onie-select -k
+WARNING:
+WARNING: Operating System uninstall requested.
+WARNING: This will wipe out all system data.
+WARNING:
+Are you sure (y/N)? y
+Enabling uninstall at next reboot...done.
+Reboot required to take effect.
+</code></pre>
+
+<p>A reboot is required for the uninstall to begin.</p>
+
+<p>To cancel a pending uninstall operation, run the <code>onie-select -c</code>
+command:</p>
+
+<pre><code>cumulus@switch:~$ sudo onie-select -c
+Cancelling pending uninstall at next reboot...done.
+</code></pre>
+
+<h2 id="boot-into-rescue-mode">Boot into Rescue Mode</h2>
+
+<p>If your system becomes broken is some way, you can correct certain
+issues by booting into ONIE rescue mode. In rescue mode, the file
+systems are unmounted and you can use various Cumulus Linux utilities to
+try and resolve a problem.</p>
+
+<p>To reboot the system into ONIE rescue mode, run
+the <code>onie-select -r</code> command:</p>
+
+<pre><code>cumulus@switch:~$ sudo onie-select -r
+WARNING:
+WARNING: Rescue boot requested.
+WARNING:
+Are you sure (y/N)? y
+Enabling rescue at next reboot...done.
+Reboot required to take effect.
+</code></pre>
+
+<p>A reboot is required to boot into rescue mode.</p>
+
+<p>To cancel a pending rescue boot operation, run the <code>onie-select -c</code>
+command:</p>
+
+<pre><code>cumulus@switch:~$ sudo onie-select -c
+Cancelling pending rescue at next reboot...done.
+</code></pre>
+
+<h2 id="inspect-image-file-contents">Inspect Image File Contents</h2>
+
+<p>The Cumulus Linux installation disk image file is executable. From a
+running switch, you can display the contents of the Cumulus Linux image
+file by passing the <code>info</code> option to the image file. For example, if the
+image file is called <code>onie-installer</code> and is located in
+<code>/var/lib/cumulus/installer</code>, you can obtain information about the disk
+image with the following command:</p>
+
+<pre><code>cumulus@switch:~$ sudo /var/lib/cumulus/installer/onie-installer info
+Verifying image checksum ... OK.
+Preparing image archive ... OK.
+Control File Contents
+=====================
+Description: Cumulus Linux
+OS-Release: 2.1.0-0556262-201406101128-NB
+Architecture: amd64
+Date: Tue, 10 Jun 2014 11:44:28 -0700
+Installer-Version: 1.2
+Platforms: im_n29xx_t40n mlx_sx1400_i73612 dell_s6000_s1220
+Homepage: http://www.cumulusnetworks.com/
+
+Data Archive Contents
+=====================
+       128 2014-06-10 18:44:26 file.list
+        44 2014-06-10 18:44:27 file.list.sha1
+ 104276331 2014-06-10 18:44:27 sysroot-internal.tar.gz
+        44 2014-06-10 18:44:27 sysroot-internal.tar.gz.sha1
+   5391348 2014-06-10 18:44:26 vmlinuz-initrd.tar.xz
+        44 2014-06-10 18:44:27 vmlinuz-initrd.tar.xz.sha1
+cumulus@switch:~$
+</code></pre>
+
+<p>You can also extract the contents of the image file by passing the
+<code>extract</code> option to the image file:</p>
+
+<pre><code>cumulus@switch:~$ sudo /var/lib/cumulus/installer/onie-installer extract PATH
+Verifying image checksum ... OK.
+Preparing image archive ... OK.
+file.list
+file.list.sha1
+sysroot-internal.tar.gz
+sysroot-internal.tar.gz.sha1
+vmlinuz-initrd.tar.xz
+vmlinuz-initrd.tar.xz.sha1
+Success: Image files extracted OK.
+cumulus@switch:~$ sudo ls -l
+total 107120
+-rw-r--r-- 1 1063 3000       128 Jun 10 18:44 file.list
+-rw-r--r-- 1 1063 3000        44 Jun 10 18:44 file.list.sha1
+-rw-r--r-- 1 1063 3000 104276331 Jun 10 18:44 sysroot-internal.tar.gz
+-rw-r--r-- 1 1063 3000        44 Jun 10 18:44 sysroot-internal.tar.gz.sha1
+-rw-r--r-- 1 1063 3000   5391348 Jun 10 18:44 vmlinuz-initrd.tar.xz
+-rw-r--r-- 1 1063 3000        44 Jun 10 18:44 vmlinuz-initrd.tar.xz.sha1
+</code></pre>
+
+<p>Finally, you can verify the contents of the image file by passing the
+<code>verify</code> option to the image file:</p>
+
+<pre><code>cumulus@switch:~$ sudo /var/lib/cumulus/installer/onie-installer verify
+Verifying image checksum ... OK.
+Preparing image archive ... OK.
+file.list
+file.list.sha1
+sysroot-internal.tar.gz
+sysroot-internal.tar.gz.sha1
+vmlinuz-initrd.tar.xz
+vmlinuz-initrd.tar.xz.sha1
+Success: Image files extracted OK.
+cumulus@switch:~$ sudo ls -l
+total 107120
+-rw-r--r-- 1 1063 3000       128 Jun 10 18:44 file.list
+-rw-r--r-- 1 1063 3000        44 Jun 10 18:44 file.list.sha1
+-rw-r--r-- 1 1063 3000 104276331 Jun 10 18:44 sysroot-internal.tar.gz
+-rw-r--r-- 1 1063 3000        44 Jun 10 18:44 sysroot-internal.tar.gz.sha1
+-rw-r--r-- 1 1063 3000   5391348 Jun 10 18:44 vmlinuz-initrd.tar.xz
+-rw-r--r-- 1 1063 3000        44 Jun 10 18:44 vmlinuz-initrd.tar.xz.sha1
+</code></pre>
+
+<h2 id="related-information">Related Information</h2>
+
+<p><a href="http://opencomputeproject.github.io/onie/">Open Network Install Environment (ONIE) Home
+Page</a></p>
+
+<h2 id="attachments">Attachments:</h2>
+
+<p><img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362634/8362633.png">png_base64fcca65644256ad41.png</a>
+(image/png)
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362634/8362635.png">png_base64c818ed9707a3041b.png</a>
+(image/png)
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362634/8362636.png">image-slots.png</a> (image/png)
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362634/8362637.png">Screen Shot
+2015-09-14 at 3.47.19 PM.png</a>
+(image/png)
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362634/8362638.png">Screen Shot
+2015-09-14 at 2.54.12 PM.png</a>
+(image/png)
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362634/8362639.png">Screen Shot
+2015-09-14 at 2.31.16 PM.png</a>
+(image/png)
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362634/8362640.png">Screen Shot
+2015-09-14 at 2.30.53 PM.png</a>
+(image/png)
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362634/8362641.png">Screen Shot
+2015-09-14 at 12.49.30 PM.png</a>
+(image/png)</p>
+</article>
+
+      
+<div class="align-center book-git-footer justify-between">
+  
+  <div>
+    <a href="/commit/6acd7c038710e07f4a059d10b137f7b93cf9f759" title='Last modified February 26, 2019 13:53 EST by Daniel Cawley' target="_blank" rel="noopener">
+      <img src="/svg/code-merge.svg" /> Last Modified Feb 26, 2019
+    </a>
+  </div>
+  
+  
+</div>
+
+
+    </div>
+
+    
+  
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#managing-cumulus-linux-disk-images">Managing Cumulus Linux Disk Images</a>
+<ul>
+<li><a href="#determine-the-switch-platform">Determine the Switch Platform</a></li>
+<li><a href="#reprovision-the-system-restart-the-installer">Reprovision the System (Restart the Installer)</a></li>
+<li><a href="#uninstall-all-images-and-remove-the-configuration">Uninstall All Images and Remove the Configuration</a></li>
+<li><a href="#boot-into-rescue-mode">Boot into Rescue Mode</a></li>
+<li><a href="#inspect-image-file-contents">Inspect Image File Contents</a></li>
+<li><a href="#related-information">Related Information</a></li>
+<li><a href="#attachments">Attachments:</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+  
+</body>
+
+</html>

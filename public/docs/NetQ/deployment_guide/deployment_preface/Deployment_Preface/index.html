@@ -1,0 +1,401 @@
+<!DOCTYPE html><html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deployment Preface | Cumulus Networks Documentation</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+<link rel="stylesheet" href="/book.min.8554ed604dddec424129c0ae95ae196de13a903ee7ad66cc3ac2e4c33a935597.css">
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+<h2 class="book-brand">
+  <a href="http://example.org/">Cumulus Networks Documentation</a>
+</h2>
+
+
+
+    
+
+
+  
+  
+    
+    
+  
+ 
+  <ul>
+    
+    <li><a href="/docs/Cumulus-Linux/">
+    Cumulus Linux</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/whats-new/">What&#39;s New</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/Quick_Start_Guide/">Quick Start Guide</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/">Adding and Updating Packages</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/">Installing a New Cumulus Linux Image</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/">Managing Cumulus Linux Disk Images</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/">Upgrading Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/installation-management/Using_Snapshots/">Using Snapshots</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/">Zero Touch Provisioning Z T P</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/">Network Command Line Utility N C L U</a>
+    </li>
+    
+    <li>
+      <a href="/docs/Cumulus-Linux/system-config/Setting_Date_and_Time/">Setting Date and Time</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/docs/NetQ/">
+    Net Q</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/docs/NetQ/deployment_guide/Cumulus_NetQ_Deployment_Guide/">Cumulus Net Q Deployment Guide</a>
+    </li>
+    
+    <li>
+      <a href="/docs/NetQ/deployment_guide/config_optional_netq/Configuring_Optional_NetQ_Capabilities/">Configuring Optional Net Q Capabilities</a>
+    </li>
+    
+    <li>
+      <a href="/docs/NetQ/deployment_guide/deployment_preface/Deployment_Preface/" class="active">Deployment Preface</a>
+    </li>
+    
+    <li>
+      <a href="/docs/NetQ/deployment_guide/install_netq/Install_NetQ/">Install Net Q</a>
+    </li>
+    
+    <li>
+      <a href="/docs/NetQ/deployment_guide/maintain_netq/Maintain_NetQ/">Maintain Net Q</a>
+    </li>
+    
+    <li>
+      <a href="/docs/NetQ/deployment_guide/netq_primer/Cumulus_NetQ_Primer/">Cumulus Net Q Primer</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+
+    
+  </ul>
+
+
+
+
+
+
+
+
+</nav>
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" />
+  </label>
+  <strong>Deployment Preface</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="deployment-preface">Deployment Preface</h1>
+
+<p>A variety of resources are available for you to become familiar with
+Cumulus NetQ and aid in its deployment. These are identified here along
+with information about how the content is presented.</p>
+
+<h2 id="contents">Contents</h2>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}This topic
+describes&hellip;</p>
+
+<ul>
+<li><a href="#DeploymentPreface-What'sNewinCumulusNetQ2.0.0">What&rsquo;s New in Cumulus NetQ
+2.0.0</a></li>
+<li><a href="#DeploymentPreface-AvailableDocumentation">Available Documentation</a></li>
+<li><a href="#DeploymentPreface-DocumentFormatting">Document Formatting</a>
+
+<ul>
+<li><a href="#DeploymentPreface-TypographicalConventions">Typographical
+Conventions</a></li>
+<li><a href="#DeploymentPreface-NoteConventions">Note Conventions </a></li>
+</ul></li>
+</ul>
+
+<h2 id="what-s-new-in-cumulus-netq-2-0-0">What&rsquo;s New in Cumulus NetQ 2.0.0</h2>
+
+<p>Cumulus NetQ 2.0.0 includes the following new and updated features:</p>
+
+<ul>
+<li><p>Added</p>
+
+<ul>
+<li>Modern cloud-based infrastructure enables scalable
+and agile network with real-time data collection</li>
+
+<li><p>Graphical User Interface (UI) provides a visual representation
+of the network devices and events</p>
+
+<ul>
+<li>Monitor network-wide health</li>
+<li>Monitor individual device health and configuration</li>
+
+<li><p>View network devices inventory and device component
+inventory</p></li>
+
+<li><p>Track alarms and informational events across the network and
+for individual devices and components, protocols and
+services</p></li>
+
+<li><p>Customize your own monitoring workbench to meet your needs</p></li>
+</ul></li>
+
+<li><p>RESTful API provides access to data for use in third-party
+analytic tools</p></li>
+
+<li><p>NetQ Appliance with the NetQ Platform pre-installed to speed
+deployment and get monitoring as quickly as possible</p></li>
+</ul></li>
+
+<li><p>Updated</p>
+
+<ul>
+<li>Instead of using the <code>netq show</code> commands to display changes
+between two points in time, a new <code>netq</code> <code>show events</code> command
+is available to see these changes.</li>
+<li>The <code>netq config ts</code> commands used to configure the Telemetry
+Server has been deprecated. <code>netq config</code> commands remain for
+local file-based configuration and netq notification commands
+have been added for configuring event notifications.</li>
+<li>Timestamps which indicate when a change occurred are displayed
+as an absolute time (Mon Feb  4 07:23:18 2019) versus relative
+to the current time (0d:2h:58m:34s ago). Uptimes remain relative
+to the current time.</li>
+</ul></li>
+</ul>
+
+<p>The following features have been deprecated in this release:</p>
+
+<ul>
+<li>NetQL, query language for directly accessing the database. This data
+is now available through the NetQ UI.</li>
+<li><code>netq-shell</code> command. This is no longer needed as you can run
+commands from any node.</li>
+<li>Service Console. Access the CLI directly rather than through the UI.</li>
+</ul>
+
+<p>For additional details about changes to the CLI, refer to the <a href="NetQ_Command_Line_Overview">NetQ
+Command Line Overview</a>.</p>
+
+<p>For further information regarding bug fixes and known issues present in
+this release, refer to the <a href="https://wiki.cumulusnetworks.com/display/PC/NetQ+2.0+EA+User+Documentation">release
+notes</a>. </p>
+
+<h2 id="available-documentation">Available Documentation</h2>
+
+<p>The NetQ documentation set has been reorganized and updated from prior
+releases. They still provide the information you need to
+proactively monitor your Linux-based network fabric using Cumulus NetQ.
+They assume that you have already installed Cumulus Linux and NetQ. </p>
+
+<p>You may start anywhere in the documentation or read it from start to
+finish depending on your role and familiarity with the NetQ software and
+Linux networking. If you are new to NetQ, you may want to read
+the Cumulus NetQ Primer before reading the other available documents.</p>
+
+<p>The following NetQ documents are available:</p>
+
+<ul>
+<li><p>Cumulus NetQ Deployment Guide (this guide)</p></li>
+
+<li><p>Cumulus NetQ CLI User Guide</p></li>
+
+<li><p><a href="Cumulus_NetQ_UI_User_Guide">Cumulus NetQ UI User Guide</a></p></li>
+
+<li><p><a href="https://support.cumulusnetworks.com/hc/en-us/articles/360005898274">Cumulus NetQ Release
+Notes</a></p></li>
+</ul>
+
+<p>This Cumulus NetQ Deployment Guide is available in
+<a href="https://wiki.cumulusnetworks.com/display/PC/NetQ+2.0+EA+User+Documentation">PDF</a>
+for offline viewing.</p>
+
+<h2 id="document-formatting">Document Formatting</h2>
+
+<p>The Cumulus NetQ Deployment Guide uses the following typographical and
+note conventions.</p>
+
+<h3 id="typographical-conventions">Typographical Conventions</h3>
+
+<p>Throughout the guide, text formatting is used to convey contextual
+information about the content.</p>
+
+<p> </p>
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><div>
+<p><strong>Text Format</strong></p>
+</div></th>
+<th><div>
+<p><strong>Meaning</strong></p>
+</div></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Green text</p></td>
+<td>Link to additional content within the topic or to another topic</td>
+</tr>
+<tr class="even">
+<td><p><code>Text in Monospace font</code></p></td>
+<td><p>Filename, directory and path names, and command usage</p></td>
+</tr>
+<tr class="odd">
+<td><p>[Text within square brackets]</p></td>
+<td><p>Optional command parameters; may be presented in mixed case or all caps text</p></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><p>Required command parameter values–variables that are to be replaced with a relevant value; may be presented in mixed case or all caps text</p></td>
+</tr>
+</tbody>
+</table>
+
+<p> </p>
+
+<h3 id="note-conventions">Note Conventions </h3>
+
+<p>Several note types are used throughout the document. The formatting of
+the note indicates its intent and urgency.</p>
+
+<p>Tip or Best Practice</p>
+
+<p>Offers information to improve your experience with the tool, such as
+time-saving or shortcut options, or indicates the common or recommended
+method for performing a particular task or process</p>
+
+<p>Information</p>
+
+<p>Provides additional information or a reminder about a task or process
+that may impact your next step or selection</p>
+
+<p>Caution</p>
+
+<p>Advises that failure to take or avoid specific action can result in
+possible data loss</p>
+
+<p>Warning</p>
+
+<p>Advises that failure to take or avoid specific action can result in
+possible physical harm to yourself, hardware equipment, or facility</p>
+
+<h2 id="attachments">Attachments:</h2>
+
+<p><img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8365380/8365384.pdf">Cumulus NetQ
+140 Deployment Guide.pdf</a>
+(application/pdf)</p>
+</article>
+
+      
+<div class="align-center book-git-footer justify-between">
+  
+  <div>
+    <a href="/commit/6acd7c038710e07f4a059d10b137f7b93cf9f759" title='Last modified February 26, 2019 13:53 EST by Daniel Cawley' target="_blank" rel="noopener">
+      <img src="/svg/code-merge.svg" /> Last Modified Feb 26, 2019
+    </a>
+  </div>
+  
+  
+</div>
+
+
+    </div>
+
+    
+  
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#deployment-preface">Deployment Preface</a>
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#what-s-new-in-cumulus-netq-2-0-0">What&rsquo;s New in Cumulus NetQ 2.0.0</a></li>
+<li><a href="#available-documentation">Available Documentation</a></li>
+<li><a href="#document-formatting">Document Formatting</a>
+<ul>
+<li><a href="#typographical-conventions">Typographical Conventions</a></li>
+<li><a href="#note-conventions">Note Conventions </a></li>
+</ul></li>
+<li><a href="#attachments">Attachments:</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+  
+</body>
+
+</html>
