@@ -3,9 +3,15 @@ languageCode = "en-us"
 title = "Cumulus Networks Documentation"
 theme = "netDocs"
 
+
 # Book configuration
 disablePathToLower = true
-enableGitInfo= false
+enableGitInfo= true
+
+#Syntax Highlighting
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
 
 [params]
   # (Optional, default true) Show or hide table of contents globally
@@ -25,11 +31,11 @@ enableGitInfo= false
 
   # Include JS scripts in pages. Disabled by default.
   # - Keep side menu on same scroll position during navigation
-  BookEnableJS = "true"
+  BookEnableJS = true
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  #BookRepo= https://github.com/alex-shpak/hugo-book
+  BookRepo= "https://github.com/cawleyflower/testDocs"
 
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.

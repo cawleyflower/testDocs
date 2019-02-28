@@ -13,10 +13,10 @@
     
     <item>
       <title>What&#39;s New</title>
-      <link>http://example.org/Cumulus-Linux/whats-new/</link>
+      <link>http://example.org/docs/Cumulus-Linux/whats-new/</link>
       <pubDate>Wed, 20 Feb 2019 13:45:32 -0500</pubDate>
       
-      <guid>http://example.org/Cumulus-Linux/whats-new/</guid>
+      <guid>http://example.org/docs/Cumulus-Linux/whats-new/</guid>
       <description>What&amp;rsquo;s New in Cumulus Linux 3.7.3 Cumulus Linux 3.7.3 contains a number of new platforms, features and improvements:
  New platforms include:
  Dell Z9264F-ON (100G Broadcom Tomahawk2)
@@ -31,10 +31,10 @@
     
     <item>
       <title></title>
-      <link>http://example.org/Cumulus-Linux/Quick_Start_Guide/</link>
+      <link>http://example.org/docs/Cumulus-Linux/Quick_Start_Guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/Cumulus-Linux/Quick_Start_Guide/</guid>
+      <guid>http://example.org/docs/Cumulus-Linux/Quick_Start_Guide/</guid>
       <description>Quick Start Guide This quick start guide provides an end-to-end setup process for installing and running Cumulus Linux, as well as a collection of example commands for getting started after installation is complete.
 Prerequisites
 Intermediate-level Linux knowledge is assumed for this guide. You should be familiar with basic text editing, Unix file permissions, and process monitoring. A variety of text editors are pre-installed, including vi and nano.
@@ -43,10 +43,10 @@ You must have access to a Linux or UNIX shell.</description>
     
     <item>
       <title></title>
-      <link>http://example.org/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/</link>
+      <link>http://example.org/docs/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/</guid>
+      <guid>http://example.org/docs/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/</guid>
       <description>Adding and Updating Packages You use the Advanced Packaging Tool (apt) to manage additional applications (in the form of packages) and to install the latest updates.
 Network Disruptions
 Updating, upgrading, and installing packages with apt causes disruptions to network services:
@@ -56,10 +56,10 @@ Updating, upgrading, and installing packages with apt causes disruptions to netw
     
     <item>
       <title></title>
-      <link>http://example.org/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/</link>
+      <link>http://example.org/docs/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/</guid>
+      <guid>http://example.org/docs/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/</guid>
       <description>Installing a New Cumulus Linux Image This topic discusses how to install a new Cumulus Linux disk image using ONIE, an open source project (equivalent to PXE on servers) that enables the installation of network operating systems (NOS) on bare metal switches.
 Before you install Cumulus Linux, the switch can be in two different states:
  No image is installed on the switch (the switch is only running ONIE). Cumulus Linux is already installed on the switch but you want to use ONIE to reinstall Cumulus Linux or upgrade to a newer version.</description>
@@ -67,10 +67,10 @@ Before you install Cumulus Linux, the switch can be in two different states:
     
     <item>
       <title></title>
-      <link>http://example.org/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/</link>
+      <link>http://example.org/docs/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/</guid>
+      <guid>http://example.org/docs/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/</guid>
       <description>Managing Cumulus Linux Disk Images The Cumulus Linux operating system resides on a switch as a disk image. This section discusses how to manage the disk image.
 For information on installing a new Cumulus Linux disk image, refer to Installing a New Cumulus Linux Image. For information on upgrading Cumulus Linux, refer to Upgrading Cumulus Linux.
 Contents
@@ -80,52 +80,110 @@ Contents
     
     <item>
       <title></title>
-      <link>http://example.org/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/</link>
+      <link>http://example.org/docs/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/</guid>
+      <guid>http://example.org/docs/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/</guid>
       <description>Upgrading Cumulus Linux This topic describes how to upgrade Cumulus Linux on your switches to a more recent release.
 Cumulus Networks recommends that you deploy, provision, configure, and upgrade switches using automation, even with small networks or test labs. During the upgrade process, you can quickly upgrade dozens of devices in a repeatable manner. Using tools like Ansible, Chef, or Puppet for configuration management greatly increases the speed and accuracy of the next major upgrade; these tools also enable the quick swap of failed switch hardware.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/Cumulus-Linux/installation-management/Using_Snapshots/</link>
+      <link>http://example.org/docs/Cumulus-Linux/installation-management/Using_Snapshots/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/Cumulus-Linux/installation-management/Using_Snapshots/</guid>
+      <guid>http://example.org/docs/Cumulus-Linux/installation-management/Using_Snapshots/</guid>
       <description>Using Snapshots Cumulus Linux supports the ability to take snapshots of the complete file system as well as the ability to roll back to a previous snapshot. Snapshots are performed automatically right before and after you upgrade Cumulus Linux using package install, and right before and after you commit a switch configuration using NCLU. In addition, you can take a snapshot at any time. You can roll back the entire file system to a specific snapshot or just retrieve specific files.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/</link>
+      <link>http://example.org/docs/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/</guid>
+      <guid>http://example.org/docs/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/</guid>
       <description>Zero Touch Provisioning - ZTP Zero touch provisioning  (ZTP) enables you to deploy network devices quickly in large-scale environments. On first boot, Cumulus Linux invokes ZTP, which executes the provisioning automation used to deploy the device for its intended role in the network.
 The provisioning framework allows for a one-time, user-provided script to be executed. You can develop this script using a variety of automation tools and scripting languages, providing ample flexibility for you to design the provisioning scheme to meet your needs.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/</link>
+      <link>http://example.org/docs/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/</guid>
+      <guid>http://example.org/docs/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/</guid>
       <description>Network Command Line Utility - NCLU  The Network Command Line Utility (NCLU) is a command line interface for Cumulus Networks products that simplifies the networking configuration process for all users.
 NCLU resides in the Linux user space and provides consistent access to networking commands directly through bash, making configuration and troubleshooting simple and easy; no need to edit files or enter modes and sub-modes. NCLU provides these benefits:</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/Cumulus-Linux/system-config/Setting_Date_and_Time/</link>
+      <link>http://example.org/docs/Cumulus-Linux/system-config/Setting_Date_and_Time/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/Cumulus-Linux/system-config/Setting_Date_and_Time/</guid>
+      <guid>http://example.org/docs/Cumulus-Linux/system-config/Setting_Date_and_Time/</guid>
       <description>Setting Date and Time Setting the time zone, date and time requires root privileges; use sudo.
 Contents {.expand-control-image}This topic describes &amp;hellip;
  Set the Time Zone  Edit the /etc/timezone File Use the Guided Wizard  Set the Date and Time Set the Time Using NTP and NCLU Specify the NTP Source Interface NTP Default Configuration Precision Time Protocol (PTP) Boundary Clock  Enable the PTP Boundary Clock on the Switch Configure the PTP Boundary Clock Example Configuration Verify PTP Boundary Clock Configuration View PTP Status Information Delete PTP Boundary Clock Configuration  Use NTP in a DHCP Environment Related Information  Set the Time Zone You can use one of two methods to set the time zone on the switch:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/deployment_guide/Cumulus_NetQ_Deployment_Guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/deployment_guide/Cumulus_NetQ_Deployment_Guide/</guid>
+      <description>Cumulus NetQ Deployment Guide This guide is intended for network administrators who are responsible for installation, setup, and maintenance of Cumulus NetQ in their data center environment. NetQ offers the ability to monitor and manage your data center network infrastructure and operational health with simple tools based on open source Linux. This guide provides instructions and information about installing NetQ core capabilities, configuring optional capabilities, and upgrading an existing NetQ installation.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/deployment_guide/config_optional_netq/Configuring_Optional_NetQ_Capabilities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/deployment_guide/config_optional_netq/Configuring_Optional_NetQ_Capabilities/</guid>
+      <description>Configuring Optional NetQ Capabilities After you have installed NetQ applications package and the NetQ Agents, you may want to configure some of the additional capabilities that NetQ offers. This topic describes how to install, setup, and configure these capabilities.
+Contents {.expand-control-image}This topic describes how to&amp;hellip;
+ Integrate NetQ with an Event Notification Application  NetQ Notifier  Event Message Format  NetQ Notification Commands Overview Configure NetQ Event Logging Configure PagerDuty Using NetQ CLI Configure Slack Using NetQ CLI View Integrations  Create NetQ Notifier Filters  Build Filter Rules  Example: Create a Filter for Events from a Selected Switch Example: Create a Filter to Drop Notifications from a Given Interface Example: Add Multiple Rules to a Filter Example: Create a Filter to Send BGP Session State Notifications to Slack Example: Create a Filter to Drop All Temperature-Related Event Notifications Example: Create a Filter for License Validation Event Notifications  Integrate with a Hardware Chassis  Integrate NetQ with an Event Notification Application By default, alert messages are sent to the database; however, other third-party tools may be configured to receive the alert messages.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/deployment_guide/deployment_preface/Deployment_Preface/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/deployment_guide/deployment_preface/Deployment_Preface/</guid>
+      <description>Deployment Preface A variety of resources are available for you to become familiar with Cumulus NetQ and aid in its deployment. These are identified here along with information about how the content is presented.
+Contents {.expand-control-image}This topic describes&amp;hellip;
+ What&amp;rsquo;s New in Cumulus NetQ 2.0.0 Available Documentation Document Formatting  Typographical Conventions Note Conventions    What&amp;rsquo;s New in Cumulus NetQ 2.0.0 Cumulus NetQ 2.0.0 includes the following new and updated features:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/deployment_guide/install_netq/Install_NetQ/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/deployment_guide/install_netq/Install_NetQ/</guid>
+      <description>Install NetQ If you have purchased a NetQ Appliance, the only installation steps required are to load the NetQ Agent on any host you want to monitor. If you already have a Cumulus Linux switch and you want to add NetQ functionality to it, installation involves verifying your server meets the hardware and software requirements, loading the software onto the switch, and then loading the agent on the hosts.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/deployment_guide/maintain_netq/Maintain_NetQ/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/deployment_guide/maintain_netq/Maintain_NetQ/</guid>
+      <description>Maintain NetQ While regular maintenance of NetQ is not required, there are some tasks that you may want to perform in the course of everyday operations. As the network changes, you might have the need to add or remove monitored nodes, notification integrations, and NetQ Agents for example. You might also need to restore NetQ to a prior version or upgrade to a new version. Contents {.expand-control-image}This topic describes how to&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/deployment_guide/netq_primer/Cumulus_NetQ_Primer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/deployment_guide/netq_primer/Cumulus_NetQ_Primer/</guid>
+      <description>Cumulus NetQ Primer Cumulus® NetQ is a network operations tool set that provides actionable insight into and operational intelligence about the health of the entire Linux-based data center — from the container, virtual machine, or host, all the way to the switch and port. Working hand-in-hand with Cumulus Linux, NetQ enables organizations to validate network state, both during regular operations and for post-mortem diagnostic analysis. Running on Cumulus Linux switches and other certified systems — such as Ubuntu®, Red Hat®, and CentOS hosts — NetQ captures network data and other state information in real time, providing cloud architects and network operations teams the ability to operate with visibility into the entire network.</description>
     </item>
     
   </channel>

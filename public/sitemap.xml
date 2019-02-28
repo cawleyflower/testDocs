@@ -3,58 +3,91 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://example.org/docs/Cumulus-Linux/whats-new/</loc>
+    <lastmod>2019-02-26T13:53:40-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/Cumulus-Linux/</loc>
+    <lastmod>2019-02-26T13:53:40-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://example.org/</loc>
-    <lastmod>2019-02-20T13:27:58-05:00</lastmod>
+    <lastmod>2019-02-26T13:53:40-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/Cumulus-Linux/whats-new/</loc>
-    <lastmod>2019-02-20T13:45:32-05:00</lastmod>
+    <loc>http://example.org/docs/Cumulus-Linux/Quick_Start_Guide/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/Cumulus-Linux/</loc>
-    <lastmod>2019-02-20T13:28:08-05:00</lastmod>
+    <loc>http://example.org/docs/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/Cumulus-Linux/Quick_Start_Guide/</loc>
+    <loc>http://example.org/docs/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/</loc>
+    <loc>http://example.org/docs/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/</loc>
+    <loc>http://example.org/docs/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/</loc>
+    <loc>http://example.org/docs/Cumulus-Linux/installation-management/Using_Snapshots/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/</loc>
+    <loc>http://example.org/docs/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/Cumulus-Linux/installation-management/Using_Snapshots/</loc>
+    <loc>http://example.org/docs/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/</loc>
+    <loc>http://example.org/docs/Cumulus-Linux/system-config/Setting_Date_and_Time/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/</loc>
+    <loc>http://example.org/docs/NetQ/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/Cumulus-Linux/system-config/Setting_Date_and_Time/</loc>
+    <loc>http://example.org/docs/NetQ/deployment_guide/Cumulus_NetQ_Deployment_Guide/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/NetQ/deployment_guide/config_optional_netq/Configuring_Optional_NetQ_Capabilities/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/NetQ/deployment_guide/deployment_preface/Deployment_Preface/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/NetQ/deployment_guide/install_netq/Install_NetQ/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/NetQ/deployment_guide/maintain_netq/Maintain_NetQ/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/NetQ/deployment_guide/netq_primer/Cumulus_NetQ_Primer/</loc>
   </url>
   
   <url>
     <loc>http://example.org/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.org/docs/</loc>
     <priority>0</priority>
   </url>
   

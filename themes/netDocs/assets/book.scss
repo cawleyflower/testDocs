@@ -1,6 +1,8 @@
 @import "variables";
 @import "markdown";
 @import "utils";
+@import "notices";
+@import "syntax";
 
 html {
   font-size: $font-size-base;
