@@ -12,60 +12,300 @@
     
     <item>
       <title></title>
-      <link>http://example.org/docs/NetQ/deployment_guide/Cumulus_NetQ_Deployment_Guide/</link>
+      <link>http://example.org/docs/NetQ/Cumulus_NetQ_CLI_User_Guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/NetQ/deployment_guide/Cumulus_NetQ_Deployment_Guide/</guid>
-      <description>Cumulus NetQ Deployment Guide This guide is intended for network administrators who are responsible for installation, setup, and maintenance of Cumulus NetQ in their data center environment. NetQ offers the ability to monitor and manage your data center network infrastructure and operational health with simple tools based on open source Linux. This guide provides instructions and information about installing NetQ core capabilities, configuring optional capabilities, and upgrading an existing NetQ installation.</description>
+      <guid>http://example.org/docs/NetQ/Cumulus_NetQ_CLI_User_Guide/</guid>
+      <description>Cumulus NetQ CLI User Guide This guide is intended for network administrators who are responsible for monitoring and troubleshooting the network in their data center environment. NetQ 2.0 offers the ability to easily monitor and manage your data center network infrastructure and operational health. This guide provides instructions and information about monitoring both individual components of the network, the network as a whole, and the NetQ software itself using the NetQ command line interface (CLI).</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/docs/NetQ/deployment_guide/config_optional_netq/Configuring_Optional_NetQ_Capabilities/</link>
+      <link>http://example.org/docs/NetQ/Release_Notes/Cumulus_NetQ_2.0_Release_Notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/NetQ/deployment_guide/config_optional_netq/Configuring_Optional_NetQ_Capabilities/</guid>
-      <description>Configuring Optional NetQ Capabilities After you have installed NetQ applications package and the NetQ Agents, you may want to configure some of the additional capabilities that NetQ offers. This topic describes how to install, setup, and configure these capabilities.
-Contents {.expand-control-image}This topic describes how to&amp;hellip;
- Integrate NetQ with an Event Notification Application  NetQ Notifier  Event Message Format  NetQ Notification Commands Overview Configure NetQ Event Logging Configure PagerDuty Using NetQ CLI Configure Slack Using NetQ CLI View Integrations  Create NetQ Notifier Filters  Build Filter Rules  Example: Create a Filter for Events from a Selected Switch Example: Create a Filter to Drop Notifications from a Given Interface Example: Add Multiple Rules to a Filter Example: Create a Filter to Send BGP Session State Notifications to Slack Example: Create a Filter to Drop All Temperature-Related Event Notifications Example: Create a Filter for License Validation Event Notifications  Integrate with a Hardware Chassis  Integrate NetQ with an Event Notification Application By default, alert messages are sent to the database; however, other third-party tools may be configured to receive the alert messages.</description>
+      <guid>http://example.org/docs/NetQ/Release_Notes/Cumulus_NetQ_2.0_Release_Notes/</guid>
+      <description>Cumulus NetQ 2.0 Release Notes Overview These release notes support Cumulus NetQ 2.0.0 and 2.0.1 releases and describe currently available features and known issues.
+Stay up to Date   Subscribe to our product bulletin mailing list to receive important announcements and updates about issues that arise in our products. Subscribe to our security announcement mailing list to receive alerts whenever we update our software for security issues.   Contents  Overview Stay up to Date  What&amp;rsquo;s New in Cumulus NetQ 2.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/docs/NetQ/deployment_guide/deployment_preface/Deployment_Preface/</link>
+      <link>http://example.org/docs/NetQ/UI_User_Guide/Cumulus_NetQ_UI_User_Guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/NetQ/deployment_guide/deployment_preface/Deployment_Preface/</guid>
-      <description>Deployment Preface A variety of resources are available for you to become familiar with Cumulus NetQ and aid in its deployment. These are identified here along with information about how the content is presented.
+      <guid>http://example.org/docs/NetQ/UI_User_Guide/Cumulus_NetQ_UI_User_Guide/</guid>
+      <description>Cumulus NetQ UI User Guide This guide is intended for network administrators and operators who are responsible for monitoring and troubleshooting the network in their data center environment. NetQ 2.0 offers the ability to easily monitor and manage your data center network infrastructure and operational health. This guide provides instructions and information about monitoring both individual components of the network, as well as the network as a whole, and the NetQ software itself using the NetQ graphical user interface (GUI).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/UI_User_Guide/monitor_switches/Monitor_Switches/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/UI_User_Guide/monitor_switches/Monitor_Switches/</guid>
+      <description>Monitor Switches With the NetQ UI, you can monitor individual switches separately from the network. You are able to view the various components deployed for all switches in the network. Being able to monitor switch component inventory aids in upgrade, compliance, and other planning tasks.
+For network-wide monitoring, refer to Monitor the Network.
 Contents {.expand-control-image}This topic describes&amp;hellip;
- What&amp;rsquo;s New in Cumulus NetQ 2.0.0 Available Documentation Document Formatting  Typographical Conventions Note Conventions    What&amp;rsquo;s New in Cumulus NetQ 2.0.0 Cumulus NetQ 2.0.0 includes the following new and updated features:</description>
+ Switch Inventory Card Workflow Summary View a Summary of Communication Status for All Switches  View the Number of Types of Any Component Deployed View the Distribution of Any Component Deployed View the Number of Switches with Invalid or Missing Licenses View the Most Commonly Deployed ASIC View the Number of Switches with a Particular NetQ Agent View a List of All Data for a Specific Component  Switch Inventory Card Workflow Summary The small Switch Inventory card displays:</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/docs/NetQ/deployment_guide/install_netq/Install_NetQ/</link>
+      <link>http://example.org/docs/NetQ/UI_User_Guide/monitor_the_network/Monitor_the_Network/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/NetQ/deployment_guide/install_netq/Install_NetQ/</guid>
-      <description>Install NetQ If you have purchased a NetQ Appliance, the only installation steps required are to load the NetQ Agent on any host you want to monitor. If you already have a Cumulus Linux switch and you want to add NetQ functionality to it, installation involves verifying your server meets the hardware and software requirements, loading the software onto the switch, and then loading the agent on the hosts.</description>
+      <guid>http://example.org/docs/NetQ/UI_User_Guide/monitor_the_network/Monitor_the_Network/</guid>
+      <description> Monitor the Network The topics contained in this section describe monitoring tasks that apply across the entire network. For device-specific monitoring refer to Monitor Switches.
+ Monitor Network Health Monitor Network Inventory Monitor Network Protocols and Services Monitor Alarm Events Monitor Informational Events   </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/docs/NetQ/deployment_guide/maintain_netq/Maintain_NetQ/</link>
+      <link>http://example.org/docs/NetQ/UI_User_Guide/monitor_the_network/monitor_alarm_events/Monitor_Alarm_Events/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/NetQ/deployment_guide/maintain_netq/Maintain_NetQ/</guid>
-      <description>Maintain NetQ While regular maintenance of NetQ is not required, there are some tasks that you may want to perform in the course of everyday operations. As the network changes, you might have the need to add or remove monitored nodes, notification integrations, and NetQ Agents for example. You might also need to restore NetQ to a prior version or upgrade to a new version. Contents {.expand-control-image}This topic describes how to&amp;hellip;</description>
+      <guid>http://example.org/docs/NetQ/UI_User_Guide/monitor_the_network/monitor_alarm_events/Monitor_Alarm_Events/</guid>
+      <description>Monitor Alarm Events Two event workflows, the Alarms card workflow and the Info card workflow, provide a view into the events occurring in the network. The Alarms card workflow tracks critical severity events, whereas the Info card workflow tracks all warning, info, and debug severity events.
+To focus on events from a single device perspective, refer to Monitor Switches. To monitor informational alarms, refer to Monitor Informational Events.
+Contents {.</description>
     </item>
     
     <item>
       <title></title>
-      <link>http://example.org/docs/NetQ/deployment_guide/netq_primer/Cumulus_NetQ_Primer/</link>
+      <link>http://example.org/docs/NetQ/UI_User_Guide/monitor_the_network/monitor_informational_events/Monitor_Informational_Events/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/docs/NetQ/deployment_guide/netq_primer/Cumulus_NetQ_Primer/</guid>
-      <description>Cumulus NetQ Primer Cumulus® NetQ is a network operations tool set that provides actionable insight into and operational intelligence about the health of the entire Linux-based data center — from the container, virtual machine, or host, all the way to the switch and port. Working hand-in-hand with Cumulus Linux, NetQ enables organizations to validate network state, both during regular operations and for post-mortem diagnostic analysis. Running on Cumulus Linux switches and other certified systems — such as Ubuntu®, Red Hat®, and CentOS hosts — NetQ captures network data and other state information in real time, providing cloud architects and network operations teams the ability to operate with visibility into the entire network.</description>
+      <guid>http://example.org/docs/NetQ/UI_User_Guide/monitor_the_network/monitor_informational_events/Monitor_Informational_Events/</guid>
+      <description>Monitor Informational Events Two event workflows, the Alarms card workflow and the Info card workflow, provide a view into the events occurring in the network. The Alarms card workflow tracks critical severity events, whereas the Info card workflow tracks all warning, info, and debug severity events.
+To focus on events from a single device perspective, refer to Monitor Switches. To monitor alarms, refer to Monitor Alarm Events.
+Contents {.expand-control-image}This topic describes how to&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/UI_User_Guide/monitor_the_network/monitor_network_health/Monitor_Network_Health/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/UI_User_Guide/monitor_the_network/monitor_network_health/Monitor_Network_Health/</guid>
+      <description>Monitor Network Health As with any network, one of the challenges is keeping track of all of the moving parts. With the NetQ GUI, you can view the overall health of your network at a glance and then delve deeper for periodic checks or as conditions arise that require attention. For a general understanding of how well your network is operating, the Network Health card workflow is the best place to start as it contains the highest view and performance rollups.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/UI_User_Guide/monitor_the_network/monitor_network_inventory/Monitor_Network_Inventory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/UI_User_Guide/monitor_the_network/monitor_network_inventory/Monitor_Network_Inventory/</guid>
+      <description>Monitor Network Inventory With NetQ, a network administrator can monitor both the switch hardware and its operating system for misconfigurations or misbehaving services. The Devices Inventory card workflow provides a view into the switches and hosts installed in your network and their various hardware and software components. The workflow contains a small card with a count of each device type in your network, a medium card displaying the operating systems running on each set of devices, large cards with component information statistics, and full-screen cards displaying tables with attributes of all switches and all hosts in your network.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/UI_User_Guide/monitor_the_network/monitor_network_protocols/Monitor_Network_Layer_Protocols/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/UI_User_Guide/monitor_the_network/monitor_network_protocols/Monitor_Network_Layer_Protocols/</guid>
+      <description>Monitor Network Layer Protocols With NetQ, a network administrator can monitor OSI Layer 3 network protocols running on Linux-based hosts, including IP (Internet Protocol), BGP (Border Gateway Protocol) and OSPF (Open Shortest Path First). NetQ provides the ability to:  Validate protocol configurations Validate layer 3 communication paths  It helps answer questions such as:
+ Who are the IP neighbors for a switch?
+ How many IPv4 and IPv6 addresses am I using?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/UI_User_Guide/netq_ui_overview/NetQ_User_Interface_Overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/UI_User_Guide/netq_ui_overview/NetQ_User_Interface_Overview/</guid>
+      <description>NetQ User Interface Overview The NetQ 2.0.0 graphical user interface (UI) enables you to access NetQ capabilities through a web browser as opposed to through a terminal window using the Command Line Interface (CLI). Visual representations of the health of the network, inventory, and system events make it easy to both find faults and misconfigurations and to fix them. The UI is supported on Google Chrome. Other popular browsers may be used, but have not been tested and may have some presentation issues.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/UI_User_Guide/ui_preface/UI_Preface/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/UI_User_Guide/ui_preface/UI_Preface/</guid>
+      <description>UI Preface A variety of resources are available for you to become familiar with Cumulus NetQ and to take advantage of its monitoring and analytic capabilities. These resources are identified here along with information about how the content is presented.
+Contents {.expand-control-image}This topic describes&amp;hellip;
+ What&amp;rsquo;s New in Cumulus NetQ 2.0.0 Available Documentation Document Formatting  Typographical Conventions Note Conventions    What&amp;rsquo;s New in Cumulus NetQ 2.0.0 Cumulus NetQ 2.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/cli_user_guide/CLI_Preface/CLI_Preface/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/cli_user_guide/CLI_Preface/CLI_Preface/</guid>
+      <description>CLI Preface A variety of resources are available for you to become familiar with Cumulus NetQ and to take advantage of its monitoring and analytic capabilities. These resources are identified here along with information about how the content is presented.
+Contents {.expand-control-image}This topic describes&amp;hellip;
+ What&amp;rsquo;s New in Cumulus NetQ 2.0.0 Available Documentation Document Formatting  Typographical Conventions Note Conventions    What&amp;rsquo;s New in Cumulus NetQ 2.0.0 Cumulus NetQ 2.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/cli_user_guide/automate_common_tasks/Automate_Common_and_Repetitive_Tasks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/cli_user_guide/automate_common_tasks/Automate_Common_and_Repetitive_Tasks/</guid>
+      <description>Automate Common and Repetitive Tasks NetQ commands can also be run in an automation tool, such as Ansible, Chef, or Puppet; depending on the outcome of the automation tests, the script can either continue the deployment, or roll back the changes until the issues are addressed.
+Contents {.expand-control-image}This topic describes how to&amp;hellip;
+ Run NetQ Commands in Automation Scripts  Run NetQ Commands in Automation Scripts Using NetQ for preventative care of your network pairs well with automation scripts and playbooks to prevent errors on your network before deploying the configuration to your production network.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/cli_user_guide/command_line_overview/NetQ_Command_Line_Overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/cli_user_guide/command_line_overview/NetQ_Command_Line_Overview/</guid>
+      <description>NetQ Command Line Overview The NetQ CLI provides access to all of the network state and event information collected by the NetQ Agents. It behaves the same way most CLIs behave, with groups of commands used to display related information, the ability to use TAB completion when entering commands, and to get help for given commands and options. The commands are grouped into four categories: check and show, agent and notifier, trace, and resolve.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/cli_user_guide/monitor_containter_environments/Monitor_Container_Environments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/cli_user_guide/monitor_containter_environments/Monitor_Container_Environments/</guid>
+      <description>Monitor Container Environments The NetQ Agent monitors container environments the same way it monitors physical servers. There is no special implementation. The NetQ Agent pulls data from the container as it would pull data from a Cumulus Linux switch or Linux host. It can be installed on a Linux server or in a Linux VM. NetQ Agent integrates with container orchestrators including Kubernetes and Docker Swarm.
+NetQ monitors many aspects of containers on your network, including their:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/cli_user_guide/monitor_data_link_layer/Monitor_Data_Link_Layer_Devices_and_Protocols/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/cli_user_guide/monitor_data_link_layer/Monitor_Data_Link_Layer_Devices_and_Protocols/</guid>
+      <description>Monitor Data Link Layer Devices and Protocols With NetQ, a network administrator can monitor OSI Layer 2 devices and protocols, including switches, bridges, link control, and physical media access. Keeping track of the various data link layer devices in your network ensures consistent and error-free communications between devices. NetQ provides the ability to:  Monitor and validate device and protocol configurations View available communication paths between devices  It helps answer questions such as:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/cli_user_guide/monitor_linux_hosts/Monitor_Linux_Hosts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/cli_user_guide/monitor_linux_hosts/Monitor_Linux_Hosts/</guid>
+      <description>Monitor Linux Hosts Running NetQ on Linux hosts provides unprecedented network visibility, giving the network operator a complete view of the entire infastrucutre’s network connectivity instead of just from the network devices.
+The NetQ Agent is supported on the following Linux hosts:
+ CentOS 7 Red Hat Enterprise Linux 7.1 Ubuntu 16.04  You need to install the OS-specific NetQ metapack on every host you want to monitor with NetQ.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/cli_user_guide/monitor_network_health/Monitor_Overall_Network_Health/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/cli_user_guide/monitor_network_health/Monitor_Overall_Network_Health/</guid>
+      <description>Monitor Overall Network Health NetQ provides the information you need to monitor the health of your network fabric, devices, and interfaces. You are able to easily validate the operation and view the configuration across the entire network from switches to hosts to containers. For example, you can monitor the operation of routing protocols and virtual network configurations, the status of NetQ Agents and hardware components, and the operation and efficiency of interfaces.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/cli_user_guide/monitor_network_layer/Monitor_Network_Protocols_and_Services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/cli_user_guide/monitor_network_layer/Monitor_Network_Protocols_and_Services/</guid>
+      <description>Monitor Network Protocols and Services The Network Services card workflows provide a network-wide view into the routing, link, and virtual network protocols installed in your network. In this release, you can monitor the network-wide behavior or a single session of the BGP, EVPN, MLAG, and LLDP services. Each protocol has its own card workflow containing:
+ a small card with an overall status,  a medium card displaying key attributes of the protocol,  a large card with detailed performance statistics, some with additional tabs, and  full screen cards displaying attributes of all associated switches, sessions, alarms or other relevant data.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/cli_user_guide/monitor_physical_layer/Monitor_Physical_Layer_Components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/cli_user_guide/monitor_physical_layer/Monitor_Physical_Layer_Components/</guid>
+      <description>Monitor Physical Layer Components With NetQ, a network administrator can monitor OSI Layer 1 physical components on network devices, including interfaces, ports, links, and peers. NetQ provides the ability to:  Manage physical inventory: view the performance and status of various components of a switch or host server Validate configurations: verify the configuration of network peers and ports  It helps answer questions such as:
+ Are any individual or bonded links down?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/cli_user_guide/monitor_switch_hardware/Monitor_Switch_Hardware_and_Software/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/cli_user_guide/monitor_switch_hardware/Monitor_Switch_Hardware_and_Software/</guid>
+      <description>Monitor Switch Hardware and Software With NetQ, a network administrator can monitor both the switch hardware and software components for misconfigurations. NetQ helps answer questions such as:
+ What switches do I have in the network?
+ Are all switches licensed correctly?
+ Do all switches have NetQ agents running?
+  NetQ uses LLDP (Link Layer Discovery Protocol) to collect port information. NetQ can also identify peer ports connected to DACs (Direct Attached Cables) and AOCs (Active Optical Cables) without using LLDP, even if the link is not UP.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/cli_user_guide/monitor_virtual_overlays/Monitor_Virtual_Network_Overlays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/cli_user_guide/monitor_virtual_overlays/Monitor_Virtual_Network_Overlays/</guid>
+      <description>Monitor Virtual Network Overlays With NetQ, a network administrator can monitor virtual network components in the data center, including VXLAN, EVPN, and LNV software constructs. NetQ provides the ability to:  Manage virtual constructs: view the performance and status of VXLANs, EVPN, and LNV Validate overlay communication paths  It helps answer questions such as:
+ Is my overlay configured and operating correctly?
+ Is my control plane configured correctly?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/cli_user_guide/resolve_issues/Resolve_Issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/cli_user_guide/resolve_issues/Resolve_Issues/</guid>
+      <description>Resolve Issues Monitoring of systems inevitably leads to the need to troubleshoot and resolve the issues found. In fact network management follows a common pattern as shown in this diagram.
+{width=&amp;ldquo;700&amp;rdquo;}
+This topic describes some of the tools and commands you can use to troubleshoot issues with the network and NetQ itself.  Methods for Diagnosing Network Issues Resolve MLAG Issues Investigate NetQ Issues   Attachments: {width=&amp;ldquo;8&amp;rdquo; height=&amp;ldquo;8&amp;rdquo;} image2018-10-2 11:29:59.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/cli_user_guide/resolve_issues/Resolve_MLAG_Issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/cli_user_guide/resolve_issues/Resolve_MLAG_Issues/</guid>
+      <description>Resolve MLAG Issues This topic outlines a few scenarios that illustrate how you use NetQ to troubleshoot MLAG on Cumulus Linux switches. Each starts with a log message that indicates the current MLAG state.
+NetQ can monitor many aspects of an MLAG configuration, including:
+ Verifying the current state of all nodes Verifying the dual connectivity state Checking that the peer link is part of the bridge Verifying whether MLAG bonds are not bridge members Verifying whether the VXLAN interface is not a bridge member Checking for remote-side service failures caused by systemctl Checking for VLAN-VNI mapping mismatches Checking for layer 3 MTU mismatches on peerlink subinterfaces Checking for VXLAN active-active address inconsistencies Verifying that STP priorities are the same across both peers  Contents {.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/cli_user_guide/resolve_issues/investiage_netq_issues/Investigate_NetQ_Issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/cli_user_guide/resolve_issues/investiage_netq_issues/Investigate_NetQ_Issues/</guid>
+      <description>Investigate NetQ Issues There are several paths you can take to locate and investigate issues that occur in the NetQ software itself, including viewing configuration and log files, verifying NetQ Agent health, and verifying NetQ Platform configuration. If these do not produce a resolution, you can capture a log to use in discussion with Cumulus Networks support team.
+Contents {.expand-control-image}This topic describes how to&amp;hellip;
+ Browse Configuration and Log Files Check NetQ Agent Health Generate a Support File  Browse Configuration and Log Files To aid in troubleshooting issues with NetQ, there are the following configuration and log files that can provide insight into the root cause of the issue:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/cli_user_guide/resolve_issues/methods_for_diagnosing_issues/Methods_for_Diagnosing_Network_Issues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/cli_user_guide/resolve_issues/methods_for_diagnosing_issues/Methods_for_Diagnosing_Network_Issues/</guid>
+      <description>Methods for Diagnosing Network Issues NetQ provides users with the ability to go back in time to replay the network state, see fabric-wide event change logs and root cause state deviations. The NetQ Telemetry Server maintains data collected by NetQ agents in a time-series database, making fabric-wide events available for analysis. This enables you to replay and analyze network-wide events for better visibility and to correlate patterns. This allows for root-cause analysis and optimization of network configs for the future.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/getting_started/Getting_Started_with_the_Cumulus_NetQ_Appliance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/getting_started/Getting_Started_with_the_Cumulus_NetQ_Appliance/</guid>
+      <description>Getting Started with the Cumulus NetQ Appliance The Cumulus NetQ appliance provides a complete monitoring solution for your network; the server comes preloaded with a Cumulus Linux image that includes Cumulus NetQ services, a Cumulus Linux license and certified cables and optics.
+This guide helps you get your Cumulus NetQ appliance up and running in a few minutes.
+Contents  What&amp;rsquo;s in the Box? Installing and Configuring the Appliance  Configuring the Password, Hostname and IP Address Reviewing and Committing Your Changes Backing Up Your Appliance Default Configuration  Learning More Getting Support  What&amp;rsquo;s in the Box?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/docs/NetQ/software_installation_guide/Cumulus_NetQ_Appliance_Software_Installation_Guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/docs/NetQ/software_installation_guide/Cumulus_NetQ_Appliance_Software_Installation_Guide/</guid>
+      <description>Cumulus NetQ Appliance Software Installation Guide Introduction This guide illustrates how to install ONIE and Cumulus Linux onto the Cumulus NetQ appliance. You need two USB drives with at least 1GB of storage each. Install ONIE Obtain the ONIE Installation Image Obtain an ONIE installation .ISO image from Cumulus Networks. The file should be named something like this:
+onie-recovery-x86_64-cumulus_x86_64-r0.iso Copy the ONIE .ISO Image to a USB Drive Use the Win32 Disk Imager program to copy the .</description>
     </item>
     
   </channel>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cumulus Networks Documentation</title>
+    <link>http://example.org/NetQ/UI_User_Guide/monitor_the_network/</link>
+    <description>Recent content on Cumulus Networks Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/NetQ/UI_User_Guide/monitor_the_network/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_alarm_events/Monitor_Alarm_Events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_alarm_events/Monitor_Alarm_Events/</guid>
+      <description>Monitor Alarm Events Two event workflows, the Alarms card workflow and the Info card workflow, provide a view into the events occurring in the network. The Alarms card workflow tracks critical severity events, whereas the Info card workflow tracks all warning, info, and debug severity events.
+To focus on events from a single device perspective, refer to Monitor Switches. To monitor informational alarms, refer to Monitor Informational Events.
+Contents {.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_informational_events/Monitor_Informational_Events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_informational_events/Monitor_Informational_Events/</guid>
+      <description>Monitor Informational Events Two event workflows, the Alarms card workflow and the Info card workflow, provide a view into the events occurring in the network. The Alarms card workflow tracks critical severity events, whereas the Info card workflow tracks all warning, info, and debug severity events.
+To focus on events from a single device perspective, refer to Monitor Switches. To monitor alarms, refer to Monitor Alarm Events.
+Contents {.expand-control-image}This topic describes how to&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_network_health/Monitor_Network_Health/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_network_health/Monitor_Network_Health/</guid>
+      <description>Monitor Network Health As with any network, one of the challenges is keeping track of all of the moving parts. With the NetQ GUI, you can view the overall health of your network at a glance and then delve deeper for periodic checks or as conditions arise that require attention. For a general understanding of how well your network is operating, the Network Health card workflow is the best place to start as it contains the highest view and performance rollups.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_network_inventory/Monitor_Network_Inventory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_network_inventory/Monitor_Network_Inventory/</guid>
+      <description>Monitor Network Inventory With NetQ, a network administrator can monitor both the switch hardware and its operating system for misconfigurations or misbehaving services. The Devices Inventory card workflow provides a view into the switches and hosts installed in your network and their various hardware and software components. The workflow contains a small card with a count of each device type in your network, a medium card displaying the operating systems running on each set of devices, large cards with component information statistics, and full-screen cards displaying tables with attributes of all switches and all hosts in your network.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_network_protocols/Monitor_Network_Layer_Protocols/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_network_protocols/Monitor_Network_Layer_Protocols/</guid>
+      <description>Monitor Network Layer Protocols With NetQ, a network administrator can monitor OSI Layer 3 network protocols running on Linux-based hosts, including IP (Internet Protocol), BGP (Border Gateway Protocol) and OSPF (Open Shortest Path First). NetQ provides the ability to:  Validate protocol configurations Validate layer 3 communication paths  It helps answer questions such as:
+ Who are the IP neighbors for a switch?
+ How many IPv4 and IPv6 addresses am I using?</description>
+    </item>
+    
+  </channel>
+</rss>

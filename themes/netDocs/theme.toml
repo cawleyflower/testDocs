@@ -12,7 +12,7 @@ min_version = "0.41"
 
 [author]
   name = "Daniel Cawley"
-  homepage = ""
+  homepage = "https://github.com/cawleyflower/testDocs"
 
 # If porting an existing theme
 [original]

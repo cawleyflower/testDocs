@@ -25,7 +25,6 @@ div.notices > div.highlight{
   padding-right: 2rem;
 }
 
-
 //Warning Notice Block
 div.notices.warning {
     margin : 1rem;
@@ -106,11 +105,11 @@ div.notices.info {
     position: relative;
     display: block;
     font-size: 1rem;
-    background-color: #FFF2DB;
+    background-color: #E7F2FA;
     color: #666;
 }
 div.notices.info > *:first-child{
-  border-top: 30px solid #F0B37E;
+  border-top: 30px solid #6AB0DE;
 }
 div.notices.info > *:first-child:before{
   display: block;
@@ -136,17 +135,17 @@ div.notices.info > *:first-child:after{
   left: 2rem;
   content: "Info"
 }
-
+//Note Notice Block
 div.notices.note {
     margin : 1rem;
     position: relative;
     display: block;
     font-size: 1rem;
-    background-color: #E7F2FA;
+    background-color: #FFF2DB;
     color: #666;
 }
 div.notices.note > *:first-child{
-border-top: 30px solid #6AB0DE
+  border-top: 30px solid #F0B37E
 
 }
 div.notices.note > *:first-child:before{
