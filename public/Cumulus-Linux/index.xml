@@ -31,35 +31,26 @@
     
     <item>
       <title></title>
-      <link>http://example.org/Cumulus-Linux/Quick_Start_Guide/</link>
+      <link>http://example.org/Cumulus-Linux/cumulus-linux-index/Cumulus_Linux_Index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/Cumulus-Linux/Quick_Start_Guide/</guid>
+      <guid>http://example.org/Cumulus-Linux/cumulus-linux-index/Cumulus_Linux_Index/</guid>
+      <description>Cumulus Linux Index  A
+ aaa{.label} abrs{.label} abrs_stub_areas{.label} abrs_summary_lsa{.label} access_control_lists{.label} access_ports{.label} acl_policy_files{.label} acls{.label} active-active{.label} active_listener_ports{.label} addressing_interfaces{.label} algorithmic_longest_prefix_match{.label} alpm{.label} alpm_route_entries{.label} anycast{.label} aoc_cables{.label} api{.label} application_daemons{.label} apt{.label} apt-get{.label} area_border_routers{.label} arp{.label} arp_requests{.label} as_path{.label} asn{.label} asymmetric_routing{.label} authentication{.label} auto-negotiation{.label} autonomous_system_number{.label} autoprovision{.label}  B
+ bestpath{.label} bfd{.label} bgp{.label} bidirectional_forwarding_detection{.label} bonds{.label} boot_recovery{.label} border_gateway_protocol{.label} bpdu_filter{.label} bpdu_guard{.label} brctl{.label} bridge{.label} bridge-ports{.label} bridging{.label} bridging_adding_interfaces{.label} bridging_ip_addresses{.label} bridging_routing{.label} btrfs{.label} buffering{.label}  C
+ cable_connectivity{.label} cabling{.label} cdp{.label} centralized_routing{.label} cl-acltool{.label} cl-bgp{.label} cl-cfg{.label} cl-ecmpcalc{.label} cl-img{.label} cl-license{.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/quick-start/Quick_Start_Guide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/quick-start/Quick_Start_Guide/</guid>
       <description>Quick Start Guide This quick start guide provides an end-to-end setup process for installing and running Cumulus Linux, as well as a collection of example commands for getting started after installation is complete.
 Prerequisites
 Intermediate-level Linux knowledge is assumed for this guide. You should be familiar with basic text editing, Unix file permissions, and process monitoring. A variety of text editors are pre-installed, including vi and nano.
 You must have access to a Linux or UNIX shell.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://example.org/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/</guid>
-      <description>Network Command Line Utility - NCLU  The Network Command Line Utility (NCLU) is a command line interface for Cumulus Networks products that simplifies the networking configuration process for all users.
-NCLU resides in the Linux user space and provides consistent access to networking commands directly through bash, making configuration and troubleshooting simple and easy; no need to edit files or enter modes and sub-modes. NCLU provides these benefits:</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://example.org/Cumulus-Linux/system-config/Setting_Date_and_Time/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/Cumulus-Linux/system-config/Setting_Date_and_Time/</guid>
-      <description>Setting Date and Time Setting the time zone, date and time requires root privileges; use sudo.
-Contents {.expand-control-image}This topic describes &amp;hellip;
- Set the Time Zone  Edit the /etc/timezone File Use the Guided Wizard  Set the Date and Time Set the Time Using NTP and NCLU Specify the NTP Source Interface NTP Default Configuration Precision Time Protocol (PTP) Boundary Clock  Enable the PTP Boundary Clock on the Switch Configure the PTP Boundary Clock Example Configuration Verify PTP Boundary Clock Configuration View PTP Status Information Delete PTP Boundary Clock Configuration  Use NTP in a DHCP Environment Related Information  Set the Time Zone You can use one of two methods to set the time zone on the switch:</description>
     </item>
     
   </channel>

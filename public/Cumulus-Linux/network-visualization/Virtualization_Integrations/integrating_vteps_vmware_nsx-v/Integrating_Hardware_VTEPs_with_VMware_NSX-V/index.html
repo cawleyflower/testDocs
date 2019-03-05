@@ -1,0 +1,1144 @@
+<!DOCTYPE html><html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Integrating Hardware v T E Ps With v Mware N S X V | Cumulus Networks Documentation</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+<link rel="stylesheet" href="/book.min.50a619ce4c0e99594908d162684f42218608aa6fde2bd83cca5025d59ba535e3.css">
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+<h2 class="book-brand">
+  <a href="http://example.org/">Cumulus Networks Documentation</a>
+</h2>
+
+
+
+    
+
+
+  
+  
+    
+    
+  
+ 
+  <ul>
+    
+    <li><a href="/Cumulus-Linux/installation-management/">
+    Installation Management</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/">Adding and Updating Packages</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/">Installing a New Cumulus Linux Image</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/">Managing Cumulus Linux Disk Images</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/">Upgrading Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Using_Snapshots/">Using Snapshots</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/">Zero Touch Provisioning Z T P</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer1-switch-ports/">
+    Layer1 Switch Ports</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/802.1X_Interfaces/">802.1 X Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Buffer_and_Queue_Management/">Buffer and Queue Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Relays/">D H C P Relays</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Servers/">D H C P Servers</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Facebook_Voyager_Optical_Interfaces/">Facebook Voyager Optical Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Prescriptive_Topology_Manager_-_PTM/">Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/Interface_Configuration_and_Management/">Interface Configuration and Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/switch_port_attributes/Switch_Port_Attributes/">Switch Port Attributes</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer2/">
+    Layer2</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Prescriptive_Topology_Manager_-_PTM/">Copy of Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Spanning_Tree_and_Rapid_Spanning_Tree/">Copy of Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Ethernet_Bridging_-_VLANs/">Ethernet Bridging v L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/IGMP_and_MLD_Snooping/">I G M P and M L D Snooping</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/LACP_Bypass/">L a C P Bypass</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Link_Layer_Discovery_Protocol/">Link Layer Discovery Protocol</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Multi-Chassis_Link_Aggregation_-_MLAG/">Multi Chassis Link Aggregation M L a G</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Spanning_Tree_and_Rapid_Spanning_Tree/">Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Virtual_Router_Redundancy_-_VRR/">Virtual Router Redundancy v R R</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/bonding_link_aggregation/Bonding_-_Link_Aggregation/">Bonding Link Aggregation</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/Traditional_Bridge_Mode/">Traditional Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN-aware_Bridge_Mode/">V L a N Aware Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN_Tagging/">V L a N Tagging</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/link_layer_discovery_protocol/voice_vlan/Voice_VLAN/">Voice v L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/virtual_router_redundancy/ifplugd/ifplugd/">Ifplugd</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer3/">
+    Layer3</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Address_Resolution_Protocol_-_ARP/">Address Resolution Protocol a R P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Bidirectional_Forwarding_Detection_-_BFD/">Bidirectional Forwarding Detection B F D</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Border_Gateway_Protocol_-_BGP/">Border Gateway Protocol B G P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Configuring_FRRouting/">Configuring F R Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP/">Equal Cost Multipath Load Sharing Hardware E C M P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/FRRouting_Overview/">F R Routing Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/GRE_Tunneling/">G R E Tunneling</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Introduction_to_Routing_Protocols/">Introduction to Routing Protocols</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Management_VRF/">Management v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Network_Topology/">Network Topology</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_-_OSPF/">Open Shortest Path First O S P F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_v3_-_OSPFv3/">Open Shortest Path First V3 O S P Fv3</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Policy-based_Routing/">Policy Based Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Protocol_Independent_Multicast_-_PIM/">Protocol Independent Multicast P I M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Redistribute_Neighbor/">Redistribute Neighbor</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Routing/">Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Segment_Routing/">Segment Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Virtual_Routing_and_Forwarding_-_VRF/">Virtual Routing and Forwarding v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/configuring_frrouting/comparing_nclu_and_vtysh_commands/Comparing_NCLU_and_vtysh_Commands/">Comparing N C L U and Vtysh Commands</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/frrouting_overview/Upgrading_from_Quagga_to_FRRouting/">Upgrading From Quagga to F R Routing</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/monitoring-troubleshooting/">
+    Monitoring Troubleshooting</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/ASIC_Monitoring/">A S I C Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/FRRouting_Log_Message_Reference/">F R Routing Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Best_Practices/">Monitoring Best Practices</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_System_Hardware/">Monitoring System Hardware</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Virtual_Device_Counters/">Monitoring Virtual Device Counters</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Network_Troubleshooting/">Network Troubleshooting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Resource_Diagnostics_Using_cl-resource-query/">Resource Diagnostics Using Cl Resource Query</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Simple_Network_Management_Protocol_SNMP_Monitoring/">Simple Network Management Protocol S N M P Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Single_User_Mode_-_Boot_Recovery/">Single User Mode Boot Recovery</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Troubleshooting_Network_Interfaces/">Troubleshooting Network Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Understanding_the_cl-support_Output_File/">Understanding the Cl Support Output File</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/monitoring_system_hardware/network_switch_port_led_and_stats_led/Network_Switch_Port_LED_and_Status_LED_Guidelines/">Network Switch Port L E D and Status L E D Guidelines</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/monitoring_system_statistics/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow/">Monitoring System Statistics and Network Traffic With S Flow</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/using_nclu_to_troubleshoot/Using_NCLU_to_Troubleshoot_Your_Network_Configuration/">Using N C L U to Troubleshoot Your Network Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/simple_network_management/using_nutanix_prisim_as_monitoring_tool/Using_Nutanix_Prism_as_a_Monitoring_Tool/">Using Nutanix Prism as a Monitoring Tool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/switchd_Log_Message_Reference/">Switchd Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/troubleshooting_network_interfaces/monitoring_interfaces_and_transcievers_using_ethtool/Monitoring_Interfaces_and_Transceivers_Using_ethtool/">Monitoring Interfaces and Transceivers Using Ethtool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_log_files/Troubleshooting_Log_Files/">Troubleshooting Log Files</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_the_etc_directory/Troubleshooting_the_etc_Directory/">Troubleshooting the Etc Directory</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-solutions/">
+    Network Solutions</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Anycast_Design_Guide/">Anycast Design Guide</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Hyperconverged_Solution_with_Nutanix/">Cumulus Hyperconverged Solution With Nutanix</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Networks_Services_Demos/">Cumulus Networks Services Demos</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Data_Center_Host_to_ToR_Architecture/">Data Center Host to to R Architecture</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Docker_on_Cumulus_Linux/">Docker on Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/OpenStack_Neutron_ML2_and_Cumulus_Linux/">Open Stack Neutron M L2 and Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/RDMA_over_Converged_Ethernet_-_RoCE/">R D M a Over Converged Ethernet Ro C E</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-visualization/">
+    Network Visualization</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Eng_Update_of_VXLAN_Hyperloop/">Eng Update of v X L a N Hyperloop</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Ethernet_Virtual_Private_Network_-_EVPN/">Ethernet Virtual Private Network E v P N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs/">Hybrid Cloud Connectivity With Qin Q and v X L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/LNV_Full_Example/">L N v Full Example</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Lightweight_Network_Virtualization_Overview/">Lightweight Network Virtualization Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Static_VXLAN_Configurations/">Static v X L a N Configurations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Routing/">V X L a N Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Scale/">V X L a N Scale</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Tunnel_DSCP_Operations__DRAFT/">V X L a N Tunnel D S C P Operations — D R a F T</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Virtualization_Integrations/">Virtualization Integrations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_mac_bindings/Static_MAC_Bindings_with_VXLAN/">Static M a C Bindings With v X L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_vxlan_tunnels/Static_VXLAN_Tunnels/">Static v X L a N Tunnels</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_hardware_vteps_vmware_nsx-mh/Integrating_Hardware_VTEPs_with_VMware_NSX-MH/">Integrating Hardware v T E Ps With v Mware N S X M H</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_midonet_openstack/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack/">Integrating Hardware v T E Ps With Midokura Mido Net and Open Stack</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_vmware_nsx-v/Integrating_Hardware_VTEPs_with_VMware_NSX-V/" class="active">Integrating Hardware v T E Ps With v Mware N S X V</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/ovsdb_server_high_availability/OVSDB_Server_High_Availability/">O v S D B Server High Availability</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/system-config/">
+    System Config</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Authentication_Authorization_and_Accounting/">Authentication Authorization and Accounting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_a_Global_Proxy/">Configuring a Global Proxy</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_switchd/">Configuring Switchd</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Copy_of_Netfilter_-_ACLs/">Copy of Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/HTTP_API/">H T T P a P I</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Netfilter_-_ACLs/">Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/">Network Command Line Utility N C L U</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Power_over_Ethernet_-_PoE/">Power Over Ethernet Po E</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Services_and_Daemons_in_Cumulus_Linux/">Services and Daemons in Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Setting_Date_and_Time/">Setting Date and Time</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/LDAP_Authentication_and_Authorization/">L D a P Authentication and Authorization</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/RADIUS_AAA/">R a D I U S a a A</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/SSH_for_Remote_Access/">S S H for Remote Access</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/TACACS_Plus/">T a C a C S Plus</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/User_Accounts/">User Accounts</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/Using_sudo_to_Delegate_Privileges/">Using Sudo to Delegate Privileges</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Default_Cumulus_Linux_ACL_Configuration/">Default Cumulus Linux a C L Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Filtering_Learned_MAC_Addresses/">Filtering Learned M a C Addresses</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/whats-new/">What&#39;s New</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/cumulus-linux-index/Cumulus_Linux_Index/">Cumulus Linux Index</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/quick-start/Quick_Start_Guide/">Quick Start Guide</a>
+    </li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+</nav>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" />
+  </label>
+  <strong>Integrating Hardware v T E Ps With v Mware N S X V</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="integrating-hardware-vteps-with-vmware-nsx-v">Integrating Hardware VTEPs with VMware NSX-V</h1>
+
+<p>Switches running Cumulus Linux can integrate with VMware NSX-V to act as
+hardware VTEP gateways. The VMware NSX-V controller provides consistent
+provisioning across virtual and physical server infrastructures.</p>
+
+<p><img src="attachments/8362823/8362852.png" alt="" />{width=&ldquo;500&rdquo;}</p>
+
+<p>Cumulus Linux also supports integration with VMware NSX in high
+availability mode. Refer to <a href="OVSDB_Server_High_Availability">OVSDB Server High
+Availability</a>.</p>
+
+<h2 id="contents">Contents</h2>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}This topic
+describes &hellip;</p>
+
+<ul>
+<li><a href="#IntegratingHardwareVTEPswithVMwareNSX-V-GettingStarted">Getting
+Started</a></li>
+<li><a href="#IntegratingHardwareVTEPswithVMwareNSX-V-ConfiguretheSwitchforNSX-VIntegration">Configure the Switch for NSX-V
+Integration</a>
+
+<ul>
+<li><a href="#IntegratingHardwareVTEPswithVMwareNSX-V-Starttheopenvswitch-vtepService">Start the openvswitch-vtep
+Service</a></li>
+<li><a href="#IntegratingHardwareVTEPswithVMwareNSX-V-ConfiguretheNSX-VIntegrationUsingtheConfigurationScript">Configure the NSX-V Integration Using the Configuration
+Script</a></li>
+<li><a href="#IntegratingHardwareVTEPswithVMwareNSX-V-ConfiguretheNSX-VIntegrationManually">Configure the NSX-V Integration
+Manually</a></li>
+</ul></li>
+<li><a href="#IntegratingHardwareVTEPswithVMwareNSX-V-ProvisionVMwareNSX-V">Provision VMware
+NSX-V</a>
+
+<ul>
+<li><a href="#IntegratingHardwareVTEPswithVMwareNSX-V-ConfiguretheSwitchasaVTEPGateway">Configure the Switch as a VTEP
+Gateway</a></li>
+</ul></li>
+<li><a href="#IntegratingHardwareVTEPswithVMwareNSX-V-V-config-transport-logicalConfiguretheTransportandLogicalLayers">Configure the Transport and Logical
+Layers</a>
+
+<ul>
+<li><a href="#IntegratingHardwareVTEPswithVMwareNSX-V-ConfiguretheTransportLayer">Configure the Transport
+Layer</a></li>
+<li><a href="#IntegratingHardwareVTEPswithVMwareNSX-V-ConfiguretheLogicalLayer">Configure the Logical
+Layer</a></li>
+<li><a href="#IntegratingHardwareVTEPswithVMwareNSX-V-DefineLogicalSwitchPorts">Define Logical Switch
+Ports</a></li>
+</ul></li>
+<li><a href="#IntegratingHardwareVTEPswithVMwareNSX-V-V-verify-vxlan-configVerifytheVXLANConfiguration">Verify the VXLAN
+Configuration</a></li>
+</ul>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>Before you integrate VXLANs with NSX-V, make sure you have a layer 2
+gateway; a Broadcom Tomahawk, Trident II+, Trident II, Maverick or
+Mellanox Spectrum switch running Cumulus Linux. Cumulus Linux includes
+OVSDB server (<code>ovsdb-server</code>) and VTEPd (<code>ovs-vtepd</code>), which
+support <a href="VLAN-aware_Bridge_Mode">VLAN-aware bridges</a>.</p>
+
+<p>To integrate a VXLAN with NSX-V, you need to:</p>
+
+<ul>
+<li>Configure the NSX-V integration on the switch.</li>
+<li>Configure the transport and logical layers from the NSX Manager.</li>
+<li>Verify the VXLAN configuration.</li>
+</ul>
+
+<p>Cumulus Linux supports security protocol version TLSv1.2 for SSL
+connections between the OVSDB server and the NSX controller.</p>
+
+<p>The OVSDB server cannot select the loopback interface as the source IP
+address, causing top of rack registration to the controller to fail. To
+work around this issue, run the <code>net add bgp redistribute connected</code>
+command followed by the <code>net commit</code> command.</p>
+
+<h2 id="configure-the-switch-for-nsx-v-integration">Configure the Switch for NSX-V Integration</h2>
+
+<p>Before you start configuring the gateway service, and logical switches
+and ports that comprise the VXLAN, you need to enable and start
+the <code>openvswitch-vtep</code> service, and configure the NSX integration on the
+switch, either using the script or performing the manual configuration.</p>
+
+<h3 id="start-the-openvswitch-vtep-service">Start the openvswitch-vtep Service</h3>
+
+<p>To enable and start the <code>openvswitch-vtep</code> service, run the following
+command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo systemctl enable openvswitch-vtep.service
+cumulus@switch:~$ sudo systemctl start openvswitch-vtep.service</code></pre></div>
+<p>In previous versions of Cumulus Linux, you had to edit
+the <code>/etc/default/openvswitch-vtep</code> file and then start the
+openvswitch-vtep service. Now, you just have to enable and start the
+<code>openvswitch-vtep</code>service.</p>
+
+<h3 id="configure-the-nsx-v-integration-using-the-configuration-script">Configure the NSX-V Integration Using the Configuration Script</h3>
+
+<p>A script is available so you can configure the NSX-V integration on the
+switch automatically.</p>
+
+<p>In a terminal session connected to the switch, run
+the <code>vtep-bootstrap</code> command with these options:</p>
+
+<ul>
+<li><p><code>controller_ip</code> is the IP address of the NSX controller
+(192.168.100.17 in the example command below).</p></li>
+
+<li><p>The ID for the VTEP (<code>vtep7</code> in the example command below).</p></li>
+
+<li><p>The datapath IP address of the VTEP (<code>172.16.20.157</code>  in the example
+command below). This is the VXLAN anycast IP address.</p></li>
+
+<li><p>The IP address of the management interface on the switch
+(<code>192.168.100.157</code> in the example command below). This interface is
+used for control traffic.</p></li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ vtep-bootstrap vtep7 --controller_ip 192.168.100.17 172.16.20.157 192.168.100.157
+Executed: 
+    create certificate on a switch, to be used for authentication with controller
+     ().
+Executed: 
+    sign certificate
+     (vtep7-req.pem Tue Sep 11 21:11:27 UTC 2018
+        fingerprint a4cda030fe5e458c0d7ba44e22f52650f01bcd75).
+Executed: 
+    define physical switch
+     ().
+Executed: 
+    define NSX controller IP address in OVSDB
+     ().
+Executed: 
+    define local tunnel IP address on the switch
+     ().
+Executed: 
+    define management IP address on the switch
+     ().
+Executed: 
+    restart a service
+     ().</code></pre></div>
+<p>Run the following commands in the order shown to complete the
+configuration process:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo systemctl restart openvswitch-vtep.service
+cumulus@switch:~$ sudo ifreload -a
+cumulus@switch:~$ sudo systemctl restart networking.service</code></pre></div>
+<h3 id="configure-the-nsx-v-integration-manually">Configure the NSX-V Integration Manually</h3>
+
+<p>You can configure the NSX-V integration manually for standalone mode
+only; manual configuration for OVSDB server high availability is not
+supported.</p>
+
+<p>If you do not want to use the configuration script to configure the
+NSX-V integration on the switch automatically, you can configure the
+integration manually, which requires you to perform the following steps:</p>
+
+<ul>
+<li>Generate a certificate and key pair for authentication by NSX-V.</li>
+<li>Configure a switch as a VTEP gateway.</li>
+</ul>
+
+<h4 id="generate-the-credentials-certificate">Generate the Credentials Certificate</h4>
+
+<p>In Cumulus Linux, generate a certificate that the NSX controller uses
+for authentication.</p>
+
+<ol>
+<li><p>In a terminal session connected to the switch, run the following
+commands:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ovs-pki init
+Creating controllerca...
+Creating switchca...
+cumulus@switch:~$ sudo ovs-pki req+sign cumulus
+
+cumulus-req.pem Wed Oct 23 05:32:49 UTC 2013
+        fingerprint b587c9fe36f09fb371750ab50c430485d33a174a
+
+cumulus@switch:~$ ls -l
+total 12
+-rw-r--r-- 1 root root 4028 Oct 23 05:32 cumulus-cert.pem
+-rw------- 1 root root 1679 Oct 23 05:32 cumulus-privkey.pem
+-rw-r--r-- 1 root root 3585 Oct 23 05:32 cumulus-req.pem</code></pre></div></li>
+
+<li><p>In the <code>/usr/share/openvswitch/scripts/ovs-ctl-vtep</code> file, make sure
+the lines containing <strong>private-key</strong>, <strong>certificate</strong>, and
+<strong>bootstrap-ca-cert</strong> point to the correct files;
+<strong>bootstrap-ca-cert</strong> is obtained dynamically the first time the
+switch talks to the controller:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text"># Start ovsdb-server.
+set ovsdb-server &#34;$DB_FILE&#34;
+set &#34;$@&#34; -vANY:CONSOLE:EMER -vANY:SYSLOG:ERR -vANY:FILE:INFO
+set &#34;$@&#34; --remote=punix:&#34;$DB_SOCK&#34;
+set &#34;$@&#34; --remote=db:Global,managers
+set &#34;$@&#34; --remote=ptcp:6633:$LOCALIP
+set &#34;$@&#34; --private-key=/root/cumulus-privkey.pem
+set &#34;$@&#34; --certificate=/root/cumulus-cert.pem
+set &#34;$@&#34; --bootstrap-ca-cert=/root/controller.cacert
+set “$@” --ssl-protocols=TLSv1,TLSv1.1,TLSv1.2</code></pre></div>
+<p>If files have been moved or regenerated, restart the OVSDB server
+and VTEPd:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo systemctl restart openvswitch-vtep.service</code></pre></div></li>
+
+<li><p>Define the NSX Controller Cluster IP address in OVSDB. This causes
+the OVSDB server to start contacting the NSX controller:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo vtep-ctl set-manager ssl:192.168.100.17:6632</code></pre></div></li>
+
+<li><p>Define the local IP address on the VTEP for VXLAN tunnel
+termination. First, find the physical switch name as recorded in
+OVSDB:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo vtep-ctl list-ps
+vtep7</code></pre></div>
+<p>Then set the tunnel source IP address of the VTEP. This is the
+datapath address of the VTEP, which is typically an address on a
+loopback interface on the switch that is reachable from the
+underlying layer 3 network:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo vtep-ctl set Physical_Switch vtep7 tunnel_ips=172.16.20.157</code></pre></div></li>
+</ol>
+
+<p>After you generate the certificate, keep the terminal session active;
+you need to paste the certificate into NSX Manager when you configure
+the VTEP gateway.</p>
+
+<h4 id="enable-ovs-vtepd-to-use-the-vlan-aware-bridge">Enable ovs-vtepd to Use the VLAN-aware Bridge</h4>
+
+<p>By default, in stand-alone mode, the ovs-vtep daemon creates traditional
+bridges for each VXLAN VTEP. To use the VLAN-aware bridge with the
+VTEPs, edit the <code>/usr/share/openvswitch/scripts/ovs-ctl-vtep</code> file and
+uncomment the <code>--enable-vlan-aware-mode</code> line:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text"># Start ovs-vtepd
+set ovs-vtepd unix:“$DB_SOCK”
+set “$@” -vconsole:emer -vsyslog:err -vfile:info
+#set “$@” --enable-vlan-aware-mode</code></pre></div>
+<p>Then restart the OVSDB server and VTEPd:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo systemctl restart openvswitch-vtep.service</code></pre></div>
+<h2 id="provision-vmware-nsx-v">Provision VMware NSX-V</h2>
+
+<h3 id="configure-the-switch-as-a-vtep-gateway">Configure the Switch as a VTEP Gateway</h3>
+
+<p>After you create a certificate, connect to NSX Manager in a browser to
+configure a Cumulus Linux switch as a hardware VTEP gateway. In this
+example, the IP address of the NSX Manager is 192.168.110.23.</p>
+
+<ol>
+<li><p>In NSX Manager, add a new HW VTEP gateway. Click the <strong>Network &amp;
+Security</strong> icon, <strong>Service Definitions</strong> category, then the
+<strong>Hardware Devices</strong> tab. Under <strong>Hardware Devices</strong>, click <strong>+</strong>.
+The Create Add Hardware Devices window opens.</p>
+
+<p><img src="attachments/8362823/8362841.png" alt="" />{height=&ldquo;250&rdquo;}</p></li>
+
+<li><p>In the<strong> Name</strong> field, provide a name for the HW VTEP gateway.</p></li>
+
+<li><p>Enable the BFD service to the service nodes. Select the<strong> Enable
+BFD</strong> check box.</p></li>
+
+<li><p>From the terminal session connected to the switch where you
+generated the certificate, copy the certificate and paste it into
+the <strong>Certificate</strong> text field. Copy only the bottom portion,
+including the <code>BEGIN CERTIFICATE</code> and <code>END CERTIFICATE</code> lines. For
+example, copy all the highlighted text in the terminal terminal and
+paste it into NSX Manager:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ cd /var/lib/openvswitch
+cumulus@switch:/var/lib/openvswitch$ ls
+conf.db  pki  vtep7-cert.pem  vtep7-privkey.pem  vtep7-req.pem
+cumulus@switch:/var/lib/openvswitch$ cat vtep7-cert.pem</code></pre></div>
+<p><img src="attachments/8362823/8362839.png" alt="" />{height=&ldquo;250&rdquo;} </p></li>
+
+<li><p>Click <strong>OK</strong> to save the gateway.<br />
+<img src="attachments/8362823/8362838.png" alt="" />{height=&ldquo;400&rdquo;} </p></li>
+</ol>
+
+<p>After communication is established between the switch and the
+controller, a <code>controller.cacert</code> file is downloaded onto the switch.</p>
+
+<p>Verify that the controller and switch handshake is successful. In a
+terminal connected to the switch, run this command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ovsdb-client dump -f list | grep -A 7 &#34;Manager&#34;
+Manager table
+_uuid               : 2693ea2e-306-4c23-ac03-934ala304077
+inactivity_probe    : []
+is_connected        : true
+max_backoff         : []
+other_config        : {}
+status              : {sec_since_connect=&#34;557&#34;, state=ACTIVE}
+target              : &#34;ssl:192.168.110.110:6640&#34;</code></pre></div>
+<h2 id="configure-the-transport-and-logical-layers">Configure the Transport and Logical Layers</h2>
+
+<h3 id="configure-the-transport-layer">Configure the Transport Layer</h3>
+
+<p>After you finish configuring NSX-V integration on the switch, configure
+the transport zone and segment ID.</p>
+
+<ol>
+<li><p>In NSX Manager, click the <strong>Logical Network Preparation</strong> tab in
+the <strong>Installation</strong> category, then click the <strong>Segment ID</strong> tab.</p></li>
+
+<li><p>Click <strong>Edit</strong> and add the segment IDs (VNIDs) to be used. Here VNIs
+5000-5999 are configured. </p>
+
+<p><img src="attachments/8362823/8362836.png" alt="" />{height=&ldquo;150&rdquo;}<br />
+<img src="attachments/8362823/8362835.png" alt="" />{height=&ldquo;250&rdquo;}</p></li>
+
+<li><p>Click <strong>OK</strong> to save and provision the segment IDs.</p></li>
+
+<li><p>Click the <strong>Transport Zones</strong> tab, choose the name of the transport
+zone.<br />
+<img src="attachments/8362823/8362834.png" alt="" />{height=&ldquo;400&rdquo;}</p></li>
+
+<li><p>Select <strong>Unicast</strong> to choose the NSX-V Controller Cluster to handle
+the VXLAN control plane.<br />
+<img src="attachments/8362823/8362833.png" alt="" />{height=&ldquo;400&rdquo;} </p></li>
+
+<li><p>Click <strong>OK</strong> to save the new transport zone.</p></li>
+</ol>
+
+<h3 id="configure-the-logical-layer">Configure the Logical Layer</h3>
+
+<p>To complete the integration with NSX-V, you need to configure the
+logical layer, which requires defining a logical switch (the VXLAN
+instance) and all the logical ports needed.</p>
+
+<p>To define the logical switch:</p>
+
+<ol>
+<li><p>In NSX Manager, select the <strong>Logical Switches</strong> category. Click
+<strong>+</strong> to add a logical switch instance.<br />
+<img src="attachments/8362823/8362832.png" alt="" />{height=&ldquo;250&rdquo;} </p></li>
+
+<li><p>In the<strong> Name</strong> field, enter a name for the logical switch.</p></li>
+
+<li><p>In the <strong>Transport Zone</strong> field, add the transport zone that you
+created earlier.</p></li>
+
+<li><p>In the <strong>Replication Mode</strong> field, select <strong>Unicast</strong> for
+replication by the service node. Then check the <strong>Enable IP
+Discovery</strong> check box.</p></li>
+
+<li><p>Click <strong>OK</strong>.<br />
+<img src="attachments/8362823/8362831.png" alt="" /></p></li>
+</ol>
+
+<p>To configure the Replication Cluster:</p>
+
+<ol>
+<li>Select the <strong>Service Definitions</strong> category, then click
+the <strong>Hardware Devices</strong> tab. Next to the <strong>Replication
+Cluster </strong>field, click<strong> Edit</strong>.<br />
+ <img src="attachments/8362823/8362830.png" alt="" />{height=&ldquo;250&rdquo;}</li>
+<li>Hypervisors connected to the NSX controller for replication appear
+in the <strong>Available Objects</strong> list. Select the required service
+nodes, then click the green arrow to move them to the <strong>Selected
+Objects</strong> list. <br />
+ <img src="attachments/8362823/8362829.png" alt="" />{height=&ldquo;250&rdquo;}</li>
+<li>Click <strong>OK</strong> to save the replication node configuration.</li>
+</ol>
+
+<h3 id="define-logical-switch-ports">Define Logical Switch Ports</h3>
+
+<p>To define the logical switch ports (you can define a VLAN-to-VNI binding
+for each switch port associated with a particular logical switch):</p>
+
+<ol>
+<li><p>In NSX Manager, add a new logical switch port. Click the <strong>Logical
+Switches</strong> category. Under <strong>Actions</strong>, click <strong>Manage Hardware
+Bindings</strong>. The Manage Hardware Binding wizard appears.</p>
+
+<p><img src="attachments/8362823/8362828.png" alt="" />{height=&ldquo;250&rdquo;}</p></li>
+
+<li><p>Click <strong>+</strong> to add a logical port to the logical switch.<br />
+<img src="attachments/8362823/8362827.png" alt="" />{height=&ldquo;400&rdquo;}</p></li>
+
+<li><p>Select the logical switch that you created earlier (5000). </p></li>
+
+<li><p>Select the switch port and the corresponding VLAN binding for
+logical switch 5000. This creates the logical switch port and also
+maps VLAN 16 of switch port swp2 to VNI 5000.</p></li>
+
+<li><p>Click <strong>OK</strong> to save the logical switch port. Connectivity is
+established. Repeat this procedure for each logical switch port you
+want to define.<br />
+<img src="attachments/8362823/8362826.png" alt="" />{height=&ldquo;400&rdquo;} </p></li>
+</ol>
+
+<h2 id="verify-the-vxlan-configuration">Verify the VXLAN Configuration</h2>
+
+<p>After configuration is complete, you can verify the VXLAN configuration
+using either or both of these Cumulus Linux commands in a terminal
+connected to the switch:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:/var/lib/openvswitch$ ip -d link show vxln5000
+65: vxln5000: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 9152 qdisc noqueue master br-vxln5000 state UNKNOWN mode DEFAULT group default 
+    link/ether da:d1:23:44:c4:5e brd ff:ff:ff:ff:ff:ff promiscuity 1 
+    vxlan id 5000 local 172.16.20.157 srcport 0 0 dstport 4789 ageing 300 
+    bridge_slave state forwarding priority 8 cost 100 hairpin off guard off root_block off fastleave off learning on flood on port_id 0x8006 port_no 0x6 designated_port 32774 designated_cost 0 designated_bridge 8000.16:28:56:cc:97:e5 designated_root 8000.16:28:56:cc:97:e5 hold_timer    0.00 message_age_timer    0.00 forward_delay_timer    0.00 topology_change_ack 0 config_pending 0 proxy_arp off proxy_arp_wifi off mcast_router 1 mcast_fast_leave off mcast_flood on neigh_suppress off addrgenmode eui64 </code></pre></div><div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:/var/lib/openvswitch$ bridge fdb show
+b6:fb:be:89:99:65 dev vxln5000 master br-vxln5000 permanent
+00:50:56:b5:3f:d2 dev vxln5000 master br-vxln5000 static
+00:00:00:00:00:00 dev vxln5000 dst 172.16.1.11 self permanent
+00:50:56:b5:3f:d2 dev vxln5000 dst 172.16.1.11 self static
+36:cc:7a:bc:b9:e1 dev vxln0 master br-vxln0 permanent
+00:23:20:00:00:01 dev dummy0 master br-vxln0 permanent
+00:23:20:00:00:01 dev dummy 5000 master br-vxln5000 permanent
+7c:fe:90:0b:c5:7e dev swp2.16 master br-vxln5000 permanent</code></pre></div>
+<p>To check that the active OVSDB server is connected to the NSX
+controller, run the <code>ovsdb-client dump Manager </code>command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ovsdb-client dump Manager
+Manager table
+_uuid                                inactivity_probe is_connected max_backoff other_config status                                 target
+------------------------------------ ---------------- ------------ ----------- ------------ -------------------------------------- -------------------
+e700ad21-8fd8-4f09-96dc-fa7cc6e498d8 30000            true         []          {}           {sec_since_connect=“68”, state=ACTIVE} “ssl:54.0.0.2:6632&#34;</code></pre></div>
+<h2 id="attachments">Attachments:</h2>
+
+<p><img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362823/8362844.png">vxlan_logswp_create.png</a>
+(image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362823/8362845.png">vxlan_logswp_done.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362823/8362846.png">vxlan_loglayer.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362823/8362847.png">vxlan_logswitch_done.png</a>
+(image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362823/8362848.png">vxlan_createvni.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362823/8362849.png">vxlan_logswitch.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362823/8362850.png">vxlan_gwsvc.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362823/8362851.png">vxlan_bootstrap.screenshot.png</a>
+(image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362823/8362852.png">vxlan_nsx.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362853.png">image2017-1-22
+21:50:55.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362823/8362854.png">vxlan_addbinding.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362823/8362855.png">vxlan_gwsvc_create.png</a>
+(image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362823/8362856.png">vxlan_nsx_cert.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362823/8362857.png">vxlan_cert_term.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362823/8362858.png">vxlan_netcomponents.png</a>
+(image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362843.png">vtep bootstrap
+-h.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362842.png">vtep
+bootstrap.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362841.png">add hw
+devs.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362840.png">ls
+certs.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362839.png">add hw
+vtep.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362838.png">nsx mgr svc
+defs.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362837.png">ovsdb-client
+dump.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362836.png">segment ID
+tab.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362835.png">segment ID
+edit.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362834.png">transport zone
+new.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362833.png">transport zone
+new 2.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362832.png">logical switch
+new.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362831.png">logical
+switches.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362830.png">replication
+cluster select.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362829.png">replication
+cluster save.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362828.png">manage hw
+bindings menu.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362827.png">manage hw
+bindings new.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362826.png">manage hw
+bindings save.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362825.png">ip -d link
+show.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362824.png">bridge fdb
+show.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362823/8362822.png">brctl
+show.png</a> (image/png)</p>
+</article>
+
+      
+<div class="align-center book-git-footer justify-between">
+  
+  <div>
+    <a href="https://github.com/cawleyflower/testDocs/commit/0f1fa77f244c4b4642688df1f5e961e88daa6e08" title='Last modified March 4, 2019 16:11 EST by Cawleyflower' target="_blank" rel="noopener">
+      <img src="/svg/code-merge.svg" /> Last Modified Mar 4, 2019
+    </a>
+  </div>
+  
+  
+</div>
+
+
+    </div>
+
+    
+  
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#integrating-hardware-vteps-with-vmware-nsx-v">Integrating Hardware VTEPs with VMware NSX-V</a>
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#configure-the-switch-for-nsx-v-integration">Configure the Switch for NSX-V Integration</a>
+<ul>
+<li><a href="#start-the-openvswitch-vtep-service">Start the openvswitch-vtep Service</a></li>
+<li><a href="#configure-the-nsx-v-integration-using-the-configuration-script">Configure the NSX-V Integration Using the Configuration Script</a></li>
+<li><a href="#configure-the-nsx-v-integration-manually">Configure the NSX-V Integration Manually</a>
+<ul>
+<li><a href="#generate-the-credentials-certificate">Generate the Credentials Certificate</a></li>
+<li><a href="#enable-ovs-vtepd-to-use-the-vlan-aware-bridge">Enable ovs-vtepd to Use the VLAN-aware Bridge</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#provision-vmware-nsx-v">Provision VMware NSX-V</a>
+<ul>
+<li><a href="#configure-the-switch-as-a-vtep-gateway">Configure the Switch as a VTEP Gateway</a></li>
+</ul></li>
+<li><a href="#configure-the-transport-and-logical-layers">Configure the Transport and Logical Layers</a>
+<ul>
+<li><a href="#configure-the-transport-layer">Configure the Transport Layer</a></li>
+<li><a href="#configure-the-logical-layer">Configure the Logical Layer</a></li>
+<li><a href="#define-logical-switch-ports">Define Logical Switch Ports</a></li>
+</ul></li>
+<li><a href="#verify-the-vxlan-configuration">Verify the VXLAN Configuration</a></li>
+<li><a href="#attachments">Attachments:</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+  
+</body>
+
+</html>

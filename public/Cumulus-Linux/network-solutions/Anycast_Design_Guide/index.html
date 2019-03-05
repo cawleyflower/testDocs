@@ -1,0 +1,898 @@
+<!DOCTYPE html><html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anycast Design Guide | Cumulus Networks Documentation</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+<link rel="stylesheet" href="/book.min.50a619ce4c0e99594908d162684f42218608aa6fde2bd83cca5025d59ba535e3.css">
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+<h2 class="book-brand">
+  <a href="http://example.org/">Cumulus Networks Documentation</a>
+</h2>
+
+
+
+    
+
+
+  
+  
+    
+    
+  
+ 
+  <ul>
+    
+    <li><a href="/Cumulus-Linux/installation-management/">
+    Installation Management</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/">Adding and Updating Packages</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/">Installing a New Cumulus Linux Image</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/">Managing Cumulus Linux Disk Images</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/">Upgrading Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Using_Snapshots/">Using Snapshots</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/">Zero Touch Provisioning Z T P</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer1-switch-ports/">
+    Layer1 Switch Ports</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/802.1X_Interfaces/">802.1 X Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Buffer_and_Queue_Management/">Buffer and Queue Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Relays/">D H C P Relays</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Servers/">D H C P Servers</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Facebook_Voyager_Optical_Interfaces/">Facebook Voyager Optical Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Prescriptive_Topology_Manager_-_PTM/">Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/Interface_Configuration_and_Management/">Interface Configuration and Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/switch_port_attributes/Switch_Port_Attributes/">Switch Port Attributes</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer2/">
+    Layer2</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Prescriptive_Topology_Manager_-_PTM/">Copy of Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Spanning_Tree_and_Rapid_Spanning_Tree/">Copy of Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Ethernet_Bridging_-_VLANs/">Ethernet Bridging v L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/IGMP_and_MLD_Snooping/">I G M P and M L D Snooping</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/LACP_Bypass/">L a C P Bypass</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Link_Layer_Discovery_Protocol/">Link Layer Discovery Protocol</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Multi-Chassis_Link_Aggregation_-_MLAG/">Multi Chassis Link Aggregation M L a G</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Spanning_Tree_and_Rapid_Spanning_Tree/">Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Virtual_Router_Redundancy_-_VRR/">Virtual Router Redundancy v R R</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/bonding_link_aggregation/Bonding_-_Link_Aggregation/">Bonding Link Aggregation</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/Traditional_Bridge_Mode/">Traditional Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN-aware_Bridge_Mode/">V L a N Aware Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN_Tagging/">V L a N Tagging</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/link_layer_discovery_protocol/voice_vlan/Voice_VLAN/">Voice v L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/virtual_router_redundancy/ifplugd/ifplugd/">Ifplugd</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer3/">
+    Layer3</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Address_Resolution_Protocol_-_ARP/">Address Resolution Protocol a R P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Bidirectional_Forwarding_Detection_-_BFD/">Bidirectional Forwarding Detection B F D</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Border_Gateway_Protocol_-_BGP/">Border Gateway Protocol B G P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Configuring_FRRouting/">Configuring F R Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP/">Equal Cost Multipath Load Sharing Hardware E C M P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/FRRouting_Overview/">F R Routing Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/GRE_Tunneling/">G R E Tunneling</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Introduction_to_Routing_Protocols/">Introduction to Routing Protocols</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Management_VRF/">Management v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Network_Topology/">Network Topology</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_-_OSPF/">Open Shortest Path First O S P F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_v3_-_OSPFv3/">Open Shortest Path First V3 O S P Fv3</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Policy-based_Routing/">Policy Based Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Protocol_Independent_Multicast_-_PIM/">Protocol Independent Multicast P I M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Redistribute_Neighbor/">Redistribute Neighbor</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Routing/">Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Segment_Routing/">Segment Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Virtual_Routing_and_Forwarding_-_VRF/">Virtual Routing and Forwarding v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/configuring_frrouting/comparing_nclu_and_vtysh_commands/Comparing_NCLU_and_vtysh_Commands/">Comparing N C L U and Vtysh Commands</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/frrouting_overview/Upgrading_from_Quagga_to_FRRouting/">Upgrading From Quagga to F R Routing</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/monitoring-troubleshooting/">
+    Monitoring Troubleshooting</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/ASIC_Monitoring/">A S I C Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/FRRouting_Log_Message_Reference/">F R Routing Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Best_Practices/">Monitoring Best Practices</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_System_Hardware/">Monitoring System Hardware</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Virtual_Device_Counters/">Monitoring Virtual Device Counters</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Network_Troubleshooting/">Network Troubleshooting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Resource_Diagnostics_Using_cl-resource-query/">Resource Diagnostics Using Cl Resource Query</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Simple_Network_Management_Protocol_SNMP_Monitoring/">Simple Network Management Protocol S N M P Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Single_User_Mode_-_Boot_Recovery/">Single User Mode Boot Recovery</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Troubleshooting_Network_Interfaces/">Troubleshooting Network Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Understanding_the_cl-support_Output_File/">Understanding the Cl Support Output File</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/monitoring_system_hardware/network_switch_port_led_and_stats_led/Network_Switch_Port_LED_and_Status_LED_Guidelines/">Network Switch Port L E D and Status L E D Guidelines</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/monitoring_system_statistics/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow/">Monitoring System Statistics and Network Traffic With S Flow</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/using_nclu_to_troubleshoot/Using_NCLU_to_Troubleshoot_Your_Network_Configuration/">Using N C L U to Troubleshoot Your Network Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/simple_network_management/using_nutanix_prisim_as_monitoring_tool/Using_Nutanix_Prism_as_a_Monitoring_Tool/">Using Nutanix Prism as a Monitoring Tool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/switchd_Log_Message_Reference/">Switchd Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/troubleshooting_network_interfaces/monitoring_interfaces_and_transcievers_using_ethtool/Monitoring_Interfaces_and_Transceivers_Using_ethtool/">Monitoring Interfaces and Transceivers Using Ethtool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_log_files/Troubleshooting_Log_Files/">Troubleshooting Log Files</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_the_etc_directory/Troubleshooting_the_etc_Directory/">Troubleshooting the Etc Directory</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-solutions/">
+    Network Solutions</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Anycast_Design_Guide/" class="active">Anycast Design Guide</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Hyperconverged_Solution_with_Nutanix/">Cumulus Hyperconverged Solution With Nutanix</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Networks_Services_Demos/">Cumulus Networks Services Demos</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Data_Center_Host_to_ToR_Architecture/">Data Center Host to to R Architecture</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Docker_on_Cumulus_Linux/">Docker on Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/OpenStack_Neutron_ML2_and_Cumulus_Linux/">Open Stack Neutron M L2 and Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/RDMA_over_Converged_Ethernet_-_RoCE/">R D M a Over Converged Ethernet Ro C E</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-visualization/">
+    Network Visualization</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Eng_Update_of_VXLAN_Hyperloop/">Eng Update of v X L a N Hyperloop</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Ethernet_Virtual_Private_Network_-_EVPN/">Ethernet Virtual Private Network E v P N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs/">Hybrid Cloud Connectivity With Qin Q and v X L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/LNV_Full_Example/">L N v Full Example</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Lightweight_Network_Virtualization_Overview/">Lightweight Network Virtualization Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Static_VXLAN_Configurations/">Static v X L a N Configurations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Routing/">V X L a N Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Scale/">V X L a N Scale</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Tunnel_DSCP_Operations__DRAFT/">V X L a N Tunnel D S C P Operations — D R a F T</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Virtualization_Integrations/">Virtualization Integrations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_mac_bindings/Static_MAC_Bindings_with_VXLAN/">Static M a C Bindings With v X L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_vxlan_tunnels/Static_VXLAN_Tunnels/">Static v X L a N Tunnels</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_hardware_vteps_vmware_nsx-mh/Integrating_Hardware_VTEPs_with_VMware_NSX-MH/">Integrating Hardware v T E Ps With v Mware N S X M H</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_midonet_openstack/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack/">Integrating Hardware v T E Ps With Midokura Mido Net and Open Stack</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_vmware_nsx-v/Integrating_Hardware_VTEPs_with_VMware_NSX-V/">Integrating Hardware v T E Ps With v Mware N S X V</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/ovsdb_server_high_availability/OVSDB_Server_High_Availability/">O v S D B Server High Availability</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/system-config/">
+    System Config</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Authentication_Authorization_and_Accounting/">Authentication Authorization and Accounting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_a_Global_Proxy/">Configuring a Global Proxy</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_switchd/">Configuring Switchd</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Copy_of_Netfilter_-_ACLs/">Copy of Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/HTTP_API/">H T T P a P I</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Netfilter_-_ACLs/">Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/">Network Command Line Utility N C L U</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Power_over_Ethernet_-_PoE/">Power Over Ethernet Po E</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Services_and_Daemons_in_Cumulus_Linux/">Services and Daemons in Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Setting_Date_and_Time/">Setting Date and Time</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/LDAP_Authentication_and_Authorization/">L D a P Authentication and Authorization</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/RADIUS_AAA/">R a D I U S a a A</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/SSH_for_Remote_Access/">S S H for Remote Access</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/TACACS_Plus/">T a C a C S Plus</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/User_Accounts/">User Accounts</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/Using_sudo_to_Delegate_Privileges/">Using Sudo to Delegate Privileges</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Default_Cumulus_Linux_ACL_Configuration/">Default Cumulus Linux a C L Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Filtering_Learned_MAC_Addresses/">Filtering Learned M a C Addresses</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/whats-new/">What&#39;s New</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/cumulus-linux-index/Cumulus_Linux_Index/">Cumulus Linux Index</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/quick-start/Quick_Start_Guide/">Quick Start Guide</a>
+    </li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+</nav>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" />
+  </label>
+  <strong>Anycast Design Guide</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="anycast-design-guide">Anycast Design Guide</h1>
+
+<p>Cumulus Networks&rsquo; <a href="https://docs.cumulusnetworks.com/display/ROH/Routing+on+the+Host">Routing on the
+Host</a>
+provides the ability to run <a href="Open_Shortest_Path_First_-_OSPF">OSPF</a> or
+<a href="Border_Gateway_Protocol_-_BGP">BGP</a> directly on server hosts. This can
+enable a network architecture known as <em>anycast</em>, where many servers can
+provide the same service without needing layer 2 extensions or load
+balancer appliances.</p>
+
+<p>Anycast is not a new protocol or protocol implementation and does not
+require any additional network configuration. Anycast leverages the
+<a href="Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP">equal cost
+multipath</a> (ECMP)
+capabilities inherent in layer 3 networks to provide stateless load
+sharing services.</p>
+
+<p>The following image depicts an example anycast network. Each server is
+advertising the 172.16.255.<sup>66</sup>&frasl;<sub>32</sub> anycast IP address.</p>
+
+<p><img src="attachments/8363010/8363017.png" alt="" />{height=&ldquo;250&rdquo;} </p>
+
+<h2 id="anycast-architecture">Anycast Architecture</h2>
+
+<p>Anycast relies on layer 3 equal cost multipath functionality to provide
+load sharing throughout the network. Each server announces a route for a
+service. As the route is propagated through the network, each network
+device sees the route as originating from multiple places. As an end
+user connects to the anycast IP, each network device performs a hardware
+hash of the layer 3 and layer 4 headers to determine which path to use.</p>
+
+<p>Every packet in a flow from an end user has the same source and
+destination IP address as well as source and destination port numbers.
+The hash performed by the network devices results in the same answer for
+every packet, ensuring all packets in a flow are sent to the same
+destination.</p>
+
+<p>In the following image, the client initiates two flows: the blue, dotted
+flow and the red dashed flow. Each flow has the same source IP address
+(the client’s IP address), destination IP address (172.16.255.66) and
+same destination port (depending on the service; for example, DNS is
+port 53). Each flow has a unique source port generated by the client.</p>
+
+<p><img src="attachments/8363010/8363016.png" alt="" />{height=&ldquo;250&rdquo;} </p>
+
+<p>In this example, each flow hashes to different servers based on this
+source port, which you can see when you run <code>ip route show</code> to the
+destination IP address:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@spine02$ ip route show 172.16.255.66
+172.16.255.66  proto zebra  metric 20
+    nexthop via 169.254.64.0  dev swp1 weight 1
+    nexthop via 169.254.64.2  dev swp2 weight 1
+    nexthop via 169.254.64.2  dev swp3 weight 1
+    nexthop via 169.254.64.0  dev swp4 weight 1</code></pre></div>
+<p>On a Cumulus Linux switch, you can see the hardware hash with the
+<code>cl-ecmpcalc</code> command. In Figure 2, two flows originate from a remote
+user destined to the anycast IP address. Each session has a different
+source port. Using the <code>cl-ecmpcalc</code> command, you can see that the
+sessions were hashed to different egress ports.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@spine02$ sudo cl-ecmpcalc -p udp -s 10.2.0.100 --sport 32700 -d 172.31.255.66 --dport 53 -i swp51
+ecmpcalc: will query hardware
+swp2
+
+cumulus@spine02$ sudo cl-ecmpcalc -p udp -s 10.2.0.100 --sport 31884 -d 172.31.255.66 --dport 53 -i swp51
+ecmpcalc: will query hardware
+swp3</code></pre></div>
+<h2 id="anycast-with-tcp-and-udp">Anycast with TCP and UDP</h2>
+
+<p>A key component to the functionality and cost effective nature of
+anycast is that the network does not maintain state for flows. Every
+packet is handled individually through the routing table, saving memory
+and resources that would be required to track individual flows, similar
+to the functionality of a load balancing appliance.</p>
+
+<p>As previously described, every packet in a flow hashes to the same next
+hop. However, if that next hop is no longer valid, the traffic flows to
+another anycast next hop instead. For example, in the image below, if
+leaf03 fails, traffic flows to a different anycast address; in this
+case, server04:</p>
+
+<p><img src="attachments/8363010/8363015.png" alt="" />{height=&ldquo;250&rdquo;} </p>
+
+<p>For stateless applications that rely on UDP, like DNS, this does not
+present a problem. However, for stateful applications that rely on TCP,
+like HTTP, this breaks any existing traffic flows, such as a file
+download. If the TCP three-way handshake was established on server03,
+after the failure, server04 would have no connection built and would
+send a TCP reset message back to the client, restarting the session.</p>
+
+<p>This is not to say that it is not possible to use TCP-based applications
+for anycast. However, TCP applications in an anycast environment should
+have short-lived flows (measured in seconds or less) to reduce the
+impact of network changes or failures.</p>
+
+<h2 id="resilient-hashing">Resilient Hashing</h2>
+
+<p><a href="Equal-Cost-Multipath-Load-Sharing---Hardware-ECMP_8362929.html#EqualCostMultipathLoadSharing-HardwareECMP-resilient_hashing">Resilient
+hashing</a>
+provides a method to prevent failures from impacting the hash result of
+unrelated flows. However, resilient hashing does not prevent rehashing
+when new next hops are added.</p>
+
+<p>As previously mentioned, the hardware hashing function determines which
+path gets used for a given flow. The simplified version of that hash is
+the combination of protocol, source IP address, destination IP address,
+source layer 4 port and destination layer 4 port. The full hashing
+function includes not only these fields but also the list of possible
+layer 3 next hop addresses. The hash result is passed through a <em>modulo</em>
+of the number of next hop addresses. If the number of next hop addresses
+changes, through either addition or subtraction of the next hops, this
+changes the hash result for all traffic, including flows that have
+already established.</p>
+
+<p>Continuing with the example in Figure 3, leaf03 is in a failed state, so
+traffic is hashing to server04. This is a result of the hash considering
+three possible next hop IPs (leaf01, leaf02, leaf04). When leaf03 is
+brought back online, the number of possible next hop IPs grows to four.
+This changes the modulo value that is part of the hashing function,
+which may result in traffic being sent to a different server, even if
+previously unaffected by the change.</p>
+
+<p>As you can see below, leaf03 is in a failed state. The blue dotted flow
+uses leaf02 to reach server02.</p>
+
+<p><img src="attachments/8363010/8363014.png" alt="" />{height=&ldquo;250&rdquo;}</p>
+
+<p>As leaf03 is brought back into service, the hashing function on spine02
+changes, impacting the blue dotted flow:</p>
+
+<p><img src="attachments/8363010/8363013.png" alt="" />{height=&ldquo;250&rdquo;}</p>
+
+<p>Just as the addition of a device can impact unrelated traffic, the
+removal of a device can also impact unrelated traffic, since again, the
+modulo of the hash function is changed. You can see this below,
+where the blue dotted flow goes through leaf01 and the red dashed line
+goes through leaf04.</p>
+
+<p><img src="attachments/8363010/8363012.png" alt="" />{height=&ldquo;250&rdquo;} </p>
+
+<p>Now, leaf02 has failed. As a result, the modulo on spine02 has changed
+from four possible next hops to only three next hops. In this example,
+the red dashed line has rehashed to leaf03:</p>
+
+<p><img src="attachments/8363010/8363011.png" alt="" />{height=&ldquo;250&rdquo;} </p>
+
+<p>To help solve this issue, resilient hashing can prevent traffic flows
+from shifting on unrelated failure scenarios. With resilient hashing
+enabled, the failure of leaf02 does not impact both existing flows,
+since they do not currently flow through leaf02:</p>
+
+<p><img src="attachments/8363010/8363009.png" alt="" />{height=&ldquo;250&rdquo;} </p>
+
+<p>Although resilient hashing can prevent rehashing on next hop failure, it
+cannot prevent rehashing on next hop addition.</p>
+
+<p>You can read more information on resilient hashing in the <a href="Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP">ECMP
+chapter</a>.</p>
+
+<h2 id="applications-for-anycast">Applications for Anycast</h2>
+
+<p>As previously mentioned, UDP-based applications are great candidates for
+anycast architectures, such as NTP or DNS.</p>
+
+<p>When considering applications to be deployed in an anycast scenario, the
+first two questions to answer are:</p>
+
+<ul>
+<li>Whether the application relies on TCP for proper sequencing of data.</li>
+<li>Whether the application relies on more than one session as part of
+the application.</li>
+</ul>
+
+<h3 id="applications-with-multiple-connections">Applications with Multiple Connections</h3>
+
+<p>The network has no knowledge of any sessions or relationships between
+different sessions for the same application. This affects protocols that
+rely on more than one TCP or UDP connection to function properly — one
+example being FTP.</p>
+
+<p>FTP data transfers require two connections: one for control and one for
+the file transfer. These two connections are independent, with their own
+TCP ports. Consider the scenario where an FTP server was deployed in an
+anycast architecture. When the secondary data connection is initiated,
+the traffic is destined initially to the same FTP server IP address, but
+the network hashes this traffic as a new, unique flow because the ports
+are different. This may result in the new session ending up on a new
+server. The new server would only accept that data connection if the FTP
+server application was capable of robust information sharing, as it has
+no history of the original request in the control session.</p>
+
+<h3 id="initiating-traffic-vs-receiving-traffic">Initiating Traffic vs. Receiving Traffic</h3>
+
+<p>It is also important to understand that an outbound TCP session should
+never be initiated over an anycast IP address, as traffic that
+originates from an anycast IP address may not return to the same anycast
+server after the network hash. Contrast this with inbound sessions,
+where the network hash is the same for all packets in a flow, so the
+inbound traffic will hash to the same anycast server.</p>
+
+<h3 id="tcp-and-anycast">TCP and Anycast</h3>
+
+<p>TCP-based applications can be used with anycast, with the following
+recommendations:</p>
+
+<ul>
+<li>TCP sessions are short lived.</li>
+<li>The impact of a failed session or TCP reset does not impact the
+application. For example, a web page refresh is acceptable.</li>
+<li>There is application-level session management that is completely
+independent of the TCP session.</li>
+<li>A redirection middleware layer handles incorrectly hashed flows.</li>
+</ul>
+
+<p>TCP applications that have longer-lived flows should not be used as
+anycast services. For example:</p>
+
+<ul>
+<li>FTP or other large file transfers.</li>
+<li>Transactions that must be completed and journaled. For example,
+financial transactions.</li>
+<li>Streaming media without application-level automated recovery.</li>
+</ul>
+
+<p>It should be noted that anycast TCP is possible and has been implemented
+by a number of organizations, one notable example being LinkedIn.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Anycast can provide a low cost, highly scalable implementation for
+services. However, the limitations inherent in network-based ECMP makes
+anycast challenging to integrate with some applications. An anycast
+architecture is best suited for stateless applications or applications
+that are able to share session state at the application layer.</p>
+
+<h2 id="attachments">Attachments:</h2>
+
+<p><img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8363010/8363017.png">anycast_1.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8363010/8363016.png">anycast_2.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8363010/8363015.png">anycast_3.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8363010/8363014.png">anycast_4.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8363010/8363013.png">anycast_5.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8363010/8363012.png">anycast_6.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8363010/8363011.png">anycast_7.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8363010/8363009.png">anycast_8.png</a> (image/png)</p>
+</article>
+
+      
+<div class="align-center book-git-footer justify-between">
+  
+  <div>
+    <a href="https://github.com/cawleyflower/testDocs/commit/0f1fa77f244c4b4642688df1f5e961e88daa6e08" title='Last modified March 4, 2019 16:11 EST by Cawleyflower' target="_blank" rel="noopener">
+      <img src="/svg/code-merge.svg" /> Last Modified Mar 4, 2019
+    </a>
+  </div>
+  
+  
+</div>
+
+
+    </div>
+
+    
+  
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#anycast-design-guide">Anycast Design Guide</a>
+<ul>
+<li><a href="#anycast-architecture">Anycast Architecture</a></li>
+<li><a href="#anycast-with-tcp-and-udp">Anycast with TCP and UDP</a></li>
+<li><a href="#resilient-hashing">Resilient Hashing</a></li>
+<li><a href="#applications-for-anycast">Applications for Anycast</a>
+<ul>
+<li><a href="#applications-with-multiple-connections">Applications with Multiple Connections</a></li>
+<li><a href="#initiating-traffic-vs-receiving-traffic">Initiating Traffic vs. Receiving Traffic</a></li>
+<li><a href="#tcp-and-anycast">TCP and Anycast</a></li>
+</ul></li>
+<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#attachments">Attachments:</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+  
+</body>
+
+</html>

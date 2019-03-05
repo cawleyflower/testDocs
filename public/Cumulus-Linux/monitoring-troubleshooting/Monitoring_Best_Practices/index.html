@@ -1,0 +1,1885 @@
+<!DOCTYPE html><html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monitoring Best Practices | Cumulus Networks Documentation</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+<link rel="stylesheet" href="/book.min.50a619ce4c0e99594908d162684f42218608aa6fde2bd83cca5025d59ba535e3.css">
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+<h2 class="book-brand">
+  <a href="http://example.org/">Cumulus Networks Documentation</a>
+</h2>
+
+
+
+    
+
+
+  
+  
+    
+    
+  
+ 
+  <ul>
+    
+    <li><a href="/Cumulus-Linux/installation-management/">
+    Installation Management</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/">Adding and Updating Packages</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/">Installing a New Cumulus Linux Image</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/">Managing Cumulus Linux Disk Images</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/">Upgrading Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Using_Snapshots/">Using Snapshots</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/">Zero Touch Provisioning Z T P</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer1-switch-ports/">
+    Layer1 Switch Ports</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/802.1X_Interfaces/">802.1 X Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Buffer_and_Queue_Management/">Buffer and Queue Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Relays/">D H C P Relays</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Servers/">D H C P Servers</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Facebook_Voyager_Optical_Interfaces/">Facebook Voyager Optical Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Prescriptive_Topology_Manager_-_PTM/">Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/Interface_Configuration_and_Management/">Interface Configuration and Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/switch_port_attributes/Switch_Port_Attributes/">Switch Port Attributes</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer2/">
+    Layer2</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Prescriptive_Topology_Manager_-_PTM/">Copy of Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Spanning_Tree_and_Rapid_Spanning_Tree/">Copy of Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Ethernet_Bridging_-_VLANs/">Ethernet Bridging v L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/IGMP_and_MLD_Snooping/">I G M P and M L D Snooping</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/LACP_Bypass/">L a C P Bypass</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Link_Layer_Discovery_Protocol/">Link Layer Discovery Protocol</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Multi-Chassis_Link_Aggregation_-_MLAG/">Multi Chassis Link Aggregation M L a G</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Spanning_Tree_and_Rapid_Spanning_Tree/">Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Virtual_Router_Redundancy_-_VRR/">Virtual Router Redundancy v R R</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/bonding_link_aggregation/Bonding_-_Link_Aggregation/">Bonding Link Aggregation</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/Traditional_Bridge_Mode/">Traditional Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN-aware_Bridge_Mode/">V L a N Aware Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN_Tagging/">V L a N Tagging</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/link_layer_discovery_protocol/voice_vlan/Voice_VLAN/">Voice v L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/virtual_router_redundancy/ifplugd/ifplugd/">Ifplugd</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer3/">
+    Layer3</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Address_Resolution_Protocol_-_ARP/">Address Resolution Protocol a R P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Bidirectional_Forwarding_Detection_-_BFD/">Bidirectional Forwarding Detection B F D</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Border_Gateway_Protocol_-_BGP/">Border Gateway Protocol B G P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Configuring_FRRouting/">Configuring F R Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP/">Equal Cost Multipath Load Sharing Hardware E C M P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/FRRouting_Overview/">F R Routing Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/GRE_Tunneling/">G R E Tunneling</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Introduction_to_Routing_Protocols/">Introduction to Routing Protocols</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Management_VRF/">Management v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Network_Topology/">Network Topology</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_-_OSPF/">Open Shortest Path First O S P F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_v3_-_OSPFv3/">Open Shortest Path First V3 O S P Fv3</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Policy-based_Routing/">Policy Based Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Protocol_Independent_Multicast_-_PIM/">Protocol Independent Multicast P I M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Redistribute_Neighbor/">Redistribute Neighbor</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Routing/">Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Segment_Routing/">Segment Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Virtual_Routing_and_Forwarding_-_VRF/">Virtual Routing and Forwarding v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/configuring_frrouting/comparing_nclu_and_vtysh_commands/Comparing_NCLU_and_vtysh_Commands/">Comparing N C L U and Vtysh Commands</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/frrouting_overview/Upgrading_from_Quagga_to_FRRouting/">Upgrading From Quagga to F R Routing</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/monitoring-troubleshooting/">
+    Monitoring Troubleshooting</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/ASIC_Monitoring/">A S I C Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/FRRouting_Log_Message_Reference/">F R Routing Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Best_Practices/" class="active">Monitoring Best Practices</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_System_Hardware/">Monitoring System Hardware</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Virtual_Device_Counters/">Monitoring Virtual Device Counters</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Network_Troubleshooting/">Network Troubleshooting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Resource_Diagnostics_Using_cl-resource-query/">Resource Diagnostics Using Cl Resource Query</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Simple_Network_Management_Protocol_SNMP_Monitoring/">Simple Network Management Protocol S N M P Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Single_User_Mode_-_Boot_Recovery/">Single User Mode Boot Recovery</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Troubleshooting_Network_Interfaces/">Troubleshooting Network Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Understanding_the_cl-support_Output_File/">Understanding the Cl Support Output File</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/monitoring_system_hardware/network_switch_port_led_and_stats_led/Network_Switch_Port_LED_and_Status_LED_Guidelines/">Network Switch Port L E D and Status L E D Guidelines</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/monitoring_system_statistics/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow/">Monitoring System Statistics and Network Traffic With S Flow</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/using_nclu_to_troubleshoot/Using_NCLU_to_Troubleshoot_Your_Network_Configuration/">Using N C L U to Troubleshoot Your Network Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/simple_network_management/using_nutanix_prisim_as_monitoring_tool/Using_Nutanix_Prism_as_a_Monitoring_Tool/">Using Nutanix Prism as a Monitoring Tool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/switchd_Log_Message_Reference/">Switchd Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/troubleshooting_network_interfaces/monitoring_interfaces_and_transcievers_using_ethtool/Monitoring_Interfaces_and_Transceivers_Using_ethtool/">Monitoring Interfaces and Transceivers Using Ethtool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_log_files/Troubleshooting_Log_Files/">Troubleshooting Log Files</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_the_etc_directory/Troubleshooting_the_etc_Directory/">Troubleshooting the Etc Directory</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-solutions/">
+    Network Solutions</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Anycast_Design_Guide/">Anycast Design Guide</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Hyperconverged_Solution_with_Nutanix/">Cumulus Hyperconverged Solution With Nutanix</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Networks_Services_Demos/">Cumulus Networks Services Demos</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Data_Center_Host_to_ToR_Architecture/">Data Center Host to to R Architecture</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Docker_on_Cumulus_Linux/">Docker on Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/OpenStack_Neutron_ML2_and_Cumulus_Linux/">Open Stack Neutron M L2 and Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/RDMA_over_Converged_Ethernet_-_RoCE/">R D M a Over Converged Ethernet Ro C E</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-visualization/">
+    Network Visualization</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Eng_Update_of_VXLAN_Hyperloop/">Eng Update of v X L a N Hyperloop</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Ethernet_Virtual_Private_Network_-_EVPN/">Ethernet Virtual Private Network E v P N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs/">Hybrid Cloud Connectivity With Qin Q and v X L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/LNV_Full_Example/">L N v Full Example</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Lightweight_Network_Virtualization_Overview/">Lightweight Network Virtualization Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Static_VXLAN_Configurations/">Static v X L a N Configurations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Routing/">V X L a N Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Scale/">V X L a N Scale</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Tunnel_DSCP_Operations__DRAFT/">V X L a N Tunnel D S C P Operations — D R a F T</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Virtualization_Integrations/">Virtualization Integrations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_mac_bindings/Static_MAC_Bindings_with_VXLAN/">Static M a C Bindings With v X L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_vxlan_tunnels/Static_VXLAN_Tunnels/">Static v X L a N Tunnels</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_hardware_vteps_vmware_nsx-mh/Integrating_Hardware_VTEPs_with_VMware_NSX-MH/">Integrating Hardware v T E Ps With v Mware N S X M H</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_midonet_openstack/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack/">Integrating Hardware v T E Ps With Midokura Mido Net and Open Stack</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_vmware_nsx-v/Integrating_Hardware_VTEPs_with_VMware_NSX-V/">Integrating Hardware v T E Ps With v Mware N S X V</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/ovsdb_server_high_availability/OVSDB_Server_High_Availability/">O v S D B Server High Availability</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/system-config/">
+    System Config</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Authentication_Authorization_and_Accounting/">Authentication Authorization and Accounting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_a_Global_Proxy/">Configuring a Global Proxy</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_switchd/">Configuring Switchd</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Copy_of_Netfilter_-_ACLs/">Copy of Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/HTTP_API/">H T T P a P I</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Netfilter_-_ACLs/">Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/">Network Command Line Utility N C L U</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Power_over_Ethernet_-_PoE/">Power Over Ethernet Po E</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Services_and_Daemons_in_Cumulus_Linux/">Services and Daemons in Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Setting_Date_and_Time/">Setting Date and Time</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/LDAP_Authentication_and_Authorization/">L D a P Authentication and Authorization</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/RADIUS_AAA/">R a D I U S a a A</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/SSH_for_Remote_Access/">S S H for Remote Access</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/TACACS_Plus/">T a C a C S Plus</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/User_Accounts/">User Accounts</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/Using_sudo_to_Delegate_Privileges/">Using Sudo to Delegate Privileges</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Default_Cumulus_Linux_ACL_Configuration/">Default Cumulus Linux a C L Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Filtering_Learned_MAC_Addresses/">Filtering Learned M a C Addresses</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/whats-new/">What&#39;s New</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/cumulus-linux-index/Cumulus_Linux_Index/">Cumulus Linux Index</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/quick-start/Quick_Start_Guide/">Quick Start Guide</a>
+    </li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+</nav>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" />
+  </label>
+  <strong>Monitoring Best Practices</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="monitoring-best-practices">Monitoring Best Practices</h1>
+
+<p>The following monitoring processes are considered best practices for
+reviewing and troubleshooting potential issues with Cumulus Linux
+environments. In addition, several of the more common issues have been
+listed, with potential solutions included.</p>
+
+<h2 id="contents">Contents</h2>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}This topic
+describes &hellip;</p>
+
+<ul>
+<li><a href="#MonitoringBestPractices-Overview">Overview</a>
+
+<ul>
+<li><a href="#MonitoringBestPractices-TrendAnalysisUsingMetrics">Trend Analysis Using
+Metrics</a></li>
+<li><a href="#MonitoringBestPractices-GenerateAlertswithTriggeredLogging">Generate Alerts with Triggered
+Logging</a></li>
+<li><a href="#MonitoringBestPractices-LogFormatting">Log Formatting</a></li>
+</ul></li>
+<li><a href="#MonitoringBestPractices-Hardware">Hardware</a></li>
+<li><a href="#MonitoringBestPractices-SystemData">System Data</a>
+
+<ul>
+<li><a href="#MonitoringBestPractices-CPUIdleTime">CPU Idle Time</a></li>
+<li><a href="#MonitoringBestPractices-DiskUsage">Disk Usage</a></li>
+</ul></li>
+<li><a href="#MonitoringBestPractices-ProcessRestart">Process Restart </a></li>
+<li><a href="#MonitoringBestPractices-Layer1ProtocolsandInterfaces">Layer 1 Protocols and
+Interfaces</a></li>
+<li><a href="#MonitoringBestPractices-Layer2Protocols">Layer 2 Protocols</a></li>
+<li><a href="#MonitoringBestPractices-Layer3Protocols">Layer 3 Protocols</a>
+
+<ul>
+<li><a href="#MonitoringBestPractices-BGP">BGP</a></li>
+<li><a href="#MonitoringBestPractices-OSPF">OSPF</a></li>
+<li><a href="#MonitoringBestPractices-RouteandHostEntries">Route and Host
+Entries</a></li>
+<li><a href="#MonitoringBestPractices-RoutingLogs">Routing Logs</a></li>
+</ul></li>
+<li><a href="#MonitoringBestPractices-Logging">Logging</a></li>
+<li><a href="#MonitoringBestPractices-ProtocolsandServices">Protocols and
+Services</a></li>
+<li><a href="#MonitoringBestPractices-DeviceManagement">Device Management</a>
+
+<ul>
+<li><a href="#MonitoringBestPractices-DeviceAccessLogs">Device Access Logs</a></li>
+<li><a href="#MonitoringBestPractices-DeviceSuperUserCommandLogs">Device Super User Command
+Logs</a></li>
+</ul></li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+
+<p>This document describes:</p>
+
+<ul>
+<li>Metrics that you can poll from Cumulus Linux and use in trend
+analysis</li>
+<li>Critical log messages that you can monitor for triggered alerts </li>
+</ul>
+
+<h3 id="trend-analysis-using-metrics">Trend Analysis Using Metrics</h3>
+
+<p>A metric is a quantifiable measure that is used to track and assess the
+status of a specific infrastructure component. It is a check collected
+over time. Examples of metrics include bytes on an interface, CPU
+utilization, and total number of routes.</p>
+
+<p>Metrics are more valuable when used for trend analysis.</p>
+
+<h3 id="generate-alerts-with-triggered-logging">Generate Alerts with Triggered Logging</h3>
+
+<p>Triggered issues are normally sent to <code>syslog</code>, but can go to another
+log file depending on the feature. In Cumulus Linux, <code>rsyslog</code> handles
+all logging, including local and remote logging. Logs are the best
+method to use for generating alerts when the system transitions from a
+stable steady state.</p>
+
+<p>Sending logs to a centralized collector, then creating alerts based on
+critical logs is an optimal solution for alerting.</p>
+
+<h3 id="log-formatting">Log Formatting</h3>
+
+<p>Most log files in Cumulus Linux use a standard presentation format. For
+example, consider this <code>syslog</code> entry:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">2017-03-08T06:26:43.569681+00:00 leaf01 sysmonitor: Critically high CPU use: 99%</code></pre></div>
+<ul>
+<li><em>2017-03-08T06:26:43.569681+00:00</em> is the timestamp.</li>
+<li><em>leaf01</em> is the hostname.</li>
+<li><em>sysmonitor</em> is the process that is the source of the message.</li>
+<li><em>Critically high CPU use: 99%</em> is the message.</li>
+</ul>
+
+<p>For brevity and legibility, the timestamp and hostname have been omitted
+from the examples in this chapter.</p>
+
+<h2 id="hardware">Hardware</h2>
+
+<p>The <code>smond</code> process provides monitoring functionality for various switch
+hardware elements. Minimum or maximum values are output depending on the
+flags applied to the basic command. The hardware elements and applicable
+commands and flags are listed in the table below.</p>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Hardware Element</th>
+<th>Monitoring Command/s</th>
+<th>Interval Poll</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Temperature</td>
+<td><pre><code>cumulus@switch:~$ smonctl -j
+cumulus@switch:~$ smonctl -j -s TEMP[X]</code></pre></td>
+<td>10 seconds</td>
+</tr>
+<tr class="even">
+<td>Fan</td>
+<td><pre><code>cumulus@switch:~$ smonctl -j
+cumulus@switch:~$ smonctl -j -s FAN[X]</code></pre></td>
+<td>10 seconds</td>
+</tr>
+<tr class="odd">
+<td>PSU</td>
+<td><pre><code>cumulus@switch:~$ smonctl -j
+cumulus@switch:~$ smonctl -j -s PSU[X]</code></pre></td>
+<td>10 seconds</td>
+</tr>
+<tr class="even">
+<td>PSU Fan</td>
+<td><pre><code>cumulus@switch:~$ smonctl -j
+cumulus@switch:~$ smonctl -j -s PSU[X]Fan[X]</code></pre></td>
+<td>10 seconds</td>
+</tr>
+<tr class="odd">
+<td>PSU Temperature</td>
+<td><pre><code>cumulus@switch:~$ smonctl -j
+cumulus@switch:~$ smonctl -j -s PSU[X]Temp[X]</code></pre></td>
+<td>10 seconds</td>
+</tr>
+<tr class="even">
+<td>Voltage</td>
+<td><pre><code>cumulus@switch:~$ smonctl -j
+cumulus@switch:~$ smonctl -j -s Volt[X]</code></pre></td>
+<td>10 seconds</td>
+</tr>
+<tr class="odd">
+<td>Front Panel LED</td>
+<td><pre><code>cumulus@switch:~$ ledmgrd -d
+cumulus@switch:~$ ledmgrd -j</code></pre></td>
+<td>5 seconds</td>
+</tr>
+</tbody>
+</table>
+
+<p>Not all switch models include a sensor for monitoring power consumption
+and voltage. See <a href="Monitoring-System-Hardware_8362594.html#MonitoringSystemHardware-smond">this
+note</a>
+for details.</p>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Hardware Logs</th>
+<th>Log Location</th>
+<th>Log Entries</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>High temperature</td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>/usr/sbin/smond : : Temp1(Board Sensor near CPU): state changed from UNKNOWN to OK
+/usr/sbin/smond : : Temp2(Board Sensor Near Virtual Switch): state changed from UNKNOWN to OK
+/usr/sbin/smond : : Temp3(Board Sensor at Front Left Corner): state changed from UNKNOWN to OK
+/usr/sbin/smond : : Temp4(Board Sensor at Front Right Corner): state changed from UNKNOWN to OK
+/usr/sbin/smond : : Temp5(Board Sensor near Fan): state changed from UNKNOWN to OK</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="even">
+<td>Fan speed issues</td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>/usr/sbin/smond : : Fan1(Fan Tray 1, Fan 1): state changed from UNKNOWN to OK
+/usr/sbin/smond : : Fan2(Fan Tray 1, Fan 2): state changed from UNKNOWN to OK
+/usr/sbin/smond : : Fan3(Fan Tray 2, Fan 1): state changed from UNKNOWN to OK
+/usr/sbin/smond : : Fan4(Fan Tray 2, Fan 2): state changed from UNKNOWN to OK
+/usr/sbin/smond : : Fan5(Fan Tray 3, Fan 1): state changed from UNKNOWN to OK
+/usr/sbin/smond : : Fan6(Fan Tray 3, Fan 2): state changed from UNKNOWN to OK</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="odd">
+<td>PSU failure</td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>/usr/sbin/smond : : PSU1Fan1(PSU1 Fan): state changed from UNKNOWN to OK
+/usr/sbin/smond : : PSU2Fan1(PSU2 Fan): state changed from UNKNOWN to BAD</code></pre>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="system-data">System Data</h2>
+
+<p>Cumulus Linux includes a number of ways to monitor various aspects of
+system data. In addition, alerts are issued in high risk situations.</p>
+
+<h3 id="cpu-idle-time">CPU Idle Time</h3>
+
+<p>When a CPU reports five high CPU alerts within a span of five minutes,
+an alert is logged.</p>
+
+<p>Short High CPU Bursts</p>
+
+<p>Short bursts of high CPU can occur during <code>switchd</code> churn or routing
+protocol startup. Do not set alerts for these short bursts.</p>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>System Element</th>
+<th>Monitoring Command/s</th>
+<th>Interval Poll</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CPU utilization</td>
+<td><pre><code>cumulus@switch:~$ cat /proc/stat
+cumulus@switch:~$ top -b -n 1</code></pre></td>
+<td>30 seconds</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>CPU Logs</th>
+<th>Log Location</th>
+<th>Log Entries</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>High CPU</td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>sysmonitor: Critically high CPU use: 99%
+systemd[1]: Starting Monitor system resources (cpu, memory, disk)...
+systemd[1]: Started Monitor system resources (cpu, memory, disk).
+sysmonitor: High CPU use: 89%
+systemd[1]: Starting Monitor system resources (cpu, memory, disk)...
+systemd[1]: Started Monitor system resources (cpu, memory, disk).
+sysmonitor: CPU use no longer high: 77%</code></pre>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+
+<p>Cumulus Linux 3.0 and later monitors CPU, memory, and disk space via
+<code>sysmonitor</code>. The configurations for the thresholds are stored in
+<code>/etc/cumulus/sysmonitor.conf</code>. More information is available
+with <code>man sysmonitor</code>.</p>
+
+<table>
+<thead>
+<tr>
+<th>CPU measure</th>
+<th align="left">Thresholds</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Use</td>
+<td align="left">Alert: 90% Crit: 95%</td>
+</tr>
+
+<tr>
+<td>Process Load</td>
+<td align="left">Alarm: 95% Crit: 125%</td>
+</tr>
+</tbody>
+</table>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}Click here
+to see differences between Cumulus Linux 2.5 ESR and 3.0 and later&hellip;</p>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>CPU Logs</th>
+<th>Log Location</th>
+<th>Log Entries</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>High CPU</td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>jdoo[2803]: &#39;localhost&#39; cpu system usage of 41.1% matches resource limit [cpu system usage&gt;30.0%]
+jdoo[4727]: &#39;localhost&#39; sysloadavg(15min) of 111.0 matches resource limit [sysloadavg(15min)&gt;110.0]</code></pre>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+
+<p>In Cumulus Linux 2.5, CPU logs are created with each unique threshold:</p>
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>CPU measure</th>
+<th>&lt; 2.5 Threshold</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>User</td>
+<td><p>70%</p></td>
+</tr>
+<tr class="even">
+<td>System</td>
+<td>30%</td>
+</tr>
+<tr class="odd">
+<td>Wait</td>
+<td>20%</td>
+</tr>
+</tbody>
+</table>
+
+<p>In Cumulus Linux 2.5, CPU and memory warnings are generated with <code>jdoo</code>.
+The configuration for the thresholds is stored in
+<code>/etc/jdoo/jdoorc.d/cl-utilities.rc</code>.</p>
+
+<h3 id="disk-usage">Disk Usage</h3>
+
+<p>When monitoring disk utilization, you can exclude <code>tmpfs</code> from
+monitoring.</p>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>System Element</th>
+<th>Monitoring Command/s</th>
+<th>Interval Poll</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Disk utilization</td>
+<td><pre><code>cumulus@switch:~$ /bin/df -x tmpfs</code></pre></td>
+<td>300 seconds</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="process-restart">Process Restart </h2>
+
+<p>In Cumulus Linux 3.0 and later, <code>systemd</code> is responsible for monitoring
+and restarting processes.</p>
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Process Element</th>
+<th>Monitoring Command/s</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>View processes monitored by <code>systemd</code></td>
+<td><pre><code>cumulus@switch:~$ systemctl status
+        </code></pre></td>
+</tr>
+</tbody>
+</table>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}Click here
+to changes from Cumulus Linux 2.5 ESR to 3.0 and later&hellip;</p>
+
+<p>Cumulus Linux 2.5.2 through 2.5 ESR uses a forked version of <code>monit</code>
+called <code>jdoo</code> to monitor processes. If the process fails, <code>jdoo</code> invokes
+<code>init.d</code> to restart the process. </p>
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Process Element</th>
+<th>Monitoring Command/s</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>View processes monitored by jdoo</td>
+<td><pre><code>cumulus@switch:~$ jdoo summary</code></pre></td>
+</tr>
+<tr class="even">
+<td>View process restarts</td>
+<td><pre><code>cumulus@switch:~$ sudo cat /var/log/syslog</code></pre></td>
+</tr>
+<tr class="odd">
+<td>View current process state</td>
+<td><pre><code>cumulus@switch:~$ ps -aux</code></pre></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="layer-1-protocols-and-interfaces">Layer 1 Protocols and Interfaces</h2>
+
+<p>Link and port state interface transitions are logged to
+<code>/var/log/syslog</code> and <code>/var/log/switchd.log</code>.</p>
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Interface Element</th>
+<th>Monitoring Command/s</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Link state</td>
+<td><pre><code>cumulus@switch:~$ cat /sys/class/net/[iface]/operstate          
+cumulus@switch:~$ net show interface all json</code></pre></td>
+</tr>
+<tr class="even">
+<td>Link speed</td>
+<td><pre><code>cumulus@switch:~$ cat /sys/class/net/[iface]/speed           
+cumulus@switch:~$ net show interface all json</code></pre></td>
+</tr>
+<tr class="odd">
+<td>Port state</td>
+<td><pre><code>cumulus@switch:~$ ip link show
+cumulus@switch:~$ net show interface all json</code></pre></td>
+</tr>
+<tr class="even">
+<td>Bond state</td>
+<td><pre><code>cumulus@switch:~$ cat /proc/net/bonding/[bond]
+cumulus@switch:~$ net show interface all json</code></pre></td>
+</tr>
+</tbody>
+</table>
+
+<p>Interface counters are obtained from either querying the hardware or the
+Linux kernel. The two outputs should align, but the Linux kernel
+aggregates the output from the hardware.</p>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Interface Counter Element</th>
+<th>Monitoring Command/s</th>
+<th>Interval Poll</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Interface counters</td>
+<td><pre><code>cumulus@switch:~$ cat /sys/class/net/[iface]/statistics/[stat_name]
+cumulus@switch:~$ net show counters json
+cumulus@switch:~$ cl-netstat -j
+cumulus@switch:~$ ethtool -S [iface]</code></pre></td>
+<td>10 seconds</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer 1 Logs</th>
+<th>Log Location</th>
+<th>Log Entries</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Link failure/Link flap</td>
+<td><pre><code>/var/log/switchd.log</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>switchd[5692]: nic.c:213 nic_set_carrier: swp17: setting kernel carrier: down
+switchd[5692]: netlink.c:291 libnl: swp1, family 0, ifi 20, oper down
+switchd[5692]: nic.c:213 nic_set_carrier: swp1: setting kernel carrier: up
+switchd[5692]: netlink.c:291 libnl: swp17, family 0, ifi 20, oper up</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="even">
+<td>Unidirectional link</td>
+<td><pre><code>/var/log/switchd.log
+/var/log/ptm.log</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>ptmd[7146]: ptm_bfd.c:2471 Created new session 0x1 with peer 10.255.255.11 port swp1
+ptmd[7146]: ptm_bfd.c:2471 Created new session 0x2 with peer fe80::4638:39ff:fe00:5b port swp1
+ptmd[7146]: ptm_bfd.c:2471 Session 0x1 down to peer 10.255.255.11, Reason 8
+ptmd[7146]: ptm_bfd.c:2471 Detect timeout on session 0x1 with peer 10.255.255.11, in state 1</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="odd">
+<td><p>Bond Negotiation</p>
+<ul>
+<li>Working</li>
+</ul></td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>kernel: [85412.763193] bonding: bond0 is being created...
+kernel: [85412.770014] bond0: Enslaving swp2 as a backup interface with an up link
+kernel: [85412.775216] bond0: Enslaving swp1 as a backup interface with an up link
+kernel: [85412.797393] IPv6: ADDRCONF(NETDEV_UP): bond0: link is not ready
+kernel: [85412.799425] IPv6: ADDRCONF(NETDEV_CHANGE): bond0: link becomes ready</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="even">
+<td><p>Bond Negotiation</p>
+<ul>
+<li>Failing</li>
+</ul></td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>kernel: [85412.763193] bonding: bond0 is being created...
+kernel: [85412.770014] bond0: Enslaving swp2 as a backup interface with an up link
+kernel: [85412.775216] bond0: Enslaving swp1 as a backup interface with an up link
+kernel: [85412.797393] IPv6: ADDRCONF(NETDEV_UP): bond0: link is not ready</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="odd">
+<td><p>MLAG peerlink negotiation</p>
+<ul>
+<li>Working</li>
+</ul></td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>lldpd[998]: error while receiving frame on swp50: Network is down
+lldpd[998]: error while receiving frame on swp49: Network is down
+kernel: [76174.262893] peerlink: Setting ad_actor_system to 44:38:39:00:00:11
+kernel: [76174.264205] 8021q: adding VLAN 0 to HW filter on device peerlink
+mstpd: one_clag_cmd: setting (1) peer link: peerlink
+mstpd: one_clag_cmd: setting (1) clag state: up
+mstpd: one_clag_cmd: setting system-mac 44:38:39:ff:40:94
+mstpd: one_clag_cmd: setting clag-role secondary</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="even">
+<td> </td>
+<td><pre><code>/var/log/clagd.log</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>clagd[14003]: Cleanup is executing.
+clagd[14003]: Cannot open file &quot;/tmp/pre-clagd.q7XiO
+clagd[14003]: Cleanup is finished
+clagd[14003]: Beginning execution of clagd version 1
+clagd[14003]: Invoked with: /usr/sbin/clagd --daemon
+clagd[14003]: Role is now secondary
+clagd[14003]: HealthCheck: role via backup is second
+clagd[14003]: HealthCheck: backup active
+clagd[14003]: Initial config loaded
+clagd[14003]: The peer switch is active.
+clagd[14003]: Initial data sync from peer done.
+clagd[14003]: Initial handshake done.
+clagd[14003]: Initial data sync to peer done.</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="odd">
+<td><p>MLAG peerlink negotiation</p>
+<ul>
+<li>Failing</li>
+</ul></td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>lldpd[998]: error while receiving frame on swp50: Network is down
+lldpd[998]: error while receiving frame on swp49: Network is down
+kernel: [76174.262893] peerlink: Setting ad_actor_system to 44:38:39:00:00:11
+kernel: [76174.264205] 8021q: adding VLAN 0 to HW filter on device peerlink
+mstpd: one_clag_cmd: setting (1) peer link: peerlink
+mstpd: one_clag_cmd: setting (1) clag state: down
+mstpd: one_clag_cmd: setting system-mac 44:38:39:ff:40:94
+mstpd: one_clag_cmd: setting clag-role secondary</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="even">
+<td> </td>
+<td><pre><code>/var/log/clagd.log</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>clagd[26916]: Cleanup is executing.
+clagd[26916]: Cannot open file &quot;/tmp/pre-clagd.6M527vvGX0/brbatch&quot; for reading: No such file or directory
+clagd[26916]: Cleanup is finished
+clagd[26916]: Beginning execution of clagd version 1.3.0
+clagd[26916]: Invoked with: /usr/sbin/clagd --daemon 169.254.1.2 peerlink.4094 44:38:39:FF:01:01 --priority 1000 --backupIp 10.0.0.2
+clagd[26916]: Role is now secondary
+clagd[26916]: Initial config loaded</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="odd">
+<td><p>MLAG port negotiation</p>
+<ul>
+<li>Working</li>
+</ul>
+<p> </p></td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>kernel: [77419.112195] bonding: server01 is being created...
+lldpd[998]: error while receiving frame on swp1: Network is down
+kernel: [77419.122707] 8021q: adding VLAN 0 to HW filter on device swp1
+kernel: [77419.126408] server01: Enslaving swp1 as a backup interface with a down link
+kernel: [77419.177175] server01: Setting ad_actor_system to 44:38:39:ff:40:94
+kernel: [77419.190874] server01: Warning: No 802.3ad response from the link partner for any adapters in the bond
+kernel: [77419.191448] IPv6: ADDRCONF(NETDEV_UP): server01: link is not ready
+kernel: [77419.191452] 8021q: adding VLAN 0 to HW filter on device server01
+kernel: [77419.192060] server01: link status definitely up for interface swp1, 1000 Mbps full duplex
+kernel: [77419.192065] server01: now running without any active interface!
+kernel: [77421.491811] IPv6: ADDRCONF(NETDEV_CHANGE): server01: link becomes ready
+mstpd: one_clag_cmd: setting (1) mac 44:38:39:00:00:17 &lt;server01, None&gt;</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="even">
+<td> </td>
+<td><pre><code>/var/log/clagd.log</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>clagd[14003]: server01 is now dual connected.</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="odd">
+<td><p>MLAG port negotiation</p>
+<ul>
+<li>Failing</li>
+</ul>
+<p> </p></td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>kernel: [79290.290999] bonding: server01 is being created...
+kernel: [79290.299645] 8021q: adding VLAN 0 to HW filter on device swp1
+kernel: [79290.301790] server01: Enslaving swp1 as a backup interface with a down link
+kernel: [79290.358294] server01: Setting ad_actor_system to 44:38:39:ff:40:94
+kernel: [79290.373590] server01: Warning: No 802.3ad response from the link partner for any adapters in the bond
+kernel: [79290.374024] IPv6: ADDRCONF(NETDEV_UP): server01: link is not ready
+kernel: [79290.374028] 8021q: adding VLAN 0 to HW filter on device server01
+kernel: [79290.375033] server01: link status definitely up for interface swp1, 1000 Mbps full duplex
+kernel: [79290.375037] server01: now running without any active interface!</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="even">
+<td> </td>
+<td><pre><code>/var/log/clagd.log</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>clagd[14291]: Conflict (server01): matching clag-id (1) not configured on peer
+...
+clagd[14291]: Conflict cleared (server01): matching clag-id (1) detected on peer </code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="odd">
+<td><p>MLAG port negotiation</p>
+<ul>
+<li>Flapping</li>
+</ul></td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>mstpd: one_clag_cmd: setting (0) mac 00:00:00:00:00:00 &lt;server01, None&gt;
+mstpd: one_clag_cmd: setting (1) mac 44:38:39:00:00:03 &lt;server01, None&gt;</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="even">
+<td> </td>
+<td><pre><code>/var/log/clagd.log</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>clagd[14291]: server01 is no longer dual connected
+clagd[14291]: server01 is now dual connected.</code></pre>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+
+<p>Prescriptive Topology Manager (PTM) uses LLDP information to compare
+against a <code>topology.dot</code> file that describes the network. It has built
+in alerting capabilities, so it is preferable to use PTM on box rather
+than polling LLDP information regularly. The PTM code is available on
+the Cumulus Networks <a href="https://github.com/CumulusNetworks/ptm">GitHub
+repository</a>. Additional PTM,
+BFD, and associated logs are documented in the code.</p>
+
+<p>Cumulus Networks recommends that you track peering information through
+PTM. For more information, refer to the <a href="https://docs.cumulusnetworks.com/display/DOCS/Prescriptive+Topology+Manager+-+PTM">Prescriptive Topology Manager
+documentation</a>.</p>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Neighbor Element</th>
+<th>Monitoring Command/s</th>
+<th>Interval Poll</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>LLDP Neighbor</td>
+<td><pre><code>cumulus@switch:~$ lldpctl -f json</code></pre></td>
+<td>300 seconds</td>
+</tr>
+<tr class="even">
+<td>Prescriptive Topology Manager</td>
+<td><pre><code>cumulus@switch:~$ ptmctl -j [-d]</code></pre></td>
+<td>Triggered</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="layer-2-protocols">Layer 2 Protocols</h2>
+
+<p>Spanning tree is a protocol that prevents loops in a layer 2
+infrastructure. In a stable state, the spanning tree protocol should
+stably converge. Monitoring the Topology Change Notifications (TCN) in
+STP helps identify when new BPDUs are received.</p>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Interface Counter Element</th>
+<th>Monitoring Command/s</th>
+<th>Interval Poll</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>STP TCN Transitions</td>
+<td><pre><code>cumulus@switch:~$ mstpctl showbridge json
+cumulus@switch:~$ mstpctl showport json</code></pre></td>
+<td>60 seconds</td>
+</tr>
+<tr class="even">
+<td>MLAG peer state</td>
+<td><pre><code>cumulus@switch:~$ clagctl status
+cumulus@switch:~$ clagd -j
+cumulus@switch:~$ cat /var/log/clagd.log</code></pre></td>
+<td><p>60 seconds</p></td>
+</tr>
+<tr class="odd">
+<td>MLAG peer MACs</td>
+<td><pre><code>cumulus@switch:~$ clagctl dumppeermacs
+cumulus@switch:~$ clagctl dumpourmacs </code></pre></td>
+<td>300 seconds </td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer 2 Logs</th>
+<th>Log Location</th>
+<th>Log Entries</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Spanning Tree Working</td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>kernel: [1653877.190724] device swp1 entered promiscuous mode
+kernel: [1653877.190796] device swp2 entered promiscuous mode
+mstpd: create_br: Add bridge bridge
+mstpd: clag_set_sys_mac_br: set bridge mac 00:00:00:00:00:00
+mstpd: create_if: Add iface swp1 as port#2 to bridge bridge
+mstpd: set_if_up: Port swp1 : up
+mstpd: create_if: Add iface swp2 as port#1 to bridge bridge
+mstpd: set_if_up: Port swp2 : up
+mstpd: set_br_up: Set bridge bridge up
+mstpd: MSTP_OUT_set_state: bridge:swp1:0 entering blocking state(Disabled)
+mstpd: MSTP_OUT_set_state: bridge:swp2:0 entering blocking state(Disabled)
+mstpd: MSTP_OUT_flush_all_fids: bridge:swp1:0 Flushing forwarding database
+mstpd: MSTP_OUT_flush_all_fids: bridge:swp2:0 Flushing forwarding database
+mstpd: MSTP_OUT_set_state: bridge:swp1:0 entering learning state(Designated)
+mstpd: MSTP_OUT_set_state: bridge:swp2:0 entering learning state(Designated)
+sudo: pam_unix(sudo:session): session closed for user root
+mstpd: MSTP_OUT_set_state: bridge:swp1:0 entering forwarding state(Designated)
+mstpd: MSTP_OUT_set_state: bridge:swp2:0 entering forwarding state(Designated)
+mstpd: MSTP_OUT_flush_all_fids: bridge:swp2:0 Flushing forwarding database
+mstpd: MSTP_OUT_flush_all_fids: bridge:swp1:0 Flushing forwarding database</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="even">
+<td>Spanning Tree Blocking</td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>mstpd: MSTP_OUT_set_state: bridge:swp2:0 entering blocking state(Designated)
+mstpd: MSTP_OUT_set_state: bridge:swp2:0 entering learning state(Designated)
+mstpd: MSTP_OUT_set_state: bridge:swp2:0 entering forwarding state(Designated)
+mstpd: MSTP_OUT_flush_all_fids: bridge:swp2:0 Flushing forwarding database
+mstpd: MSTP_OUT_flush_all_fids: bridge:swp2:0 Flushing forwarding database
+mstpd: MSTP_OUT_set_state: bridge:swp2:0 entering blocking state(Alternate)
+mstpd: MSTP_OUT_flush_all_fids: bridge:swp2:0 Flushing forwarding database</code></pre>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="layer-3-protocols">Layer 3 Protocols</h2>
+
+<p>When FRRouting boots up for the first time, there is a different log
+file for each daemon that is activated. If the log file is ever edited
+(for example, through <code>vtysh</code> or <code>frr.conf</code>), the integrated
+configuration sends all logs to the same file.</p>
+
+<p>To send FRRouting logs to syslog, apply the configuration <code>log syslog</code>
+in <code>vtysh</code>.</p>
+
+<h3 id="bgp">BGP</h3>
+
+<p>When monitoring BGP, check if BGP peers are operational. There is not
+much value in alerting on the current operational state of the peer;
+monitoring the transition is more valuable, which you can do by
+monitoring <code>syslog</code>.</p>
+
+<p>Monitoring the routing table provides trending on the size of the
+infrastructure. This is especially useful when integrated with
+host-based solutions (such as Routing on the Host) when the routes track
+with the number of applications available.</p>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>BGP Element</th>
+<th>Monitoring Command/s</th>
+<th>Interval Poll</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BGP peer failure</td>
+<td><pre><code>cumulus@switch:~$ vtysh -c &quot;show ip bgp summary json&quot;
+cumulus@switch:~$ cl-bgp summary show json</code></pre></td>
+<td>60 seconds</td>
+</tr>
+<tr class="even">
+<td>BGP route table</td>
+<td><pre><code>cumulus@switch:~$ vtysh -c &quot;show ip bgp json&quot;
+cumulus@switch:~$ cl-bgp route show</code></pre></td>
+<td>600 seconds</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>BGP Logs</th>
+<th>Log Location</th>
+<th>Log Entries</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BGP peer down</td>
+<td><pre><code>/var/log/syslog
+/var/log/frr/*.log </code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>bgpd[3000]: %NOTIFICATION: sent to neighbor swp1 4/0 (Hold Timer Expired) 0 bytes
+bgpd[3000]: %ADJCHANGE: neighbor swp1 Down BGP Notification send</code></pre>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="ospf">OSPF</h3>
+
+<p>When monitoring OSPF, check if OSPF peers are operational. There is not
+much value in alerting on the current operational state of the peer;
+monitoring the transition is more valuable, which you can do by
+monitoring <code>syslog</code>.</p>
+
+<p>Monitoring the routing table provides trending on the size of the
+infrastructure. This is especially useful when integrated with
+host-based solutions (such as Routing on the Host) when the routes track
+with the number of applications available.</p>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>OSPF Element</th>
+<th>Monitoring Command(s)</th>
+<th>Interval Poll</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>OSPF protocol peer failure</td>
+<td><pre><code>cumulus@switch:~$ vtysh -c &quot;show ip ospf neighbor all json&quot;
+cumulus@switch:~$ cl-ospf summary show json</code></pre></td>
+<td>60 seconds</td>
+</tr>
+<tr class="even">
+<td>OSPF link state database</td>
+<td><pre><code>cumulus@switch:~$ vtysh - c &quot;show ip ospf database&quot;</code></pre></td>
+<td>600 seconds</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="route-and-host-entries">Route and Host Entries</h3>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Route Element</th>
+<th>Monitoring Command(s)</th>
+<th>Interval Poll</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Host Entries</td>
+<td><pre><code>cumulus@switch:~$ cl-resource-query
+cumulus@switch:~$ cl-resource-query -k</code></pre></td>
+<td>600 seconds</td>
+</tr>
+<tr class="even">
+<td>Route Entries</td>
+<td><pre><code>cumulus@switch:~$ cl-resource-query
+cumulus@switch:~$ cl-resource-query -k</code></pre></td>
+<td>600 seconds</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="routing-logs">Routing Logs</h3>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Layer 3 Logs</th>
+<th>Log Location</th>
+<th>Log Entries</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Routing protocol process crash</td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>frrouting[1824]: Starting FRRouting daemons (prio:10):. zebra. bgpd.
+bgpd[1847]: BGPd 1.0.0+cl3u7 starting: vty@2605, bgp@&lt;all&gt;:179
+zebra[1840]: client 12 says hello and bids fair to announce only bgp routes
+watchquagga[1853]: watchquagga 1.0.0+cl3u7 watching [zebra bgpd], mode [phased zebra restart]
+watchquagga[1853]: bgpd state -&gt; up : connect succeeded
+watchquagga[1853]: bgpd state -&gt; down : read returned EOF
+cumulus-core: Running cl-support for core files bgpd.3030.1470341944.core.core_helper
+core_check.sh[4992]: Please send /var/support/cl_support__spine01_20160804_201905.tar.xz to Cumulus support
+watchquagga[1853]: Forked background command [pid 6665]: /usr/sbin/service frr restart bgpd
+watchquagga[1853]: watchquagga 0.99.24+cl3u2 watching [zebra bgpd ospfd], mode [phased zebra restart]
+watchquagga[1853]: zebra state -&gt; up : connect succeeded
+watchquagga[1853]: bgpd state -&gt; up : connect succeeded
+watchquagga[1853]: Watchquagga: Notifying Systemd we are up and running</code></pre>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="logging">Logging</h2>
+
+<p>The table below describes the various log files.</p>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Logging Element</th>
+<th>Monitoring Command/s</th>
+<th>Log Location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>syslog</td>
+<td>Catch all log file. Identifies memory leaks and CPU spikes.</td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+</tr>
+<tr class="even">
+<td>switchd functionality</td>
+<td>Hardware Abstraction Layer (HAL).</td>
+<td><pre><code>/var/log/switchd.log</code></pre></td>
+</tr>
+<tr class="odd">
+<td>Routing daemons</td>
+<td>FRRouting zebra daemon details.</td>
+<td><pre><code>/var/log/daemon.log</code></pre></td>
+</tr>
+<tr class="even">
+<td>Routing protocol</td>
+<td><p>The log file is configurable in FRRouting. When FRRouting first boots, it uses the non-integrated configuration so each routing protocol has its own log file. After booting up, FRRouting switches over to using the integrated configuration, so that all logs go to a single place.</p>
+<p>To edit the location of the log files, use the <code>log file &lt;location&gt; </code> command. By default, FRRouting logs are not sent to <code>syslog</code>. Use the <code>log syslog &lt;level&gt;</code> command to send logs through <code>rsyslog</code> and into <code>/var/log/syslog</code>.</p>
+<div>
+<div>
+<p>To write syslog debug messages to the log file, you must run the <code>log syslog debug</code> command to configure FRR with syslog severity 7 (debug); otherwise, when you issue a debug command such as, <code>debug bgp neighbor-events</code>, no output is sent to <code>/var/log/frr/frr.log</code>. <br />
+However, when you manually define a log target with the <code>log file /var/log/frr/debug.log</code> command, FRR automatically defaults to severity 7 (debug) logging and the output is logged to <code>/var/log/frr/frr.log</code>.</p>
+</div>
+</div></td>
+<td><pre><code>/var/log/frr/zebra.log
+/var/log/frr/{protocol}.log
+/var/log/frr/frr.log</code></pre></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="protocols-and-services">Protocols and Services</h2>
+
+<p>Run the following command to confirm that the NTP process is working
+correctly and that the switch clock is in sync with NTP:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ /usr/bin/ntpq -p</code></pre></div>
+<h2 id="device-management">Device Management</h2>
+
+<h3 id="device-access-logs">Device Access Logs</h3>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Access Logs</th>
+<th>Log Location</th>
+<th>Log Entries</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>User Authentication and Remote Login</td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>sshd[31830]: Accepted publickey for cumulus from 192.168.0.254 port 45582 ssh2: RSA 38:e6:3b:cc:04:ac:41:5e:c9:e3:93:9d:cc:9e:48:25
+sshd[31830]: pam_unix(sshd:session): session opened for user cumulus by (uid=0)</code></pre>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="device-super-user-command-logs">Device Super User Command Logs</h3>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Super User Command Logs</th>
+<th>Log Location</th>
+<th>Log Entries</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Executing commands using sudo</td>
+<td><pre><code>/var/log/syslog</code></pre></td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>sudo:  cumulus : TTY=unknown ; PWD=/home/cumulus ; USER=root ; COMMAND=/tmp/script_9938.sh -v
+sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+sudo: pam_unix(sudo:session): session closed for user root</code></pre>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+</article>
+
+      
+<div class="align-center book-git-footer justify-between">
+  
+  <div>
+    <a href="https://github.com/cawleyflower/testDocs/commit/0f1fa77f244c4b4642688df1f5e961e88daa6e08" title='Last modified March 4, 2019 16:11 EST by Cawleyflower' target="_blank" rel="noopener">
+      <img src="/svg/code-merge.svg" /> Last Modified Mar 4, 2019
+    </a>
+  </div>
+  
+  
+</div>
+
+
+    </div>
+
+    
+  
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#monitoring-best-practices">Monitoring Best Practices</a>
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#overview">Overview</a>
+<ul>
+<li><a href="#trend-analysis-using-metrics">Trend Analysis Using Metrics</a></li>
+<li><a href="#generate-alerts-with-triggered-logging">Generate Alerts with Triggered Logging</a></li>
+<li><a href="#log-formatting">Log Formatting</a></li>
+</ul></li>
+<li><a href="#hardware">Hardware</a></li>
+<li><a href="#system-data">System Data</a>
+<ul>
+<li><a href="#cpu-idle-time">CPU Idle Time</a></li>
+<li><a href="#disk-usage">Disk Usage</a></li>
+</ul></li>
+<li><a href="#process-restart">Process Restart </a></li>
+<li><a href="#layer-1-protocols-and-interfaces">Layer 1 Protocols and Interfaces</a></li>
+<li><a href="#layer-2-protocols">Layer 2 Protocols</a></li>
+<li><a href="#layer-3-protocols">Layer 3 Protocols</a>
+<ul>
+<li><a href="#bgp">BGP</a></li>
+<li><a href="#ospf">OSPF</a></li>
+<li><a href="#route-and-host-entries">Route and Host Entries</a></li>
+<li><a href="#routing-logs">Routing Logs</a></li>
+</ul></li>
+<li><a href="#logging">Logging</a></li>
+<li><a href="#protocols-and-services">Protocols and Services</a></li>
+<li><a href="#device-management">Device Management</a>
+<ul>
+<li><a href="#device-access-logs">Device Access Logs</a></li>
+<li><a href="#device-super-user-command-logs">Device Super User Command Logs</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+  
+</body>
+
+</html>

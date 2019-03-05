@@ -4,6 +4,7 @@
 @import "notices";
 @import "syntax";
 
+
 html {
   font-size: $font-size-base;
   letter-spacing: 0.33px;
@@ -20,7 +21,7 @@ body {
   color: $body-font-color;
   background: $body-background;
 
-  font-family: "Helvetica", sans-serif;
+  font-family: $cumulus-font-family, sans-serif;
   font-weight: $body-font-weight;
 
   text-rendering: optimizeLegibility;

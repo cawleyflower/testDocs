@@ -1,0 +1,1037 @@
+<!DOCTYPE html><html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Using Nutanix Prism as a Monitoring Tool | Cumulus Networks Documentation</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+<link rel="stylesheet" href="/book.min.50a619ce4c0e99594908d162684f42218608aa6fde2bd83cca5025d59ba535e3.css">
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+<h2 class="book-brand">
+  <a href="http://example.org/">Cumulus Networks Documentation</a>
+</h2>
+
+
+
+    
+
+
+  
+  
+    
+    
+  
+ 
+  <ul>
+    
+    <li><a href="/Cumulus-Linux/installation-management/">
+    Installation Management</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/">Adding and Updating Packages</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/">Installing a New Cumulus Linux Image</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/">Managing Cumulus Linux Disk Images</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/">Upgrading Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Using_Snapshots/">Using Snapshots</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/">Zero Touch Provisioning Z T P</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer1-switch-ports/">
+    Layer1 Switch Ports</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/802.1X_Interfaces/">802.1 X Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Buffer_and_Queue_Management/">Buffer and Queue Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Relays/">D H C P Relays</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Servers/">D H C P Servers</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Facebook_Voyager_Optical_Interfaces/">Facebook Voyager Optical Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Prescriptive_Topology_Manager_-_PTM/">Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/Interface_Configuration_and_Management/">Interface Configuration and Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/switch_port_attributes/Switch_Port_Attributes/">Switch Port Attributes</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer2/">
+    Layer2</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Prescriptive_Topology_Manager_-_PTM/">Copy of Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Spanning_Tree_and_Rapid_Spanning_Tree/">Copy of Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Ethernet_Bridging_-_VLANs/">Ethernet Bridging v L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/IGMP_and_MLD_Snooping/">I G M P and M L D Snooping</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/LACP_Bypass/">L a C P Bypass</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Link_Layer_Discovery_Protocol/">Link Layer Discovery Protocol</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Multi-Chassis_Link_Aggregation_-_MLAG/">Multi Chassis Link Aggregation M L a G</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Spanning_Tree_and_Rapid_Spanning_Tree/">Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Virtual_Router_Redundancy_-_VRR/">Virtual Router Redundancy v R R</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/bonding_link_aggregation/Bonding_-_Link_Aggregation/">Bonding Link Aggregation</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/Traditional_Bridge_Mode/">Traditional Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN-aware_Bridge_Mode/">V L a N Aware Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN_Tagging/">V L a N Tagging</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/link_layer_discovery_protocol/voice_vlan/Voice_VLAN/">Voice v L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/virtual_router_redundancy/ifplugd/ifplugd/">Ifplugd</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer3/">
+    Layer3</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Address_Resolution_Protocol_-_ARP/">Address Resolution Protocol a R P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Bidirectional_Forwarding_Detection_-_BFD/">Bidirectional Forwarding Detection B F D</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Border_Gateway_Protocol_-_BGP/">Border Gateway Protocol B G P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Configuring_FRRouting/">Configuring F R Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP/">Equal Cost Multipath Load Sharing Hardware E C M P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/FRRouting_Overview/">F R Routing Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/GRE_Tunneling/">G R E Tunneling</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Introduction_to_Routing_Protocols/">Introduction to Routing Protocols</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Management_VRF/">Management v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Network_Topology/">Network Topology</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_-_OSPF/">Open Shortest Path First O S P F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_v3_-_OSPFv3/">Open Shortest Path First V3 O S P Fv3</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Policy-based_Routing/">Policy Based Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Protocol_Independent_Multicast_-_PIM/">Protocol Independent Multicast P I M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Redistribute_Neighbor/">Redistribute Neighbor</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Routing/">Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Segment_Routing/">Segment Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Virtual_Routing_and_Forwarding_-_VRF/">Virtual Routing and Forwarding v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/configuring_frrouting/comparing_nclu_and_vtysh_commands/Comparing_NCLU_and_vtysh_Commands/">Comparing N C L U and Vtysh Commands</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/frrouting_overview/Upgrading_from_Quagga_to_FRRouting/">Upgrading From Quagga to F R Routing</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/monitoring-troubleshooting/">
+    Monitoring Troubleshooting</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/ASIC_Monitoring/">A S I C Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/FRRouting_Log_Message_Reference/">F R Routing Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Best_Practices/">Monitoring Best Practices</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_System_Hardware/">Monitoring System Hardware</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Virtual_Device_Counters/">Monitoring Virtual Device Counters</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Network_Troubleshooting/">Network Troubleshooting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Resource_Diagnostics_Using_cl-resource-query/">Resource Diagnostics Using Cl Resource Query</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Simple_Network_Management_Protocol_SNMP_Monitoring/">Simple Network Management Protocol S N M P Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Single_User_Mode_-_Boot_Recovery/">Single User Mode Boot Recovery</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Troubleshooting_Network_Interfaces/">Troubleshooting Network Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Understanding_the_cl-support_Output_File/">Understanding the Cl Support Output File</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/monitoring_system_hardware/network_switch_port_led_and_stats_led/Network_Switch_Port_LED_and_Status_LED_Guidelines/">Network Switch Port L E D and Status L E D Guidelines</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/monitoring_system_statistics/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow/">Monitoring System Statistics and Network Traffic With S Flow</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/using_nclu_to_troubleshoot/Using_NCLU_to_Troubleshoot_Your_Network_Configuration/">Using N C L U to Troubleshoot Your Network Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/simple_network_management/using_nutanix_prisim_as_monitoring_tool/Using_Nutanix_Prism_as_a_Monitoring_Tool/" class="active">Using Nutanix Prism as a Monitoring Tool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/switchd_Log_Message_Reference/">Switchd Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/troubleshooting_network_interfaces/monitoring_interfaces_and_transcievers_using_ethtool/Monitoring_Interfaces_and_Transceivers_Using_ethtool/">Monitoring Interfaces and Transceivers Using Ethtool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_log_files/Troubleshooting_Log_Files/">Troubleshooting Log Files</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_the_etc_directory/Troubleshooting_the_etc_Directory/">Troubleshooting the Etc Directory</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-solutions/">
+    Network Solutions</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Anycast_Design_Guide/">Anycast Design Guide</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Hyperconverged_Solution_with_Nutanix/">Cumulus Hyperconverged Solution With Nutanix</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Networks_Services_Demos/">Cumulus Networks Services Demos</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Data_Center_Host_to_ToR_Architecture/">Data Center Host to to R Architecture</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Docker_on_Cumulus_Linux/">Docker on Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/OpenStack_Neutron_ML2_and_Cumulus_Linux/">Open Stack Neutron M L2 and Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/RDMA_over_Converged_Ethernet_-_RoCE/">R D M a Over Converged Ethernet Ro C E</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-visualization/">
+    Network Visualization</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Eng_Update_of_VXLAN_Hyperloop/">Eng Update of v X L a N Hyperloop</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Ethernet_Virtual_Private_Network_-_EVPN/">Ethernet Virtual Private Network E v P N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs/">Hybrid Cloud Connectivity With Qin Q and v X L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/LNV_Full_Example/">L N v Full Example</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Lightweight_Network_Virtualization_Overview/">Lightweight Network Virtualization Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Static_VXLAN_Configurations/">Static v X L a N Configurations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Routing/">V X L a N Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Scale/">V X L a N Scale</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Tunnel_DSCP_Operations__DRAFT/">V X L a N Tunnel D S C P Operations — D R a F T</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Virtualization_Integrations/">Virtualization Integrations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_mac_bindings/Static_MAC_Bindings_with_VXLAN/">Static M a C Bindings With v X L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_vxlan_tunnels/Static_VXLAN_Tunnels/">Static v X L a N Tunnels</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_hardware_vteps_vmware_nsx-mh/Integrating_Hardware_VTEPs_with_VMware_NSX-MH/">Integrating Hardware v T E Ps With v Mware N S X M H</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_midonet_openstack/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack/">Integrating Hardware v T E Ps With Midokura Mido Net and Open Stack</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_vmware_nsx-v/Integrating_Hardware_VTEPs_with_VMware_NSX-V/">Integrating Hardware v T E Ps With v Mware N S X V</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/ovsdb_server_high_availability/OVSDB_Server_High_Availability/">O v S D B Server High Availability</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/system-config/">
+    System Config</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Authentication_Authorization_and_Accounting/">Authentication Authorization and Accounting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_a_Global_Proxy/">Configuring a Global Proxy</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_switchd/">Configuring Switchd</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Copy_of_Netfilter_-_ACLs/">Copy of Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/HTTP_API/">H T T P a P I</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Netfilter_-_ACLs/">Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/">Network Command Line Utility N C L U</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Power_over_Ethernet_-_PoE/">Power Over Ethernet Po E</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Services_and_Daemons_in_Cumulus_Linux/">Services and Daemons in Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Setting_Date_and_Time/">Setting Date and Time</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/LDAP_Authentication_and_Authorization/">L D a P Authentication and Authorization</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/RADIUS_AAA/">R a D I U S a a A</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/SSH_for_Remote_Access/">S S H for Remote Access</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/TACACS_Plus/">T a C a C S Plus</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/User_Accounts/">User Accounts</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/Using_sudo_to_Delegate_Privileges/">Using Sudo to Delegate Privileges</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Default_Cumulus_Linux_ACL_Configuration/">Default Cumulus Linux a C L Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Filtering_Learned_MAC_Addresses/">Filtering Learned M a C Addresses</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/whats-new/">What&#39;s New</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/cumulus-linux-index/Cumulus_Linux_Index/">Cumulus Linux Index</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/quick-start/Quick_Start_Guide/">Quick Start Guide</a>
+    </li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+</nav>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" />
+  </label>
+  <strong>Using Nutanix Prism as a Monitoring Tool</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="using-nutanix-prism-as-a-monitoring-tool">Using Nutanix Prism as a Monitoring Tool</h1>
+
+<p>Nutanix Prism is a graphical user interface (GUI) for managing
+infrastructure and virtual environments. In order to use it, you need to
+take special steps within Cumulus Linux before you can configure Prism.</p>
+
+<h2 id="contents">Contents</h2>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}This topic
+describes &hellip;</p>
+
+<ul>
+<li><a href="#UsingNutanixPrismasaMonitoringTool-ConfigureCumulusLinux">Configure Cumulus
+Linux</a></li>
+<li><a href="#UsingNutanixPrismasaMonitoringTool-ConfigureNutanix">Configure
+Nutanix </a></li>
+<li><a href="#UsingNutanixPrismasaMonitoringTool-SwitchInformationDisplayedonNutanixPrism">Switch Information Displayed on Nutanix
+Prism</a></li>
+<li><a href="#UsingNutanixPrismasaMonitoringTool-Troubleshooting">Troubleshooting</a></li>
+<li><a href="#UsingNutanixPrismasaMonitoringTool-EnableLLDP/CDPonVMwareESXi(HypervisoronNutanix)">Enable LLDP/CDP on VMware ESXi (Hypervisor on
+Nutanix)</a></li>
+<li><a href="#UsingNutanixPrismasaMonitoringTool-TroubleshootConnectionswithoutLLDPorCDP">Troubleshoot Connections without LLDP or
+CDP</a></li>
+</ul>
+
+<h2 id="configure-cumulus-linux">Configure Cumulus Linux</h2>
+
+<ol>
+<li><p>SSH to the Cumulus Linux switch that needs to be configured,
+replacing <code>[switch]</code> below as appropriate:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ ssh cumulus@[switch]</code></pre></div></li>
+
+<li><p>Confirm the switch is running Cumulus Linux 2.5.5 or newer:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net show system
+
+Penguin Arctica 4806XP
+Cumulus Version 3.4.0
+Build: Cumulus Linux 3.4.0
+
+Chipset: Broadcom Trident2 BCM56854
+
+Port Config: 48 x 10G-SFP+ &amp; 6 x 40G-QSFP+
+
+CPU: (x86_64) Intel Atom C2558 2.40GHz
+
+Uptime: 4 days, 20:53:49</code></pre></div></li>
+
+<li><p>Open the <code>/etc/snmp/snmpd.conf</code> file in an editor.</p></li>
+
+<li><p>Uncomment the following 3 lines in the <code>/etc/snmp/snmpd.conf</code> file,
+and save the file:</p>
+
+<ul>
+<li><p>bridge_pp.py</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">pass_persist .1.3.6.1.2.1.17 /usr/share/snmp/bridge_pp.py</code></pre></div></li>
+
+<li><p>Community</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">rocommunity public  default    -V systemonly</code></pre></div></li>
+
+<li><p>Line directly below the Q-BRIDGE-MIB (.1.3.6.1.2.1.17)</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text"># BRIDGE-MIB and Q-BRIDGE-MIB tables
+view   systemonly  included   .1.3.6.1.2.1.17</code></pre></div></li>
+</ul></li>
+
+<li><p>Restart <code>snmpd</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo systemctl restart snmpd.service
+Restarting network management services: snmpd.</code></pre></div></li>
+</ol>
+
+<h2 id="configure-nutanix">Configure Nutanix </h2>
+
+<ol>
+<li><p>Log into the Nutanix Prism. Nutanix defaults to the Home menu,
+referred to as the Dashboard:</p>
+
+<p><img src="attachments/8362618/8362617.png" alt="" />{height=&ldquo;250&rdquo;}</p></li>
+
+<li><p>Click on the gear
+icon <img src="attachments/8362618/8362619.png" alt="" />{width=&ldquo;30&rdquo;} in the top
+right corner of the dashboard, and select NetworkSwitch:</p>
+
+<p><img src="attachments/8362618/8362620.png" alt="" />{height=&ldquo;250&rdquo;}</p></li>
+
+<li><p>Click the <strong>+Add Switch Configuration</strong> button in the <strong>Network
+Switch Configuration</strong> pop up window.</p></li>
+
+<li><p>Fill out the <strong>Network Switch Configuration</strong> for the Top of Rack
+(ToR) switch configured for snmpd in the previous section:</p>
+
+<p><img src="attachments/8362618/8362621.png" alt="" />{height=&ldquo;250&rdquo;}</p>
+
+<table>
+<thead>
+<tr>
+<th>Configuration Parameter</th>
+<th>Description</th>
+<th>Value Used in Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Switch Management IP Address</td>
+<td>This can be any IP address on the box. In the screenshot above, the eth0 management IP is used.</td>
+<td>192.168.0.111</td>
+</tr>
+
+<tr>
+<td>Host IP Addresses or Host Names</td>
+<td>IP addresses of Nutanix hosts connected to that particular ToR switch.</td>
+<td>192.168.0.171,192.168.0.172,192.168.0.173,192.168.0.174</td>
+</tr>
+
+<tr>
+<td>SNMP Profile</td>
+<td>Saved profiles, for easy configuration when hooking up to multiple switches.</td>
+<td>None</td>
+</tr>
+
+<tr>
+<td>SNMP Version</td>
+<td>SNMP v2c or SNMP v3. Cumulus Linux has only been tested with SNMP v2c for Nutanix integration.</td>
+<td>SNMP v2c</td>
+</tr>
+
+<tr>
+<td>SNMP Community Name</td>
+<td>SNMP v2c uses communities to share MIBs. The default community for snmpd is &lsquo;public&rsquo;.</td>
+<td>public</td>
+</tr>
+</tbody>
+</table>
+
+<p>The rest of the values were not touched for this demonstration. They
+are usually used with SNMP v3.</p></li>
+
+<li><p>Save the configuration. The switch will now be present in
+the <strong>Network Switch Configuration</strong> menu now.</p></li>
+
+<li><p>Close the pop up window to return to the dashboard.</p></li>
+
+<li><p>Open the <strong>Hardware</strong> option from the <strong>Home</strong> dropdown menu:</p>
+
+<p><img src="attachments/8362618/8362622.png" alt="" />{height=&ldquo;250&rdquo;}</p></li>
+
+<li><p>Click the <strong>Table</strong> button.</p></li>
+
+<li><p>Click the <strong>Switch</strong> button. Configured switches are shown in the
+table, as indicated in the screenshot below, and can be selected in
+order to view interface statistics:</p>
+
+<p><img src="attachments/8362618/8362623.png" alt="" />{height=&ldquo;250&rdquo;}</p></li>
+</ol>
+
+<p>The switch has been added correctly, when interfaces hooked up to the
+Nutanix hosts are visible.</p>
+
+<h2 id="switch-information-displayed-on-nutanix-prism">Switch Information Displayed on Nutanix Prism</h2>
+
+<ul>
+<li>Physical Interface (e.g. swp1, swp2).  This will only display swp
+interfaces connected to Nutanix hosts by default.</li>
+<li>Switch ID - Unique identifier that Nutanix keeps track of each port
+ID (see below)</li>
+<li>Index - interface index, in the above demonstration swp49 maps to
+Index 52 because there is a loopback and two ethernet interface
+before the swp starts.</li>
+<li>MTU of interface</li>
+<li>MAC Address of Interface</li>
+<li>Unicast RX Packets (Received)</li>
+<li>Unicast TX Packets (Transmitted) </li>
+<li>Error RX Packets (Received)</li>
+<li>Error TX Packets (Transmitted)</li>
+<li>Discard RX Packets (Received)</li>
+<li>Discard TX Packets (Transmitted) </li>
+</ul>
+
+<p>The Nutanix appliance will use Switch IDs that can also be viewed on the
+Prism CLI (by SSHing to the box). To view information from the Nutanix
+CLI, login using the default username <strong>nutanix</strong>, and the
+password <strong>nutanix/4u</strong>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">nutanix@NTNX-14SM15270093-D-CVM:192.168.0.184:~$ ncli network list-switch
+    Switch ID                 : 00051a76-f711-89b6-0000-000000003bac::5f13678e-6ffd-4b33-912f-f1aa6e8da982
+    Name                      : switch
+    Switch Management Address : 192.168.0.111
+    Description               : Linux switch 3.2.65-1+deb7u2+cl2.5+2 #3.2.65-1+deb7u2+cl2.5+2 SMP Mon Jun 1 18:26:59 PDT 2015 x86_64
+    Object ID                 : enterprises.40310
+    Contact Information       : Admin &lt;admin@company.com&gt;
+    Location Information      : Raleigh, NC
+    Services                  : 72
+    Switch Vendor Name        : Unknown
+    Port Ids                  : 00051a76-f711-89b6-0000-000000003bac::5f13678e-6ffd-4b33-912f-f1aa6e8da982:52, 00051a76-f711-89b6-0000-000000003bac::5f13678e-6ffd-4b33-912f-f1aa6e8da982:53, 00051a76-f711-89b6-0000-000000003bac::5f13678e-6ffd-4b33-912f-f1aa6e8da982:54, 00051a76-f711-89b6-0000-000000003bac::5f13678e-6ffd-4b33-912f-f1aa6e8da982:55</code></pre></div>
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<p>To help visualize the following diagram is provided:</p>
+
+<p><img src="attachments/8362618/8362624.png" alt="" />{height=&ldquo;250&rdquo;}</p>
+
+<table>
+<thead>
+<tr>
+<th>Nutanix Node</th>
+<th>Physical Port</th>
+<th>Cumulus Linux Port</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Node A (Green)</td>
+<td>vmnic2</td>
+<td>swp49</td>
+</tr>
+
+<tr>
+<td>Node B (Blue)</td>
+<td>vmnic2</td>
+<td>swp50</td>
+</tr>
+
+<tr>
+<td>Node C (Red)</td>
+<td>vmnic2</td>
+<td>swp51</td>
+</tr>
+
+<tr>
+<td>Node D (Yellow)</td>
+<td>vmnic2</td>
+<td>swp52</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="enable-lldp-cdp-on-vmware-esxi-hypervisor-on-nutanix">Enable LLDP/CDP on VMware ESXi (Hypervisor on Nutanix)</h2>
+
+<ol>
+<li><p>Follow the directions on one of the following websites to enable
+CDP:</p>
+
+<ul>
+<li><p><a href="http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1003885">kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1003885</a></p></li>
+
+<li><p><a href="http://wahlnetwork.com/2012/07/17/utilizing-cdp-and-lldp-with-vsphere-networking/">wahlnetwork.com/2012/07/17/utilizing-cdp-and-lldp-with-vsphere-networking/</a></p>
+
+<p>For example, switch CDP on:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">root@NX-1050-A:~] esxcli network vswitch standard set -c both -v vSwitch0</code></pre></div>
+<p>Then confirm it is running:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">root@NX-1050-A:~] esxcli network vswitch standard list -v vSwitch0
+vSwitch0
+   Name: vSwitch0
+   Class: etherswitch
+   Num Ports: 4082
+   Used Ports: 12
+   Configured Ports: 128
+   MTU: 1500
+   CDP Status: both
+   Beacon Enabled: false
+   Beacon Interval: 1
+   Beacon Threshold: 3
+   Beacon Required By:
+   Uplinks: vmnic3, vmnic2, vmnic1, vmnic0
+   Portgroups: VM Network, Management Network</code></pre></div>
+<p>The <strong>both</strong> means CDP is now running, and the lldp dameon on
+Cumulus Linux is capable of &lsquo;seeing&rsquo; CDP devices.</p></li>
+</ul></li>
+
+<li><p>After the next CDP interval, the Cumulus Linux box will pick up the
+interface via the <code>lldp</code> daemon:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ lldpctl show neighbor swp49
+-------------------------------------------------------------------------------
+LLDP neighbors:
+-------------------------------------------------------------------------------
+Interface:    swp49, via: CDPv2, RID: 6, Time: 0 day, 00:34:58
+  Chassis:
+    ChassisID:    local NX-1050-A
+    SysName:      NX-1050-A
+    SysDescr:     Releasebuild-2494585 running on VMware ESX
+    MgmtIP:       0.0.0.0
+    Capability:   Bridge, on
+  Port:
+    PortID:       ifname vmnic2
+    PortDescr:    vmnic2
+-------------------------------------------------------------------------------</code></pre></div></li>
+
+<li><p>Use <code>net show </code>to look at <code>lldp</code> information:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net show lldp
+
+Local Port    Speed    Mode                 Remote Port        Remote  Host     Summary
+------------  -------  -------------  ----  -----------------  ---------------  -------------------------
+eth0          1G       Mgmt           ====  swp6               oob-mgmt-switch  IP: 192.168.0.11/24(DHCP)
+swp1          1G       Access/L2      ====  44:38:39:00:00:03  server01         Untagged: br0
+swp51         1G       NotConfigured  ====  swp1               spine01
+swp52         1G       NotConfigured  ====  swp1               spine02</code></pre></div></li>
+</ol>
+
+<p><a href="http://www.nutanix.com/products/acropolis/">Nutanix Acropolis</a> is an
+alternate hypervisor that Nutanix supports. <strong>Acropolis Hypervisor</strong>
+uses the yum packaging system and is capable of installing normal Linux
+lldp daemons to operating just like Cumulus Linux. LLDP should be
+enabled for each interface on the host. Refer
+to <a href="https://community.mellanox.com/docs/DOC-1522">https://community.mellanox.com/docs/DOC-1522</a> for setup
+instructions.</p>
+
+<h2 id="troubleshoot-connections-without-lldp-or-cdp">Troubleshoot Connections without LLDP or CDP</h2>
+
+<ol>
+<li><p>Find the MAC address information in the Prism GUI, located
+in: <strong>Hardware</strong> &gt;<strong> Table</strong> &gt;<strong> Host</strong> &gt;<strong> Host NICs</strong></p></li>
+
+<li><p>Select a MAC address to troubleshoot (e.g. 0c:c4:7a:09:a2:43
+represents vmnic0 which is tied to NX-1050-A).</p></li>
+
+<li><p>List out all the MAC addresses associated to the bridge:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ brctl showmacs br-ntnx
+port name mac addr      vlan    is local?   ageing timer
+swp9      00:02:00:00:00:06 0   no        66.94
+swp52     00:0c:29:3e:32:12 0   no         2.73
+swp49     00:0c:29:5a:f4:7f 0   no         2.73
+swp51     00:0c:29:6f:e1:e4 0   no         2.73
+swp49     00:0c:29:74:0c:ee 0   no         2.73
+swp50     00:0c:29:a9:36:91 0   no         2.73
+swp9      08:9e:01:f8:8f:0c 0   no        13.56
+swp9      08:9e:01:f8:8f:35 0   no         2.73
+swp4      0c:c4:7a:09:9e:d4 0   no        24.05
+swp1      0c:c4:7a:09:9f:8e 0   no        13.56
+swp3      0c:c4:7a:09:9f:93 0   no        13.56
+swp2      0c:c4:7a:09:9f:95 0   no        24.05
+swp52     0c:c4:7a:09:a0:c1 0   no         2.73
+swp51     0c:c4:7a:09:a2:35 0   no         2.73
+swp49     0c:c4:7a:09:a2:43 0   no         2.73
+swp9      44:38:39:00:82:04 0   no         2.73
+swp9      74:e6:e2:f5:a2:80 0   no         2.73
+swp1      74:e6:e2:f5:a2:81 0   yes        0.00
+swp2      74:e6:e2:f5:a2:82 0   yes        0.00
+swp3      74:e6:e2:f5:a2:83 0   yes        0.00
+swp4      74:e6:e2:f5:a2:84 0   yes        0.00
+swp5      74:e6:e2:f5:a2:85 0   yes        0.00
+swp6      74:e6:e2:f5:a2:86 0   yes        0.00
+swp7      74:e6:e2:f5:a2:87 0   yes        0.00
+swp8      74:e6:e2:f5:a2:88 0   yes        0.00
+swp9      74:e6:e2:f5:a2:89 0   yes        0.00
+swp10     74:e6:e2:f5:a2:8a 0   yes        0.00
+swp49     74:e6:e2:f5:a2:b1 0   yes        0.00
+swp50     74:e6:e2:f5:a2:b2 0   yes        0.00
+swp51     74:e6:e2:f5:a2:b3 0   yes        0.00
+swp52     74:e6:e2:f5:a2:b4 0   yes        0.00
+swp9      8e:0f:73:1b:f8:24 0   no         2.73
+swp9      c8:1f:66:ba:60:cf 0   no        66.94</code></pre></div>
+<p>Alternatively, you can use <code>grep</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ brctl showmacs br-ntnx | grep 0c:c4:7a:09:a2:43
+swp49     0c:c4:7a:09:a2:43 0   no         4.58</code></pre></div>
+<p>vmnic1 is now hooked up to swp49. This matches what is seen
+in <code>lldp</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ lldpctl show neighbor swp49
+-------------------------------------------------------------------------------
+LLDP neighbors:
+-------------------------------------------------------------------------------
+Interface:    swp49, via: CDPv2, RID: 6, Time: 0 day, 01:11:12
+  Chassis:
+    ChassisID:    local NX-1050-A
+    SysName:      NX-1050-A
+    SysDescr:     Releasebuild-2494585 running on VMware ESX
+    MgmtIP:       0.0.0.0
+    Capability:   Bridge, on
+  Port:
+    PortID:       ifname vmnic2
+    PortDescr:    vmnic2
+-------------------------------------------------------------------------------</code></pre></div></li>
+</ol>
+
+<h2 id="attachments">Attachments:</h2>
+
+<p><img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362618/8362617.png">Screen Shot
+2016-01-05 at 11.21.05 AM.png</a>
+(image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362618/8362619.png">Screen Shot
+2016-01-05 at 11.39.49 AM.png</a>
+(image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362618/8362620.png">Screen Shot
+2016-01-05 at 11.39.31 AM.png</a>
+(image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362618/8362621.png">Screen Shot
+2016-01-05 at 11.45.38 AM.png</a>
+(image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362618/8362622.png">Screen Shot
+2016-01-05 at 11.58.00 AM (1).png</a>
+(image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362618/8362623.png">Screen Shot
+2016-01-05 at 1.07.48 PM.png</a>
+(image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362618/8362624.png">Screen Shot
+2016-01-06 at 10.36.29 AM.png</a>
+(image/png)</p>
+</article>
+
+      
+<div class="align-center book-git-footer justify-between">
+  
+  <div>
+    <a href="https://github.com/cawleyflower/testDocs/commit/0f1fa77f244c4b4642688df1f5e961e88daa6e08" title='Last modified March 4, 2019 16:11 EST by Cawleyflower' target="_blank" rel="noopener">
+      <img src="/svg/code-merge.svg" /> Last Modified Mar 4, 2019
+    </a>
+  </div>
+  
+  
+</div>
+
+
+    </div>
+
+    
+  
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#using-nutanix-prism-as-a-monitoring-tool">Using Nutanix Prism as a Monitoring Tool</a>
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#configure-cumulus-linux">Configure Cumulus Linux</a></li>
+<li><a href="#configure-nutanix">Configure Nutanix </a></li>
+<li><a href="#switch-information-displayed-on-nutanix-prism">Switch Information Displayed on Nutanix Prism</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+<li><a href="#enable-lldp-cdp-on-vmware-esxi-hypervisor-on-nutanix">Enable LLDP/CDP on VMware ESXi (Hypervisor on Nutanix)</a></li>
+<li><a href="#troubleshoot-connections-without-lldp-or-cdp">Troubleshoot Connections without LLDP or CDP</a></li>
+<li><a href="#attachments">Attachments:</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+  
+</body>
+
+</html>

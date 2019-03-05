@@ -1,0 +1,950 @@
+<!DOCTYPE html><html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Traditional Bridge Mode | Cumulus Networks Documentation</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+<link rel="stylesheet" href="/book.min.50a619ce4c0e99594908d162684f42218608aa6fde2bd83cca5025d59ba535e3.css">
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+<h2 class="book-brand">
+  <a href="http://example.org/">Cumulus Networks Documentation</a>
+</h2>
+
+
+
+    
+
+
+  
+  
+    
+    
+  
+ 
+  <ul>
+    
+    <li><a href="/Cumulus-Linux/installation-management/">
+    Installation Management</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/">Adding and Updating Packages</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/">Installing a New Cumulus Linux Image</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/">Managing Cumulus Linux Disk Images</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/">Upgrading Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Using_Snapshots/">Using Snapshots</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/">Zero Touch Provisioning Z T P</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer1-switch-ports/">
+    Layer1 Switch Ports</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/802.1X_Interfaces/">802.1 X Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Buffer_and_Queue_Management/">Buffer and Queue Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Relays/">D H C P Relays</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Servers/">D H C P Servers</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Facebook_Voyager_Optical_Interfaces/">Facebook Voyager Optical Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Prescriptive_Topology_Manager_-_PTM/">Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/Interface_Configuration_and_Management/">Interface Configuration and Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/switch_port_attributes/Switch_Port_Attributes/">Switch Port Attributes</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer2/">
+    Layer2</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Prescriptive_Topology_Manager_-_PTM/">Copy of Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Spanning_Tree_and_Rapid_Spanning_Tree/">Copy of Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Ethernet_Bridging_-_VLANs/">Ethernet Bridging v L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/IGMP_and_MLD_Snooping/">I G M P and M L D Snooping</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/LACP_Bypass/">L a C P Bypass</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Link_Layer_Discovery_Protocol/">Link Layer Discovery Protocol</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Multi-Chassis_Link_Aggregation_-_MLAG/">Multi Chassis Link Aggregation M L a G</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Spanning_Tree_and_Rapid_Spanning_Tree/">Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Virtual_Router_Redundancy_-_VRR/">Virtual Router Redundancy v R R</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/bonding_link_aggregation/Bonding_-_Link_Aggregation/">Bonding Link Aggregation</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/Traditional_Bridge_Mode/" class="active">Traditional Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN-aware_Bridge_Mode/">V L a N Aware Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN_Tagging/">V L a N Tagging</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/link_layer_discovery_protocol/voice_vlan/Voice_VLAN/">Voice v L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/virtual_router_redundancy/ifplugd/ifplugd/">Ifplugd</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer3/">
+    Layer3</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Address_Resolution_Protocol_-_ARP/">Address Resolution Protocol a R P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Bidirectional_Forwarding_Detection_-_BFD/">Bidirectional Forwarding Detection B F D</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Border_Gateway_Protocol_-_BGP/">Border Gateway Protocol B G P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Configuring_FRRouting/">Configuring F R Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP/">Equal Cost Multipath Load Sharing Hardware E C M P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/FRRouting_Overview/">F R Routing Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/GRE_Tunneling/">G R E Tunneling</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Introduction_to_Routing_Protocols/">Introduction to Routing Protocols</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Management_VRF/">Management v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Network_Topology/">Network Topology</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_-_OSPF/">Open Shortest Path First O S P F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_v3_-_OSPFv3/">Open Shortest Path First V3 O S P Fv3</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Policy-based_Routing/">Policy Based Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Protocol_Independent_Multicast_-_PIM/">Protocol Independent Multicast P I M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Redistribute_Neighbor/">Redistribute Neighbor</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Routing/">Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Segment_Routing/">Segment Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Virtual_Routing_and_Forwarding_-_VRF/">Virtual Routing and Forwarding v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/configuring_frrouting/comparing_nclu_and_vtysh_commands/Comparing_NCLU_and_vtysh_Commands/">Comparing N C L U and Vtysh Commands</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/frrouting_overview/Upgrading_from_Quagga_to_FRRouting/">Upgrading From Quagga to F R Routing</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/monitoring-troubleshooting/">
+    Monitoring Troubleshooting</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/ASIC_Monitoring/">A S I C Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/FRRouting_Log_Message_Reference/">F R Routing Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Best_Practices/">Monitoring Best Practices</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_System_Hardware/">Monitoring System Hardware</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Virtual_Device_Counters/">Monitoring Virtual Device Counters</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Network_Troubleshooting/">Network Troubleshooting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Resource_Diagnostics_Using_cl-resource-query/">Resource Diagnostics Using Cl Resource Query</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Simple_Network_Management_Protocol_SNMP_Monitoring/">Simple Network Management Protocol S N M P Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Single_User_Mode_-_Boot_Recovery/">Single User Mode Boot Recovery</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Troubleshooting_Network_Interfaces/">Troubleshooting Network Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Understanding_the_cl-support_Output_File/">Understanding the Cl Support Output File</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/monitoring_system_hardware/network_switch_port_led_and_stats_led/Network_Switch_Port_LED_and_Status_LED_Guidelines/">Network Switch Port L E D and Status L E D Guidelines</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/monitoring_system_statistics/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow/">Monitoring System Statistics and Network Traffic With S Flow</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/using_nclu_to_troubleshoot/Using_NCLU_to_Troubleshoot_Your_Network_Configuration/">Using N C L U to Troubleshoot Your Network Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/simple_network_management/using_nutanix_prisim_as_monitoring_tool/Using_Nutanix_Prism_as_a_Monitoring_Tool/">Using Nutanix Prism as a Monitoring Tool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/switchd_Log_Message_Reference/">Switchd Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/troubleshooting_network_interfaces/monitoring_interfaces_and_transcievers_using_ethtool/Monitoring_Interfaces_and_Transceivers_Using_ethtool/">Monitoring Interfaces and Transceivers Using Ethtool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_log_files/Troubleshooting_Log_Files/">Troubleshooting Log Files</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_the_etc_directory/Troubleshooting_the_etc_Directory/">Troubleshooting the Etc Directory</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-solutions/">
+    Network Solutions</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Anycast_Design_Guide/">Anycast Design Guide</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Hyperconverged_Solution_with_Nutanix/">Cumulus Hyperconverged Solution With Nutanix</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Networks_Services_Demos/">Cumulus Networks Services Demos</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Data_Center_Host_to_ToR_Architecture/">Data Center Host to to R Architecture</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Docker_on_Cumulus_Linux/">Docker on Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/OpenStack_Neutron_ML2_and_Cumulus_Linux/">Open Stack Neutron M L2 and Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/RDMA_over_Converged_Ethernet_-_RoCE/">R D M a Over Converged Ethernet Ro C E</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-visualization/">
+    Network Visualization</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Eng_Update_of_VXLAN_Hyperloop/">Eng Update of v X L a N Hyperloop</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Ethernet_Virtual_Private_Network_-_EVPN/">Ethernet Virtual Private Network E v P N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs/">Hybrid Cloud Connectivity With Qin Q and v X L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/LNV_Full_Example/">L N v Full Example</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Lightweight_Network_Virtualization_Overview/">Lightweight Network Virtualization Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Static_VXLAN_Configurations/">Static v X L a N Configurations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Routing/">V X L a N Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Scale/">V X L a N Scale</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Tunnel_DSCP_Operations__DRAFT/">V X L a N Tunnel D S C P Operations — D R a F T</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Virtualization_Integrations/">Virtualization Integrations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_mac_bindings/Static_MAC_Bindings_with_VXLAN/">Static M a C Bindings With v X L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_vxlan_tunnels/Static_VXLAN_Tunnels/">Static v X L a N Tunnels</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_hardware_vteps_vmware_nsx-mh/Integrating_Hardware_VTEPs_with_VMware_NSX-MH/">Integrating Hardware v T E Ps With v Mware N S X M H</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_midonet_openstack/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack/">Integrating Hardware v T E Ps With Midokura Mido Net and Open Stack</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_vmware_nsx-v/Integrating_Hardware_VTEPs_with_VMware_NSX-V/">Integrating Hardware v T E Ps With v Mware N S X V</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/ovsdb_server_high_availability/OVSDB_Server_High_Availability/">O v S D B Server High Availability</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/system-config/">
+    System Config</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Authentication_Authorization_and_Accounting/">Authentication Authorization and Accounting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_a_Global_Proxy/">Configuring a Global Proxy</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_switchd/">Configuring Switchd</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Copy_of_Netfilter_-_ACLs/">Copy of Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/HTTP_API/">H T T P a P I</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Netfilter_-_ACLs/">Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/">Network Command Line Utility N C L U</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Power_over_Ethernet_-_PoE/">Power Over Ethernet Po E</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Services_and_Daemons_in_Cumulus_Linux/">Services and Daemons in Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Setting_Date_and_Time/">Setting Date and Time</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/LDAP_Authentication_and_Authorization/">L D a P Authentication and Authorization</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/RADIUS_AAA/">R a D I U S a a A</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/SSH_for_Remote_Access/">S S H for Remote Access</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/TACACS_Plus/">T a C a C S Plus</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/User_Accounts/">User Accounts</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/Using_sudo_to_Delegate_Privileges/">Using Sudo to Delegate Privileges</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Default_Cumulus_Linux_ACL_Configuration/">Default Cumulus Linux a C L Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Filtering_Learned_MAC_Addresses/">Filtering Learned M a C Addresses</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/whats-new/">What&#39;s New</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/cumulus-linux-index/Cumulus_Linux_Index/">Cumulus Linux Index</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/quick-start/Quick_Start_Guide/">Quick Start Guide</a>
+    </li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+</nav>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" />
+  </label>
+  <strong>Traditional Bridge Mode</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="traditional-bridge-mode">Traditional Bridge Mode</h1>
+
+<p>Cumulus Networks recommends you use a <a href="VLAN-aware_Bridge_Mode">VLAN-aware
+bridge</a> on your switch. You use traditional mode
+bridges only if you need to run more than one bridge on the switch or if
+you need to use PVSTP+.</p>
+
+<h2 id="contents">Contents</h2>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}This topic
+describes &hellip;</p>
+
+<ul>
+<li><a href="#TraditionalBridgeMode-CreateaTraditionalModeBridge">Create a Traditional Mode
+Bridge</a>
+
+<ul>
+<li><a href="#TraditionalBridgeMode-ConfigureaTraditionalBridgewithNCLU">Configure a Traditional Bridge
+with NCLU</a></li>
+<li><a href="#TraditionalBridgeMode-ManuallyConfigureaTraditionalModeBridge">Manually Configure a Traditional Mode
+Bridge</a></li>
+</ul></li>
+<li><a href="#TraditionalBridgeMode-VLAN_taggingTrunksinTraditionalBridgeMode">Trunks in Traditional Bridge
+Mode</a>
+
+<ul>
+<li><a href="#TraditionalBridgeMode-TrunkExample">Trunk Example</a></li>
+<li><a href="#TraditionalBridgeMode-VLANTaggingExamples">VLAN Tagging
+Examples</a></li>
+<li><a href="#TraditionalBridgeMode-arpConfigureARPTimers">Configure ARP
+Timers</a></li>
+</ul></li>
+<li><a href="#TraditionalBridgeMode-Caveats">Caveats</a></li>
+</ul>
+
+<h2 id="create-a-traditional-mode-bridge">Create a Traditional Mode Bridge</h2>
+
+<p>You can configure a traditional mode bridge either
+using <a href="Network_Command_Line_Utility_-_NCLU">NCLU</a> or manually editing
+the <code>/etc/network/interfaces</code> file.</p>
+
+<h3 id="configure-a-traditional-bridge-with-nclu">Configure a Traditional Bridge with NCLU</h3>
+
+<p>NCLU has limited support for configuring bridges in traditional mode.  </p>
+
+<p>The traditional bridge must be named something other than
+<em>bridge</em>,<strong> </strong>as that name is reserved for the single <a href="VLAN-aware_Bridge_Mode">VLAN-aware
+bridge</a> that you can configure on the switch. </p>
+
+<p>The following example shows how to create a simple traditional mode
+bridge configuration on the switch, including adding the switch ports
+that are members of the bridge. You can choose to add one or more of the
+following elements to the configuration:</p>
+
+<ul>
+<li>You can add an IP address to provide IP access to the bridge
+interface. </li>
+<li>You can use glob syntax to specify a range of interfaces.</li>
+
+<li><p>You can set two STP attributes on the bridge
+ports: *portautoedge* and <em>portrestrole</em>.</p>
+
+<p>The<strong> </strong><em>portautoedge</em> attribute defaults to <em>yes</em>; to use a setting
+other than the default, you must set this attribute to <em>no</em>. </p>
+
+<p>The <em>portrestrrole</em> attribute defaults to <em>no</em>, but to use a setting
+other than the default, you must specify this attribute
+<strong>without</strong> setting an option. </p>
+
+<p>The defaults for these attributes do not appear in the NCLU
+configuration.</p></li>
+</ul>
+
+<p>To configure a traditional mode bridge using NCLU, do the following:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add bridge my_bridge_A ports swp1-4
+cumulus@switch:~$ net add bridge my_bridge_A ip address 10.10.10.10/24
+cumulus@switch:~$ net add interface swp1 stp portautoedge no
+cumulus@switch:~$ net add interface swp2 stp portrestrrole
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>These commands create the following configuration snippet in
+the <code>/etc/network/interfaces</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ cat /etc/network/interfaces
+ 
+...
+
+auto swp1
+iface swp1
+    mstpctl-portautoedge no
+
+auto swp2
+iface swp2
+    mstpctl-portrestrrole yes
+
+auto swp3
+iface swp3
+
+auto swp4
+iface swp4
+
+...
+auto my_bridge_A 
+iface my_bridge_A 
+    address 10.10.10.10/24 
+    bridge-ports swp1 swp2 swp3 swp4 
+    bridge-vlan-aware no</code></pre></div>
+<p>Verify the configuration by running <code>net show config commands</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net show config commands
+...
+net add bridge my_bridge_A ip address 10.10.10.10/24
+net add bridge my_bridge_A ports swp1,swp2,swp3,swp4
+...
+net add interface swp1 stp portautoedge no
+net add interface swp2 stp portrestrrole
+...</code></pre></div>
+<h3 id="manually-configure-a-traditional-mode-bridge">Manually Configure a Traditional Mode Bridge</h3>
+
+<p>To create a traditional mode bridge manually, you need to hand edit
+the <code>/etc/network/interfaces</code> file:</p>
+
+<ol>
+<li>Open the <code>/etc/network/interfaces</code> file in a text editor.</li>
+
+<li><p>Add a new stanza to create the bridge, and save the file. The
+example below creates a bridge with STP enabled and the MAC address
+ageing timer configured to a lower value than the default:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto my_bridge
+iface my_bridge
+    bridge-ports bond0 swp5 swp6
+    bridge-ageing 150
+    bridge-stp on</code></pre></div>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Configuration Option</th>
+<th>Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>bridge-ports</td>
+<td>List of logical and physical ports belonging to the logical bridge.</td>
+<td>N/A</td>
+</tr>
+<tr class="even">
+<td>bridge-ageing</td>
+<td>Maximum amount of time before a MAC addresses learned on the bridge expires from the bridge MAC cache.</td>
+<td>1800 seconds</td>
+</tr>
+<tr class="odd">
+<td>bridge-stp</td>
+<td><p>Enables spanning tree protocol on this bridge. The default spanning tree mode is Per VLAN Rapid Spanning Tree Protocol (PVRST).</p>
+<p>For more information on spanning-tree configurations see the configuration section: <a href="Spanning_Tree_and_Rapid_Spanning_Tree">Spanning Tree and Rapid Spanning Tree</a>.</p></td>
+<td>off</td>
+</tr>
+</tbody>
+</table>
+
+<p>The name of the bridge must be:</p>
+
+<ul>
+<li>Compliant with Linux interface naming conventions.</li>
+<li>Unique within the switch.</li>
+</ul>
+
+<p>Do not try to bridge the management port, eth0, with any switch
+ports (like swp0, swp1, and so forth). For example, if you created a
+bridge with eth0 and swp1, it will <strong>not</strong> work.</p></li>
+
+<li><p>Reload the network configuration using the <code>ifreload</code> command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ifreload -a</code></pre></div></li>
+</ol>
+
+<p>You can configure multiple bridges, in order to logically divide a
+switch into multiple layer 2 domains. This allows for hosts to
+communicate with other hosts in the same domain, while separating them
+fro hosts in other domains. </p>
+
+<p>You can create only one VLAN-aware bridge on a switch.</p>
+
+<p>The diagram below shows a multiple bridge configuration, where host-1
+and host-2 are connected to bridge-A, while host-3 and host-4 are
+connected to bridge-B. This means that:</p>
+
+<ul>
+<li>host-1 and host-2 can communicate with each other.</li>
+<li>host-3 and host-4 can communicate with each other.</li>
+<li>host-1 and host-2 cannot communicate with host-3 and host-4.</li>
+</ul>
+
+<p><img src="attachments/8362670/8362671.png" alt="" />{width=&ldquo;500&rdquo;}</p>
+
+<p>This example configuration looks like this in
+the <code>/etc/network/interfaces</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto bridge-A
+iface bridge-A
+    bridge-ports swp1 swp2
+    bridge-stp on
+
+auto bridge-B
+iface bridge-B
+    bridge-ports swp3 swp4
+    bridge-stp on</code></pre></div>
+<h2 id="trunks-in-traditional-bridge-mode">Trunks in Traditional Bridge Mode</h2>
+
+<p>The <a href="http://www.ieee802.org/1/pages/802.1Q.html">IEEE standard</a> for
+trunking is 802.1Q. The 802.1Q specification adds a 4 byte header within
+the Ethernet frame that identifies the VLAN of which the frame is a
+member.</p>
+
+<p>802.1Q also identifies an  *untagged* frame as belonging to
+the *native* VLAN (most network devices default their native VLAN to 1).
+The concept of native, non-native, tagged or untagged has generated
+confusion due to mixed terminology and vendor-specific implementations.
+Some clarification is in order:</p>
+
+<ul>
+<li>A  *trunk port* is a switch port configured to send and receive
+802.1Q tagged frames.</li>
+<li>A switch sending an untagged (bare Ethernet) frame on a trunk port
+is sending from the native VLAN defined on the trunk port.</li>
+<li>A switch sending a tagged frame on a trunk port is sending to the
+VLAN identified by the 802.1Q tag.</li>
+<li>A switch receiving an untagged (bare Ethernet) frame on a trunk port
+places that frame in the native VLAN defined on the trunk port.</li>
+<li>A switch receiving a tagged frame on a trunk port places that frame
+in the VLAN identified by the 802.1Q tag.</li>
+</ul>
+
+<p>A bridge in traditional mode has no concept of trunks, just tagged or
+untagged frames. With a trunk of 200 VLANs, there would need to be 199
+bridges, each containing a tagged physical interface, and one bridge
+containing the native untagged VLAN. See the examples below for more
+information.</p>
+
+<p>The interaction of tagged and un-tagged frames on the same trunk often
+leads to undesired and unexpected behavior. A switch that uses VLAN 1
+for the native VLAN may send frames to a switch that uses VLAN 2 for the
+native VLAN, thus merging those two VLANs and their spanning tree state.</p>
+
+<h3 id="trunk-example">Trunk Example</h3>
+
+<p><img src="attachments/8362670/8362669.png" alt="" />{height=&ldquo;400&rdquo;}</p>
+
+<p>To create the above example, add the following configuration to
+the <code>/etc/network/interfaces</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto br-VLAN100
+iface br-VLAN100
+ bridge-ports swp1.100 swp2.100
+ bridge-stp on
+
+
+auto br-VLAN200
+iface br-VLAN200
+ bridge-ports swp1.200 swp2.200
+ bridge-stp on</code></pre></div>
+<h3 id="vlan-tagging-examples">VLAN Tagging Examples</h3>
+
+<p>You can find more examples of VLAN tagging in <a href="VLAN_Tagging">this
+chapter</a>.</p>
+
+<h3 id="configure-arp-timers">Configure ARP Timers</h3>
+
+<p>Cumulus Linux does not often interact directly with end systems as much
+as end systems interact with one another. Thus, after a
+successful <a href="http://linux-ip.net/html/ether-arp.html">address resolution
+protocol</a> (ARP) places a
+neighbor into a reachable state, Cumulus Linux may not interact with the
+client again for a long enough period of time for the neighbor to move
+into a stale state. To keep neighbors in the reachable state, Cumulus
+Linux includes a background process (<code>/usr/bin/neighmgrd</code>) that tracks
+neighbors that move into a stale, delay or probe state, and attempts to
+refresh their state ahead of any removal from the Linux kernel, and thus
+before it would be removed from the hardware forwarding.</p>
+
+<p>The ARP refresh timer defaults to 1080 seconds (18 minutes). You can
+change this setting by following the procedures outlined in
+this <a href="https://support.cumulusnetworks.com/hc/en-us/articles/202012933">knowledge base
+article</a>.</p>
+
+<h2 id="caveats">Caveats</h2>
+
+<p>On Broadcom switches, when two VLAN subinterfaces are bridged to each
+other in a traditional mode bridge, <code>switchd</code> does not assign an
+internal resource ID to the subinterface, which is expected for each
+VLAN subinterface.<br />
+To work around this issue, add a VXLAN on the bridge so that it does not
+require a real tunnel IP address.</p>
+
+<h2 id="attachments">Attachments:</h2>
+
+<p><img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362670/8362671.png">multiple-bridges.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362670/8362669.png">trunk.png</a> (image/png)</p>
+</article>
+
+      
+<div class="align-center book-git-footer justify-between">
+  
+  <div>
+    <a href="https://github.com/cawleyflower/testDocs/commit/0f1fa77f244c4b4642688df1f5e961e88daa6e08" title='Last modified March 4, 2019 16:11 EST by Cawleyflower' target="_blank" rel="noopener">
+      <img src="/svg/code-merge.svg" /> Last Modified Mar 4, 2019
+    </a>
+  </div>
+  
+  
+</div>
+
+
+    </div>
+
+    
+  
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#traditional-bridge-mode">Traditional Bridge Mode</a>
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#create-a-traditional-mode-bridge">Create a Traditional Mode Bridge</a>
+<ul>
+<li><a href="#configure-a-traditional-bridge-with-nclu">Configure a Traditional Bridge with NCLU</a></li>
+<li><a href="#manually-configure-a-traditional-mode-bridge">Manually Configure a Traditional Mode Bridge</a></li>
+</ul></li>
+<li><a href="#trunks-in-traditional-bridge-mode">Trunks in Traditional Bridge Mode</a>
+<ul>
+<li><a href="#trunk-example">Trunk Example</a></li>
+<li><a href="#vlan-tagging-examples">VLAN Tagging Examples</a></li>
+<li><a href="#configure-arp-timers">Configure ARP Timers</a></li>
+</ul></li>
+<li><a href="#caveats">Caveats</a></li>
+<li><a href="#attachments">Attachments:</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+  
+</body>
+
+</html>

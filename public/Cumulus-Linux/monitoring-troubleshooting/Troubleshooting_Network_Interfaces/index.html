@@ -1,0 +1,886 @@
+<!DOCTYPE html><html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Troubleshooting Network Interfaces | Cumulus Networks Documentation</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+<link rel="stylesheet" href="/book.min.50a619ce4c0e99594908d162684f42218608aa6fde2bd83cca5025d59ba535e3.css">
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+<h2 class="book-brand">
+  <a href="http://example.org/">Cumulus Networks Documentation</a>
+</h2>
+
+
+
+    
+
+
+  
+  
+    
+    
+  
+ 
+  <ul>
+    
+    <li><a href="/Cumulus-Linux/installation-management/">
+    Installation Management</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/">Adding and Updating Packages</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/">Installing a New Cumulus Linux Image</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/">Managing Cumulus Linux Disk Images</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/">Upgrading Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Using_Snapshots/">Using Snapshots</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/">Zero Touch Provisioning Z T P</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer1-switch-ports/">
+    Layer1 Switch Ports</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/802.1X_Interfaces/">802.1 X Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Buffer_and_Queue_Management/">Buffer and Queue Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Relays/">D H C P Relays</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Servers/">D H C P Servers</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Facebook_Voyager_Optical_Interfaces/">Facebook Voyager Optical Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Prescriptive_Topology_Manager_-_PTM/">Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/Interface_Configuration_and_Management/">Interface Configuration and Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/switch_port_attributes/Switch_Port_Attributes/">Switch Port Attributes</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer2/">
+    Layer2</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Prescriptive_Topology_Manager_-_PTM/">Copy of Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Spanning_Tree_and_Rapid_Spanning_Tree/">Copy of Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Ethernet_Bridging_-_VLANs/">Ethernet Bridging v L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/IGMP_and_MLD_Snooping/">I G M P and M L D Snooping</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/LACP_Bypass/">L a C P Bypass</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Link_Layer_Discovery_Protocol/">Link Layer Discovery Protocol</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Multi-Chassis_Link_Aggregation_-_MLAG/">Multi Chassis Link Aggregation M L a G</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Spanning_Tree_and_Rapid_Spanning_Tree/">Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Virtual_Router_Redundancy_-_VRR/">Virtual Router Redundancy v R R</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/bonding_link_aggregation/Bonding_-_Link_Aggregation/">Bonding Link Aggregation</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/Traditional_Bridge_Mode/">Traditional Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN-aware_Bridge_Mode/">V L a N Aware Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN_Tagging/">V L a N Tagging</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/link_layer_discovery_protocol/voice_vlan/Voice_VLAN/">Voice v L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/virtual_router_redundancy/ifplugd/ifplugd/">Ifplugd</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer3/">
+    Layer3</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Address_Resolution_Protocol_-_ARP/">Address Resolution Protocol a R P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Bidirectional_Forwarding_Detection_-_BFD/">Bidirectional Forwarding Detection B F D</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Border_Gateway_Protocol_-_BGP/">Border Gateway Protocol B G P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Configuring_FRRouting/">Configuring F R Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP/">Equal Cost Multipath Load Sharing Hardware E C M P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/FRRouting_Overview/">F R Routing Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/GRE_Tunneling/">G R E Tunneling</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Introduction_to_Routing_Protocols/">Introduction to Routing Protocols</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Management_VRF/">Management v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Network_Topology/">Network Topology</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_-_OSPF/">Open Shortest Path First O S P F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_v3_-_OSPFv3/">Open Shortest Path First V3 O S P Fv3</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Policy-based_Routing/">Policy Based Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Protocol_Independent_Multicast_-_PIM/">Protocol Independent Multicast P I M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Redistribute_Neighbor/">Redistribute Neighbor</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Routing/">Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Segment_Routing/">Segment Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Virtual_Routing_and_Forwarding_-_VRF/">Virtual Routing and Forwarding v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/configuring_frrouting/comparing_nclu_and_vtysh_commands/Comparing_NCLU_and_vtysh_Commands/">Comparing N C L U and Vtysh Commands</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/frrouting_overview/Upgrading_from_Quagga_to_FRRouting/">Upgrading From Quagga to F R Routing</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/monitoring-troubleshooting/">
+    Monitoring Troubleshooting</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/ASIC_Monitoring/">A S I C Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/FRRouting_Log_Message_Reference/">F R Routing Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Best_Practices/">Monitoring Best Practices</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_System_Hardware/">Monitoring System Hardware</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Virtual_Device_Counters/">Monitoring Virtual Device Counters</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Network_Troubleshooting/">Network Troubleshooting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Resource_Diagnostics_Using_cl-resource-query/">Resource Diagnostics Using Cl Resource Query</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Simple_Network_Management_Protocol_SNMP_Monitoring/">Simple Network Management Protocol S N M P Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Single_User_Mode_-_Boot_Recovery/">Single User Mode Boot Recovery</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Troubleshooting_Network_Interfaces/" class="active">Troubleshooting Network Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Understanding_the_cl-support_Output_File/">Understanding the Cl Support Output File</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/monitoring_system_hardware/network_switch_port_led_and_stats_led/Network_Switch_Port_LED_and_Status_LED_Guidelines/">Network Switch Port L E D and Status L E D Guidelines</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/monitoring_system_statistics/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow/">Monitoring System Statistics and Network Traffic With S Flow</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/using_nclu_to_troubleshoot/Using_NCLU_to_Troubleshoot_Your_Network_Configuration/">Using N C L U to Troubleshoot Your Network Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/simple_network_management/using_nutanix_prisim_as_monitoring_tool/Using_Nutanix_Prism_as_a_Monitoring_Tool/">Using Nutanix Prism as a Monitoring Tool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/switchd_Log_Message_Reference/">Switchd Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/troubleshooting_network_interfaces/monitoring_interfaces_and_transcievers_using_ethtool/Monitoring_Interfaces_and_Transceivers_Using_ethtool/">Monitoring Interfaces and Transceivers Using Ethtool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_log_files/Troubleshooting_Log_Files/">Troubleshooting Log Files</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_the_etc_directory/Troubleshooting_the_etc_Directory/">Troubleshooting the Etc Directory</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-solutions/">
+    Network Solutions</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Anycast_Design_Guide/">Anycast Design Guide</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Hyperconverged_Solution_with_Nutanix/">Cumulus Hyperconverged Solution With Nutanix</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Networks_Services_Demos/">Cumulus Networks Services Demos</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Data_Center_Host_to_ToR_Architecture/">Data Center Host to to R Architecture</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Docker_on_Cumulus_Linux/">Docker on Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/OpenStack_Neutron_ML2_and_Cumulus_Linux/">Open Stack Neutron M L2 and Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/RDMA_over_Converged_Ethernet_-_RoCE/">R D M a Over Converged Ethernet Ro C E</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-visualization/">
+    Network Visualization</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Eng_Update_of_VXLAN_Hyperloop/">Eng Update of v X L a N Hyperloop</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Ethernet_Virtual_Private_Network_-_EVPN/">Ethernet Virtual Private Network E v P N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs/">Hybrid Cloud Connectivity With Qin Q and v X L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/LNV_Full_Example/">L N v Full Example</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Lightweight_Network_Virtualization_Overview/">Lightweight Network Virtualization Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Static_VXLAN_Configurations/">Static v X L a N Configurations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Routing/">V X L a N Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Scale/">V X L a N Scale</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Tunnel_DSCP_Operations__DRAFT/">V X L a N Tunnel D S C P Operations — D R a F T</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Virtualization_Integrations/">Virtualization Integrations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_mac_bindings/Static_MAC_Bindings_with_VXLAN/">Static M a C Bindings With v X L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_vxlan_tunnels/Static_VXLAN_Tunnels/">Static v X L a N Tunnels</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_hardware_vteps_vmware_nsx-mh/Integrating_Hardware_VTEPs_with_VMware_NSX-MH/">Integrating Hardware v T E Ps With v Mware N S X M H</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_midonet_openstack/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack/">Integrating Hardware v T E Ps With Midokura Mido Net and Open Stack</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_vmware_nsx-v/Integrating_Hardware_VTEPs_with_VMware_NSX-V/">Integrating Hardware v T E Ps With v Mware N S X V</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/ovsdb_server_high_availability/OVSDB_Server_High_Availability/">O v S D B Server High Availability</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/system-config/">
+    System Config</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Authentication_Authorization_and_Accounting/">Authentication Authorization and Accounting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_a_Global_Proxy/">Configuring a Global Proxy</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_switchd/">Configuring Switchd</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Copy_of_Netfilter_-_ACLs/">Copy of Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/HTTP_API/">H T T P a P I</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Netfilter_-_ACLs/">Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/">Network Command Line Utility N C L U</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Power_over_Ethernet_-_PoE/">Power Over Ethernet Po E</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Services_and_Daemons_in_Cumulus_Linux/">Services and Daemons in Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Setting_Date_and_Time/">Setting Date and Time</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/LDAP_Authentication_and_Authorization/">L D a P Authentication and Authorization</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/RADIUS_AAA/">R a D I U S a a A</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/SSH_for_Remote_Access/">S S H for Remote Access</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/TACACS_Plus/">T a C a C S Plus</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/User_Accounts/">User Accounts</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/Using_sudo_to_Delegate_Privileges/">Using Sudo to Delegate Privileges</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Default_Cumulus_Linux_ACL_Configuration/">Default Cumulus Linux a C L Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Filtering_Learned_MAC_Addresses/">Filtering Learned M a C Addresses</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/whats-new/">What&#39;s New</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/cumulus-linux-index/Cumulus_Linux_Index/">Cumulus Linux Index</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/quick-start/Quick_Start_Guide/">Quick Start Guide</a>
+    </li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+</nav>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" />
+  </label>
+  <strong>Troubleshooting Network Interfaces</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="troubleshooting-network-interfaces">Troubleshooting Network Interfaces</h1>
+
+<p>The following sections describe various ways you can
+troubleshoot <code>ifupdown2</code>. </p>
+
+<h2 id="contents">Contents</h2>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}This topic
+describes &hellip;</p>
+
+<ul>
+<li><a href="#TroubleshootingNetworkInterfaces-EnableLoggingforNetworking">Enable Logging for
+Networking</a></li>
+<li><a href="#TroubleshootingNetworkInterfaces-UseifquerytoValidateandDebugInterfaceConfigurations">Use ifquery to Validate and Debug Interface
+Configurations</a></li>
+<li><a href="#TroubleshootingNetworkInterfaces-MakoTemplateErrors">Mako Template
+Errors</a></li>
+<li><a href="#TroubleshootingNetworkInterfaces-ifdownCannotFindanInterfacethatExists">ifdown Cannot Find an Interface that
+Exists</a></li>
+<li><a href="#TroubleshootingNetworkInterfaces-RemoveAllReferencestoaChildInterface">Remove All References to a Child
+Interface</a></li>
+<li><a href="#TroubleshootingNetworkInterfaces-MTUSetonaLogicalInterfaceFailswithError:%22Numericalresultoutofrange%22">MTU Set on a Logical Interface Fails with Error: &ldquo;Numerical result
+out of
+range&rdquo;</a></li>
+<li><a href="#TroubleshootingNetworkInterfaces-iproute2batchCommandFailures">iproute2 batch Command
+Failures</a></li>
+<li><a href="#TroubleshootingNetworkInterfaces-%22RTNETLINKanswers:Invalidargument%22ErrorwhenAddingaPorttoaBridge">&ldquo;RTNETLINK answers: Invalid argument&rdquo; Error when Adding a Port to a
+Bridge</a></li>
+<li><a href="#TroubleshootingNetworkInterfaces-MLAGPeerlinkInterfaceDropsManyPackets">MLAG Peerlink Interface Drops Many
+Packets</a></li>
+</ul>
+
+<h2 id="enable-logging-for-networking">Enable Logging for Networking</h2>
+
+<p>The <code>/etc/default/networking</code> file contains two settings for logging: </p>
+
+<ul>
+<li>To get <code>ifupdown2</code> logs when the switch boots (stored in <code>syslog</code>)</li>
+<li>To enable logging when you run
+<code>systemctl [start|stop|reload] networking.service</code></li>
+</ul>
+
+<p>This file also contains an option for excluding interfaces when you boot
+the switch or run <code>systemctl start|stop|reload networking.service</code>.
+You can exclude any interface specified in <code>/etc/network/interfaces</code>.
+These interfaces do not come up when you boot the switch or
+start/stop/reload the networking service. </p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ cat /etc/default/networking
+#
+#
+# Parameters for the /etc/init.d/networking script
+#
+#
+
+# Change the below to yes if you want verbose logging to be enabled
+VERBOSE=&#34;no&#34;
+
+# Change the below to yes if you want debug logging to be enabled
+DEBUG=&#34;no&#34;
+
+# Change the below to yes if you want logging to go to syslog
+SYSLOG=&#34;no&#34;
+
+# Exclude interfaces
+EXCLUDE_INTERFACES=</code></pre></div>
+<h2 id="use-ifquery-to-validate-and-debug-interface-configurations">Use ifquery to Validate and Debug Interface Configurations</h2>
+
+<p>You use  <code>ifquery</code> to print parsed <code>interfaces</code> file entries.</p>
+
+<p>To use <code>ifquery</code> to pretty print <code>iface</code> entries from
+the <code>interfaces</code> file, run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo ifquery bond0
+auto bond0
+iface bond0
+    address 14.0.0.9/30
+    address 2001:ded:beef:2::1/64
+    bond-slaves swp25 swp26</code></pre></div>
+<p>Use <code>ifquery --check</code> to check the current running state of an interface
+within the <code>interfaces</code> file. It will return exit code *0* or *1* if the
+configuration does not match. The line <code>bond-xmit-hash-policy layer3+7</code>
+below fails because it should read <code>bond-xmit-hash-policy layer3+4</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo ifquery --check bond0
+iface bond0
+    bond-xmit-hash-policy layer3+7  [fail]
+    bond-slaves swp25 swp26         [pass]
+    address 14.0.0.9/30             [pass]
+    address 2001:ded:beef:2::1/64   [pass]</code></pre></div>
+<p><code>ifquery --check</code> is an experimental feature.</p>
+
+<p>Use <code>ifquery --running</code> to print the running state of interfaces in
+the <code>interfaces</code> file format:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo ifquery --running bond0
+auto bond0
+iface bond0
+    bond-slaves swp25 swp26
+    address 14.0.0.9/30
+    address 2001:ded:beef:2::1/64</code></pre></div>
+<p><code>ifquery --syntax-help</code> provides help on all possible attributes
+supported in the <code>interfaces</code> file. For complete syntax on
+the <code>interfaces</code> file,
+see <code>man interfaces</code> and <code>man ifupdown-addons-interfaces</code>.</p>
+
+<p>You can use <code>ifquery --print-savedstate</code> to check the <code>ifupdown2</code> state
+database. <code>ifdown</code> works only on interfaces present in this state
+database.</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@leaf1$ sudo ifquery --print-savedstate eth0  
+auto eth0
+iface eth0 inet dhcp</code></pre></div>
+<h2 id="mako-template-errors">Mako Template Errors</h2>
+
+<p>An easy way to debug and get details about template errors is to use
+the <code>mako-render</code> command on your interfaces template file or
+on <code>/etc/network/interfaces</code> itself. </p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo mako-render /etc/network/interfaces
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+  
+# The loopback network interface
+auto lo
+iface lo inet loopback
+  
+# The primary network interface
+auto eth0
+iface eth0 inet dhcp
+#auto eth1
+#iface eth1 inet dhcp
+  
+# Include any platform-specific interface configuration
+source /etc/network/interfaces.d/*.if
+  
+# ssim2 added
+auto swp45
+iface swp45
+
+auto swp46
+iface swp46
+  
+cumulus@switch:~$ sudo mako-render /etc/network/interfaces.d/&lt;interfaces_stub_file&gt;</code></pre></div>
+<h2 id="ifdown-cannot-find-an-interface-that-exists">ifdown Cannot Find an Interface that Exists</h2>
+
+<p>If you are trying to bring down an interface that you know exists,
+use <code>ifdown</code> with the <code>--use-current-config</code> option to force <code>ifdown</code> to
+check the current <code>/etc/network/interfaces</code> file to find the interface.
+This can solve issues where the <code>ifup</code> command issues for that interface
+was interrupted before it updated the state database. For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo ifdown br0
+error: cannot find interfaces: br0 (interface was probably never up ?)
+
+cumulus@switch:~$ sudo brctl show
+bridge name bridge id       STP enabled interfaces
+br0     8000.44383900279f   yes     downlink
+                            peerlink
+
+cumulus@switch:~$ sudo ifdown br0 --use-current-config </code></pre></div>
+<h2 id="remove-all-references-to-a-child-interface">Remove All References to a Child Interface</h2>
+
+<p>If you have a configuration with a child interface, whether it&rsquo;s a VLAN,
+bond or another physical interface, and you remove that interface from a
+running configuration, you must remove every reference to it in the
+configuration. Otherwise, the interface continues to be used by the
+parent interface.</p>
+
+<p>For example, consider the following configuration:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+
+auto bond1
+iface bond1
+    bond-slaves swp2 swp1
+
+auto bond3
+iface bond3
+    bond-slaves swp8 swp6 swp7
+
+auto br0
+iface br0
+    bridge-ports swp3 swp5 bond1 swp4 bond3
+    bridge-pathcosts  swp3=4 swp5=4 swp4=4
+    address 11.0.0.10/24
+    address 2001::10/64</code></pre></div>
+<p>Notice that bond1 is a member of br0. If bond1 is removed, you must
+remove the reference to it from the br0 configuration. Otherwise, if you
+reload the configuration with <code>ifreload -a</code>, bond1 is still part of br0.</p>
+
+<h2 id="mtu-set-on-a-logical-interface-fails-with-error-numerical-result-out-of-range">MTU Set on a Logical Interface Fails with Error: &ldquo;Numerical result out of range&rdquo;</h2>
+
+<p>This error occurs when the
+<a href="Switch-Port-Attributes_8363026.html#SwitchPortAttributes-mtu">MTU</a> you
+are trying to set on an interface is higher than the MTU of the lower
+interface or dependent interface. Linux expects the upper interface to
+have an MTU less than or equal to the MTU on the lower interface. </p>
+
+<p>In the example below, the swp1.100 VLAN interface is an upper interface
+to physical interface swp1. If you want to change the MTU to 9000 on the
+VLAN interface, you must include the new MTU on the lower interface swp1
+as well.</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">auto swp1.100 
+iface swp1.100 
+    mtu 9000 
+
+auto swp1 
+iface swp1  
+    mtu 9000</code></pre></div>
+<h2 id="iproute2-batch-command-failures">iproute2 batch Command Failures</h2>
+
+<p><code>ifupdown2</code> batches <code>iproute2</code> commands for performance reasons. A batch
+command contains <code>ip -force -batch -</code> in the error message. The command
+number that failed is at the end of this line: <code>Command failed -:1</code>.</p>
+
+<p>Below is a sample error for the command 1:
+<code>link set dev host2 master bridge</code>. There was an error adding the bond
+<em>host2</em> to the bridge named *bridge* because host2 did not have a valid
+address.</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">error: failed to execute cmd &#39;ip -force -batch - [link set dev host2 master bridge
+addr flush dev host2
+link set dev host1 master bridge
+addr flush dev host1
+]&#39;(RTNETLINK answers: Invalid argument 
+Command failed -:1) 
+warning: bridge configuration failed (missing ports) </code></pre></div>
+<h2 id="rtnetlink-answers-invalid-argument-error-when-adding-a-port-to-a-bridge">&ldquo;RTNETLINK answers: Invalid argument&rdquo; Error when Adding a Port to a Bridge</h2>
+
+<p>This error can occur when the bridge port does not have a valid hardware
+address.</p>
+
+<p>This can typically occur when the interface being added to the bridge is
+an incomplete bond; a bond without slaves is incomplete and does not
+have a valid hardware address.</p>
+
+<h2 id="mlag-peerlink-interface-drops-many-packets">MLAG Peerlink Interface Drops Many Packets</h2>
+
+<p>Losing a large number of packets across an MLAG peerlink interface may
+not be a problem. Instead this could be occurring in order to prevent
+looping of BUM (broadcast, unknown unicast and multicast) packets. For
+more information, and how to detect these drops, read the <a href="Multi-Chassis-Link-Aggregation---MLAG_8362677.html#Multi-ChassisLinkAggregation-MLAG-drops">MLAG
+chapter</a>.</p>
+
+<p> </p>
+</article>
+
+      
+<div class="align-center book-git-footer justify-between">
+  
+  <div>
+    <a href="https://github.com/cawleyflower/testDocs/commit/0f1fa77f244c4b4642688df1f5e961e88daa6e08" title='Last modified March 4, 2019 16:11 EST by Cawleyflower' target="_blank" rel="noopener">
+      <img src="/svg/code-merge.svg" /> Last Modified Mar 4, 2019
+    </a>
+  </div>
+  
+  
+</div>
+
+
+    </div>
+
+    
+  
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#troubleshooting-network-interfaces">Troubleshooting Network Interfaces</a>
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#enable-logging-for-networking">Enable Logging for Networking</a></li>
+<li><a href="#use-ifquery-to-validate-and-debug-interface-configurations">Use ifquery to Validate and Debug Interface Configurations</a></li>
+<li><a href="#mako-template-errors">Mako Template Errors</a></li>
+<li><a href="#ifdown-cannot-find-an-interface-that-exists">ifdown Cannot Find an Interface that Exists</a></li>
+<li><a href="#remove-all-references-to-a-child-interface">Remove All References to a Child Interface</a></li>
+<li><a href="#mtu-set-on-a-logical-interface-fails-with-error-numerical-result-out-of-range">MTU Set on a Logical Interface Fails with Error: &ldquo;Numerical result out of range&rdquo;</a></li>
+<li><a href="#iproute2-batch-command-failures">iproute2 batch Command Failures</a></li>
+<li><a href="#rtnetlink-answers-invalid-argument-error-when-adding-a-port-to-a-bridge">&ldquo;RTNETLINK answers: Invalid argument&rdquo; Error when Adding a Port to a Bridge</a></li>
+<li><a href="#mlag-peerlink-interface-drops-many-packets">MLAG Peerlink Interface Drops Many Packets</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+  
+</body>
+
+</html>

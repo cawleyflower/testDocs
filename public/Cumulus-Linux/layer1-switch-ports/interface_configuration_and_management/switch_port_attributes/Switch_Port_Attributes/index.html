@@ -1,0 +1,2228 @@
+<!DOCTYPE html><html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Switch Port Attributes | Cumulus Networks Documentation</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+<link rel="stylesheet" href="/book.min.50a619ce4c0e99594908d162684f42218608aa6fde2bd83cca5025d59ba535e3.css">
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+<h2 class="book-brand">
+  <a href="http://example.org/">Cumulus Networks Documentation</a>
+</h2>
+
+
+
+    
+
+
+  
+  
+    
+    
+  
+ 
+  <ul>
+    
+    <li><a href="/Cumulus-Linux/installation-management/">
+    Installation Management</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/">Adding and Updating Packages</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/">Installing a New Cumulus Linux Image</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/">Managing Cumulus Linux Disk Images</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/">Upgrading Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Using_Snapshots/">Using Snapshots</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/">Zero Touch Provisioning Z T P</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer1-switch-ports/">
+    Layer1 Switch Ports</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/802.1X_Interfaces/">802.1 X Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Buffer_and_Queue_Management/">Buffer and Queue Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Relays/">D H C P Relays</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Servers/">D H C P Servers</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Facebook_Voyager_Optical_Interfaces/">Facebook Voyager Optical Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Prescriptive_Topology_Manager_-_PTM/">Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/Interface_Configuration_and_Management/">Interface Configuration and Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/switch_port_attributes/Switch_Port_Attributes/" class="active">Switch Port Attributes</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer2/">
+    Layer2</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Prescriptive_Topology_Manager_-_PTM/">Copy of Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Spanning_Tree_and_Rapid_Spanning_Tree/">Copy of Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Ethernet_Bridging_-_VLANs/">Ethernet Bridging v L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/IGMP_and_MLD_Snooping/">I G M P and M L D Snooping</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/LACP_Bypass/">L a C P Bypass</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Link_Layer_Discovery_Protocol/">Link Layer Discovery Protocol</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Multi-Chassis_Link_Aggregation_-_MLAG/">Multi Chassis Link Aggregation M L a G</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Spanning_Tree_and_Rapid_Spanning_Tree/">Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Virtual_Router_Redundancy_-_VRR/">Virtual Router Redundancy v R R</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/bonding_link_aggregation/Bonding_-_Link_Aggregation/">Bonding Link Aggregation</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/Traditional_Bridge_Mode/">Traditional Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN-aware_Bridge_Mode/">V L a N Aware Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN_Tagging/">V L a N Tagging</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/link_layer_discovery_protocol/voice_vlan/Voice_VLAN/">Voice v L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/virtual_router_redundancy/ifplugd/ifplugd/">Ifplugd</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer3/">
+    Layer3</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Address_Resolution_Protocol_-_ARP/">Address Resolution Protocol a R P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Bidirectional_Forwarding_Detection_-_BFD/">Bidirectional Forwarding Detection B F D</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Border_Gateway_Protocol_-_BGP/">Border Gateway Protocol B G P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Configuring_FRRouting/">Configuring F R Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP/">Equal Cost Multipath Load Sharing Hardware E C M P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/FRRouting_Overview/">F R Routing Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/GRE_Tunneling/">G R E Tunneling</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Introduction_to_Routing_Protocols/">Introduction to Routing Protocols</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Management_VRF/">Management v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Network_Topology/">Network Topology</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_-_OSPF/">Open Shortest Path First O S P F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_v3_-_OSPFv3/">Open Shortest Path First V3 O S P Fv3</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Policy-based_Routing/">Policy Based Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Protocol_Independent_Multicast_-_PIM/">Protocol Independent Multicast P I M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Redistribute_Neighbor/">Redistribute Neighbor</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Routing/">Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Segment_Routing/">Segment Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Virtual_Routing_and_Forwarding_-_VRF/">Virtual Routing and Forwarding v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/configuring_frrouting/comparing_nclu_and_vtysh_commands/Comparing_NCLU_and_vtysh_Commands/">Comparing N C L U and Vtysh Commands</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/frrouting_overview/Upgrading_from_Quagga_to_FRRouting/">Upgrading From Quagga to F R Routing</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/monitoring-troubleshooting/">
+    Monitoring Troubleshooting</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/ASIC_Monitoring/">A S I C Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/FRRouting_Log_Message_Reference/">F R Routing Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Best_Practices/">Monitoring Best Practices</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_System_Hardware/">Monitoring System Hardware</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Virtual_Device_Counters/">Monitoring Virtual Device Counters</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Network_Troubleshooting/">Network Troubleshooting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Resource_Diagnostics_Using_cl-resource-query/">Resource Diagnostics Using Cl Resource Query</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Simple_Network_Management_Protocol_SNMP_Monitoring/">Simple Network Management Protocol S N M P Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Single_User_Mode_-_Boot_Recovery/">Single User Mode Boot Recovery</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Troubleshooting_Network_Interfaces/">Troubleshooting Network Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Understanding_the_cl-support_Output_File/">Understanding the Cl Support Output File</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/monitoring_system_hardware/network_switch_port_led_and_stats_led/Network_Switch_Port_LED_and_Status_LED_Guidelines/">Network Switch Port L E D and Status L E D Guidelines</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/monitoring_system_statistics/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow/">Monitoring System Statistics and Network Traffic With S Flow</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/using_nclu_to_troubleshoot/Using_NCLU_to_Troubleshoot_Your_Network_Configuration/">Using N C L U to Troubleshoot Your Network Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/simple_network_management/using_nutanix_prisim_as_monitoring_tool/Using_Nutanix_Prism_as_a_Monitoring_Tool/">Using Nutanix Prism as a Monitoring Tool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/switchd_Log_Message_Reference/">Switchd Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/troubleshooting_network_interfaces/monitoring_interfaces_and_transcievers_using_ethtool/Monitoring_Interfaces_and_Transceivers_Using_ethtool/">Monitoring Interfaces and Transceivers Using Ethtool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_log_files/Troubleshooting_Log_Files/">Troubleshooting Log Files</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_the_etc_directory/Troubleshooting_the_etc_Directory/">Troubleshooting the Etc Directory</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-solutions/">
+    Network Solutions</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Anycast_Design_Guide/">Anycast Design Guide</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Hyperconverged_Solution_with_Nutanix/">Cumulus Hyperconverged Solution With Nutanix</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Networks_Services_Demos/">Cumulus Networks Services Demos</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Data_Center_Host_to_ToR_Architecture/">Data Center Host to to R Architecture</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Docker_on_Cumulus_Linux/">Docker on Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/OpenStack_Neutron_ML2_and_Cumulus_Linux/">Open Stack Neutron M L2 and Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/RDMA_over_Converged_Ethernet_-_RoCE/">R D M a Over Converged Ethernet Ro C E</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-visualization/">
+    Network Visualization</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Eng_Update_of_VXLAN_Hyperloop/">Eng Update of v X L a N Hyperloop</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Ethernet_Virtual_Private_Network_-_EVPN/">Ethernet Virtual Private Network E v P N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs/">Hybrid Cloud Connectivity With Qin Q and v X L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/LNV_Full_Example/">L N v Full Example</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Lightweight_Network_Virtualization_Overview/">Lightweight Network Virtualization Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Static_VXLAN_Configurations/">Static v X L a N Configurations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Routing/">V X L a N Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Scale/">V X L a N Scale</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Tunnel_DSCP_Operations__DRAFT/">V X L a N Tunnel D S C P Operations — D R a F T</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Virtualization_Integrations/">Virtualization Integrations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_mac_bindings/Static_MAC_Bindings_with_VXLAN/">Static M a C Bindings With v X L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_vxlan_tunnels/Static_VXLAN_Tunnels/">Static v X L a N Tunnels</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_hardware_vteps_vmware_nsx-mh/Integrating_Hardware_VTEPs_with_VMware_NSX-MH/">Integrating Hardware v T E Ps With v Mware N S X M H</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_midonet_openstack/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack/">Integrating Hardware v T E Ps With Midokura Mido Net and Open Stack</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_vmware_nsx-v/Integrating_Hardware_VTEPs_with_VMware_NSX-V/">Integrating Hardware v T E Ps With v Mware N S X V</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/ovsdb_server_high_availability/OVSDB_Server_High_Availability/">O v S D B Server High Availability</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/system-config/">
+    System Config</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Authentication_Authorization_and_Accounting/">Authentication Authorization and Accounting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_a_Global_Proxy/">Configuring a Global Proxy</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_switchd/">Configuring Switchd</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Copy_of_Netfilter_-_ACLs/">Copy of Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/HTTP_API/">H T T P a P I</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Netfilter_-_ACLs/">Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/">Network Command Line Utility N C L U</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Power_over_Ethernet_-_PoE/">Power Over Ethernet Po E</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Services_and_Daemons_in_Cumulus_Linux/">Services and Daemons in Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Setting_Date_and_Time/">Setting Date and Time</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/LDAP_Authentication_and_Authorization/">L D a P Authentication and Authorization</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/RADIUS_AAA/">R a D I U S a a A</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/SSH_for_Remote_Access/">S S H for Remote Access</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/TACACS_Plus/">T a C a C S Plus</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/User_Accounts/">User Accounts</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/Using_sudo_to_Delegate_Privileges/">Using Sudo to Delegate Privileges</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Default_Cumulus_Linux_ACL_Configuration/">Default Cumulus Linux a C L Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Filtering_Learned_MAC_Addresses/">Filtering Learned M a C Addresses</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/whats-new/">What&#39;s New</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/cumulus-linux-index/Cumulus_Linux_Index/">Cumulus Linux Index</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/quick-start/Quick_Start_Guide/">Quick Start Guide</a>
+    </li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+</nav>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" />
+  </label>
+  <strong>Switch Port Attributes</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="switch-port-attributes">Switch Port Attributes</h1>
+
+<p>Cumulus Linux exposes network interfaces for several types of physical
+and logical devices:</p>
+
+<ul>
+<li>lo, network loopback device</li>
+<li>ethN, switch management port(s), for out of band management only</li>
+<li>swpN, switch front panel ports</li>
+<li>(optional) brN, bridges (IEEE 802.1Q VLANs)</li>
+<li>(optional) bondN, bonds (IEEE 802.3ad link aggregation trunks, or
+port channels)</li>
+</ul>
+
+<p>Each physical network interface has a number of configurable settings:</p>
+
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Autonegotiation">Auto-negotiation</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Duplex_%28telecommunications%29">Duplex</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Forward_error_correction">FEC</a> (Forward
+error correction)</li>
+<li>Link speed</li>
+<li>MTU, or <a href="https://en.wikipedia.org/wiki/Maximum_transmission_unit">maximum transmission
+unit</a></li>
+</ul>
+
+<p>Most of these settings are configured automatically for you, depending
+upon your switch ASIC, although you must always set MTU manually. </p>
+
+<p>You can only set MTU for logical interfaces. If you try to set
+auto-negotiation, duplex mode, or link speed for a logical interface, an
+unsupported error is shown.</p>
+
+<p>For <strong>Mellanox switches, </strong>MTU is the only port attribute that you can
+configure. The Mellanox firmware configures everything else
+automatically, following a predefined list of parameter settings (speed,
+duplex, autoneg, FEC), until the link comes up.</p>
+
+<p>For <strong>Broadcom-based switches, </strong>Cumulus Networks recommends that you
+enable auto-negotiation on each port. When enabled, Cumulus Linux
+automatically configures the best link parameter settings based on the
+module type (speed, duplex, auto-negotiation, and <a href="https://en.wikipedia.org/wiki/Forward_error_correction">forward error
+correction</a> (FEC)
+where supported). To understand the default configuration for the
+various port and cable types, see the <a href="#SwitchPortAttributes-settings">table
+below</a>.  If you need to troubleshoot
+further to bring the link up, follow the sections below to set the
+specific link parameters.</p>
+
+<h2 id="contents">Contents</h2>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}This topic
+describes &hellip;</p>
+
+<ul>
+<li><a href="#SwitchPortAttributes-autoneg_enableAuto-negotiation">Auto-negotiation</a></li>
+<li><a href="#SwitchPortAttributes-PortSpeedandDuplexMode">Port Speed and Duplex
+Mode</a></li>
+<li><a href="#SwitchPortAttributes-mtuMTU">MTU</a>
+
+<ul>
+<li><a href="#SwitchPortAttributes-global_mtuSetaPolicyforGlobalSystemMTU">Set a Policy for Global System
+MTU</a></li>
+<li><a href="#SwitchPortAttributes-MTUforaBridge">MTU for a Bridge</a></li>
+<li><a href="#SwitchPortAttributes-BringDownanInterfaceforaBridgeMember">Bring Down an Interface for a Bridge
+Member</a></li>
+</ul></li>
+<li><a href="#SwitchPortAttributes-FEC">FEC</a>
+
+<ul>
+<li><a href="#SwitchPortAttributes-cable_classDetermineCableClass">Determine Cable
+Class</a></li>
+<li><a href="#SwitchPortAttributes-HowDoesCumulusLinuxuseFEC?">How Does Cumulus Linux use
+FEC?</a></li>
+<li><a href="#SwitchPortAttributes-ShowtheCurrentFECMode">Show the Current FEC
+Mode</a></li>
+<li><a href="#SwitchPortAttributes-EnableorDisableFEC">Enable or Disable
+FEC</a></li>
+</ul></li>
+<li><a href="#SwitchPortAttributes-settingsInterfaceConfigurationRecommendations">Interface Configuration
+Recommendations</a></li>
+<li><a href="#SwitchPortAttributes-DefaultPoliciesforInterfaceSettings">Default Policies for Interface
+Settings</a></li>
+<li><a href="#SwitchPortAttributes-breakoutBreakoutPorts">Breakout Ports</a>
+
+<ul>
+<li><a href="#SwitchPortAttributes-RemoveaBreakoutPort">Remove a Breakout
+Port</a></li>
+<li><a href="#SwitchPortAttributes-CombineFour10GPortsintoOne40GPort">Combine Four 10G Ports into One 40G
+Port</a></li>
+</ul></li>
+<li><a href="#SwitchPortAttributes-LogicalSwitchPortLimitations">Logical Switch Port
+Limitations</a></li>
+<li><a href="#SwitchPortAttributes-ethtoolConfigureInterfaceswithethtool">Configure Interfaces with
+ethtool </a></li>
+<li><a href="#SwitchPortAttributes-VerificationandTroubleshootingCommands">Verification and Troubleshooting
+Commands</a>
+
+<ul>
+<li><a href="#SwitchPortAttributes-Statistics">Statistics</a></li>
+<li><a href="#SwitchPortAttributes-QuerySFPPortInformation">Query SFP Port
+Information</a></li>
+</ul></li>
+<li><a href="#SwitchPortAttributes-caveatsCaveatsandErrata">Caveats and Errata</a>
+
+<ul>
+<li><a href="#SwitchPortAttributes-10Gand1GSFPsInsertedina25GPort">10G and 1G SFPs Inserted in a 25G
+Port</a></li>
+<li><a href="#SwitchPortAttributes-TimeoutErroronQuantaLY8andLY9Switches">Timeout Error on Quanta LY8 and LY9
+Switches</a></li>
+<li><a href="#SwitchPortAttributes-swp33andswp34DisabledonSomeSwitches">swp33 and swp34 Disabled on Some
+Switches</a></li>
+<li><a href="#SwitchPortAttributes-UnsupportedInterfacesontheDellS5248FSwitch">Unsupported Interfaces on the Dell S5248F
+Switch</a></li>
+<li><a href="#SwitchPortAttributes-ethtoolShowsIncorrectPortSpeedon100GMellanoxSwitches">ethtool Shows Incorrect Port Speed on 100G Mellanox
+Switches</a></li>
+<li><a href="#SwitchPortAttributes-DelayinReportingInterfaceasOperationalDown">Delay in Reporting Interface as Operational
+Down</a></li>
+</ul></li>
+<li><a href="#SwitchPortAttributes-RelatedInformation">Related Information</a></li>
+</ul>
+
+<h2 id="auto-negotiation">Auto-negotiation</h2>
+
+<p>To configure auto-negotiation for a Broadcom-based switch,
+set <code>link-autoneg</code> to *on* for all the switch ports. For example, to
+enable auto-negotiation for swp1 through swp52:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface swp1-52 link autoneg on
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>Any time you enable auto-negotiation, Cumulus Linux restores the default
+configuration settings specified in the <a href="#SwitchPortAttributes-sett">table
+below</a>.</p>
+
+<p>By default on a Broadcom-based switch, auto-negotiation is disabled —
+except on 10G and 1000BASE-T switch ports, where it is required for
+links to work. For RJ-45 SFP adapters, you need to manually configure
+the settings as described in the <a href="#SwitchPortAttributes-sett">default settings table
+below</a>.</p>
+
+<p>If you disable auto-negotiation later or never enable it, then you have
+to configure the duplex, FEC, and link speed settings manually
+using <a href="Network_Command_Line_Utility_-_NCLU">NCLU</a> (see the relevant
+sections below). The default speed if you disable auto-negotiation
+depends on the type of connector used with the port. For example, a
+QSFP28 optic defaults to 100G, while a QSFP+ optic defaults to 40G
+and SFP+ defaults to 10G. </p>
+
+<p>Keep auto-negotiation enabled at all times. If you do decide to disable
+it, be aware of the following:</p>
+
+<ul>
+<li>You must manually set link the speed, duplex, pause, and FEC.</li>
+<li>Disabling auto-negotiation on a copper cable of any kind prevents
+the port from optimizing the link through link training.</li>
+<li>Disabling auto-negotiation on a 1G optical cable prevents detection
+of single fiber breaks.</li>
+<li>You cannot disable auto-negotiation for 1GT or 10GT cables.</li>
+</ul>
+
+<p>10/100/1000BASE-T RJ-45 SFP adapters do <em>not</em> work with auto-negotiation
+enabled. You must manually configure these ports using the settings
+below (link-autoneg=off, link-speed=1000|100|10,
+link-duplex=full|half).</p>
+
+<p>Depending upon the connector used for a port, enabling auto-negotiation
+also enables forward error correction (FEC), if the cable requires it
+(see the <a href="#SwitchPortAttributes-setting">table below</a>). FEC always
+adjusts for the speed of the cable. However, you <strong>cannot</strong> disable FEC
+separately using <a href="Network_Command_Line_Utility_-_NCLU">NCLU</a>.</p>
+
+<h2 id="port-speed-and-duplex-mode">Port Speed and Duplex Mode</h2>
+
+<p>Cumulus Linux supports both half-
+and <a href="http://en.wikipedia.org/wiki/Duplex_%28telecommunications%29">full-duplex</a> configurations. The
+duplex mode setting defaults to <em>full</em>. You only need to
+specify <code>link duplex</code> if you want half-duplex mode.</p>
+
+<p>Supported port speeds include 100M, 1G, 10G, 25G, 40G, 50G and 100G. If
+you need to manually set the speed on a Broadcom-based switch, set it in
+terms of Mbps, where the setting for 1G is <em>1000</em>, 40G is *40000* and
+100G is <em>100000</em>, for example.</p>
+
+<p>You can configure ports to one speed less than their maximum speed.</p>
+
+<table>
+<thead>
+<tr>
+<th>Switch Port Type</th>
+<th>Lowest Configurable Speed</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1G</td>
+<td>100 Mb</td>
+</tr>
+
+<tr>
+<td>10G</td>
+<td>1 Gigabit (1000 Mb)</td>
+</tr>
+
+<tr>
+<td>40G</td>
+<td>10G*</td>
+</tr>
+
+<tr>
+<td>100G</td>
+<td>50G &amp; 40G (with or without breakout port), 25G*, 10G*</td>
+</tr>
+</tbody>
+</table>
+
+<p>*Requires the port to be converted into a breakout port.
+See <a href="#SwitchPortAttributes-breakout">Configuring Breakout Ports</a> below.</p>
+
+<p>Example Port Speed and Duplexing Configuration</p>
+
+<p>The following NCLU commands configure the port speed for the swp1
+interface:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface swp1 link speed 10000
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>The above commands create the following <code>/etc/network/interfaces</code>code
+snippet:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto swp1
+iface swp1
+   link-speed 10000</code></pre></div>
+<p>Platform Limitations</p>
+
+<ul>
+<li>On Dell S4148F-ON and S4128F-ON switches, you must configure ports
+within the same port group with the same link speed.</li>
+<li>On Lenovo NE2572O switches, swp1 thru swp8 only support 25G speed.</li>
+<li>For 10G and 1G SFPs inserted in a 25G port, you must edit
+the <code>/etc/cumulus/ports.conf</code> file and configure the four ports in
+the same core to be 10G. See <a href="#SwitchPortAttributes-caveats">Caveats and
+Errata</a> below.</li>
+</ul>
+
+<h2 id="mtu">MTU</h2>
+
+<p>Interface MTU (<a href="https://en.wikipedia.org/wiki/Maximum_transmission_unit">maximum transmission
+unit</a>) applies
+to traffic traversing the management port, front panel/switch ports,
+bridge, VLAN subinterfaces and bonds — in other words, both physical and
+logical interfaces.</p>
+
+<p>MTU is the only interface setting that you must set manually. </p>
+
+<p>In Cumulus Linux, <code>ifupdown2</code> assigns 1500 as the default MTU setting.
+To change the setting, run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface swp1 mtu 9000
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>Some switches might not support the same maximum MTU setting in hardware
+for both the management interface (eth0) and the data plane ports.</p>
+
+<h3 id="set-a-policy-for-global-system-mtu">Set a Policy for Global System MTU</h3>
+
+<p>For a global policy to set MTU, create a policy document
+(called <code>mtu.json</code> here) like the following:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cat /etc/network/ifupdown2/policy.d/mtu.json
+{
+ &#34;address&#34;: {&#34;defaults&#34;: { &#34;mtu&#34;: &#34;9216&#34; }
+            }
+}</code></pre></div>
+<p>If your platform does not support a high MTU on eth0, you can set a
+lower MTU with the following command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface eth0 mtu 1500
+cumulus@switch:~$ net commit</code></pre></div>
+<p>The policies and attributes in any file in
+<code>/etc/network/ifupdown2/policy.d/</code> override the default policies and
+attributes in <code>/var/lib/ifupdown2/policy.d/</code>.</p>
+
+<h3 id="mtu-for-a-bridge">MTU for a Bridge</h3>
+
+<p>The MTU setting is the lowest MTU setting of any interface that is a
+member of that bridge (every interface specified in <code>bridge-ports</code> in
+the bridge configuration in the <code>interfaces</code> file), even if another
+bridge member has a higher MTU value. There is <strong>no</strong> need to specify an
+MTU on the bridge. Consider this bridge configuration:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto bridge
+iface bridge
+    bridge-ports bond1 bond2 bond3 bond4 peer5
+    bridge-vids 100-110
+    bridge-vlan-aware yes</code></pre></div>
+<p>For *bridge* to have an MTU of 9000, set the MTU for each of the member
+interfaces (bond1 to bond 4, and peer5), to 9000 at minimum.</p>
+
+<p>Use MTU 9216 for a bridge</p>
+
+<p>Two common MTUs for jumbo frames are 9216 and 9000 bytes. The
+corresponding MTUs for the VNIs would be 9166 and 8950. </p>
+
+<p>When configuring MTU for a bond, configure the MTU value directly under
+the bond interface; the configured value is inherited by member
+links/slave interfaces. If you need a different MTU on the bond, set it
+on the bond interface, as this ensures the slave interfaces pick it up.
+There is no need to specify MTU on the slave interfaces. </p>
+
+<p>VLAN interfaces inherit their MTU settings from their physical devices
+or their lower interface; for example, swp1.100 inherits its MTU setting
+from swp1. Therefore, specifying an MTU on swp1 ensures that swp1.100
+inherits the MTU setting for swp1.</p>
+
+<p>If you are working with <a href="Network_Virtualization">VXLANs</a>, the MTU for a
+virtual network interface (VNI) must be 50 bytes smaller than the MTU of
+the physical interfaces on the switch, as those 50 bytes are required
+for various headers and other data. Also, consider setting the MTU much
+higher than the default 1500. </p>
+
+<p>Example MTU Configuration</p>
+
+<p>In general, the policy file specified above handles default MTU settings
+for all interfaces on the switch. If you need to configure a different
+MTU setting for a subset of interfaces, use
+<a href="Network_Command_Line_Utility_-_NCLU">NCLU</a>.</p>
+
+<p>The following commands configure an MTU minimum value of 9000 on swp1:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface swp1 mtu 9000
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>These commands create the following code snippet:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto swp1
+iface swp1
+   mtu 9000</code></pre></div>
+<p>You must take care to ensure there are no MTU mismatches in the
+conversation path. MTU mismatches result in dropped or truncated
+packets, degrading or blocking network performance.</p>
+
+<p>The MTU for an SVI interface, such as vlan100, is derived from the
+bridge. When you use NCLU to change the MTU for an SVI and the MTU
+setting is higher than it is for the other bridge member interfaces, the
+MTU for all bridge member interfaces changes to the new setting. If you
+need to use a mixed MTU configuration for SVIs, for example, if some
+SVIs have a higher MTU and some lower, then set the MTU for all member
+interfaces to the maximum value, then set the MTU on the specific SVIs
+that need to run at a lower MTU.</p>
+
+<p>To view the MTU setting, run
+the  <code>net show interface &lt;interface&gt; </code>command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net show interface swp1
+    Name    MAC                Speed      MTU  Mode
+--  ------  -----------------  -------  -----  ---------
+UP  swp1    44:38:39:00:00:04  1G        1500  Access/L2</code></pre></div>
+<h3 id="bring-down-an-interface-for-a-bridge-member">Bring Down an Interface for a Bridge Member</h3>
+
+<p>When you bring down an interface for a bridge member, the MTU for the
+interface and the MTU for the bridge are both set to the default value
+of 1500. To work around this, run <code>ifdown</code> on the interface, then run
+the <code>sudo ip link set dev &lt;interface&gt; mtu &lt;mtu&gt;</code> command.</p>
+
+<p>For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">sudo ifdown swp3
+sudo ip link set dev swp3 mtu 9192</code></pre></div>
+<p>As an alternative, add a <code>post-down</code> command in
+the <code>/etc/network/interfaces</code> file to reset the MTU of the interface.
+For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto swp3
+iface swp3
+    alias BNBYLAB-PD01HV-01_Port3
+    bridge-vids 106 109 119 141 150-151
+    mtu 9192
+    post-down /sbin/ip link set dev swp3 mtu 9192</code></pre></div>
+<h2 id="fec">FEC</h2>
+
+<p>Forward Error Correction (FEC) is an encoding and decoding layer that
+enables the switch to detect and correct bit errors introduced over the
+cable between two interfaces. Because 25G transmission speeds can
+introduce a higher than acceptable bit error rate (BER) on a link, FEC
+is required or recommended for 25G, 4x25G, and 100G link speeds.<br />
+The two interfaces on each end must use the same FEC setting for the
+link to come up.</p>
+
+<p>There is a very small latency overhead required for FEC. For most
+applications, this small amount of latency is preferable to error packet
+retransmission latency.</p>
+
+<p>There are two FEC types: </p>
+
+<ul>
+<li>Reed Solomon (<strong>RS</strong>), IEEE 802.3 Clause 108 (CL108) on individual
+25G channels and Clause 91 on 100G (4channels). This is the highest
+FEC algorithm, providing the best bit-error correction.</li>
+<li>Base-R (<strong>BaseR</strong>), Fire Code (FC), IEEE 802.3 Clause 74 (CL74).
+Base-R provides less protection from bit errors than RS FEC but adds
+less latency.</li>
+</ul>
+
+<p>There are additional FEC options for Cumulus Linux configuration:</p>
+
+<ul>
+<li>Auto FEC instructs the hardware to select the best FEC. For Copper
+DAC, FEC can be negotiated with the remote end. However, optical
+modules do not have auto-negotiation capability; if the device
+chooses a preferred mode, it might not match the remote end.</li>
+<li>No FEC (no error correction is done). This is the current default on
+a Broadcom switch.</li>
+</ul>
+
+<p>Important</p>
+
+<p>The Tomahawk switch does not support RS FEC or auto-negotiation of FEC
+on 25G lanes that are broken out (Tomahawk pre-dates 802.3by). If you
+are using a 4x25G breakout DAC or AOC on a Tomahawk switch, you can
+configure either Base-R FEC or no FEC, and choose cables appropriate for
+that limitation (CA-25G-S, CA-25G-N or fiber).</p>
+
+<p>Tomahawk+ and Maverick switches do not have this limitation.</p>
+
+<p>You cannot set FEC RS on any Trident II switch with either NCLU or by
+directly editing the <code>/etc/network/interfaces</code> file.</p>
+
+<p>For<strong> 25G DAC, 4x25G Breakouts DAC and 100G DAC cables</strong>, the IEEE
+802.3by specification creates 3 classes:</p>
+
+<ul>
+<li>CA-25G-L (long cables - achievable cable length of at least 5m) dB
+loss less or equal to 22.48. Requires RS FEC and expects BER of 10-5
+or better with RS FEC enabled.</li>
+<li>CA-25G-S (short cables - achievable cable length of at least 3m) dB
+loss less or equal to 16.48. Requires Base-R FEC and expects BER of
+10-8 or better with Base-R FEC enabled.</li>
+<li>CA-25G-N (no FEC - achievable cable length of at least 3m) dB
+loss less or equal to 12.98. Does not require FEC. Expects BER 10-12
+or better with no FEC.</li>
+</ul>
+
+<p>The IEEE classification is based on various dB loss measurements and
+minimum achievable cable length. You can build longer and shorter cables
+if they comply to the dB loss and BER requirements.</p>
+
+<p>If a cable is manufactured to CA-25G-S classification and FEC is not
+enabled, the BER might be unacceptable in a production network. It is
+important to set the FEC according to the cable class (or better) to
+have acceptable bit error rates. See <a href="#SwitchPortAttributes-cable_class">Determining Cable
+Class</a> below.</p>
+
+<p>You can check bit errors using <code>cl-netstat</code> (<code>RX_ERR</code> column)
+or <code>ethtool -S</code> (<code>HwIfInErrors</code> counter) after a large amount of traffic
+has passed through the link. A non zero value indicates bit errors.
+Expect error packets to be zero or extremely low compared to good
+packets. If a cable has an unacceptable rate of errors with FEC enabled,
+replace the cable.</p>
+
+<p>For<strong> 25G, 4x25G Breakout, and 100G Fiber modules and AOCs</strong>, there is
+no classification of 25G cable types for dB loss, BER, or Length. FEC is
+recommended but might not be required if the BER is low enough.</p>
+
+<h3 id="determine-cable-class">Determine Cable Class</h3>
+
+<p>You can determine the cable class from the Extended Specification
+Compliance Code field (SFP28: 0Ah, byte 35, QSFP28: Page 0, byte 192) in
+the cable EEPROM programming.</p>
+
+<p>For 100G DAC, most manufacturers use the 0x0Bh *100GBASE-CR4 or
+25GBASE-CR CA-L* value (the 100G DAC specification predates the IEEE
+802.3by 25G DAC specification). RS FEC is the expected setting for 100G
+DAC but might not be required with shorter or better cables.</p>
+
+<p>A manufacturer&rsquo;s EEPROM setting might not match the dB loss on a cable
+or the actual bit error rates that a particular cable introduces. Use
+the designation as a guide, but set FEC according to the bit error rate
+tolerance in the design criteria for the network. For most applications,
+the highest mutual FEC ability of both end devices is the best choice.</p>
+
+<p>You can determine for which grade the manufacturer has designated the
+cable as follows.</p>
+
+<p>For the<strong> SFP28 DAC</strong>, run the following command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">root@mlx-2410-02:~# ethtool -m swp35 hex on | grep 0020 | awk &#39;{ print $6}&#39;
+0c</code></pre></div>
+<p>The values at location 0x0024 are:</p>
+
+<ul>
+<li>0x0b : CA-L (long cable - RS FEC required)</li>
+<li>0x0c : CA-S (short cable - BaseR or better FEC required)</li>
+<li>0x0d : CA-N (no FEC required)</li>
+</ul>
+
+<p>For the<strong> QSFP28 DAC</strong>, run the following command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">root@mlx-2410-02:~# ethtool -m swp51s0 hex on | grep 00c0 | awk &#39;{print $2}&#39;
+0b</code></pre></div>
+<p>The values at 0x00c0 are:</p>
+
+<ul>
+<li>0x0b : CA-L (long cable - RS FEC required) or 100G CR4</li>
+<li>0x0c : CA-S (short cable - BaseR or better FEC required)</li>
+<li>0x0d : CA-N (no FEC required)</li>
+</ul>
+
+<p>In each example below, the *Compliance* field is derived using the
+method described above and is not visible in the <code>ethool -m</code> output.</p>
+
+<p>**<strong>Cable Class </strong>Example 1**: 3meter cable that does not require FEC
+(CA-N) <br />
+Cost : More expensive<br />
+Cable size : 26AWG  (Note that AWG does not necessarily correspond to
+overall dB loss or BER performance)<br />
+Compliance Code : 25GBASE-CR CA-N</p>
+
+<p>**<strong>Cable Class</strong> Example 2**: 3meter cable that requires Base-R FEC
+(CA-S)<br />
+Cost: Less expensive<br />
+Cable size : 26AWG<br />
+Compliance Code : 25GBASE-CR CA-S</p>
+
+<p>When in doubt, consult the manufacturer directly to determine the cable
+classification.</p>
+
+<h3 id="how-does-cumulus-linux-use-fec">How Does Cumulus Linux use FEC?</h3>
+
+<p>The Mellanox switch enables FEC automatically first. The port firmware
+tries a pre-set list of link configuration combinations to attempt to
+bring up the link. It is possible to get a link up to a Mellanox switch
+without enabling FEC on the remote device as the switch eventually finds
+a working combination to the neighbor without FEC.</p>
+
+<p>On a Broadcom switch, Cumulus Linux does not enable FEC by default.
+Cumulus Networks recommends you configure FEC explicitly. On 100G DACs,
+you can configure <code>link-autoneg</code> so that the port attempts to negotiate
+FEC settings with the remote peer.</p>
+
+<p>The following sections describe how to display the current FEC
+configuration, and enable and disable FEC on a Broadcom switch.</p>
+
+<h3 id="show-the-current-fec-mode">Show the Current FEC Mode</h3>
+
+<p>To display the FEC mode currently enabled on a Broadcom switch, run the
+following command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~# sudo ethtool --show-fec swp23
+FEC parameters for swp23:
+FEC encodings : None</code></pre></div>
+<p>On a Mellanox switch, the currently-enabled FEC mode is not accessible
+with user commands at this time; however, you can deduce the mode from
+the remote FEC setting when the link is up.</p>
+
+<h3 id="enable-or-disable-fec">Enable or Disable FEC</h3>
+
+<p>To enable <strong>Reed Solomon (RS) FEC</strong> on a link, run the following NCLU
+commands:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~# sudo net add interface swp23 link fec rs
+cumulus@switch:~# sudo net commit</code></pre></div>
+<p>To review the FEC setting on the link, run the following command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~# sudo ethtool --show-fec swp23
+FEC parameters for swp23:
+FEC encodings : RS</code></pre></div>
+<p>To enable <strong>Base-R/FireCode FEC</strong> on a link, run the following NCLU
+commands:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~# sudo net add interface swp23 link fec baser
+cumulus@switch:~# sudo net commit</code></pre></div>
+<p>To review the FEC setting on the link, run the following command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~# sudo ethtool --show-fec swp23
+FEC parameters for swp23:
+FEC encodings : BaseR</code></pre></div>
+<p>FEC with auto-negotiation is supported on DACs only.</p>
+
+<p>To enable FEC with auto-negotiation, run the following NCLU commands:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~# sudo net add interface swp12 link autoneg on
+cumulus@switch:~# sudo net commit</code></pre></div>
+<p>To view the FEC and auto-negotiation settings, run the following
+command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~# sudo ethtool swp12 | egrep &#39;FEC|auto&#39;
+Supports auto-negotiation: Yes
+Supported FEC modes: RS
+Advertised auto-negotiation: Yes
+Advertised FEC modes: RS
+Link partner advertised auto-negotiation: Yes
+Link partner advertised FEC modes: Not reported</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~# sudo ethtool --show-fec swp12
+FEC parameters for swp12:
+FEC encodings : RS</code></pre></div>
+<p>To disable FEC on a link, run the following NCLU commands:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~# sudo net add interface swp23 link fec off
+cumulus@switch:~# sudo net commit</code></pre></div>
+<p>To review the FEC setting on the link, run the following command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~# sudo ethtool --show-fec swp23
+FEC parameters for swp23:
+FEC encodings : None</code></pre></div>
+<h2 id="interface-configuration-recommendations">Interface Configuration Recommendations</h2>
+
+<p>The recommended configuration for each type of interface is described in
+the following table. These are the link settings that are applied to the
+port hardware when auto-negotiation is enabled on a Broadcom-based
+switches. If further troubleshooting is required to bring a link up, use
+the table below as a guide to set the link parameters.</p>
+
+<p>Except as noted below, the settings for both sides of the link are
+expected to be the same.</p>
+
+<p>Mellanox switches automatically configure these settings following a
+predefined list of parameter settings until the link comes up.</p>
+
+<p>If the other side of the link is running a version of Cumulus Linux
+earlier than 3.2, depending upon the interface type, auto-negotiation
+may not work on that switch. Cumulus Networks recommends you use the
+recommended settings as show below on this switch in this case.</p>
+
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Speed</th>
+<th>Auto-negotiation</th>
+<th>FEC Setting</th>
+<th>Manual Configuration Steps</th>
+<th><p>Notes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>10/100BASE-T<br />
+(RJ-45 SFP adapter)</p></td>
+<td>On</td>
+<td>N/A (does not apply at this speed)</td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>$ net add interface swp1 link speed 100
+$ net add interface swp1 link autoneg off</code></pre>
+</div>
+</div>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>Configuration in /etc/network/interfaces</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1
+iface swp1
+  link-autoneg off
+  link-speed 100</code></pre>
+</div>
+</div></td>
+<td><ul>
+<li>The module has two sets of electronics — the port side, which communicates to the switch ASIC, and the RJ-45 adapter side.</li>
+<li>Auto-negotiation is always used on the RJ-45 adapter side of the link by the PHY built into the module. This is independent of the switch setting. Set <code>link-autoneg</code> to off.</li>
+<li>Auto-negotiation needs to be enabled on the server side in this scenario.</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>10/100BASE-T on a 1G fixed copper port</td>
+<td>On</td>
+<td>N/A</td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>$ net add interface swp1 link speed 100
+$ net add interface swp1 link autoneg on</code></pre>
+</div>
+</div>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>Configuration in /etc/network/interfaces</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1
+iface swp1
+  link-autoneg on
+  link-speed 100</code></pre>
+</div>
+</div></td>
+<td><ul>
+<li>10M or 100M speeds are possible with auto-negotiation OFF on both sides. Testing on an Edgecore AS4610-54P revealed the ASIC reporting auto-negotiation as ON.</li>
+<li><a href="Power_over_Ethernet_-_PoE">Power over Ethernet</a> may require auto-negotiation to be ON.</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>1000BASE-T<br />
+(RJ-45 SFP adapter)</td>
+<td>On</td>
+<td>N/A</td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>$ net add interface swp1 link speed 1000
+$ net add interface swp1 link autoneg off</code></pre>
+</div>
+</div>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>Configuration in /etc/network/interfaces</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1
+iface swp1
+  link-autoneg off
+  link-speed 1000</code></pre>
+</div>
+</div></td>
+<td><ul>
+<li>The module has two sets of electronics — the port side, which communicates to the switch ASIC, and the RJ-45 side.</li>
+<li>Auto-negotiation is always used on the RJ-45 side of the link by the PHY built into the module. This is independent of the switch setting. Set <code>link-autoneg</code> to off.</li>
+<li>Auto-negotiation needs to be enabled on the server side.</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>1000BASE-T on a 1G fixed copper port</td>
+<td>On</td>
+<td>N/A</td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>$ net add interface swp1 link speed 1000
+$ net add interface swp1 link autoneg on</code></pre>
+</div>
+</div>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>Configuration in /etc/network/interfaces</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1
+iface swp1
+  link-autoneg on
+  link-speed 1000</code></pre>
+</div>
+</div></td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>1000BASE-T on a 10G fixed copper port</td>
+<td>On</td>
+<td>N/A</td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>$ net add interface swp1 link speed 1000
+$ net add interface swp1 link autoneg on</code></pre>
+</div>
+</div>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>Configuration in /etc/network/interfaces</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1
+iface swp1
+  link-autoneg on
+  link-speed 1000</code></pre>
+</div>
+</div></td>
+<td> </td>
+</tr>
+<tr class="even">
+<td><p>1000BASE-SX,<br />
+1000BASE-LX,<br />
+1000BASE-CX<br />
+(1G Fiber)</p></td>
+<td>Recommended On</td>
+<td>N/A</td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>$ net add interface swp1 link autoneg on</code></pre>
+</div>
+</div>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>Configuration in /etc/network/interfaces</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1
+iface swp1
+  link-autoneg on</code></pre>
+</div>
+</div></td>
+<td><ul>
+<li>Without auto-negotiation, the link stays up when there is a single fiber break.</li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td>10GBASE-T fixed copper port</td>
+<td>On</td>
+<td>N/A </td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>$ net add interface swp1 link speed 10000
+$ net add interface swp1 link autoneg on</code></pre>
+</div>
+</div>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>Configuration in /etc/network/interfaces</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1
+iface swp1
+  link-autoneg on
+  link-speed 10000</code></pre>
+</div>
+</div></td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>10GBASE-CR,<br />
+10GBASE-LR,<br />
+10GBASE-SR,<br />
+10G AOC</td>
+<td>Off</td>
+<td>N/A</td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>$ net add interface swp1 link speed 10000
+$ net add interface swp1 link autoneg off</code></pre>
+</div>
+</div>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>Configuration in /etc/network/interfaces</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1
+iface swp1
+  link-autoneg off
+  link-speed 10000</code></pre>
+</div>
+</div></td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>40GBASE-CR4</td>
+<td>Recommended On</td>
+<td>Disable it</td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>$ net add interface swp1 link speed 40000
+$ net add interface swp1 link autoneg on</code></pre>
+</div>
+</div>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>Configuration in /etc/network/interfaces</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1
+iface swp1
+  link-autoneg on
+  link-speed 40000</code></pre>
+</div>
+</div></td>
+<td><ul>
+<li>40G standards mandate auto-negotiation should be enabled for DAC connections.</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>40GBASE-SR4,<br />
+40GBASE-LR4,<br />
+40G AOC</td>
+<td>Off</td>
+<td>Disable it</td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>$ net add interface swp1 link speed 40000
+$ net add interface swp1 link autoneg off</code></pre>
+</div>
+</div>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>Configuration in /etc/network/interfaces</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1
+iface swp1
+  link-autoneg off
+  link-speed 40000</code></pre>
+</div>
+</div></td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>100GBASE-CR4</td>
+<td>On</td>
+<td>auto-negotiated</td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>$ net add interface swp1 link speed 100000
+$ net add interface swp1 link autoneg on</code></pre>
+</div>
+</div>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>Configuration in /etc/network/interfaces</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1
+iface swp1
+  link-autoneg on
+  link-speed 100000</code></pre>
+</div>
+</div></td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>100GBASE-SR4,<br />
+100G AOC</td>
+<td>Off</td>
+<td>RS </td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>$ net add interface swp1 link speed 100000
+$ net add interface swp1 link autoneg off
+$ net add interface swp1 link fec rs</code></pre>
+</div>
+</div>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>Configuration in /etc/network/interfaces</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1
+iface swp1
+  link-autoneg off
+  link-speed 100000
+  link-fec rs</code></pre>
+</div>
+</div></td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td>100GBASE-LR4</td>
+<td>Off</td>
+<td>None stated</td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>$ net add interface swp1 link speed 100000
+$ net add interface swp1 link autoneg off
+$ net add interface swp1 link fec off</code></pre>
+</div>
+</div>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>Configuration in /etc/network/interfaces</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1
+iface swp1
+  link-autoneg off
+  link-speed 100000
+  link-fec off</code></pre>
+</div>
+</div></td>
+<td> </td>
+</tr>
+<tr class="even">
+<td>25GBASE-CR</td>
+<td>On</td>
+<td>auto-negotiated*</td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>$ net add interface swp1 link speed 25000
+$ net add interface swp1 link autoneg on</code></pre>
+</div>
+</div>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>Configuration in /etc/network/interfaces</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1
+iface swp1
+  link-autoneg on
+  link-speed 25000</code></pre>
+</div>
+</div></td>
+<td> </td>
+</tr>
+<tr class="odd">
+<td><p>25GBASE-SR</p></td>
+<td>Off</td>
+<td>RS*</td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>$ net add interface swp1 link speed 25000
+$ net add interface swp1 link autoneg off
+$ net add interface swp1 link fec baser</code></pre>
+</div>
+</div>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>Configuration in /etc/network/interfaces</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1
+iface swp1
+  link-autoneg off
+  link-speed 25000
+  link-fec baser</code></pre>
+</div>
+</div></td>
+<td><ul>
+<li><p>Tomahawk cannot do RS on a single channel, only BASE-R/FC/FireCode/Type74, which violates the 802.3by specification for 25G.</p></li>
+</ul></td>
+</tr>
+<tr class="even">
+<td>25GBASE-LR</td>
+<td>Off</td>
+<td>None stated</td>
+<td><div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>$ net add interface swp1 link speed 25000
+$ net add interface swp1 link autoneg off
+$ net add interface swp1 link fec off</code></pre>
+</div>
+</div>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>Configuration in /etc/network/interfaces</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1
+iface swp1
+  link-autoneg off
+  link-speed 25000
+  link-fec off</code></pre>
+</div>
+</div></td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="default-policies-for-interface-settings">Default Policies for Interface Settings</h2>
+
+<p>Instead of configuring these settings for each individual interface, you
+can specify a policy for all interfaces on a switch, or tailor custom
+settings for each interface. Create a file
+in <code>/etc/network/ifupdown2/policy.d/</code> and populate the settings
+accordingly. The following example shows a file called <code>address.json.</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ cat /etc/network/ifupdown2/policy.d/address.json
+{ 
+    &#34;ethtool&#34;: {
+        &#34;defaults&#34;: {
+            &#34;link-duplex&#34;: &#34;full&#34;
+        },
+        &#34;iface_defaults&#34;: {
+            &#34;swp1&#34;: {
+                &#34;link-autoneg&#34;: &#34;on&#34;, 
+                &#34;link-speed&#34;: &#34;1000&#34;
+            },
+            &#34;swp16&#34;: {
+                &#34;link-autoneg&#34;: &#34;off&#34;,
+                &#34;link-speed&#34;: &#34;10000&#34;
+            },
+            &#34;swp50&#34;: {
+                &#34;link-autoneg&#34;: &#34;off&#34;,
+                &#34;link-speed&#34;: &#34;100000&#34;,
+                &#34;link-fec&#34;: &#34;rs&#34;
+            }
+        }
+    },
+    &#34;address&#34;: {
+        &#34;defaults&#34;: { &#34;mtu&#34;: &#34;9000&#34; }
+        &#34;iface_defaults&#34;: {
+            &#34;eth0&#34;: {&#34;mtu&#34;: &#34;1500&#34;}
+        }
+    }
+}</code></pre></div>
+<p>Setting the default MTU also applies to the management interface. Be
+sure to add the <em>iface_defaults</em> to override the MTU for eth0, to
+remain at 1500.</p>
+
+<h2 id="breakout-ports">Breakout Ports</h2>
+
+<p>Cumulus Linux has the ability to:</p>
+
+<ul>
+<li>Break out 100G switch ports into the following with breakout cables:
+
+<ul>
+<li>2x50G, 4x25G, 4x10G</li>
+</ul></li>
+<li>Break out 40G switch ports into four separate 10G ports for use with
+breakout cables.</li>
+<li>Combine (also called *aggregating* or <em>ganging</em>) four 10G switch
+ports into one 40G port for use with a breakout cable (<a href="Bonding_-_Link_Aggregation">not to be
+confused with a bond</a>).</li>
+</ul>
+
+<p>To configure a 4x25G breakout port, first configure the port to break
+out then set the link speed:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface swp3 breakout 4x
+cumulus@switch:~$ net add interface swp3s0-3 link speed 25000
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>These commands create 4 interfaces in the <code>/etc/network/interfaces</code> file
+named as follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ cat /etc/network/interfaces
+ 
+...
+ 
+auto swp3s0
+iface swp3s0
+
+auto swp3s1
+iface swp3s1
+
+auto swp3s2
+iface swp3s2
+
+auto swp3s3
+iface swp3s3
+ 
+...</code></pre></div>
+<p>On <a href="https://cumulusnetworks.com/products/hardware-compatibility-list/?Brand=Dell&amp;ASIC=Broadcom%20Maverick">Dell switches with Maverick
+ASICs</a>,
+you configure breakout ports on the 100G uplink ports by manually
+editing the <code>/etc/cumulus/ports.conf</code> file. You need to specify either
+<em>4x10</em> or <em>4x25</em> for the port speed. For example, on a Dell S4148F-ON
+switch, to break out swp26 into 4 25G ports, modify the line starting
+with &ldquo;26=&rdquo; in <code>ports.conf</code> as follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo nano /etc/cumulus/ports.conf
+ 
+...
+ 
+# QSFP+ ports
+#
+# &lt;port label 27-28&gt; = [4x10G|40G]
+
+27=disabled
+28=disabled
+
+# QSFP28 ports
+#
+# &lt;port label 25-26, 29-30&gt; = [4x10G|4x25G|2x50G|40G|50G|100G]
+
+25=100G
+26=4x25G
+29=100G
+30=100G
+ 
+...</code></pre></div>
+<p>Then you need to configure the breakout ports in the
+<code>/etc/network/interfaces</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo nano /etc/network/interfaces
+ 
+...
+ 
+auto swp26s0
+iface swp26s0
+
+auto swp26s1
+iface swp3s1
+
+auto swp26s2
+iface swp26s2
+
+auto swp26s3
+iface swp26s3
+ 
+...</code></pre></div>
+<p>You cannot use NCLU to break out the uplink ports.</p>
+
+<p>On Mellanox switches, you need to disable the next port (see below). In
+this example, you also run the following before committing the update:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface swp4 breakout disabled</code></pre></div>
+<p>When you commit your change configuring the breakout ports, <code>switchd</code>
+restarts to apply the changes. The restart <a href="Configuring-switchd_8362561.html#Configuringswitchd-restartswitchd">interrupts network
+services</a>.</p>
+
+<p>The breakout port configuration is stored in
+the <code>/etc/cumulus/ports.conf</code> file. </p>
+
+<p>The<code>/etc/cumulus/ports.conf</code> file varies across different hardware
+platforms. Check the current list of supported platforms on <a href="http://www.cumulusnetworks.com/hcl">the
+hardware compatibility list</a>.</p>
+
+<p>A snippet from the <code>/etc/cumulus/ports.conf</code> file on a Dell S6000 switch
+(with a Trident II+ ASIC) where swp6 is broken out looks like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ cat /etc/cumulus/ports.conf 
+# ports.conf --
+#
+# This file controls port aggregation and subdivision.  For example, QSFP+
+# ports are typically configurable as either one 40G interface or four
+# 10G/1000/100 interfaces.  This file sets the number of interfaces per port
+# while /etc/network/interfaces and ethtool configure the link speed for each
+# interface.
+#
+# You must restart switchd for changes to take effect.
+#
+# The DELL S6000 has:
+#     32 QSFP ports numbered 1-32
+#     These ports are configurable as 40G, split into 4x10G ports or
+#     disabled.
+#
+#     The X pipeline covers QSFP ports 1 through 16 and the Y pipeline
+#     covers QSFP ports 17 through 32.
+#
+#     The Trident2 chip can only handle 52 logical ports per pipeline.
+#
+#     This means 13 is the maximum number of 40G ports you can ungang
+#     per pipeline, with the remaining three 40G ports set to
+#     &#34;disabled&#34;. The 13 40G ports become 52 unganged 10G ports, which
+#     totals 52 logical ports for that pipeline.
+#
+# QSFP+ ports
+#
+# &lt;port label 1-32&gt; = [4x10G|40G|disabled]
+1=40G
+2=40G
+3=40G
+4=40G
+5=40G
+6=4x
+7=40G
+8=40G
+9=40G
+10=40G
+11=40G
+12=40G
+13=40G
+14=40G
+15=40G
+16=40G
+17=40G
+18=40G
+19=40G
+20=40G
+21=40G
+22=40G
+23=40G
+24=40G
+25=40G
+26=40G
+27=40G
+28=40G
+29=40G
+30=40G
+31=40G
+32=40G</code></pre></div>
+<p>For switches with ports that support 100G speeds, you can break out any
+100G port into a variety of options: four 10G ports, four 25G ports, two
+40G ports or two 50G ports. You <em>cannot</em> have more than 128 total
+logical ports on a Broadcom switch. </p>
+
+<p>The Mellanox SN2700, SN2700B, SN2410, and SN2410B switches both have a
+limit of 64 logical ports in total. However, if you want to break out to
+4x25G or 4x10G, you must configure the logical ports as follows:</p>
+
+<ul>
+<li>You can only break out odd-numbered ports into 4 logical ports. </li>
+<li>You must disable the next even-numbered port. </li>
+</ul>
+
+<p>These restrictions do not apply to a 2x50G breakout configuration.</p>
+
+<p>For example, if you have a 100G Mellanox SN2700 switch and break out
+port 11 into 4 logical ports, you must disable port 12 by running
+<code>net add interface swp12 breakout disabled</code>, which results in this
+configuration in <code>/etc/cumulus/ports.conf</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">...
+ 
+11=4x
+12=disabled
+
+...</code></pre></div>
+<p>There is no limitation on any port if interfaces are configured in 2x50G
+mode.</p>
+
+<p>Here is an example showing how to configure breakout cables for
+the <a href="https://community.mellanox.com/docs/DOC-2685">Mellanox Spectrum
+SN2700</a>.</p>
+
+<h3 id="remove-a-breakout-port">Remove a Breakout Port</h3>
+
+<p>To remove a breakout port, you need to do the following:</p>
+
+<ol>
+<li><p>Remove the breakout port interfaces using NCLU, then commit the
+change. Continuing with the original example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net del interface swp3s0
+cumulus@switch:~$ net del interface swp3s1
+cumulus@switch:~$ net del interface swp3s2
+cumulus@switch:~$ net del interface swp3s3
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div></li>
+
+<li><p>Manually edit the <code>/etc/cumulus/ports.conf</code> file to configure the
+interface for the original speed, then save your changes:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo nano /etc/cumulus/ports.conf 
+ 
+...
+ 
+2=100G
+3=100G
+4=100G
+ 
+...
+ </code></pre></div></li>
+
+<li><p><a href="Configuring-switchd_8362561.html#Configuringswitchd-restartswitchd">Restart
+<code>switchd</code></a>.</p></li>
+</ol>
+
+<h3 id="combine-four-10g-ports-into-one-40g-port">Combine Four 10G Ports into One 40G Port</h3>
+
+<p>You can *gang* (aggregate) four 10G ports into one 40G port for use with
+a breakout cable, provided you follow these requirements:</p>
+
+<ul>
+<li>You must gang four 10G ports in sequential order. For example, you
+cannot gang swp1, swp10, swp20 and swp40 together.</li>
+<li>The ports must be in increments of four, with the starting port
+being swp1 (or swp5, swp9, or so forth); so you cannot gang swp2,
+swp3, swp4 and swp5 together.</li>
+</ul>
+
+<p>For example, to gang swp1 through swp4 into a 40G port, run: </p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add int swp1-4 breakout /4 
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>These commands create the following configuration snippet in
+the <code>/etc/cumulus/ports.conf</code> file: </p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text"># SFP+ ports#
+# &lt;port label 1-48&gt; = [10G|40G/4]
+1=40G/4
+2=40G/4
+3=40G/4
+4=40G/4
+5=10G</code></pre></div>
+<h2 id="logical-switch-port-limitations">Logical Switch Port Limitations</h2>
+
+<p>100G and 40G switches can support a certain number of logical ports,
+depending upon the manufacturer; these include:</p>
+
+<ul>
+<li>Mellanox SN2700 and SN2700B switches</li>
+<li>Switches with Broadcom Tomahawk, Trident II, Trident II+, and
+Trident3 chipsets (check
+the <a href="http://cumulusnetworks.com/support/linux-hardware-compatibility-list/">HCL</a>)</li>
+</ul>
+
+<p>Before you configure any logical/unganged ports on a switch, check the
+limitations listed in <code>/etc/cumulus/ports.conf</code>; this file is specific
+to each manufacturer.</p>
+
+<p>For example, the Dell S6000 <code>ports.conf</code> file indicates the logical port
+limitation like this: </p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text"># ports.conf --
+#
+# This file controls port aggregation and subdivision.  For example, QSFP+
+# ports are typically configurable as either one 40G interface or four
+# 10G/1000/100 interfaces.  This file sets the number of interfaces per port
+# while /etc/network/interfaces and ethtool configure the link speed for each
+# interface.
+#
+# You must restart switchd for changes to take effect.
+#
+# The DELL S6000 has:
+#     32 QSFP ports numbered 1-32
+#     These ports are configurable as 40G, split into 4x10G ports or
+#     disabled.
+#
+#     The X pipeline covers QSFP ports 1 through 16 and the Y pipeline
+#     covers QSFP ports 17 through 32.
+#
+#     The Trident2 chip can only handle 52 logical ports per pipeline.
+#
+#     This means 13 is the maximum number of 40G ports you can ungang
+#     per pipeline, with the remaining three 40G ports set to
+#     &#34;disabled&#34;. The 13 40G ports become 52 unganged 10G ports, which
+#     totals 52 logical ports for that pipeline.</code></pre></div>
+<p>The means the maximum number of ports for this Dell S6000 is 104.</p>
+
+<p>Mellanox SN2700 and SN2700B switches have a limit of 64 logical ports in
+total. However, the logical ports must be configured in a specific way.
+See <a href="#SwitchPortAttributes-breakout">the note</a> above.</p>
+
+<h2 id="configure-interfaces-with-ethtool">Configure Interfaces with ethtool </h2>
+
+<p>The Cumulus Linux <code>ethtool</code> command is an alternative for configuring
+interfaces as well as viewing and troubleshooting them.</p>
+
+<p>For example, to manually set link speed, auto-negotiation, duplex mode
+and FEC on swp1, run: </p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ethtool -s swp1 speed 25000 autoneg off duplex full
+cumulus@switch:~$ sudo ethtool --set-fec swp1 encoding off</code></pre></div>
+<p>To view the FEC setting on an interface, run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ethtool --show-fec swp1FEC parameters for swp1:
+Auto-negotiation: off
+FEC encodings : RS</code></pre></div>
+<h2 id="verification-and-troubleshooting-commands">Verification and Troubleshooting Commands</h2>
+
+<h3 id="statistics">Statistics</h3>
+
+<p>High-level interface statistics are available with
+the <code>net show interface</code> command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ net show interface swp1
+
+    Name    MAC                Speed      MTU  Mode
+--  ------  -----------------  -------  -----  ---------
+UP  swp1    44:38:39:00:00:04  1G        1500  Access/L2
+
+
+Vlans in disabled State
+-------------------------
+br0
+
+
+Counters      TX    RX
+----------  ----  ----
+errors         0     0
+unicast        0     0
+broadcast      0     0
+multicast      0     0
+
+
+LLDP
+------  ----  ---------------------------
+swp1    ====  44:38:39:00:00:03(server01)</code></pre></div>
+<p>Low-level interface statistics are available with <code>ethtool</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo ethtool -S swp1
+NIC statistics:
+     HwIfInOctets: 21870
+     HwIfInUcastPkts: 0
+     HwIfInBcastPkts: 0
+     HwIfInMcastPkts: 243
+     HwIfOutOctets: 1148217
+     HwIfOutUcastPkts: 0
+     HwIfOutMcastPkts: 11353
+     HwIfOutBcastPkts: 0
+     HwIfInDiscards: 0
+     HwIfInL3Drops: 0
+     HwIfInBufferDrops: 0
+     HwIfInAclDrops: 0
+     HwIfInBlackholeDrops: 0
+     HwIfInDot3LengthErrors: 0
+     HwIfInErrors: 0
+     SoftInErrors: 0
+     SoftInDrops: 0
+     SoftInFrameErrors: 0
+     HwIfOutDiscards: 0
+     HwIfOutErrors: 0
+     HwIfOutQDrops: 0
+     HwIfOutNonQDrops: 0
+     SoftOutErrors: 0
+     SoftOutDrops: 0
+     SoftOutTxFifoFull: 0
+     HwIfOutQLen: 0</code></pre></div>
+<h3 id="query-sfp-port-information">Query SFP Port Information</h3>
+
+<p>You can verify SFP settings using  <code>ethtool -m </code>. The following example
+shows the output for 1G and 10G modules:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~# sudo ethtool -m | egrep &#39;(swp|RXPower :|TXPower :|EthernetComplianceCode)&#39;
+
+swp1: SFP detected
+              EthernetComplianceCodes : 1000BASE-LX
+              RXPower : -10.4479dBm
+              TXPower : 18.0409dBm
+swp3: SFP detected
+              10GEthernetComplianceCode : 10G Base-LR
+              RXPower : -3.2532dBm
+              TXPower : -2.0817dBm</code></pre></div>
+<h2 id="caveats-and-errata">Caveats and Errata</h2>
+
+<h3 id="10g-and-1g-sfps-inserted-in-a-25g-port">10G and 1G SFPs Inserted in a 25G Port</h3>
+
+<p>For 10G and 1G SFPs inserted in a 25G port, you must edit the
+<code>/etc/cumulus/ports.conf</code> file and configure the four ports in the same
+core to be 10G. Each set of four 25G ports are controlled by a single
+core. Each core must run at the same clock speed. You cannot dynamically
+change the clock speed using interface configuration commands; you must
+specify them in the <code>/etc/cumulus/ports.conf</code> file.</p>
+
+<p>1G SFPs are clocked at 10G speeds; therefore, for 1G SFPs, the
+<code>/etc/cumulus/ports.conf</code> file entry must also specify 10G.</p>
+
+<p>25G and 100G cores do not support 1000Base-X auto-negotiation (Clause
+37) which is recommended for 1G Fiber optical modules. As a result, 1G
+fiber breaks cannot be detected. 1G Fiber modules are not recommended on
+25G ports.</p>
+
+<h3 id="timeout-error-on-quanta-ly8-and-ly9-switches">Timeout Error on Quanta LY8 and LY9 Switches</h3>
+
+<p>On Quanta T5048-LY8 and T3048-LY9 switches, an <em>Operation timed out</em>
+error occurs while removing and reinserting QSFP module. </p>
+
+<p>You cannot remove the QSFPx2 module while the switch is powered on, as
+it is not hot-swappable. However, if an *Operation timed out* error
+occurs, you can get the link to come up
+by <a href="Configuring-switchd_8362561.html#Configuringswitchd-restartswitchd">restarting <code>switchd</code></a>; however,
+this disrupts your network.</p>
+
+<p>On the T3048-LY9, run the following commands:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo echo 0 &gt; qsfpd_power_enable/value
+cumulus@switch:~$ sudo rmmod quanta_ly9_rangeley_platform 
+cumulus@switch:~$ sudo modprobe quanta_ly9_rangeley_platform
+cumulus@switch:~$ sudo systemctl restart switchd.service</code></pre></div>
+<p>On the T5048-LY8, run the following commands:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo echo 0 &gt; qsfpd_power_enable/value
+cumulus@switch:~$ sudo systemctl restart switchd.service</code></pre></div>
+<h3 id="swp33-and-swp34-disabled-on-some-switches">swp33 and swp34 Disabled on Some Switches</h3>
+
+<p>The front SFP+ ports (swp33 and swp34) are disabled in Cumulus Linux on
+the following switches:</p>
+
+<ul>
+<li>Dell Z9100-ON</li>
+<li>Penguin Arctica 3200-series switches (the 3200C, 3200XL and 3200XLP)</li>
+<li>Supermicro SSE-C3632S</li>
+</ul>
+
+<p>These ports appear as disabled in the <code>/etc/cumulus/ports.conf</code> file. </p>
+
+<h3 id="unsupported-interfaces-on-the-dell-s5248f-switch">Unsupported Interfaces on the Dell S5248F Switch</h3>
+
+<p>On the Dell S5248F switch, the 2x 200G QSFP-DD interfaces numbered 49
+and 51 are not currently supported.</p>
+
+<h3 id="ethtool-shows-incorrect-port-speed-on-100g-mellanox-switches">ethtool Shows Incorrect Port Speed on 100G Mellanox Switches</h3>
+
+<p>After setting the interface speed to 40G by editing
+the <code>ports.conf</code> file on a Mellanox switch, <code>ethtool</code> still shows the
+speed as 100G.</p>
+
+<p>This is a known issue where <code>ethtool</code> does not update after
+restarting <code>switchd</code>, so it continues to display the outdated port
+speed. </p>
+
+<p>To correctly set the port speed,
+use <a href="Network_Command_Line_Utility_-_NCLU">NCLU</a> or <code>ethtool</code> to set the
+speed instead of manually editing the <code>ports.conf</code> file.</p>
+
+<p>For example, to set the speed to 40G using NCLU:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface swp1 link speed 40000 </code></pre></div>
+<p>Or using <code>ethtool</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ethtool -s swp1 speed 40000 </code></pre></div>
+<h3 id="delay-in-reporting-interface-as-operational-down">Delay in Reporting Interface as Operational Down</h3>
+
+<p>When you remove two transceivers simultaneously from a switch, both
+interfaces show the <code>carrier down</code> status immediately. However, it takes
+one second for the second interface to show the <code>operational down</code>
+status. In addition, the services on this interface also take an extra
+second to come down.</p>
+
+<h2 id="related-information">Related Information</h2>
+
+<ul>
+<li><a href="http://wiki.debian.org/NetworkConfiguration">Debian - Network
+Configuration</a></li>
+<li><a href="http://www.linuxfoundation.org/collaborate/workgroups/networking/vlan">Linux Foundation -
+VLANs</a></li>
+<li><a href="http://www.linuxfoundation.org/collaborate/workgroups/networking/bonding">Linux Foundation -
+Bonds</a></li>
+</ul>
+
+<h2 id="attachments">Attachments:</h2>
+
+<p><img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8363026/8363030.jpg">breakout-cable.jpg</a> (image/jpeg)</p>
+</article>
+
+      
+<div class="align-center book-git-footer justify-between">
+  
+  <div>
+    <a href="https://github.com/cawleyflower/testDocs/commit/0f1fa77f244c4b4642688df1f5e961e88daa6e08" title='Last modified March 4, 2019 16:11 EST by Cawleyflower' target="_blank" rel="noopener">
+      <img src="/svg/code-merge.svg" /> Last Modified Mar 4, 2019
+    </a>
+  </div>
+  
+  
+</div>
+
+
+    </div>
+
+    
+  
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#switch-port-attributes">Switch Port Attributes</a>
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#auto-negotiation">Auto-negotiation</a></li>
+<li><a href="#port-speed-and-duplex-mode">Port Speed and Duplex Mode</a></li>
+<li><a href="#mtu">MTU</a>
+<ul>
+<li><a href="#set-a-policy-for-global-system-mtu">Set a Policy for Global System MTU</a></li>
+<li><a href="#mtu-for-a-bridge">MTU for a Bridge</a></li>
+<li><a href="#bring-down-an-interface-for-a-bridge-member">Bring Down an Interface for a Bridge Member</a></li>
+</ul></li>
+<li><a href="#fec">FEC</a>
+<ul>
+<li><a href="#determine-cable-class">Determine Cable Class</a></li>
+<li><a href="#how-does-cumulus-linux-use-fec">How Does Cumulus Linux use FEC?</a></li>
+<li><a href="#show-the-current-fec-mode">Show the Current FEC Mode</a></li>
+<li><a href="#enable-or-disable-fec">Enable or Disable FEC</a></li>
+</ul></li>
+<li><a href="#interface-configuration-recommendations">Interface Configuration Recommendations</a></li>
+<li><a href="#default-policies-for-interface-settings">Default Policies for Interface Settings</a></li>
+<li><a href="#breakout-ports">Breakout Ports</a>
+<ul>
+<li><a href="#remove-a-breakout-port">Remove a Breakout Port</a></li>
+<li><a href="#combine-four-10g-ports-into-one-40g-port">Combine Four 10G Ports into One 40G Port</a></li>
+</ul></li>
+<li><a href="#logical-switch-port-limitations">Logical Switch Port Limitations</a></li>
+<li><a href="#configure-interfaces-with-ethtool">Configure Interfaces with ethtool </a></li>
+<li><a href="#verification-and-troubleshooting-commands">Verification and Troubleshooting Commands</a>
+<ul>
+<li><a href="#statistics">Statistics</a></li>
+<li><a href="#query-sfp-port-information">Query SFP Port Information</a></li>
+</ul></li>
+<li><a href="#caveats-and-errata">Caveats and Errata</a>
+<ul>
+<li><a href="#10g-and-1g-sfps-inserted-in-a-25g-port">10G and 1G SFPs Inserted in a 25G Port</a></li>
+<li><a href="#timeout-error-on-quanta-ly8-and-ly9-switches">Timeout Error on Quanta LY8 and LY9 Switches</a></li>
+<li><a href="#swp33-and-swp34-disabled-on-some-switches">swp33 and swp34 Disabled on Some Switches</a></li>
+<li><a href="#unsupported-interfaces-on-the-dell-s5248f-switch">Unsupported Interfaces on the Dell S5248F Switch</a></li>
+<li><a href="#ethtool-shows-incorrect-port-speed-on-100g-mellanox-switches">ethtool Shows Incorrect Port Speed on 100G Mellanox Switches</a></li>
+<li><a href="#delay-in-reporting-interface-as-operational-down">Delay in Reporting Interface as Operational Down</a></li>
+</ul></li>
+<li><a href="#related-information">Related Information</a></li>
+<li><a href="#attachments">Attachments:</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+  
+</body>
+
+</html>

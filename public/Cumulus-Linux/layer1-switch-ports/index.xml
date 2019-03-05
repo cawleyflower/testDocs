@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cumulus Networks Documentation</title>
+    <link>http://example.org/Cumulus-Linux/layer1-switch-ports/</link>
+    <description>Recent content on Cumulus Networks Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/Cumulus-Linux/layer1-switch-ports/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer1-switch-ports/802.1X_Interfaces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer1-switch-ports/802.1X_Interfaces/</guid>
+      <description>802.1X Interfaces The IEEE 802.1X protocol provides a method of authenticating a client (called a supplicant) over wired media. It also provides access for individual MAC addresses on a switch (called the authenticator) after those MAC addresses have been authenticated by an authentication server — typically a RADIUS (Remote Authentication Dial In User Service, defined by RFC 2865) server. A Cumulus Linux switch acts as an intermediary between the clients connected to the wired ports and the authentication server, which is reachable over the existing network.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer1-switch-ports/Buffer_and_Queue_Management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer1-switch-ports/Buffer_and_Queue_Management/</guid>
+      <description>Buffer and Queue Management Hardware datapath configuration manages packet buffering, queueing and scheduling in hardware. There are two configuration input files:
+ /etc/cumulus/datapath/traffic.conf, which describes priority groups and assigns the scheduling algorithm and weights /usr/lib/python2.7/dist-packages/cumulus/__chip_config/[bcm|mlx]/datapath.conf, which assigns buffer space and egress queues
+While it&amp;rsquo;s possible to change the buffer limits in the datapath.conf file, Cumulus Networks strongly recommends you work with a Cumulus support engineer to do so.
+  Each packet is assigned to an ASIC Class of Service (CoS) value based on the packet&amp;rsquo;s priority value stored in the 802.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer1-switch-ports/DHCP_Relays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer1-switch-ports/DHCP_Relays/</guid>
+      <description>DHCP Relays You can configure DHCP relays for IPv4 and IPv6. To run DHCP for both IPv4 and IPv6, initiate the DHCP relay once for IPv4 and once for IPv6. Following are the configurations on the server hosts, DHCP relay, and DHCP server using the following topology:
+{height=&amp;ldquo;250&amp;rdquo;}
+The dhcpd and dhcrelay services are disabled by default. After you finish configuring the DHCP relays and servers, you need to start those services.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer1-switch-ports/DHCP_Servers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer1-switch-ports/DHCP_Servers/</guid>
+      <description>DHCP Servers To run DHCP for both IPv4 and IPv6, you need to initiate the DHCP server twice: once for IPv4 and once for IPv6. The following configuration uses the following topology for the host, DHCP relay and DHCP server:
+{height=&amp;ldquo;250&amp;rdquo;}
+For the configurations used in this chapter, the DHCP server is a switch running Cumulus Linux; however, the DHCP server can also be located on a dedicated server in your environment.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer1-switch-ports/Facebook_Voyager_Optical_Interfaces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer1-switch-ports/Facebook_Voyager_Optical_Interfaces/</guid>
+      <description>Facebook Voyager Optical Interfaces Facebook Voyager is a Broadcom Tomahawk-based switch with added Dense Wave Division Multiplexing (DWDM) ports that can connect to another switch thousands of kilometers away by adding transponders. DWDM allows many separate connections on one fiber pair by sending them over different wavelengths. Although the wavelengths are sent on the same physical fiber, they do not interact with each other, similar to VLANs on a trunk.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer1-switch-ports/Prescriptive_Topology_Manager_-_PTM/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer1-switch-ports/Prescriptive_Topology_Manager_-_PTM/</guid>
+      <description>Prescriptive Topology Manager - PTM In data center topologies, right cabling is a time-consuming endeavor and is error prone. Prescriptive Topology Manager (PTM) is a dynamic cabling verification tool to help detect and eliminate such errors. It takes a Graphviz-DOT specified network cabling plan (something many operators already generate), stored in a topology.dot file, and couples it with runtime information derived from LLDP to verify that the cabling matches the specification.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/Interface_Configuration_and_Management/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/Interface_Configuration_and_Management/</guid>
+      <description>Interface Configuration and Management ifupdown is the network interface manager for Cumulus Linux. Cumulus Linux uses an updated version of this tool, ifupdown2.
+For more information on network interfaces, see Switch Port Attributes.
+By default, ifupdown is quiet; use the verbose option -v when you want to know what is going on when bringing an interface down or up.
+Contents {.expand-control-image}This topic describes &amp;hellip;
+ Basic Commands ifupdown2 Interface Classes Configure a Loopback Interface ifupdown Behavior with Child Interfaces ifupdown2 Interface Dependencies Subinterfaces ifup and Upper (Parent) Interfaces Configure IP Addresses  Specify IP Address Scope  Purge Existing IP Addresses on an Interface  Specify User Commands Source Interface File Snippets Use Globs for Port Lists Use Templates Run ifupdown Scripts under /etc/network/ with ifupdown2 Add Descriptions to Interfaces Caveats and Errata  ifupdown2 and sysctl Long Interface Names  Related Information  Basic Commands To bring up an interface or apply changes to an existing interface, run:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/switch_port_attributes/Switch_Port_Attributes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/switch_port_attributes/Switch_Port_Attributes/</guid>
+      <description>Switch Port Attributes Cumulus Linux exposes network interfaces for several types of physical and logical devices:
+ lo, network loopback device ethN, switch management port(s), for out of band management only swpN, switch front panel ports (optional) brN, bridges (IEEE 802.1Q VLANs) (optional) bondN, bonds (IEEE 802.3ad link aggregation trunks, or port channels)  Each physical network interface has a number of configurable settings:
+ Auto-negotiation Duplex FEC (Forward error correction) Link speed MTU, or maximum transmission unit  Most of these settings are configured automatically for you, depending upon your switch ASIC, although you must always set MTU manually.</description>
+    </item>
+    
+  </channel>
+</rss>

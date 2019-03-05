@@ -1,0 +1,1120 @@
+<!DOCTYPE html><html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Configuring F R Routing | Cumulus Networks Documentation</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+<link rel="stylesheet" href="/book.min.50a619ce4c0e99594908d162684f42218608aa6fde2bd83cca5025d59ba535e3.css">
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+<h2 class="book-brand">
+  <a href="http://example.org/">Cumulus Networks Documentation</a>
+</h2>
+
+
+
+    
+
+
+  
+  
+    
+    
+  
+ 
+  <ul>
+    
+    <li><a href="/Cumulus-Linux/installation-management/">
+    Installation Management</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/">Adding and Updating Packages</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/">Installing a New Cumulus Linux Image</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/">Managing Cumulus Linux Disk Images</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/">Upgrading Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Using_Snapshots/">Using Snapshots</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/">Zero Touch Provisioning Z T P</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer1-switch-ports/">
+    Layer1 Switch Ports</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/802.1X_Interfaces/">802.1 X Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Buffer_and_Queue_Management/">Buffer and Queue Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Relays/">D H C P Relays</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Servers/">D H C P Servers</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Facebook_Voyager_Optical_Interfaces/">Facebook Voyager Optical Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Prescriptive_Topology_Manager_-_PTM/">Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/Interface_Configuration_and_Management/">Interface Configuration and Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/switch_port_attributes/Switch_Port_Attributes/">Switch Port Attributes</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer2/">
+    Layer2</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Prescriptive_Topology_Manager_-_PTM/">Copy of Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Spanning_Tree_and_Rapid_Spanning_Tree/">Copy of Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Ethernet_Bridging_-_VLANs/">Ethernet Bridging v L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/IGMP_and_MLD_Snooping/">I G M P and M L D Snooping</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/LACP_Bypass/">L a C P Bypass</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Link_Layer_Discovery_Protocol/">Link Layer Discovery Protocol</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Multi-Chassis_Link_Aggregation_-_MLAG/">Multi Chassis Link Aggregation M L a G</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Spanning_Tree_and_Rapid_Spanning_Tree/">Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Virtual_Router_Redundancy_-_VRR/">Virtual Router Redundancy v R R</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/bonding_link_aggregation/Bonding_-_Link_Aggregation/">Bonding Link Aggregation</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/Traditional_Bridge_Mode/">Traditional Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN-aware_Bridge_Mode/">V L a N Aware Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN_Tagging/">V L a N Tagging</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/link_layer_discovery_protocol/voice_vlan/Voice_VLAN/">Voice v L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/virtual_router_redundancy/ifplugd/ifplugd/">Ifplugd</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer3/">
+    Layer3</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Address_Resolution_Protocol_-_ARP/">Address Resolution Protocol a R P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Bidirectional_Forwarding_Detection_-_BFD/">Bidirectional Forwarding Detection B F D</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Border_Gateway_Protocol_-_BGP/">Border Gateway Protocol B G P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Configuring_FRRouting/" class="active">Configuring F R Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP/">Equal Cost Multipath Load Sharing Hardware E C M P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/FRRouting_Overview/">F R Routing Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/GRE_Tunneling/">G R E Tunneling</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Introduction_to_Routing_Protocols/">Introduction to Routing Protocols</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Management_VRF/">Management v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Network_Topology/">Network Topology</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_-_OSPF/">Open Shortest Path First O S P F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_v3_-_OSPFv3/">Open Shortest Path First V3 O S P Fv3</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Policy-based_Routing/">Policy Based Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Protocol_Independent_Multicast_-_PIM/">Protocol Independent Multicast P I M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Redistribute_Neighbor/">Redistribute Neighbor</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Routing/">Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Segment_Routing/">Segment Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Virtual_Routing_and_Forwarding_-_VRF/">Virtual Routing and Forwarding v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/configuring_frrouting/comparing_nclu_and_vtysh_commands/Comparing_NCLU_and_vtysh_Commands/">Comparing N C L U and Vtysh Commands</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/frrouting_overview/Upgrading_from_Quagga_to_FRRouting/">Upgrading From Quagga to F R Routing</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/monitoring-troubleshooting/">
+    Monitoring Troubleshooting</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/ASIC_Monitoring/">A S I C Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/FRRouting_Log_Message_Reference/">F R Routing Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Best_Practices/">Monitoring Best Practices</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_System_Hardware/">Monitoring System Hardware</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Virtual_Device_Counters/">Monitoring Virtual Device Counters</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Network_Troubleshooting/">Network Troubleshooting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Resource_Diagnostics_Using_cl-resource-query/">Resource Diagnostics Using Cl Resource Query</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Simple_Network_Management_Protocol_SNMP_Monitoring/">Simple Network Management Protocol S N M P Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Single_User_Mode_-_Boot_Recovery/">Single User Mode Boot Recovery</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Troubleshooting_Network_Interfaces/">Troubleshooting Network Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Understanding_the_cl-support_Output_File/">Understanding the Cl Support Output File</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/monitoring_system_hardware/network_switch_port_led_and_stats_led/Network_Switch_Port_LED_and_Status_LED_Guidelines/">Network Switch Port L E D and Status L E D Guidelines</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/monitoring_system_statistics/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow/">Monitoring System Statistics and Network Traffic With S Flow</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/using_nclu_to_troubleshoot/Using_NCLU_to_Troubleshoot_Your_Network_Configuration/">Using N C L U to Troubleshoot Your Network Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/simple_network_management/using_nutanix_prisim_as_monitoring_tool/Using_Nutanix_Prism_as_a_Monitoring_Tool/">Using Nutanix Prism as a Monitoring Tool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/switchd_Log_Message_Reference/">Switchd Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/troubleshooting_network_interfaces/monitoring_interfaces_and_transcievers_using_ethtool/Monitoring_Interfaces_and_Transceivers_Using_ethtool/">Monitoring Interfaces and Transceivers Using Ethtool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_log_files/Troubleshooting_Log_Files/">Troubleshooting Log Files</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_the_etc_directory/Troubleshooting_the_etc_Directory/">Troubleshooting the Etc Directory</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-solutions/">
+    Network Solutions</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Anycast_Design_Guide/">Anycast Design Guide</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Hyperconverged_Solution_with_Nutanix/">Cumulus Hyperconverged Solution With Nutanix</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Networks_Services_Demos/">Cumulus Networks Services Demos</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Data_Center_Host_to_ToR_Architecture/">Data Center Host to to R Architecture</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Docker_on_Cumulus_Linux/">Docker on Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/OpenStack_Neutron_ML2_and_Cumulus_Linux/">Open Stack Neutron M L2 and Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/RDMA_over_Converged_Ethernet_-_RoCE/">R D M a Over Converged Ethernet Ro C E</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-visualization/">
+    Network Visualization</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Eng_Update_of_VXLAN_Hyperloop/">Eng Update of v X L a N Hyperloop</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Ethernet_Virtual_Private_Network_-_EVPN/">Ethernet Virtual Private Network E v P N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs/">Hybrid Cloud Connectivity With Qin Q and v X L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/LNV_Full_Example/">L N v Full Example</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Lightweight_Network_Virtualization_Overview/">Lightweight Network Virtualization Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Static_VXLAN_Configurations/">Static v X L a N Configurations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Routing/">V X L a N Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Scale/">V X L a N Scale</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Tunnel_DSCP_Operations__DRAFT/">V X L a N Tunnel D S C P Operations — D R a F T</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Virtualization_Integrations/">Virtualization Integrations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_mac_bindings/Static_MAC_Bindings_with_VXLAN/">Static M a C Bindings With v X L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_vxlan_tunnels/Static_VXLAN_Tunnels/">Static v X L a N Tunnels</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_hardware_vteps_vmware_nsx-mh/Integrating_Hardware_VTEPs_with_VMware_NSX-MH/">Integrating Hardware v T E Ps With v Mware N S X M H</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_midonet_openstack/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack/">Integrating Hardware v T E Ps With Midokura Mido Net and Open Stack</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_vmware_nsx-v/Integrating_Hardware_VTEPs_with_VMware_NSX-V/">Integrating Hardware v T E Ps With v Mware N S X V</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/ovsdb_server_high_availability/OVSDB_Server_High_Availability/">O v S D B Server High Availability</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/system-config/">
+    System Config</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Authentication_Authorization_and_Accounting/">Authentication Authorization and Accounting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_a_Global_Proxy/">Configuring a Global Proxy</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_switchd/">Configuring Switchd</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Copy_of_Netfilter_-_ACLs/">Copy of Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/HTTP_API/">H T T P a P I</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Netfilter_-_ACLs/">Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/">Network Command Line Utility N C L U</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Power_over_Ethernet_-_PoE/">Power Over Ethernet Po E</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Services_and_Daemons_in_Cumulus_Linux/">Services and Daemons in Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Setting_Date_and_Time/">Setting Date and Time</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/LDAP_Authentication_and_Authorization/">L D a P Authentication and Authorization</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/RADIUS_AAA/">R a D I U S a a A</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/SSH_for_Remote_Access/">S S H for Remote Access</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/TACACS_Plus/">T a C a C S Plus</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/User_Accounts/">User Accounts</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/Using_sudo_to_Delegate_Privileges/">Using Sudo to Delegate Privileges</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Default_Cumulus_Linux_ACL_Configuration/">Default Cumulus Linux a C L Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Filtering_Learned_MAC_Addresses/">Filtering Learned M a C Addresses</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/whats-new/">What&#39;s New</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/cumulus-linux-index/Cumulus_Linux_Index/">Cumulus Linux Index</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/quick-start/Quick_Start_Guide/">Quick Start Guide</a>
+    </li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+</nav>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" />
+  </label>
+  <strong>Configuring F R Routing</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="configuring-frrouting">Configuring FRRouting</h1>
+
+<p>This section provides an overview of configuring FRRouting, the routing
+software package that provides a suite of routing protocols so you can
+configure routing on your switch.</p>
+
+<h2 id="contents">Contents</h2>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}This topic
+describes &hellip;</p>
+
+<ul>
+<li><a href="#ConfiguringFRRouting-ConfigureFRRouting">Configure FRRouting</a>
+
+<ul>
+<li><a href="#ConfiguringFRRouting-enableFRREnableandStartFRRouting">Enable and Start
+FRRouting</a></li>
+<li><a href="#ConfiguringFRRouting-integrated_cfgIntegratedConfigurations">Integrated
+Configurations</a></li>
+<li><a href="#ConfiguringFRRouting-RestoretheDefaultConfiguration">Restore the Default
+Configuration</a></li>
+</ul></li>
+<li><a href="#ConfiguringFRRouting-InterfaceIPAddressesandVRFs">Interface IP Addresses and
+VRFs</a></li>
+<li><a href="#ConfiguringFRRouting-vtyshFRRoutingvtyshModalCLI">FRRouting vtysh Modal
+CLI</a></li>
+<li><a href="#ConfiguringFRRouting-ReloadtheFRRoutingConfiguration">Reload the FRRouting
+Configuration</a></li>
+<li><a href="#ConfiguringFRRouting-FRRLogging">FRR Logging</a></li>
+<li><a href="#ConfiguringFRRouting-Caveats">Caveats</a>
+
+<ul>
+<li><a href="#ConfiguringFRRouting-ObfuscatedPasswords">Obfuscated
+Passwords</a></li>
+<li><a href="#ConfiguringFRRouting-DuplicateHostnames">Duplicate Hostnames</a></li>
+</ul></li>
+<li><a href="#ConfiguringFRRouting-RelatedInformation">Related Information</a></li>
+</ul>
+
+<h2 id="configure-frrouting">Configure FRRouting</h2>
+
+<p>FRRouting does not start by default in Cumulus Linux. Before you run
+FRRouting, make sure all you have enabled relevant daemons that you
+intend to use — <code>zebra</code>, <code>bgpd</code>, <code>ospfd</code>, <code>ospf6d</code> or <code>pimd</code> — in the
+<code>/etc/frr/daemons</code> file.</p>
+
+<p>Cumulus Networks has not tested RIP, RIPv6, IS-IS and Babel.</p>
+
+<p>The <code>zebra</code> daemon must always be enabled. The others you can enable
+according to how you plan to route your network —
+using <a href="Border_Gateway_Protocol_-_BGP">BGP</a> for example, instead
+of <a href="Open_Shortest_Path_First_-_OSPF">OSPF</a>.</p>
+
+<p>Before you start FRRouting, you need to enable the corresponding
+daemons. Edit the <code>/etc/frr/daemons</code> file and set to <em>yes</em> each daemon
+you are enabling. For example, to enable BGP, set both <code>zebra</code> and
+<code>bgpd</code> to <em>yes</em>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">zebra=yes (* this one is mandatory to bring the others up)
+bgpd=yes
+ospfd=no
+ospf6d=no
+ripd=no
+ripngd=no
+isisd=no
+babeld=no
+pimd=no</code></pre></div>
+<h3 id="enable-and-start-frrouting">Enable and Start FRRouting</h3>
+
+<p>Once you enable the appropriate daemons, then you need to enable and
+start the FRRouting service. </p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo systemctl enable frr.service 
+cumulus@switch:~$ sudo systemctl start frr.service</code></pre></div>
+<p>All the routing protocol daemons
+(<code>bgpd</code>, <code>ospfd</code>, <code>ospf6d</code>, <code>ripd</code>, <code>ripngd</code>, <code>isisd</code> and <code>pimd</code>) are
+dependent on <code>zebra</code>. When you start <code>frr</code>, <code>systemd</code> determines whether
+<code>zebra</code> is running; if <code>zebra</code> is not running, it starts <code>zebra</code>, then
+starts the dependent service, such as <code>bgpd</code>.</p>
+
+<p>In general, if you restart a service, its dependent services also get
+restarted. For example, running <code>systemctl restart frr.service</code> restarts
+any of the routing protocol daemons that are enabled and running.</p>
+
+<p>For more information on the <code>systemctl</code> command and changing the state
+of daemons, read <a href="Services_and_Daemons_in_Cumulus_Linux">Services and Daemons in Cumulus
+Linux</a>.</p>
+
+<h3 id="integrated-configurations">Integrated Configurations</h3>
+
+<p>By default in Cumulus Linux, FRRouting saves the configuration of all
+daemons in a single integrated configuration file, <code>frr.conf</code>.</p>
+
+<p>You can disable this mode by running the following command in the
+<a href="#ConfiguringFRRouting-vtysh"><code>vtysh</code> FRRouting CLI</a>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo vtysh
+switch# configure terminal
+switch(config)# no service integrated-vtysh-config</code></pre></div>
+<p>To enable the integrated configuration file mode again, run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">switch(config)# service integrated-vtysh-config</code></pre></div>
+<p>If you disable the integrated configuration mode, FRRouting saves each
+daemon-specific configuration file in a separate file. At a minimum for
+a daemon to start, that daemon must be enabled and its daemon-specific
+configuration file must be present, even if that file is empty.</p>
+
+<p>You save the current configuration by running:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">switch# write mem
+Building Configuration...
+Integrated configuration saved to /etc/frr/frr.conf
+[OK]
+switch# exit
+cumulus@switch:~$ </code></pre></div>
+<p>You can use <code>write file</code> instead of <code>write mem</code>.</p>
+
+<p>When the integrated configuration mode disabled, the output looks like
+this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">switch# write mem
+Building Configuration...
+Configuration saved to /etc/frr/zebra.conf
+Configuration saved to /etc/frr/bgpd.conf
+[OK]</code></pre></div>
+<h3 id="restore-the-default-configuration">Restore the Default Configuration</h3>
+
+<p>If you need to restore the FRRouting configuration to the default
+running configuration, you need to delete the <code>frr.conf</code> file and
+restart the <code>frr</code> service. You should back up <code>frr.conf</code> (or any
+configuration files you may remove, see the note below) before
+proceeding.</p>
+
+<ol>
+<li><p>Confirm <code>service integrated-vtysh-config</code> is enabled:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ net show configuration | grep integrated
+          service integrated-vtysh-config  </code></pre></div></li>
+
+<li><p>Remove <code>/etc/frr/frr.conf</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo rm /etc/frr/frr.conf</code></pre></div></li>
+
+<li><p>Restart FRRouting:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo systemctl restart frr.service</code></pre></div></li>
+</ol>
+
+<p>If for some reason you disabled <code>service integrated-vtysh-config</code>, then
+you should remove all the configuration files (such as <code>zebra.conf</code> or
+<code>ospf6d.conf</code>) instead of <code>frr.conf</code> in step 2 above.</p>
+
+<h2 id="interface-ip-addresses-and-vrfs">Interface IP Addresses and VRFs</h2>
+
+<p>FRRouting inherits the IP addresses and any associated routing tables
+for the network interfaces from the <code>/etc/network/interfaces</code> file. This
+is the recommended way to define the addresses; do <strong>not</strong> create
+interfaces using FRRouting. For more information, see <a href="Interface-Configuration-and-Management_8363023.html#InterfaceConfigurationandManagement-ip">Configuring IP
+Addresses</a> and <a href="Virtual_Routing_and_Forwarding_-_VRF">Virtual
+Routing and Forwarding - VRF</a>.</p>
+
+<h2 id="frrouting-vtysh-modal-cli">FRRouting vtysh Modal CLI</h2>
+
+<p>FRRouting provides a CLI – <code>vtysh</code> – for configuring and displaying the
+state of the protocols. It is invoked by running:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo vtysh
+
+Hello, this is FRRouting (version 0.99.23.1+cl3u2).
+Copyright 1996-2005 Kunihiro Ishiguro, et al.
+
+switch#</code></pre></div>
+<p><code>vtysh</code> provides a Cisco-like modal CLI, and many of the commands are
+similar to Cisco IOS commands. By modal CLI, we mean that there are
+different modes to the CLI, and certain commands are only available
+within a specific mode. Configuration is available with the
+<code>configure terminal</code> command, which is invoked thus:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">switch# configure terminal
+switch(config)#</code></pre></div>
+<p>The prompt displays the mode the CLI is in. For example, when the
+interface-specific commands are invoked, the prompt changes to:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">switch(config)# interface swp1
+switch(config-if)#</code></pre></div>
+<p>When the routing protocol specific commands are invoked, the prompt
+changes to:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">switch(config)# router ospf
+switch(config-router)#</code></pre></div>
+<p>At any level, ”?” displays the list of available top-level commands at
+that level:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">switch(config-if)# ?
+  bandwidth    Set bandwidth informational parameter
+  description  Interface specific description
+  end          End current mode and change to enable mode
+  exit         Exit current mode and down to previous mode
+  ip           IP Information
+  ipv6         IPv6 Information
+  isis         IS-IS commands
+  link-detect  Enable link detection on interface
+  list         Print command list
+  mpls-te      MPLS-TE specific commands
+  multicast    Set multicast flag to interface
+  no           Negate a command or set its defaults
+  ptm-enable   Enable neighbor check with specified topology
+  quit         Exit current mode and down to previous mode
+  shutdown     Shutdown the selected interface</code></pre></div>
+<p>?-based completion is also available to see the parameters that a
+command takes:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">switch(config-if)# bandwidth ?
+&lt;1-10000000&gt;  Bandwidth in kilobits
+switch(config-if)# ip ?
+address  Set the IP address of an interface
+irdp     Alter ICMP Router discovery preference this interface
+ospf     OSPF interface commands
+rip      Routing Information Protocol
+router   IP router interface commands</code></pre></div>
+<p>Displaying state can be done at any level, including the top level. For
+example, to see the routing table as seen by <code>zebra</code>, you use:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">switch# show ip route
+Codes: K - kernel route, C - connected, S - static, R - RIP,
+       O - OSPF, I - IS-IS, B - BGP, T - Table,
+       &gt; - selected route, * - FIB route
+B&gt;* 0.0.0.0/0 [20/0] via fe80::4638:39ff:fe00:c, swp29, 00:11:57
+  *                  via fe80::4638:39ff:fe00:52, swp30, 00:11:57
+B&gt;* 10.0.0.1/32 [20/0] via fe80::4638:39ff:fe00:c, swp29, 00:11:57
+  *                    via fe80::4638:39ff:fe00:52, swp30, 00:11:57
+B&gt;* 10.0.0.11/32 [20/0] via fe80::4638:39ff:fe00:5b, swp1, 00:11:57
+B&gt;* 10.0.0.12/32 [20/0] via fe80::4638:39ff:fe00:2e, swp2, 00:11:58
+B&gt;* 10.0.0.13/32 [20/0] via fe80::4638:39ff:fe00:57, swp3, 00:11:59
+B&gt;* 10.0.0.14/32 [20/0] via fe80::4638:39ff:fe00:43, swp4, 00:11:59
+C&gt;* 10.0.0.21/32 is directly connected, lo
+B&gt;* 10.0.0.51/32 [20/0] via fe80::4638:39ff:fe00:c, swp29, 00:11:57
+  *                     via fe80::4638:39ff:fe00:52, swp30, 00:11:57
+B&gt;* 172.16.1.0/24 [20/0] via fe80::4638:39ff:fe00:5b, swp1, 00:11:57
+  *                      via fe80::4638:39ff:fe00:2e, swp2, 00:11:57
+B&gt;* 172.16.3.0/24 [20/0] via fe80::4638:39ff:fe00:57, swp3, 00:11:59
+  *                      via fe80::4638:39ff:fe00:43, swp4, 00:11:59</code></pre></div>
+<p>To run the same command at a config level, you prepend <code>do</code> to it:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">switch(config-router)# do show ip route
+Codes: K - kernel route, C - connected, S - static, R - RIP,
+       O - OSPF, I - IS-IS, B - BGP, T - Table,
+       &gt; - selected route, * - FIB route
+B&gt;* 0.0.0.0/0 [20/0] via fe80::4638:39ff:fe00:c, swp29, 00:05:17
+  *                  via fe80::4638:39ff:fe00:52, swp30, 00:05:17
+B&gt;* 10.0.0.1/32 [20/0] via fe80::4638:39ff:fe00:c, swp29, 00:05:17
+  *                    via fe80::4638:39ff:fe00:52, swp30, 00:05:17
+B&gt;* 10.0.0.11/32 [20/0] via fe80::4638:39ff:fe00:5b, swp1, 00:05:17
+B&gt;* 10.0.0.12/32 [20/0] via fe80::4638:39ff:fe00:2e, swp2, 00:05:18
+B&gt;* 10.0.0.13/32 [20/0] via fe80::4638:39ff:fe00:57, swp3, 00:05:18
+B&gt;* 10.0.0.14/32 [20/0] via fe80::4638:39ff:fe00:43, swp4, 00:05:18
+C&gt;* 10.0.0.21/32 is directly connected, lo
+B&gt;* 10.0.0.51/32 [20/0] via fe80::4638:39ff:fe00:c, swp29, 00:05:17
+  *                     via fe80::4638:39ff:fe00:52, swp30, 00:05:17
+B&gt;* 172.16.1.0/24 [20/0] via fe80::4638:39ff:fe00:5b, swp1, 00:05:17
+  *                      via fe80::4638:39ff:fe00:2e, swp2, 00:05:17
+B&gt;* 172.16.3.0/24 [20/0] via fe80::4638:39ff:fe00:57, swp3, 00:05:18
+  *                      via fe80::4638:39ff:fe00:43, swp4, 00:05:18</code></pre></div>
+<p>Running single commands with <code>vtysh</code> is possible using the <code>-c</code> option
+of <code>vtysh</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo vtysh -c &#39;sh ip route&#39;
+Codes: K - kernel route, C - connected, S - static, R - RIP,
+       O - OSPF, I - IS-IS, B - BGP, A - Babel,
+       &gt; - selected route, * - FIB route
+
+K&gt;* 0.0.0.0/0 via 192.168.0.2, eth0
+C&gt;* 192.0.2.11/24 is directly connected, swp1
+C&gt;* 192.0.2.12/24 is directly connected, swp2
+B&gt;* 203.0.113.30/24 [200/0] via 192.0.2.2, swp1, 11:05:10
+B&gt;* 203.0.113.31/24 [200/0] via 192.0.2.2, swp1, 11:05:10
+B&gt;* 203.0.113.32/24 [200/0] via 192.0.2.2, swp1, 11:05:10
+C&gt;* 127.0.0.0/8 is directly connected, lo
+C&gt;* 192.168.0.0/24 is directly connected, eth0</code></pre></div>
+<p>Running a command multiple levels down is done thus:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo vtysh -c &#39;configure terminal&#39; -c &#39;router ospf&#39; -c &#39;area 0.0.0.1 range 10.10.10.0/24&#39;</code></pre></div>
+<p>Notice that the commands also take a partial command name (for example,
+<code>sh ip route</code> above) as long as the partial command name is not aliased:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo vtysh -c &#39;sh ip r&#39;
+% Ambiguous command.</code></pre></div>
+<p>A command or feature can be disabled in FRRouting by prepending the
+command with <code>no</code>. For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo vtysh 
+switch# configure terminal
+switch(config)# router ospf
+switch(config-router)# no area 0.0.0.1 range 10.10.10.0/24
+switch(config-router)# exit
+switch(config)# exit
+switch# write mem
+switch# exit
+cumulus@switch:~$</code></pre></div>
+<p>The current state of the configuration can be viewed using the
+<code>show running-config</code> command:</p>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}Click here
+to expand&hellip;</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">switch# show running-config
+Building configuration...
+
+Current configuration:
+!
+username cumulus nopassword
+!
+service integrated-vtysh-config
+!
+vrf mgmt
+!
+interface lo
+ link-detect
+!
+interface swp1
+ ipv6 nd ra-interval 10
+ link-detect
+!
+interface swp2
+ ipv6 nd ra-interval 10
+ link-detect
+!
+interface swp3
+ ipv6 nd ra-interval 10
+ link-detect
+!
+interface swp4
+ ipv6 nd ra-interval 10
+ link-detect
+!
+interface swp29
+ ipv6 nd ra-interval 10
+ link-detect
+!
+interface swp30
+ ipv6 nd ra-interval 10
+ link-detect
+!
+interface swp31
+ link-detect
+!
+interface swp32
+ link-detect
+!
+interface vagrant
+ link-detect
+!
+interface eth0 vrf mgmt
+ ipv6 nd suppress-ra
+ link-detect
+!
+interface mgmt vrf mgmt
+ link-detect
+!
+router bgp 65020
+ bgp router-id 10.0.0.21
+ bgp bestpath as-path multipath-relax
+ bgp bestpath compare-routerid
+ neighbor fabric peer-group
+ neighbor fabric remote-as external
+ neighbor fabric description Internal Fabric Network
+ neighbor fabric capability extended-nexthop
+ neighbor swp1 interface peer-group fabric
+ neighbor swp2 interface peer-group fabric
+ neighbor swp3 interface peer-group fabric
+ neighbor swp4 interface peer-group fabric
+ neighbor swp29 interface peer-group fabric
+ neighbor swp30 interface peer-group fabric
+ !
+ address-family ipv4 unicast
+  network 10.0.0.21/32
+  neighbor fabric activate
+  neighbor fabric prefix-list dc-spine in
+  neighbor fabric prefix-list dc-spine out
+ exit-address-family
+!
+ip prefix-list dc-spine seq 10 permit 0.0.0.0/0
+ip prefix-list dc-spine seq 20 permit 10.0.0.0/24 le 32
+ip prefix-list dc-spine seq 30 permit 172.16.1.0/24
+ip prefix-list dc-spine seq 40 permit 172.16.2.0/24
+ip prefix-list dc-spine seq 50 permit 172.16.3.0/24
+ip prefix-list dc-spine seq 60 permit 172.16.4.0/24
+ip prefix-list dc-spine seq 500 deny any
+!
+ip forwarding
+ipv6 forwarding
+!
+line vty
+!
+end</code></pre></div>
+<p>If you attempt to configure a routing protocol that has not been
+started, <code>vtysh</code> silently ignores those commands.</p>
+
+<p>Alternately, if you do not want to use a modal CLI to configure
+FRRouting, you can use a suite of <a href="Comparing_NCLU_and_vtysh_Commands">Cumulus Linux-specific
+commands</a> instead.</p>
+
+<h2 id="reload-the-frrouting-configuration">Reload the FRRouting Configuration</h2>
+
+<p>If you make a change to your routing configuration, you need to reload
+FRRouting so your changes take place. *FRRouting reload* enables you to
+apply only the modifications you make to your FRRouting configuration,
+synchronizing its running state with the configuration
+in <code>/etc/frr/frr.conf</code>. This is useful for optimizing automation of
+FRRouting in your environment or to apply changes made at runtime.</p>
+
+<p>FRRouting reload only applies to an integrated service configuration,
+where your FRRouting configuration is stored in a single <code>frr.conf</code> file
+instead of one configuration file per FRRouting daemon
+(like <code>zebra</code> or <code>bgpd</code>).</p>
+
+<p>To reload your FRRouting configuration after you&rsquo;ve
+modified <code>/etc/frr/frr.conf</code>, run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo systemctl reload frr.service</code></pre></div>
+<p>Examine the running configuration and verify that it matches the config
+in <code>/etc/frr/frr.conf</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ net show configuration</code></pre></div>
+<p>If the running configuration is not what you expected, <a href="https://support.cumulusnetworks.com/hc/en-us/requests/new">submit a support
+request</a> and
+supply the following information:</p>
+
+<ul>
+<li>The current running configuration (run <code>net show configuration</code> and
+output the contents to a file)</li>
+<li>The contents of <code>/etc/frr/frr.conf</code></li>
+<li>The contents of <code>/var/log/frr/frr-reload.log</code></li>
+</ul>
+
+<h2 id="frr-logging">FRR Logging</h2>
+
+<p>By default, Cumulus Linux configures FFR with syslog severity level 6
+(informational). Log output is written to
+the <code>/var/log/frr/frr.log</code> file. </p>
+
+<p>To write debug messages to the log file, you must run
+the <code>log syslog debug</code> command to configure FRR with syslog severity 7
+(debug); otherwise, when you issue a debug command such
+as, <code>debug bgp neighbor-events</code>, no output is sent
+to <code>/var/log/frr/frr.log</code>. <br />
+However, when you manually define a log target with
+the <code>log file /var/log/frr/debug.log</code> command, FRR automatically
+defaults to severity 7 (debug) logging and the output is logged
+to <code>/var/log/frr/frr.log</code>.</p>
+
+<h2 id="caveats">Caveats</h2>
+
+<h3 id="obfuscated-passwords">Obfuscated Passwords</h3>
+
+<p>In FRRouting, Cumulus Linux stores obfuscated passwords for BGP and OSPF
+(ISIS, OSPF area, and BGP neighbor passwords). All passwords in
+configuration files and those displayed in show commands are obfuscated.
+The obfuscation algorithm protects passwords from casual viewing. The
+system can retrieve the original password when needed. </p>
+
+<h3 id="duplicate-hostnames">Duplicate Hostnames</h3>
+
+<p>If you change the hostname, either through NCLU or with the <code>hostname</code>
+command in <code>vtysh</code>, the switch can have two hostnames in the FRR
+configuration. For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Spine01# conf t
+Spine01(config)# hostname Spine01-1
+Spine01-1(config)# do sh run
+Building configuration...
+Current configuration:
+!
+frr version 4.0+cl3u1
+frr defaults datacenter
+hostname Spine01
+hostname Spine01-1
+ 
+...</code></pre></div>
+<p>Accidentally configuring the same numbered BGP neighbor using both
+the <code>neighbor x.x.x.x</code> and <code>neighbor swp# interface</code> commands results in
+two neighbor entries being present for the same IP in the configuration
+and operationally. You can correct this issue by updating the
+configuration and restarting the FRR service.</p>
+
+<h2 id="related-information">Related Information</h2>
+
+<ul>
+<li><a href="https://frrouting.org/user-guide/bgp.html">FRR BGP documentation</a></li>
+<li><a href="https://frrouting.org/user-guide/ipv6.html">FRR IPv6 support</a></li>
+<li><a href="https://frrouting.org/user-guide/zebra.html">FRR Zebra
+documentation</a></li>
+</ul>
+</article>
+
+      
+<div class="align-center book-git-footer justify-between">
+  
+  <div>
+    <a href="https://github.com/cawleyflower/testDocs/commit/0f1fa77f244c4b4642688df1f5e961e88daa6e08" title='Last modified March 4, 2019 16:11 EST by Cawleyflower' target="_blank" rel="noopener">
+      <img src="/svg/code-merge.svg" /> Last Modified Mar 4, 2019
+    </a>
+  </div>
+  
+  
+</div>
+
+
+    </div>
+
+    
+  
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#configuring-frrouting">Configuring FRRouting</a>
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#configure-frrouting">Configure FRRouting</a>
+<ul>
+<li><a href="#enable-and-start-frrouting">Enable and Start FRRouting</a></li>
+<li><a href="#integrated-configurations">Integrated Configurations</a></li>
+<li><a href="#restore-the-default-configuration">Restore the Default Configuration</a></li>
+</ul></li>
+<li><a href="#interface-ip-addresses-and-vrfs">Interface IP Addresses and VRFs</a></li>
+<li><a href="#frrouting-vtysh-modal-cli">FRRouting vtysh Modal CLI</a></li>
+<li><a href="#reload-the-frrouting-configuration">Reload the FRRouting Configuration</a></li>
+<li><a href="#frr-logging">FRR Logging</a></li>
+<li><a href="#caveats">Caveats</a>
+<ul>
+<li><a href="#obfuscated-passwords">Obfuscated Passwords</a></li>
+<li><a href="#duplicate-hostnames">Duplicate Hostnames</a></li>
+</ul></li>
+<li><a href="#related-information">Related Information</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+  
+</body>
+
+</html>

@@ -65,7 +65,7 @@ This card gives you a high-level view in a condensed visual, including
 the number and distribution of the info events along with the alarms
 that have occurred during the same time period. 
 
-![](attachments/9012102/9013711.png)
+![](/attachments/9012102/9013711.png)
 
 To view the summary with the *medium* Info card, simply open the card.
 This card gives you the same count and distribution of info and alarm
@@ -73,14 +73,14 @@ events, but it also provides information about the sources of the info
 events and enables you to view a small slice of time using the
 distribution charts.
 
-![](attachments/9012102/9013712.png){height="250"}
+![](/attachments/9012102/9013712.png){height="250"}
 
 Use the chart at the top of the card to view the various sources, types,
 of info events. The four or so types with the most info events are
 called out separately, with all others collected together into an
 *Other* category.
 
-![](attachments/9012102/9013713.png){height="250"}
+![](/attachments/9012102/9013713.png){height="250"}
 
 To view the summary with the large Info card, open the card. The left
 side of the card provides the same capabilities as the medium Info card.
@@ -115,7 +115,7 @@ of the info events are listed with the most recently occurring event at
 the top. Scrolling down shows you the info events that have occurred at
 an earlier time within the selected time period for the card.
 
-![](attachments/9012102/9013714.png){height="250"}
+![](/attachments/9012102/9013714.png){height="250"}
 
 ## View Devices with the Most Info Events
 
@@ -123,9 +123,9 @@ You can filter instead for the devices that have the most info events by
 selecting the **Devices by Event Count** option from the dropdown above
 the table.
 
-![](attachments/9012102/9013715.png){width="350"}
+![](/attachments/9012102/9013715.png){width="350"}
 
-![](attachments/9012102/9013716.png){height="250"}
+![](/attachments/9012102/9013716.png){height="250"}
 
 ## View All Events
 
@@ -142,7 +142,7 @@ card. 
 
 The following table lists alarm messages organized by message type and
 then severity, by default. Click the column header to sort the list by
-that characteristic. Click ![](attachments/9012102/9012104.png) in any
+that characteristic. Click ![](/attachments/9012102/9012104.png) in any
 column header to toggle the sort order between A-Z and Z-A. Recommended
 actions suggest NetQ GUI cards, CLI commands and Cumulus Linux NCLU
 commands for further investigation. 
@@ -456,26 +456,26 @@ Sensor temperature state changed from medium to low
 ## Attachments:
 
 ![](images/icons/bullet_blue.gif){width="8" height="8"}
-[close.png](attachments/9012102/9012101.png) (image/png)  
+[close.png](attachments/9012102/9012101.png) (image/png)
 ![](images/icons/bullet_blue.gif){width="8" height="8"} [image2018-12-5
-17:18:48.png](attachments/9012102/9012104.png) (image/png)  
+17:18:48.png](attachments/9012102/9012104.png) (image/png)
 ![](images/icons/bullet_blue.gif){width="8" height="8"} [image2019-1-15
-11:56:17.png](attachments/9012102/9012127.png) (image/png)  
+11:56:17.png](attachments/9012102/9012127.png) (image/png)
 ![](images/icons/bullet_blue.gif){width="8" height="8"} [image2019-2-5
-16:54:15.png](attachments/9012102/9012764.png) (image/png)  
+16:54:15.png](attachments/9012102/9012764.png) (image/png)
 ![](images/icons/bullet_blue.gif){width="8" height="8"} [image2019-2-19
-17:40:12.png](attachments/9012102/9013711.png) (image/png)  
+17:40:12.png](attachments/9012102/9013711.png) (image/png)
 ![](images/icons/bullet_blue.gif){width="8" height="8"} [image2019-2-19
-17:41:0.png](attachments/9012102/9013712.png) (image/png)  
+17:41:0.png](attachments/9012102/9013712.png) (image/png)
 ![](images/icons/bullet_blue.gif){width="8" height="8"} [image2019-2-19
-17:44:21.png](attachments/9012102/9013713.png) (image/png)  
+17:44:21.png](attachments/9012102/9013713.png) (image/png)
 ![](images/icons/bullet_blue.gif){width="8" height="8"} [image2019-2-19
-17:46:36.png](attachments/9012102/9013714.png) (image/png)  
+17:46:36.png](attachments/9012102/9013714.png) (image/png)
 ![](images/icons/bullet_blue.gif){width="8" height="8"} [image2019-2-19
-17:47:58.png](attachments/9012102/9013715.png) (image/png)  
+17:47:58.png](attachments/9012102/9013715.png) (image/png)
 ![](images/icons/bullet_blue.gif){width="8" height="8"} [image2019-2-19
-17:51:22.png](attachments/9012102/9013716.png) (image/png)  
+17:51:22.png](attachments/9012102/9013716.png) (image/png)
 ![](images/icons/bullet_blue.gif){width="8" height="8"} [image2019-2-19
-17:55:47.png](attachments/9012102/9013718.png) (image/png)  
+17:55:47.png](attachments/9012102/9013718.png) (image/png)
 ![](images/icons/bullet_blue.gif){width="8" height="8"} [image2019-2-19
-17:57:1.png](attachments/9012102/9013719.png) (image/png)  
+17:57:1.png](attachments/9012102/9013719.png) (image/png)

@@ -1,0 +1,1514 @@
+<!DOCTYPE html><html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interface Configuration and Management | Cumulus Networks Documentation</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+<link rel="stylesheet" href="/book.min.50a619ce4c0e99594908d162684f42218608aa6fde2bd83cca5025d59ba535e3.css">
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+<h2 class="book-brand">
+  <a href="http://example.org/">Cumulus Networks Documentation</a>
+</h2>
+
+
+
+    
+
+
+  
+  
+    
+    
+  
+ 
+  <ul>
+    
+    <li><a href="/Cumulus-Linux/installation-management/">
+    Installation Management</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/">Adding and Updating Packages</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/">Installing a New Cumulus Linux Image</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/">Managing Cumulus Linux Disk Images</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/">Upgrading Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Using_Snapshots/">Using Snapshots</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/">Zero Touch Provisioning Z T P</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer1-switch-ports/">
+    Layer1 Switch Ports</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/802.1X_Interfaces/">802.1 X Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Buffer_and_Queue_Management/">Buffer and Queue Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Relays/">D H C P Relays</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Servers/">D H C P Servers</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Facebook_Voyager_Optical_Interfaces/">Facebook Voyager Optical Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Prescriptive_Topology_Manager_-_PTM/">Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/Interface_Configuration_and_Management/" class="active">Interface Configuration and Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/switch_port_attributes/Switch_Port_Attributes/">Switch Port Attributes</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer2/">
+    Layer2</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Prescriptive_Topology_Manager_-_PTM/">Copy of Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Spanning_Tree_and_Rapid_Spanning_Tree/">Copy of Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Ethernet_Bridging_-_VLANs/">Ethernet Bridging v L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/IGMP_and_MLD_Snooping/">I G M P and M L D Snooping</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/LACP_Bypass/">L a C P Bypass</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Link_Layer_Discovery_Protocol/">Link Layer Discovery Protocol</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Multi-Chassis_Link_Aggregation_-_MLAG/">Multi Chassis Link Aggregation M L a G</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Spanning_Tree_and_Rapid_Spanning_Tree/">Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Virtual_Router_Redundancy_-_VRR/">Virtual Router Redundancy v R R</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/bonding_link_aggregation/Bonding_-_Link_Aggregation/">Bonding Link Aggregation</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/Traditional_Bridge_Mode/">Traditional Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN-aware_Bridge_Mode/">V L a N Aware Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN_Tagging/">V L a N Tagging</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/link_layer_discovery_protocol/voice_vlan/Voice_VLAN/">Voice v L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/virtual_router_redundancy/ifplugd/ifplugd/">Ifplugd</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer3/">
+    Layer3</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Address_Resolution_Protocol_-_ARP/">Address Resolution Protocol a R P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Bidirectional_Forwarding_Detection_-_BFD/">Bidirectional Forwarding Detection B F D</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Border_Gateway_Protocol_-_BGP/">Border Gateway Protocol B G P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Configuring_FRRouting/">Configuring F R Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP/">Equal Cost Multipath Load Sharing Hardware E C M P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/FRRouting_Overview/">F R Routing Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/GRE_Tunneling/">G R E Tunneling</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Introduction_to_Routing_Protocols/">Introduction to Routing Protocols</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Management_VRF/">Management v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Network_Topology/">Network Topology</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_-_OSPF/">Open Shortest Path First O S P F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_v3_-_OSPFv3/">Open Shortest Path First V3 O S P Fv3</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Policy-based_Routing/">Policy Based Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Protocol_Independent_Multicast_-_PIM/">Protocol Independent Multicast P I M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Redistribute_Neighbor/">Redistribute Neighbor</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Routing/">Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Segment_Routing/">Segment Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Virtual_Routing_and_Forwarding_-_VRF/">Virtual Routing and Forwarding v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/configuring_frrouting/comparing_nclu_and_vtysh_commands/Comparing_NCLU_and_vtysh_Commands/">Comparing N C L U and Vtysh Commands</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/frrouting_overview/Upgrading_from_Quagga_to_FRRouting/">Upgrading From Quagga to F R Routing</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/monitoring-troubleshooting/">
+    Monitoring Troubleshooting</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/ASIC_Monitoring/">A S I C Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/FRRouting_Log_Message_Reference/">F R Routing Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Best_Practices/">Monitoring Best Practices</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_System_Hardware/">Monitoring System Hardware</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Virtual_Device_Counters/">Monitoring Virtual Device Counters</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Network_Troubleshooting/">Network Troubleshooting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Resource_Diagnostics_Using_cl-resource-query/">Resource Diagnostics Using Cl Resource Query</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Simple_Network_Management_Protocol_SNMP_Monitoring/">Simple Network Management Protocol S N M P Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Single_User_Mode_-_Boot_Recovery/">Single User Mode Boot Recovery</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Troubleshooting_Network_Interfaces/">Troubleshooting Network Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Understanding_the_cl-support_Output_File/">Understanding the Cl Support Output File</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/monitoring_system_hardware/network_switch_port_led_and_stats_led/Network_Switch_Port_LED_and_Status_LED_Guidelines/">Network Switch Port L E D and Status L E D Guidelines</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/monitoring_system_statistics/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow/">Monitoring System Statistics and Network Traffic With S Flow</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/using_nclu_to_troubleshoot/Using_NCLU_to_Troubleshoot_Your_Network_Configuration/">Using N C L U to Troubleshoot Your Network Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/simple_network_management/using_nutanix_prisim_as_monitoring_tool/Using_Nutanix_Prism_as_a_Monitoring_Tool/">Using Nutanix Prism as a Monitoring Tool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/switchd_Log_Message_Reference/">Switchd Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/troubleshooting_network_interfaces/monitoring_interfaces_and_transcievers_using_ethtool/Monitoring_Interfaces_and_Transceivers_Using_ethtool/">Monitoring Interfaces and Transceivers Using Ethtool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_log_files/Troubleshooting_Log_Files/">Troubleshooting Log Files</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_the_etc_directory/Troubleshooting_the_etc_Directory/">Troubleshooting the Etc Directory</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-solutions/">
+    Network Solutions</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Anycast_Design_Guide/">Anycast Design Guide</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Hyperconverged_Solution_with_Nutanix/">Cumulus Hyperconverged Solution With Nutanix</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Networks_Services_Demos/">Cumulus Networks Services Demos</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Data_Center_Host_to_ToR_Architecture/">Data Center Host to to R Architecture</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Docker_on_Cumulus_Linux/">Docker on Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/OpenStack_Neutron_ML2_and_Cumulus_Linux/">Open Stack Neutron M L2 and Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/RDMA_over_Converged_Ethernet_-_RoCE/">R D M a Over Converged Ethernet Ro C E</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-visualization/">
+    Network Visualization</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Eng_Update_of_VXLAN_Hyperloop/">Eng Update of v X L a N Hyperloop</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Ethernet_Virtual_Private_Network_-_EVPN/">Ethernet Virtual Private Network E v P N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs/">Hybrid Cloud Connectivity With Qin Q and v X L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/LNV_Full_Example/">L N v Full Example</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Lightweight_Network_Virtualization_Overview/">Lightweight Network Virtualization Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Static_VXLAN_Configurations/">Static v X L a N Configurations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Routing/">V X L a N Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Scale/">V X L a N Scale</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Tunnel_DSCP_Operations__DRAFT/">V X L a N Tunnel D S C P Operations — D R a F T</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Virtualization_Integrations/">Virtualization Integrations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_mac_bindings/Static_MAC_Bindings_with_VXLAN/">Static M a C Bindings With v X L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_vxlan_tunnels/Static_VXLAN_Tunnels/">Static v X L a N Tunnels</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_hardware_vteps_vmware_nsx-mh/Integrating_Hardware_VTEPs_with_VMware_NSX-MH/">Integrating Hardware v T E Ps With v Mware N S X M H</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_midonet_openstack/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack/">Integrating Hardware v T E Ps With Midokura Mido Net and Open Stack</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_vmware_nsx-v/Integrating_Hardware_VTEPs_with_VMware_NSX-V/">Integrating Hardware v T E Ps With v Mware N S X V</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/ovsdb_server_high_availability/OVSDB_Server_High_Availability/">O v S D B Server High Availability</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/system-config/">
+    System Config</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Authentication_Authorization_and_Accounting/">Authentication Authorization and Accounting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_a_Global_Proxy/">Configuring a Global Proxy</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_switchd/">Configuring Switchd</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Copy_of_Netfilter_-_ACLs/">Copy of Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/HTTP_API/">H T T P a P I</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Netfilter_-_ACLs/">Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/">Network Command Line Utility N C L U</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Power_over_Ethernet_-_PoE/">Power Over Ethernet Po E</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Services_and_Daemons_in_Cumulus_Linux/">Services and Daemons in Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Setting_Date_and_Time/">Setting Date and Time</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/LDAP_Authentication_and_Authorization/">L D a P Authentication and Authorization</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/RADIUS_AAA/">R a D I U S a a A</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/SSH_for_Remote_Access/">S S H for Remote Access</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/TACACS_Plus/">T a C a C S Plus</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/User_Accounts/">User Accounts</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/Using_sudo_to_Delegate_Privileges/">Using Sudo to Delegate Privileges</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Default_Cumulus_Linux_ACL_Configuration/">Default Cumulus Linux a C L Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Filtering_Learned_MAC_Addresses/">Filtering Learned M a C Addresses</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/whats-new/">What&#39;s New</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/cumulus-linux-index/Cumulus_Linux_Index/">Cumulus Linux Index</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/quick-start/Quick_Start_Guide/">Quick Start Guide</a>
+    </li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+</nav>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" />
+  </label>
+  <strong>Interface Configuration and Management</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="interface-configuration-and-management">Interface Configuration and Management</h1>
+
+<p><code>ifupdown</code> is the network interface manager for Cumulus Linux. Cumulus
+Linux uses an updated version of this tool, <code>ifupdown2</code>.</p>
+
+<p>For more information on network interfaces, see <a href="Switch_Port_Attributes">Switch Port
+Attributes</a>.</p>
+
+<p>By default, <code>ifupdown</code> is quiet; use the verbose option <code>-v</code> when you
+want to know what is going on when bringing an interface down or up.</p>
+
+<h2 id="contents">Contents</h2>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}This topic
+describes &hellip;</p>
+
+<ul>
+<li><a href="#InterfaceConfigurationandManagement-BasicCommands">Basic Commands</a></li>
+<li><a href="#InterfaceConfigurationandManagement-classesifupdown2InterfaceClasses">ifupdown2
+Interface Classes</a></li>
+<li><a href="#InterfaceConfigurationandManagement-loopbackConfigureaLoopbackInterface">Configure a Loopback
+Interface</a></li>
+<li><a href="#InterfaceConfigurationandManagement-ipifupdownBehaviorwithChildInterfaces">ifupdown Behavior with Child
+Interfaces</a></li>
+<li><a href="#InterfaceConfigurationandManagement-ifupdown2InterfaceDependencies">ifupdown2 Interface
+Dependencies</a></li>
+<li><a href="#InterfaceConfigurationandManagement-subinterfaceSubinterfaces">Subinterfaces</a></li>
+<li><a href="#InterfaceConfigurationandManagement-ifupandUpper(Parent)Interfaces">ifup and Upper (Parent)
+Interfaces</a></li>
+<li><a href="#InterfaceConfigurationandManagement-ipConfigureIPAddresses">Configure IP
+Addresses</a>
+
+<ul>
+<li><a href="#InterfaceConfigurationandManagement-SpecifyIPAddressScope">Specify IP Address
+Scope </a></li>
+<li><a href="#InterfaceConfigurationandManagement-PurgeExistingIPAddressesonanInterface">Purge Existing IP Addresses on an
+Interface</a></li>
+</ul></li>
+<li><a href="#InterfaceConfigurationandManagement-SpecifyUserCommands">Specify User
+Commands</a></li>
+<li><a href="#InterfaceConfigurationandManagement-SourceInterfaceFileSnippets">Source Interface File
+Snippets</a></li>
+<li><a href="#InterfaceConfigurationandManagement-UseGlobsforPortLists">Use Globs for Port
+Lists</a></li>
+<li><a href="#InterfaceConfigurationandManagement-UseTemplates">Use Templates</a></li>
+<li><a href="#InterfaceConfigurationandManagement-RunifupdownScriptsunder/etc/network/withifupdown2">Run ifupdown Scripts under /etc/network/ with
+ifupdown2</a></li>
+<li><a href="#InterfaceConfigurationandManagement-AddDescriptionstoInterfaces">Add Descriptions to
+Interfaces</a></li>
+<li><a href="#InterfaceConfigurationandManagement-caveatsCaveatsandErrata">Caveats and
+Errata</a>
+
+<ul>
+<li><a href="#InterfaceConfigurationandManagement-ifupdown2andsysctl">ifupdown2 and
+sysctl</a></li>
+<li><a href="#InterfaceConfigurationandManagement-LongInterfaceNames">Long Interface
+Names</a></li>
+</ul></li>
+<li><a href="#InterfaceConfigurationandManagement-RelatedInformation">Related
+Information</a></li>
+</ul>
+
+<h2 id="basic-commands">Basic Commands</h2>
+
+<p>To bring up an interface or apply changes to an existing interface, run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo ifup &lt;ifname&gt;</code></pre></div>
+<p>To bring down a single interface, run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ sudo ifdown &lt;ifname&gt;</code></pre></div>
+<p><code>ifdown</code> always deletes logical interfaces after bringing them down. Use
+the <code>--admin-state</code> option if you only want to administratively bring
+the interface up or down.</p>
+
+<p>To see the link and administrative state, use the <code>ip link show</code>
+command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ ip link show dev swp1 
+3: swp1: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP mode DEFAULT qlen 500
+    link/ether 44:38:39:00:03:c1 brd ff:ff:ff:ff:ff:ff</code></pre></div>
+<p>In this example, swp1 is administratively UP and the physical link is UP
+(LOWER_UP flag). More information on interface administrative state and
+physical state can be found in <a href="https://support.cumulusnetworks.com/hc/en-us/articles/202693826">this knowledge base
+article</a>.</p>
+
+<p>To put an interface into an admin down state. The interface remains down
+after any future reboots or applying configuration changes with
+<code>ifreload -a</code>. For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface swp1 link down</code></pre></div>
+<p>These commands create the following configuration in the
+<code>/etc/network/interfaces</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto swp1
+iface swp1
+    link-down yes</code></pre></div>
+<h2 id="ifupdown2-interface-classes">ifupdown2 Interface Classes</h2>
+
+<p><code>ifupdown2</code> provides for the grouping of interfaces into separate
+classes, where a class is a user-defined label that groups interfaces
+sharing a common function (like uplink, downlink or compute). You
+specify classes in the <code>/etc/network/interfaces</code> file.</p>
+
+<p>The most common class is <em>auto</em>, which you configure like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto swp1
+iface swp1</code></pre></div>
+<p>You can add other classes using the *allow* prefix. For example, if you
+have multiple interfaces used for uplinks, you can make up a class
+called <em>uplinks:</em></p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto swp1
+allow-uplink swp1
+iface swp1 inet static
+    address 10.1.1.1/31
+
+auto swp2
+allow-uplink swp2
+iface swp2 inet static
+    address 10.1.1.3/31</code></pre></div>
+<p>This allows you to perform operations on only these interfaces using the
+<code>--allow=uplinks</code> option, or still use the <code>-a</code> options since these
+interfaces are also in the auto class:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ifup --allow=uplinks 
+cumulus@switch:~$ sudo ifreload -a </code></pre></div>
+<p>If you are using <a href="Management_VRF">Management VRF</a>, you can use the
+special interface class called <em>mgmt</em>, and put the management interface
+into that class.</p>
+
+<p>The mgmt interface class is not supported if you are configuring Cumulus
+Linux using <a href="Network_Command_Line_Utility_-_NCLU">NCLU</a>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">allow-mgmt eth0
+iface eth0 inet dhcp
+    vrf mgmt
+  
+allow-mgmt mgmt
+iface mgmt
+    address 127.0.0.1/8
+    vrf-table auto</code></pre></div>
+<p>All <code>ifupdown2</code> commands (<code>ifup</code>, <code>ifdown</code>, <code>ifquery</code>, <code>ifreload</code>) can
+take a class. Include the <code>--allow=&lt;class&gt;</code> option when you run the
+command. For example, to reload the configuration for the management
+interface described above, run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ifreload --allow=mgmt </code></pre></div>
+<p>You can easily bring up or down all interfaces marked with the
+common <code>auto</code> class in <code>/etc/network/interfaces</code>. Use
+the <code>-a</code> option. For further details, see individual man pages for
+<code>ifup(8)</code>, <code>ifdown(8)</code>, <code>ifreload(8)</code>.</p>
+
+<p>To administratively bring up all interfaces marked auto, run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ifup -a</code></pre></div>
+<p>To administratively bring down all interfaces marked auto, run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ifdown -a</code></pre></div>
+<p>To reload all network interfaces marked <code>auto</code>, use the <code>ifreload</code>
+command, which is equivalent to running <code>ifdown</code> then <code>ifup</code>, the one
+difference being that <code>ifreload</code> skips any configurations that didn&rsquo;t
+change):</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ifreload -a</code></pre></div>
+<p>Some syntax checks are done by default, however it may be safer to apply
+the configs only if the syntax check passes, using the following
+compound command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo bash -c &#34;ifreload -s -a &amp;&amp; ifreload -a&#34;</code></pre></div>
+<h2 id="configure-a-loopback-interface">Configure a Loopback Interface</h2>
+
+<p>Cumulus Linux has a loopback preconfigured in <code>/etc/network/interfaces</code>.
+When the switch boots up, it has a loopback interface, called <em>lo</em>,
+which is up and assigned an IP address of 127.0.0.1.</p>
+
+<p>The loopback interface *lo* must always be specified
+in <code>/etc/network/interfaces</code> and must always be up.</p>
+
+<h2 id="ifupdown-behavior-with-child-interfaces">ifupdown Behavior with Child Interfaces</h2>
+
+<p>By default, <code>ifupdown</code> recognizes and uses any interface present on the
+system — whether a VLAN, bond or physical interface — that is listed as
+a dependent of an interface. You are not required to list them in
+the <code>interfaces</code> file unless they need a specific configuration, for
+<a href="Switch_Port_Attributes">MTU, link speed, and so forth</a>. And if you need
+to delete a child interface, you should delete all references to that
+interface from the <code>interfaces</code> file.</p>
+
+<p>For this example, swp1 and swp2 below do not need an entry in the
+<code>interfaces</code> file. The following stanzas defined
+in <code>/etc/network/interfaces</code> provide the exact same configuration:</p>
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>With Child Interfaces Defined</strong></p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1
+iface swp1
+ 
+auto swp2
+iface swp2
+ 
+auto bridge
+iface bridge
+    bridge-vlan-aware yes
+    bridge-ports swp1 swp2
+    bridge-vids 1-100
+    bridge-pvid 1
+    bridge-stp on</code></pre>
+</div>
+</div></td>
+<td><p><strong>Without Child Interfaces Defined</strong></p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto bridge
+iface bridge
+    bridge-vlan-aware yes
+    bridge-ports swp1 swp2
+    bridge-vids 1-100
+    bridge-pvid 1
+    bridge-stp on</code></pre>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}Bridge in
+Traditional Mode - Example</p>
+
+<p>For this example, swp1.100 and swp2.100 below do not need an entry in
+the <code>interfaces</code> file. The following stanzas defined
+in <code>/etc/network/interfaces</code> provide the exact same configuration:</p>
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>With Child Interfaces Defined</strong></p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto swp1.100
+iface swp1.100
+ 
+auto swp2.100
+iface swp2.100
+ 
+auto br-100
+iface br-100
+    address 10.0.12.2/24
+    address 2001:dad:beef::3/64
+    bridge-ports swp1.100 swp2.100
+    bridge-stp on</code></pre>
+</div>
+</div></td>
+<td><p><strong>Without Child Interfaces Defined</strong></p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>auto br-100
+iface br-100
+    address 10.0.12.2/24
+    address 2001:dad:beef::3/64
+    bridge-ports swp1.100 swp2.100
+    bridge-stp on</code></pre>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+
+<p>For more information on the bridge in traditional mode vs the bridge in
+VLAN-aware mode, please read <a href="https://support.cumulusnetworks.com/hc/en-us/articles/204909397">this knowledge base
+article</a>.</p>
+
+<h2 id="ifupdown2-interface-dependencies">ifupdown2 Interface Dependencies</h2>
+
+<p><code>ifupdown2</code> understands interface dependency relationships. When <code>ifup</code>
+and <code>ifdown</code> are run with all interfaces, they always run with all
+interfaces in dependency order. When run with the interface list on the
+command line, the default behavior is to not run with dependents. But if
+there are any built-in dependents, they will be brought up or down.</p>
+
+<p>To run with dependents when you specify the interface list, use the
+<code>--with-depends</code> option. <code>--with-depends</code> walks through all dependents
+in the dependency tree rooted at the interface you specify. Consider the
+following example configuration:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto bond1
+iface bond1
+    address 100.0.0.2/16
+    bond-slaves swp29 swp30
+
+auto bond2
+iface bond2
+    address 100.0.0.5/16
+    bond-slaves swp31 swp32
+
+auto br2001
+iface br2001
+    address 12.0.1.3/24
+    bridge-ports bond1.2001 bond2.2001
+    bridge-stp on</code></pre></div>
+<p>Using <code>ifup --with-depends br2001</code> brings up all dependents of br2001:
+bond1.2001, bond2.2001, bond1, bond2, bond1.2001, bond2.2001, swp29,
+swp30, swp31, swp32.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ifup --with-depends br2001</code></pre></div>
+<p>Similarly, specifying <code>ifdown --with-depends br2001</code> brings down all
+dependents of br2001: bond1.2001, bond2.2001, bond1, bond2, bond1.2001,
+bond2.2001, swp29, swp30, swp31, swp32.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ifdown --with-depends br2001</code></pre></div>
+<p>As mentioned earlier, <code>ifdown2</code> always deletes logical interfaces after
+bringing them down. Use the <code>--admin-state</code> option if you only want to
+administratively bring the interface up or down. In terms of the above
+example, <code>ifdown br2001</code> deletes <code>br2001</code>.</p>
+
+<p>To guide you through which interfaces will be brought down and up, use
+the <code>--print-dependency</code> option to get the list of dependents.</p>
+
+<p>Use <code>ifquery --print-dependency=list -a</code> to get the dependency list of
+all interfaces:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ifquery --print-dependency=list -a
+lo : None
+eth0 : None
+bond0 : [&#39;swp25&#39;, &#39;swp26&#39;]
+bond1 : [&#39;swp29&#39;, &#39;swp30&#39;]
+bond2 : [&#39;swp31&#39;, &#39;swp32&#39;]
+br0 : [&#39;bond1&#39;, &#39;bond2&#39;]
+bond1.2000 : [&#39;bond1&#39;]
+bond2.2000 : [&#39;bond2&#39;]
+br2000 : [&#39;bond1.2000&#39;, &#39;bond2.2000&#39;]
+bond1.2001 : [&#39;bond1&#39;]
+bond2.2001 : [&#39;bond2&#39;]
+br2001 : [&#39;bond1.2001&#39;, &#39;bond2.2001&#39;]
+swp40 : None
+swp25 : None
+swp26 : None
+swp29 : None
+swp30 : None
+swp31 : None
+swp32 : None</code></pre></div>
+<p>To print the dependency list of a single interface, use:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ifquery --print-dependency=list br2001
+br2001 : [&#39;bond1.2001&#39;, &#39;bond2.2001&#39;]
+bond1.2001 : [&#39;bond1&#39;]
+bond2.2001 : [&#39;bond2&#39;]
+bond1 : [&#39;swp29&#39;, &#39;swp30&#39;]
+bond2 : [&#39;swp31&#39;, &#39;swp32&#39;]
+swp29 : None
+swp30 : None
+swp31 : None
+swp32 : None</code></pre></div>
+<p>To print the dependency information of an interface in <code>dot</code> format:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ifquery --print-dependency=dot br2001
+/* Generated by GvGen v.0.9 (http://software.inl.fr/trac/wiki/GvGen) */
+digraph G {
+    compound=true;
+    node1 [label=&#34;br2001&#34;];
+    node2 [label=&#34;bond1.2001&#34;];
+    node3 [label=&#34;bond2.2001&#34;];
+    node4 [label=&#34;bond1&#34;];
+    node5 [label=&#34;bond2&#34;];
+    node6 [label=&#34;swp29&#34;];
+    node7 [label=&#34;swp30&#34;];
+    node8 [label=&#34;swp31&#34;];
+    node9 [label=&#34;swp32&#34;];
+    node1-&gt;node2;
+    node1-&gt;node3;
+    node2-&gt;node4;
+    node3-&gt;node5;
+    node4-&gt;node6;
+    node4-&gt;node7;
+    node5-&gt;node8;
+    node5-&gt;node9;
+}</code></pre></div>
+<p>You can use <code>dot</code> to render the graph on an external system where <code>dot</code>
+is installed.</p>
+
+<p><img src="attachments/8363023/8363024.png" alt="" /></p>
+
+<p>To print the dependency information of the entire <code>interfaces</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ifquery --print-dependency=dot -a &gt;interfaces_all.dot</code></pre></div>
+<p><img src="attachments/8363023/8363022.png" alt="" />{width=&ldquo;500&rdquo;}</p>
+
+<h2 id="subinterfaces">Subinterfaces</h2>
+
+<p>On Linux an <em>interface</em> is a network device, and can be either a
+physical device like switch port (such as swp1), or virtual, like a VLAN
+(vlan100). A <em>VLAN subinterface</em> is a VLAN device on an interface, and
+the VLAN ID is appended to the parent interface using dot (.) VLAN
+notation. For example, a VLAN with ID 100 that is a subinterface of swp1
+is named swp1.100 in Cumulus Linux. The dot VLAN notation for a VLAN
+device name is a standard way to specify a VLAN device on Linux. Many
+Linux configuration tools, most notably <code>ifupdown2</code> and its predecessor
+<code>ifupdown</code>, recognize such a name as a VLAN interface name.</p>
+
+<p>A VLAN subinterface only receives traffic <a href="VLAN_Tagging">tagged</a> for
+that VLAN, so swp1.100 only receives packets tagged with VLAN 100 on
+switch port swp1. Similarly, any transmits from swp1.100 result in
+tagging the packet with VLAN 100. </p>
+
+<p>For an <a href="Multi-Chassis_Link_Aggregation_-_MLAG">MLAG</a> deployment, the
+peerlink interface that connects the two switches in the MLAG pair has a
+VLAN subinterface named 4094 by default, provided you configured the
+subinterface with <a href="Network_Command_Line_Utility_-_NCLU">NCLU</a>. The
+peerlink.4094 subinterface only receives traffic tagged for VLAN 4094.</p>
+
+<h2 id="ifup-and-upper-parent-interfaces">ifup and Upper (Parent) Interfaces</h2>
+
+<p>When you run <code>ifup</code> on a logical interface (like a bridge, bond or VLAN
+interface), if the <code>ifup</code> resulted in the creation of the logical
+interface, by default it implicitly tries to execute on the interface&rsquo;s
+upper (or parent) interfaces as well. This helps in most cases,
+especially when a bond is brought down and up, as in the example below.
+This section describes the behavior of bringing up the upper interfaces.</p>
+
+<p>Consider this example configuration:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto br100
+iface br100
+    bridge-ports bond1.100 bond2.100
+
+auto bond1
+iface bond1
+    bond-slaves swp1 swp2</code></pre></div>
+<p>If you run <code>ifdown bond1</code>, <code>ifdown</code> deletes bond1 and the VLAN interface
+on bond1 (bond1.100); it also removes bond1 from the bridge br100. Next,
+when you run <code>ifup bond1</code>, it creates bond1 and the VLAN interface on
+bond1 (bond1.100); it also executes <code>ifup br100</code> to add the bond VLAN
+interface (bond1.100) to the bridge br100.</p>
+
+<p>As you can see above, implicitly bringing up the upper interface helps,
+but there can be cases where an upper interface (like br100) is not in
+the right state, which can result in warnings. The warnings are mostly
+harmless.</p>
+
+<p>If you want to disable these warnings, you can disable the implicit
+upper interface handling by setting <code>skip_upperifaces=1</code> in
+<code>/etc/network/ifupdown2/ifupdown2.conf</code>.</p>
+
+<p>With <code>skip_upperifaces=1</code>, you will have to explicitly execute <code>ifup</code> on
+the upper interfaces. In this case, you will have to run <code>ifup br100</code>
+after an <code>ifup bond1</code> to add bond1 back to bridge br100.</p>
+
+<p>Although specifying a subinterface like swp1.100 and then running
+<code>ifup swp1.100</code> will also result in the automatic creation of the swp1
+interface in the kernel, Cumulus Networks recommends you specify the
+parent interface swp1 as well. A parent interface is one where any
+physical layer configuration can reside, such as <code>link-speed 1000</code> or
+<code>link-duplex full</code>.</p>
+
+<p>It&rsquo;s important to note that if you only create swp1.100 and not swp1,
+then you cannot run <code>ifup swp1</code> since you did not specify it.</p>
+
+<h2 id="configure-ip-addresses">Configure IP Addresses</h2>
+
+<p>IP addresses are configured with the <code>net add interface</code> command.</p>
+
+<p>Example IP Address Configuration</p>
+
+<p>The following commands configure three IP addresses for swp1: two IPv4
+addresses, and one IPv6 address.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface swp1 ip address 12.0.0.1/30
+cumulus@switch:~$ net add interface swp1 ip address 12.0.0.2/30
+cumulus@switch:~$ net add interface swp1 ipv6 address 2001:DB8::1/126
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>These commands create the following code snippet:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto swp1
+iface swp1
+    address 12.0.0.1/30
+    address 12.0.0.2/30
+    address 2001:DB8::1/126</code></pre></div>
+<p>You can specify both IPv4 and IPv6 addresses for the same interface.</p>
+
+<p>For IPv6 addresses, you can create or modify the IP address for an
+interface using either &ldquo;::&rdquo; or &ldquo;0:0:0&rdquo; notation. Both of the following
+examples are valid:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add bgp neighbor 2620:149:43:c109:0:0:0:5 remote-as internal
+cumulus@switch:~$ 
+cumulus@switch:~$ net add interface swp1 ipv6 address 2001:DB8::1/126</code></pre></div>
+<p>The address method and address family are added by NCLU when needed,
+specifically when you are creating DHCP or loopback interfaces.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto lo
+iface lo inet loopback</code></pre></div>
+<p>To show the assigned address on an interface, use <code>ip addr show</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ ip addr show dev swp1
+3: swp1: &lt;BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP qlen 500
+    link/ether 44:38:39:00:03:c1 brd ff:ff:ff:ff:ff:ff
+    inet 192.0.2.1/30 scope global swp1
+    inet 192.0.2.2/30 scope global swp1
+    inet6 2001:DB8::1/126 scope global tentative
+       valid_lft forever preferred_lft forever</code></pre></div>
+<h3 id="specify-ip-address-scope">Specify IP Address Scope </h3>
+
+<p><code>ifupdown2</code> does not honor the configured IP address scope setting
+in <code>/etc/network/interfaces</code>, treating all addresses as global. It does
+not report an error. Consider this example configuration:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto swp2
+iface swp2
+    address 35.21.30.5/30
+    address 3101:21:20::31/80
+    scope link</code></pre></div>
+<p>When you run <code>ifreload -a</code> on this configuration, <code>ifupdown2</code> considers
+all IP addresses as global.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ ip addr show swp2
+5: swp2: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+link/ether 74:e6:e2:f5:62:82 brd ff:ff:ff:ff:ff:ff
+inet 35.21.30.5/30 scope global swp2
+valid_lft forever preferred_lft forever
+inet6 3101:21:20::31/80 scope global 
+valid_lft forever preferred_lft forever
+inet6 fe80::76e6:e2ff:fef5:6282/64 scope link 
+valid_lft forever preferred_lft forever</code></pre></div>
+<p>To work around this issue, configure the IP address scope:</p>
+
+<p>Example post-up Configuration</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface swp6 post-up ip address add 71.21.21.20/32 dev swp6 scope site
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>These commands create the following code snippet in the
+<code>/etc/network/interfaces</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto swp6
+iface swp6
+    post-up ip address add 71.21.21.20/32 dev swp6 scope site</code></pre></div>
+<p>Now it has the correct scope:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ ip addr show swp6
+9: swp6: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+link/ether 74:e6:e2:f5:62:86 brd ff:ff:ff:ff:ff:ff
+inet 71.21.21.20/32 scope site swp6
+valid_lft forever preferred_lft forever
+inet6 fe80::76e6:e2ff:fef5:6286/64 scope link 
+valid_lft forever preferred_lft forever</code></pre></div>
+<h3 id="purge-existing-ip-addresses-on-an-interface">Purge Existing IP Addresses on an Interface</h3>
+
+<p>By default, <code>ifupdown2</code> purges existing IP addresses on an interface. If
+you have other processes that manage IP addresses for an interface, you
+can disable this feature including the <code>address-purge</code> setting in the
+interface&rsquo;s configuration.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface swp1 address-purge no
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>These commands create the following configuration snippet in
+the <code>/etc/network/interfaces</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto swp1
+iface swp1
+    address-purge no</code></pre></div>
+<p>Purging existing addresses on interfaces with multiple <code>iface</code> stanzas
+is not supported. Doing so can result in the configuration of multiple
+addresses for an interface after you change an interface address and
+reload the configuration with <code>ifreload -a</code>. If this happens, you must
+shut down and restart the interface with <code>ifup</code> and <code>ifdown</code>, or
+manually delete superfluous addresses
+with <code>ip address delete specify.ip.address.here/mask dev DEVICE</code>. See
+also the <a href="#InterfaceConfigurationandManagement-caveats">Caveats and
+Errata</a> section below for
+some cautions about using multiple <code>iface</code> stanzas for the same
+interface.</p>
+
+<h2 id="specify-user-commands">Specify User Commands</h2>
+
+<p>You can specify additional user commands in the <code>interfaces</code> file. As
+shown in the example below, the interface stanzas in
+<code>/etc/network/interfaces</code> can have a command that runs at pre-up, up,
+post-up, pre-down, down, and post-down:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface swp1 post-up /sbin/foo bar
+cumulus@switch:~$ net add interface ip address 12.0.0.1/30
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>These commands create the following configuration in the
+<code>/etc/network/interfaces</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto swp1
+iface swp1
+    address 12.0.0.1/30
+    post-up /sbin/foo bar</code></pre></div>
+<p>Any valid command can be hooked in the sequencing of bringing an
+interface up or down, although commands should be limited in scope to
+network-related commands associated with the particular interface.</p>
+
+<p>For example, it wouldn&rsquo;t make sense to install some Debian package on
+<code>ifup</code> of swp1, even though that is technically possible. See
+<code>man interfaces</code> for more details.</p>
+
+<p>If your <code>post-up</code> command also starts, restarts or reloads any <code>systemd</code>
+service, you must use the <code>--no-block</code> option with <code>systemctl</code>.
+Otherwise, that service or even the switch itself may hang after
+starting or restarting.</p>
+
+<p>For example, to restart the <code>dhcrelay</code> service after bringing up VLAN
+100, first run:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add vlan 100 post-up systemctl --no-block restart dhcrelay.service</code></pre></div>
+<p>This command creates the following configuration in the
+<code>/etc/network/interfaces</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto bridge
+iface bridge
+    bridge-vids 100
+    bridge-vlan-aware yes
+ 
+auto vlan100
+iface vlan100
+    post-up systemctl --no-block restart dhcrelay.service
+    vlan-id 100
+    vlan-raw-device bridge</code></pre></div>
+<h2 id="source-interface-file-snippets">Source Interface File Snippets</h2>
+
+<p>Sourcing interface files helps organize and manage the
+<code>interfaces</code> file. For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ cat /etc/network/interfaces
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+auto eth0
+iface eth0 inet dhcp
+
+source /etc/network/interfaces.d/bond0</code></pre></div>
+<p>The contents of the sourced file used above are:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ cat /etc/network/interfaces.d/bond0
+auto bond0
+iface bond0
+    address 14.0.0.9/30
+    address 2001:ded:beef:2::1/64
+    bond-slaves swp25 swp26</code></pre></div>
+<h2 id="use-globs-for-port-lists">Use Globs for Port Lists</h2>
+
+<p>NCLU supports globs to define port lists (that is, a range of ports).
+The <code>glob</code> keyword is implied when you specify bridge ports and bond
+slaves:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add bridge bridge ports swp1-4,6,10-12
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>While you must use commas to separate different ranges of ports in the
+NCLU command, the /etc/network/interfaces file renders the list of ports
+individually, as in the example output below.</p>
+
+<p>These commands produce the following snippet in
+the <code>/etc/network/interfaces</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">...
+
+auto bridge
+iface bridge
+    bridge-ports swp1 swp2 swp3 swp4 swp6 swp10 swp11 swp12
+    bridge-vlan-aware yes
+auto swp1
+iface swp1
+
+auto swp2
+iface swp2
+ 
+auto swp3
+iface swp3
+ 
+auto swp4
+iface swp4
+ 
+auto swp6
+iface swp6
+
+auto swp10
+iface swp10
+
+auto swp11
+iface swp11
+
+auto swp12
+iface swp12</code></pre></div>
+<h2 id="use-templates">Use Templates</h2>
+
+<p><code>ifupdown2</code> supports <a href="http://www.makotemplates.org/">Mako-style
+templates</a>. The Mako template engine is
+run over the <code>interfaces</code> file before parsing.</p>
+
+<p>Use the template to declare cookie-cutter bridges in the <code>interfaces</code>
+file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">%for v in [11,12]:
+auto vlan${v}
+iface vlan${v}
+    address 10.20.${v}.3/24
+    bridge-ports glob swp19-20.${v}
+    bridge-stp on
+%endfor</code></pre></div>
+<p>And use it to declare addresses in the <code>interfaces</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">%for i in [1,12]:
+auto swp${i}
+iface swp${i}
+    address 10.20.${i}.3/24</code></pre></div>
+<p>Regarding Mako syntax, use square brackets (<code>[1,12]</code>) to specify a list
+of individual numbers (in this case, 1 and 12). Use <code>range(1,12)</code> to
+specify a range of interfaces.</p>
+
+<p>You can test your template and confirm it evaluates correctly by
+running <code>mako-render /etc/network/interfaces</code>.</p>
+
+<p>For more examples of configuring Mako templates, read this <a href="https://support.cumulusnetworks.com/hc/en-us/articles/202868023">knowledge
+base
+article</a>.</p>
+
+<p>To comment out content in Mako templates, use double hash marks (##).
+For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">## % for i in range(1, 4):
+## auto swp${i}
+## iface swp${i}
+## % endfor
+##</code></pre></div>
+<h2 id="run-ifupdown-scripts-under-etc-network-with-ifupdown2">Run ifupdown Scripts under /etc/network/ with ifupdown2</h2>
+
+<p>Unlike the traditional ifupdown system, ifupdown2 does not run scripts
+installed in /etc/network/*/ automatically to configure network
+interfaces.</p>
+
+<p>To enable or disable ifupdown2 scripting, edit
+the addon_scripts_support line in
+the /etc/network/ifupdown2/ifupdown2.conf file. 1 enables scripting
+and 2 disables scripting. The following example enables scripting.</p>
+
+<p> </p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo nano /etc/network/ifupdown2/ifupdown2.conf
+# Support executing of ifupdown style scripts.
+# Note that by default python addon modules override scripts with the same name
+addon_scripts_support=1</code></pre></div>
+<p> ifupdown2 sets the following environment variables when executing
+commands:</p>
+
+<ul>
+<li>$IFACE represents the physical name of the interface being
+processed; for example, br0 or vxlan42. The name is obtained from
+the /etc/network/interfaces file.</li>
+<li>$LOGICAL represents the logical name (configuration name) of the
+interface being processed.</li>
+<li>$METHOD represents the address method; for example, loopback, DHCP,
+DHCP6, manual, static, and so on. </li>
+<li>$ADDRFAM represents the address families associated with the
+interface, formatted in a comma-separated list; for
+example, <code>&quot;inet,inet6&quot;</code>. </li>
+</ul>
+
+<h2 id="add-descriptions-to-interfaces">Add Descriptions to Interfaces</h2>
+
+<p>You can add descriptions to the interfaces configured
+in <code>/etc/network/interfaces</code> by using the <em>alias</em> keyword.</p>
+
+<p>Example Alias Configuration</p>
+
+<p>The following commands create an alias for swp1:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface swp1 alias hypervisor_port_1
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>These commands create the following code snippet:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto swp1
+iface swp1
+    alias hypervisor_port_1</code></pre></div>
+<p>You can query the interface description using NCLU:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch$ net show interface swp1
+    Name   MAC                Speed     MTU   Mode
+--  ----   -----------------  -------   -----  ---------
+UP  swp1   44:38:39:00:00:04  1G        1500   Access/L2
+Alias
+-----
+hypervisor_port_1</code></pre></div>
+<p>Interface descriptions also appear in the
+<a href="Simple_Network_Management_Protocol_SNMP_Monitoring">SNMP</a> OID
+<a href="https://cumulusnetworks.com/static/mibs/IF-MIB.txt">IF-MIB::ifAlias</a>.</p>
+
+<p>Aliases are limited to 256 characters.</p>
+
+<p>To show the interface description (alias) for all interfaces on the
+switch, run the net show interface alias command. For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net show interface alias
+State    Name            Mode              Alias
+-----    -------------   -------------     ------------------
+UP       bond01          LACP
+UP       bond02          LACP
+UP       bridge          Bridge/L2
+UP       eth0            Mgmt
+UP       lo              Loopback          loopback interface
+UP       mgmt            Interface/L3
+UP       peerlink        LACP
+UP       peerlink.4094   SubInt/L3
+UP       swp1            BondMember        hypervisor_port_1
+UP       swp2            BondMember        to Server02
+...</code></pre></div>
+<p>To show the interface description for all interfaces on the switch in
+JSON format, run the net show interface alias json command.</p>
+
+<h2 id="caveats-and-errata">Caveats and Errata</h2>
+
+<p>While <code>ifupdown2</code> supports the inclusion of multiple <code>iface</code> stanzas for
+the same interface, Cumulus Networks recommends you use a single <code>iface</code>
+stanza for each interface, if possible.</p>
+
+<p>There are cases where you must specify more than one <code>iface</code> stanza for
+the same interface. For example, the configuration for a single
+interface can come from many places, like a template or a sourced file.</p>
+
+<p>If you do specify multiple <code>iface</code> stanzas for the same interface, make
+sure the stanzas do not specify the same interface attributes.
+Otherwise, unexpected behavior can result.</p>
+
+<p>For example, swp1 is configured in two places:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ cat /etc/network/interfaces
+
+source /etc/network/interfaces.d/speed_settings
+
+auto swp1
+iface swp1
+  address 10.0.14.2/24</code></pre></div>
+<p>As well as <code>/etc/network/interfaces.d/speed_settings</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ cat /etc/network/interfaces.d/speed_settings
+
+auto swp1
+iface swp1
+  link-speed 1000
+  link-duplex full</code></pre></div>
+<p><code>ifupdown2</code> correctly parses a configuration like this because the same
+attributes are not specified in multiple <code>iface</code> stanzas.</p>
+
+<p>And, as stated in the note above, you cannot purge existing addresses on
+interfaces with multiple <code>iface</code> stanzas.</p>
+
+<h3 id="ifupdown2-and-sysctl">ifupdown2 and sysctl</h3>
+
+<p>For sysctl commands in the pre-up, up, post-up, pre-down, down,
+and post-down lines that use the $IFACE variable, if the interface name
+contains a dot (.), ifupdown2 does not change the name to work with
+sysctl. For example, the interface name bridge.1 is not converted to
+bridge/1.</p>
+
+<h3 id="long-interface-names">Long Interface Names</h3>
+
+<p>The Linux kernel limits interface names to 15 characters in length and
+cannot have a number as the first character. Longer interface names can
+result in errors. To work around this issue, remove the interface from
+the /etc/network/interfaces file, then restart the networking.service.</p>
+
+<p> </p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo vi /etc/network/interfaces
+cumulus@switch:~$ sudo systemctl restart networking.service</code></pre></div>
+<h2 id="related-information">Related Information</h2>
+
+<ul>
+<li><a href="http://wiki.debian.org/NetworkConfiguration">Debian - Network
+Configuration</a></li>
+<li><a href="http://www.linuxfoundation.org/collaborate/workgroups/networking/bonding">Linux Foundation -
+Bonds</a></li>
+<li><a href="http://www.linuxfoundation.org/collaborate/workgroups/networking/vlan">Linux Foundation -
+VLANs</a></li>
+<li>man ifdown(8)</li>
+<li>man ifquery(8)</li>
+<li>man ifreload</li>
+<li>man ifup(8)</li>
+<li>man ifupdown-addons-interfaces(5)</li>
+<li>man interfaces(5)</li>
+</ul>
+
+<h2 id="attachments">Attachments:</h2>
+
+<p><img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8363023/8363022.png">interfaces_all.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8363023/8363024.png">interfaces.png</a> (image/png)</p>
+</article>
+
+      
+<div class="align-center book-git-footer justify-between">
+  
+  <div>
+    <a href="https://github.com/cawleyflower/testDocs/commit/0f1fa77f244c4b4642688df1f5e961e88daa6e08" title='Last modified March 4, 2019 16:11 EST by Cawleyflower' target="_blank" rel="noopener">
+      <img src="/svg/code-merge.svg" /> Last Modified Mar 4, 2019
+    </a>
+  </div>
+  
+  
+</div>
+
+
+    </div>
+
+    
+  
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#interface-configuration-and-management">Interface Configuration and Management</a>
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#basic-commands">Basic Commands</a></li>
+<li><a href="#ifupdown2-interface-classes">ifupdown2 Interface Classes</a></li>
+<li><a href="#configure-a-loopback-interface">Configure a Loopback Interface</a></li>
+<li><a href="#ifupdown-behavior-with-child-interfaces">ifupdown Behavior with Child Interfaces</a></li>
+<li><a href="#ifupdown2-interface-dependencies">ifupdown2 Interface Dependencies</a></li>
+<li><a href="#subinterfaces">Subinterfaces</a></li>
+<li><a href="#ifup-and-upper-parent-interfaces">ifup and Upper (Parent) Interfaces</a></li>
+<li><a href="#configure-ip-addresses">Configure IP Addresses</a>
+<ul>
+<li><a href="#specify-ip-address-scope">Specify IP Address Scope </a></li>
+<li><a href="#purge-existing-ip-addresses-on-an-interface">Purge Existing IP Addresses on an Interface</a></li>
+</ul></li>
+<li><a href="#specify-user-commands">Specify User Commands</a></li>
+<li><a href="#source-interface-file-snippets">Source Interface File Snippets</a></li>
+<li><a href="#use-globs-for-port-lists">Use Globs for Port Lists</a></li>
+<li><a href="#use-templates">Use Templates</a></li>
+<li><a href="#run-ifupdown-scripts-under-etc-network-with-ifupdown2">Run ifupdown Scripts under /etc/network/ with ifupdown2</a></li>
+<li><a href="#add-descriptions-to-interfaces">Add Descriptions to Interfaces</a></li>
+<li><a href="#caveats-and-errata">Caveats and Errata</a>
+<ul>
+<li><a href="#ifupdown2-and-sysctl">ifupdown2 and sysctl</a></li>
+<li><a href="#long-interface-names">Long Interface Names</a></li>
+</ul></li>
+<li><a href="#related-information">Related Information</a></li>
+<li><a href="#attachments">Attachments:</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+  
+</body>
+
+</html>

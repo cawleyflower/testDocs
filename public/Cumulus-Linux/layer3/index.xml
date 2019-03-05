@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cumulus Networks Documentation</title>
+    <link>http://example.org/Cumulus-Linux/layer3/</link>
+    <description>Recent content on Cumulus Networks Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/Cumulus-Linux/layer3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/Address_Resolution_Protocol_-_ARP/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/Address_Resolution_Protocol_-_ARP/</guid>
+      <description>Address Resolution Protocol - ARP Address Resolution Protocol (ARP) is a communication protocol used for discovering the link layer address, such as a MAC address, associated with a given network layer address. ARP is defined by RFC 826. The Cumulus Linux ARP implementation differs from standard Debian Linux ARP behavior in a few ways because Cumulus Linux is an operating system for routers/switches rather than servers. This chapter describes the differences in ARP behavior, why the changes were made, where the changes were implemented, and how to change port-specific values.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/Bidirectional_Forwarding_Detection_-_BFD/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/Bidirectional_Forwarding_Detection_-_BFD/</guid>
+      <description>Bidirectional Forwarding Detection - BFD Bidirectional Forwarding Detection (BFD) provides low overhead and rapid detection of failures in the paths between two network devices. It provides a unified mechanism for link detection over all media and protocol layers. Use BFD to detect failures for IPv4 and IPv6 single or multihop paths between any two network devices, including unidirectional path failure detection.
+Cumulus Linux does not support demand mode in BFD.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/Border_Gateway_Protocol_-_BGP/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/Border_Gateway_Protocol_-_BGP/</guid>
+      <description>Border Gateway Protocol - BGP BGP is the routing protocol that runs the Internet. It is an increasingly popular protocol for use in the data center as it lends itself well to the rich interconnections in a Clos topology. Specifically, BGP:
+ Does not require the routing state to be periodically refreshed, unlike OSPF. Is less chatty than its link-state siblings. For example, a link or node transition can result in a bestpath change, causing BGP to send updates.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/Configuring_FRRouting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/Configuring_FRRouting/</guid>
+      <description>Configuring FRRouting This section provides an overview of configuring FRRouting, the routing software package that provides a suite of routing protocols so you can configure routing on your switch.
+Contents {.expand-control-image}This topic describes &amp;hellip;
+ Configure FRRouting  Enable and Start FRRouting Integrated Configurations Restore the Default Configuration  Interface IP Addresses and VRFs FRRouting vtysh Modal CLI Reload the FRRouting Configuration FRR Logging Caveats  Obfuscated Passwords Duplicate Hostnames  Related Information  Configure FRRouting FRRouting does not start by default in Cumulus Linux.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP/</guid>
+      <description>Equal Cost Multipath Load Sharing - Hardware ECMP Cumulus Linux supports hardware-based equal cost multipath (ECMP) load sharing. ECMP is enabled by default in Cumulus Linux. Load sharing occurs automatically for all routes with multiple next hops installed. ECMP load sharing supports both IPv4 and IPv6 routes.
+Contents {.expand-control-image}This topic describes &amp;hellip;
+ Equal Cost Routing ECMP Hashing  Use cl-ecmpcalc to Determine the Hash Result cl-ecmpcalc Limitations ECMP Hash Buckets Configure a Hash Seed to Avoid Hash Polarization  Resilient Hashing  Resilient Hash Buckets Remove Next Hops Add Next Hops Configure Resilient Hashing   Equal Cost Routing ECMP operates only on equal cost routes in the Linux routing table.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/FRRouting_Overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/FRRouting_Overview/</guid>
+      <description>FRRouting Overview Cumulus Linux uses FRRouting to provide the routing protocols for dynamic routing. FRRouting provides many routing protocols, of which Cumulus Linux supports the following:
+ Open Shortest Path First (v2 and v3) Border Gateway Protocol  Contents {.expand-control-image}This topic describes &amp;hellip;
+ Architecture About zebra Related Information  Architecture {height=&amp;ldquo;250&amp;rdquo;}
+As shown in the figure above, the FRRouting suite consists of various protocol-specific daemons and a protocol-independent daemon called zebra.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/GRE_Tunneling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/GRE_Tunneling/</guid>
+      <description>GRE Tunneling Early Access Feature
+GRE Tunneling is an early access feature.
+Generic Routing Encapsulation (GRE) is a tunneling protocol that encapsulates network layer protocols inside virtual point-to-point links over an Internet Protocol network. The two endpoints are identified by the tunnel source and tunnel destination addresses at each endpoint.
+GRE packets travel directly between the two endpoints through a virtual tunnel. As a packet comes across other routers, there is no interaction with its payload; the routers only parse the outer IP packet.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/Introduction_to_Routing_Protocols/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/Introduction_to_Routing_Protocols/</guid>
+      <description>Introduction to Routing Protocols This chapter discusses the various routing protocols, and how to configure them.
+Contents {.expand-control-image}This topic describes &amp;hellip;
+ Routing Protocols Configure Routing Protocols Protocol Tuning  Routing Protocols A routing protocol dynamically computes reachability between various end points. This enables communication to work around link and node failures, and additions and withdrawals of various addresses.
+IP routing protocols are typically distributed; that is, an instance of the routing protocol runs on each of the routers in a network.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/Management_VRF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/Management_VRF/</guid>
+      <description>Management VRF *Management VRF* is a subset of VRF (virtual routing tables and forwarding) and provides a separation between the out-of-band management network and the in-band data plane network. For all VRFs, the main routing table is the default table for all of the data plane switch ports. With management VRF, a second table, mgmt, is used for routing through the Ethernet ports of the switch. The mgmt name is special cased to identify the management VRF from a data plane VRF.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/Network_Topology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/Network_Topology/</guid>
+      <description>Network Topology In computer networks, topology refers to the structure of interconnecting various nodes. Some commonly used topologies in networks are star, hub and spoke, leaf and spine, and broadcast.
+Contents {.expand-control-image}This topic describes &amp;hellip;
+ Clos Topologies Over-Subscribed and Non-Blocking Configurations Containing the Failure Domain Load Balancing  Clos Topologies In the vast majority of modern data centers, Clos or fat tree topology is very popular. This topology is shown in the figure below.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/Open_Shortest_Path_First_-_OSPF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/Open_Shortest_Path_First_-_OSPF/</guid>
+      <description>Open Shortest Path First - OSPF OSPF maintains the view of the network topology conceptually as a directed graph. Each router represents a vertex in the graph. Each link between neighboring routers represents a unidirectional edge and each link has an associated weight (called cost) that is either automatically derived from its bandwidth or administratively assigned. Using the weighted topology graph, each router computes a shortest path tree (SPT) with itself as the root, and applies the results to build its forwarding table.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/Open_Shortest_Path_First_v3_-_OSPFv3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/Open_Shortest_Path_First_v3_-_OSPFv3/</guid>
+      <description>Open Shortest Path First v3 - OSPFv3 OSPFv3 is a revised version of OSPFv2 to support the IPv6 address family. Refer to Open Shortest Path First (OSPF) Protocol for a discussion on the basic concepts, which remain the same between the two versions.
+OSPFv3 has changed the formatting in some of the packets and LSAs either as a necessity to support IPv6 or to improve the protocol behavior based on OSPFv2 experience.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/Policy-based_Routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/Policy-based_Routing/</guid>
+      <description>Policy-based Routing Typical routing systems and protocols forward traffic based on the destination address in the packet, which is used to look up an entry in a routing table. However, sometimes the traffic on your network requires a more hands-on approach. You might need to forward a packet based on the source address, the packet size, or other information in the packet header.
+Policy-based routing (PBR) lets you make routing decisions based on filters that change the routing behavior of specific traffic so that you can override the routing table and influence where the traffic goes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/Protocol_Independent_Multicast_-_PIM/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/Protocol_Independent_Multicast_-_PIM/</guid>
+      <description>Protocol Independent Multicast - PIM Protocol Independent Multicast (PIM) is a multicast control plane protocol that advertises multicast sources and receivers over a routed layer 3 network. Layer 3 multicast relies on PIM to advertise information about multicast capable routers, and the location of multicast senders and receivers. For this reason, multicast cannot be sent through a routed network without PIM.
+PIM has two modes of operation: Sparse Mode (PIM-SM) and Dense Mode (PIM-DM).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/Redistribute_Neighbor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/Redistribute_Neighbor/</guid>
+      <description>Redistribute Neighbor Redistribute neighbor provides a mechanism for IP subnets to span racks without forcing the end hosts to run a routing protocol.
+The fundamental premise behind redistribute neighbor is to announce individual host /32 routes in the routed fabric. Other hosts on the fabric can then use this new path to access the hosts in the fabric. If multiple equal-cost paths (ECMP) are available, traffic can load balance across the available paths natively.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/Routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/Routing/</guid>
+      <description>Routing This chapter discusses routing on switches running Cumulus Linux.
+Contents {.expand-control-image}This topic describes &amp;hellip;
+ Manage Static Routes  Static Multicast Routes Static Routing via ip route Apply a Route Map for Route Updates  Configure a Gateway or Default Route Supported Route Table Entries  Forwarding Table Profiles Number of Supported Route Entries, by Platform TCAM Resource Profiles for Mellanox Switches  Caveats and Errata  Don&amp;rsquo;t Delete Routes via Linux Shell Add IPv6 Default Route with src Address on eth0 Fails without Adding Delay  Related Information  Manage Static Routes You manage static routes using NCLU or the Cumulus Linux ip route command.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/Segment_Routing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/Segment_Routing/</guid>
+      <description>Segment Routing Cumulus Linux supports *segment routing, *also known as source routing, which provides the ability for a source node to specify the path a packet should take (traffic engineering). In some more advanced cases, you can use segment routing to have offline multiprotocol label switching (MPLS) controllers program labels into the network for traffic engineering.
+Cumulus Linux provides full label-based forwarding, relying on BGP for label exchange. However, Cumulus Linux does not provide LDP interoperability for MPLS and it does not support VRFs for tenant isolation.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/Virtual_Routing_and_Forwarding_-_VRF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/Virtual_Routing_and_Forwarding_-_VRF/</guid>
+      <description>Virtual Routing and Forwarding - VRF Cumulus Linux provides virtual routing and forwarding (VRF) to allow for the presence of multiple independent routing tables working simultaneously on the same router or switch. This permits multiple network paths without the need for multiple switches. Think of this feature as VLAN for layer 3, but unlike VLANs, there is no field in the IP header carrying it. Other implementations call this feature VRF-Lite.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/configuring_frrouting/comparing_nclu_and_vtysh_commands/Comparing_NCLU_and_vtysh_Commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/configuring_frrouting/comparing_nclu_and_vtysh_commands/Comparing_NCLU_and_vtysh_Commands/</guid>
+      <description>Comparing NCLU and vtysh Commands Using NCLU is the primary way to configure routing in Cumulus Linux. However, an alternative exists in the the vtysh modal CLI. The available commands are as follows:
+The following table compares the various FRRouting commands with their Cumulus Linux NCLU counterparts.
+    Action NCLU Commands FRRouting Commands    Display the routing table cumulus@switch:~$ net show route   switch# show ip route    Create a new neighbor cumulus@switch:~$ net add bgp autonomous-system 65002 cumulus@switch:~$ net add bgp neighbor 14.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/layer3/frrouting_overview/Upgrading_from_Quagga_to_FRRouting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/layer3/frrouting_overview/Upgrading_from_Quagga_to_FRRouting/</guid>
+      <description>Upgrading from Quagga to FRRouting Cumulus Linux 3.4 and later releases replace Quagga with FRRouting. This section outlines the upgrade process for users currently using Quagga.
+These instructions only apply to upgrading to Cumulus Linux 3.4 or later from releases earlier than 3.4. New image installations contain frr instead of quagga or quagga-compat. If you are using any automation tools to configure your network and are installing a new Cumulus Linux image, make sure your automation tools refer to FRR and not to Quagga.</description>
+    </item>
+    
+  </channel>
+</rss>

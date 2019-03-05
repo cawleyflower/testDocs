@@ -1,0 +1,1034 @@
+<!DOCTYPE html><html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bonding Link Aggregation | Cumulus Networks Documentation</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+<link rel="stylesheet" href="/book.min.50a619ce4c0e99594908d162684f42218608aa6fde2bd83cca5025d59ba535e3.css">
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+<h2 class="book-brand">
+  <a href="http://example.org/">Cumulus Networks Documentation</a>
+</h2>
+
+
+
+    
+
+
+  
+  
+    
+    
+  
+ 
+  <ul>
+    
+    <li><a href="/Cumulus-Linux/installation-management/">
+    Installation Management</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/">Adding and Updating Packages</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/">Installing a New Cumulus Linux Image</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/">Managing Cumulus Linux Disk Images</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/">Upgrading Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Using_Snapshots/">Using Snapshots</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/">Zero Touch Provisioning Z T P</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer1-switch-ports/">
+    Layer1 Switch Ports</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/802.1X_Interfaces/">802.1 X Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Buffer_and_Queue_Management/">Buffer and Queue Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Relays/">D H C P Relays</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Servers/">D H C P Servers</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Facebook_Voyager_Optical_Interfaces/">Facebook Voyager Optical Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Prescriptive_Topology_Manager_-_PTM/">Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/Interface_Configuration_and_Management/">Interface Configuration and Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/switch_port_attributes/Switch_Port_Attributes/">Switch Port Attributes</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer2/">
+    Layer2</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Prescriptive_Topology_Manager_-_PTM/">Copy of Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Spanning_Tree_and_Rapid_Spanning_Tree/">Copy of Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Ethernet_Bridging_-_VLANs/">Ethernet Bridging v L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/IGMP_and_MLD_Snooping/">I G M P and M L D Snooping</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/LACP_Bypass/">L a C P Bypass</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Link_Layer_Discovery_Protocol/">Link Layer Discovery Protocol</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Multi-Chassis_Link_Aggregation_-_MLAG/">Multi Chassis Link Aggregation M L a G</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Spanning_Tree_and_Rapid_Spanning_Tree/">Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Virtual_Router_Redundancy_-_VRR/">Virtual Router Redundancy v R R</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/bonding_link_aggregation/Bonding_-_Link_Aggregation/" class="active">Bonding Link Aggregation</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/Traditional_Bridge_Mode/">Traditional Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN-aware_Bridge_Mode/">V L a N Aware Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN_Tagging/">V L a N Tagging</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/link_layer_discovery_protocol/voice_vlan/Voice_VLAN/">Voice v L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/virtual_router_redundancy/ifplugd/ifplugd/">Ifplugd</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer3/">
+    Layer3</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Address_Resolution_Protocol_-_ARP/">Address Resolution Protocol a R P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Bidirectional_Forwarding_Detection_-_BFD/">Bidirectional Forwarding Detection B F D</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Border_Gateway_Protocol_-_BGP/">Border Gateway Protocol B G P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Configuring_FRRouting/">Configuring F R Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP/">Equal Cost Multipath Load Sharing Hardware E C M P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/FRRouting_Overview/">F R Routing Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/GRE_Tunneling/">G R E Tunneling</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Introduction_to_Routing_Protocols/">Introduction to Routing Protocols</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Management_VRF/">Management v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Network_Topology/">Network Topology</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_-_OSPF/">Open Shortest Path First O S P F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_v3_-_OSPFv3/">Open Shortest Path First V3 O S P Fv3</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Policy-based_Routing/">Policy Based Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Protocol_Independent_Multicast_-_PIM/">Protocol Independent Multicast P I M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Redistribute_Neighbor/">Redistribute Neighbor</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Routing/">Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Segment_Routing/">Segment Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Virtual_Routing_and_Forwarding_-_VRF/">Virtual Routing and Forwarding v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/configuring_frrouting/comparing_nclu_and_vtysh_commands/Comparing_NCLU_and_vtysh_Commands/">Comparing N C L U and Vtysh Commands</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/frrouting_overview/Upgrading_from_Quagga_to_FRRouting/">Upgrading From Quagga to F R Routing</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/monitoring-troubleshooting/">
+    Monitoring Troubleshooting</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/ASIC_Monitoring/">A S I C Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/FRRouting_Log_Message_Reference/">F R Routing Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Best_Practices/">Monitoring Best Practices</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_System_Hardware/">Monitoring System Hardware</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Virtual_Device_Counters/">Monitoring Virtual Device Counters</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Network_Troubleshooting/">Network Troubleshooting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Resource_Diagnostics_Using_cl-resource-query/">Resource Diagnostics Using Cl Resource Query</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Simple_Network_Management_Protocol_SNMP_Monitoring/">Simple Network Management Protocol S N M P Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Single_User_Mode_-_Boot_Recovery/">Single User Mode Boot Recovery</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Troubleshooting_Network_Interfaces/">Troubleshooting Network Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Understanding_the_cl-support_Output_File/">Understanding the Cl Support Output File</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/monitoring_system_hardware/network_switch_port_led_and_stats_led/Network_Switch_Port_LED_and_Status_LED_Guidelines/">Network Switch Port L E D and Status L E D Guidelines</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/monitoring_system_statistics/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow/">Monitoring System Statistics and Network Traffic With S Flow</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/using_nclu_to_troubleshoot/Using_NCLU_to_Troubleshoot_Your_Network_Configuration/">Using N C L U to Troubleshoot Your Network Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/simple_network_management/using_nutanix_prisim_as_monitoring_tool/Using_Nutanix_Prism_as_a_Monitoring_Tool/">Using Nutanix Prism as a Monitoring Tool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/switchd_Log_Message_Reference/">Switchd Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/troubleshooting_network_interfaces/monitoring_interfaces_and_transcievers_using_ethtool/Monitoring_Interfaces_and_Transceivers_Using_ethtool/">Monitoring Interfaces and Transceivers Using Ethtool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_log_files/Troubleshooting_Log_Files/">Troubleshooting Log Files</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_the_etc_directory/Troubleshooting_the_etc_Directory/">Troubleshooting the Etc Directory</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-solutions/">
+    Network Solutions</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Anycast_Design_Guide/">Anycast Design Guide</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Hyperconverged_Solution_with_Nutanix/">Cumulus Hyperconverged Solution With Nutanix</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Networks_Services_Demos/">Cumulus Networks Services Demos</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Data_Center_Host_to_ToR_Architecture/">Data Center Host to to R Architecture</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Docker_on_Cumulus_Linux/">Docker on Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/OpenStack_Neutron_ML2_and_Cumulus_Linux/">Open Stack Neutron M L2 and Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/RDMA_over_Converged_Ethernet_-_RoCE/">R D M a Over Converged Ethernet Ro C E</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-visualization/">
+    Network Visualization</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Eng_Update_of_VXLAN_Hyperloop/">Eng Update of v X L a N Hyperloop</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Ethernet_Virtual_Private_Network_-_EVPN/">Ethernet Virtual Private Network E v P N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs/">Hybrid Cloud Connectivity With Qin Q and v X L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/LNV_Full_Example/">L N v Full Example</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Lightweight_Network_Virtualization_Overview/">Lightweight Network Virtualization Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Static_VXLAN_Configurations/">Static v X L a N Configurations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Routing/">V X L a N Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Scale/">V X L a N Scale</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Tunnel_DSCP_Operations__DRAFT/">V X L a N Tunnel D S C P Operations — D R a F T</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Virtualization_Integrations/">Virtualization Integrations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_mac_bindings/Static_MAC_Bindings_with_VXLAN/">Static M a C Bindings With v X L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_vxlan_tunnels/Static_VXLAN_Tunnels/">Static v X L a N Tunnels</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_hardware_vteps_vmware_nsx-mh/Integrating_Hardware_VTEPs_with_VMware_NSX-MH/">Integrating Hardware v T E Ps With v Mware N S X M H</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_midonet_openstack/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack/">Integrating Hardware v T E Ps With Midokura Mido Net and Open Stack</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_vmware_nsx-v/Integrating_Hardware_VTEPs_with_VMware_NSX-V/">Integrating Hardware v T E Ps With v Mware N S X V</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/ovsdb_server_high_availability/OVSDB_Server_High_Availability/">O v S D B Server High Availability</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/system-config/">
+    System Config</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Authentication_Authorization_and_Accounting/">Authentication Authorization and Accounting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_a_Global_Proxy/">Configuring a Global Proxy</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_switchd/">Configuring Switchd</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Copy_of_Netfilter_-_ACLs/">Copy of Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/HTTP_API/">H T T P a P I</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Netfilter_-_ACLs/">Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/">Network Command Line Utility N C L U</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Power_over_Ethernet_-_PoE/">Power Over Ethernet Po E</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Services_and_Daemons_in_Cumulus_Linux/">Services and Daemons in Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Setting_Date_and_Time/">Setting Date and Time</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/LDAP_Authentication_and_Authorization/">L D a P Authentication and Authorization</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/RADIUS_AAA/">R a D I U S a a A</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/SSH_for_Remote_Access/">S S H for Remote Access</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/TACACS_Plus/">T a C a C S Plus</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/User_Accounts/">User Accounts</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/Using_sudo_to_Delegate_Privileges/">Using Sudo to Delegate Privileges</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Default_Cumulus_Linux_ACL_Configuration/">Default Cumulus Linux a C L Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Filtering_Learned_MAC_Addresses/">Filtering Learned M a C Addresses</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/whats-new/">What&#39;s New</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/cumulus-linux-index/Cumulus_Linux_Index/">Cumulus Linux Index</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/quick-start/Quick_Start_Guide/">Quick Start Guide</a>
+    </li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+</nav>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" />
+  </label>
+  <strong>Bonding Link Aggregation</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="bonding-link-aggregation">Bonding - Link Aggregation</h1>
+
+<p>Linux bonding provides a method for aggregating multiple network
+interfaces (<em>slaves</em>) into a single logical bonded interface (<em>bond</em>).
+Cumulus Linux supports two bonding modes:</p>
+
+<ul>
+<li>IEEE 802.3ad link aggregation mode, which allows one or more links
+to be aggregated together to form a <em>link aggregation group</em> (LAG),
+so that a media access control (MAC) client can treat the link
+aggregation group as if it were a single link. IEEE 802.3ad link
+aggregation is the default mode.</li>
+<li>Balance-xor mode, where the bonding of slave interfaces are static
+and all slave interfaces are active for load balancing and fault
+tolerance purposes. This is useful for
+<a href="Multi-Chassis_Link_Aggregation_-_MLAG">MLAG</a> deployments.</li>
+</ul>
+
+<p>The benefits of link aggregation include:</p>
+
+<ul>
+<li>Linear scaling of bandwidth as links are added to LAG</li>
+<li>Load balancing</li>
+<li>Failover protection</li>
+</ul>
+
+<p>Cumulus Linux uses version 1 of the LAG control protocol (LACP).</p>
+
+<p>To temporarily bring up a bond even when there is no LACP partner,
+use <a href="LACP_Bypass">LACP Bypass</a>.</p>
+
+<h2 id="contents">Contents</h2>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}This topic
+describes &hellip;</p>
+
+<ul>
+<li><a href="#Bonding-LinkAggregation-HashDistribution">Hash Distribution</a></li>
+<li><a href="#Bonding-LinkAggregation-CreateaBond">Create a Bond</a>
+
+<ul>
+<li><a href="#Bonding-LinkAggregation-ConfigurationOptions">Configuration
+Options</a></li>
+<li><a href="#Bonding-LinkAggregation-balance_xorEnablebalance-xorMode">Enable balance-xor
+Mode</a></li>
+</ul></li>
+<li><a href="#Bonding-LinkAggregation-ExampleConfiguration:Bonding4Slaves">Example Configuration: Bonding 4
+Slaves</a></li>
+<li><a href="#Bonding-LinkAggregation-CaveatsandErrata">Caveats and Errata</a></li>
+<li><a href="#Bonding-LinkAggregation-related-informationRelatedInformation">Related
+Information</a></li>
+</ul>
+
+<h2 id="hash-distribution">Hash Distribution</h2>
+
+<p>Egress traffic through a bond is distributed to a slave based on a
+packet hash calculation, providing load balancing over the slaves; many
+conversation flows are distributed over all available slaves to load
+balance the total traffic. Traffic for a single conversation flow always
+hashes to the same slave. </p>
+
+<p>The hash calculation uses packet header data to choose to which slave to
+transmit the packet:</p>
+
+<ul>
+<li>For IP traffic, IP header source and destination fields are used in
+the calculation. </li>
+<li>For IP + TCP/UDP traffic, source and destination ports are included
+in the hash calculation. </li>
+</ul>
+
+<p>In a failover event, the hash calculation is adjusted to steer traffic
+over available slaves.</p>
+
+<h2 id="create-a-bond">Create a Bond</h2>
+
+<p>You can create and configure a bond with the Network Command Line
+Utility (<a href="Network_Command_Line_Utility_-_NCLU">NCLU</a>). Follow the steps
+below to create a new bond:</p>
+
+<ol>
+<li><p>SSH into the switch.</p></li>
+
+<li><p>Add a bond using the <code>net add bond</code> command,
+replacing <code>[bond-name]</code> with the name of the bond,
+and <code>[slaves]</code> with the list of slaves:</p>
+<div class="highlight"><pre class="chroma"><code class="language-plain" data-lang="plain">cumulus@switch:~$ net add bond [bond-name] bond slaves [slaves]
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>The bond is configured by default in IEEE 802.3ad link aggregation
+mode. To configure the bond in balance-xor mode, see <a href="#Bonding-LinkAggregation-bond_mode">bond
+mode</a> below. </p></li>
+</ol>
+
+<p>The name of the bond must be:</p>
+
+<ul>
+<li><p>Compliant with Linux interface naming conventions.</p></li>
+
+<li><p>Unique within the switch.</p></li>
+</ul>
+
+<h3 id="configuration-options">Configuration Options</h3>
+
+<p>The configuration options and their default values are listed in the
+table below.</p>
+
+<p>Each bond configuration option, except for <code>bond slaves,</code> is set to the
+recommended value by default in Cumulus Linux. Only configure an option
+if a different setting is needed. For more information on configuration
+values, refer to the <a href="#Bonding-LinkAggregation-related-information">Related
+Information</a> section
+below.</p>
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>NCLU Configuration Option</th>
+<th><p>Description</p></th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>bond mode</code></td>
+<td><p>The bonding mode. Cumulus Linux supports IEEE 802.3ad link aggregation mode and balance-xor mode. IEEE 802.3ad link aggregation is the default mode.</p>
+<p>You can change the bond mode using NCLU. The following example changes bond1 to balance-xor mode.</p>
+<p>Note: Use balance-xor mode only if you cannot use LACP. See below for more information.</p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>cumulus@switch:~$ net add bond bond1 bond mode balance-xor
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre>
+</div>
+</div>
+<p>The following example changes bond1 to IEEE 802.3ad link aggregation mode:</p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>cumulus@switch:~$ net add bond bond1 bond mode 802.3ad
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre>
+</div>
+</div></td>
+<td><code>802.3ad</code></td>
+</tr>
+<tr class="even">
+<td><code>bond slaves</code></td>
+<td>The list of slaves in the bond.</td>
+<td>N/A</td>
+</tr>
+<tr class="odd">
+<td><code>bond miimon</code></td>
+<td>Defines how often the link state of each slave is inspected for failures.</td>
+<td><p><code>100</code></p></td>
+</tr>
+<tr class="even">
+<td><code>bond downdelay         </code></td>
+<td><p>Specifies the time, in milliseconds, to wait before disabling a slave after a link failure has been detected. This option is only valid for the miimon link monitor. The downdelay value must be a multiple of the miimon value; if not, it is rounded down to the nearest multiple.</p></td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td><code>bond updelay</code></td>
+<td><p>Specifies the time, in milliseconds, to wait before enabling a slave after a link recovery has been detected. This option is only valid for the miimon link monitor. The updelay value must be a multiple of the miimon value; if not, it is rounded down to the nearest multiple.</p></td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td><code>bond use-carrier</code></td>
+<td>Determines the link state.</td>
+<td><code>1</code></td>
+</tr>
+<tr class="odd">
+<td><code>bond xmit-hash-policy</code></td>
+<td><p>The hash method used to select the slave for a given packet.</p>
+<div>
+<div>
+Do not change this setting.
+</div>
+</div></td>
+<td><code>layer3+4</code></td>
+</tr>
+<tr class="even">
+<td><code>bond lacp-bypass-allow</code></td>
+<td>Enables <a href="LACP_Bypass">LACP bypass</a>.</td>
+<td>N/A</td>
+</tr>
+<tr class="odd">
+<td><code>bond lacp-rate</code></td>
+<td><p>Sets the rate to ask the link partner to transmit LACP control packets.</p>
+<p>You can set the LACP rate to slow using <a href="Network_Command_Line_Utility_-_NCLU">NCLU</a>:</p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>cumulus@switch:~$ net add bond bond01 bond lacp-rate slow</code></pre>
+</div>
+</div></td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td><code>bond min-links</code></td>
+<td><p>Defines the minimum number of links that must be active before the bond is put into service.</p>
+<div>
+<div>
+A value greater than <code>1</code> is useful if higher level services need to ensure a minimum aggregate bandwidth level before activating a bond. Keeping <code>bond-min-links</code> set to <code>1</code> indicates the bond must have at least one active member. If the number of active members drops below the <code>bond-min-links</code> setting, the bond will appear to upper-level protocols as <code>link-down</code>. When the number of active links returns to greater than or equal to <code>bond-min-links</code>, the bond becomes <code>link-up</code>.
+</div>
+</div></td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="enable-balance-xor-mode">Enable balance-xor Mode</h3>
+
+<p>When you enable <em>balance-xor mode</em>, the bonding of slave interfaces are
+static and all slave interfaces are active for load balancing and fault
+tolerance purposes. Packet transmission on the bond is based on the hash
+policy specified by <code>xmit-hash-policy</code>.</p>
+
+<p>When using balance-xor mode to dual-connect host-facing bonds in an
+<a href="Multi-Chassis_Link_Aggregation_-_MLAG">MLAG</a> environment, you <strong>must</strong>
+configure the <code>clag_id</code> parameter on the MLAG bonds and it must be the
+same on both MLAG switches. Otherwise, the bonds are treated by the MLAG
+switch pair as single-connected.</p>
+
+<p>Use balance-xor mode <strong>only</strong> if you cannot use LACP; LACP can detect
+mismatched link attributes between bond members and can even detect
+misconnections. </p>
+
+<p>To change the mode of an existing bond to balance-xor, run
+the <code>net add bond &lt;bond-name&gt; bond mode balance-xor</code> command. The
+following example commands change bond1 to balance-xor mode:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add bond bond1 bond mode balance-xor
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>To create a new bond and configure the bond to use balance-xor mode,
+create the bond, then configure the bond mode. The following example
+commands create a bond called bond1 and configure bond mode to be
+balance-xor:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add bond bond1 bond slaves swp3,4
+cumulus@switch:~$ net add bond bond1 bond mode balance-xor
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>These commands create the following configuration in the
+<code>/etc/network/interfaces</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto bond1
+iface bond1
+    bond-mode balance-xor
+    bond-slaves swp3 swp4</code></pre></div>
+<p>To view the bond, use <a href="Network_Command_Line_Utility_-_NCLU">NCLU</a>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net show interface bond1 
+    Name    MAC                Speed    MTU    Mode
+--  ------  -----------------  -------  -----  ------
+UP  bond1   00:02:00:00:00:12  20G      1500   Bond
+
+
+Bond Details
+---------------  -------------
+Bond Mode:       Balance-XOR
+Load Balancing:  Layer3+4
+Minimum Links:   1
+In CLAG:         CLAG Inactive
+
+
+    Port     Speed      TX    RX    Err    Link Failures
+--  -------  -------  ----  ----  -----  ---------------
+UP  swp3(P)  10G         0     0      0                0
+UP  swp4(P)  10G         0     0      0                0
+
+
+LLDP
+-------  ----  ------------
+swp3(P)  ====  swp1(p1c1h1)
+swp4(P)  ====  swp2(p1c1h1)Routing
+-------
+  Interface bond1 is up, line protocol is up
+  Link ups:       3    last: 2017/04/26 21:00:38.26
+  Link downs:     2    last: 2017/04/26 20:59:56.78
+  PTM status: disabled
+  vrf: Default-IP-Routing-Table
+  index 31 metric 0 mtu 1500
+  flags: &lt;UP,BROADCAST,RUNNING,MULTICAST&gt;
+  Type: Ethernet
+  HWaddr: 00:02:00:00:00:12
+  inet6 fe80::202:ff:fe00:12/64
+  Interface Type Other</code></pre></div>
+<h2 id="example-configuration-bonding-4-slaves">Example Configuration: Bonding 4 Slaves</h2>
+
+<p>In the following example, the front panel port interfaces swp1 thru swp4
+are slaves in bond0, while swp5 and swp6 are not part of bond0.</p>
+
+<p><img src="attachments/8362653/8362652.png" alt="" />{width=&ldquo;300&rdquo;}</p>
+
+<p>Example Bond Configuration</p>
+
+<p>The following commands create a bond with four slaves:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add bond bond0 address 10.0.0.1/30
+cumulus@switch:~$ net add bond bond0 bond slaves swp1-4
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>These commands create this code snippet in the <code>/etc/network/interfaces</code>
+file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto bond0
+iface bond0
+    address 10.0.0.1/30
+    bond-slaves swp1 swp2 swp3 swp4</code></pre></div>
+<p>If the bond is going to become part of a bridge, you do not need to
+specify an IP address.</p>
+
+<p>When networking is started on the switch, bond0 is created as MASTER and
+interfaces swp1 thru swp4 come up in SLAVE mode, as seen in the
+<code>ip link show</code> command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ ip link show
+...
+ 
+3: swp1: &lt;BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast master bond0 state UP mode DEFAULT qlen 500
+    link/ether 44:38:39:00:03:c1 brd ff:ff:ff:ff:ff:ff
+4: swp2: &lt;BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast master bond0 state UP mode DEFAULT qlen 500
+    link/ether 44:38:39:00:03:c1 brd ff:ff:ff:ff:ff:ff
+5: swp3: &lt;BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast master bond0 state UP mode DEFAULT qlen 500
+    link/ether 44:38:39:00:03:c1 brd ff:ff:ff:ff:ff:ff
+6: swp4: &lt;BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast master bond0 state UP mode DEFAULT qlen 500
+    link/ether 44:38:39:00:03:c1 brd ff:ff:ff:ff:ff:ff
+ 
+...
+ 
+55: bond0: &lt;BROADCAST,MULTICAST,MASTER,UP,LOWER_UP&gt; mtu 1500 qdisc noqueue state UP mode DEFAULT
+    link/ether 44:38:39:00:03:c1 brd ff:ff:ff:ff:ff:ff</code></pre></div>
+<p>All slave interfaces within a bond have the same MAC address as the
+bond. Typically, the first slave added to the bond donates its MAC
+address as the bond MAC address, whereas the MAC addresses of the other
+slaves are set to the bond MAC address.</p>
+
+<p>The bond MAC address is used as the source MAC address for all traffic
+leaving the bond and provides a single destination MAC address to
+address traffic to the bond.</p>
+
+<h2 id="caveats-and-errata">Caveats and Errata</h2>
+
+<ul>
+<li>An interface cannot belong to multiple bonds.</li>
+
+<li><p>A bond can have subinterfaces, but subinterfaces cannot have a
+bond. </p></li>
+
+<li><p>A bond cannot enslave VLAN subinterfaces.</p></li>
+
+<li><p>Set all slave ports within a bond to the same speed/duplex and make
+sure they match the link partner’s slave ports.</p></li>
+
+<li><p>On a <a href="https://docs.cumulusnetworks.com/display/RMP/Cumulus+RMP">Cumulus
+RMP</a>
+switch, if you create a bond with multiple 10G member ports, traffic
+gets dropped when the bond uses members of the same <em>unit</em> listed in
+the <code>/var/lib/cumulus/porttab</code> file. For example, traffic gets
+dropped if both swp49 and swp52 are in the bond because they both
+are in the xe0 unit (or if both swp50 and swp51 are in the same bond
+because they are both in xe1):<br />
+swp49 xe0 0 0 -1 0<br />
+swp50 xe1 0 0 -1 0<br />
+swp51 xe1 1 0 -1 0<br />
+swp52 xe0 1 0 -1 0<br />
+Single port member bonds, bonds with different units (xe0 or xe1, as
+above), or layer 3 bonds do not have this issue.</p>
+
+<p>On Cumulus RMP switches, which are built with two Hurricane2 ASICs,
+you cannot form an LACP bond on links that terminate on different
+Hurricane2 ASICs.</p></li>
+</ul>
+
+<h2 id="related-information">Related Information</h2>
+
+<ul>
+<li><a href="http://www.linuxfoundation.org/collaborate/workgroups/networking/bonding">Linux Foundation -
+Bonding</a></li>
+<li><a href="http://www.ieee802.org/3/ad/">802.3ad</a> (<a href="http://cs.uccs.edu/%7Escold/doc/linkage%20aggregation.pdf">Accessible
+writeup</a>)</li>
+<li><a href="http://en.wikipedia.org/wiki/Link_aggregation">Wikipedia - Link
+aggregation</a></li>
+</ul>
+
+<h2 id="attachments">Attachments:</h2>
+
+<p><img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362653/8362652.png">example-bridge-with-bond.png</a>
+(image/png)</p>
+</article>
+
+      
+<div class="align-center book-git-footer justify-between">
+  
+  <div>
+    <a href="https://github.com/cawleyflower/testDocs/commit/0f1fa77f244c4b4642688df1f5e961e88daa6e08" title='Last modified March 4, 2019 16:11 EST by Cawleyflower' target="_blank" rel="noopener">
+      <img src="/svg/code-merge.svg" /> Last Modified Mar 4, 2019
+    </a>
+  </div>
+  
+  
+</div>
+
+
+    </div>
+
+    
+  
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#bonding-link-aggregation">Bonding - Link Aggregation</a>
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#hash-distribution">Hash Distribution</a></li>
+<li><a href="#create-a-bond">Create a Bond</a>
+<ul>
+<li><a href="#configuration-options">Configuration Options</a></li>
+<li><a href="#enable-balance-xor-mode">Enable balance-xor Mode</a></li>
+</ul></li>
+<li><a href="#example-configuration-bonding-4-slaves">Example Configuration: Bonding 4 Slaves</a></li>
+<li><a href="#caveats-and-errata">Caveats and Errata</a></li>
+<li><a href="#related-information">Related Information</a></li>
+<li><a href="#attachments">Attachments:</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+  
+</body>
+
+</html>

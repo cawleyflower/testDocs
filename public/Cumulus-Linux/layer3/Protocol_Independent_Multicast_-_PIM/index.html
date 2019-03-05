@@ -1,0 +1,1933 @@
+<!DOCTYPE html><html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Protocol Independent Multicast P I M | Cumulus Networks Documentation</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+<link rel="stylesheet" href="/book.min.50a619ce4c0e99594908d162684f42218608aa6fde2bd83cca5025d59ba535e3.css">
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+<h2 class="book-brand">
+  <a href="http://example.org/">Cumulus Networks Documentation</a>
+</h2>
+
+
+
+    
+
+
+  
+  
+    
+    
+  
+ 
+  <ul>
+    
+    <li><a href="/Cumulus-Linux/installation-management/">
+    Installation Management</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/">Adding and Updating Packages</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/">Installing a New Cumulus Linux Image</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/">Managing Cumulus Linux Disk Images</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/">Upgrading Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Using_Snapshots/">Using Snapshots</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/">Zero Touch Provisioning Z T P</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer1-switch-ports/">
+    Layer1 Switch Ports</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/802.1X_Interfaces/">802.1 X Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Buffer_and_Queue_Management/">Buffer and Queue Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Relays/">D H C P Relays</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Servers/">D H C P Servers</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Facebook_Voyager_Optical_Interfaces/">Facebook Voyager Optical Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Prescriptive_Topology_Manager_-_PTM/">Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/Interface_Configuration_and_Management/">Interface Configuration and Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/switch_port_attributes/Switch_Port_Attributes/">Switch Port Attributes</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer2/">
+    Layer2</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Prescriptive_Topology_Manager_-_PTM/">Copy of Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Spanning_Tree_and_Rapid_Spanning_Tree/">Copy of Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Ethernet_Bridging_-_VLANs/">Ethernet Bridging v L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/IGMP_and_MLD_Snooping/">I G M P and M L D Snooping</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/LACP_Bypass/">L a C P Bypass</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Link_Layer_Discovery_Protocol/">Link Layer Discovery Protocol</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Multi-Chassis_Link_Aggregation_-_MLAG/">Multi Chassis Link Aggregation M L a G</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Spanning_Tree_and_Rapid_Spanning_Tree/">Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Virtual_Router_Redundancy_-_VRR/">Virtual Router Redundancy v R R</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/bonding_link_aggregation/Bonding_-_Link_Aggregation/">Bonding Link Aggregation</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/Traditional_Bridge_Mode/">Traditional Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN-aware_Bridge_Mode/">V L a N Aware Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN_Tagging/">V L a N Tagging</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/link_layer_discovery_protocol/voice_vlan/Voice_VLAN/">Voice v L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/virtual_router_redundancy/ifplugd/ifplugd/">Ifplugd</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer3/">
+    Layer3</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Address_Resolution_Protocol_-_ARP/">Address Resolution Protocol a R P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Bidirectional_Forwarding_Detection_-_BFD/">Bidirectional Forwarding Detection B F D</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Border_Gateway_Protocol_-_BGP/">Border Gateway Protocol B G P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Configuring_FRRouting/">Configuring F R Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP/">Equal Cost Multipath Load Sharing Hardware E C M P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/FRRouting_Overview/">F R Routing Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/GRE_Tunneling/">G R E Tunneling</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Introduction_to_Routing_Protocols/">Introduction to Routing Protocols</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Management_VRF/">Management v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Network_Topology/">Network Topology</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_-_OSPF/">Open Shortest Path First O S P F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_v3_-_OSPFv3/">Open Shortest Path First V3 O S P Fv3</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Policy-based_Routing/">Policy Based Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Protocol_Independent_Multicast_-_PIM/" class="active">Protocol Independent Multicast P I M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Redistribute_Neighbor/">Redistribute Neighbor</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Routing/">Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Segment_Routing/">Segment Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Virtual_Routing_and_Forwarding_-_VRF/">Virtual Routing and Forwarding v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/configuring_frrouting/comparing_nclu_and_vtysh_commands/Comparing_NCLU_and_vtysh_Commands/">Comparing N C L U and Vtysh Commands</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/frrouting_overview/Upgrading_from_Quagga_to_FRRouting/">Upgrading From Quagga to F R Routing</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/monitoring-troubleshooting/">
+    Monitoring Troubleshooting</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/ASIC_Monitoring/">A S I C Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/FRRouting_Log_Message_Reference/">F R Routing Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Best_Practices/">Monitoring Best Practices</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_System_Hardware/">Monitoring System Hardware</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Virtual_Device_Counters/">Monitoring Virtual Device Counters</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Network_Troubleshooting/">Network Troubleshooting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Resource_Diagnostics_Using_cl-resource-query/">Resource Diagnostics Using Cl Resource Query</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Simple_Network_Management_Protocol_SNMP_Monitoring/">Simple Network Management Protocol S N M P Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Single_User_Mode_-_Boot_Recovery/">Single User Mode Boot Recovery</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Troubleshooting_Network_Interfaces/">Troubleshooting Network Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Understanding_the_cl-support_Output_File/">Understanding the Cl Support Output File</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/monitoring_system_hardware/network_switch_port_led_and_stats_led/Network_Switch_Port_LED_and_Status_LED_Guidelines/">Network Switch Port L E D and Status L E D Guidelines</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/monitoring_system_statistics/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow/">Monitoring System Statistics and Network Traffic With S Flow</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/using_nclu_to_troubleshoot/Using_NCLU_to_Troubleshoot_Your_Network_Configuration/">Using N C L U to Troubleshoot Your Network Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/simple_network_management/using_nutanix_prisim_as_monitoring_tool/Using_Nutanix_Prism_as_a_Monitoring_Tool/">Using Nutanix Prism as a Monitoring Tool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/switchd_Log_Message_Reference/">Switchd Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/troubleshooting_network_interfaces/monitoring_interfaces_and_transcievers_using_ethtool/Monitoring_Interfaces_and_Transceivers_Using_ethtool/">Monitoring Interfaces and Transceivers Using Ethtool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_log_files/Troubleshooting_Log_Files/">Troubleshooting Log Files</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_the_etc_directory/Troubleshooting_the_etc_Directory/">Troubleshooting the Etc Directory</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-solutions/">
+    Network Solutions</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Anycast_Design_Guide/">Anycast Design Guide</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Hyperconverged_Solution_with_Nutanix/">Cumulus Hyperconverged Solution With Nutanix</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Networks_Services_Demos/">Cumulus Networks Services Demos</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Data_Center_Host_to_ToR_Architecture/">Data Center Host to to R Architecture</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Docker_on_Cumulus_Linux/">Docker on Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/OpenStack_Neutron_ML2_and_Cumulus_Linux/">Open Stack Neutron M L2 and Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/RDMA_over_Converged_Ethernet_-_RoCE/">R D M a Over Converged Ethernet Ro C E</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-visualization/">
+    Network Visualization</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Eng_Update_of_VXLAN_Hyperloop/">Eng Update of v X L a N Hyperloop</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Ethernet_Virtual_Private_Network_-_EVPN/">Ethernet Virtual Private Network E v P N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs/">Hybrid Cloud Connectivity With Qin Q and v X L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/LNV_Full_Example/">L N v Full Example</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Lightweight_Network_Virtualization_Overview/">Lightweight Network Virtualization Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Static_VXLAN_Configurations/">Static v X L a N Configurations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Routing/">V X L a N Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Scale/">V X L a N Scale</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Tunnel_DSCP_Operations__DRAFT/">V X L a N Tunnel D S C P Operations — D R a F T</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Virtualization_Integrations/">Virtualization Integrations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_mac_bindings/Static_MAC_Bindings_with_VXLAN/">Static M a C Bindings With v X L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_vxlan_tunnels/Static_VXLAN_Tunnels/">Static v X L a N Tunnels</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_hardware_vteps_vmware_nsx-mh/Integrating_Hardware_VTEPs_with_VMware_NSX-MH/">Integrating Hardware v T E Ps With v Mware N S X M H</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_midonet_openstack/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack/">Integrating Hardware v T E Ps With Midokura Mido Net and Open Stack</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_vmware_nsx-v/Integrating_Hardware_VTEPs_with_VMware_NSX-V/">Integrating Hardware v T E Ps With v Mware N S X V</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/ovsdb_server_high_availability/OVSDB_Server_High_Availability/">O v S D B Server High Availability</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/system-config/">
+    System Config</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Authentication_Authorization_and_Accounting/">Authentication Authorization and Accounting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_a_Global_Proxy/">Configuring a Global Proxy</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_switchd/">Configuring Switchd</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Copy_of_Netfilter_-_ACLs/">Copy of Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/HTTP_API/">H T T P a P I</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Netfilter_-_ACLs/">Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/">Network Command Line Utility N C L U</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Power_over_Ethernet_-_PoE/">Power Over Ethernet Po E</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Services_and_Daemons_in_Cumulus_Linux/">Services and Daemons in Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Setting_Date_and_Time/">Setting Date and Time</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/LDAP_Authentication_and_Authorization/">L D a P Authentication and Authorization</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/RADIUS_AAA/">R a D I U S a a A</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/SSH_for_Remote_Access/">S S H for Remote Access</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/TACACS_Plus/">T a C a C S Plus</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/User_Accounts/">User Accounts</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/Using_sudo_to_Delegate_Privileges/">Using Sudo to Delegate Privileges</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Default_Cumulus_Linux_ACL_Configuration/">Default Cumulus Linux a C L Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Filtering_Learned_MAC_Addresses/">Filtering Learned M a C Addresses</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/whats-new/">What&#39;s New</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/cumulus-linux-index/Cumulus_Linux_Index/">Cumulus Linux Index</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/quick-start/Quick_Start_Guide/">Quick Start Guide</a>
+    </li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+</nav>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" />
+  </label>
+  <strong>Protocol Independent Multicast P I M</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="protocol-independent-multicast-pim">Protocol Independent Multicast - PIM</h1>
+
+<p>Protocol Independent Multicast (PIM) is a multicast control plane
+protocol that advertises multicast sources and receivers over a routed
+layer 3 network. Layer 3 multicast relies on PIM to advertise
+information about multicast capable routers, and the location of
+multicast senders and receivers. For this reason, multicast cannot be
+sent through a routed network without PIM.</p>
+
+<p>PIM has two modes of operation: Sparse Mode (PIM-SM) and Dense Mode
+(PIM-DM).</p>
+
+<p>Cumulus Linux supports only PIM Sparse Mode.</p>
+
+<h2 id="contents">Contents</h2>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}This topic
+describes &hellip;</p>
+
+<ul>
+<li><a href="#ProtocolIndependentMulticast-PIM-PIMOverview">PIM Overview</a>
+
+<ul>
+<li><a href="#ProtocolIndependentMulticast-PIM-PIMMessages">PIM Messages</a></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-PIMNeighbors">PIM Neighbors</a></li>
+</ul></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-PIMSparseMode(PIM-SM)">PIM Sparse Mode
+(PIM-SM)</a>
+
+<ul>
+<li><a href="#ProtocolIndependentMulticast-PIM-Any-sourceMulticastRouting">Any-source Multicast
+Routing</a></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-PIMNull-Register">PIM
+Null-Register</a></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-PIMandECMP">PIM and ECMP</a></li>
+</ul></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-ConfigurePIM">Configure PIM</a>
+
+<ul>
+<li><a href="#ProtocolIndependentMulticast-PIM-ConfigurePIMUsingFRRouting">Configure PIM Using
+FRRouting</a></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-ExampleConfigurations">Example
+Configurations</a></li>
+</ul></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-SourceSpecificMulticastMode(SSM)">Source Specific Multicast Mode
+(SSM)</a></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-IPMulticastBoundaries">IP Multicast
+Boundaries</a></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-msdpMulticastSourceDiscoveryProtocol(MSDP)">Multicast Source Discovery Protocol
+(MSDP)</a></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-VerifyPIM">Verify PIM</a>
+
+<ul>
+<li><a href="#ProtocolIndependentMulticast-PIM-SourceStartsFirst">Source Starts
+First</a></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-ReceiverJoinsFirst.1">Receiver Joins
+First</a></li>
+</ul></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-PIMinaVRF">PIM in a VRF</a></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-BFDforPIMNeighbors">BFD for PIM
+Neighbors</a></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-Troubleshooting">Troubleshooting </a>
+
+<ul>
+<li><a href="#ProtocolIndependentMulticast-PIM-FHRStuckinRegisteringProcess">FHR Stuck in Registering
+Process</a></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-No*,GIsBuiltonLHR">No *,G Is Built on
+LHR</a></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-NomrouteCreatedonFHR">No mroute Created on
+FHR</a></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-NoS,GonRPforanActiveGroup">No S,G on RP for an Active
+Group</a></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-NomrouteEntryPresentinHardware">No mroute Entry Present in
+Hardware</a></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-VerifyMSDPSessionState">Verify MSDP Session
+State</a></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-ViewtheActiveSources">View the Active
+Sources</a></li>
+</ul></li>
+<li><a href="#ProtocolIndependentMulticast-PIM-CaveatsandErrata">Caveats and
+Errata</a></li>
+</ul>
+
+<h2 id="pim-overview">PIM Overview</h2>
+
+<p><img src="attachments/8362899/8362898.png" alt="" />{height=&ldquo;250&rdquo;}</p>
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Network Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>First Hop Router (FHR)</td>
+<td>The FHR is the router attached to the source. The FHR is responsible for the PIM register process.</td>
+</tr>
+<tr class="even">
+<td>Last Hop Router (LHR)</td>
+<td>The LHR is the last router in the path, attached to an interested multicast receiver. There is a single LHR for each network subnet with an interested receiver, however multicast groups can have multiple LHRs throughout the network.</td>
+</tr>
+<tr class="odd">
+<td>Rendezvous Point (RP)</td>
+<td><p>The RP allows for the discovery of multicast sources and multicast receivers. The RP is responsible for sending PIM Register Stop messages to FHRs. The PIM RP address must be globally routable.</p>
+<div>
+<div>
+<p>Do not use a spine switch as an RP. If you are running <a href="Border_Gateway_Protocol_-_BGP">BGP</a> on a spine switch and it is configured for allow-as in origin, BGP does not accept routes learned through other spines that do not originate on the spine itself. The RP must route to a multicast source. During a single failure scenario, this is not possible if the RP is on the spine. This also applies to Multicast Source Discovery Protocol (MSDP — <a href="Protocol_Independent_Multicast_-_PIM">see below</a>).</p>
+</div>
+</div></td>
+</tr>
+<tr class="even">
+<td>PIM Shared Tree (RP Tree) or (*,G) Tree</td>
+<td>The Shared Tree is the multicast tree rooted at the RP. When receivers want to join a multicast group, join messages are sent along the shared tree towards the RP.</td>
+</tr>
+<tr class="odd">
+<td>PIM Shortest Path Tree (SPT) or (S,G) Tree</td>
+<td>The SPT is the multicast tree rooted at the multicast source for a given group. Each multicast source has a unique SPT. The SPT can match the RP Tree, but this is not a requirement. The SPT represents the most efficient way to send multicast traffic from a source to the interested receivers.</td>
+</tr>
+<tr class="even">
+<td>Outgoing Interface (OIF)</td>
+<td>The outgoing interface indicates the interface on which a PIM or multicast packet is be sent out. OIFs are the interfaces towards the multicast receivers.</td>
+</tr>
+<tr class="odd">
+<td>Incoming Interface (IIF)</td>
+<td>The incoming interface indicates the interface on which a multicast packet is received. An IIF can be the interface towards the source or towards the RP.</td>
+</tr>
+<tr class="even">
+<td>Reverse Path Forwarding Interface (RPF Interface)</td>
+<td>Reverse path forwarding interface is the path used to reach the RP or source. There must be a valid PIM neighbor to determine the RPF unless directly connected to source.</td>
+</tr>
+<tr class="odd">
+<td>Multicast Route (mroute)</td>
+<td>A multicast route indicates the multicast source and multicast group as well as associated OIFs, IIFs, and RPF information.</td>
+</tr>
+<tr class="even">
+<td>Star-G mroute (*,G)</td>
+<td>The (*,G) mroute represents the RP Tree. The * is a wildcard indicating any multicast source. The G is the multicast group. An example (*,G) is (*, 239.1.2.9).</td>
+</tr>
+<tr class="odd">
+<td>S-G mroute (S,G)</td>
+<td>This is the mroute representing the source entry. The S is the multicast source IP. The G is the multicast group. An example (S,G) is (10.1.1.1, 239.1.2.9).</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="pim-messages">PIM Messages</h3>
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>PIM Message</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PIM Hello</td>
+<td><p>PIM hellos announce the presence of a multicast router on a segment. PIM hellos are sent every 30 seconds by default.</p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>PIM Hello Example</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>22.1.2.2 &gt; 224.0.0.13: PIMv2, length 34
+ Hello, cksum 0xfdbb (correct)
+ Hold Time Option (1), length 2, Value: 1m45s
+ 0x0000: 0069
+ LAN Prune Delay Option (2), length 4, Value: 
+ T-bit=0, LAN delay 500ms, Override interval 2500ms
+ 0x0000: 01f4 09c4
+ DR Priority Option (19), length 4, Value: 1
+ 0x0000: 0000 0001
+ Generation ID Option (20), length 4, Value: 0x2459b190
+ 0x0000: 2459 b190</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="even">
+<td><p>PIM Join/Prune (J/P)</p></td>
+<td><p>PIM J/P messages indicate the groups that a multicast router would like to receive or no longer receive. Often PIM join/prune messages are described as distinct message types, but are actually a single PIM message with a list of groups to join and a second list of groups to leave. PIM J/P messages can be to join or prune from the SPT or RP trees (also called (*,G) joins or (S,G) joins).</p>
+<div>
+<div>
+<p>PIM join/prune messages are sent to PIM neighbors on individual interfaces. Join/prune messages are never unicast.</p>
+</div>
+</div>
+<p><img src="attachments/8362899/8362906.png" height="250" /></p>
+<p>This PIM join/prune is for group 239.1.1.9, with 1 join and 0 prunes for the group. Join/prunes for multiple groups can exist in a single packet.</p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>S,G Prune Example</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>21:49:59.470885 IP (tos 0x0, ttl 255, id 138, offset 0, flags [none], proto PIM (103), length 54)
+ 22.1.2.2 &gt; 224.0.0.13: PIMv2, length 34
+ Join / Prune, cksum 0xb9e5 (correct), upstream-neighbor: 22.1.2.1
+ 1 group(s), holdtime: 3m30s
+ group #1: 225.1.0.0, joined sources: 0, pruned sources: 1
+ pruned source #1: 33.1.1.1(S)</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="odd">
+<td>PIM Register</td>
+<td>PIM register messages are unicast packets sent from an FHR destined to the RP to advertise a multicast group. The FHR fully encapsulates the original multicast packet in PIM register messages. The RP is responsible for decapsulating the PIM register message and forwarding it along the (*,G) tree towards the receivers.</td>
+</tr>
+<tr class="even">
+<td>PIM Null Register</td>
+<td>PIM null register is a special type of PIM register message where the <em>Null-Register</em> flag is set within the packet. Null register messages are used for an FHR to signal to an RP that a source is still sending multicast traffic. Unlike normal PIM register messages, null register messages do not encapsulate the original data packet.</td>
+</tr>
+<tr class="odd">
+<td>PIM Register Stop</td>
+<td><p>PIM register stop messages are sent by an RP to the FHR to indicate that PIM register messages must no longer be sent.</p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;">
+<strong>Register Stop Example</strong>
+</div>
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>21:37:00.419379 IP (tos 0x0, ttl 255, id 24, offset 0, flags [none], proto PIM (103), length 38)
+ 100.1.2.1 &gt; 33.1.1.10: PIMv2, length 18
+ Register Stop, cksum 0xd8db (correct) group=225.1.0.0 source=33.1.1.1</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="even">
+<td>IGMP Membership Report (IGMP Join)</td>
+<td><p>IGMP membership reports are sent by multicast receivers to tell multicast routers of their interest in a specific multicast group. IGMP join messages trigger PIM *,G joins. IGMP version 2 queries are sent to the all hosts multicast address, 224.0.0.1. IGMP version 2 reports (joins) are sent to the group's multicast address. IGMP version 3 messages are sent to an IGMP v3 specific multicast address, 224.0.0.22.</p></td>
+</tr>
+<tr class="odd">
+<td>IGMP Leave</td>
+<td>IGMP leaves tell a multicast router that a multicast receiver no longer wants the multicast group. IGMP leave messages trigger PIM *,G prunes.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="pim-neighbors">PIM Neighbors</h3>
+
+<p>When PIM is configured on an interface, <code>PIM Hello</code> messages are sent to
+the link local multicast group 224.0.0.13. Any other router configured
+with PIM on the segment that hears the PIM Hello messages build a PIM
+neighbor with the sending device.</p>
+
+<p>PIM neighbors are stateless. No confirmation of neighbor relationship is
+exchanged between PIM endpoints.</p>
+
+<h2 id="pim-sparse-mode-pim-sm">PIM Sparse Mode (PIM-SM)</h2>
+
+<p>PIM Sparse Mode (PIM-SM) is a <em>pull</em> multicast distribution method;
+multicast traffic is only sent through the network if receivers
+explicitly ask for it. When a receiver <em>pulls</em> multicast traffic, the
+network must be periodically notified that the receiver wants to
+continue the multicast stream.</p>
+
+<p>This behavior is in contrast to PIM Dense Mode (PIM-DM), where traffic
+is flooded, and the network must be periodically notified that the
+receiver wants to stop receiving the multicast stream.</p>
+
+<p>PIM-SM has three configuration options: Any-source Multicast (ASM),
+Bi-directional Multicast (BiDir), and Source Specific Multicast (SSM):</p>
+
+<ul>
+<li><p>Any-source Mulitcast (ASM) is the traditional, and most commonly
+deployed PIM implementation. ASM relies on rendezvous points to
+connect multicast senders and receivers that then dynamically
+determine the shortest path through the network between source and
+receiver, to efficiently send multicast traffic.</p></li>
+
+<li><p>Bidirectional PIM (BiDir) forwards all traffic through the multicast
+rendezvous point (RP) instead of tracking multicast source IPs,
+allowing for greater scale while resulting in inefficient forwarding
+of network traffic.</p></li>
+
+<li><p>Source Specific Multicast (SSM) requires multicast receivers to know
+exactly from which source they want to receive multicast traffic
+instead of relying on multicast rendezvous points. SSM requires the
+use of IGMPv3 on the multicast clients.</p></li>
+</ul>
+
+<p>Cumulus Linux only supports ASM and SSM. PIM BiDir is not currently
+supported.</p>
+
+<p>For additional information, see RFC 7761 - Protocol Independent
+Multicast - Sparse Mode.</p>
+
+<h3 id="any-source-multicast-routing">Any-source Multicast Routing</h3>
+
+<p>Multicast routing behaves differently depending on whether the source is
+sending before receivers request the multicast stream, or if a receiver
+tries to join a stream before there are any sources.</p>
+
+<h4 id="receiver-joins-first">Receiver Joins First</h4>
+
+<p>When a receiver joins a group, an IGMP membership join message is sent
+to the IGMPv3 multicast group, 224.0.0.22. The PIM multicast router for
+the segment that is listening to the IGMPv3 group receives the IGMP
+membership join message and becomes an LHR for this group.</p>
+
+<p><img src="attachments/8362899/8362902.png" alt="" />{height=&ldquo;300&rdquo;}</p>
+
+<p>This creates a (*,G) mroute with an OIF of the interface on which the
+IGMP Membership Report is received and an IIF of the RPF interface for
+the RP.</p>
+
+<p>The LHR generates a PIM (*,G) join message and sends it from the
+interface towards the RP. Each multicast router between the LHR and the
+RP builds a (*,G) mroute with the OIF being the interface on which the
+PIM join message is received and an Incoming Interface of the reverse
+path forwarding interface for the RP.</p>
+
+<p><img src="attachments/8362899/8362903.png" alt="" />{height=&ldquo;300&rdquo;}</p>
+
+<p>When the RP receives the (*,G) Join message, it does not send any
+additional PIM join messages. The RP will maintain a (*,G) state as
+long as the receiver wishes to receive the multicast group. </p>
+
+<p>Unlike multicast receivers, multicast sources do not send IGMP (or PIM)
+messages to the FHR. A multicast source begins sending, and the FHR
+receives the traffic and builds both a (*,G) and an (S,G) mroute. The
+FHR then begins the PIM register process.</p>
+
+<h5 id="pim-register-process">PIM Register Process</h5>
+
+<p>When a first hop router (FHR) receives a multicast data packet from a
+source, the FHR does not know if there are any interested multicast
+receivers in the network. The FHR encapsulates the data packet in a
+unicast PIM register message. This packet is sourced from the FHR and
+destined to the RP address. The RP builds an (S,G) mroute, decapsulates
+the multicast packet, and forwards it along the (*,G) tree.</p>
+
+<p>As the unencapsulated multicast packet travels down the (*,G) tree
+towards the interested receivers, at the same time, the RP sends a PIM
+(S,G) join towards the FHR. This builds an (S,G) state on each multicast
+router between the RP and FHR. </p>
+
+<p>When the FHR receives a PIM (S,G) join, it continues encapsulating and
+sending PIM register messages, but also makes a copy of the packet and
+sends it along the (S,G) mroute. </p>
+
+<p>The RP then receives the multicast packet along the (S,G) tree and sends
+a PIM register stop to the FHR to end the register process. </p>
+
+<p><img src="attachments/8362899/8362904.png" alt="" />{height=&ldquo;300&rdquo;}
+<img src="attachments/8362899/8362905.png" alt="" />{height=&ldquo;300&rdquo;}</p>
+
+<h5 id="pim-spt-switchover">PIM SPT Switchover</h5>
+
+<p>When the LHR receives the first multicast packet, it sends a PIM (S,G)
+join towards the FHR to efficiently forward traffic through the network.
+This builds the shortest path tree (SPT), or the tree that is the
+shortest path to the source. </p>
+
+<p>When the traffic arrives over the SPT, a PIM (S,G) RPT prune is sent up
+the shared tree towards the RP. This removes multicast traffic from the
+shared tree; multicast data is only sent over the SPT. </p>
+
+<p>SPT switchover can be configured on a per-group basis, allowing for some
+groups to never switch to a shortest path tree; this is also called <em>SPT
+infinity</em>.</p>
+
+<p>The LHR now sends both (*,G) joins and (S,G) RPT prune messages towards
+the RP.</p>
+
+<p>To configure a group to never follow the SPT, complete the following
+steps:</p>
+
+<ol>
+<li><p>Create the necessary prefix-lists using the FRRouting CLI:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo vtysh
+switch# configure terminal
+switch(config)# ip prefix-list spt-range permit 235.0.0.0/8 ge 32
+switch(config)# ip prefix-list spt-range permit 238.0.0.0/8 ge 32</code></pre></div></li>
+
+<li><p>Configure SPT switchover for the <em>spt-range</em> prefix-list:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">switch(config)# ip pim spt-switchover infinity prefix-list spt-range</code></pre></div></li>
+</ol>
+
+<p>You can view the configured prefix-list with the <code>net show mroute</code>
+command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net show mroute
+Source          Group           Proto  Input      Output     TTL  Uptime
+*               235.0.0.0       IGMP   swp31s0    pimreg     1    00:03:3
+                                IGMP              br1        1    00:03:38
+*               238.0.0.0       IGMP   swp31s0    br1        1    00:02:08</code></pre></div>
+<p>In the example above, <em>235.0.0.0</em> is configured for SPT switchover,
+identified by <em>pimreg</em>.</p>
+
+<h4 id="sender-starts-before-receivers-join">Sender Starts Before Receivers Join</h4>
+
+<p>A multicast sender can send multicast data without any additional IGMP
+or PIM signaling. When the FHR receives the multicast traffic, it
+encapsulates it and sends a PIM register to the rendezvous point (RP).</p>
+
+<p>When the RP receives the PIM register, it builds an (S,G) mroute;
+however, there is no (*,G) mroute and no interested receivers. </p>
+
+<p>The RP drops the PIM register message and immediately sends a PIM
+register stop message to the FHR. </p>
+
+<p>Receiving a PIM register stop without any associated PIM joins leaves
+the FHR without any outgoing interfaces. The FHR drops this multicast
+traffic until a PIM join is received.</p>
+
+<p>PIM register messages are sourced from the interface that receives the
+multicast traffic and are destined to the RP address. The PIM register
+is not sourced from the interface towards the RP.</p>
+
+<h3 id="pim-null-register">PIM Null-Register</h3>
+
+<p>To notify the RP that multicast traffic is still flowing when the RP has
+no receiver, or if the RP is not on the SPT tree, the FHR periodically
+sends PIM null register messages. The FHR sends a PIM register with the
+Null-Register flag set, but without any data. This special PIM register
+notifies the RP that a multicast source is still sending, in case any
+new receivers come online. </p>
+
+<p>After receiving a PIM Null-Register, the RP immediately sends a PIM
+register stop to acknowledge the reception of the PIM null register
+message. </p>
+
+<h3 id="pim-and-ecmp">PIM and ECMP</h3>
+
+<p>PIM uses the RPF procedure to choose an upstream interface to build a
+forwarding state. If equal-cost multipaths (ECMP) are configured, PIM
+can use choose the RPF based on ECMP using hash algorithms.</p>
+
+<p>The FRR <code>ip pim ecmp</code> command enables PIM to use all the available
+nexthops for the installation of mroutes. For example, if you have
+four-way ECMP, PIM spreads the S,G and *,G mroutes across the four
+different paths.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo vtysh
+switch# configure terminal
+switch(config)# ip pim ecmp</code></pre></div>
+<p>The <code>ip pim ecmp rebalance</code> command recalculates all stream paths in the
+event of a loss of path over one of the ECMP paths. Without this
+command, only the streams that are using the path that is lost are moved
+to alternate ECMP paths. Rebalance does not affect existing groups.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo vtysh
+switch# configure terminal
+switch(config)# ip pim ecmp rebalance</code></pre></div>
+<p>The rebalance command can cause some packet loss.</p>
+
+<p>The <code>show ip pim nexthop</code> provides you with a way to review which
+nexthop is selected for a specific source/group:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo vtysh
+switch# show ip pim nexthop 
+Number of registered addresses: 3 
+Address         Interface      Nexthop
+-------------------------------------------
+6.0.0.9         swp31s0        169.254.0.9 
+6.0.0.9         swp31s1        169.254.0.25 
+6.0.0.11        lo             0.0.0.0 
+6.0.0.10        swp31s0        169.254.0.9 
+6.0.0.10        swp31s1        169.254.0.25 </code></pre></div>
+<h2 id="configure-pim">Configure PIM</h2>
+
+<p>To configure PIM using NCLU:</p>
+
+<ol>
+<li><p>Configure the PIM interface:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface swp1 pim sm </code></pre></div>
+<p>PIM must be enabled on all interfaces facing multicast sources or
+multicast receivers, as well as on the interface where the RP
+address is configured.</p></li>
+
+<li><p><strong>Optional:</strong> Run the following command to enable IGMP (either
+version 2 or 3) on the interfaces with hosts attached. IGMP version
+3 is the default, so you only need to specify the version if you
+want to use IGMP version 2:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface swp1 igmp version 2</code></pre></div>
+<p>You must configure IGMP on all interfaces where multicast receivers
+exist.</p></li>
+
+<li><p>Configure a group mapping for a static RP:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add pim rp 192.168.0.1</code></pre></div>
+<p>Unless you are using PIM SSM, each PIM-SM enabled device must
+configure a static RP to a group mapping, and all PIM-SM enabled
+devices must have the same RP to group mapping configuration.</p>
+
+<p>IP PIM RP group ranges can overlap. Cumulus Linux performs a longest
+prefix match (LPM) to determine the RP. For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add pim rp 192.168.0.1 224.10.0.0/16
+cumulus@switch:~$ net add pim rp 192.168.0.2 224.10.2.0/24</code></pre></div>
+<p>In this example, if the group is in 224.10.2.5, the RP that gets
+selected is 192.168.0.2. If the group is 224.10.15, the RP that gets
+selected is 192.168.0.1.</p></li>
+
+<li><p>Review and commit your changes:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div></li>
+</ol>
+
+<h3 id="configure-pim-using-frrouting">Configure PIM Using FRRouting</h3>
+
+<p>PIM is included in the FRRouting package. For proper PIM operation, PIM
+depends on Zebra. PIM relies on unicast routing to be configured and
+operational to do RPF operations. Therefore, you must configure some
+other routing protocol or static routes.</p>
+
+<p>To configure PIM on a switch using FRR:</p>
+
+<ol>
+<li>Open the <code>/etc/frr/daemons</code> file in a text editor.</li>
+
+<li><p>Add the following line to the end of the file to enable <code>pimd</code>, then
+save the file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">zebra=yes
+pimd=yes</code></pre></div></li>
+
+<li><p>Run the <code>systemctl restart</code> command to restart FRRouting:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo systemctl restart frr</code></pre></div></li>
+
+<li><p>In a terminal, run the <code>vtysh</code> command to start the FRRouting CLI on
+the switch.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo vtysh
+cumulus# </code></pre></div></li>
+
+<li><p>Run the following commands to configure the PIM interfaces:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus# configure terminal
+cumulus(config)# int swp1
+cumulus(config-if)# ip pim sm</code></pre></div>
+<p>PIM must be enabled on all interfaces facing multicast sources or
+multicast receivers, as well as on the interface where the RP
+address is configured.</p></li>
+
+<li><p><strong>Optional:</strong> Run the following commands to enable IGMP (either
+version 2 or 3) on the interfaces with hosts attached. IGMP version
+3 is the default; you only need to specify the version if you want
+to use IGMP version 2:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus# configure terminal
+cumulus(config)# int swp1 
+cumulus(config-if)# ip igmp 
+cumulus(config-if)# ip igmp version 2 #skip this step if you are using version 3</code></pre></div>
+<p>You must configure IGMP on all interfaces where multicast receivers
+exist.</p></li>
+
+<li><p>Configure a group mapping for a static RP:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus# configure terminal 
+cumulus(config)# ip pim rp 192.168.0.1</code></pre></div>
+<p>Each PIM-SM enabled device must configure a static RP to a group
+mapping, and all PIM-SM enabled devices must have the same RP to
+group mapping configuration.</p>
+
+<p>IP PIM RP group ranges can overlap. Cumulus Linux performs a longest
+prefix match (LPM) to determine the RP. For example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus(config)# ip pim rp 10.0.0.13 224.10.0.0/16</code></pre></div></li>
+</ol>
+
+<h3 id="example-configurations">Example Configurations</h3>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}Complete
+Multicast Network Configuration Example</p>
+
+<p>The following is example configuration:</p>
+
+<p><strong>RP Configuration</strong>  Expand source</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">RP# show run
+Building configuration...
+Current configuration:
+!
+log syslog
+ip multicast-routing
+ip pim rp 192.168.0.1 224.0.0.0/4
+username cumulus nopassword
+!
+!
+interface lo
+ description RP Address interface
+ ip ospf area 0.0.0.0
+ ip pim sm
+!
+interface swp1
+ description interface to FHR
+ ip ospf area 0.0.0.0
+ ip ospf network point-to-point
+ ip pim sm
+!
+interface swp2
+ description interface to LHR
+ ip ospf area 0.0.0.0
+ ip ospf network point-to-point
+ ip pim sm
+!
+router ospf
+ ospf router-id 192.168.0.1
+!
+line vty
+!
+end</code></pre></div>
+<p><strong>FHR Configuration</strong>  Expand source</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">FHR# show run
+!
+log syslog
+ip multicast-routing
+ip pim rp 192.168.0.1 224.0.0.0/4
+username cumulus nopassword
+!
+interface bridge10.1
+ description Interface to multicast source
+ ip ospf area 0.0.0.0
+ ip ospf network point-to-point
+ ip pim sm
+!
+interface lo
+ ip ospf area 0.0.0.0
+ ip pim sm
+!
+interface swp49
+ description interface to RP
+ ip ospf area 0.0.0.0
+ ip ospf network point-to-point
+ ip pim sm
+!
+interface swp50
+ description interface to LHR
+ ip ospf area 0.0.0.0
+ ip ospf network point-to-point
+ ip pim sm
+!
+router ospf
+ ospf router-id 192.168.1.1
+!
+line vty
+!
+end</code></pre></div>
+<p><strong>LHR Configuration</strong>  Expand source</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">LHR# show run
+!
+log syslog
+ip multicast-routing
+ip pim rp 192.168.0.1 224.0.0.0/4
+username cumulus nopassword
+!
+interface bridge10.1
+ description interface to multicast receivers
+ ip igmp
+ ip ospf area 0.0.0.0
+ ip ospf network point-to-point
+ ip pim sm
+!
+interface lo
+ ip ospf area 0.0.0.0
+ ip pim sm
+!
+interface swp49
+ description interface to RP
+ ip ospf area 0.0.0.0
+ ip ospf network point-to-point
+ ip pim sm
+!
+interface swp50
+ description interface to FHR
+ ip ospf area 0.0.0.0
+ ip ospf network point-to-point
+ ip pim sm
+!
+router ospf
+ ospf router-id 192.168.2.2
+!
+line vty
+!
+end</code></pre></div>
+<h2 id="source-specific-multicast-mode-ssm">Source Specific Multicast Mode (SSM)</h2>
+
+<p>The source-specific multicast method uses prefix-lists to configure a
+receiver to only allow traffic to a multicast address from a single
+source. This removes the need for an RP, as the source must be known
+before traffic can be accepted. The default range is <code>232.0.0.0/8</code>, and
+must be further configured by setting a prefix-list.</p>
+
+<p>The example process below configures a prefix-list named
+<code>ssm-range</code>, and prefix-lists permitting traffic from <code>230.0.0.0/8</code> and
+<code>238.0.0.0/8,</code> for prefixes longer than 32.</p>
+
+<p>PIM considers <code>232.0.0.0/8</code> the default range if the ssm range is not
+configured. If this default is overridden with a prefix-list, <strong>all</strong>
+ranges that should be considered must be in the prefix-list</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add pim prefix-list ipv4 ssm range permit 232.0.0.0/8 ge 32
+cumulus@switch:~$ net add pim prefix-list ipv4 ssm range permit 238.0.0.0/8 ge 32
+cumulus@switch:~$ net add pim prefix-list ipv4 ssm range permit 
+cumulus@switch:~$ net add pim ssm prefix-list ssm-range
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<p>You can also perform this configuration with the FRRouting CLI:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo vtysh
+switch# conf t
+switch(config)# ip prefix-list ssm-range seq 5 permit 232.0.0.0/8 ge 32
+switch(config)# ip prefix-list ssm-range seq 10 permit 238.0.0.0/8 ge 32
+switch(config)# ip pim ssm prefix-list ssm-range
+switch(config)# exit
+switch# write mem</code></pre></div>
+<p>To view the existing prefix-lists, run the <code>net show ip</code> command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~S net show ip prefix-list ssm-range
+ZEBRA: ip prefix-list ssm-range: 2 entries
+    seq 5 permit 232.0.0.0/8 ge 32
+    seq 10 permit 238.0.0.0/8 ge 32
+OSPF: ip prefix-list ssm-range: 2 entries
+    seq 5 permit 232.0.0.0/8 ge 32
+    seq 10 permit 238.0.0.0/8 ge 32
+PIM: ip prefix-list ssm-range: 2 entries
+    seq 5 permit 232.0.0.0/8 ge 32
+    seq 10 permit 238.0.0.0/8 ge 32</code></pre></div>
+<h2 id="ip-multicast-boundaries">IP Multicast Boundaries</h2>
+
+<p>Multicast boundaries enable you to limit the distribution of multicast
+traffic by setting boundaries with the goal of pushing multicast to a
+subset of the network.</p>
+
+<p>With such boundaries in place, any incoming IGMP or PIM joins are
+dropped or accepted based upon the prefix-list specified. The boundary
+is implemented by applying an IP multicast boundary OIL (outgoing
+interface list) on an interface. </p>
+
+<p>To configure the boundary, use NCLU:</p>
+
+<ol>
+<li><p>Create a prefix-list as above.</p></li>
+
+<li><p>Configure the IP multicast boundary:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add &lt;interface&gt; multicast boundary oil &lt;prefix-list&gt;
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div></li>
+</ol>
+
+<h2 id="multicast-source-discovery-protocol-msdp">Multicast Source Discovery Protocol (MSDP)</h2>
+
+<p>You can use the Multicast Source Discovery Protocol (MSDP) to connect
+multiple PIM-SM multicast domains together, using the PIM-SM RPs. By
+configuring any cast RPs with the same IP address on multiple multicast
+switches (primarily on the loopback interface), the PIM-SM limitation of
+only one RP per multicast group is relaxed. This allows for an increase
+in both failover and load-balancing throughout.</p>
+
+<p>When an RP discovers a new source (typically a PIM-SM register message),
+a source-active (SA) message is sent to each MSDP peer. The peer then
+determines if any receivers are interested.</p>
+
+<p>Cumulus Linux MSDP support is primarily for anycast-RP configuration,
+rather than multiple multicast domains. You must configure each MSDP
+peer in a full mesh, as SA messages are not received and re-forwarded.</p>
+
+<p>Cumulus Linux currently only supports one MSDP mesh-group.</p>
+
+<p>The following steps demonstrate how to configure a Cumulus switch to use
+the MSDP:</p>
+
+<ol>
+<li><p>Add an anycast IP address to the loopback interface for each RP in
+the domain:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@rp01:~$ net add loopback lo ip address 10.1.1.1/32
+cumulus@rp01:~$ net add loopback lo ip address 10.1.1.100/32</code></pre></div></li>
+
+<li><p>On every multicast switch, configure the group to RP mapping using
+the anycast address:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:$ net add pim rp 100.1.1.100 224.0.0.0/4
+cumulus@switch:$ net pending
+cumulus@switch:$ net commit</code></pre></div></li>
+
+<li><p>Configure the MSDP mesh group for all active RPs (the following
+example uses 3 RPs):</p>
+
+<p>The mesh group must include all RPs in the domain as members, with a
+unique address as the source. This configuration results in MSDP
+peerings between all RPs.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@rp01:$ net add msdp mesh-group cumulus member 100.1.1.2
+cumulus@rp01:$ net add msdp mesh-group cumulus member 100.1.1.3</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@rp02:$ net add msdp mesh-group cumulus member 100.1.1.1
+cumulus@rp02:$ net add msdp mesh-group cumulus member 100.1.1.3</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@rp03:$ net add msdp mesh-group cumulus member 100.1.1.1
+cumulus@rp03:$ net add msdp mesh-group cumulus member 100.1.1.2</code></pre></div></li>
+
+<li><p>Pick the local loopback address as the source of the MSDP control
+packets:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@rp01:$ net add msdp mesh-group cumulus source 100.1.1.1</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@rp02:$ net add msdp mesh-group cumulus source 100.1.1.2</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@rp03:$ net add msdp mesh-group cumulus source 100.1.1.3</code></pre></div></li>
+
+<li><p>Inject the anycast IP address into the IGP of the domain.</p></li>
+</ol>
+
+<p>If the network is unnumbered and uses unnumbered BGP as the IGP, avoid
+using the anycast IP address for establishing unicast or multicast
+peerings. For PIM-SM, ensure that the unique address is used as the PIM
+hello source by setting the source:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@rp01:$ net add interface lo pim use-source 100.1.1.1</code></pre></div>
+<h2 id="verify-pim">Verify PIM</h2>
+
+<p>The following outputs are based on the <a href="https://github.com/CumulusNetworks/cldemo-vagrant">Cumulus Reference
+Topology</a> with
+cldemo-pim.</p>
+
+<h3 id="source-starts-first">Source Starts First</h3>
+
+<p>On the FHR, an mroute is built, but the upstream state is <em>Prune</em>. The
+FHR flag is set on the interface receiving multicast.</p>
+
+<p>Use the <code>net show mroute</code> command (or <code>show ip mroute</code> in FRR) to review
+detailed output for the FHR:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@fhr:~$ net show mroute
+Source          Group           Proto  Input      Output     TTL  Uptime
+172.16.5.105    239.1.1.1       none   br0        none       0    --:--:--
+!
+cumulus@fhr:~$ net show pim upstream
+Iif Source Group State Uptime JoinTimer RSTimer KATimer RefCnt
+br0 172.16.5.105 239.1.1.1 Prune 00:07:40 --:--:-- 00:00:36 00:02:50 1
+!
+cumulus@fhr:~$ net show pim upstream-join-desired
+Interface Source          Group           LostAssert Joins PimInclude JoinDesired EvalJD
+!
+cumulus@fhr:~$ net show pim interface
+Interface  State          Address  PIM Nbrs           PIM DR  FHR
+br0           up       172.16.5.1         0            local    1
+swp51         up        10.1.0.17         1            local    0
+swp52         up        10.1.0.19         0            local    0
+!
+cumulus@fhr:~$ net show pim state
+Source           Group            IIF    OIL
+172.16.5.105     239.1.1.1        br0
+!
+cumulus@fhr:~$ net show pim interface detail
+Interface : br0
+State     : up
+Address   : 172.16.5.1
+Designated Router
+-----------------
+Address   : 172.16.5.1
+Priority  : 1
+Uptime    : --:--:--
+Elections : 2
+Changes   : 0
+
+FHR - First Hop Router
+----------------------
+239.1.1.1 : 172.16.5.105 is a source, uptime is 00:27:43</code></pre></div>
+<p>On the RP, no mroute state is created, but the <code>net show pim upstream</code>
+output includes the S,G:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@rp01:~$ net show mroute
+Source          Group           Proto  Input      Output     TTL  Uptime
+!
+cumulus@rp01:~$ net show pim upstream
+Iif       Source          Group           State       Uptime   JoinTimer RSTimer   KATimer   RefCnt
+swp30     172.16.5.105    239.1.1.1       Prune       00:00:19 --:--:--  --:--:--  00:02:46       1</code></pre></div>
+<p>As a receiver joins the group, the mroute output interface on the FHR
+transitions from <em>none</em> to the RPF interface of the RP:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@fhr:~$ net show mroute
+Source          Group           Proto  Input      Output     TTL  Uptime
+172.16.5.105    239.1.1.1       PIM    br0        swp51      1    00:05:40
+!
+cumulus@fhr:~$ net show pim upstream
+Iif       Source          Group           State       Uptime   JoinTimer RSTimer   KATimer   RefCnt
+br0       172.16.5.105    239.1.1.1       Prune       00:48:23 --:--:--  00:00:00  00:00:37       2
+!
+cumulus@fhr:~$ net show pim upstream-join-desired
+Interface Source          Group           LostAssert Joins PimInclude JoinDesired EvalJD
+swp51     172.16.5.105    239.1.1.1       no         yes   no         yes         yes
+!
+cumulus@fhr:~$ net show pim state
+Source           Group            IIF    OIL
+172.16.5.105     239.1.1.1        br0    swp51</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@rp01:~$ net show mroute
+Source          Group           Proto  Input      Output     TTL  Uptime
+*               239.1.1.1       PIM    lo         swp1       1    00:09:59
+172.16.5.105    239.1.1.1       PIM    swp30      swp1       1    00:09:59
+!
+cumulus@rp01:~$ net show pim upstream
+Iif       Source          Group           State       Uptime   JoinTimer RSTimer   KATimer   RefCnt
+lo        *               239.1.1.1       Joined      00:10:01 00:00:59  --:--:--  --:--:--       1
+swp30     172.16.5.105    239.1.1.1       Joined      00:00:01 00:00:59  --:--:--  00:02:35       1
+!
+cumulus@rp01:~$ net show pim upstream-join-desired
+Interface Source          Group           LostAssert Joins PimInclude JoinDesired EvalJD
+swp1      *               239.1.1.1       no         yes   no         yes         yes
+!
+cumulus@rp01:~$ net show pim state
+Source           Group            IIF    OIL
+*                239.1.1.1        lo     swp1
+172.16.5.105     239.1.1.1        swp30  swp1</code></pre></div>
+<h3 id="receiver-joins-first-1">Receiver Joins First</h3>
+
+<p>On the LHR attached to the receiver:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@lhr:~$ net show mroute
+Source          Group           Proto  Input      Output     TTL  Uptime
+*               239.2.2.2       IGMP   swp51      br0        1    00:01:19
+!
+cumulus@lhr:~$ net show pim local-membership
+Interface Address         Source          Group           Membership
+br0       172.16.1.1      *               239.2.2.2       INCLUDE
+!
+cumulus@lhr:~$ net show pim state
+Source           Group            IIF    OIL
+*                239.2.2.2        swp51  br0
+!
+cumulus@lhr:~$ net show pim upstream
+Iif       Source          Group           State       Uptime   JoinTimer RSTimer   KATimer   RefCnt
+swp51     *               239.2.2.2       Joined      00:02:07 00:00:53  --:--:--  --:--:--       1
+!
+cumulus@lhr:~$ net show pim upstream-join-desired
+Interface Source          Group           LostAssert Joins PimInclude JoinDesired EvalJD
+br0       *               239.2.2.2       no         no    yes        yes         yes
+!
+cumulus@lhr:~$ net show igmp groups
+Interface Address         Group           Mode Timer    Srcs V Uptime
+br0       172.16.1.1      239.2.2.2       EXCL 00:04:02    1 3 00:04:12
+!
+cumulus@lhr:~$ net show igmp sources
+Interface Address         Group           Source          Timer Fwd Uptime
+br0       172.16.1.1      239.2.2.2       *               03:54   Y 00:04:21</code></pre></div>
+<p>On the RP:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@rp01:~$ net show mroute
+Source          Group           Proto  Input      Output     TTL  Uptime
+*               239.2.2.2       PIM    lo         swp1       1    00:00:03
+!
+cumulus@rp01:~$ net show pim state
+Source           Group            IIF    OIL
+*                239.2.2.2        lo     swp1
+!
+cumulus@rp01:~$ net show pim upstream
+Iif       Source          Group           State       Uptime   JoinTimer RSTimer   KATimer   RefCnt
+lo        *               239.2.2.2       Joined      00:05:17 00:00:43  --:--:--  --:--:--       1
+!
+cumulus@rp01:~$ net show pim upstream-join-desired
+Interface Source          Group           LostAssert Joins PimInclude JoinDesired EvalJD
+swp1      *               239.2.2.2       no         yes   no         yes         yes</code></pre></div>
+<h2 id="pim-in-a-vrf">PIM in a VRF</h2>
+
+<p><a href="Virtual_Routing_and_Forwarding_-_VRF">VRFs</a> divide the routing table on
+a per-tenant basis, ultimately providing for separate layer 3 networks
+over a single layer 3 infrastructure. With a VRF, each tenant has its
+own virtualized layer 3 network, so IP addresses can overlap between
+tenants.</p>
+
+<p>PIM in a VRF enables PIM trees and multicast data traffic to run inside
+a layer 3 virtualized network, with a separate tree per domain or
+tenant. Each VRF has its own multicast tree with its own RP(s), sources,
+and so on. Therefore, you can have one tenant per corporate division,
+client, or product; for example. </p>
+
+<p>VRFs on different switches typically connect or are peered over
+subinterfaces, where each subinterface is in its own VRF, provided
+MP-BGP VPN is not enabled or supported.</p>
+
+<p>To configure PIM in a VRF, run the following commands. First, add the
+VRFs and associate them with switch ports:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@rp01:~$ net add vrf blue
+cumulus@rp01:~$ net add vrf purple
+cumulus@rp01:~$ net add interface swp1 vrf blue
+cumulus@rp01:~$ net add interface swp2 vrf purple</code></pre></div>
+<p>Then add the PIM configuration to FRR, review and commit the changes:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@fhr:~$ net add interface swp1 pim sm
+cumulus@fhr:~$ net add interface swp2 pim sm
+cumulus@fhr:~$ net add bgp vrf blue auto 65001
+cumulus@fhr:~$ net add bgp vrf purple auto 65000
+cumulus@fhr:~$ net add bgp vrf blue router-id 10.1.1.1
+cumulus@fhr:~$ net add bgp vrf purple router-id 10.1.1.2
+cumulus@fhr:~$ net add bgp vrf blue neighbor swp1 interface remote-as external
+cumulus@fhr:~$ net add bgp vrf purple neighbor swp2 interface remote-as external
+cumulus@fhr:~$ net pending
+cumulus@fhr:~$ net commit</code></pre></div>
+<p>These commands create the following configuration in the
+<code>/etc/network/interfaces</code> file and the <code>/etc/frr/frr.conf</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto purple
+iface purple
+     vrf-table auto
+
+auto blue
+iface blue
+    vrf-table auto
+
+auto swp1
+iface swp1
+      vrf purple
+
+auto swp49.1
+iface swp49.1
+     vrf purple
+
+auto swp2
+iface swp2
+      vrf blue
+
+auto swp49.2
+iface swp49.2
+     vrf blue
+ 
+...</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">ip pim rp 192.168.0.1 224.0.0.0/4
+
+vrf purple
+  ip pim rp 192.168.0.1 224.0.0.0/4
+!
+vrf blue 
+  ip pim rp 192.168.0.1 224.0.0.0/4 
+!
+
+int swp1 vrf purple
+   ip pim sm
+  ip igmp version 2
+
+int swp2 vrf blue
+   ip pim sm
+   ip igmp version 3
+
+int swp49.1 vrf purple
+    ip pim sm
+   
+int swp49.2
+   ip pim sm
+
+router bgp 65000 vrf purple
+    Bgp router-id 10.1.1.1
+    Neighbor PURPLE peer-group
+    Neighbor PURPLE remote-as external
+    neighbor swp49.1 interface peer-group PURPLE
+
+router bgp 65001 vrf blue
+    bgp router-id 10.1.1.2
+    neighbor BLUE peer-group
+    neighbor BLUE remote-as external
+    neighbor swp49.2 interface peer-group BLUE</code></pre></div>
+<p>In FRR, you can use show commands to display VRF information:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@fhr:~$ net show mroute vrf blue
+Source          Group           Proto  Input      Output     TTL  Uptime
+11.1.0.1        239.1.1.1       IGMP   swp32s0    swp32s1    1    00:01:13
+                                IGMP              br0.200    1    00:01:13
+*               239.1.1.2       IGMP   mars       pimreg1001 1    00:01:13
+                                IGMP              swp32s1    1    00:01:12
+                                IGMP              br0.200    1    00:01:13</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@fhr:~$ net show mroute
+Source          Group           Proto  Input      Output     TTL  Uptime
+11.1.0.1        239.1.1.1       IGMP   swp31s0    swp31s1    1    00:01:15
+                                IGMP              br0.100    1    00:01:15
+*               239.1.1.2       IGMP   lo         pimreg     1    00:01:15
+                                IGMP              swp31s1    1    00:01:14
+                                IGMP              br0.100    1    00:01:15</code></pre></div>
+<h2 id="bfd-for-pim-neighbors">BFD for PIM Neighbors</h2>
+
+<p>You can use <a href="Bidirectional_Forwarding_Detection_-_BFD">bidirectional forward
+detection</a> (BFD) for PIM
+neighbors to quickly detect link failures. When you configure an
+interface, include the <code>pim bfd</code> option:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface swp31s3 pim bfd
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit</code></pre></div>
+<h2 id="troubleshooting">Troubleshooting </h2>
+
+<h3 id="fhr-stuck-in-registering-process">FHR Stuck in Registering Process</h3>
+
+<p>When a multicast source starts, the FHR sends unicast PIM register
+messages from the RPF interface towards the source. After the PIM
+register is received by the RP, a <code>PIM register stop</code> message is sent
+from the RP to the FHR to end the register process. If an issue occurs
+with this communication, the FHR becomes stuck in the registering
+process, which can result in high CPU, as PIM register packets are
+generated by the FHR CPU and sent to the RP CPU.</p>
+
+<p>To assess this issue:</p>
+
+<ul>
+<li><p>Review the FHR. The output interface of <code>pimreg</code> can be seen here.
+If this does not change to an interface within a few seconds, the
+FHR is likely stuck.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@fhr:~$ net show mroute
+Source          Group           Proto  Input      Output     TTL  Uptime
+172.16.5.105    239.2.2.3       PIM    br0        pimreg     1    00:03:59</code></pre></div></li>
+</ul>
+
+<p>To troubleshoot the issue:</p>
+
+<ol>
+<li><p>Validate that the FHR can reach the RP. If the RP and FHR can not
+communicate, the registration process fails:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@fhr:~$ ping 10.0.0.21 -I br0
+PING 10.0.0.21 (10.0.0.21) from 172.16.5.1 br0: 56(84) bytes of data.
+^C
+--- 10.0.0.21 ping statistics ---
+4 packets transmitted, 0 received, 100% packet loss, time 3000ms</code></pre></div></li>
+
+<li><p>On the RP, use <code>tcpdump</code> to see if the PIM register packets are
+arriving:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@rp01:~$ sudo tcpdump -i swp30
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on swp30, link-type EN10MB (Ethernet), capture size 262144 bytes
+23:33:17.524982 IP 172.16.5.1 &gt; 10.0.0.21: PIMv2, Register, length 66</code></pre></div></li>
+
+<li><p>If PIM registration packets are being received, verify that they are
+seen by PIM by issuing <code>debug pim packets</code> from within FRRouting:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@fhr:~$ sudo vtysh -c &#34;debug pim packets&#34;
+PIM Packet debugging is on
+
+cumulus@rp01:~$ sudo tail /var/log/frr/frr.log
+2016/10/19 23:46:51 PIM: Recv PIM REGISTER packet from 172.16.5.1 to 10.0.0.21 on swp30: ttl=255 pim_version=2 pim_msg_size=64 checksum=a681</code></pre></div></li>
+
+<li><p>Repeat the process on the FHR to see if PIM register stop messages
+are being received on the FHR and passed to the PIM process:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@fhr:~$ sudo tcpdump -i swp51
+23:58:59.841625 IP 172.16.5.1 &gt; 10.0.0.21: PIMv2, Register, length 28
+23:58:59.842466 IP 10.0.0.21 &gt; 172.16.5.1: PIMv2, Register Stop, length 18
+ 
+cumulus@fhr:~$ sudo vtysh -c &#34;debug pim packets&#34;
+PIM Packet debugging is on
+
+cumulus@fhr:~$ sudo tail -f /var/log/frr/frr.log
+2016/10/19 23:59:38 PIM: Recv PIM REGSTOP packet from 10.0.0.21 to 172.16.5.1 on swp51: ttl=255 pim_version=2 pim_msg_size=18 checksum=5a39</code></pre></div></li>
+</ol>
+
+<h3 id="no-g-is-built-on-lhr">No *,G Is Built on LHR</h3>
+
+<p>The most common reason for a *,G to not be built on an LHR is for if
+both PIM <strong>and</strong> IGMP are not enabled on an interface facing a receiver.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">lhr# show run
+!
+interface br0
+ ip igmp
+ ip ospf area 0.0.0.0
+ ip pim sm</code></pre></div>
+<p>To troubleshoot this issue, if both PIM and IGMP are enabled, ensure
+that IGMPv3 joins are being sent by the receiver:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@lhr:~$ sudo tcpdump -i br0 igmp
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on br0, link-type EN10MB (Ethernet), capture size 262144 bytes
+00:03:55.789744 IP 172.16.1.101 &gt; igmp.mcast.net: igmp v3 report, 1 group record(s)</code></pre></div>
+<h3 id="no-mroute-created-on-fhr">No mroute Created on FHR</h3>
+
+<p>To troubleshoot this issue:</p>
+
+<ol>
+<li><p>Verify that multicast traffic is being received:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@fhr:~$ sudo tcpdump -i br0
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on br0, link-type EN10MB (Ethernet), capture size 262144 bytes
+00:11:52.944745 IP 172.16.5.105.51570 &gt; 239.2.2.9.1000: UDP, length 9</code></pre></div></li>
+
+<li><p>Verify that PIM is configured on the interface facing the source:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">fhr# show run
+!
+interface br0
+ ip ospf area 0.0.0.0
+ ip pim sm</code></pre></div></li>
+
+<li><p>If PIM is configured, verify that the RPF interface for the source
+matches the interface on which the multicast traffic is received:</p>
+
+<p>``` text
+fhr# show ip rpf 172.16.5.105
+Routing entry for 172.16.5.0/24 using Multicast RIB
+  Known via &ldquo;connected&rdquo;, distance 0, metric 0, best</p>
+
+<ul>
+<li>directly connected, br0
+```</li>
+</ul></li>
+
+<li><p>Verify that an RP is configured for the multicast group:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">fhr# show ip pim rp-info
+RP address       group/prefix-list   OIF         I am RP
+10.0.0.21        224.0.0.0/4         swp51       no</code></pre></div></li>
+</ol>
+
+<h3 id="no-s-g-on-rp-for-an-active-group">No S,G on RP for an Active Group</h3>
+
+<p>An RP does not build an mroute when there are no active receivers for a
+multicast group, even though the mroute was created on the FHR:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@rp01:~$ net show mroute
+Source          Group           Proto  Input      Output     TTL  Uptime
+spine01#</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@rp01:~$ net show mroute
+Source          Group           Proto  Input      Output     TTL  Uptime
+172.16.5.105    239.2.2.9       none   br0        none       0    --:--:--</code></pre></div>
+<p>This is expected behavior. You can see the active source on the RP with
+the <code>show ip pim upstream</code> command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@rp01:~$ net show pim upstream
+Iif       Source          Group           State       Uptime   JoinTimer RSTimer   KATimer   RefCnt
+swp30     172.16.5.105    239.2.2.9       Prune       00:08:03 --:--:--  --:--:--  00:02:20       1
+!
+cumulus@rp01:~$ net show mroute
+Source          Group           Proto  Input      Output     TTL  Uptime</code></pre></div>
+<h3 id="no-mroute-entry-present-in-hardware">No mroute Entry Present in Hardware</h3>
+
+<p>Use the <code>cl-resource-query</code> command to verify that the hardware IP
+multicast entry is the maximum value:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ cl-resource-query  | grep Mcast
+   Total Mcast Routes:         450,   0% of maximum value    450</code></pre></div>
+<p>For Mellanox chipsets, refer to <a href="Routing_8362912.html#Routing-tcam">TCAM Resource Profiles for Mellanox
+Switches</a>.</p>
+
+<h3 id="verify-msdp-session-state">Verify MSDP Session State</h3>
+
+<p>Run the following commands to verify the state of MSDP sessions:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net show msdp mesh-group 
+Mesh group : pod1
+  Source : 100.1.1.1
+  Member                 State
+  100.1.1.2        established
+  100.1.1.3        established
+cumulus@switch:~$ 
+cumulus@switch:~$ net show msdp peer       
+Peer                       Local        State    Uptime   SaCnt
+100.1.1.2              100.1.1.1  established  00:07:21       0
+100.1.1.3              100.1.1.1  established  00:07:21       0</code></pre></div>
+<h3 id="view-the-active-sources">View the Active Sources</h3>
+
+<p>Review the active sources learned locally (through PIM registers) and
+from MSDP peers:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net show msdp sa   
+Source                     Group               RP  Local  SPT    Uptime
+44.1.11.2              239.1.1.1        100.1.1.1      n    n  00:00:40
+44.1.11.2              239.1.1.2        100.1.1.1      n    n  00:00:25</code></pre></div>
+<h2 id="caveats-and-errata">Caveats and Errata</h2>
+
+<ul>
+<li><p>Cumulus Linux only supports <em>PIM sparse mode</em> (PIM-SM), <em>any-source
+multicast</em> (PIM-SM ASM), and <em>source-specific multicast</em> (SSM).
+<em>Dense mode</em> and <em>bidirectional multicast</em> are not supported.</p></li>
+
+<li><p>Non-native forwarding (register decapsulation) is not supported.
+Initial packet loss is expected while the PIM *,G tree is built
+from the rendezvous point to the FHR to trigger native forwarding.</p></li>
+
+<li><p>Cumulus Linux does not currently build an S,G mroute when forwarding
+over an *,G tree.</p></li>
+</ul>
+
+<h2 id="attachments">Attachments:</h2>
+
+<p><img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362899/8362907.png">04l2vl3.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362899/8362908.png">05roles.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362899/8362909.png">01reference.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362899/8362910.png">02replication.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362899/8362911.png">03mcastmac.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362899/8362902.png">06igmp.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362899/8362903.png">07pimjoin.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362899/8362904.png">08data.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362899/8362905.png">09register.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;} <a href="attachments/8362899/8362906.png">pim
+join-prune.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362899/8362900.pptx">pim-graphics.pptx</a>
+(application/vnd.openxmlformats-officedocument.presentationml.presentation)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362899/8362901.jpg">topology.jpg</a> (image/jpeg)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362899/8362898.png">PIM.png</a> (image/png)</p>
+</article>
+
+      
+<div class="align-center book-git-footer justify-between">
+  
+  <div>
+    <a href="https://github.com/cawleyflower/testDocs/commit/0f1fa77f244c4b4642688df1f5e961e88daa6e08" title='Last modified March 4, 2019 16:11 EST by Cawleyflower' target="_blank" rel="noopener">
+      <img src="/svg/code-merge.svg" /> Last Modified Mar 4, 2019
+    </a>
+  </div>
+  
+  
+</div>
+
+
+    </div>
+
+    
+  
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#protocol-independent-multicast-pim">Protocol Independent Multicast - PIM</a>
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#pim-overview">PIM Overview</a>
+<ul>
+<li><a href="#pim-messages">PIM Messages</a></li>
+<li><a href="#pim-neighbors">PIM Neighbors</a></li>
+</ul></li>
+<li><a href="#pim-sparse-mode-pim-sm">PIM Sparse Mode (PIM-SM)</a>
+<ul>
+<li><a href="#any-source-multicast-routing">Any-source Multicast Routing</a>
+<ul>
+<li><a href="#receiver-joins-first">Receiver Joins First</a>
+<ul>
+<li><a href="#pim-register-process">PIM Register Process</a></li>
+<li><a href="#pim-spt-switchover">PIM SPT Switchover</a></li>
+</ul></li>
+<li><a href="#sender-starts-before-receivers-join">Sender Starts Before Receivers Join</a></li>
+</ul></li>
+<li><a href="#pim-null-register">PIM Null-Register</a></li>
+<li><a href="#pim-and-ecmp">PIM and ECMP</a></li>
+</ul></li>
+<li><a href="#configure-pim">Configure PIM</a>
+<ul>
+<li><a href="#configure-pim-using-frrouting">Configure PIM Using FRRouting</a></li>
+<li><a href="#example-configurations">Example Configurations</a></li>
+</ul></li>
+<li><a href="#source-specific-multicast-mode-ssm">Source Specific Multicast Mode (SSM)</a></li>
+<li><a href="#ip-multicast-boundaries">IP Multicast Boundaries</a></li>
+<li><a href="#multicast-source-discovery-protocol-msdp">Multicast Source Discovery Protocol (MSDP)</a></li>
+<li><a href="#verify-pim">Verify PIM</a>
+<ul>
+<li><a href="#source-starts-first">Source Starts First</a></li>
+<li><a href="#receiver-joins-first-1">Receiver Joins First</a></li>
+</ul></li>
+<li><a href="#pim-in-a-vrf">PIM in a VRF</a></li>
+<li><a href="#bfd-for-pim-neighbors">BFD for PIM Neighbors</a></li>
+<li><a href="#troubleshooting">Troubleshooting </a>
+<ul>
+<li><a href="#fhr-stuck-in-registering-process">FHR Stuck in Registering Process</a></li>
+<li><a href="#no-g-is-built-on-lhr">No *,G Is Built on LHR</a></li>
+<li><a href="#no-mroute-created-on-fhr">No mroute Created on FHR</a></li>
+<li><a href="#no-s-g-on-rp-for-an-active-group">No S,G on RP for an Active Group</a></li>
+<li><a href="#no-mroute-entry-present-in-hardware">No mroute Entry Present in Hardware</a></li>
+<li><a href="#verify-msdp-session-state">Verify MSDP Session State</a></li>
+<li><a href="#view-the-active-sources">View the Active Sources</a></li>
+</ul></li>
+<li><a href="#caveats-and-errata">Caveats and Errata</a></li>
+<li><a href="#attachments">Attachments:</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+  
+</body>
+
+</html>

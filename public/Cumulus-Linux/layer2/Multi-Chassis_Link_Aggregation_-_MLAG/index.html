@@ -1,0 +1,2446 @@
+<!DOCTYPE html><html>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi Chassis Link Aggregation M L a G | Cumulus Networks Documentation</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="/normalize.min.css">
+
+<link rel="stylesheet" href="/book.min.50a619ce4c0e99594908d162684f42218608aa6fde2bd83cca5025d59ba535e3.css">
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav role="navigation">
+<h2 class="book-brand">
+  <a href="http://example.org/">Cumulus Networks Documentation</a>
+</h2>
+
+
+
+    
+
+
+  
+  
+    
+    
+  
+ 
+  <ul>
+    
+    <li><a href="/Cumulus-Linux/installation-management/">
+    Installation Management</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Adding_and_Updating_Packages/">Adding and Updating Packages</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Installing_a_New_Cumulus_Linux_Image/">Installing a New Cumulus Linux Image</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Managing_Cumulus_Linux_Disk_Images/">Managing Cumulus Linux Disk Images</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Upgrading_Cumulus_Linux/">Upgrading Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Using_Snapshots/">Using Snapshots</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/installation-management/Zero_Touch_Provisioning_-_ZTP/">Zero Touch Provisioning Z T P</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer1-switch-ports/">
+    Layer1 Switch Ports</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/802.1X_Interfaces/">802.1 X Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Buffer_and_Queue_Management/">Buffer and Queue Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Relays/">D H C P Relays</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/DHCP_Servers/">D H C P Servers</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Facebook_Voyager_Optical_Interfaces/">Facebook Voyager Optical Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/Prescriptive_Topology_Manager_-_PTM/">Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/Interface_Configuration_and_Management/">Interface Configuration and Management</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/switch_port_attributes/Switch_Port_Attributes/">Switch Port Attributes</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer2/">
+    Layer2</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Prescriptive_Topology_Manager_-_PTM/">Copy of Prescriptive Topology Manager P T M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Copy_of_Spanning_Tree_and_Rapid_Spanning_Tree/">Copy of Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Ethernet_Bridging_-_VLANs/">Ethernet Bridging v L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/IGMP_and_MLD_Snooping/">I G M P and M L D Snooping</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/LACP_Bypass/">L a C P Bypass</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Link_Layer_Discovery_Protocol/">Link Layer Discovery Protocol</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Multi-Chassis_Link_Aggregation_-_MLAG/" class="active">Multi Chassis Link Aggregation M L a G</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Spanning_Tree_and_Rapid_Spanning_Tree/">Spanning Tree and Rapid Spanning Tree</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/Virtual_Router_Redundancy_-_VRR/">Virtual Router Redundancy v R R</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/bonding_link_aggregation/Bonding_-_Link_Aggregation/">Bonding Link Aggregation</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/Traditional_Bridge_Mode/">Traditional Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN-aware_Bridge_Mode/">V L a N Aware Bridge Mode</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN_Tagging/">V L a N Tagging</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/link_layer_discovery_protocol/voice_vlan/Voice_VLAN/">Voice v L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer2/virtual_router_redundancy/ifplugd/ifplugd/">Ifplugd</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/layer3/">
+    Layer3</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Address_Resolution_Protocol_-_ARP/">Address Resolution Protocol a R P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Bidirectional_Forwarding_Detection_-_BFD/">Bidirectional Forwarding Detection B F D</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Border_Gateway_Protocol_-_BGP/">Border Gateway Protocol B G P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Configuring_FRRouting/">Configuring F R Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP/">Equal Cost Multipath Load Sharing Hardware E C M P</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/FRRouting_Overview/">F R Routing Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/GRE_Tunneling/">G R E Tunneling</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Introduction_to_Routing_Protocols/">Introduction to Routing Protocols</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Management_VRF/">Management v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Network_Topology/">Network Topology</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_-_OSPF/">Open Shortest Path First O S P F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Open_Shortest_Path_First_v3_-_OSPFv3/">Open Shortest Path First V3 O S P Fv3</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Policy-based_Routing/">Policy Based Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Protocol_Independent_Multicast_-_PIM/">Protocol Independent Multicast P I M</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Redistribute_Neighbor/">Redistribute Neighbor</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Routing/">Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Segment_Routing/">Segment Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/Virtual_Routing_and_Forwarding_-_VRF/">Virtual Routing and Forwarding v R F</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/configuring_frrouting/comparing_nclu_and_vtysh_commands/Comparing_NCLU_and_vtysh_Commands/">Comparing N C L U and Vtysh Commands</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/layer3/frrouting_overview/Upgrading_from_Quagga_to_FRRouting/">Upgrading From Quagga to F R Routing</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/monitoring-troubleshooting/">
+    Monitoring Troubleshooting</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/ASIC_Monitoring/">A S I C Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/FRRouting_Log_Message_Reference/">F R Routing Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Best_Practices/">Monitoring Best Practices</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_System_Hardware/">Monitoring System Hardware</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Virtual_Device_Counters/">Monitoring Virtual Device Counters</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Network_Troubleshooting/">Network Troubleshooting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Resource_Diagnostics_Using_cl-resource-query/">Resource Diagnostics Using Cl Resource Query</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Simple_Network_Management_Protocol_SNMP_Monitoring/">Simple Network Management Protocol S N M P Monitoring</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Single_User_Mode_-_Boot_Recovery/">Single User Mode Boot Recovery</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Troubleshooting_Network_Interfaces/">Troubleshooting Network Interfaces</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/Understanding_the_cl-support_Output_File/">Understanding the Cl Support Output File</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/monitoring_system_hardware/network_switch_port_led_and_stats_led/Network_Switch_Port_LED_and_Status_LED_Guidelines/">Network Switch Port L E D and Status L E D Guidelines</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/monitoring_system_statistics/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow/">Monitoring System Statistics and Network Traffic With S Flow</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/using_nclu_to_troubleshoot/Using_NCLU_to_Troubleshoot_Your_Network_Configuration/">Using N C L U to Troubleshoot Your Network Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/simple_network_management/using_nutanix_prisim_as_monitoring_tool/Using_Nutanix_Prism_as_a_Monitoring_Tool/">Using Nutanix Prism as a Monitoring Tool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/switchd_Log_Message_Reference/">Switchd Log Message Reference</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/troubleshooting_network_interfaces/monitoring_interfaces_and_transcievers_using_ethtool/Monitoring_Interfaces_and_Transceivers_Using_ethtool/">Monitoring Interfaces and Transceivers Using Ethtool</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_log_files/Troubleshooting_Log_Files/">Troubleshooting Log Files</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_the_etc_directory/Troubleshooting_the_etc_Directory/">Troubleshooting the Etc Directory</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-solutions/">
+    Network Solutions</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Anycast_Design_Guide/">Anycast Design Guide</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Hyperconverged_Solution_with_Nutanix/">Cumulus Hyperconverged Solution With Nutanix</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Cumulus_Networks_Services_Demos/">Cumulus Networks Services Demos</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Data_Center_Host_to_ToR_Architecture/">Data Center Host to to R Architecture</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/Docker_on_Cumulus_Linux/">Docker on Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/OpenStack_Neutron_ML2_and_Cumulus_Linux/">Open Stack Neutron M L2 and Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-solutions/RDMA_over_Converged_Ethernet_-_RoCE/">R D M a Over Converged Ethernet Ro C E</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/network-visualization/">
+    Network Visualization</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Eng_Update_of_VXLAN_Hyperloop/">Eng Update of v X L a N Hyperloop</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Ethernet_Virtual_Private_Network_-_EVPN/">Ethernet Virtual Private Network E v P N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs/">Hybrid Cloud Connectivity With Qin Q and v X L a Ns</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/LNV_Full_Example/">L N v Full Example</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Lightweight_Network_Virtualization_Overview/">Lightweight Network Virtualization Overview</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Static_VXLAN_Configurations/">Static v X L a N Configurations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Routing/">V X L a N Routing</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Scale/">V X L a N Scale</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/VXLAN_Tunnel_DSCP_Operations__DRAFT/">V X L a N Tunnel D S C P Operations — D R a F T</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/Virtualization_Integrations/">Virtualization Integrations</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_mac_bindings/Static_MAC_Bindings_with_VXLAN/">Static M a C Bindings With v X L a N</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_vxlan_tunnels/Static_VXLAN_Tunnels/">Static v X L a N Tunnels</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_hardware_vteps_vmware_nsx-mh/Integrating_Hardware_VTEPs_with_VMware_NSX-MH/">Integrating Hardware v T E Ps With v Mware N S X M H</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_midonet_openstack/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack/">Integrating Hardware v T E Ps With Midokura Mido Net and Open Stack</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_vmware_nsx-v/Integrating_Hardware_VTEPs_with_VMware_NSX-V/">Integrating Hardware v T E Ps With v Mware N S X V</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/network-visualization/virtualization_integrations/ovsdb_server_high_availability/OVSDB_Server_High_Availability/">O v S D B Server High Availability</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+    <li><a href="/Cumulus-Linux/system-config/">
+    System Config</a> 
+  <ul>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Authentication_Authorization_and_Accounting/">Authentication Authorization and Accounting</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_a_Global_Proxy/">Configuring a Global Proxy</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Configuring_switchd/">Configuring Switchd</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Copy_of_Netfilter_-_ACLs/">Copy of Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/HTTP_API/">H T T P a P I</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Netfilter_-_ACLs/">Netfilter a C Ls</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/">Network Command Line Utility N C L U</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Power_over_Ethernet_-_PoE/">Power Over Ethernet Po E</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Services_and_Daemons_in_Cumulus_Linux/">Services and Daemons in Cumulus Linux</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/Setting_Date_and_Time/">Setting Date and Time</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/LDAP_Authentication_and_Authorization/">L D a P Authentication and Authorization</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/RADIUS_AAA/">R a D I U S a a A</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/SSH_for_Remote_Access/">S S H for Remote Access</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/TACACS_Plus/">T a C a C S Plus</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/User_Accounts/">User Accounts</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/authentication_authorization_accounting/Using_sudo_to_Delegate_Privileges/">Using Sudo to Delegate Privileges</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Default_Cumulus_Linux_ACL_Configuration/">Default Cumulus Linux a C L Configuration</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Filtering_Learned_MAC_Addresses/">Filtering Learned M a C Addresses</a>
+    </li>
+    
+  </ul>
+
+    </li>
+    
+
+    
+    <li>
+      <a href="/Cumulus-Linux/whats-new/">What&#39;s New</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/cumulus-linux-index/Cumulus_Linux_Index/">Cumulus Linux Index</a>
+    </li>
+    
+    <li>
+      <a href="/Cumulus-Linux/quick-start/Quick_Start_Guide/">Quick Start Guide</a>
+    </li>
+    
+  </ul>
+
+
+
+
+
+
+
+
+</nav>
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" />
+  </label>
+  <strong>Multi Chassis Link Aggregation M L a G</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="multi-chassis-link-aggregation-mlag">Multi-Chassis Link Aggregation - MLAG</h1>
+
+<p>Multi-Chassis Link Aggregation (MLAG), enables a server or switch with a
+two-port bond, such as a link aggregation group/LAG, EtherChannel, port
+group or trunk, to connect those ports to different switches and operate
+as if they are connected to a single, logical switch. This provides
+greater redundancy and greater system throughput.</p>
+
+<p>MLAG or CLAG?</p>
+
+<p>The Cumulus Linux implementation of MLAG is referred to by other vendors
+as CLAG, MC-LAG or VPC. You will even see references to CLAG in Cumulus
+Linux, including the management daemon, named <code>clagd</code>, and other options
+in the code, such as <code>clag-id</code>, which exist for historical purposes. The
+Cumulus Linux implementation is truly a multi-chassis link aggregation
+protocol, so we call it MLAG.</p>
+
+<p>Dual-connected devices can create LACP bonds that contain links to each
+physical switch. Therefore, active-active links from the dual-connected
+devices are supported even though they are connected to two different
+physical switches.</p>
+
+<p>A basic setup looks like this:</p>
+
+<p><img src="attachments/8362677/8362688.png" alt="" />{width=&ldquo;300&rdquo;}</p>
+
+<p>You can see an example of how to set up this configuration by running:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net example clag basic-clag</code></pre></div>
+<p>The two switches, S1 and S2, known as <em>peer switches</em>, cooperate so that
+they appear as a single device to host H1&rsquo;s bond. H1 distributes traffic
+between the two links to S1 and S2 in any way that you configure on the
+host. Similarly, traffic inbound to H1 can traverse S1 or S2 and arrive
+at H1. </p>
+
+<h2 id="contents">Contents</h2>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}This topic
+describes &hellip;</p>
+
+<ul>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-reqsMLAGRequirements">MLAG
+Requirements</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-LACPandDual-Connectedness">LACP and
+Dual-Connectedness</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-configuringConfigureMLAG">Configure
+MLAG</a>
+
+<ul>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-ReservedMACAddressRange">Reserved MAC Address
+Range</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-ConfiguretheHostorSwitch">Configure the Host or
+Switch</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-ConfiguretheInterfaces">Configure the
+Interfaces</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-rolesSwitchRolesandPrioritySetting">Switch Roles and Priority
+Setting</a></li>
+</ul></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-exampleExampleMLAGConfiguration">Example MLAG
+Configuration</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-DisableclagdonanInterface">Disable clagd on an
+Interface</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-ChecktheMLAGConfigurationStatus">Check the MLAG Configuration
+Status</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-ConfigureMLAGwithaTraditionalModeBridge">Configure MLAG with a Traditional Mode
+Bridge</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-protodownPeerLinkInterfacesandtheprotodownState">Peer Link Interfaces and the protodown
+State</a>
+
+<ul>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-backupSpecifyaBackupLink">Specify a Backup
+Link</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-vrf_backupSpecifyaBackupLinktoaVRF">Specify a Backup Link to a
+VRF</a></li>
+</ul></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-MonitorDual-ConnectedPeers">Monitor Dual-Connected
+Peers</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-ConfigureLayer3RoutedUplinks">Configure Layer 3 Routed
+Uplinks</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-IGMPSnoopingwithMLAG">IGMP Snooping with
+MLAG</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-MonitortheStatusoftheclagdService">Monitor the Status of the clagd
+Service</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-MLAGBestPractices">MLAG Best
+Practices</a>
+
+<ul>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-mtuMTUinanMLAGConfiguration">MTU in an MLAG
+Configuration</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-PeerLinkSizing">Peer Link
+Sizing</a></li>
+</ul></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-STPInteroperabilitywithMLAG">STP Interoperability with
+MLAG</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-Troubleshooting">Troubleshooting</a>
+
+<ul>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-ViewingtheMLAGLogFile">Viewing the MLAG Log
+File</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-dropsLargePacketDropsonthePeerLinkInterface">Large Packet Drops on the Peer Link
+Interface</a></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-DuplicateLACPPartnerMACWarning">Duplicate LACP Partner MAC
+Warning</a></li>
+</ul></li>
+<li><a href="#Multi-ChassisLinkAggregation-MLAG-CaveatsandErrata">Caveats and
+Errata</a></li>
+</ul>
+
+<h2 id="mlag-requirements">MLAG Requirements</h2>
+
+<p>MLAG has these requirements:</p>
+
+<ul>
+<li>There must be a direct connection between the two peer switches
+implementing MLAG (S1 and S2). This is typically a bond for
+increased reliability and bandwidth.</li>
+<li>There must be only two peer switches in one MLAG configuration, but
+you can have multiple configurations in a network for
+<em>switch-to-switch MLAG</em> (see below).</li>
+<li>The peer switches implementing MLAG must be running Cumulus Linux
+version 2.5 or later.</li>
+<li>You must specify a unique <code>clag-id</code> for every dual-connected bond on
+each peer switch; the value must be between 1 and 65535 and must be
+the same on both peer switches in order for the bond to be
+considered <em>dual-connected</em>.</li>
+
+<li><p>The dual-connected devices (servers or switches) can use LACP (IEEE
+802.3ad/802.1ax) to form the <a href="Bonding_-_Link_Aggregation">bond</a>. In
+this case, the peer switches must also use LACP.</p>
+
+<p>If for some reason you cannot use LACP, you can also use balance-xor
+mode to dual-connect host-facing bonds in an MLAG environment. If
+you do, you must still configure the same  <code>clag_id</code>  parameter on
+the MLAG bonds, and it must be the same on both MLAG switches.
+Otherwise, the MLAG switch pair treats the bonds as if they are
+single-connected.</p></li>
+</ul>
+
+<p>More elaborate configurations are also possible. The number of links
+between the host and the switches can be greater than two, and does not
+have to be symmetrical:</p>
+
+<p><img src="attachments/8362677/8362687.png" alt="" />{width=&ldquo;300&rdquo;}</p>
+
+<p>Additionally, because S1 and S2 appear as a single switch to other
+bonding devices, you can also connect pairs of MLAG switches to each
+other in a switch-to-switch MLAG setup:</p>
+
+<p><img src="attachments/8362677/8362683.png" alt="" /></p>
+
+<p>In this case, L1 and L2 are also MLAG peer switches, and present a
+two-port bond from a single logical system to S1 and S2. S1 and S2 do
+the same as far as L1 and L2 are concerned. For a switch-to-switch MLAG
+configuration, each switch pair must have a unique system MAC address.
+In the above example, switches L1 and L2 each have the same system MAC
+address configured. Switch pair S1 and S2 each have the same system MAC
+address configured; however, it is a different system MAC address than
+the one used by the switch pair L1 and L2.</p>
+
+<h2 id="lacp-and-dual-connectedness">LACP and Dual-Connectedness</h2>
+
+<p>For MLAG to operate correctly, the peer switches must know which links
+are *dual-connected* or are connected to the same host or switch. To do
+this, specify a <code>clag-id</code> for every dual-connected bond on each peer
+switch; the <code>clag-id</code> must be the same for the corresponding bonds on
+both peer switches. Typically, <a href="http://en.wikipedia.org/wiki/Link_Aggregation_Control_Protocol#Link_Aggregation_Control_Protocol">Link Aggregation Control Protocol
+(LACP)</a>,
+the IEEE standard protocol for managing bonds, is used for verifying
+dual-connectedness. LACP runs on the dual-connected device and on each
+of the peer switches. On the dual-connected device, the only
+configuration requirement is to create a bond that is managed by LACP. </p>
+
+<p>However, if for some reason you cannot use LACP in your environment, you
+can configure the bonds in <a href="Bonding---Link-Aggregation_8362653.html#Bonding-LinkAggregation-balance_xor">balance-xor
+mode</a>. When
+using balance-xor mode to dual-connect host-facing bonds in an MLAG
+environment, you must configure the <code>clag_id</code> parameter on the MLAG
+bonds, which must be the same on both MLAG switches. Otherwise, the
+bonds are treated by the MLAG switch pair as if they are
+single-connected. In short, dual-connectedness is solely determined by
+matching <code>clag_id</code> and any misconnection will <strong>not</strong> be detected.</p>
+
+<p>On each of the peer switches, you must place the links that are
+connected to the dual-connected host or switch in the bond. This is true
+even if the links are a single port on each peer switch, where each port
+is placed into a bond, as shown below:</p>
+
+<p><img src="attachments/8362677/8362682.png" alt="" />{width=&ldquo;300&rdquo;}</p>
+
+<p>All of the dual-connected bonds on the peer switches have their system
+ID set to the MLAG system ID. Therefore, from the point of view of the
+hosts, each of the links in its bond is connected to the same system,
+and so the host uses both links.</p>
+
+<p>Each peer switch periodically makes a list of the LACP partner MAC
+addresses for all of their bonds and sends that list to its peer (using
+the <code>clagd</code> service; see below). The LACP partner MAC address is the MAC
+address of the system at the other end of a bond (hosts H1, H2, and H3
+in the figure above). When a switch receives this list from its peer, it
+compares the list to the LACP partner MAC addresses on its switch. If
+any matches are found and the <code>clag-id</code> for those bonds match, then that
+bond is a dual-connected bond. You can also find the LACP partner MAC
+address by the running <code>net show bridge macs</code> command or by examining
+the <code>/sys/class/net/&lt;bondname&gt;/bonding/ad_partner_mac sysfs</code> file for
+each bond.</p>
+
+<h2 id="configure-mlag">Configure MLAG</h2>
+
+<p>To configure MLAG, you need to:</p>
+
+<ul>
+<li>Create a bond that uses LACP, on the dual-connected devices.</li>
+<li>Configure the interfaces, including bonds, VLANs, bridges and peer
+links, on each peer switch.</li>
+</ul>
+
+<p>Keep MLAG Configurations in Sync</p>
+
+<p>MLAG synchronizes the dynamic state between the two peer switches but it
+does not synchronize the switch configurations. After modifying the
+configuration of one peer switch, you must make the same changes to the
+configuration on the other peer switch. This applies to all
+configuration changes, including:</p>
+
+<ul>
+<li>Port configuration; for example, VLAN membership,
+<a href="#Multi-ChassisLinkAggregation-MLAG-mtu">MTU</a>, and bonding
+parameters.</li>
+<li>Bridge configuration; for example, spanning tree parameters or
+bridge properties.</li>
+<li>Static address entries; for example, static FDB entries and static
+IGMP entries.</li>
+<li>QoS configuration; for example, ACL entries.</li>
+</ul>
+
+<p>You can verify the configuration of VLAN membership with the
+<code>net show clag verify-vlans</code> command.</p>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}Click to see
+the output &hellip;</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@leaf01:~$ net show clag verify-vlans
+Our Bond Interface   VlanId   Peer Bond Interface
+------------------   ------   -------------------
+server01                  1   server01           
+server01                 10   server01           
+server01                 20   server01           
+server01                 30   server01           
+server01                 40   server01           
+server01                 50   server01           
+uplink                    1   uplink             
+uplink                   10   uplink             
+uplink                   20   uplink             
+uplink                   30   uplink             
+uplink                   40   uplink             
+uplink                   50   uplink             
+uplink                  100   uplink             
+uplink                  101   uplink             
+uplink                  102   uplink             
+uplink                  103   uplink             
+uplink                  104   uplink             
+uplink                  105   uplink             
+uplink                  106   uplink             
+uplink                  107   uplink             
+uplink                  108   uplink             
+uplink                  109   uplink             
+uplink                  110   uplink             
+uplink                  111   uplink             
+uplink                  112   uplink             
+uplink                  113   uplink             
+uplink                  114   uplink             
+uplink                  115   uplink             
+uplink                  116   uplink             
+uplink                  117   uplink             
+uplink                  118   uplink             
+uplink                  119   uplink             
+uplink                  120   uplink             
+uplink                  121   uplink             
+uplink                  122   uplink             
+uplink                  123   uplink             
+uplink                  124   uplink             
+uplink                  125   uplink             
+uplink                  126   uplink             
+uplink                  127   uplink             
+uplink                  128   uplink             
+uplink                  129   uplink             
+uplink                  130   uplink             
+uplink                  131   uplink             
+uplink                  132   uplink             
+uplink                  133   uplink             
+uplink                  134   uplink             
+uplink                  135   uplink             
+uplink                  136   uplink             
+uplink                  137   uplink             
+uplink                  138   uplink             
+uplink                  139   uplink             
+uplink                  140   uplink             
+uplink                  141   uplink             
+uplink                  142   uplink             
+uplink                  143   uplink             
+uplink                  144   uplink             
+uplink                  145   uplink             
+uplink                  146   uplink             
+uplink                  147   uplink             
+uplink                  148   uplink             
+uplink                  149   uplink             
+uplink                  150   uplink             
+uplink                  151   uplink             
+uplink                  152   uplink             
+uplink                  153   uplink             
+uplink                  154   uplink             
+uplink                  155   uplink             
+uplink                  156   uplink             
+uplink                  157   uplink             
+uplink                  158   uplink             
+uplink                  159   uplink             
+uplink                  160   uplink             
+uplink                  161   uplink             
+uplink                  162   uplink             
+uplink                  163   uplink             
+uplink                  164   uplink             
+uplink                  165   uplink             
+uplink                  166   uplink             
+uplink                  167   uplink             
+uplink                  168   uplink             
+uplink                  169   uplink             
+uplink                  170   uplink             
+uplink                  171   uplink             
+uplink                  172   uplink             
+uplink                  173   uplink             
+uplink                  174   uplink             
+uplink                  175   uplink             
+uplink                  176   uplink             
+uplink                  177   uplink             
+uplink                  178   uplink             
+uplink                  179   uplink             
+uplink                  180   uplink             
+uplink                  181   uplink             
+uplink                  182   uplink             
+uplink                  183   uplink             
+uplink                  184   uplink             
+uplink                  185   uplink             
+uplink                  186   uplink             
+uplink                  187   uplink             
+uplink                  188   uplink             
+uplink                  189   uplink             
+uplink                  190   uplink             
+uplink                  191   uplink             
+uplink                  192   uplink             
+uplink                  193   uplink             
+uplink                  194   uplink             
+uplink                  195   uplink             
+uplink                  196   uplink             
+uplink                  197   uplink             
+uplink                  198   uplink             
+uplink                  199   uplink             
+uplink                  200   uplink          </code></pre></div>
+<h3 id="reserved-mac-address-range">Reserved MAC Address Range</h3>
+
+<p>To prevent MAC address conflicts with other interfaces in the same
+bridged network, Cumulus Networks has <a href="https://support.cumulusnetworks.com/hc/en-us/articles/203837076">reserved a range of MAC
+addresses</a> specifically
+to use with MLAG. This range of MAC addresses is 44:38:39:ff:00:00 to
+44:38:39:ff:ff:ff. </p>
+
+<p>Cumulus Networks recommends you use this range of MAC addresses when
+configuring MLAG. </p>
+
+<p>Important</p>
+
+<p>You cannot use the same MAC address for different MLAG pairs. Make sure
+you specify a different <code>clag sys-mac</code> setting for each MLAG pair in the
+network.</p>
+
+<h3 id="configure-the-host-or-switch">Configure the Host or Switch</h3>
+
+<p>On your dual-connected device, create a bond that uses LACP. The method
+you use varies with the type of device you are configuring. The
+following image is a basic MLAG configuration, showing all the essential
+elements; a more detailed two-leaf/two-spine configuration is
+shown <a href="#Multi-ChassisLinkAggregation-MLAG-example">below</a>. </p>
+
+<p><img src="attachments/8362677/8362680.png" alt="" />{width=&ldquo;500&rdquo;}</p>
+
+<h3 id="configure-the-interfaces">Configure the Interfaces</h3>
+
+<p>Place every interface that connects to the MLAG pair from a
+dual-connected device into a <a href="Bonding_-_Link_Aggregation">bond</a>, even if
+the bond contains only a single link on a single physical switch (even
+though the MLAG pair contains two or more links). Layer 2 data travels
+over this bond. In the examples throughout this chapter, <em>peerlink</em>
+is the name of the bond.</p>
+
+<p>Single-attached hosts, also known as <em>orphan ports</em>, can be just a
+member of the bridge.</p>
+
+<p>Additionally, configure the fast mode of LACP on the bond to allow more
+timely updates of the LACP state. These bonds are then placed in a
+bridge, which must include the peer link between the switches.</p>
+
+<p>To enable communication between the <code>clagd</code> services on the peer
+switches, do the following:</p>
+
+<ul>
+<li>Choose an unused VLAN (also known as a *switched virtual
+interface* or <em>SVI</em> here). </li>
+<li>Assign the SVI an unrouteable link-local address to give the peer
+switches layer 3 connectivity between each other. </li>
+
+<li><p>Configure the VLAN as a <a href="Interface-Configuration-and-Management_8363023.html#InterfaceConfigurationandManagement-subinterface">VLAN
+subinterface</a>
+on the peer link bond rather than the VLAN-aware bridge, called
+<em>peerlink</em>. If you&rsquo;re configuring the subinterface
+with <a href="Network_Command_Line_Utility_-_NCLU">NCLU</a>, the VLAN
+subinterface is named 4094 by default (the subinterface
+named peerlink.4094 below). If you are configuring the peer link
+without NCLU, Cumulus Networks still recommends you use 4094 for the
+peer link VLAN if possible. This ensures that the VLAN is completely
+independent of the bridge and spanning tree forwarding decisions.</p></li>
+
+<li><p>Include untagged traffic on the peer link, as this avoids issues
+with STP.</p></li>
+
+<li><p>Optionally, you can specify a backup interface, which is any layer 3
+backup interface for your peer links in case the peer link goes
+down. <a href="#Multi-ChassisLinkAggregation-MLAG-backup">See below</a> for
+more information about the backup link.</p></li>
+</ul>
+
+<p>For example, if <em>peerlink</em> is the inter-chassis bond, and VLAN 4094 is
+the peer link VLAN, configure <em>peerlink.4094</em> as follows:</p>
+
+<p>Configuring the peerlink Interface</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@leaf01:~$ net add bond peerlink bond slaves swp49-50
+cumulus@leaf01:~$ net add interface peerlink.4094 ip address 169.254.1.1/30
+cumulus@leaf01:~$ net add interface peerlink.4094 clag peer-ip 169.254.1.2
+cumulus@leaf01:~$ net add interface peerlink.4094 clag backup-ip 192.0.2.50
+cumulus@leaf01:~$ net add interface peerlink.4094 clag sys-mac 44:38:39:FF:40:94
+cumulus@leaf01:~$ net pending
+cumulus@leaf01:~$ net commit</code></pre></div>
+<p>Do <em>not</em> add VLAN 4094 to the bridge VLAN list; VLAN 4094 for the peer
+link subinterface should not also be configured as a bridged VLAN with
+bridge VIDs under the bridge.</p>
+
+<p>The above commands produce the following configuration in
+the <code>/etc/network/interfaces</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto peerlink
+iface peerlink
+  bond-slaves swp49 swp50
+
+auto peerlink.4094
+iface peerlink.4094
+  address 169.254.1.1/30
+  clagd-peer-ip 169.254.1.2
+  clagd-backup-ip 192.0.2.50
+  clagd-sys-mac 44:38:39:FF:40:94</code></pre></div>
+<p>To enable MLAG, <em>peerlink</em> must be added to a traditional or VLAN-aware
+bridge. The commands below add <em>peerlink</em> to a VLAN-aware bridge:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@leaf01:~$ net add bridge bridge ports peerlink
+cumulus@leaf01:~$ net pending
+cumulus@leaf01:~$ net commit</code></pre></div>
+<p>This creates the following configuration in the
+<code>/etc/network/interfaces</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto bridge
+iface bridge
+  bridge-ports peerlink
+  bridge-vlan-aware yes</code></pre></div>
+<p>If you change the MLAG configuration by editing the <code>interfaces</code> file,
+the changes take effect when you bring the peer link interface up with
+<code>ifup</code>. Do <strong>not</strong> use <code>systemctl restart clagd.service</code> to apply the
+new configuration.</p>
+
+<p>Don&rsquo;t Use 169.254.0.1</p>
+
+<p>Do not use 169.254.0.1 as the MLAG peer link IP address; Cumulus Linux
+uses this address exclusively for <a href="Border_Gateway_Protocol_-_BGP">BGP
+unnumbered</a> interfaces.</p>
+
+<h3 id="switch-roles-and-priority-setting">Switch Roles and Priority Setting</h3>
+
+<p>Each MLAG-enabled switch in the pair has a <em>role</em>. When the peering
+relationship is established between the two switches, one switch is put
+into the *primary* role, and the other into the *secondary* role. When
+an MLAG-enabled switch is in the secondary role, it does not send STP
+BPDUs on dual-connected links; it only sends BPDUs on single-connected
+links. The switch in the primary role sends STP BPDUs on all single- and
+dual-connected links.</p>
+
+<table>
+<thead>
+<tr>
+<th>Sends BPDUs Via</th>
+<th>Primary</th>
+<th>Secondary</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Single-connected links</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+
+<tr>
+<td>Dual-connected links</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+
+<p>By default, the role is determined by comparing the MAC addresses of the
+two sides of the peering link; the switch with the lower MAC address
+assumes the primary role. You can override this by setting
+the <code>clagd-priority</code> option for the peer link:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@leaf01:~$ net add interface peerlink.4094 clag priority 2048
+cumulus@leaf01:~$ net pending
+cumulus@leaf01:~$ net commit</code></pre></div>
+<p>The switch with the lower priority value is given the primary role; the
+default value is 32768 and the range is 0 to 65535. Read
+the <code>clagd(8)</code> and <code>clagctl(8)</code> man pages for more information.</p>
+
+<p>When the <code>clagd</code> service is exited during switch reboot or the service
+is stopped in the primary switch, the peer switch that is in the
+secondary role becomes the primary.</p>
+
+<p>However, if the primary switch goes down without stopping
+the <code>clagd</code> service for any reason, or if the peer link goes down, the
+secondary switch does <strong>not</strong> change its role. In case the peer switch
+is determined to be not alive, the switch in the secondary role rolls
+back the LACP system ID to be the bond interface MAC address instead of
+the <code>clagd-sys-mac</code> and the switch in primary role uses
+the <code>clagd-sys-mac</code> as the LACP system ID on the bonds.</p>
+
+<h2 id="example-mlag-configuration">Example MLAG Configuration</h2>
+
+<p>The example configuration below configures two bonds for MLAG, each with
+a single port, a peer link that is a bond with two member ports, and
+three VLANs on each port. </p>
+
+<p>You can see a more traditional layer 2 example configuration in NCLU;
+run <code>net example clag l2-with-server-vlan-trunks</code>. For a very basic
+configuration with just one pair of switches and a single host, run
+<code>net example clag l2-with-server-vlan-trunks</code>.</p>
+
+<p> </p>
+
+<p><img src="https://raw.githubusercontent.com/CumulusNetworks/cldemo-config-mlag/master/bgp-unnumbered.png" alt="" />{height=&ldquo;400&rdquo;}</p>
+
+<p>You configure these interfaces using
+<a href="Network_Command_Line_Utility_-_NCLU">NCLU</a>, so the bridges are
+in <a href="VLAN-aware_Bridge_Mode">VLAN-aware mode</a>. The bridges use these
+Cumulus Linux-specific keywords:</p>
+
+<ul>
+<li><code>bridge-vids</code>, which defines the allowed list of tagged 802.1q VLAN
+IDs for all bridge member interfaces. You can specify non-contiguous
+ranges with a space-separated list, like<br />
+<code>bridge-vids 100-200 300 400-500</code>.</li>
+<li><code>bridge-pvid</code>, which defines the untagged VLAN ID for each port.
+This is commonly referred to as the <em>native VLAN</em>.</li>
+</ul>
+
+<p>The bridge configurations below indicate that each bond carries tagged
+frames on VLANs 10, 20, 30, 40, 50, and 100 to 200 (as specified by
+<code>bridge-vids</code>), but untagged frames on VLAN 1 (as specified by
+<code>bridge-pvid</code>). Also, take note on how you configure the VLAN
+subinterfaces used for <code>clagd</code> communication (*peerlink.4094 *in the
+sample configuration below). Finally, the host configurations for
+server01 through server04 are not shown here. The configurations for
+each corresponding node are almost identical, except for the IP
+addresses used for managing the <code>clagd</code> service.</p>
+
+<p>VLAN Precautions</p>
+
+<p>At minimum, this VLAN subinterface should not be in your layer 2 domain,
+and you should give it a very high VLAN ID (up to 4094). Read more about
+the <a href="VLAN-aware-Bridge-Mode_8362673.html#VLAN-awareBridgeMode-vlan_range">range of VLAN IDs you can
+use</a>.</p>
+
+<p>The commands to create the configurations for both spines look like the
+following. Note that the <code>clag-id</code> and <code>clagd-sys-mac</code> must be the same
+for the corresponding bonds on spine01 and spine02:</p>
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>spine01</strong></p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>cumulus@spine01:~$ net show configuration commands 
+net add interface swp1-4 
+net add loopback lo ip address 10.0.0.21/32
+net add interface eth0 ip address dhcp</code></pre>
+</div>
+</div>
+<p>These commands create the following configuration in the <code>/etc/network/interfaces</code> file:</p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>cumulus@spine01:~$ cat /etc/network/interfaces
+auto lo
+iface lo inet loopback
+    address 10.0.0.21/32
+
+auto eth0
+iface eth0 inet dhcp
+
+# downlinks
+auto swp1
+iface swp1
+
+auto swp2
+iface swp2
+
+auto swp3
+iface swp3
+
+auto swp4
+iface swp4</code></pre>
+</div>
+</div></td>
+<td><p><strong>spine02</strong></p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="plain" data-syntaxhighlighter-params="brush: plain; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: plain; gutter: false; theme: Confluence"><code>cumulus@spine02:~$ net show configuration commands 
+net add interface swp1-4 
+net add loopback lo ip address 10.0.0.22/32
+net add interface eth0 ip address dhcp</code></pre>
+</div>
+</div>
+<p>These commands create the following configuration in the <code>/etc/network/interfaces</code> file:</p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>cumulus@spine02:~$ cat /etc/network/interfaces
+auto lo
+iface lo inet loopback
+    address 10.0.0.22/32
+
+auto eth0
+iface eth0 inet dhcp
+
+# downlinks
+auto swp1
+iface swp1
+
+auto swp2
+iface swp2
+
+auto swp3
+iface swp3
+
+auto swp4
+iface swp4</code></pre>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+
+<p>Here is an example configuration for the switches leaf01 through leaf04.
+Note that the <code>clag-id</code> and <code>clagd-sys-mac</code> must be the same for the
+corresponding bonds on leaf01 and leaf02 as well as leaf03 and leaf04: </p>
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><strong>leaf01</strong></p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>cumulus@leaf01:~$ net show configuration commands 
+net add loopback lo ip address 10.0.0.11/32
+net add bgp autonomous-system 65011
+net add bgp router-id 10.0.0.11
+net add bgp ipv4 unicast network 10.0.0.11/32
+net add routing prefix-list ipv4 dc-leaf-in seq 10 permit 0.0.0.0/0
+net add routing prefix-list ipv4 dc-leaf-in seq 20 permit 10.0.0.0/24 le 32
+net add routing prefix-list ipv4 dc-leaf-in seq 30 permit 172.16.2.0/24
+net add routing prefix-list ipv4 dc-leaf-out seq 10 permit 172.16.1.0/24
+net add bgp neighbor fabric peer-group
+net add bgp neighbor fabric remote-as external
+net add bgp ipv4 unicast neighbor fabric prefix-list dc-leaf-in in
+net add bgp ipv4 unicast neighbor fabric prefix-list dc-leaf-out out
+net add bgp neighbor swp51-52 interface peer-group fabric
+net add vlan 100 ip address 172.16.1.1/24
+net add bgp ipv4 unicast network 172.16.1.1/24
+net add clag peer sys-mac 44:38:39:FF:00:01 interface swp49-50 primary backup-ip 192.168.1.12
+net add clag port bond server1 interface swp1 clag-id 1
+net add clag port bond server2 interface swp2 clag-id 2
+net add bond server1-2 bridge access 100
+net add bond server1-2 stp portadminedge
+net add bond server1-2 stp bpduguard</code></pre>
+</div>
+</div>
+<p>These commands create the following configuration in the <code>/etc/network/interfaces</code> file:</p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>cumulus@leaf01:~$ cat /etc/network/interfaces
+auto lo
+iface lo inet loopback
+    address 10.0.0.11/32
+
+auto eth0
+iface eth0 inet dhcp
+
+auto swp1
+iface swp1
+
+auto swp2
+iface swp2
+
+# peerlink
+auto swp49
+iface swp49
+    post-up ip link set $IFACE promisc on     # Only required on VX
+
+auto swp50
+iface swp50
+    post-up ip link set $IFACE promisc on     # Only required on VX
+
+# uplinks
+auto swp51
+iface swp51
+
+auto swp52
+iface swp52
+
+# bridge to hosts
+auto bridge
+iface bridge
+    bridge-ports peerlink server1 server2
+    bridge-vids 100
+    bridge-vlan-aware yes
+
+auto peerlink
+iface peerlink
+    bond-slaves swp49 swp50
+
+auto peerlink.4094
+iface peerlink.4094
+    address 169.254.1.1/30
+    clagd-backup-ip 192.168.1.12
+    clagd-peer-ip 169.254.1.2
+    clagd-priority 1000
+    clagd-sys-mac 44:38:39:FF:00:01
+
+auto server1
+iface server1
+    bond-slaves swp1
+    bridge-access 100
+    clag-id 1
+    mstpctl-bpduguard yes
+    mstpctl-portadminedge yes
+
+auto server2
+iface server2
+    bond-slaves swp2
+    bridge-access 100
+    clag-id 2
+    mstpctl-bpduguard yes
+    mstpctl-portadminedge yes
+ 
+auto vlan100
+iface vlan100
+    address 172.16.1.1/24
+    vlan-id 100
+    vlan-raw-device bridge</code></pre>
+</div>
+</div></td>
+<td><p><strong>leaf02</strong></p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>cumulus@leaf02:~$ net show conf commands 
+net add loopback lo ip address 10.0.0.12/32
+net add bgp autonomous-system 65012
+net add bgp router-id 10.0.0.12
+net add bgp ipv4 unicast network 10.0.0.12/32
+net add routing prefix-list ipv4 dc-leaf-in seq 10 permit 0.0.0.0/0
+net add routing prefix-list ipv4 dc-leaf-in seq 20 permit 10.0.0.0/24 le 32
+net add routing prefix-list ipv4 dc-leaf-in seq 30 permit 172.16.2.0/24
+net add routing prefix-list ipv4 dc-leaf-out seq 10 permit 172.16.1.0/24
+net add bgp neighbor fabric peer-group
+net add bgp neighbor fabric remote-as external
+net add bgp ipv4 unicast neighbor fabric prefix-list dc-leaf-in in
+net add bgp ipv4 unicast neighbor fabric prefix-list dc-leaf-out out
+net add bgp neighbor swp51-52 interface peer-group fabric
+net add vlan 100 ip address 172.16.1.2/24
+net add bgp ipv4 unicast network 172.16.1.2/24
+net add clag peer sys-mac 44:38:39:FF:00:01 interface swp49-50 secondary backup-ip 192.168.1.11
+net add clag port bond server1 interface swp1 clag-id 1
+net add clag port bond server2 interface swp2 clag-id 2
+net add bond server1-2 bridge access 100
+net add bond server1-2 stp portadminedge
+net add bond server1-2 stp bpduguard
+ </code></pre>
+</div>
+</div>
+<p>These commands create the following configuration in the <code>/etc/network/interfaces</code> file:</p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>cumulus@leaf02:~$ cat /etc/network/interfaces
+auto lo
+iface lo inet loopback
+    address 10.0.0.12/32
+
+auto eth0
+iface eth0 inet dhcp
+
+auto swp1
+iface swp1
+
+auto swp2
+iface swp2
+
+# peerlink
+auto swp49
+iface swp49
+    post-up ip link set $IFACE promisc on     # Only required on VX
+
+auto swp50
+iface swp50
+    post-up ip link set $IFACE promisc on     # Only required on VX
+
+# uplinks
+auto swp51
+iface swp51
+
+auto swp52
+iface swp52
+
+# bridge to hosts
+auto bridge
+iface bridge
+    bridge-ports peerlink server1 server2
+    bridge-vids 100
+    bridge-vlan-aware yes
+
+auto peerlink
+iface peerlink
+    bond-slaves swp49 swp50
+
+auto peerlink.4094
+iface peerlink.4094
+    address 169.254.1.2/30
+    clagd-backup-ip 192.168.1.11
+    clagd-peer-ip 169.254.1.1
+    clagd-sys-mac 44:38:39:FF:00:01
+
+auto server1
+iface server1
+    bond-slaves swp1
+    bridge-access 100
+    clag-id 1
+    mstpctl-bpduguard yes
+    mstpctl-portadminedge yes
+
+auto server2
+iface server2
+    bond-slaves swp2
+    bridge-access 100
+    clag-id 2
+    mstpctl-bpduguard yes
+    mstpctl-portadminedge yes
+ 
+auto vlan100
+iface vlan100
+    address 172.16.1.2/24
+    vlan-id 100
+    vlan-raw-device bridge</code></pre>
+</div>
+</div></td>
+</tr>
+<tr class="even">
+<td><p><strong>leaf03</strong></p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>cumulus@leaf03:~$ net show conf commands 
+net add loopback lo ip address 10.0.0.13/32
+net add bgp autonomous-system 65013
+net add bgp router-id 10.0.0.13
+net add bgp ipv4 unicast network 10.0.0.13/32
+net add routing prefix-list ipv4 dc-leaf-in seq 10 permit 0.0.0.0/0
+net add routing prefix-list ipv4 dc-leaf-in seq 20 permit 10.0.0.0/24 le 32
+net add routing prefix-list ipv4 dc-leaf-in seq 30 permit 172.16.2.0/24
+net add routing prefix-list ipv4 dc-leaf-out seq 10 permit 172.16.1.0/24
+net add bgp neighbor fabric peer-group
+net add bgp neighbor fabric remote-as external
+net add bgp ipv4 unicast neighbor fabric prefix-list dc-leaf-in in
+net add bgp ipv4 unicast neighbor fabric prefix-list dc-leaf-out out
+net add bgp neighbor swp51-52 interface peer-group fabric
+net add vlan 100 ip address 172.16.1.3/24
+net add bgp ipv4 unicast network 172.16.1.3/24
+net add clag peer sys-mac 44:38:39:FF:00:02 interface swp49-50 primary backup-ip 192.168.1.14
+net add clag port bond server3 interface swp1 clag-id 3
+net add clag port bond server4 interface swp2 clag-id 4
+net add bond server3-4 bridge access 100
+net add bond server3-4 stp portadminedge
+net add bond server3-4 stp bpduguard</code></pre>
+</div>
+</div>
+<p>These commands create the following configuration in the <code>/etc/network/interfaces</code> file:</p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>cumulus@leaf03:~$ cat /etc/network/interfaces
+auto lo
+iface lo inet loopback
+    address 10.0.0.13/32
+
+
+auto eth0
+iface eth0 inet dhcp
+
+
+auto swp1
+iface swp1
+
+
+auto swp2
+iface swp2
+
+
+# peerlink
+auto swp49
+iface swp49
+    post-up ip link set $IFACE promisc on     # Only required on VX
+
+
+auto swp50
+iface swp50
+    post-up ip link set $IFACE promisc on     # Only required on VX
+
+
+# uplinks
+auto swp51
+iface swp51
+
+
+auto swp52
+iface swp52
+
+
+# bridge to hosts
+auto bridge
+iface bridge
+    bridge-ports peerlink server3 server4
+    bridge-vids 100
+    bridge-vlan-aware yes
+
+
+auto peerlink
+iface peerlink
+    bond-slaves swp49 swp50
+
+
+auto peerlink.4094
+iface peerlink.4094
+    address 169.254.1.1/30
+    clagd-backup-ip 192.168.1.14
+    clagd-peer-ip 169.254.1.2
+    clagd-priority 1000
+    clagd-sys-mac 44:38:39:FF:00:02
+
+
+auto server3
+iface server3
+    bond-slaves swp1
+    bridge-access 100
+    clag-id 3
+    mstpctl-bpduguard yes
+    mstpctl-portadminedge yes
+
+
+auto server4
+iface server4
+    bond-slaves swp2
+    bridge-access 100
+    clag-id 4
+    mstpctl-bpduguard yes
+    mstpctl-portadminedge yes
+ 
+auto vlan100
+iface vlan100
+    address 172.16.1.3/24
+    vlan-id 100
+    vlan-raw-device bridge</code></pre>
+</div>
+</div></td>
+<td><p><strong>leaf04</strong></p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>cumulus@leaf04:~$ net show configuration commands 
+net add loopback lo ip address 10.0.0.14/32
+net add bgp autonomous-system 65014
+net add bgp router-id 10.0.0.14
+net add bgp ipv4 unicast network 10.0.0.14/32
+net add routing prefix-list ipv4 dc-leaf-in seq 10 permit 0.0.0.0/0
+net add routing prefix-list ipv4 dc-leaf-in seq 20 permit 10.0.0.0/24 le 32
+net add routing prefix-list ipv4 dc-leaf-in seq 30 permit 172.16.2.0/24
+net add routing prefix-list ipv4 dc-leaf-out seq 10 permit 172.16.1.0/24
+net add bgp neighbor fabric peer-group
+net add bgp neighbor fabric remote-as external
+net add bgp ipv4 unicast neighbor fabric prefix-list dc-leaf-in in
+net add bgp ipv4 unicast neighbor fabric prefix-list dc-leaf-out out
+net add bgp neighbor swp51-52 interface peer-group fabric
+net add vlan 100 ip address 172.16.1.4/24
+net add bgp ipv4 unicast network 172.16.1.4/24
+net add clag peer sys-mac 44:38:39:FF:00:02 interface swp49-50 secondary backup-ip 192.168.1.13
+net add clag port bond server3 interface swp1 clag-id 3
+net add clag port bond server4 interface swp2 clag-id 4
+net add bond server3-4 bridge access 100
+net add bond server3-4 stp portadminedge
+net add bond server3-4 stp bpduguard</code></pre>
+</div>
+</div>
+<p>These commands create the following configuration in the <code>/etc/network/interfaces</code> file:</p>
+<div class="code panel pdl" style="border-width: 1px;">
+<div class="codeContent panelContent pdl">
+<pre class="text" data-syntaxhighlighter-params="brush: text; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: text; gutter: false; theme: Confluence"><code>cumulus@leaf04:~$ cat /etc/network/interfaces
+auto lo
+iface lo inet loopback
+    address 10.0.0.14/32
+
+
+auto eth0
+iface eth0 inet dhcp
+
+
+auto swp1
+iface swp1
+
+
+auto swp2
+iface swp2
+
+
+# peerlink
+auto swp49
+iface swp49
+    post-up ip link set $IFACE promisc on     # Only required on VX
+
+
+auto swp50
+iface swp50
+    post-up ip link set $IFACE promisc on     # Only required on VX
+
+
+# uplinks
+auto swp51
+iface swp51
+
+
+auto swp52
+iface swp52
+
+
+# bridge to hosts
+auto bridge
+iface bridge
+    bridge-ports peerlink server3 server4
+    bridge-vids 100
+    bridge-vlan-aware yes
+
+
+auto peerlink
+iface peerlink
+    bond-slaves swp49 swp50
+
+
+auto peerlink.4094
+iface peerlink.4094
+    address 169.254.1.2/30
+    clagd-backup-ip 192.168.1.13
+    clagd-peer-ip 169.254.1.1
+    clagd-sys-mac 44:38:39:FF:00:02
+
+
+auto server3
+iface server3
+    bond-slaves swp1
+    bridge-access 100
+    clag-id 3
+    mstpctl-bpduguard yes
+    mstpctl-portadminedge yes
+
+
+auto server4
+iface server4
+    bond-slaves swp2
+    bridge-access 100
+    clag-id 4
+    mstpctl-bpduguard yes
+    mstpctl-portadminedge yes
+ 
+auto vlan100
+iface vlan100
+    address 172.16.1.4/24
+    vlan-id 100
+    vlan-raw-device bridge</code></pre>
+</div>
+</div></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="disable-clagd-on-an-interface">Disable clagd on an Interface</h2>
+
+<p>In the configurations above, the <code>clagd-peer-ip</code> and <code>clagd-sys-mac</code>
+parameters are mandatory, while the rest are optional. When mandatory
+<code>clagd</code> commands are present under a peer link subinterface, by default
+<code>clagd-enable</code> is set to <em>yes</em> and does not need to be specified; to
+disable <code>clagd</code> on the subinterface, set <code>clagd-enable</code> to <em>no</em>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@spine01:~$ net add interface peerlink.4094 clag enable no 
+cumulus@spine01:~$ net pending
+cumulus@spine01:~$ net commit</code></pre></div>
+<p>Use <code>clagd-priority</code> to set the role of the MLAG peer switch to primary
+or secondary. Each peer switch in an MLAG pair must have the same
+<code>clagd-sys-mac</code> setting. Each <code>clagd-sys-mac</code> setting must be unique to
+each MLAG pair in the network. For more details, refer to <code>man clagd</code>.</p>
+
+<h2 id="check-the-mlag-configuration-status">Check the MLAG Configuration Status</h2>
+
+<p>You can check the status of your MLAG configuration using
+the <code>net show clag</code> command.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@leaf01:~$ net show clag 
+The peer is alive
+    Peer Priority, ID, and Role: 4096 44:38:39:FF:00:01 primary
+     Our Priority, ID, and Role: 8192 44:38:39:FF:00:02 secondary
+          Peer Interface and IP: peerlink.4094 169.254.1.1 
+                      Backup IP: 192.168.1.12 (inactive)
+                     System MAC: 44:38:39:FF:00:01
+
+
+CLAG Interfaces
+Our Interface      Peer Interface     CLAG Id   Conflicts              Proto-Down Reason
+----------------   ----------------   -------   --------------------   -----------------
+         server1   server1            1         -                      -              
+         server2   server2            2         -                      -      </code></pre></div>
+<p>A command line utility called  <code>clagctl</code> is available for interacting
+with a running <code>clagd</code> service to get status or alter operational
+behavior. For a detailed explanation of the utility, refer to
+the <code>clagctl(8)</code>man page. </p>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}See the
+clagctl Output &hellip;</p>
+
+<p>The following is a sample output of the MLAG operational status
+displayed by <code>clagctl</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">The peer is alive
+    Peer Priority, ID, and Role: 4096 44:38:39:FF:00:01 primary
+     Our Priority, ID, and Role: 8192 44:38:39:FF:00:02 secondary
+          Peer Interface and IP: peerlink.4094 169.254.1.1 
+                      Backup IP: 192.168.1.12 (inactive)
+                     System MAC: 44:38:39:FF:00:01
+CLAG Interfaces
+Our Interface      Peer Interface     CLAG Id   Conflicts              Proto-Down Reason
+----------------   ----------------   -------   --------------------   -----------------
+         server1   server1            1         -                      -              
+         server2   server2            2         -                      - </code></pre></div>
+<h2 id="configure-mlag-with-a-traditional-mode-bridge">Configure MLAG with a Traditional Mode Bridge</h2>
+
+<p>You can configure MLAG with a bridge in <a href="Traditional_Bridge_Mode">traditional
+mode</a> instead of <a href="VLAN-aware_Bridge_Mode">VLAN-aware
+mode</a>. </p>
+
+<p>To configure MLAG with a traditional mode bridge, the peer link and all
+dual-connected links must be configured
+as <a href="Traditional_Bridge_Mode">untagged/native</a> ports on a bridge (note
+the absence of any VLANs in the <code>bridge-ports</code> line and the lack of
+the <code>bridge-vlan-aware</code> parameter below):</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto br0
+iface br0
+  bridge-ports peerlink spine1-2 host1 host2</code></pre></div>
+<p>The following example shows you how to allow VLAN 100 across the peer
+link:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto br0.100
+iface br0.100
+  bridge-ports peerlink.100 bond1.100</code></pre></div>
+<p>For a deeper comparison of traditional versus VLAN-aware bridge modes,
+read this <a href="https://support.cumulusnetworks.com/hc/en-us/articles/204909397">knowledge base
+article</a>.</p>
+
+<h2 id="peer-link-interfaces-and-the-protodown-state">Peer Link Interfaces and the protodown State</h2>
+
+<p>In addition to the standard UP and DOWN administrative states, an
+interface that is a member of an MLAG bond can also be in a <code>protodown</code>
+state. When MLAG detects a problem that might result in connectivity
+issues such as traffic black-holing or a network meltdown if the link
+carrier was left in an UP state, it can put that interface
+into <code>protodown</code> state. Such connectivity issues include:</p>
+
+<ul>
+<li>When the peer link goes down but the peer switch is up (that is, the
+backup link is active).</li>
+<li>When the bond is configured with an MLAG ID, but the <code>clagd</code> service
+is not running (whether it was deliberately stopped or simply died).</li>
+<li>When an MLAG-enabled node is booted or rebooted, the MLAG bonds are
+placed in a <code>protodown</code> state until the node establishes a
+connection to its peer switch, or five minutes have elapsed.</li>
+</ul>
+
+<p>When an interface goes into a <code>protodown</code> state, it results in a local
+OPER DOWN (carrier down) on the interface. As of Cumulus Linux 2.5.5,
+the <code>protodown</code> state can be manipulated with the <code>ip link set</code>
+command. Given its use in preventing network meltdowns, manually
+manipulating <code>protodown</code> is not recommended outside the scope of
+interaction with the Cumulus Networks support team.</p>
+
+<p>The following <code>ip link show</code> command output shows an interface
+in <code>protodown</code> state. Notice that the link carrier is down (NO-CARRIER):</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net show bridge link swp1
+3: swp1 state DOWN: &lt;NO-CARRIER,BROADCAST,MULTICAST,MASTER,UP&gt; mtu 9216 master pfifo_fast master host-bond1 state DOWN mode DEFAULT qlen 500 protodown on
+   link/ether 44:38:39:00:69:84 brd ff:ff:ff:ff:ff:ff</code></pre></div>
+<h3 id="specify-a-backup-link">Specify a Backup Link</h3>
+
+<p>You can specify a backup link for your peer links in case the peer link
+goes down. When this happens, the <code>clagd</code> service uses the backup link
+to check the health of the peer switch. To configure a backup link, add
+<code>clagd-backup-ip &lt;ADDRESS&gt;</code>to the peer link configuration:</p>
+
+<p>Specifying a Backup Link</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@spine01:~$ net add interface peerlink.4094 clag backup-ip 192.0.2.50
+cumulus@spine01:~$ net pending
+cumulus@spine01:~$ net commit</code></pre></div>
+<p>The backup IP address must be different than the peer link IP address
+(<code>clagd-peer-ip</code>). It must be reachable by a route that does not use the
+peer link and it must be in the same network namespace as the peer link
+IP address.</p>
+
+<p>Cumulus Networks recommends you use the management IP address of the
+switch for this purpose.</p>
+
+<p>You can also specify the backup UDP port. The port defaults to 5342, but
+you can configure it as an argument
+in <code>clagd-args</code> using <code>--backupPort &lt;PORT&gt;</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@spine01:~$ net add interface peerlink.4094 clag args --backupPort 5400
+cumulus@spine01:~$ net pending
+cumulus@spine01:~$ net commit</code></pre></div>
+<p>To see the backup IP address, run the <code>net show clag</code> command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@spine01:~$ net show clag 
+The peer is alive
+     Our Priority, ID, and Role: 32768 44:38:39:00:00:41 primary
+    Peer Priority, ID, and Role: 32768 44:38:39:00:00:42 secondary
+          Peer Interface and IP: peerlink.4094 169.254.255.2
+                      Backup IP: 192.168.0.22 (active)
+                     System MAC: 44:38:39:FF:40:90
+
+CLAG Interfaces
+Our Interface      Peer Interface     CLAG Id   Conflicts              Proto-Down Reason
+----------------   ----------------   -------   --------------------   -----------------
+       leaf03-04   leaf03-04          1034      -                      -              
+       exit01-02   -                  2930      -                      -              
+       leaf01-02   leaf01-02          1012      -                      -</code></pre></div>
+<h3 id="specify-a-backup-link-to-a-vrf">Specify a Backup Link to a VRF</h3>
+
+<p>You can configure the backup link to
+a <a href="Virtual_Routing_and_Forwarding_-_VRF">VRF</a> or <a href="Management_VRF">management
+VRF</a>. Include the name of the VRF or management VRF with
+the <code>clagd-backup-ip</code>command. Here is a sample configuration:</p>
+
+<p>Specifying a Backup Link to a VRF</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@spine01:~$ net add interface peerlink.4094 clag backup-ip 192.168.0.22 vrf mgmt
+cumulus@spine01:~$ net pending
+cumulus@spine01:~$ net commit</code></pre></div>
+<p>You cannot use the VRF on a peer link subinterface.</p>
+
+<p>Verify the backup link by running the <code>net show clag backup-ip</code> command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@leaf01:~$ net show clag backup-ip 
+Backup info:
+IP: 192.168.0.12; State: active; Role: primary
+Peer priority and id: 32768 44:38:39:00:00:12; Peer role: secondary          </code></pre></div>
+<p>Comparing VRF and Management VRF Configurations</p>
+
+<p>The configuration for both a VRF and management VRF is exactly the same.
+The following example shows a configuration where the backup interface
+is in a VRF:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@leaf01:~$ net show configuration
+ 
+...
+ 
+auto swp52s0
+iface swp52s0
+    address 192.0.2.1/24
+    vrf green
+
+auto green
+iface green
+    vrf-table auto
+
+auto peer5.4000
+iface peer5.4000
+        address 192.0.2.15/24
+        clagd-peer-ip 192.0.2.16
+        clagd-backup-ip 192.0.2.2 vrf green
+        clagd-sys-mac 44:38:39:01:01:01    
+...</code></pre></div>
+<p>You can verify the configuration with the <code>net show clag status verbose</code>
+command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@leaf01:~$ net show clag status verbose
+The peer is alive
+    Peer Priority, ID, and Role: 32768 00:02:00:00:00:13 primary
+     Our Priority, ID, and Role: 32768 c4:54:44:f6:44:5a secondary
+          Peer Interface and IP: peer5.4000 192.0.2.16
+                      Backup IP: 192.0.2.2 vrf green (active)
+                     System MAC: 44:38:39:01:01:01
+
+CLAG Interfaces
+Our Interface      Peer Interface     CLAG Id   Conflicts              Proto-Down Reason
+----------------   ----------------   -------   --------------------   -----------------
+           bond4   bond4              4         -                      -              
+           bond1   bond1              1         -                      -              
+           bond2   bond2              2         -                      -              
+           bond3   bond3              3         -                      -     
+ 
+...</code></pre></div>
+<h2 id="monitor-dual-connected-peers">Monitor Dual-Connected Peers</h2>
+
+<p>Upon receipt of a valid message from its peer, the switch knows
+that <code>clagd</code> is alive and executing on that peer. This causes <code>clagd</code> to
+change the system ID of each bond that is assigned a <code>clag-id</code> from the
+default value (the MAC address of the bond) to the system ID assigned to
+both peer switches. This makes the hosts connected to each switch act as
+if they are connected to the same system so that they use all ports
+within their bond. Additionally, <code>clagd</code> determines which bonds are
+dual-connected and modifies the forwarding and learning behavior to
+accommodate these dual-connected bonds.</p>
+
+<p>If the peer does not receive any messages for three update intervals,
+then that peer switch is assumed to no longer be acting as an MLAG peer.
+In this case, the switch reverts all configuration changes so that it
+operates as a standard non-MLAG switch. This includes removing all
+statically assigned MAC addresses, clearing the egress forwarding mask,
+and allowing addresses to move from any port to the peer port. After a
+message is again received from the peer, MLAG operation starts again as
+described earlier. You can configure a custom timeout setting by
+adding <code> --peerTimeout &lt;VALUE&gt;</code> to <code>clagd-args</code>, like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@spine01:~$ net add interface peerlink.4094 clag args --peerTimeout 900
+cumulus@spine01:~$ net pending
+cumulus@spine01:~$ net commit</code></pre></div>
+<p>After bonds are identified as dual-connected, <code>clagd</code> sends more
+information to the peer switch for those bonds. The MAC addresses (and
+VLANs) that are dynamically learned on those ports are sent along with
+the LACP partner MAC address for each bond. When a switch receives MAC
+address information from its peer, it adds MAC address entries on the
+corresponding ports. As the switch learns and ages out MAC addresses, it
+informs the peer switch of these changes to its MAC address table so
+that the peer can keep its table synchronized. Periodically, at 45% of
+the bridge ageing time, a switch sends its entire MAC address table to
+the peer, so that peer switch can verify that its MAC address table is
+properly synchronized.</p>
+
+<p>The switch sends an update frequency value in the messages to its peer,
+which tells <code>clagd</code> how often the peer will send these messages. You can
+configure a different frequency by adding <code>--lacpPoll &lt;SECONDS&gt;</code> to
+<code>clagd-args</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@spine01:~$ net add interface peerlink.4094 clag args --lacpPoll 900
+cumulus@spine01:~$ net pending
+cumulus@spine01:~$ net commit</code></pre></div>
+<h2 id="configure-layer-3-routed-uplinks">Configure Layer 3 Routed Uplinks</h2>
+
+<p>In this scenario, the spine switches connect at layer 3, as shown in the
+image below. Alternatively, the spine switches can be singly connected
+to each core switch at layer 3 (not shown below).</p>
+
+<p><img src="attachments/8362677/8362679.png" alt="" />{width=&ldquo;500&rdquo;}</p>
+
+<p>In this design, the spine switches route traffic between the server
+hosts in the layer 2 domains and the core. The servers (host1 thru
+host4) each have a layer 2 connection up to the spine layer where
+the default gateway for the host subnets resides. However, since the
+spine switches as gateway devices communicate at layer 3, you need to
+configure a protocol such as <a href="Virtual_Router_Redundancy_-_VRR">VRR</a>
+(virtual router redundancy) between the spine switch pair to support
+active/active forwarding.</p>
+
+<p>Then, to connect the spine switches to the core switches, you need to
+determine whether the routing is static or dynamic. If it is dynamic,
+you must choose which protocol — <a href="Open_Shortest_Path_First_-_OSPF">OSPF</a>
+or <a href="Border_Gateway_Protocol_-_BGP">BGP</a> — to use. When enabling a
+routing protocol in an MLAG environment, it is also necessary to manage
+the uplinks, because by default MLAG is not aware of layer 3 uplink
+interfaces. In the event of a peer link failure, MLAG does not remove
+static routes or bring down a BGP or OSPF adjacency unless a
+separate link state daemon such as <code>ifplugd</code> is used. </p>
+
+<p>MLAG and Peer Link Peering</p>
+
+<p>When using MLAG with VRR, Cumulus Networks recommends you set up a
+routed adjacency across the peerlink.4094 interface. If a routed
+connection is not built across the peer link, then during uplink failure
+on one of the switches in the MLAG pair, egress traffic can be
+blackholed if it hashes to the leaf whose uplinks are down.</p>
+
+<p> To set up the adjacency, configure a
+<a href="Border-Gateway-Protocol---BGP_8362926.html#BorderGatewayProtocol-BGP-unnumbered">BGP</a>
+or
+<a href="Open-Shortest-Path-First---OSPF_8362922.html#OpenShortestPathFirst-OSPF-ospf_unnum">OSPF</a>
+unnumbered peering, as appropriate for your network.</p>
+
+<p>For example, if you are using BGP, use a configuration like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add bgp neighbor peerlink.4094 interface remote-as internal
+cumulus@switch:~$ net commit</code></pre></div>
+<p>If you are using OSPF, use a configuration like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add interface peerlink.4094 ospf area 0.0.0.1
+cumulus@switch:~$ net commit</code></pre></div>
+<p>If you are using <a href="Ethernet_Virtual_Private_Network_-_EVPN">EVPN</a> and
+MLAG, you need to enable the EVPN address family across the
+peerlink.4094 interface as well:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add bgp neighbor peerlink.4094 interface remote-as internal
+cumulus@switch:~$ net add bgp l2vpn evpn neighbor peerlink.4094 activate
+cumulus@switch:~$ net commit</code></pre></div>
+<p>Be aware of an existing issue when you use NCLU to create an iBGP
+peering, it creates an eBGP peering instead. For more information, see
+<a href="https://support.cumulusnetworks.com/hc/en-us/articles/360007793174-Cumulus-Linux-3-7-Release-Notes#RN1222">release note
+1222</a>.</p>
+
+<h2 id="igmp-snooping-with-mlag">IGMP Snooping with MLAG</h2>
+
+<p><a href="IGMP_and_MLD_Snooping">IGMP snooping</a> processes IGMP reports received
+on a bridge port in a bridge to identify hosts that are configured to
+receive multicast traffic destined to that group. An IGMP query message
+received on a port is used to identify the port that is connected to a
+router and configured to receive multicast traffic.</p>
+
+<p>IGMP snooping is enabled by default on the bridge. IGMP snooping
+multicast database entries and router port entries are synced to the
+peer MLAG switch. If there is no multicast router in the VLAN, you can
+configure the IGMP querier on the switch to generate IGMP query
+messages. For more information, read the <a href="IGMP_and_MLD_Snooping">IGMP and MLD
+Snooping</a> chapter.</p>
+
+<h2 id="monitor-the-status-of-the-clagd-service">Monitor the Status of the clagd Service</h2>
+
+<p>Due to the critical nature of the <code>clagd</code> service,
+<code>systemd</code> continuously monitors the status of
+<code>clagd</code>. <code>systemd</code> monitors the <code>clagd</code> service through the use of
+notify messages every 30 seconds. If the <code>clagd</code> service dies or becomes
+unresponsive for any reason and <code>systemd</code> receives no messages after 60
+seconds, <code>systemd</code> restarts <code>clagd</code>. <code>systemd</code> logs these failures
+in <code>/var/log/syslog</code>, and, on the first failure, generates
+a <code>cl-support</code> file as well.</p>
+
+<p>This monitoring is automatically configured and enabled as long
+as <code>clagd</code> is enabled (that is, <code>clagd-peer-ip</code> and <code>clagd-sys-mac</code> are
+configured for an interface) and the <code>clagd</code> service is running. When
+<code>clagd</code> is explicitly stopped, for example with the
+<code>systemctl stop clagd.service</code> command, monitoring of <code>clagd</code> is also
+stopped.</p>
+
+<p>Checking clagd Status</p>
+
+<p>You can check the status of <code>clagd</code> monitoring by using
+the <code>cl-service-summary</code> command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo cl-service-summary summary
+The systemctl daemon 5.4 uptime: 15m
+
+...
+
+Service clagd        enabled    active 
+
+...</code></pre></div>
+<p>Or the <code>systemctl status</code> command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo systemctl status clagd.service 
+● clagd.service - Cumulus Linux Multi-Chassis LACP Bonding Daemon
+   Loaded: loaded (/lib/systemd/system/clagd.service; enabled)
+   Active: active (running) since Mon 2016-10-03 20:31:50 UTC; 4 days ago
+     Docs: man:clagd(8)
+ Main PID: 1235 (clagd)
+   CGroup: /system.slice/clagd.service
+           ├─1235 /usr/bin/python /usr/sbin/clagd --daemon 169.254.255.2 peerlink.4094 44:38:39:FF:40:90 --prior...
+           └─1307 /sbin/bridge monitor fdb
+
+
+Feb 01 23:19:30 leaf01 clagd[1717]: Cleanup is executing.
+Feb 01 23:19:31 leaf01 clagd[1717]: Cleanup is finished
+Feb 01 23:19:31 leaf01 clagd[1717]: Beginning execution of clagd version 1.3.0
+Feb 01 23:19:31 leaf01 clagd[1717]: Invoked with: /usr/sbin/clagd --daemon 169.254.255.2 peerlink.4094 44:38:39:FF:40:94 --pri...168.0.12
+Feb 01 23:19:31 leaf01 clagd[1717]: Role is now secondary
+Feb 01 23:19:31 leaf01 clagd[1717]: Initial config loaded
+Feb 01 23:19:31 leaf01 systemd[1]: Started Cumulus Linux Multi-Chassis LACP Bonding Daemon.
+Feb 01 23:24:31 leaf01 clagd[1717]: HealthCheck: reload timeout.
+Feb 01 23:24:31 leaf01 clagd[1717]: Role is now primary; Reload timeout
+Hint: Some lines were ellipsized, use -l to show in full.</code></pre></div>
+<h2 id="mlag-best-practices">MLAG Best Practices</h2>
+
+<p>For MLAG to function properly, you must configure the dual-connected
+host interfaces identically on the pair of peering switches. See the
+note above in the <a href="#Multi-ChassisLinkAggregation-MLAG-configuring">Configuring
+MLAG</a> section.</p>
+
+<h3 id="mtu-in-an-mlag-configuration">MTU in an MLAG Configuration</h3>
+
+<p>The best way to configure <a href="Switch_Port_Attributes">MTU</a> in MLAG is to
+set the MTU at the system level, as per the documentation for <a href="Switch-Port-Attributes_8363026.html#SwitchPortAttributes-global_mtu">setting a
+policy for a global system
+MTU</a>.</p>
+
+<p>Otherwise, traffic is determined by the bridge MTU. Bridge MTU in turn
+is determined by the lowest MTU setting of an interface that is a member
+of the bridge. If you want to set an MTU other than the default of 1500
+bytes, you must configure the MTU on each physical interface and bond
+interface that are members of the MLAG bridges in the entire bridged
+domain.</p>
+
+<p><img src="images/icons/grey_arrow_down.png" alt="" />{.expand-control-image}For example
+&hellip;</p>
+
+<p>For example, if an MTU of 9216 is desired through the MLAG domain in the
+example shown above, on all four leaf switches, configure <code>mtu 9216</code> for
+each of the following bond interfaces, as they are members of the bridge
+named <em>bridge</em>: peerlink, uplink, server01.</p>
+
+<p>Configuring MTU</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@leaf01:~$ net add bond peerlink mtu 9216
+cumulus@leaf01:~$ net add bond uplink mtu 9216
+cumulus@leaf01:~$ net add bond server01 mtu 9216
+cumulus@leaf01:~$ net pending
+cumulus@leaf01:~$ net commit</code></pre></div>
+<p>The above commands produce the following configuration in
+the <code>/etc/network/interfaces</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto bridge
+iface bridge
+  bridge-ports peerlink uplink server01
+
+auto peerlink
+iface peerlink
+    mtu 9216
+
+auto server01
+iface server01
+    mtu 9216
+
+auto uplink
+iface uplink
+    mtu 9216</code></pre></div>
+<p>Likewise, to ensure the MTU 9216 path is respected through the spine
+switches above, also change the MTU setting for bridge *bridge* by
+configuring <code>mtu 9216</code> for each of the following members of
+bridge *bridge* on both spine01 and spine02: leaf01-02, leaf03-04,
+exit01-02, peerlink.</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@spine01:~$ net add bond leaf01-02 mtu 9216
+cumulus@spine01:~$ net add bond leaf03-04 mtu 9216
+cumulus@spine01:~$ net add bond exit01-02 mtu 9216
+cumulus@spine01:~$ net add bond peerlink mtu 9216
+cumulus@spine01:~$ net pending
+cumulus@spine01:~$ net commit</code></pre></div>
+<p>The above commands produce the following configuration in
+the <code>/etc/network/interfaces</code> file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">auto bridge
+iface bridge
+  bridge-ports leaf01-02 leaf03-04 exit01-02 peerlink
+
+auto exit01-02
+iface exit01-02
+    mtu 9216
+ 
+auto leaf01-02
+iface leaf01-02
+    mtu 9216
+
+auto leaf03-04
+iface leaf03-04
+    mtu 9216
+
+auto peerlink
+iface peerlink
+    mtu 9216</code></pre></div>
+<h3 id="peer-link-sizing">Peer Link Sizing</h3>
+
+<p>The peer link carries very little traffic when compared to the bandwidth
+consumed by dataplane traffic. In a typical MLAG configuration, most
+every connection between the two switches in the MLAG pair is
+dual-connected, so the only traffic going across the peer link is
+traffic from the <code>clagd</code> process and some LLDP or LACP traffic;
+the traffic received on the peer link is not forwarded out of the
+dual-connected bonds.</p>
+
+<p>However, there are some instances where a host is connected to only one
+switch in the MLAG pair; for example:</p>
+
+<ul>
+<li>You have a hardware limitation on the host where there is only one
+PCIE slot, and therefore, one NIC on the system, so the host is only
+single-connected across that interface.</li>
+<li>The host does not support 802.3ad and you cannot create a bond on
+it.</li>
+<li>You are accounting for a link failure, where the host may become
+single connected until the failure is rectified.</li>
+</ul>
+
+<p>In general, you need to determine how much bandwidth is traveling across
+the single-connected interfaces, and allocate half of that bandwidth to
+the peer link. We recommend half of the single-connected bandwidth
+because, on average, one half of the traffic destined to the
+single-connected host arrives on the switch directly connected to the
+single-connected host and the other half arrives on the switch that is
+not directly connected to the single-connected host. When this happens,
+only the traffic that arrives on the switch that is not directly
+connected to the single-connected host needs to traverse the peer link,
+which is how you calculate 50% of the traffic.</p>
+
+<p>In addition, you might want to add extra links to the peer link bond to
+handle link failures in the peer link bond itself.</p>
+
+<p>In the illustration below, each host has two 10G links, with each 10G
+link going to each switch in the MLAG pair. Each host has 20G of
+dual-connected bandwidth, so all three hosts have a total of 60G of
+dual-connected bandwidth. We recommend you allocate at least 15G of
+bandwidth to each peer link bond, which represents half of the
+single-connected bandwidth.</p>
+
+<p><img src="attachments/8362677/8362678.png" alt="" />{height=&ldquo;250&rdquo;}</p>
+
+<p>Scaling this example out to a full rack, when planning for link
+failures, you need only allocate enough bandwidth to meet your site&rsquo;s
+strategy for handling failure scenarios. Imagine a full rack with 40
+servers and two switches. You might plan for four to six servers to lose
+connectivity to a single switch and become single connected before you
+respond to the event. So expanding upon our previous example, if you
+have 40 hosts each with 20G of bandwidth dual-connected to the MLAG
+pair, you might allocate 20G to 30G of bandwidth to the peer link —
+which accounts for half of the single-connected bandwidth for four to
+six hosts.</p>
+
+<h2 id="stp-interoperability-with-mlag">STP Interoperability with MLAG</h2>
+
+<p>Cumulus Networks recommends that you always enable STP in your layer 2
+network.</p>
+
+<p>With MLAG, Cumulus Networks recommends you enable BPDU guard on the
+host-facing bond interfaces. For more information about BPDU guard, see
+<a href="Spanning-Tree-and-Rapid-Spanning-Tree_8362689.html#SpanningTreeandRapidSpanningTree-bpdu">BPDU Guard and Bridge
+Assurance</a>.</p>
+
+<p>Debugging STP with MLAG</p>
+
+<p>Running <code>net show &lt;interface&gt; spanning-tree</code> displays MLAG information
+that can be useful when debugging:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net show bridge spanning-tree
+bridge:peerlink CIST info
+  enabled            yes                     role                 Designated
+  port id            8.002                   state                forwarding
+  ..............
+  bpdufilter port    no                     
+  clag ISL           yes                     clag ISL Oper UP     yes
+  clag role          primary                 clag dual conn mac   00:00:00:00:00:00
+  clag remote portID F.FFF                   clag system mac      44:38:39:FF:40:90</code></pre></div>
+<p>Best Practices for STP with MLAG:</p>
+
+<ul>
+<li>The STP global configuration must be the same on both the switches.</li>
+<li>The STP configuration for dual-connected ports should be the same on
+both peer switches.</li>
+
+<li><p>The STP priority must be the same on both peer switches. You set the
+priority with this command:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net add bridge stp treeprio PRIORITY_VALUE
+cumulus@switch:~$ net commit</code></pre></div></li>
+
+<li><p>Use <a href="Network_Command_Line_Utility_-_NCLU">NCLU</a> (<code>net</code>) commands for
+all spanning tree configurations, including bridge priority, path
+cost and so forth. Do not use <code>brctl</code> commands for spanning tree,
+except for <code>brctl stp on/off</code>, as changes are not reflected to
+<code>mstpd</code> and can create conflicts.</p></li>
+</ul>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+<h3 id="viewing-the-mlag-log-file">Viewing the MLAG Log File</h3>
+
+<p>By default, when <code>clagd</code> is running, it logs its status to
+the <code>/var/log/clagd.log</code> file and <code>syslog</code>. Example log file output is
+below:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@spine01:~$ sudo tail /var/log/clagd.log 
+2016-10-03T20:31:50.471400+00:00 spine01 clagd[1235]: Initial config loaded
+2016-10-03T20:31:52.479769+00:00 spine01 clagd[1235]: The peer switch is active.
+2016-10-03T20:31:52.496490+00:00 spine01 clagd[1235]: Initial data sync to peer done.
+2016-10-03T20:31:52.540186+00:00 spine01 clagd[1235]: Role is now primary; elected
+2016-10-03T20:31:54.250572+00:00 spine01 clagd[1235]: HealthCheck: role via backup is primary
+2016-10-03T20:31:54.252642+00:00 spine01 clagd[1235]: HealthCheck: backup active
+2016-10-03T20:31:54.537967+00:00 spine01 clagd[1235]: Initial data sync from peer done.
+2016-10-03T20:31:54.538435+00:00 spine01 clagd[1235]: Initial handshake done.
+2016-10-03T20:31:58.527464+00:00 spine01 clagd[1235]: leaf03-04 is now dual connected.
+2016-10-03T22:47:35.255317+00:00 spine01 clagd[1235]: leaf01-02 is now dual connected.</code></pre></div>
+<h3 id="large-packet-drops-on-the-peer-link-interface">Large Packet Drops on the Peer Link Interface</h3>
+
+<p>A large volume of packet drops across one of the peer link interfaces
+can be expected. These drops serve to prevent looping of BUM (broadcast,
+unknown unicast, multicast) packets. When a packet is received across
+the peer link, if the destination lookup results in an egress interface
+that is a dual-connected bond, the switch does not forward the packet to
+prevent loops. This results in a drop being recorded on the peer link.</p>
+
+<p>You can detect this issue by running the <code>net show counters</code> or
+<code>ethtool -S &lt;interface&gt;</code> command.</p>
+
+<p>Using <a href="Network_Command_Line_Utility_-_NCLU">NCLU</a>, the number of dropped
+packets is displayed in the RX_DRP column when you run
+<code>net show counters</code>:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ net show counters 
+
+Kernel Interface table
+Iface              MTU    Met    RX_OK    RX_ERR    RX_DRP    RX_OVR    TX_OK    TX_ERR    TX_DRP    TX_OVR  Flg
+---------------  -----  -----    -------  --------  --------  --------  -------  --------  --------  ------  -----
+peerlink        1500       0      19226721     0      2952460  0       55115330     0       364      0       BMmRU
+peerlink.4094   1500       0      0            0      0        0       5379243      0       0        0       BMRU
+swp51           1500       0      6587220      0      2129676  0       38957769     0       202      0       BMsRU
+swp52           1500       0      12639501     0      822784   0       16157561     0       162      0       BMsRU</code></pre></div>
+<p>When you run <code>ethtool -S</code> on a peer link interface, the drops are
+indicated by the <code>HwIfInDiscards</code> counter:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">cumulus@switch:~$ sudo ethtool -S swp51
+NIC statistics:
+HwIfInOctets: 669507330
+HwIfInUcastPkts: 658871
+HwIfInBcastPkts: 2231559
+HwIfInMcastPkts: 3696790
+HwIfOutOctets: 2752224343
+HwIfOutUcastPkts: 1001632
+HwIfOutMcastPkts: 3743199
+HwIfOutBcastPkts: 34212938
+HwIfInDiscards: 2129675</code></pre></div>
+<h3 id="duplicate-lacp-partner-mac-warning">Duplicate LACP Partner MAC Warning</h3>
+
+<p>When you run <code>clagctl</code>, you may see output like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">bond01 bond01 52 duplicate lacp - partner mac</code></pre></div>
+<p>This occurs when you have multiple LACP bonds between the same two LACP
+endpoints — for example, an MLAG switch pair is one endpoint and an ESXi
+host is another. These bonds have duplicate LACP identifiers, which are
+MAC addresses. This same warning could be triggered when you have a
+cabling or configuration error.</p>
+
+<h2 id="caveats-and-errata">Caveats and Errata</h2>
+
+<ul>
+<li>If both the backup and peer connectivity are lost within a 30-second
+window, the switch in the secondary role misinterprets the event
+sequence, believing the peer switch is down, so it takes over as the
+primary.</li>
+<li>MLAG is disabled on the chassis, including the <a href="https://cumulusnetworks.com/products/cumulus-express/getting-started/backpack/">Facebook
+Backpack</a>
+and EdgeCore OMP-800.</li>
+</ul>
+
+<h2 id="attachments">Attachments:</h2>
+
+<p><img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362677/8362684.png">host_ha5.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362677/8362685.png">host_ha4.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362677/8362686.png">host_ha3.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362677/8362687.png">host_ha2.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362677/8362688.png">host_ha1.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362677/8362681.png">mlag_cfg.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362677/8362682.png">2l_3h.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362677/8362683.png">2pair_mlag.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362677/8362680.png">mlag_basic.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362677/8362679.png">mlag_cfg_l3.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362677/8362678.png">MLAG_UD-729.png</a> (image/png)<br />
+<img src="images/icons/bullet_blue.gif" alt="" />{width=&ldquo;8&rdquo; height=&ldquo;8&rdquo;}
+<a href="attachments/8362677/8362676.png">mlag_nclu.png</a> (image/png)</p>
+</article>
+
+      
+<div class="align-center book-git-footer justify-between">
+  
+  <div>
+    <a href="https://github.com/cawleyflower/testDocs/commit/0f1fa77f244c4b4642688df1f5e961e88daa6e08" title='Last modified March 4, 2019 16:11 EST by Cawleyflower' target="_blank" rel="noopener">
+      <img src="/svg/code-merge.svg" /> Last Modified Mar 4, 2019
+    </a>
+  </div>
+  
+  
+</div>
+
+
+    </div>
+
+    
+  
+  
+  <aside class="book-toc fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#multi-chassis-link-aggregation-mlag">Multi-Chassis Link Aggregation - MLAG</a>
+<ul>
+<li><a href="#contents">Contents</a></li>
+<li><a href="#mlag-requirements">MLAG Requirements</a></li>
+<li><a href="#lacp-and-dual-connectedness">LACP and Dual-Connectedness</a></li>
+<li><a href="#configure-mlag">Configure MLAG</a>
+<ul>
+<li><a href="#reserved-mac-address-range">Reserved MAC Address Range</a></li>
+<li><a href="#configure-the-host-or-switch">Configure the Host or Switch</a></li>
+<li><a href="#configure-the-interfaces">Configure the Interfaces</a></li>
+<li><a href="#switch-roles-and-priority-setting">Switch Roles and Priority Setting</a></li>
+</ul></li>
+<li><a href="#example-mlag-configuration">Example MLAG Configuration</a></li>
+<li><a href="#disable-clagd-on-an-interface">Disable clagd on an Interface</a></li>
+<li><a href="#check-the-mlag-configuration-status">Check the MLAG Configuration Status</a></li>
+<li><a href="#configure-mlag-with-a-traditional-mode-bridge">Configure MLAG with a Traditional Mode Bridge</a></li>
+<li><a href="#peer-link-interfaces-and-the-protodown-state">Peer Link Interfaces and the protodown State</a>
+<ul>
+<li><a href="#specify-a-backup-link">Specify a Backup Link</a></li>
+<li><a href="#specify-a-backup-link-to-a-vrf">Specify a Backup Link to a VRF</a></li>
+</ul></li>
+<li><a href="#monitor-dual-connected-peers">Monitor Dual-Connected Peers</a></li>
+<li><a href="#configure-layer-3-routed-uplinks">Configure Layer 3 Routed Uplinks</a></li>
+<li><a href="#igmp-snooping-with-mlag">IGMP Snooping with MLAG</a></li>
+<li><a href="#monitor-the-status-of-the-clagd-service">Monitor the Status of the clagd Service</a></li>
+<li><a href="#mlag-best-practices">MLAG Best Practices</a>
+<ul>
+<li><a href="#mtu-in-an-mlag-configuration">MTU in an MLAG Configuration</a></li>
+<li><a href="#peer-link-sizing">Peer Link Sizing</a></li>
+</ul></li>
+<li><a href="#stp-interoperability-with-mlag">STP Interoperability with MLAG</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a>
+<ul>
+<li><a href="#viewing-the-mlag-log-file">Viewing the MLAG Log File</a></li>
+<li><a href="#large-packet-drops-on-the-peer-link-interface">Large Packet Drops on the Peer Link Interface</a></li>
+<li><a href="#duplicate-lacp-partner-mac-warning">Duplicate LACP Partner MAC Warning</a></li>
+</ul></li>
+<li><a href="#caveats-and-errata">Caveats and Errata</a></li>
+<li><a href="#attachments">Attachments:</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+
+  
+  
+</body>
+
+</html>

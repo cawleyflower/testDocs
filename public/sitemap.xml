@@ -4,21 +4,21 @@
   
   <url>
     <loc>http://example.org/Cumulus-Linux/whats-new/</loc>
-    <lastmod>2019-02-20T13:45:32-05:00</lastmod>
+    <lastmod>2019-03-04T16:11:44-05:00</lastmod>
   </url>
   
   <url>
     <loc>http://example.org/Cumulus-Linux/</loc>
-    <lastmod>2019-02-20T13:28:08-05:00</lastmod>
+    <lastmod>2019-03-04T16:11:44-05:00</lastmod>
   </url>
   
   <url>
     <loc>http://example.org/</loc>
-    <lastmod>2019-02-26T13:53:40-05:00</lastmod>
+    <lastmod>2019-03-04T16:11:44-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/Cumulus-Linux/Quick_Start_Guide/</loc>
+    <loc>http://example.org/Cumulus-Linux/cumulus-linux-index/Cumulus_Linux_Index/</loc>
   </url>
   
   <url>
@@ -50,11 +50,447 @@
   </url>
   
   <url>
+    <loc>http://example.org/Cumulus-Linux/layer1-switch-ports/802.1X_Interfaces/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer1-switch-ports/Buffer_and_Queue_Management/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer1-switch-ports/DHCP_Relays/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer1-switch-ports/DHCP_Servers/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer1-switch-ports/Facebook_Voyager_Optical_Interfaces/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer1-switch-ports/Prescriptive_Topology_Manager_-_PTM/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer1-switch-ports/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/Interface_Configuration_and_Management/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer1-switch-ports/interface_configuration_and_management/switch_port_attributes/Switch_Port_Attributes/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer2/Copy_of_Prescriptive_Topology_Manager_-_PTM/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer2/Copy_of_Spanning_Tree_and_Rapid_Spanning_Tree/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer2/Ethernet_Bridging_-_VLANs/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer2/IGMP_and_MLD_Snooping/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer2/LACP_Bypass/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer2/Link_Layer_Discovery_Protocol/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer2/Multi-Chassis_Link_Aggregation_-_MLAG/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer2/Spanning_Tree_and_Rapid_Spanning_Tree/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer2/Virtual_Router_Redundancy_-_VRR/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer2/bonding_link_aggregation/Bonding_-_Link_Aggregation/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer2/ethernet_bridging_vlans/Traditional_Bridge_Mode/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN-aware_Bridge_Mode/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer2/ethernet_bridging_vlans/VLAN_Tagging/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer2/link_layer_discovery_protocol/voice_vlan/Voice_VLAN/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer2/virtual_router_redundancy/ifplugd/ifplugd/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/Address_Resolution_Protocol_-_ARP/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/Bidirectional_Forwarding_Detection_-_BFD/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/Border_Gateway_Protocol_-_BGP/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/Configuring_FRRouting/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/FRRouting_Overview/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/GRE_Tunneling/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/Introduction_to_Routing_Protocols/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/Management_VRF/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/Network_Topology/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/Open_Shortest_Path_First_-_OSPF/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/Open_Shortest_Path_First_v3_-_OSPFv3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/Policy-based_Routing/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/Protocol_Independent_Multicast_-_PIM/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/Redistribute_Neighbor/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/Routing/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/Segment_Routing/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/Virtual_Routing_and_Forwarding_-_VRF/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/configuring_frrouting/comparing_nclu_and_vtysh_commands/Comparing_NCLU_and_vtysh_Commands/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/layer3/frrouting_overview/Upgrading_from_Quagga_to_FRRouting/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/ASIC_Monitoring/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/FRRouting_Log_Message_Reference/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Best_Practices/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/Monitoring_System_Hardware/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/Monitoring_Virtual_Device_Counters/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/Network_Troubleshooting/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/Resource_Diagnostics_Using_cl-resource-query/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/Simple_Network_Management_Protocol_SNMP_Monitoring/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/Single_User_Mode_-_Boot_Recovery/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/Troubleshooting_Network_Interfaces/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/Understanding_the_cl-support_Output_File/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/monitoring_system_hardware/network_switch_port_led_and_stats_led/Network_Switch_Port_LED_and_Status_LED_Guidelines/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/monitoring_system_statistics/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/network_troubleshooting/using_nclu_to_troubleshoot/Using_NCLU_to_Troubleshoot_Your_Network_Configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/simple_network_management/using_nutanix_prisim_as_monitoring_tool/Using_Nutanix_Prism_as_a_Monitoring_Tool/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/switchd_Log_Message_Reference/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/troubleshooting_network_interfaces/monitoring_interfaces_and_transcievers_using_ethtool/Monitoring_Interfaces_and_Transceivers_Using_ethtool/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_log_files/Troubleshooting_Log_Files/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/monitoring-troubleshooting/understanding_cl-support_output_file/troubleshooting_the_etc_directory/Troubleshooting_the_etc_Directory/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-solutions/Anycast_Design_Guide/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-solutions/Cumulus_Hyperconverged_Solution_with_Nutanix/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-solutions/Cumulus_Networks_Services_Demos/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-solutions/Data_Center_Host_to_ToR_Architecture/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-solutions/Docker_on_Cumulus_Linux/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-solutions/OpenStack_Neutron_ML2_and_Cumulus_Linux/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-solutions/RDMA_over_Converged_Ethernet_-_RoCE/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-solutions/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-visualization/Eng_Update_of_VXLAN_Hyperloop/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-visualization/Ethernet_Virtual_Private_Network_-_EVPN/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-visualization/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-visualization/LNV_Full_Example/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-visualization/Lightweight_Network_Virtualization_Overview/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-visualization/Static_VXLAN_Configurations/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-visualization/VXLAN_Routing/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-visualization/VXLAN_Scale/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-visualization/VXLAN_Tunnel_DSCP_Operations__DRAFT/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-visualization/Virtualization_Integrations/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-visualization/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_mac_bindings/Static_MAC_Bindings_with_VXLAN/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-visualization/static_vxlan_configurations/static_vxlan_tunnels/Static_VXLAN_Tunnels/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_hardware_vteps_vmware_nsx-mh/Integrating_Hardware_VTEPs_with_VMware_NSX-MH/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_midonet_openstack/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-visualization/virtualization_integrations/integrating_vteps_vmware_nsx-v/Integrating_Hardware_VTEPs_with_VMware_NSX-V/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/network-visualization/virtualization_integrations/ovsdb_server_high_availability/OVSDB_Server_High_Availability/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/quick-start/Quick_Start_Guide/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/Authentication_Authorization_and_Accounting/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/Configuring_a_Global_Proxy/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/Configuring_switchd/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/Copy_of_Netfilter_-_ACLs/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/HTTP_API/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/Netfilter_-_ACLs/</loc>
+  </url>
+  
+  <url>
     <loc>http://example.org/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/</loc>
   </url>
   
   <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/Power_over_Ethernet_-_PoE/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/Services_and_Daemons_in_Cumulus_Linux/</loc>
+  </url>
+  
+  <url>
     <loc>http://example.org/Cumulus-Linux/system-config/Setting_Date_and_Time/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/LDAP_Authentication_and_Authorization/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/RADIUS_AAA/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/SSH_for_Remote_Access/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/TACACS_Plus/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/User_Accounts/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/Using_sudo_to_Delegate_Privileges/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Default_Cumulus_Linux_ACL_Configuration/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Filtering_Learned_MAC_Addresses/</loc>
   </url>
   
   <url>
@@ -199,6 +635,7 @@
   
   <url>
     <loc>http://example.org/NetQ/</loc>
+    <lastmod>2019-03-04T16:11:44-05:00</lastmod>
   </url>
   
   <url>

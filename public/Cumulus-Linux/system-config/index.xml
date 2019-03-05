@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cumulus Networks Documentation</title>
+    <link>http://example.org/Cumulus-Linux/system-config/</link>
+    <description>Recent content on Cumulus Networks Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://example.org/Cumulus-Linux/system-config/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/Authentication_Authorization_and_Accounting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/Authentication_Authorization_and_Accounting/</guid>
+      <description> Authentication, Authorization and Accounting  SSH for Remote Access User Accounts Using sudo to Delegate Privileges LDAP Authentication and Authorization TACACS Plus RADIUS AAA  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/Configuring_a_Global_Proxy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/Configuring_a_Global_Proxy/</guid>
+      <description>Configuring a Global Proxy You configure global HTTP and HTTPS proxies in the /etc/profile.d/ directory of Cumulus Linux. To do so, set the http_proxy and https_proxy variables, which tells the switch the address of the proxy server to use to fetch URLs on the command line. This is useful for programs such as apt/apt-get, curl and wget, which can all use this proxy.
+ In a terminal, create a new file in the /etc/profile.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/Configuring_switchd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/Configuring_switchd/</guid>
+      <description>Configuring switchd switchd is the daemon at the heart of Cumulus Linux. It communicates between the switch and Cumulus Linux, and all the applications running on Cumulus Linux. 
+The switchd configuration is stored in /etc/cumulus/switchd.conf.
+Contents {.expand-control-image}This topic describes &amp;hellip;
+ The switchd File System Configure switchd Parameters Restart switchd  The switchd File System switchd also exports a file system, mounted on /cumulus/switchd, that presents all the switchd configuration options as a series of files arranged in a tree structure.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/Copy_of_Netfilter_-_ACLs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/Copy_of_Netfilter_-_ACLs/</guid>
+      <description>Copy of Netfilter - ACLs Netfilter is the packet filtering framework in Cumulus Linux as well as most other Linux distributions. There are a number of tools available for configuring ACLs in Cumulus Linux, including:
+ iptables, ip6tables and ebtables are Linux userspace tools to administer filtering rules for IPv4 packets, IPv6 packets and Ethernet frames (layer 2 using MAC addresses) respectively.  NCLU, a Cumulus Linux-specific userspace tool for configuring custom ACLs.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/HTTP_API/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/HTTP_API/</guid>
+      <description>HTTP API Cumulus Linux implements an HTTP application programing interface to OpenStack ML2 driver and NCLU. Rather than accessing Cumulus Linux using SSH, you can interact with the switch using an HTTP client, such as cURL, HTTPie or a web browser.
+The HTTP API service is enabled by default on chassis hardware only. However, the associated server is configured to only listen to traffic originating from within the chassis.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/Netfilter_-_ACLs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/Netfilter_-_ACLs/</guid>
+      <description>Netfilter - ACLs Netfilter is the packet filtering framework in Cumulus Linux as well as most other Linux distributions. There are a number of tools available for configuring ACLs in Cumulus Linux:
+ iptables, ip6tables, and ebtables are Linux userspace tools used to administer filtering rules for IPv4 packets, IPv6 packets, and Ethernet frames (layer 2 using MAC addresses).  NCLU is a Cumulus Linux-specific userspace tool used to configure custom ACLs.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/Network_Command_Line_Utility_-_NCLU/</guid>
+      <description>Network Command Line Utility - NCLU  The Network Command Line Utility (NCLU) is a command line interface for Cumulus Networks products that simplifies the networking configuration process for all users.
+NCLU resides in the Linux user space and provides consistent access to networking commands directly through bash, making configuration and troubleshooting simple and easy; no need to edit files or enter modes and sub-modes. NCLU provides these benefits:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/Power_over_Ethernet_-_PoE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/Power_over_Ethernet_-_PoE/</guid>
+      <description>Power over Ethernet - PoE Cumulus Linux supports Power over Ethernet (PoE) and PoE+, so certain Cumulus Linux switches can supply power from Ethernet switch ports to enabled devices over the Ethernet cables that connect them. Power over Ethernet (PoE) is capable of powering devices up to 15W, while PoE+ can power devices up to 30W.
+The currently supported platform is the Edge-Core AS4610-54P, which supports PoE and PoE+ and configuration over Ethernet layer 2 LLDP for power negotiation.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/Services_and_Daemons_in_Cumulus_Linux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/Services_and_Daemons_in_Cumulus_Linux/</guid>
+      <description>Services and Daemons in Cumulus Linux *Services* (also known as daemons) and *processes* are at the heart of how a Linux system functions. Most of the time a service takes care of itself; you just enable and start it, then let it run. However, because a Cumulus Linux switch is a Linux system, you have the ability to dig deeper if you like. Services may start multiple processes as they run.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/Setting_Date_and_Time/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/Setting_Date_and_Time/</guid>
+      <description>Setting Date and Time Setting the time zone, date and time requires root privileges; use sudo.
+Contents {.expand-control-image}This topic describes &amp;hellip;
+ Set the Time Zone  Edit the /etc/timezone File Use the Guided Wizard  Set the Date and Time Set the Time Using NTP and NCLU Specify the NTP Source Interface NTP Default Configuration Precision Time Protocol (PTP) Boundary Clock  Enable the PTP Boundary Clock on the Switch Configure the PTP Boundary Clock Example Configuration Verify PTP Boundary Clock Configuration View PTP Status Information Delete PTP Boundary Clock Configuration  Use NTP in a DHCP Environment Related Information  Set the Time Zone You can use one of two methods to set the time zone on the switch:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/LDAP_Authentication_and_Authorization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/LDAP_Authentication_and_Authorization/</guid>
+      <description>LDAP Authentication and Authorization Cumulus Linux uses Pluggable Authentication Modules (PAM) and Name Service Switch (NSS) for user authentication.
+NSS specifies the order of information sources used to resolve names for each service. Using this with authentication and authorization, it provides the order and location used for user lookup and group mapping on the system. PAM handles the interaction between the user and the system, providing login handling, session setup, authentication of users, and authorization of user actions.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/RADIUS_AAA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/RADIUS_AAA/</guid>
+      <description>RADIUS AAA Cumulus Networks offers add-on packages that enable RADIUS users to log in to Cumulus Linux switches in a transparent way with minimal configuration. There is no need to create accounts or directories on the switch. Authentication is handled with PAM and includes login, ssh, sudo and su.
+Contents {.expand-control-image}This topic describes &amp;hellip;
+ Install the RADIUS Packages Configure the RADIUS Client Enable Login without Local Accounts Local Fallback Authentication Verify RADIUS Client Configuration Remove RADIUS Client Packages Limitations Related Information  Install the RADIUS Packages The RADIUS packages are not included in the base Cumulus Linux image; there is no RADIUS metapackage.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/SSH_for_Remote_Access/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/SSH_for_Remote_Access/</guid>
+      <description>SSH for Remote Access You can generate authentication keys to access a Cumulus Linux switch securely with the ssh-keygen component of the Secure Shell (SSH) protocol. Cumulus Linux uses the OpenSSH package to provide this functionality. This section describes how to generate an SSH key pair.
+Contents {.expand-control-image}This topic describes &amp;hellip;
+ Generate an SSH Key Pair Related Information  Generate an SSH Key Pair  To generate the SSH key pair, run the ssh-keygen command and follow the prompts:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/TACACS_Plus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/TACACS_Plus/</guid>
+      <description>TACACS Plus Cumulus Linux implements TACACS+ client AAA (Accounting, Authentication, and Authorization) in a transparent way with minimal configuration. The client implements the TACACS+ protocol as described in this IETF document. There is no need to create accounts or directories on the switch. Accounting records are sent to all configured TACACS+ servers by default. Use of per-command authorization requires additional setup on the switch.
+Contents {.expand-control-image}This topic describes &amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/User_Accounts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/User_Accounts/</guid>
+      <description>User Accounts By default, Cumulus Linux has two user accounts: cumulus and root.
+The cumulus account:
+ Uses the default password CumulusLinux! Is a user account in the sudo group with sudo privileges. Can log in to the system through all the usual channels, such as console and SSH. Along with the cumulus group, has both show and edit rights for NCLU.  The *root* account:
+ Has the default password disabled by default.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/Using_sudo_to_Delegate_Privileges/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/authentication_authorization_accounting/Using_sudo_to_Delegate_Privileges/</guid>
+      <description>Using sudo to Delegate Privileges By default, Cumulus Linux has two user accounts: root and cumulus. The cumulus account is a normal user and is in the group sudo.
+You can add more user accounts as needed. Like the cumulus account, these accounts must use sudo to execute privileged commands.
+Contents {.expand-control-image}This topic describes &amp;hellip;
+ sudo Basics sudoers Examples Related Information  sudo Basics sudo allows you to execute a command as superuser or another user as specified by the security policy.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Default_Cumulus_Linux_ACL_Configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Default_Cumulus_Linux_ACL_Configuration/</guid>
+      <description>Default Cumulus Linux ACL Configuration The Cumulus Linux default ACL configuration is split into three parts, as outlined in the netfilter ACL documentation: IP tables, IPv6 tables, and EB tables. The sections below describe the default configurations for each part. You can see the default file by clicking the Default ACL Configuration link:
+{.expand-control-image}Default ACL Configuration
+cumulus@switch:~$ sudo cl-acltool -L all ------------------------------- Listing rules of type iptables: ------------------------------- TABLE filter : Chain INPUT (policy ACCEPT 167 packets, 16481 bytes) pkts bytes target prot opt in out source destination 0 0 DROP all -- swp+ any 240.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Filtering_Learned_MAC_Addresses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/Cumulus-Linux/system-config/netfilter_acls/default_cumulus_linux_acl_config/Filtering_Learned_MAC_Addresses/</guid>
+      <description>Filtering Learned MAC Addresses On Broadcom switches, a MAC address is learned on a bridge regardless of whether or not a received packet is dropped by an ACL. This is due to how the hardware learns MAC addresses and occurs before the ACL lookup. This can be a security or resource problem as the MAC address table has the potential to get filled with bogus MAC addresses; a malfunctioning host, network error, loop, or malicious attack on a shared layer 2 platform can create an outage for other hosts if the same MAC address is learned on another port.</description>
+    </item>
+    
+  </channel>
+</rss>
