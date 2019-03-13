@@ -1191,95 +1191,117 @@ cumulus@switch:~$ sudo cl-acltool -L all ------------------------------- Listing
     
     <item>
       <title></title>
+      <link>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/Monitor_Switches/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/Monitor_Switches/</guid>
+      <description>Monitor Switches With the NetQ UI, you can monitor individual switches separately from the network. You are able to view the various components deployed for all switches in the network. Being able to monitor switch component inventory aids in upgrade, compliance, and other planning tasks.
+For network-wide monitoring, refer to Monitor the Network.
+Contents This topic describes&amp;hellip;
+Switch Inventory Card Workflow Summary The small Switch Inventory card displays:
+ total number of switches  The medium Switch Inventory card displays:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/NetQ_User_Interface_Overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/NetQ_User_Interface_Overview/</guid>
+      <description>NetQ User Interface Overview The NetQ 2.0.0 graphical user interface (UI) enables you to access NetQ capabilities through a web browser as opposed to through a terminal window using the Command Line Interface (CLI). Visual representations of the health of the network, inventory, and system events make it easy to both find faults and misconfigurations and to fix them.
+The UI is supported on Google Chrome. Other popular browsers may be used, but have not been tested and may have some presentation issues.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/UI_Preface/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/UI_Preface/</guid>
+      <description>UI Preface A variety of resources are available for you to become familiar with Cumulus NetQ and to take advantage of its monitoring and analytic capabilities. These resources are identified here along with information about how the content is presented.
+Contents This topic describes&amp;hellip;
+What&amp;rsquo;s New in Cumulus NetQ 2.0.0 Cumulus NetQ 2.0.1 includes the following new and updated features:
+ Added
+ UI: Ability to monitor all BGP, MLAG, EVPN, and LLDP sessions network-wide.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/Validate_Network_Protocol_and_Service_Operations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/Validate_Network_Protocol_and_Service_Operations/</guid>
+      <description>Validate Network Protocol and Service Operations With the NetQ UI, you can validate the operation of the network protocols and services running in your network either on demand or on a scheduled basis. There are three card workflows to perform this validation: one for creating the validation request (either on-demand or scheduled) and two validation results (one for on-demand and one for scheduled). ( how long are the results saved?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/Monitor_Alarm_Events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/Monitor_Alarm_Events/</guid>
+      <description>Monitor Alarm Events Two event workflows, the Alarms card workflow and the Info card workflow, provide a view into the events occurring in the network. The Alarms card workflow tracks critical severity events, whereas the Info card workflow tracks all warning, info, and debug severity events.
+To focus on events from a single device perspective, refer to Monitor Switches . To monitor informational alarms, refer to Monitor Informational Events.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/Monitor_Informational_Events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/Monitor_Informational_Events/</guid>
+      <description>Monitor Informational Events Two event workflows, the Alarms card workflow and the Info card workflow, provide a view into the events occurring in the network. The Alarms card workflow tracks critical severity events, whereas the Info card workflow tracks all warning, info, and debug severity events.
+To focus on events from a single device perspective, refer to Monitor Switches. To monitor alarms, refer to Monitor Alarm Events.
+Contents This topic describes how to&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/Monitor_Network_Health/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/Monitor_Network_Health/</guid>
+      <description>Monitor Network Health As with any network, one of the challenges is keeping track of all of the moving parts. With the NetQ GUI, you can view the overall health of your network at a glance and then delve deeper for periodic checks or as conditions arise that require attention. For a general understanding of how well your network is operating, the Network Health card workflow is the best place to start as it contains the highest view and performance rollups.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/Monitor_Network_Inventory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/Monitor_Network_Inventory/</guid>
+      <description>Monitor Network Inventory With NetQ, a network administrator can monitor both the switch hardware and its operating system for misconfigurations or misbehaving services. The Devices Inventory card workflow provides a view into the switches and hosts installed in your network and their various hardware and software components. The workflow contains a small card with a count of each device type in your network, a medium card displaying the operating systems running on each set of devices, large cards with component information statistics, and full-screen cards displaying tables with attributes of all switches and all hosts in your network.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/Monitor_Network_Protocols_and_Services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/Monitor_Network_Protocols_and_Services/</guid>
+      <description>Monitor Network Protocols and Services The Network Services card workflows provide a network-wide view into the routing, link, and virtual network protocols installed in your network. In this release, you can monitor the network-wide behavior (all sessions) of the BGP, EVPN, MLAG, and LLDP services. Each protocol has its own card workflow containing:
+ a small card with an overall status,
+ a medium card displaying key attributes of the protocol,</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/NetQ_User_Interface_Overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/NetQ_User_Interface_Overview/</guid>
+      <description>NetQ User Interface Overview The NetQ 2.0.0 graphical user interface (UI) enables you to access NetQ capabilities through a web browser as opposed to through a terminal window using the Command Line Interface (CLI). Visual representations of the health of the network, inventory, and system events make it easy to both find faults and misconfigurations and to fix them.
+The UI is supported on Google Chrome. Other popular browsers may be used, but have not been tested and may have some presentation issues.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://example.org/NetQ/Release_Notes/Cumulus_NetQ_2.0_Release_Notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://example.org/NetQ/Release_Notes/Cumulus_NetQ_2.0_Release_Notes/</guid>
       <description>Cumulus NetQ 2.0 Release Notes Overview These release notes support Cumulus NetQ 2.0.0 and 2.0.1 releases and describe currently available features and known issues.
 Stay up to Date   Subscribe to our product bulletin mailing list to receive important announcements and updates about issues that arise in our products. Subscribe to our security announcement mailing list to receive alerts whenever we update our software for security issues.   Contents  Overview Stay up to Date  What&amp;rsquo;s New in Cumulus NetQ 2.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://example.org/NetQ/UI_User_Guide/monitor_switches/Monitor_Switches/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/NetQ/UI_User_Guide/monitor_switches/Monitor_Switches/</guid>
-      <description>Monitor Switches With the NetQ UI, you can monitor individual switches separately from the network. You are able to view the various components deployed for all switches in the network. Being able to monitor switch component inventory aids in upgrade, compliance, and other planning tasks.
-For network-wide monitoring, refer to Monitor the Network.
-Contents {.expand-control-image}This topic describes&amp;hellip;
- Switch Inventory Card Workflow Summary View a Summary of Communication Status for All Switches  View the Number of Types of Any Component Deployed View the Distribution of Any Component Deployed View the Number of Switches with Invalid or Missing Licenses View the Most Commonly Deployed ASIC View the Number of Switches with a Particular NetQ Agent View a List of All Data for a Specific Component  Switch Inventory Card Workflow Summary The small Switch Inventory card displays:</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_alarm_events/Monitor_Alarm_Events/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_alarm_events/Monitor_Alarm_Events/</guid>
-      <description>Monitor Alarm Events Two event workflows, the Alarms card workflow and the Info card workflow, provide a view into the events occurring in the network. The Alarms card workflow tracks critical severity events, whereas the Info card workflow tracks all warning, info, and debug severity events.
-To focus on events from a single device perspective, refer to Monitor Switches. To monitor informational alarms, refer to Monitor Informational Events.
-Contents {.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_informational_events/Monitor_Informational_Events/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_informational_events/Monitor_Informational_Events/</guid>
-      <description>Monitor Informational Events Two event workflows, the Alarms card workflow and the Info card workflow, provide a view into the events occurring in the network. The Alarms card workflow tracks critical severity events, whereas the Info card workflow tracks all warning, info, and debug severity events.
-To focus on events from a single device perspective, refer to Monitor Switches. To monitor alarms, refer to Monitor Alarm Events.
-Contents {.expand-control-image}This topic describes how to&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_network_health/Monitor_Network_Health/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_network_health/Monitor_Network_Health/</guid>
-      <description>Monitor Network Health As with any network, one of the challenges is keeping track of all of the moving parts. With the NetQ GUI, you can view the overall health of your network at a glance and then delve deeper for periodic checks or as conditions arise that require attention. For a general understanding of how well your network is operating, the Network Health card workflow is the best place to start as it contains the highest view and performance rollups.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_network_inventory/Monitor_Network_Inventory/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_network_inventory/Monitor_Network_Inventory/</guid>
-      <description>Monitor Network Inventory With NetQ, a network administrator can monitor both the switch hardware and its operating system for misconfigurations or misbehaving services. The Devices Inventory card workflow provides a view into the switches and hosts installed in your network and their various hardware and software components. The workflow contains a small card with a count of each device type in your network, a medium card displaying the operating systems running on each set of devices, large cards with component information statistics, and full-screen cards displaying tables with attributes of all switches and all hosts in your network.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_network_protocols/Monitor_Network_Layer_Protocols/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_network_protocols/Monitor_Network_Layer_Protocols/</guid>
-      <description>Monitor Network Layer Protocols With NetQ, a network administrator can monitor OSI Layer 3 network protocols running on Linux-based hosts, including IP (Internet Protocol), BGP (Border Gateway Protocol) and OSPF (Open Shortest Path First). NetQ provides the ability to:  Validate protocol configurations Validate layer 3 communication paths  It helps answer questions such as:
- Who are the IP neighbors for a switch?
- How many IPv4 and IPv6 addresses am I using?</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://example.org/NetQ/UI_User_Guide/netq_ui_overview/NetQ_User_Interface_Overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/NetQ/UI_User_Guide/netq_ui_overview/NetQ_User_Interface_Overview/</guid>
-      <description>NetQ User Interface Overview The NetQ 2.0.0 graphical user interface (UI) enables you to access NetQ capabilities through a web browser as opposed to through a terminal window using the Command Line Interface (CLI). Visual representations of the health of the network, inventory, and system events make it easy to both find faults and misconfigurations and to fix them. The UI is supported on Google Chrome. Other popular browsers may be used, but have not been tested and may have some presentation issues.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://example.org/NetQ/UI_User_Guide/ui_preface/UI_Preface/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/NetQ/UI_User_Guide/ui_preface/UI_Preface/</guid>
-      <description>UI Preface A variety of resources are available for you to become familiar with Cumulus NetQ and to take advantage of its monitoring and analytic capabilities. These resources are identified here along with information about how the content is presented.
-Contents {.expand-control-image}This topic describes&amp;hellip;
- What&amp;rsquo;s New in Cumulus NetQ 2.0.0 Available Documentation Document Formatting  Typographical Conventions Note Conventions    What&amp;rsquo;s New in Cumulus NetQ 2.0.0 Cumulus NetQ 2.</description>
     </item>
     
     <item>

@@ -494,47 +494,55 @@
   </url>
   
   <url>
+    <loc>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/Monitor_Switches/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/NetQ_User_Interface_Overview/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/UI_Preface/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/Validate_Network_Protocol_and_Service_Operations/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/Monitor_Alarm_Events/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/Monitor_Informational_Events/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/Monitor_Network_Health/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/Monitor_Network_Inventory/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/Monitor_Network_Protocols_and_Services/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/NetQ_User_Interface_Overview/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/NetQ/Cumulus_NetQ_UI_User_Guide/monitor_the_network/</loc>
+  </url>
+  
+  <url>
     <loc>http://example.org/NetQ/Release_Notes/Cumulus_NetQ_2.0_Release_Notes/</loc>
-  </url>
-  
-  <url>
-    <loc>http://example.org/NetQ/UI_User_Guide/</loc>
-  </url>
-  
-  <url>
-    <loc>http://example.org/NetQ/UI_User_Guide/monitor_switches/Monitor_Switches/</loc>
-  </url>
-  
-  <url>
-    <loc>http://example.org/NetQ/UI_User_Guide/monitor_the_network/</loc>
-  </url>
-  
-  <url>
-    <loc>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_alarm_events/Monitor_Alarm_Events/</loc>
-  </url>
-  
-  <url>
-    <loc>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_informational_events/Monitor_Informational_Events/</loc>
-  </url>
-  
-  <url>
-    <loc>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_network_health/Monitor_Network_Health/</loc>
-  </url>
-  
-  <url>
-    <loc>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_network_inventory/Monitor_Network_Inventory/</loc>
-  </url>
-  
-  <url>
-    <loc>http://example.org/NetQ/UI_User_Guide/monitor_the_network/monitor_network_protocols/Monitor_Network_Layer_Protocols/</loc>
-  </url>
-  
-  <url>
-    <loc>http://example.org/NetQ/UI_User_Guide/netq_ui_overview/NetQ_User_Interface_Overview/</loc>
-  </url>
-  
-  <url>
-    <loc>http://example.org/NetQ/UI_User_Guide/ui_preface/UI_Preface/</loc>
   </url>
   
   <url>
