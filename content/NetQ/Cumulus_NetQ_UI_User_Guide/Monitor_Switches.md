@@ -1,3 +1,5 @@
+\--- title: author: keywords: ---
+
 # Monitor Switches
 
 With the NetQ UI, you can monitor individual switches separately from
@@ -8,77 +10,85 @@ inventory aids in upgrade, compliance, and other planning tasks.
 For network-wide monitoring, refer to [Monitor the
 Network](Monitor_the_Network).
 
-# Contents
+<div id="src-8367157_MonitorSwitches-SwitchInventoryCardWorkflowSummary" class="section section-1">
 
-This topic describes...
-
-# Switch Inventory Card Workflow Summary
+## Switch Inventory Card Workflow Summary
 
 The small Switch Inventory card displays:
 
--   total number of switches
+  - total number of switches
 
 The medium Switch Inventory card displays:
 
--   the distribution and unique count of disk sizes deployed
+  - the distribution and unique count of disk sizes deployed
 
--   the distribution and unique count of Operating Systems deployed
+  - the distribution and unique count of Operating Systems deployed
 
--   the distribution and unique count of NetQ Agents deployed
+  - the distribution and unique count of NetQ Agents deployed
 
--   the distribution and unique count of ASIC vendors and models
+  - the distribution and unique count of ASIC vendors and models
     deployed
 
--   the distribution and unique count of platform vendors and models
+  - the distribution and unique count of platform vendors and models
     deployed
 
--   the distribution and unique count of CPU models deployed
+  - the distribution and unique count of CPU models deployed
 
--   the distribution and unique count of license states
+  - the distribution and unique count of license states
 
--   the distribution and unique count of memory sizes deployed
+  - the distribution and unique count of memory sizes deployed
 
 The large Switch Inventory card contains four tabs.
 
--   The Summary tab displays:
-
-    -   distribution and unique count of components sorted by software
+  - The Summary tab displays:
+    
+      - distribution and unique count of components sorted by software
         and hardware
 
--   The ASIC Details tab displays:
+  - The ASIC Details tab displays:
+    
+      - distribution of ASIC vendors
+    
+      - distribution of ASIC models
 
-    -   distribution of ASIC vendors
+  - The Platform Details tab displays:
+    
+      - distribution of platform vendors
+    
+      - distribution of platform models
+    
+      - distribution of license states
 
-    -   distribution of ASIC models
-
--   The Platform Details tab displays:
-
-    -   distribution of platform vendors
-
-    -   distribution of platform models
-
-    -   distribution of license states
-
--   The Software Details tab displays:
-
-    -   distribution of operating systems
-
-    -   distribution of NetQ Agent versions
+  - The Software Details tab displays:
+    
+      - distribution of operating systems
+    
+      - distribution of NetQ Agent versions
 
 The full screen Switch Inventory card provides tabs for all switches,
 ASIC, platform, CPU, memory, disk, and OS components.
 
 There are a multitude of ways to view and analyze the available data
-within this workflow. A few examples are provided here.
+within this workflow. A few examples are provided
+here.
 
-# View a Summary of Communication Status for All Switches
+</div>
+
+<div id="src-8367157_MonitorSwitches-ViewaSummaryofCommunicationStatusforAllSwitches" class="section section-1">
+
+## View a Summary of Communication Status for All Switches
 
 A communication status summary for all of your switches across the
-network is available from the small Switch Inventory card.
+network is available from the small Switch Inventory
+card.
 
-![](images/download/attachments/8367157/image2019-2-19_18_31_24.png)
+![/images/download/attachments/8367157/image2019-2-19\_18\_31\_24.png](/images/download/attachments/8367157/image2019-2-19_18_31_24.png)
 
-# View the Number of Types of Any Component Deployed
+</div>
+
+<div id="src-8367157_MonitorSwitches-ViewtheNumberofTypesofAnyComponentDeployed" class="section section-1">
+
+## View the Number of Types of Any Component Deployed
 
 For each of the components monitored on a switch, NetQ displays the
 variety of those component by way of a count. For example, if you have
@@ -88,11 +98,12 @@ you only use Cumulus Linux, then the count shows as one.
 
 To view this count for all of the components on the switch:
 
-1.  Open the medium Switch Inventory card.
+1.  Open the medium Switch Inventory
+    card.
+    
+    ![/images/download/attachments/8367157/image2019-2-19\_18\_37\_40.png](/images/download/attachments/8367157/image2019-2-19_18_37_40.png)
 
-    ![](images/download/attachments/8367157/image2019-2-19_18_37_40.png){height="250"}
-
-2.  Note the number in the **Unique** column for each component.\
+2.  Note the number in the **Unique** column for each component.  
     In the above example, there are four different disk sizes deployed,
     four different OSs running, four different ASIC vendors and models
     deployed, and so forth.
@@ -105,9 +116,14 @@ state instead. For example, if you wanted to see if there was any
 correlation to a version of OS to the switch having a rotten status, you
 could select **Rotten Switches** from the dropdown at the top of the
 card and see if they all use the same OS (count would be 1). It may not
-be the cause of the lack of communication, but you get the idea.
+be the cause of the lack of communication, but you get the
+idea.
 
-# View the Distribution of Any Component Deployed
+</div>
+
+<div id="src-8367157_MonitorSwitches-ViewtheDistributionofAnyComponentDeployed" class="section section-1">
+
+## View the Distribution of Any Component Deployed
 
 NetQ monitors a number of switch components. For each component you can
 view the distribution of versions or models or vendors deployed across
@@ -116,10 +132,11 @@ your network for that component.
 To view the distribution:
 
 1.  Open the medium or large Switch Inventory card. Each component has a
-    chart showing the distribution.\
-    ![](images/download/attachments/8367157/image2019-2-19_18_37_400.png){height="250"}
+    chart showing the
+    distribution.  
+    ![/images/download/attachments/8367157/image2019-2-19\_18\_37\_400.png](/images/download/attachments/8367157/image2019-2-19_18_37_400.png)
     OR
-    ![](images/download/attachments/8367157/image2019-2-19_18_44_19.png){height="250"}
+    ![/images/download/attachments/8367157/image2019-2-19\_18\_44\_19.png](/images/download/attachments/8367157/image2019-2-19_18_44_19.png)
 
 2.  Hover over a segment of the chart to view the name, version, model
     or vendor and the number of switches that have been deployed. You
@@ -127,15 +144,20 @@ To view the distribution:
     On the large Switch Inventory card, hovering also highlights the
     related components for the selected component. This is shown in blue
     here.
-
-    ![](images/download/attachments/8367157/image2019-2-19_18_53_14.png){height="250"}
+    
+    ![/images/download/attachments/8367157/image2019-2-19\_18\_53\_14.png](/images/download/attachments/8367157/image2019-2-19_18_53_14.png)
 
 3.  Point to additional segments on that component or other components
     to view their detail.
 
-4.  Scroll down to view additional components.
+4.  Scroll down to view additional
+components.
 
-# View the Number of Switches with Invalid or Missing Licenses
+</div>
+
+<div id="src-8367157_MonitorSwitches-ViewtheNumberofSwitcheswithInvalidorMissingLicenses" class="section section-1">
+
+## View the Number of Switches with Invalid or Missing Licenses
 
 It is important to know when you have switches that have invalid or
 missing Cumulus Linux licenses, as not all of the features are
@@ -143,7 +165,7 @@ operational without a valid license. Simply open the medium or large
 Switch Inventory card, and hover over the License chart to see the
 count.
 
-![](images/download/attachments/8367157/image2019-2-19_19_0_15.png){height="250"}
+![/images/download/attachments/8367157/image2019-2-19\_19\_0\_15.png](/images/download/attachments/8367157/image2019-2-19_19_0_15.png)
 
 To view which vendors and platforms have bad or missing licenses, open
 the large Switch Inventory card, and click to open the Platform Details
@@ -152,18 +174,23 @@ platforms with the various states.
 
 To view which switches have invalid or missing licenses, either:
 
--   hover over the large Switch Inventory card and click to open the
+  - hover over the large Switch Inventory card and click to open the
     Platform Details tab. Above the Licenses State or the Vendor chart,
     click Show All.
 
--   open the full screen Switch Inventory card .
+  - open the full screen Switch Inventory card .
 
 Then sort the All Switches tab data table by the License State column to
-locate the switches with bad or missing licenses.
+locate the switches with bad or missing
+licenses.
 
-![](images/download/attachments/8367157/image2019-2-19_19_13_25.png)
+![/images/download/attachments/8367157/image2019-2-19\_19\_13\_25.png](/images/download/attachments/8367157/image2019-2-19_19_13_25.png)
 
-# View the Most Commonly Deployed ASIC
+</div>
+
+<div id="src-8367157_MonitorSwitches-ViewtheMostCommonlyDeployedASIC" class="section section-1">
+
+## View the Most Commonly Deployed ASIC
 
 It can be useful to know the quantity and ratio of many components
 deployed in your network to determine the scope of upgrade tasks,
@@ -198,9 +225,14 @@ To view the most commonly deployed ASIC, for example:
     the top of the charts .
 
 7.  To return to the complete view of vendors and platforms, click on
-    the filter tag.
+    the filter
+tag.
 
-# View the Number of Switches with a Particular NetQ Agent
+</div>
+
+<div id="src-8367157_MonitorSwitches-ViewtheNumberofSwitcheswithaParticularNetQAgent" class="section section-1">
+
+## View the Number of Switches with a Particular NetQ Agent
 
 It is recommended that when you upgrade NetQ that you also upgrade the
 NetQ Agents. You can determine if you have covered all of your agents
@@ -233,14 +265,22 @@ distribution by version:
 
 11. Filter the data on the card by switches that are having trouble
     communicating, by selecting Rotten Switches from the dropdown above
-    the charts.
+    the
+charts.
 
-# View a List of All Data for a Specific Component
+</div>
+
+<div id="src-8367157_MonitorSwitches-ViewaListofAllDataforaSpecificComponent" class="section section-1">
+
+## View a List of All Data for a Specific Component
 
 When the small, medium and large Switch Inventory cards do not provide
 either enough information or are not organized in a fashion that
 provides the information you need, open the full screen Switch Inventory
 card. Select the component tab of interest and filter and sort as
-desired. Export the data to a third-party tool, by clicking **Export**.
+desired. Export the data to a third-party tool, by clicking
+**Export**.
 
-![](images/download/attachments/8367157/image2019-2-19_19_34_48.png){height="250"}
+![/images/download/attachments/8367157/image2019-2-19\_19\_34\_48.png](/images/download/attachments/8367157/image2019-2-19_19_34_48.png)
+
+</div>

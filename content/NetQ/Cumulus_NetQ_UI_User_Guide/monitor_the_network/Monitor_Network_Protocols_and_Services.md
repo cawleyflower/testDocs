@@ -1,3 +1,5 @@
+\--- title: author: keywords: ---
+
 # Monitor Network Protocols and Services
 
 The Network Services card workflows provide a network-wide view into the
@@ -6,25 +8,24 @@ In this release, you can monitor the network-wide behavior (all
 sessions) of the BGP, EVPN, MLAG, and LLDP services. Each protocol has
 its own card workflow containing:
 
--   a small card with an overall status,
+  - a small card with an overall status,
 
--   a medium card displaying key attributes of the protocol,
+  - a medium card displaying key attributes of the protocol,
 
--   a large card with detailed performance statistics, some with
+  - a large card with detailed performance statistics, some with
     additional tabs, and
 
--   full screen cards displaying attributes of all associated switches,
+  - full screen cards displaying attributes of all associated switches,
     sessions, alarms or other relevant data.
 
 Refer to [NetQ User Interface Overview](NetQ_User_Interface_Overview)
 for information about navigating the card workflows and performing
-common actions.
+common
+actions.
 
-# Contents
+<div id="src-8367112_safe-id-TW9uaXRvck5ldHdvcmtQcm90b2NvbHNhbmRTZXJ2aWNlcy1Nb25pdG9ydGhlQkdQU2VydmljZShBbGxTZXNzaW9ucyk" class="section section-1">
 
-This topic describes how to...
-
-# Monitor the BGP Service (All Sessions)
+## Monitor the BGP Service (All Sessions)
 
 With NetQ, you can monitor the number of nodes running the BGP service,
 view switches with the most established and unestablished BGP sessions,
@@ -33,103 +34,55 @@ configure BGP to run in your data center network, refer to [Border
 Gateway Protocol -
 BGP](https://docs.cumulusnetworks.com/display/DOCS/Border+Gateway+Protocol+-+BGP).
 
-## BGP Service Card Workflow
+<div id="src-8367112_MonitorNetworkProtocolsandServices-BGPServiceCardWorkflow" class="section section-2">
 
-The small BGP Service card displays:
+### BGP Service Card Workflow
 
-![](images/download/attachments/8367112/image2019-2-28_17_41_29.png)
+The small BGP Service card
+displays:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Item</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
-<td><p>Indicates data is for all sessions of a Network Service or Protocol</p></td>
-</tr>
-<tr class="even">
-<td><p>Title</p></td>
-<td><p><strong>BGP</strong>: All BGP Sessions, or the BGP Service</p></td>
-</tr>
-<tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
-<td><p>Total number of switches and hosts with the BGP service enabled during the designated time period</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
-<td><p>Total number of BGP-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p>Chart</p></td>
-<td><p>Distribution of BGP-related alarms received during the designated time period</p></td>
-</tr>
-</tbody>
-</table>
+![/images/download/attachments/8367112/image2019-2-28\_17\_41\_29.png](/images/download/attachments/8367112/image2019-2-28_17_41_29.png)
 
-The medium BGP Service card displays:
+<div class="tablewrap">
 
-![](images/download/attachments/8367112/image2019-2-28_17_48_6.png){height="250"}
+| Item                                                                                                                                                                                                                                                                                                                                                        | Description                                                                                       |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| ![/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm\_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u\_mkmYpFHFK43](/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43) | Indicates data is for all sessions of a Network Service or Protocol                               |
+| Title                                                                                                                                                                                                                                                                                                                                                       | **BGP**: All BGP Sessions, or the BGP Service                                                     |
+| ![/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27\_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe](/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe)  | Total number of switches and hosts with the BGP service enabled during the designated time period |
+| ![/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT](/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT)   | Total number of BGP-related alarms received during the designated time period                     |
+| Chart                                                                                                                                                                                                                                                                                                                                                       | Distribution of BGP-related alarms received during the designated time period                     |
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Item</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Time period</p></td>
-<td><p>Range of time in which the displayed data was collected; applies to all card sizes</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
-<td><p>Indicates data is for all sessions of a Network Service or Protocol</p></td>
-</tr>
-<tr class="odd">
-<td><p>Title</p></td>
-<td><p>Network Services | All BGP Sessions</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
-<td><p>Total number of switches and hosts with the BGP service enabled during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
-<td><p>Total number of BGP-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="even">
-<td><p>Total Nodes Running chart</p></td>
-<td><p>Total number and distribution of switches and hosts with the BGP service enabled during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p>Total Alarms chart</p></td>
-<td><p>Total number and distribution of BGP-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="even">
-<td><p>Total Nodes Not Est. chart</p></td>
-<td><p>Total number and distribution of switches and hosts with unestablished BGP sessions during the designated time period</p></td>
-</tr>
-</tbody>
-</table>
+</div>
+
+The medium BGP Service card
+displays:
+
+![/images/download/attachments/8367112/image2019-2-28\_17\_48\_6.png](/images/download/attachments/8367112/image2019-2-28_17_48_6.png)
+
+<div class="tablewrap">
+
+| Item                                                                                                                                                                                                                                                                                                                                                        | Description                                                                                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Time period                                                                                                                                                                                                                                                                                                                                                 | Range of time in which the displayed data was collected; applies to all card sizes                                    |
+| ![/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm\_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u\_mkmYpFHFK43](/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43) | Indicates data is for all sessions of a Network Service or Protocol                                                   |
+| Title                                                                                                                                                                                                                                                                                                                                                       | Network Services | All BGP Sessions                                                                                   |
+| ![/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27\_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe](/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe)  | Total number of switches and hosts with the BGP service enabled during the designated time period                     |
+| ![/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT](/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT)   | Total number of BGP-related alarms received during the designated time period                                         |
+| Total Nodes Running chart                                                                                                                                                                                                                                                                                                                                   | Total number and distribution of switches and hosts with the BGP service enabled during the designated time period    |
+| Total Alarms chart                                                                                                                                                                                                                                                                                                                                          | Total number and distribution of BGP-related alarms received during the designated time period                        |
+| Total Nodes Not Est. chart                                                                                                                                                                                                                                                                                                                                  | Total number and distribution of switches and hosts with unestablished BGP sessions during the designated time period |
+
+</div>
 
 The large BGP service card contains two tabs.
 
-The Sessions Summary tab displays:
+The Sessions Summary tab
+displays:
 
-![](images/download/attachments/8367112/image2019-3-1_14_43_6.png){height="250"}
+![/images/download/attachments/8367112/image2019-3-1\_14\_43\_6.png](/images/download/attachments/8367112/image2019-3-1_14_43_6.png)
+
+<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -148,7 +101,7 @@ The Sessions Summary tab displays:
 <td><p>Range of time in which the displayed data was collected; applies to all card sizes</p></td>
 </tr>
 <tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
+<td><p><img src="/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
 <td><p>Indicates data is for all sessions of a Network Service or Protocol</p></td>
 </tr>
 <tr class="odd">
@@ -156,11 +109,11 @@ The Sessions Summary tab displays:
 <td><p>Sessions Summary (visible when you hover over card)</p></td>
 </tr>
 <tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
+<td><p><img src="/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
 <td><p>Total number of switches and hosts with the BGP service enabled during the designated time period</p></td>
 </tr>
 <tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
+<td><p><img src="/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
 <td><p>Total number of BGP-related alarms received during the designated time period</p></td>
 </tr>
 <tr class="even">
@@ -183,61 +136,35 @@ The Sessions Summary tab displays:
 </tbody>
 </table>
 
-The *Alarms* tab displays:
+</div>
 
-![](images/download/attachments/8367112/image2019-3-3_11_51_10.png){height="250"}
+The *Alarms* tab
+displays:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Item</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Time period</p></td>
-<td><p>Range of time in which the displayed data was collected; applies to all card sizes</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
-<td><p>Indicates data is for all sessions of a Network Service or Protocol</p></td>
-</tr>
-<tr class="odd">
-<td><p>Title</p></td>
-<td><p>Alarms (visible when you hover over card)</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
-<td><p>Total number of switches and hosts with the BGP service enabled during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
-<td><p>Total number of BGP-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="even">
-<td><p>Total Alarms chart</p></td>
-<td><p>Total number and distribution of BGP-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p>Table/Filter options</p></td>
-<td><p>When the selected filter option is <strong>Switches with Most Alarms</strong>, the table displays <strong></strong> switches and hosts running BGP in decreasing order of the count of alarms—devices with the largest number of BGP alarms are listed first</p></td>
-</tr>
-<tr class="even">
-<td><p>Show All Sessions</p></td>
-<td><p>Link to view data for all BGP sessions in the full screen card</p></td>
-</tr>
-</tbody>
-</table>
+![/images/download/attachments/8367112/image2019-3-3\_11\_51\_10.png](/images/download/attachments/8367112/image2019-3-3_11_51_10.png)
+
+<div class="tablewrap">
+
+| Item                                                                                                                                                                                                                                                                                                                                                        | Description                                                                                                                                                                                                                        |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Time period                                                                                                                                                                                                                                                                                                                                                 | Range of time in which the displayed data was collected; applies to all card sizes                                                                                                                                                 |
+| ![/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm\_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u\_mkmYpFHFK43](/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43) | Indicates data is for all sessions of a Network Service or Protocol                                                                                                                                                                |
+| Title                                                                                                                                                                                                                                                                                                                                                       | Alarms (visible when you hover over card)                                                                                                                                                                                          |
+| ![/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27\_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe](/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe)  | Total number of switches and hosts with the BGP service enabled during the designated time period                                                                                                                                  |
+| ![/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT](/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT)   | Total number of BGP-related alarms received during the designated time period                                                                                                                                                      |
+| Total Alarms chart                                                                                                                                                                                                                                                                                                                                          | Total number and distribution of BGP-related alarms received during the designated time period                                                                                                                                     |
+| Table/Filter options                                                                                                                                                                                                                                                                                                                                        | When the selected filter option is **Switches with Most Alarms**, the table displays **** switches and hosts running BGP in decreasing order of the count of alarms—devices with the largest number of BGP alarms are listed first |
+| Show All Sessions                                                                                                                                                                                                                                                                                                                                           | Link to view data for all BGP sessions in the full screen card                                                                                                                                                                     |
+
+</div>
 
 The full screen BGP Service card provides tabs for all switches, all
-sessions, and all alarms.
+sessions, and all
+alarms.
 
-![](images/download/attachments/8367112/image2019-2-28_18_38_4.png){height="250"}
+![/images/download/attachments/8367112/image2019-2-28\_18\_38\_4.png](/images/download/attachments/8367112/image2019-2-28_18_38_4.png)
+
+<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -256,12 +183,12 @@ sessions, and all alarms.
 <td><p>Network Services | BGP</p></td>
 </tr>
 <tr class="even">
-<td><p><img src="images/lh4.googleusercontent0.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T" alt="images/lh4.googleusercontent0.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T" /></p></td>
+<td><p><img src="/images/lh4.googleusercontent0.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T" alt="/images/lh4.googleusercontent0.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T" /></p></td>
 <td><p>Closes full screen card and returns to workbench</p></td>
 </tr>
 <tr class="odd">
 <td><p>Time period</p></td>
-<td><p>Range of time in which the displayed data was collected; applies to all card sizes; select an alternate time period by clicking <img src="images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U" alt="images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U" /></p></td>
+<td><p>Range of time in which the displayed data was collected; applies to all card sizes; select an alternate time period by clicking <img src="/images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U" alt="/images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U" /></p></td>
 </tr>
 <tr class="even">
 <td><p>Results</p></td>
@@ -318,25 +245,37 @@ sessions, and all alarms.
 <td><p>Enables export of all or selected items in a CSV or JSON formatted file</p></td>
 </tr>
 <tr class="odd">
-<td><p><img src="images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w" alt="images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w" /></p></td>
+<td><p><img src="/images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w" alt="/images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w" /></p></td>
 <td><p>Enables manipulation of table display; choose columns to display and reorder columns</p></td>
 </tr>
 </tbody>
 </table>
 
-## View Service Status Summary
+</div>
+
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewServiceStatusSummary" class="section section-2">
+
+### View Service Status Summary
 
 A summary of the BGP service is available from the Network Services card
 workflow, including the number of nodes running the service, the number
 of BGP-related alarms, and a distribution of those alarms.
 
-To view the summary, open the small BGP Service card.
+To view the summary, open the small BGP Service
+card.
 
-![](images/download/attachments/8367112/image2019-2-28_17_41_29.png)
+![/images/download/attachments/8367112/image2019-2-28\_17\_41\_29.png](/images/download/attachments/8367112/image2019-2-28_17_41_29.png)
 
-For more detail, select a different size BGP Service card.
+For more detail, select a different size BGP Service
+card.
 
-## View the Distribution of Sessions and Alarms
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewtheDistributionofSessionsandAlarms" class="section section-2">
+
+### View the Distribution of Sessions and Alarms
 
 It is useful to know the number of network nodes running the BGP
 protocol over a period of time, as it gives you insight into the amount
@@ -346,14 +285,20 @@ unestablished sessions with the alarms present at the same time to
 determine if there is any correlation between the issues and the ability
 to establish a BGP session.
 
-To view these distributions, open the medium BGP Service card.
+To view these distributions, open the medium BGP Service
+card.
 
-![](images/download/attachments/8367112/image2019-2-28_17_48_60.png){height="250"}
+![/images/download/attachments/8367112/image2019-2-28\_17\_48\_60.png](/images/download/attachments/8367112/image2019-2-28_17_48_60.png)
 
 If a visual correlation is apparent, you can dig a little deeper with
-the large BGP Service card tabs.
+the large BGP Service card
+tabs.
 
-## View Devices with the Most BGP Sessions
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewDeviceswiththeMostBGPSessions" class="section section-2">
+
+### View Devices with the Most BGP Sessions
 
 You can view the load from BGP on your switches and hosts using the
 large Network Services card. This data enables you to see which switches
@@ -366,12 +311,13 @@ To view switches and hosts with the most BGP sessions:
 1.  Open the large BGP Service card.
 
 2.  Select **SWITCHES WITH MOST SESSIONS** from the filter above the
-    table.\
+    table.  
     The table content is sorted by this characteristic, listing nodes
     running the most BGP sessions at the top. Scroll down to view those
-    with the fewest sessions.
-
-    ![](images/download/attachments/8367112/image2019-3-1_14_43_60.png){height="250"}
+    with the fewest
+    sessions.
+    
+    ![/images/download/attachments/8367112/image2019-3-1\_14\_43\_60.png](/images/download/attachments/8367112/image2019-3-1_14_43_60.png)
 
 To compare this data with the same data at a previous time:
 
@@ -381,19 +327,21 @@ To compare this data with the same data at a previous time:
 
 3.  Change the time period for the data on the new card by hovering over
     the card and clicking
-    ![](images/lh4.googleusercontent.com/fo-yr9tPWzyO_CQPDiddcB5tmuwuX1OS7nIlj4_9iA3_6xnmg_c-54SmAAdNJL_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw)
+    ![/images/lh4.googleusercontent.com/fo-yr9tPWzyO\_CQPDiddcB5tmuwuX1OS7nIlj4\_9iA3\_6xnmg\_c-54SmAAdNJL\_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw](/images/lh4.googleusercontent.com/fo-yr9tPWzyO_CQPDiddcB5tmuwuX1OS7nIlj4_9iA3_6xnmg_c-54SmAAdNJL_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw)
     .
 
 4.  Select the time period that you want to compare with the original
-    time. We chose *Past Week* for this example.
-
-    ![](images/download/attachments/8367112/image2019-3-3_12_34_3.png)
-
+    time. We chose *Past Week* for this
+    example.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_12\_34\_3.png](/images/download/attachments/8367112/image2019-3-3_12_34_3.png)
+    
     You can now see whether there are significant differences between
-    this time and the original time.
-
-    ![](images/download/attachments/8367112/image2019-3-3_12_36_50.png){height="250"}
-
+    this time and the original
+    time.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_12\_36\_50.png](/images/download/attachments/8367112/image2019-3-3_12_36_50.png)
+    
     In this example, there is no difference, but in a real data center
     environment you much more likely to see differences. If the changes
     are unexpected, you can investigate further by looking at another
@@ -410,38 +358,46 @@ To view switches with the most unestablished BGP sessions:
 1.  Open the large BGP Service card.
 
 2.  Select **SWITCHES WITH MOST UNESTABLISHED SESSIONS** from the filter
-    above the table.\
+    above the table.  
     The table content is sorted by this characteristic, listing nodes
     with the most unestablished BGP sessions at the top. Scroll down to
-    view those with the fewest unestablished sessions.
-
-    ![](images/download/attachments/8367112/image2019-3-3_12_43_26.png){height="250"}
+    view those with the fewest unestablished
+    sessions.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_12\_43\_26.png](/images/download/attachments/8367112/image2019-3-3_12_43_26.png)
 
 Where to go next depends on what data you see, but a couple of options
 include:
 
--   Hover over the **Total Nodes Not Est.** chart to focus on the
+  - Hover over the **Total Nodes Not Est.** chart to focus on the
     switches and hosts with the most unestablished sessions during that
-    smaller time slice.\
+    smaller time slice.  
     The table content changes to match the hovered content. Click on the
-    chart to persist the table changes.
+    chart to persist the table
+    changes.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_12\_47\_26.png](/images/download/attachments/8367112/image2019-3-3_12_47_26.png)
 
-    ![](images/download/attachments/8367112/image2019-3-3_12_47_26.png){height="250"}
-
--   Change the time period for the data to compare with a prior time.
-
-    ![](images/download/attachments/8367112/image2019-3-3_12_50_4.png){height="250"}
-
+  - Change the time period for the data to compare with a prior
+    time.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_12\_50\_4.png](/images/download/attachments/8367112/image2019-3-3_12_50_4.png)
+    
     If the same switches are consistently indicating the most
     unestablished sessions (in our example, exit-2, tor-2, and spine-1),
     you might want to look more carefully at those switches using the
     Switches card workflow to determine probable causes. Refer to
     [Monitor Switches](Monitor_Switches).
 
--   Click **Show All Sessions** to investigate all BGP sessions with
-    events in the full screen card.
+  - Click **Show All Sessions** to investigate all BGP sessions with
+    events in the full screen
+card.
 
-## View Devices with the Most BGP-related Alarms
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-DevsMostAlarmsBGPViewDeviceswiththeMostBGP-relatedAlarms" class="section section-2">
+
+### View Devices with the Most BGP-related Alarms
 
 Switches or hosts experiencing a large number of BGP alarms may indicate
 a configuration or performance issue that needs further investigation.
@@ -454,40 +410,48 @@ To view switches with the most BGP alarms:
 1.  Open the large BGP Service card.
 
 2.  Hover over the header and click
-    ![](images/lh3.googleusercontent0.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT)
+    ![/images/lh3.googleusercontent0.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT](/images/lh3.googleusercontent0.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT)
     .
 
 3.  Select **SWITCHES WITH MOST ALARMS** from the filter above the
-    table.\
+    table.  
     The table content is sorted by this characteristic, listing nodes
     with the most BGP alarms at the top. Scroll down to view those with
-    the fewest alarms.
-
-    ![](images/download/attachments/8367112/image2019-3-3_12_58_38.png){height="250"}
+    the fewest
+    alarms.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_12\_58\_38.png](/images/download/attachments/8367112/image2019-3-3_12_58_38.png)
 
 Where to go next depends on what data you see, but a few options
 include:
 
--   Hover over the Total Alarms chart to focus on the switches
-    exhibiting alarms during that smaller time slice.\
+  - Hover over the Total Alarms chart to focus on the switches
+    exhibiting alarms during that smaller time slice.  
     The table content changes to match the hovered content. Click on the
-    chart to persist the table changes.
+    chart to persist the table
+    changes.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_13\_0\_57.png](/images/download/attachments/8367112/image2019-3-3_13_0_57.png)
 
-    ![](images/download/attachments/8367112/image2019-3-3_13_0_57.png){height="250"}
-
--   Change the time period for the data to compare with a prior time. If
+  - Change the time period for the data to compare with a prior time. If
     the same switches are consistently indicating the most alarms, you
     might want to look more carefully at those switches using the
-    Switches card workflow.\
-    ![](images/download/attachments/8367112/image2019-3-3_12_34_30.png)
-    ![](images/download/attachments/8367112/image2019-3-3_13_3_50.png){height="250"}\
+    Switches card
+    workflow.  
+    ![/images/download/attachments/8367112/image2019-3-3\_12\_34\_30.png](/images/download/attachments/8367112/image2019-3-3_12_34_30.png)
+    ![/images/download/attachments/8367112/image2019-3-3\_13\_3\_50.png](/images/download/attachments/8367112/image2019-3-3_13_3_50.png)  
     In this example, the total alarm count has reduced significantly
     from one week ago.
 
--   Click **Show All Sessions** to investigate all BGP sessions with
-    events in the full screen card.
+  - Click **Show All Sessions** to investigate all BGP sessions with
+    events in the full screen
+card.
 
-## View All BGP Events
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewAllBGPEvents" class="section section-2">
+
+### View All BGP Events
 
 The BGP Network Services card workflow enables you to view all of the
 BGP events in the designated time period.
@@ -496,51 +460,71 @@ To view all BGP events:
 
 1.  Open the full screen BGP Service card.
 
-2.  Click **All Alarms** tab in the navigation panel.\
+2.  Click **All Alarms** tab in the navigation panel.  
     By default, events are listed in most recent to least recent order.
 
-3.  Sort by **Type** to bring the BGP events to the top of the table.
-
-    ![](images/download/attachments/8367112/image2019-3-3_13_19_4.png){height="250"}
+3.  Sort by **Type** to bring the BGP events to the top of the
+    table.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_13\_19\_4.png](/images/download/attachments/8367112/image2019-3-3_13_19_4.png)
 
 Where to go next depends on what data you see, but a couple of options
 include:
 
--   Open one of the other full screen tabs in this flow to focus on
+  - Open one of the other full screen tabs in this flow to focus on
     devices or sessions.
 
--   Export the data for use in another analytics tool, by clicking
-    **Export** and providing a name for the data file.
+  - Export the data for use in another analytics tool, by clicking
+    **Export** and providing a name for the data
+file.
 
-## View Details for All Devices Running BGP
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewDetailsforAllDevicesRunningBGP" class="section section-2">
+
+### View Details for All Devices Running BGP
 
 You can view all stored attributes of all switches and hosts running BGP
 in your network in the full screen card.
 
 To view all device details, open the full screen BGP Service card and
-click the **All Switches** tab.
+click the **All Switches**
+tab.
 
-![](images/download/attachments/8367112/image2019-3-3_13_23_20.png)
+![/images/download/attachments/8367112/image2019-3-3\_13\_23\_20.png](/images/download/attachments/8367112/image2019-3-3_13_23_20.png)
 
 To return to your workbench, click
-![](images/download/attachments/8367112/close.png) in the top right
+![/images/download/attachments/8367112/close.png](/images/download/attachments/8367112/close.png)
+in the top right
 corner.
 
-## View Details for All BGP Sessions
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewDetailsforAllBGPSessions" class="section section-2">
+
+### View Details for All BGP Sessions
 
 You can view all stored attributes of all BGP sessions in your network
 in the full-screen card.
 
 To view all session details, open the full screen BGP Service card and
-click the **All Sessions** tab.
+click the **All Sessions**
+tab.
 
-![](images/download/attachments/8367112/image2019-3-3_13_26_4.png)
+![/images/download/attachments/8367112/image2019-3-3\_13\_26\_4.png](/images/download/attachments/8367112/image2019-3-3_13_26_4.png)
 
 To return to your workbench, click
-![](images/download/attachments/8367112/close.png) next to the title of
-the full screen card.
+![/images/download/attachments/8367112/close.png](/images/download/attachments/8367112/close.png)
+next to the title of the full screen
+card.
 
-# Monitor the EVPN Service (All Sessions)
+</div>
+
+</div>
+
+<div id="src-8367112_safe-id-TW9uaXRvck5ldHdvcmtQcm90b2NvbHNhbmRTZXJ2aWNlcy1Nb25pdG9ydGhlRVZQTlNlcnZpY2UoQWxsU2Vzc2lvbnMp" class="section section-1">
+
+## Monitor the EVPN Service (All Sessions)
 
 With NetQ, you can monitor the number of nodes running the EVPN service,
 view switches with the sessions, total number of VNIs, and alarms
@@ -549,103 +533,55 @@ in your data center network, refer to [Ethernet Virtual Private Network
 -
 EVPN](https://docs.cumulusnetworks.com/display/DOCS/Ethernet+Virtual+Private+Network+-+EVPN).
 
-## EVPN Service Card Workflow Summary
+<div id="src-8367112_MonitorNetworkProtocolsandServices-EVPNServiceCardWorkflowSummary" class="section section-2">
 
-The small EVPN Service card displays:
+### EVPN Service Card Workflow Summary
 
-![](images/download/attachments/8367112/image2019-3-3_13_33_42.png)
+The small EVPN Service card
+displays:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Item</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
-<td><p>Indicates data is for all sessions of a Network Service or Protocol</p></td>
-</tr>
-<tr class="even">
-<td><p>Title</p></td>
-<td><p><strong>EVPN</strong>: All EVPN Sessions, or the EVPN Service</p></td>
-</tr>
-<tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
-<td><p>Total number of switches and hosts with the EVPN service enabled during the designated time period</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
-<td><p>Total number of EVPN-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p>Chart</p></td>
-<td><p>Distribution of EVPN-related alarms received during the designated time period</p></td>
-</tr>
-</tbody>
-</table>
+![/images/download/attachments/8367112/image2019-3-3\_13\_33\_42.png](/images/download/attachments/8367112/image2019-3-3_13_33_42.png)
 
-The medium EVPN Service card displays:
+<div class="tablewrap">
 
-![](images/download/attachments/8367112/image2019-3-3_15_9_13.png){height="250"}
+| Item                                                                                                                                                                                                                                                                                                                                                        | Description                                                                                        |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| ![/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm\_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u\_mkmYpFHFK43](/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43) | Indicates data is for all sessions of a Network Service or Protocol                                |
+| Title                                                                                                                                                                                                                                                                                                                                                       | **EVPN**: All EVPN Sessions, or the EVPN Service                                                   |
+| ![/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27\_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe](/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe)  | Total number of switches and hosts with the EVPN service enabled during the designated time period |
+| ![/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT](/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT)   | Total number of EVPN-related alarms received during the designated time period                     |
+| Chart                                                                                                                                                                                                                                                                                                                                                       | Distribution of EVPN-related alarms received during the designated time period                     |
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Item</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Time period</p></td>
-<td><p>Range of time in which the displayed data was collected; applies to all card sizes</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
-<td><p>Indicates data is for all sessions of a Network Service or Protocol</p></td>
-</tr>
-<tr class="odd">
-<td><p>Title</p></td>
-<td><p>Network Services | All EVPN Sessions</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
-<td><p>Total number of switches and hosts with the EVPN service enabled during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
-<td><p>Total number of EVPN-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="even">
-<td><p>Total Nodes Running chart</p></td>
-<td><p>Total number and distribution of switches and hosts with the EVPN service enabled during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p>Total Alarms chart</p></td>
-<td><p>Total number and distribution of EVPN-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="even">
-<td><p>Total Sessions chart</p></td>
-<td><p>Total number and distribution of EVPN sessions network-wide during the designated time period</p></td>
-</tr>
-</tbody>
-</table>
+</div>
+
+The medium EVPN Service card
+displays:
+
+![/images/download/attachments/8367112/image2019-3-3\_15\_9\_13.png](/images/download/attachments/8367112/image2019-3-3_15_9_13.png)
+
+<div class="tablewrap">
+
+| Item                                                                                                                                                                                                                                                                                                                                                        | Description                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Time period                                                                                                                                                                                                                                                                                                                                                 | Range of time in which the displayed data was collected; applies to all card sizes                                  |
+| ![/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm\_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u\_mkmYpFHFK43](/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43) | Indicates data is for all sessions of a Network Service or Protocol                                                 |
+| Title                                                                                                                                                                                                                                                                                                                                                       | Network Services | All EVPN Sessions                                                                                |
+| ![/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27\_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe](/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe)  | Total number of switches and hosts with the EVPN service enabled during the designated time period                  |
+| ![/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT](/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT)   | Total number of EVPN-related alarms received during the designated time period                                      |
+| Total Nodes Running chart                                                                                                                                                                                                                                                                                                                                   | Total number and distribution of switches and hosts with the EVPN service enabled during the designated time period |
+| Total Alarms chart                                                                                                                                                                                                                                                                                                                                          | Total number and distribution of EVPN-related alarms received during the designated time period                     |
+| Total Sessions chart                                                                                                                                                                                                                                                                                                                                        | Total number and distribution of EVPN sessions network-wide during the designated time period                       |
+
+</div>
 
 The large EVPN service card contains two tabs.
 
-The Sessions Summary tab which displays:
+The Sessions Summary tab which
+displays:
 
-![](images/download/attachments/8367112/image2019-3-3_14_19_32.png){height="250"}
+![/images/download/attachments/8367112/image2019-3-3\_14\_19\_32.png](/images/download/attachments/8367112/image2019-3-3_14_19_32.png)
+
+<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -664,7 +600,7 @@ The Sessions Summary tab which displays:
 <td><p>Range of time in which the displayed data was collected; applies to all card sizes</p></td>
 </tr>
 <tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
+<td><p><img src="/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
 <td><p>Indicates data is for all sessions of a Network Service or Protocol</p></td>
 </tr>
 <tr class="odd">
@@ -672,11 +608,11 @@ The Sessions Summary tab which displays:
 <td><p>Sessions Summary (visible when you hover over card)</p></td>
 </tr>
 <tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
+<td><p><img src="/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
 <td><p>Total number of switches and hosts with the EVPN service enabled during the designated time period</p></td>
 </tr>
 <tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
+<td><p><img src="/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
 <td><p>Total number of EVPN-related alarms received during the designated time period</p></td>
 </tr>
 <tr class="even">
@@ -704,61 +640,35 @@ The Sessions Summary tab which displays:
 </tbody>
 </table>
 
-The *Alarms* tab which displays:
+</div>
 
-![](images/download/attachments/8367112/image2019-3-3_14_36_17.png){height="250"}
+The *Alarms* tab which
+displays:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Item</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Time period</p></td>
-<td><p>Range of time in which the displayed data was collected; applies to all card sizes</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
-<td><p>Indicates data is for all sessions of a Network Service or Protocol</p></td>
-</tr>
-<tr class="odd">
-<td><p>Title</p></td>
-<td><p>Alarms (visible when you hover over card)</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
-<td><p>Total number of switches and hosts with the EVPN service enabled during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
-<td><p>Total number of EVPN-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="even">
-<td><p>Total Alarms chart</p></td>
-<td><p>Total number and distribution of EVPN-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p>Table/Filter options</p></td>
-<td><p>When the <strong>Events by Most Active Device</strong> filter is selected, the table displays devices running EVPN sessions in decreasing order of alarm count—devices with the largest number of alarms are listed first</p></td>
-</tr>
-<tr class="even">
-<td><p>Show All Sessions</p></td>
-<td><p>Link to view data for all EVPN sessions in the full screen card</p></td>
-</tr>
-</tbody>
-</table>
+![/images/download/attachments/8367112/image2019-3-3\_14\_36\_17.png](/images/download/attachments/8367112/image2019-3-3_14_36_17.png)
+
+<div class="tablewrap">
+
+| Item                                                                                                                                                                                                                                                                                                                                                        | Description                                                                                                                                                                                                  |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Time period                                                                                                                                                                                                                                                                                                                                                 | Range of time in which the displayed data was collected; applies to all card sizes                                                                                                                           |
+| ![/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm\_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u\_mkmYpFHFK43](/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43) | Indicates data is for all sessions of a Network Service or Protocol                                                                                                                                          |
+| Title                                                                                                                                                                                                                                                                                                                                                       | Alarms (visible when you hover over card)                                                                                                                                                                    |
+| ![/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27\_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe](/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe)  | Total number of switches and hosts with the EVPN service enabled during the designated time period                                                                                                           |
+| ![/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT](/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT)   | Total number of EVPN-related alarms received during the designated time period                                                                                                                               |
+| Total Alarms chart                                                                                                                                                                                                                                                                                                                                          | Total number and distribution of EVPN-related alarms received during the designated time period                                                                                                              |
+| Table/Filter options                                                                                                                                                                                                                                                                                                                                        | When the **Events by Most Active Device** filter is selected, the table displays devices running EVPN sessions in decreasing order of alarm count—devices with the largest number of alarms are listed first |
+| Show All Sessions                                                                                                                                                                                                                                                                                                                                           | Link to view data for all EVPN sessions in the full screen card                                                                                                                                              |
+
+</div>
 
 The full screen EVPN Service card provides tabs for all switches, all
-sessions, all alarms.
+sessions, all
+alarms.
 
-![](images/download/attachments/8367112/image2019-3-3_14_43_58.png)
+![/images/download/attachments/8367112/image2019-3-3\_14\_43\_58.png](/images/download/attachments/8367112/image2019-3-3_14_43_58.png)
+
+<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -777,12 +687,12 @@ sessions, all alarms.
 <td><p>Network Services | EVPN</p></td>
 </tr>
 <tr class="even">
-<td><p><img src="images/lh4.googleusercontent0.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T" alt="images/lh4.googleusercontent0.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T" /></p></td>
+<td><p><img src="/images/lh4.googleusercontent0.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T" alt="/images/lh4.googleusercontent0.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T" /></p></td>
 <td><p>Closes full screen card and returns to workbench</p></td>
 </tr>
 <tr class="odd">
 <td><p>Time period</p></td>
-<td><p>Range of time in which the displayed data was collected; applies to all card sizes; select an alternate time period by clicking <img src="images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U" alt="images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U" /></p></td>
+<td><p>Range of time in which the displayed data was collected; applies to all card sizes; select an alternate time period by clicking <img src="/images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U" alt="/images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U" /></p></td>
 </tr>
 <tr class="even">
 <td><p>Results</p></td>
@@ -834,25 +744,37 @@ sessions, all alarms.
 <td><p>Enables export of all or selected items in a CSV or JSON formatted file</p></td>
 </tr>
 <tr class="odd">
-<td><p><img src="images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w" alt="images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w" /></p></td>
+<td><p><img src="/images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w" alt="/images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w" /></p></td>
 <td><p>Enables manipulation of table display; choose columns to display and reorder columns</p></td>
 </tr>
 </tbody>
 </table>
 
-## View Service Status Summary
+</div>
+
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewServiceStatusSummary.1" class="section section-2">
+
+### View Service Status Summary
 
 A summary of the EVPN service is available from the Network Services
 card workflow, including the number of nodes running the service, the
 number of EVPN-related alarms, and a distribution of those alarms.
 
-To view the summary, open the small EVPN Network Service card.
+To view the summary, open the small EVPN Network Service
+card.
 
-![](images/download/attachments/8367112/image2019-3-3_13_33_42.png)
+![/images/download/attachments/8367112/image2019-3-3\_13\_33\_42.png](/images/download/attachments/8367112/image2019-3-3_13_33_42.png)
 
-For more detail, select a different size EVPN Network Service card.
+For more detail, select a different size EVPN Network Service
+card.
 
-## View the Distribution of Sessions and Alarms
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewtheDistributionofSessionsandAlarms.1" class="section section-2">
+
+### View the Distribution of Sessions and Alarms
 
 It is useful to know the number of network nodes running the EVPN
 protocol over a period of time, as it gives you insight into the amount
@@ -861,24 +783,35 @@ also useful to compare the number of nodes running EVPN with the alarms
 present at the same time to determine if there is any correlation
 between the issues and the ability to establish an EVPN session.
 
-To view these distributions, open the medium EVPN Service card.
+To view these distributions, open the medium EVPN Service
+card.
 
-![](images/download/attachments/8367112/image2019-3-3_15_9_4.png){height="250"}
+![/images/download/attachments/8367112/image2019-3-3\_15\_9\_4.png](/images/download/attachments/8367112/image2019-3-3_15_9_4.png)
 
 If a visual correlation is apparent, you can dig a little deeper with
-the large EVPN Service card tabs.
+the large EVPN Service card
+tabs.
 
-## View the Distribution of Layer 3 VNIs
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewtheDistributionofLayer3VNIs" class="section section-2">
+
+### View the Distribution of Layer 3 VNIs
 
 It is useful to know the number of layer 3 VNIs, as it gives you insight
 into the complexity of the VXLAN.
 
 To view this distribution, open the large EVPN Service card and view the
-bottom chart on the left.
+bottom chart on the
+left.
 
-![](images/download/attachments/8367112/image2019-3-3_15_14_21.png){height="250"}
+![/images/download/attachments/8367112/image2019-3-3\_15\_14\_21.png](/images/download/attachments/8367112/image2019-3-3_15_14_21.png)
 
-## View Devices with the Most EVPN Sessions
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewDeviceswiththeMostEVPNSessions" class="section section-2">
+
+### View Devices with the Most EVPN Sessions
 
 You can view the load from EVPN on your switches and hosts using the
 large EVPN Service card. This data enables you to see which switches are
@@ -891,12 +824,13 @@ To view switches and hosts with the most EVPN sessions:
 1.  Open the large EVPN Service card.
 
 2.  Select **TOP** **SWITCHES WITH MOST SESSIONS** from the filter above
-    the table.\
+    the table.  
     The table content is sorted by this characteristic, listing nodes
     running the most EVPN sessions at the top. Scroll down to view those
-    with the fewest sessions.
-
-    ![](images/download/attachments/8367112/image2019-3-3_15_21_25.png){height="250"}
+    with the fewest
+    sessions.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_15\_21\_25.png](/images/download/attachments/8367112/image2019-3-3_15_21_25.png)
 
 To compare this data with the same data at a previous time:
 
@@ -906,21 +840,27 @@ To compare this data with the same data at a previous time:
 
 3.  Change the time period for the data on the new card by hovering over
     the card and clicking
-    ![](images/lh4.googleusercontent.com/fo-yr9tPWzyO_CQPDiddcB5tmuwuX1OS7nIlj4_9iA3_6xnmg_c-54SmAAdNJL_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw)
+    ![/images/lh4.googleusercontent.com/fo-yr9tPWzyO\_CQPDiddcB5tmuwuX1OS7nIlj4\_9iA3\_6xnmg\_c-54SmAAdNJL\_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw](/images/lh4.googleusercontent.com/fo-yr9tPWzyO_CQPDiddcB5tmuwuX1OS7nIlj4_9iA3_6xnmg_c-54SmAAdNJL_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw)
     .
 
 4.  Select the time period that you want to compare with the current
-    time.\
+    time.  
     You can now see whether there are significant differences between
-    this time period and the previous time period.\
-    ![](images/download/attachments/8367112/image2019-3-3_12_34_30.png)
-    ![](images/download/attachments/8367112/image2019-3-3_15_25_3.png){height="250"}
+    this time period and the previous time
+    period.  
+    ![/images/download/attachments/8367112/image2019-3-3\_12\_34\_30.png](/images/download/attachments/8367112/image2019-3-3_12_34_30.png)
+    ![/images/download/attachments/8367112/image2019-3-3\_15\_25\_3.png](/images/download/attachments/8367112/image2019-3-3_15_25_3.png)
 
 If the changes are unexpected, you can investigate further by looking at
 another time frame, determining if more nodes are now running EVPN than
-previously, looking for changes in the topology, and so forth.
+previously, looking for changes in the topology, and so
+forth.
 
-## View Devices with the Most Layer 2 EVPN Sessions
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewDeviceswiththeMostLayer2EVPNSessions" class="section section-2">
+
+### View Devices with the Most Layer 2 EVPN Sessions
 
 You can view the number layer 2 EVPN sessions on your switches and hosts
 using the large EVPN Service card. This data enables you to see which
@@ -933,12 +873,13 @@ To view switches and hosts with the most layer 2 EVPN sessions:
 1.  Open the large EVPN Service card.
 
 2.  Select **SWITCHES WITH MOST L2 EVPN** from the filter above the
-    table.\
+    table.  
     The table content is sorted by this characteristic, listing nodes
     running the most layer 2 EVPN sessions at the top. Scroll down to
-    view those with the fewest sessions.
-
-    ![](images/download/attachments/8367112/image2019-3-3_15_30_5.png){height="250"}
+    view those with the fewest
+    sessions.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_15\_30\_5.png](/images/download/attachments/8367112/image2019-3-3_15_30_5.png)
 
 To compare this data with the same data at a previous time:
 
@@ -948,21 +889,27 @@ To compare this data with the same data at a previous time:
 
 3.  Change the time period for the data on the new card by hovering over
     the card and clicking
-    ![](images/lh4.googleusercontent.com/fo-yr9tPWzyO_CQPDiddcB5tmuwuX1OS7nIlj4_9iA3_6xnmg_c-54SmAAdNJL_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw)
+    ![/images/lh4.googleusercontent.com/fo-yr9tPWzyO\_CQPDiddcB5tmuwuX1OS7nIlj4\_9iA3\_6xnmg\_c-54SmAAdNJL\_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw](/images/lh4.googleusercontent.com/fo-yr9tPWzyO_CQPDiddcB5tmuwuX1OS7nIlj4_9iA3_6xnmg_c-54SmAAdNJL_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw)
     .
 
 4.  Select the time period that you want to compare with the current
-    time.\
+    time.  
     You can now see whether there are significant differences between
-    this time period and the previous time period.\
-    ![](images/download/attachments/8367112/image2019-3-3_12_34_30.png)
-    ![](images/download/attachments/8367112/image2019-3-3_15_32_30.png){height="250"}
+    this time period and the previous time
+    period.  
+    ![/images/download/attachments/8367112/image2019-3-3\_12\_34\_30.png](/images/download/attachments/8367112/image2019-3-3_12_34_30.png)
+    ![/images/download/attachments/8367112/image2019-3-3\_15\_32\_30.png](/images/download/attachments/8367112/image2019-3-3_15_32_30.png)
 
 If the changes are unexpected, you can investigate further by looking at
 another time frame, determining if more nodes are now running EVPN than
-previously, looking for changes in the topology, and so forth.
+previously, looking for changes in the topology, and so
+forth.
 
-## View Devices with the Most Layer 3 EVPN Sessions
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewDeviceswiththeMostLayer3EVPNSessions" class="section section-2">
+
+### View Devices with the Most Layer 3 EVPN Sessions
 
 You can view the number layer 3 EVPN sessions on your switches and hosts
 using the large EVPN Service card. This data enables you to see which
@@ -975,12 +922,13 @@ To view switches and hosts with the most layer 3 EVPN sessions:
 1.  Open the large EVPN Service card.
 
 2.  Select **SWITCHES WITH MOST L3 EVPN** from the filter above the
-    table.\
+    table.  
     The table content is sorted by this characteristic, listing nodes
     running the most layer 3 EVPN sessions at the top. Scroll down to
-    view those with the fewest sessions.
-
-    ![](images/download/attachments/8367112/image2019-3-3_15_35_22.png){height="250"}
+    view those with the fewest
+    sessions.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_15\_35\_22.png](/images/download/attachments/8367112/image2019-3-3_15_35_22.png)
 
 To compare this data with the same data at a previous time:
 
@@ -990,21 +938,27 @@ To compare this data with the same data at a previous time:
 
 3.  Change the time period for the data on the new card by hovering over
     the card and clicking
-    ![](images/lh4.googleusercontent.com/fo-yr9tPWzyO_CQPDiddcB5tmuwuX1OS7nIlj4_9iA3_6xnmg_c-54SmAAdNJL_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw)
+    ![/images/lh4.googleusercontent.com/fo-yr9tPWzyO\_CQPDiddcB5tmuwuX1OS7nIlj4\_9iA3\_6xnmg\_c-54SmAAdNJL\_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw](/images/lh4.googleusercontent.com/fo-yr9tPWzyO_CQPDiddcB5tmuwuX1OS7nIlj4_9iA3_6xnmg_c-54SmAAdNJL_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw)
     .
 
 4.  Select the time period that you want to compare with the current
-    time.\
+    time.  
     You can now see whether there are significant differences between
-    this time period and the previous time period.\
-    ![](images/download/attachments/8367112/image2019-3-3_12_34_30.png)
-    ![](images/download/attachments/8367112/image2019-3-3_15_38_7.png){height="250"}
+    this time period and the previous time
+    period.  
+    ![/images/download/attachments/8367112/image2019-3-3\_12\_34\_30.png](/images/download/attachments/8367112/image2019-3-3_12_34_30.png)
+    ![/images/download/attachments/8367112/image2019-3-3\_15\_38\_7.png](/images/download/attachments/8367112/image2019-3-3_15_38_7.png)
 
 If the changes are unexpected, you can investigate further by looking at
 another time frame, determining if more nodes are now running EVPN than
-previously, looking for changes in the topology, and so forth.
+previously, looking for changes in the topology, and so
+forth.
 
-## View Devices with the Most EVPN-related Alarms
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-DevMostAlarmsEVPNViewDeviceswiththeMostEVPN-relatedAlarms" class="section section-2">
+
+### View Devices with the Most EVPN-related Alarms
 
 Switches experiencing a large number of EVPN alarms may indicate a
 configuration or performance issue that needs further investigation. You
@@ -1017,34 +971,40 @@ To view switches with the most EVPN alarms:
 1.  Open the large EVPN Service card.
 
 2.  Hover over the header and click
-    ![](images/lh3.googleusercontent0.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT)
+    ![/images/lh3.googleusercontent0.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT](/images/lh3.googleusercontent0.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT)
     .
 
 3.  Select **EVENTS BY MOST ACTIVE DEVICE** from the filter above the
-    table.\
+    table.  
     The table content is sorted by this characteristic, listing nodes
     with the most EVPN alarms at the top. Scroll down to view those with
-    the fewest alarms.
-
-    ![](images/download/attachments/8367112/image2019-3-3_16_5_32.png){height="250"}
+    the fewest
+    alarms.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_16\_5\_32.png](/images/download/attachments/8367112/image2019-3-3_16_5_32.png)
 
 Where to go next depends on what data you see, but a few options
 include:
 
--   Hover over the Total Alarms chart to focus on the switches
-    exhibiting alarms during that smaller time slice.\
+  - Hover over the Total Alarms chart to focus on the switches
+    exhibiting alarms during that smaller time slice.  
     The table content changes to match the hovered content. Click on the
     chart to persist the table changes.
 
--   Change the time period for the data to compare with a prior time. If
+  - Change the time period for the data to compare with a prior time. If
     the same switches are consistently indicating the most alarms, you
     might want to look more carefully at those switches using the
     Switches card workflow.
 
--   Click **Show All Sessions** to investigate all EVPN sessions with
-    alarms in the full screen card.
+  - Click **Show All Sessions** to investigate all EVPN sessions with
+    alarms in the full screen
+card.
 
-## View All EVPN Events
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewAllEVPNEvents" class="section section-2">
+
+### View All EVPN Events
 
 The EVPN Service card workflow enables you to view all of the EVPN
 events in the designated time period.
@@ -1054,49 +1014,72 @@ To view all EVPN events:
 1.  Open the full screen EVPN Service card.
 
 2.  Click **All Alarms** tab in the navigation panel. By default, events
-    are sorted by Time, with most recent events listed first.
-
-    ![](images/download/attachments/8367112/image2019-3-3_16_11_30.png)
+    are sorted by Time, with most recent events listed
+    first.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_16\_11\_30.png](/images/download/attachments/8367112/image2019-3-3_16_11_30.png)
 
 Where to go next depends on what data you see, but a few options
 include:
 
--   Open one of the other full screen tabs in this flow to focus on
+  - Open one of the other full screen tabs in this flow to focus on
     devices or sessions.
 
--   Export the data for use in another analytics tool, by selecting all
+  - Export the data for use in another analytics tool, by selecting all
     or some of the events and clicking **Export**.
 
--   Click ![](images/download/attachments/8367112/close.png) at the top
-    right to return to your workbench.
+  - Click
+    ![/images/download/attachments/8367112/close.png](/images/download/attachments/8367112/close.png)
+    at the top right to return to your
+workbench.
 
-## View Details for All Devices Running EVPN
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewDetailsforAllDevicesRunningEVPN" class="section section-2">
+
+### View Details for All Devices Running EVPN
 
 You can view all stored attributes of all switches running EVPN in your
 network in the full screen card.
 
 To view all switch and host details, open the full screen EVPN Service
-card, and click the **All Switches** tab.
+card, and click the **All Switches**
+tab.
 
-![](images/download/attachments/8367112/image2019-3-3_16_16_19.png)
+![/images/download/attachments/8367112/image2019-3-3\_16\_16\_19.png](/images/download/attachments/8367112/image2019-3-3_16_16_19.png)
 
 To return to your workbench, click
-![](images/download/attachments/8367112/close.png) at the top right.
+![/images/download/attachments/8367112/close.png](/images/download/attachments/8367112/close.png)
+at the top
+right.
 
-## View Details for All EVPN Sessions
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewDetailsforAllEVPNSessions" class="section section-2">
+
+### View Details for All EVPN Sessions
 
 You can view all stored attributes of all EVPN sessions in your network
 in the full screen card.
 
 To view all session details, open the full screen EVPN Service card, and
-click the **All Sessions** tab.
+click the **All Sessions**
+tab.
 
-![](images/download/attachments/8367112/image2019-3-3_16_17_53.png)
+![/images/download/attachments/8367112/image2019-3-3\_16\_17\_53.png](/images/download/attachments/8367112/image2019-3-3_16_17_53.png)
 
 To return to your workbench, click
-![](images/download/attachments/8367112/close.png) at the top right.
+![/images/download/attachments/8367112/close.png](/images/download/attachments/8367112/close.png)
+at the top
+right.
 
-# Monitor the MLAG Service (All Sessions)
+</div>
+
+</div>
+
+<div id="src-8367112_safe-id-TW9uaXRvck5ldHdvcmtQcm90b2NvbHNhbmRTZXJ2aWNlcy1Nb25pdG9ydGhlTUxBR1NlcnZpY2UoQWxsU2Vzc2lvbnMp" class="section section-1">
+
+## Monitor the MLAG Service (All Sessions)
 
 With NetQ, you can monitor the number of nodes running the MLAG service,
 view sessions running, and view alarms triggered by the MLAG service.
@@ -1104,115 +1087,70 @@ For an overview and how to configure MLAG in your data center network,
 refer to [Multi-Chassis Link Aggregation -
 MLAG](https://docs.cumulusnetworks.com/display/DOCS/Multi-Chassis+Link+Aggregation+-+MLAG).
 
+<div class="confbox admonition admonition-info">
+
+<div class="admonition-body">
+
 {{% notice info %}} The Cumulus Linux implementation of MLAG is referred
 to by other vendors as CLAG, MC-LAG or VPC. The Cumulus NetQ UI still
-uses the CLAG terminology in this release. {{% /notice %}}
+uses the CLAG terminology in this release. {{% /notice
+%}}
 
-## CLAG Service Card Workflow Summary
+</div>
 
-The small CLAG Service card displays:
+</div>
 
-![](images/download/attachments/8367112/image2019-3-3_16_22_4.png)
+<div id="src-8367112_MonitorNetworkProtocolsandServices-CLAGServiceCardWorkflowSummary" class="section section-2">
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Item</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
-<td><p>Indicates data is for all sessions of a Network Service or Protocol</p></td>
-</tr>
-<tr class="even">
-<td><p>Title</p></td>
-<td><p><strong>CLAG</strong>: All CLAG Sessions, or the CLAG Service</p></td>
-</tr>
-<tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
-<td><p>Total number of switches with the CLAG service enabled during the designated time period</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
-<td><p>Total number of CLAG-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p>Chart</p></td>
-<td><p>Distribution of CLAG-related alarms received during the designated time period</p></td>
-</tr>
-</tbody>
-</table>
+### CLAG Service Card Workflow Summary
 
-The medium CLAG Service card displays:
+The small CLAG Service card
+displays:
 
-![](images/download/attachments/8367112/image2019-3-3_16_24_58.png){height="250"}
+![/images/download/attachments/8367112/image2019-3-3\_16\_22\_4.png](/images/download/attachments/8367112/image2019-3-3_16_22_4.png)
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Item</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Time period</p></td>
-<td><p>Range of time in which the displayed data was collected; applies to all card sizes</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
-<td><p>Indicates data is for all sessions of a Network Service or Protocol</p></td>
-</tr>
-<tr class="odd">
-<td><p>Title</p></td>
-<td><p>Network Services | <strong></strong> All CLAG Sessions</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
-<td><p>Total number of switches with the CLAG service enabled during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
-<td><p>Total number of CLAG-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/OZ7aek87vE2GR9IP49ewj7F8XTSYe4ec-eyolCoWYf3aTc79K-j1EjF0gj6EL-YqPlLxkERQ7iNHi3FHQPBwczW2SNRAOmlbDM0RbJqTSADWDKcK3VWCzPTrC_0uvHVkRrm9J2Id" alt="images/lh3.googleusercontent.com/OZ7aek87vE2GR9IP49ewj7F8XTSYe4ec-eyolCoWYf3aTc79K-j1EjF0gj6EL-YqPlLxkERQ7iNHi3FHQPBwczW2SNRAOmlbDM0RbJqTSADWDKcK3VWCzPTrC_0uvHVkRrm9J2Id" /></p></td>
-<td><p>Total number of sessions with an inactive backup IP address</p></td>
-</tr>
-<tr class="odd">
-<td><p><img src="images/lh4.googleusercontent.com/uez2nLxgyfGtFFzPWdwXXWg-pfu5-s6bSXW7ZsXKpF7SS_ZEtRhuDuToD9ojGhz0thfzzzCDrgpJyjlelL9kWtGyaL-SaRBFvOX1qGgLv7gjuN5U0dxmAtxHIUKYLECr50heq0HN" alt="images/lh4.googleusercontent.com/uez2nLxgyfGtFFzPWdwXXWg-pfu5-s6bSXW7ZsXKpF7SS_ZEtRhuDuToD9ojGhz0thfzzzCDrgpJyjlelL9kWtGyaL-SaRBFvOX1qGgLv7gjuN5U0dxmAtxHIUKYLECr50heq0HN" /></p></td>
-<td><p>Total number of bonds with only a single connection</p></td>
-</tr>
-<tr class="even">
-<td><p>Total Nodes Running chart</p></td>
-<td><p>Total number and distribution of switches with CLAG service enabled during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p>Total Alarms chart</p></td>
-<td><p>Total number and distribution of CLAG-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="even">
-<td><p>Total Sessions chart</p></td>
-<td><p>Total number and distribution of CLAG sessions network-wide during the designated time period</p></td>
-</tr>
-</tbody>
-</table>
+<div class="tablewrap">
+
+| Item                                                                                                                                                                                                                                                                                                                                                        | Description                                                                              |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| ![/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm\_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u\_mkmYpFHFK43](/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43) | Indicates data is for all sessions of a Network Service or Protocol                      |
+| Title                                                                                                                                                                                                                                                                                                                                                       | **CLAG**: All CLAG Sessions, or the CLAG Service                                         |
+| ![/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27\_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe](/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe)  | Total number of switches with the CLAG service enabled during the designated time period |
+| ![/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT](/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT)   | Total number of CLAG-related alarms received during the designated time period           |
+| Chart                                                                                                                                                                                                                                                                                                                                                       | Distribution of CLAG-related alarms received during the designated time period           |
+
+</div>
+
+The medium CLAG Service card
+displays:
+
+![/images/download/attachments/8367112/image2019-3-3\_16\_24\_58.png](/images/download/attachments/8367112/image2019-3-3_16_24_58.png)
+
+<div class="tablewrap">
+
+| Item                                                                                                                                                                                                                                                                                                                                                        | Description                                                                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Time period                                                                                                                                                                                                                                                                                                                                                 | Range of time in which the displayed data was collected; applies to all card sizes                    |
+| ![/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm\_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u\_mkmYpFHFK43](/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43) | Indicates data is for all sessions of a Network Service or Protocol                                   |
+| Title                                                                                                                                                                                                                                                                                                                                                       | Network Services | **** All CLAG Sessions                                                             |
+| ![/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27\_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe](/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe)  | Total number of switches with the CLAG service enabled during the designated time period              |
+| ![/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT](/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT)   | Total number of CLAG-related alarms received during the designated time period                        |
+| ![/images/lh3.googleusercontent.com/OZ7aek87vE2GR9IP49ewj7F8XTSYe4ec-eyolCoWYf3aTc79K-j1EjF0gj6EL-YqPlLxkERQ7iNHi3FHQPBwczW2SNRAOmlbDM0RbJqTSADWDKcK3VWCzPTrC\_0uvHVkRrm9J2Id](/images/lh3.googleusercontent.com/OZ7aek87vE2GR9IP49ewj7F8XTSYe4ec-eyolCoWYf3aTc79K-j1EjF0gj6EL-YqPlLxkERQ7iNHi3FHQPBwczW2SNRAOmlbDM0RbJqTSADWDKcK3VWCzPTrC_0uvHVkRrm9J2Id)  | Total number of sessions with an inactive backup IP address                                           |
+| ![/images/lh4.googleusercontent.com/uez2nLxgyfGtFFzPWdwXXWg-pfu5-s6bSXW7ZsXKpF7SS\_ZEtRhuDuToD9ojGhz0thfzzzCDrgpJyjlelL9kWtGyaL-SaRBFvOX1qGgLv7gjuN5U0dxmAtxHIUKYLECr50heq0HN](/images/lh4.googleusercontent.com/uez2nLxgyfGtFFzPWdwXXWg-pfu5-s6bSXW7ZsXKpF7SS_ZEtRhuDuToD9ojGhz0thfzzzCDrgpJyjlelL9kWtGyaL-SaRBFvOX1qGgLv7gjuN5U0dxmAtxHIUKYLECr50heq0HN)  | Total number of bonds with only a single connection                                                   |
+| Total Nodes Running chart                                                                                                                                                                                                                                                                                                                                   | Total number and distribution of switches with CLAG service enabled during the designated time period |
+| Total Alarms chart                                                                                                                                                                                                                                                                                                                                          | Total number and distribution of CLAG-related alarms received during the designated time period       |
+| Total Sessions chart                                                                                                                                                                                                                                                                                                                                        | Total number and distribution of CLAG sessions network-wide during the designated time period         |
+
+</div>
 
 The large CLAG service card contains two tabs.
 
-The All CLAG Sessions Summary tab which displays:
+The All CLAG Sessions Summary tab which
+displays:
 
-![](images/download/attachments/8367112/image2019-3-3_16_40_4.png){height="250"}
+![/images/download/attachments/8367112/image2019-3-3\_16\_40\_4.png](/images/download/attachments/8367112/image2019-3-3_16_40_4.png)
+
+<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -1231,7 +1169,7 @@ The All CLAG Sessions Summary tab which displays:
 <td><p>Range of time in which the displayed data was collected; applies to all card sizes</p></td>
 </tr>
 <tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
+<td><p><img src="/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
 <td><p>Indicates data is for all sessions of a Network Service or Protocol</p></td>
 </tr>
 <tr class="odd">
@@ -1239,11 +1177,11 @@ The All CLAG Sessions Summary tab which displays:
 <td><p>All CLAG Sessions Summary</p></td>
 </tr>
 <tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
+<td><p><img src="/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
 <td><p>Total number of switches with the CLAG service enabled during the designated time period</p></td>
 </tr>
 <tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
+<td><p><img src="/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
 <td><p>Total number of CLAG-related alarms received during the designated time period</p></td>
 </tr>
 <tr class="even">
@@ -1270,10 +1208,15 @@ The All CLAG Sessions Summary tab which displays:
 </tbody>
 </table>
 
-The full screen CLAG Service card provides tabs for all switches, all
-sessions, and all alarms.
+</div>
 
-![](images/download/attachments/8367112/image2019-3-3_16_49_25.png)
+The full screen CLAG Service card provides tabs for all switches, all
+sessions, and all
+alarms.
+
+![/images/download/attachments/8367112/image2019-3-3\_16\_49\_25.png](/images/download/attachments/8367112/image2019-3-3_16_49_25.png)
+
+<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -1292,12 +1235,12 @@ sessions, and all alarms.
 <td><p>Network Services | CLAG</p></td>
 </tr>
 <tr class="even">
-<td><p><img src="images/lh4.googleusercontent0.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T" alt="images/lh4.googleusercontent0.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T" /></p></td>
+<td><p><img src="/images/lh4.googleusercontent0.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T" alt="/images/lh4.googleusercontent0.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T" /></p></td>
 <td><p>Closes full screen card and returns to workbench</p></td>
 </tr>
 <tr class="odd">
 <td><p>Time period</p></td>
-<td><p>Range of time in which the displayed data was collected; applies to all card sizes; select an alternate time period by clicking <img src="images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U" alt="images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U" /></p></td>
+<td><p>Range of time in which the displayed data was collected; applies to all card sizes; select an alternate time period by clicking <img src="/images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U" alt="/images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U" /></p></td>
 </tr>
 <tr class="even">
 <td><p>Results</p></td>
@@ -1348,25 +1291,37 @@ sessions, and all alarms.
 <td><p>Enables export of all or selected items in a CSV or JSON formatted file</p></td>
 </tr>
 <tr class="odd">
-<td><p><img src="images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w" alt="images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w" /></p></td>
+<td><p><img src="/images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w" alt="/images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w" /></p></td>
 <td><p>Enables manipulation of table display; choose columns to display and reorder columns</p></td>
 </tr>
 </tbody>
 </table>
 
-## View Service Status Summary
+</div>
+
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewServiceStatusSummary.2" class="section section-2">
+
+### View Service Status Summary
 
 A summary of the CLAG service is available from the CLAG Service card
 workflow, including the number of nodes running the service, the number
 of CLAG-related alarms, and a distribution of those alarms.
 
-To view the summary, open the small CLAG Service card.
+To view the summary, open the small CLAG Service
+card.
 
-![](images/download/attachments/8367112/image2019-3-3_16_22_4.png)
+![/images/download/attachments/8367112/image2019-3-3\_16\_22\_4.png](/images/download/attachments/8367112/image2019-3-3_16_22_4.png)
 
-For more detail, select a different size CLAG Service card.
+For more detail, select a different size CLAG Service
+card.
 
-## View the Distribution of Sessions and Alarms
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewtheDistributionofSessionsandAlarms.2" class="section section-2">
+
+### View the Distribution of Sessions and Alarms
 
 It is useful to know the number of network nodes running the CLAG
 protocol over a period of time, as it gives you insight into the amount
@@ -1375,14 +1330,20 @@ also useful to compare the number of nodes running CLAG with the alarms
 present at the same time to determine if there is any correlation
 between the issues and the ability to establish an CLAG session.
 
-To view these distributions, open the medium CLAG Service card.
+To view these distributions, open the medium CLAG Service
+card.
 
-![](images/download/attachments/8367112/image2019-3-3_16_24_58.png){height="250"}
+![/images/download/attachments/8367112/image2019-3-3\_16\_24\_58.png](/images/download/attachments/8367112/image2019-3-3_16_24_58.png)
 
 If a visual correlation is apparent, you can dig a little deeper with
-the large CLAG Service card tabs.
+the large CLAG Service card
+tabs.
 
-## View Devices with the Most CLAG Sessions
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewDeviceswiththeMostCLAGSessions" class="section section-2">
+
+### View Devices with the Most CLAG Sessions
 
 You can view the load from CLAG on your switches using the large CLAG
 Service card. This data enables you to see which switches are handling
@@ -1395,12 +1356,13 @@ To view switches and hosts with the most CLAG sessions:
 1.  Open the large CLAG Service card.
 
 2.  Select **SWITCHES WITH MOST SESSIONS** from the filter above the
-    table.\
+    table.  
     The table content is sorted by this characteristic, listing nodes
     running the most CLAG sessions at the top. Scroll down to view those
-    with the fewest sessions.
-
-    ![](images/download/attachments/8367112/image2019-3-3_17_7_26.png){height="250"}
+    with the fewest
+    sessions.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_17\_7\_26.png](/images/download/attachments/8367112/image2019-3-3_17_7_26.png)
 
 To compare this data with the same data at a previous time:
 
@@ -1410,21 +1372,27 @@ To compare this data with the same data at a previous time:
 
 3.  Change the time period for the data on the new card by hovering over
     the card and clicking
-    ![](images/lh4.googleusercontent.com/fo-yr9tPWzyO_CQPDiddcB5tmuwuX1OS7nIlj4_9iA3_6xnmg_c-54SmAAdNJL_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw)
+    ![/images/lh4.googleusercontent.com/fo-yr9tPWzyO\_CQPDiddcB5tmuwuX1OS7nIlj4\_9iA3\_6xnmg\_c-54SmAAdNJL\_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw](/images/lh4.googleusercontent.com/fo-yr9tPWzyO_CQPDiddcB5tmuwuX1OS7nIlj4_9iA3_6xnmg_c-54SmAAdNJL_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw)
     .
 
 4.  Select the time period that you want to compare with the current
-    time.\
+    time.  
     You can now see whether there are significant differences between
-    this time period and the previous time period.\
-    ![](images/download/attachments/8367112/image2019-3-3_12_34_30.png)
-    ![](images/download/attachments/8367112/image2019-3-3_17_9_28.png){height="250"}\
+    this time period and the previous time
+    period.  
+    ![/images/download/attachments/8367112/image2019-3-3\_12\_34\_30.png](/images/download/attachments/8367112/image2019-3-3_12_34_30.png)
+    ![/images/download/attachments/8367112/image2019-3-3\_17\_9\_28.png](/images/download/attachments/8367112/image2019-3-3_17_9_28.png)  
     If the changes are unexpected, you can investigate further by
     looking at another time frame, determining if more nodes are now
     running CLAG than previously, looking for changes in the topology,
-    and so forth.
+    and so
+forth.
 
-## View Devices with the Most Unestablished CLAG Sessions
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewDeviceswiththeMostUnestablishedCLAGSessions" class="section section-2">
+
+### View Devices with the Most Unestablished CLAG Sessions
 
 You can identify switches that are experiencing difficulties
 establishing CLAG sessions; both currently and in the past.
@@ -1434,36 +1402,44 @@ To view switches with the most unestablished CLAG sessions:
 1.  Open the large CLAG Service card.
 
 2.  Select **SWITCHES WITH MOST UNESTABLISHED SESSIONS** from the filter
-    above the table.\
+    above the table.  
     The table content is sorted by this characteristic, listing nodes
     with the most unestablished CLAG sessions at the top. Scroll down to
-    view those with the fewest unestablished sessions.
-
-    ![](images/download/attachments/8367112/image2019-3-3_17_13_52.png){height="250"}
+    view those with the fewest unestablished
+    sessions.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_17\_13\_52.png](/images/download/attachments/8367112/image2019-3-3_17_13_52.png)
 
 Where to go next depends on what data you see, but a few options
 include:
 
--   Hover over the any of the charts to focus on the number of switches
+  - Hover over the any of the charts to focus on the number of switches
     or sessions with the chart characteristic during that smaller time
-    slice.\
+    slice.  
     The table content changes to match the hovered content. Click on the
-    chart to persist the table changes.
+    chart to persist the table
+    changes.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_17\_19\_9.png](/images/download/attachments/8367112/image2019-3-3_17_19_9.png)
 
-    ![](images/download/attachments/8367112/image2019-3-3_17_19_9.png){height="250"}
-
--   Change the time period for the data to compare with a prior time.\
-    ![](images/download/attachments/8367112/image2019-3-3_12_34_30.png)
-    ![](images/download/attachments/8367112/image2019-3-3_17_20_6.png){height="250"}\
+  - Change the time period for the data to compare with a prior
+    time.  
+    ![/images/download/attachments/8367112/image2019-3-3\_12\_34\_30.png](/images/download/attachments/8367112/image2019-3-3_12_34_30.png)
+    ![/images/download/attachments/8367112/image2019-3-3\_17\_20\_6.png](/images/download/attachments/8367112/image2019-3-3_17_20_6.png)  
     If the same switches are consistently indicating the most
     unestablished sessions, you might want to look more carefully at
     those switches using the Switches card workflow to determine
     probable causes. Refer to [Monitor Switches](Monitor_Switches).
 
--   Click **Show All Sessions** to investigate all CLAG sessions with
-    events in the full screen card.
+  - Click **Show All Sessions** to investigate all CLAG sessions with
+    events in the full screen
+card.
 
-## View Switches with the Most CLAG-related Alarms
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewSwitcheswiththeMostCLAG-relatedAlarms" class="section section-2">
+
+### View Switches with the Most CLAG-related Alarms
 
 Switches experiencing a large number of CLAG alarms may indicate a
 configuration or performance issue that needs further investigation. You
@@ -1478,7 +1454,7 @@ To view switches with most CLAG alarms:
 2.  Hover over the header and click .
 
 3.  Select EVENTS BY MOST ACTIVE DEVICE from the filter above the
-    table.\
+    table.  
     The table content is sorted by this characteristic, listing nodes
     with the most CLAG alarms at the top. Scroll down to view those with
     the fewest alarms.
@@ -1486,20 +1462,25 @@ To view switches with most CLAG alarms:
 Where to go next depends on what data you see, but a few options
 include:
 
--   Hover over the Total Alarms chart to focus on the switches
-    exhibiting alarms during that smaller time slice.\
+  - Hover over the Total Alarms chart to focus on the switches
+    exhibiting alarms during that smaller time slice.  
     The table content changes to match the hovered content. Click on the
     chart to persist the table changes.
 
--   Change the time period for the data to compare with a prior time. If
+  - Change the time period for the data to compare with a prior time. If
     the same switches are consistently indicating the most alarms, you
     might want to look more carefully at those switches using the
     Switches card workflow.
 
--   Click Show All Sessions to investigate all CLAG sessions with alarms
-    in the full screen card.
+  - Click Show All Sessions to investigate all CLAG sessions with alarms
+    in the full screen
+card.
 
-## View All CLAG Events
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewAllCLAGEvents" class="section section-2">
+
+### View All CLAG Events
 
 The CLAG Service card workflow enables you to view all of the CLAG
 events in the designated time period.
@@ -1513,36 +1494,49 @@ To view all CLAG events:
 Where to go next depends on what data you see, but a few options
 include:
 
--   Open the All Switches or All Sessions tabs to look more closely at
+  - Open the All Switches or All Sessions tabs to look more closely at
     the alarms from the switch or session perspective.
 
--   Sort on other parameters:
-
-    -   by **Message** to determine the frequency of particular events
-
-    -   by **Severity** to determine the most critical events
-
-    -   by **Time** to find events that may have occurred at a
+  - Sort on other parameters:
+    
+      - by **Message** to determine the frequency of particular events
+    
+      - by **Severity** to determine the most critical events
+    
+      - by **Time** to find events that may have occurred at a
         particular time to try to correlate them with other system
         events
 
--   Return to your workbench by clicking
-    ![](images/download/attachments/8367112/close-14.svg) in the top
-    right corner
+  - Return to your workbench by clicking
+    ![/images/download/attachments/8367112/close-14.svg](/images/download/attachments/8367112/close-14.svg)
+    in the top right
+corner
 
-## View Detailed Information About All Switches Running CLAG
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewDetailedInformationAboutAllSwitchesRunningCLAG" class="section section-2">
+
+### View Detailed Information About All Switches Running CLAG
 
 You can view all stored attributes of all switches running CLAG in your
 network in the full-screen card.
 
 To view all switch details, o pen the full screen CLAG Service card, and
-click the **All Switches** tab.
+click the **All Switches**
+tab.
 
-![](images/download/attachments/8367112/image2019-3-3_17_37_3.png)
+![/images/download/attachments/8367112/image2019-3-3\_17\_37\_3.png](/images/download/attachments/8367112/image2019-3-3_17_37_3.png)
 
-To return to your workbench, click in the top right corner.
+To return to your workbench, click in the top right
+corner.
 
-# Monitor the LLDP Service (All Sessions)
+</div>
+
+</div>
+
+<div id="src-8367112_safe-id-TW9uaXRvck5ldHdvcmtQcm90b2NvbHNhbmRTZXJ2aWNlcy1Nb25pdG9ydGhlTExEUFNlcnZpY2UoQWxsU2Vzc2lvbnMp" class="section section-1">
+
+## Monitor the LLDP Service (All Sessions)
 
 With NetQ, you can monitor the number of nodes running the LLDP service,
 view nodes with the most LLDP neighbor nodes, those nodes with the least
@@ -1551,103 +1545,55 @@ overview and how to configure LLDP in your data center network, refer to
 [Link Layer Discovery
 Protocol](https://docs.cumulusnetworks.com/display/DOCS/Link+Layer+Discovery+Protocol).
 
-## LLDP Service Card Workflow Summary
+<div id="src-8367112_MonitorNetworkProtocolsandServices-LLDPServiceCardWorkflowSummary" class="section section-2">
 
-The small LLDP Service card displays:
+### LLDP Service Card Workflow Summary
 
-![](images/download/attachments/8367112/image2019-3-3_17_42_53.png)
+The small LLDP Service card
+displays:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Item</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
-<td><p>Indicates data is for all sessions of a Network Service or Protocol</p></td>
-</tr>
-<tr class="even">
-<td><p>Title</p></td>
-<td><p><strong>LLDP</strong>: All LLDP Sessions, or the LLDP Service</p></td>
-</tr>
-<tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
-<td><p>Total number of switches with the LLDP service enabled during the designated time period</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
-<td><p>Total number of LLDP-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p>Chart</p></td>
-<td><p>Distribution of LLDP-related alarms received during the designated time period</p></td>
-</tr>
-</tbody>
-</table>
+![/images/download/attachments/8367112/image2019-3-3\_17\_42\_53.png](/images/download/attachments/8367112/image2019-3-3_17_42_53.png)
 
-The medium LLDP Service card displays:
+<div class="tablewrap">
 
-![](images/download/attachments/8367112/image2019-3-3_17_45_53.png){height="250"}
+| Item                                                                                                                                                                                                                                                                                                                                                        | Description                                                                              |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| ![/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm\_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u\_mkmYpFHFK43](/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43) | Indicates data is for all sessions of a Network Service or Protocol                      |
+| Title                                                                                                                                                                                                                                                                                                                                                       | **LLDP**: All LLDP Sessions, or the LLDP Service                                         |
+| ![/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27\_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe](/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe)  | Total number of switches with the LLDP service enabled during the designated time period |
+| ![/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT](/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT)   | Total number of LLDP-related alarms received during the designated time period           |
+| Chart                                                                                                                                                                                                                                                                                                                                                       | Distribution of LLDP-related alarms received during the designated time period           |
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Item</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Time period</p></td>
-<td><p>Range of time in which the displayed data was collected; applies to all card sizes</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
-<td><p>Indicates data is for all sessions of a Network Service or Protocol</p></td>
-</tr>
-<tr class="odd">
-<td><p>Title</p></td>
-<td><p><strong>LLDP</strong>: All LLDP Sessions, or the LLDP Service</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
-<td><p>Total number of switches with the LLDP service enabled during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
-<td><p>Total number of LLDP-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="even">
-<td><p>Total Nodes Running chart</p></td>
-<td><p>Total number and distribution of switches and hosts with LLDP enabled during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p>Total Alarms chart</p></td>
-<td><p>Total number and distribution of LLDP-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="even">
-<td><p>Total Sessions chart</p></td>
-<td><p>Total number and distribution of LLDP sessions running during the designated time period</p></td>
-</tr>
-</tbody>
-</table>
+</div>
+
+The medium LLDP Service card
+displays:
+
+![/images/download/attachments/8367112/image2019-3-3\_17\_45\_53.png](/images/download/attachments/8367112/image2019-3-3_17_45_53.png)
+
+<div class="tablewrap">
+
+| Item                                                                                                                                                                                                                                                                                                                                                        | Description                                                                                             |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Time period                                                                                                                                                                                                                                                                                                                                                 | Range of time in which the displayed data was collected; applies to all card sizes                      |
+| ![/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm\_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u\_mkmYpFHFK43](/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43) | Indicates data is for all sessions of a Network Service or Protocol                                     |
+| Title                                                                                                                                                                                                                                                                                                                                                       | **LLDP**: All LLDP Sessions, or the LLDP Service                                                        |
+| ![/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27\_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe](/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe)  | Total number of switches with the LLDP service enabled during the designated time period                |
+| ![/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT](/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT)   | Total number of LLDP-related alarms received during the designated time period                          |
+| Total Nodes Running chart                                                                                                                                                                                                                                                                                                                                   | Total number and distribution of switches and hosts with LLDP enabled during the designated time period |
+| Total Alarms chart                                                                                                                                                                                                                                                                                                                                          | Total number and distribution of LLDP-related alarms received during the designated time period         |
+| Total Sessions chart                                                                                                                                                                                                                                                                                                                                        | Total number and distribution of LLDP sessions running during the designated time period                |
+
+</div>
 
 The large LLDP service card contains two tabs.
 
-The Sessions Summary tab which displays:
+The Sessions Summary tab which
+displays:
 
-![](images/download/attachments/8367112/image2019-3-3_17_50_38.png){height="250"}
+![/images/download/attachments/8367112/image2019-3-3\_17\_50\_38.png](/images/download/attachments/8367112/image2019-3-3_17_50_38.png)
+
+<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -1666,7 +1612,7 @@ The Sessions Summary tab which displays:
 <td><p>Range of time in which the displayed data was collected; applies to all card sizes</p></td>
 </tr>
 <tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
+<td><p><img src="/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
 <td><p>Indicates data is for all sessions of a Network Service or Protocol</p></td>
 </tr>
 <tr class="odd">
@@ -1674,11 +1620,11 @@ The Sessions Summary tab which displays:
 <td><p>Sessions Summary (visible when you hover over card)</p></td>
 </tr>
 <tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
+<td><p><img src="/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
 <td><p>Total number of switches with the LLDP service enabled during the designated time period</p></td>
 </tr>
 <tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
+<td><p><img src="/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
 <td><p>Total number of LLDP-related alarms received during the designated time period</p></td>
 </tr>
 <tr class="even">
@@ -1705,61 +1651,35 @@ The Sessions Summary tab which displays:
 </tbody>
 </table>
 
-The *Alarms* tab which displays:
+</div>
 
-![](images/download/attachments/8367112/image2019-3-3_18_0_13.png){height="250"}
+The *Alarms* tab which
+displays:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Item</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Time period</p></td>
-<td><p>Range of time in which the displayed data was collected; applies to all card sizes</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" alt="images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43" /></p></td>
-<td><p>Indicates data is for all sessions of a Network Service or Protocol</p></td>
-</tr>
-<tr class="odd">
-<td><p>Title</p></td>
-<td><p><strong>Alarms</strong> (visible when you hover over card)</p></td>
-</tr>
-<tr class="even">
-<td><p><img src="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" alt="images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe" /></p></td>
-<td><p>Total number of switches with the LLDP service enabled during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p><img src="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" alt="images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT" /></p></td>
-<td><p>Total number of LLDP-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="even">
-<td><p>Total Alarms chart</p></td>
-<td><p>Total number and distribution of LLDP-related alarms received during the designated time period</p></td>
-</tr>
-<tr class="odd">
-<td><p>Table/Filter options</p></td>
-<td><p>When the <strong>EVENTS BY MOST ACTIVE DEVICE</strong> filter is selected, the table displays switches running LLDP sessions in decreasing order of alarm count—devices with the largest number of sessions are listed first</p></td>
-</tr>
-<tr class="even">
-<td><p>Show All Sessions</p></td>
-<td><p>Link to view all LLDP sessions in the full screen card</p></td>
-</tr>
-</tbody>
-</table>
+![/images/download/attachments/8367112/image2019-3-3\_18\_0\_13.png](/images/download/attachments/8367112/image2019-3-3_18_0_13.png)
+
+<div class="tablewrap">
+
+| Item                                                                                                                                                                                                                                                                                                                                                        | Description                                                                                                                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Time period                                                                                                                                                                                                                                                                                                                                                 | Range of time in which the displayed data was collected; applies to all card sizes                                                                                                                              |
+| ![/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm\_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u\_mkmYpFHFK43](/images/lh3.googleusercontent.com/9pKK7nvSXHVZ9B7ZhBwE4tJ0yTYz1Cnblgm_0e3-KDmA8qdySLR5COAhLPZomROlRUSRTTRlXlgwEKcjuVljew1z5zd6QRMCXQXjcVbkhXJiX63LgNYuAg5nC58u_mkmYpFHFK43) | Indicates data is for all sessions of a Network Service or Protocol                                                                                                                                             |
+| Title                                                                                                                                                                                                                                                                                                                                                       | **Alarms** (visible when you hover over card)                                                                                                                                                                   |
+| ![/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27\_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe](/images/lh3.googleusercontent.com/6savpoUbgaVzG-b8wvwDqPBL2SvepqAMmGuTy06oenbCU27_dmDBdmJobMvQD89-1iBJRpKB0lFW4cTzNEp3kdZuAOOs81DmptnyhBgCxeIwwuwkq91hLLOTSLACVkDRTfeYoMNe)  | Total number of switches with the LLDP service enabled during the designated time period                                                                                                                        |
+| ![/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT](/images/lh3.googleusercontent.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT)   | Total number of LLDP-related alarms received during the designated time period                                                                                                                                  |
+| Total Alarms chart                                                                                                                                                                                                                                                                                                                                          | Total number and distribution of LLDP-related alarms received during the designated time period                                                                                                                 |
+| Table/Filter options                                                                                                                                                                                                                                                                                                                                        | When the **EVENTS BY MOST ACTIVE DEVICE** filter is selected, the table displays switches running LLDP sessions in decreasing order of alarm count—devices with the largest number of sessions are listed first |
+| Show All Sessions                                                                                                                                                                                                                                                                                                                                           | Link to view all LLDP sessions in the full screen card                                                                                                                                                          |
+
+</div>
 
 The full screen LLDP Service card provides tabs for all switches, all
-sessions, and all alarms.
+sessions, and all
+alarms.
 
-![](images/download/attachments/8367112/image2019-3-3_18_4_31.png){height="250"}
+![/images/download/attachments/8367112/image2019-3-3\_18\_4\_31.png](/images/download/attachments/8367112/image2019-3-3_18_4_31.png)
+
+<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -1778,12 +1698,12 @@ sessions, and all alarms.
 <td><p>Network Services | LLDP</p></td>
 </tr>
 <tr class="even">
-<td><p><img src="images/lh4.googleusercontent0.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T" alt="images/lh4.googleusercontent0.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T" /></p></td>
+<td><p><img src="/images/lh4.googleusercontent0.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T" alt="/images/lh4.googleusercontent0.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T" /></p></td>
 <td><p>Closes full screen card and returns to workbench</p></td>
 </tr>
 <tr class="odd">
 <td><p>Time period</p></td>
-<td><p>Range of time in which the displayed data was collected; applies to all card sizes; select an alternate time period by clicking <img src="images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U" alt="images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U" /></p></td>
+<td><p>Range of time in which the displayed data was collected; applies to all card sizes; select an alternate time period by clicking <img src="/images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U" alt="/images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U" /></p></td>
 </tr>
 <tr class="even">
 <td><p>Results</p></td>
@@ -1831,47 +1751,69 @@ sessions, and all alarms.
 <td><p>Enables export of all or selected items in a CSV or JSON formatted file</p></td>
 </tr>
 <tr class="odd">
-<td><p><img src="images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w" alt="images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w" /></p></td>
+<td><p><img src="/images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w" alt="/images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w" /></p></td>
 <td><p>Enables manipulation of table display; choose columns to display and reorder columns</p></td>
 </tr>
 </tbody>
 </table>
 
-## View Service Status Summary
+</div>
+
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewServiceStatusSummary.3" class="section section-2">
+
+### View Service Status Summary
 
 A summary of the LLDP service is available from the Network Services
 card workflow, including the number of nodes running the service, the
 number of LLDP-related alarms, and a distribution of those alarms.
 
-To view the summary, open the small LLDP Service card.
+To view the summary, open the small LLDP Service
+card.
 
-![](images/download/attachments/8367112/image2019-3-3_17_42_53.png)
+![/images/download/attachments/8367112/image2019-3-3\_17\_42\_53.png](/images/download/attachments/8367112/image2019-3-3_17_42_53.png)
 
-For more detail, select a different size LLDP Network Services card.
+For more detail, select a different size LLDP Network Services
+card.
 
-## View the Distribution of Nodes, Alarms, and Sessions
+</div>
+
+<div id="src-8367112_safe-id-TW9uaXRvck5ldHdvcmtQcm90b2NvbHNhbmRTZXJ2aWNlcy1WaWV3dGhlRGlzdHJpYnV0aW9ub2ZOb2RlcyxBbGFybXMsYW5kU2Vzc2lvbnM" class="section section-2">
+
+### View the Distribution of Nodes, Alarms, and Sessions
 
 It is useful to know the number of network nodes running the LLDP
 protocol over a period of time, as it gives you insight into nodes that
 might be misconfigured or experiencing communication issues due to
 missing links.
 
-To view the distribution, open the medium LLDP Service card.
+To view the distribution, open the medium LLDP Service
+card.
 
-![](images/download/attachments/8367112/image2019-3-3_17_45_53.png){height="250"}
+![/images/download/attachments/8367112/image2019-3-3\_17\_45\_53.png](/images/download/attachments/8367112/image2019-3-3_17_45_53.png)
 
-## View the Distribution of Missing Neighbors
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewtheDistributionofMissingNeighbors" class="section section-2">
+
+### View the Distribution of Missing Neighbors
 
 You can view the number of missing neighbors in any given time period
 and how that number has changed over time. This is a good indicator of
 link communication issues.
 
 To view the distribution, open the large LLDP Service card and view the
-bottom chart on the left, **Total Sessions with No Nbr**.
+bottom chart on the left, **Total Sessions with No
+Nbr**.
 
-![](images/download/attachments/8367112/image2019-3-3_18_22_6.png){height="250"}
+![/images/download/attachments/8367112/image2019-3-3\_18\_22\_6.png](/images/download/attachments/8367112/image2019-3-3_18_22_6.png)
 
-## View Devices with the Most LLDP Sessions
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewDeviceswiththeMostLLDPSessions" class="section section-2">
+
+### View Devices with the Most LLDP Sessions
 
 You can view the load from LLDP on your switches using the large LLDP
 Service card. This data enables you to see which switches are handling
@@ -1884,12 +1826,13 @@ To view switches and hosts with the most LLDP sessions:
 1.  Open the large LLDP Service card.
 
 2.  Select **SWITCHES WITH MOST SESSIONS** from the filter above the
-    table.\
+    table.  
     The table content is sorted by this characteristic, listing nodes
     running the most LLDP sessions at the top. Scroll down to view those
-    with the fewest sessions.
-
-    ![](images/download/attachments/8367112/image2019-3-3_18_25_43.png){height="250"}
+    with the fewest
+    sessions.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_18\_25\_43.png](/images/download/attachments/8367112/image2019-3-3_18_25_43.png)
 
 To compare this data with the same data at a previous time:
 
@@ -1899,22 +1842,28 @@ To compare this data with the same data at a previous time:
 
 3.  Change the time period for the data on the new card by hovering over
     the card and clicking
-    ![](images/lh4.googleusercontent.com/fo-yr9tPWzyO_CQPDiddcB5tmuwuX1OS7nIlj4_9iA3_6xnmg_c-54SmAAdNJL_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw)
+    ![/images/lh4.googleusercontent.com/fo-yr9tPWzyO\_CQPDiddcB5tmuwuX1OS7nIlj4\_9iA3\_6xnmg\_c-54SmAAdNJL\_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw](/images/lh4.googleusercontent.com/fo-yr9tPWzyO_CQPDiddcB5tmuwuX1OS7nIlj4_9iA3_6xnmg_c-54SmAAdNJL_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw)
     .
 
 4.  Select the time period that you want to compare with the current
-    time.\
+    time.  
     You can now see whether there are significant differences between
-    this time period and the previous time period.\
-    ![](images/download/attachments/8367112/image2019-3-3_12_34_30.png)
-    ![](images/download/attachments/8367112/image2019-3-3_18_28_1.png){height="250"}\
+    this time period and the previous time
+    period.  
+    ![/images/download/attachments/8367112/image2019-3-3\_12\_34\_30.png](/images/download/attachments/8367112/image2019-3-3_12_34_30.png)
+    ![/images/download/attachments/8367112/image2019-3-3\_18\_28\_1.png](/images/download/attachments/8367112/image2019-3-3_18_28_1.png)  
     In this case, notice that the alarms have reduced significantly in
     the last six hours. If the changes are unexpected, you can
     investigate further by looking at another time frame, determining if
     more nodes are now running LLDP than previously, looking for changes
-    in the topology, and so forth.
+    in the topology, and so
+forth.
 
-## View Devices with the Most Unestablished LLDP Sessions
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewDeviceswiththeMostUnestablishedLLDPSessions" class="section section-2">
+
+### View Devices with the Most Unestablished LLDP Sessions
 
 You can identify switches that are experiencing difficulties
 establishing LLDP sessions; both currently and in the past.
@@ -1924,36 +1873,44 @@ To view switches with the most unestablished LLDP sessions:
 1.  Open the large LLDP Service card.
 
 2.  Select **SWITCHES WITH MOST UNESTABLISHED SESSIONS** from the filter
-    above the table.\
+    above the table.  
     The table content is sorted by this characteristic, listing nodes
     with the most unestablished CLAG sessions at the top. Scroll down to
-    view those with the fewest unestablished sessions.
-
-    ![](images/download/attachments/8367112/image2019-3-3_18_30_23.png){height="250"}
+    view those with the fewest unestablished
+    sessions.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_18\_30\_23.png](/images/download/attachments/8367112/image2019-3-3_18_30_23.png)
 
 Where to go next depends on what data you see, but a few options
 include:
 
--   Hover over any of the charts to focus on the number of switches or
+  - Hover over any of the charts to focus on the number of switches or
     sessions with the chart characteristic during that smaller time
-    slice.\
+    slice.  
     The table content changes to match the hovered content. Click on the
-    chart to persist the table changes.
+    chart to persist the table
+    changes.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_18\_32\_59.png](/images/download/attachments/8367112/image2019-3-3_18_32_59.png)
 
-    ![](images/download/attachments/8367112/image2019-3-3_18_32_59.png){height="250"}
-
--   Change the time period for the data to compare with a prior time.\
-    ![](images/download/attachments/8367112/image2019-3-3_12_34_30.png)
-    ![](images/download/attachments/8367112/image2019-3-3_18_34_16.png){height="250"}\
+  - Change the time period for the data to compare with a prior
+    time.  
+    ![/images/download/attachments/8367112/image2019-3-3\_12\_34\_30.png](/images/download/attachments/8367112/image2019-3-3_12_34_30.png)
+    ![/images/download/attachments/8367112/image2019-3-3\_18\_34\_16.png](/images/download/attachments/8367112/image2019-3-3_18_34_16.png)  
     If the same switches are consistently indicating the most
     unestablished sessions, you might want to look more carefully at
     those switches using the Switches card workflow to determine
     probable causes. Refer to [Monitor Switches](Monitor_Switches).
 
--   Click **Show All Sessions** to investigate all LLDP sessions with
-    events in the full screen card.
+  - Click **Show All Sessions** to investigate all LLDP sessions with
+    events in the full screen
+card.
 
-## View Switches with the Most LLDP-related Alarms
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewSwitcheswiththeMostLLDP-relatedAlarms" class="section section-2">
+
+### View Switches with the Most LLDP-related Alarms
 
 Switches experiencing a large number of LLDP alarms may indicate a
 configuration or performance issue that needs further investigation. You
@@ -1966,34 +1923,40 @@ To view switches with most LLDP alarms:
 1.  Open the large LLDP Service card.
 
 2.  Hover over the header and click
-    ![](images/lh3.googleusercontent0.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT)
+    ![/images/lh3.googleusercontent0.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT](/images/lh3.googleusercontent0.com/zfvCpsG-VHAjSrTbVj3Q9ZDhqhqlkG1MiPwZEFtSM10fC2F8AExk-7gTb3norOvIXhvQL6rLN5NWpDdrnx55YCLnzdn2Y2INmiKan-83QG6a9s4aw3LlOUm7zlOGoi4mK-yUNQDT)
     .
 
 3.  Select **EVENTS BY MOST ACTIVE DEVICE** from the filter above the
-    table.\
+    table.  
     The table content is sorted by this characteristic, listing nodes
     with the most BGP alarms at the top. Scroll down to view those with
-    the fewest alarms.
-
-    ![](images/download/attachments/8367112/image2019-3-3_18_38_47.png){height="250"}
+    the fewest
+    alarms.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_18\_38\_47.png](/images/download/attachments/8367112/image2019-3-3_18_38_47.png)
 
 Where to go next depends on what data you see, but a few options
 include:
 
--   Hover over the Total Alarms chart to focus on the switches
-    exhibiting alarms during that smaller time slice.\
+  - Hover over the Total Alarms chart to focus on the switches
+    exhibiting alarms during that smaller time slice.  
     The table content changes to match the hovered content. Click on the
     chart to persist the table changes.
 
--   Change the time period for the data to compare with a prior time. If
+  - Change the time period for the data to compare with a prior time. If
     the same switches are consistently indicating the most alarms, you
     might want to look more carefully at those switches using the
     Switches card workflow.
 
--   Click **Show All Sessions** to investigate all LLDP sessions with
-    events in a full screen card.
+  - Click **Show All Sessions** to investigate all LLDP sessions with
+    events in a full screen
+card.
 
-## View All LLDP Events
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewAllLLDPEvents" class="section section-2">
+
+### View All LLDP Events
 
 The LLDP Network Services card workflow enables you to view all of the
 LLDP events in the designated time period.
@@ -2002,54 +1965,71 @@ To view all LLDP events:
 
 1.  Open the full screen LLDP Service card.
 
-2.  Click the **All Alarms** tab.
-
-    ![](images/download/attachments/8367112/image2019-3-3_18_43_5.png)
+2.  Click the **All Alarms**
+    tab.
+    
+    ![/images/download/attachments/8367112/image2019-3-3\_18\_43\_5.png](/images/download/attachments/8367112/image2019-3-3_18_43_5.png)
 
 Where to go next depends on what data you see, but a few options
 include:
 
--   Open the **All Switches** or **All Sessions** tabs to look more
+  - Open the **All Switches** or **All Sessions** tabs to look more
     closely at the alarms from the switch or session perspective.
 
--   Sort on other parameters:
-
-    -   by **Message** to determine the frequency of particular events
-
-    -   by **Severity** to determine the most critical events
-
-    -   by **Time** to find events that may have occurred at a
+  - Sort on other parameters:
+    
+      - by **Message** to determine the frequency of particular events
+    
+      - by **Severity** to determine the most critical events
+    
+      - by **Time** to find events that may have occurred at a
         particular time to try to correlate them with other system
         events
 
--   Return to your workbench by clicking
-    ![](images/download/attachments/8367112/close-14.svg) in the top
-    right corner
+  - Return to your workbench by clicking
+    ![/images/download/attachments/8367112/close-14.svg](/images/download/attachments/8367112/close-14.svg)
+    in the top right
+corner
 
-## View Detailed Information About All Switches Running BGP
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewDetailedInformationAboutAllSwitchesRunningBGP" class="section section-2">
+
+### View Detailed Information About All Switches Running BGP
 
 You can view all stored attributes of all switches running LLDP in your
 network in the full screen card.
 
 To view all switch details, open the LLDP Service card, and click the
-**All Switches** tab.
+**All Switches**
+tab.
 
-![](images/download/attachments/8367112/image2019-3-3_18_45_2.png)
+![/images/download/attachments/8367112/image2019-3-3\_18\_45\_2.png](/images/download/attachments/8367112/image2019-3-3_18_45_2.png)
 
 To return to your workbench, click
-![](images/download/attachments/8367112/close.png) next to the title of
-the full-screen card.
+![/images/download/attachments/8367112/close.png](/images/download/attachments/8367112/close.png)
+next to the title of the full-screen
+card.
 
-## View Detailed Information About All LLDP Sessions
+</div>
+
+<div id="src-8367112_MonitorNetworkProtocolsandServices-ViewDetailedInformationAboutAllLLDPSessions" class="section section-2">
+
+### View Detailed Information About All LLDP Sessions
 
 You can view all stored attributes of all LLDP sessions in your network
 in the full screen card.
 
 To view all session details, open the LLDP Service card, and click the
-**All Sessions** tab.
+**All Sessions**
+tab.
 
-![](images/download/attachments/8367112/image2019-3-3_18_47_2.png)
+![/images/download/attachments/8367112/image2019-3-3\_18\_47\_2.png](/images/download/attachments/8367112/image2019-3-3_18_47_2.png)
 
 To return to your workbench, click
-![](images/download/attachments/8367112/close.png) next to the title of
-the full-screen card.
+![/images/download/attachments/8367112/close.png](/images/download/attachments/8367112/close.png)
+next to the title of the full-screen card.
+
+</div>
+
+</div>

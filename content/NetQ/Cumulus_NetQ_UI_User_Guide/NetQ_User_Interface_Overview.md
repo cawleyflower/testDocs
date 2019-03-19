@@ -1,3 +1,5 @@
+\--- title: author: keywords: ---
+
 # NetQ User Interface Overview
 
 The NetQ 2.0.0 graphical user interface (UI) enables you to access NetQ
@@ -9,14 +11,21 @@ both find faults and misconfigurations and to fix them.
 The UI is supported on Google Chrome. Other popular browsers may be
 used, but have not been tested and may have some presentation issues.
 
+<div class="confbox admonition admonition-tip">
+
+<div class="admonition-body">
+
 {{% notice tip %}} Before you get started, you should refer to the
-release notes for this version. {{% /notice %}}
+release notes for this version. {{% /notice
+%}}
 
-# Contents
+</div>
 
-This topic describes...
+</div>
 
-# Access the NetQ UI
+<div id="src-8365523_NetQUserInterfaceOverview-AccesstheNetQUI" class="section section-1">
+
+## Access the NetQ UI
 
 Logging in to the NetQ UI is as easy as opening any web page.
 
@@ -24,17 +33,17 @@ To log in to the UI:
 
 1.  Open a new Internet browser window or tab.
 
-2.  Enter the following URL into the Address bar: http:// *&lt;
-    netq\_platform\_ipaddress&gt;:32666.*
-
-    ![](images/download/attachments/8365523/image2019-2-19_10_20_1.png){height="250"}
+2.  Enter the following URL into the Address bar: http:// *\<
+    netq\_platform\_ipaddress\>:32666.*
+    
+    ![/images/download/attachments/8365523/image2019-2-19\_10\_20\_1.png](/images/download/attachments/8365523/image2019-2-19_10_20_1.png)
 
 3.  Select your language of choice (English or Spanish) from the
     dropdown at the top of the window.
 
 4.  Enter your username and then your password ( *admin, admin* by
-    default).\
-    ![](images/download/attachments/8365523/image2019-2-19_10_31_4.png)\
+    default).  
+    ![/images/download/attachments/8365523/image2019-2-19\_10\_31\_4.png](/images/download/attachments/8365523/image2019-2-19_10_31_4.png)  
     The default Cumulus Workbench opens, with your username showing in
     the upper right corner of the application.
 
@@ -42,60 +51,83 @@ To log out of the UI:
 
 1.  Click the user icon at the top right of the application.
 
-2.  Select **Log Out.**
+2.  Select **Log
+Out.**
 
-# Application Layout
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-ApplicationLayout" class="section section-1">
+
+## Application Layout
 
 The NetQ UI contains three main areas:
 
--   **Navigation History** (1): Provides quick access to your recent
+  - **Navigation History** (1): Provides quick access to your recent
     actions.
 
--   **Application Header** (2): Contains the main menu, search
+  - **Application Header** (2): Contains the main menu, search
     capabilities, quick health status chart, and user account
     information.
 
--   **Workbench** (3): Contains a task bar, targeted content cards with
+  - **Workbench** (3): Contains a task bar, targeted content cards with
     status and configuration information about your network and its
-    various components, and the software version.
+    various components, and the software
+version.
 
-![](images/download/attachments/8365523/image2019-2-19_10_36_12.png)
+![/images/download/attachments/8365523/image2019-2-19\_10\_36\_12.png](/images/download/attachments/8365523/image2019-2-19_10_36_12.png)
 
-# Main Menu
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-MainMenu" class="section section-1">
+
+## Main Menu
 
 Found in the application header, click
-![](images/download/attachments/8365523/image2018-12-10_15_56_55.png) to
-open the main menu which provides navigation to:
+![/images/download/attachments/8365523/image2018-12-10\_15\_56\_55.png](/images/download/attachments/8365523/image2018-12-10_15_56_55.png)
+to open the main menu which provides navigation to:
 
--   **Favorites**: contains list of links to workbenches that you have
+  - **Favorites**: contains list of links to workbenches that you have
     designated as favorites; Home is listed by default
 
--   **NetQ**: contains list of links to all workbenches in the
+  - **NetQ**: contains list of links to all workbenches in the
     application
 
--   **Network**: contains list of links to tabular data about various
+  - **Network**: contains list of links to tabular data about various
     network elements
 
--   **Admin**: contains link to user documentation
+  - **Admin**: contains link to user
+documentation
 
-![](images/download/attachments/8365523/image2019-2-19_10_39_9.png)
+![/images/download/attachments/8365523/image2019-2-19\_10\_39\_9.png](/images/download/attachments/8365523/image2019-2-19_10_39_9.png)
 
 The content of the NetQ and Favorites lists change as you create and
-favorite workbenches.
+favorite
+workbenches.
 
-# Quick Network Health View
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-QuickNetworkHealthView" class="section section-1">
+
+## Quick Network Health View
 
 Found in the header, the graph and performance rating provide a view
-into the health of your network at a glance.
+into the health of your network at a
+glance.
 
-![](images/download/attachments/8365523/image2019-2-4_16_2_35.png)
+![/images/download/attachments/8365523/image2019-2-4\_16\_2\_35.png](/images/download/attachments/8365523/image2019-2-4_16_2_35.png)
 
-# Search
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-Search" class="section section-1">
+
+## Search
 
 The Global Search field in the UI header enables you to search for
 devices.
 
-## Create a Search
+<div id="src-8365523_NetQUserInterfaceOverview-CreateaSearch" class="section section-2">
+
+### Create a Search
 
 As with most search fields, simply begin entering the criteria in the
 search field. As you type, items that match the search criteria are
@@ -114,11 +146,16 @@ To create a new search:
 2.  Enter your search criteria.
 
 3.  Click the device hostname or card workflow in the search list to
-    open the associated information.
+    open the associated
+    information.
+    
+    ![/images/download/attachments/8365523/image2019-2-19\_10\_44\_41.png](/images/download/attachments/8365523/image2019-2-19_10_44_41.png)
 
-    ![](images/download/attachments/8365523/image2019-2-19_10_44_41.png)
+</div>
 
-## Run a Recent Search
+<div id="src-8365523_NetQUserInterfaceOverview-RunaRecentSearch" class="section section-2">
+
+### Run a Recent Search
 
 If you did not save a recent search, but want to rerun the search, you
 can check the navigation panel to see if it is in the actions list. If
@@ -131,11 +168,18 @@ actions list:
 
 3.  When the desired search appears in the suggested searches list,
     select it. You may need to click **See All \# Results** to find the
-    desired search.
+    desired
+    search.
+    
+    ![/images/download/attachments/8365523/image2019-2-19\_10\_42\_9.png](/images/download/attachments/8365523/image2019-2-19_10_42_9.png)
 
-    ![](images/download/attachments/8365523/image2019-2-19_10_42_9.png)
+</div>
 
-# Workbenches
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-Workbenches" class="section section-1">
+
+## Workbenches
 
 A workbench is comprised of a given set of cards. Each user may have one
 or more workbenches. A user might create a workbench that focuses on
@@ -143,31 +187,40 @@ each category of tasks for which he is responsible. For example, a user
 could create a workbench focused on Switch Performance and a workbench
 focused on Inventory. A set of preconfigured default workbenches are
 available to get you started; however, they can can be modified to
-better suit your specific tasks.
+better suit your specific
+tasks.
 
-## Default Workbenches
+<div id="src-8365523_NetQUserInterfaceOverview-DefaultWorkbenches" class="section section-2">
+
+### Default Workbenches
 
 The Cumulus Workbench is the default workbench provided with the UI. It
 contains Device Inventory, Switch Inventory, Alarm and Info Events, and
 Network Health cards.
 
 On initial login, if the default workbench is not open, click
-![](images/download/attachments/8365523/image2019-2-13_20_29_27.png) and
-select Cumulus Workbench from the NetQ category. After that, to open a
-different workbench:
+![/images/download/attachments/8365523/image2019-2-13\_20\_29\_27.png](/images/download/attachments/8365523/image2019-2-13_20_29_27.png)
+and select Cumulus Workbench from the NetQ category. After that, to open
+a different workbench:
 
 1.  Click
-    ![](images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U)
+    ![/images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U](/images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U)
     in the Workbench header.
 
-2.  Select the desired workbench.
-
-    ![](images/download/attachments/8365523/image2019-2-19_10_49_42.png)
+2.  Select the desired
+    workbench.
+    
+    ![/images/download/attachments/8365523/image2019-2-19\_10\_49\_42.png](/images/download/attachments/8365523/image2019-2-19_10_49_42.png)
 
 You can modify a workbench by adding or removing cards or card decks, as
-described in Add or Remove a Card .
+described in Add or Remove a Card
+.
 
-## Create Custom Workbench
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-CreateCustomWorkbench" class="section section-2">
+
+### Create Custom Workbench
 
 When the default workbench does not meet your needs, you can create
 custom workbenches.
@@ -175,20 +228,27 @@ custom workbenches.
 To create a custom workbench:
 
 1.  Click
-    ![](images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U)
+    ![/images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U](/images/lh5.googleusercontent.com/V88gxOaxuUjBWw5tni0vwGrNs2JBQsz0SwWFpQCdJTOSYfuUGQnpkWz8-cHDSF-jZsE4TeZfpRhaeIhOU7UIZZE2AwtP870d78GBCwuD0Kzqb7TbAiDnX5hgQh5DC68zoKgoLd5U)
     in the Workbench header.
 
 2.  Select **Cumulus Workbench**.
 
 3.  Click
-    ![](images/lh5.googleusercontent.com/jACUqufGvJcFmOEzwCU-709HG49Ef79ioLejTcqOTyr3oSfpjbonBH8UAjyIesHqBpoqgobOZnfDTX6bwZnOoecjebnHWawtX1rQrDNzdXYIzoTBJMWyVQSkjO6OeDGcB_C0Igfv)
+    ![/images/lh5.googleusercontent.com/jACUqufGvJcFmOEzwCU-709HG49Ef79ioLejTcqOTyr3oSfpjbonBH8UAjyIesHqBpoqgobOZnfDTX6bwZnOoecjebnHWawtX1rQrDNzdXYIzoTBJMWyVQSkjO6OeDGcB\_C0Igfv](/images/lh5.googleusercontent.com/jACUqufGvJcFmOEzwCU-709HG49Ef79ioLejTcqOTyr3oSfpjbonBH8UAjyIesHqBpoqgobOZnfDTX6bwZnOoecjebnHWawtX1rQrDNzdXYIzoTBJMWyVQSkjO6OeDGcB_C0Igfv)
     to remove all cards if you want to start with a clean slate.
 
 4.  Follow the instruction in [Add or Remove a
     Card](#src-8365523_NetQUserInterfaceOverview-AddDelCard) to a dd or
-    remove individual cards or card decks.
+    remove individual cards or card
+decks.
 
-# Cards
+</div>
+
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-Cards" class="section section-1">
+
+## Cards
 
 Cards present information about your network for monitoring and
 troubleshooting. This is where you can expect to spend most of your
@@ -200,18 +260,24 @@ detailed information on the full-screen view. Cards are collected onto a
 workbench where you see all of the data relevant to a task or set of
 tasks. You can add and remove cards from a workbench, move between cards
 and card sizes, and make copies of cards to show different levels of
-data at the same time.
+data at the same
+time.
 
-## Card Sizes
+<div id="src-8365523_NetQUserInterfaceOverview-CardSizes" class="section section-2">
+
+### Card Sizes
 
 The various sizes of cards enables you to view your content at just the
 right level. For each aspect that you are monitoring there is typically
 a single card, that presents increasing amounts of data over its four
 sizes. For example, a snapshot of your total inventory may be
 sufficient, but to monitor the distribution of hardware vendors may
-requires a bit more space.
+requires a bit more
+space.
 
-### Small Cards
+<div id="src-8365523_NetQUserInterfaceOverview-SmallCards" class="section section-3">
+
+#### Small Cards
 
 Small cards are most effective at providing a quick view of the
 performance or statistical value of a given aspect of your network. They
@@ -220,11 +286,16 @@ monitored, summary performance or statistics in the form of a graph
 and/or counts, and often an indication of any related events. Other
 content items may be present. Some examples include a Devices Inventory
 card, a Switch Inventory card, an Alarm Events card, an Info Events
-card, and a Network Health card, as shown here:
+card, and a Network Health card, as shown
+here:
 
-![](images/download/attachments/8365523/image2019-2-19_10_54_2.png)
+![/images/download/attachments/8365523/image2019-2-19\_10\_54\_2.png](/images/download/attachments/8365523/image2019-2-19_10_54_2.png)
 
-### Medium Cards
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-MediumCards" class="section section-3">
+
+#### Medium Cards
 
 Medium cards are most effective at providing the key measurements for a
 given aspect of your network. They are commonly comprised of an icon to
@@ -233,11 +304,16 @@ make up the overall performance. Often additional information is also
 included, such as related events or components. Some examples include a
 Devices Inventory card, a Switch Inventory card, an Alarm Events card,
 an Info Events card, and a Network Health card, as shown here. Compare
-these with their related small- and large-sized cards.
+these with their related small- and large-sized
+cards.
 
-![](images/download/attachments/8365523/image2019-2-19_11_1_42.png)
+![/images/download/attachments/8365523/image2019-2-19\_11\_1\_42.png](/images/download/attachments/8365523/image2019-2-19_11_1_42.png)
 
-### Large Cards
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-LargeCards" class="section section-3">
+
+#### Large Cards
 
 Large cards are most effective at providing the detailed information for
 monitoring specific components or functions of a given aspect of your
@@ -247,24 +323,34 @@ statistics and graphics. Some large cards also have tabs for additional
 detail about a given statistic or other related information. Some
 examples include a Devices Inventory card, an Alarm Events card, and a
 Network Health card, as shown here. Compare these with their related
-small- and medium-sized cards.
+small- and medium-sized
+cards.
 
-![](images/download/attachments/8365523/image2019-2-19_11_4_45.png)
+![/images/download/attachments/8365523/image2019-2-19\_11\_4\_45.png](/images/download/attachments/8365523/image2019-2-19_11_4_45.png)
 
-### Full-Screen Cards
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-Full-ScreenCards" class="section section-3">
+
+#### Full-Screen Cards
 
 Full-screen cards are most effective for viewing all available data
 about an aspect of your network all in one place. When you cannot find
 what you need in the small, medium, or large cards, it is likely on the
 full-screen card. Most full-screen cards are comprised of data grid, or
 table; however, some contain visualizations. Some examples include All
-Events card and All Switches card, as shown here.
+Events card and All Switches card, as shown
+here.
 
-![](images/download/attachments/8365523/image2019-2-19_11_13_52.png)
+![/images/download/attachments/8365523/image2019-2-19\_11\_13\_52.png](/images/download/attachments/8365523/image2019-2-19_11_13_52.png)
 
-![](images/download/attachments/8365523/image2019-2-19_11_15_42.png)
+![/images/download/attachments/8365523/image2019-2-19\_11\_15\_42.png](/images/download/attachments/8365523/image2019-2-19_11_15_42.png)
 
-### Data Grid Settings
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-DataGridSettings" class="section section-3">
+
+#### Data Grid Settings
 
 You can manipulate the data in a data grid in a full screen card in
 several ways.
@@ -272,13 +358,13 @@ several ways.
 *Sort Data by Column*
 
 Hover over a column header and click
-![](images/lh3.googleusercontent.com/3rtgOOjZrQnbTdoelUi8ABzIsqZqZGRvrggdthbirqmuJcElrlQqWsd1UDZNafvkFHeqVkkRvfS34h8HmqTVSvVIoCpoygqj2VrhKAmjrZrvw3FTkQyM1FkDgAp3ZAihUoaOuN-v)
+![/images/lh3.googleusercontent.com/3rtgOOjZrQnbTdoelUi8ABzIsqZqZGRvrggdthbirqmuJcElrlQqWsd1UDZNafvkFHeqVkkRvfS34h8HmqTVSvVIoCpoygqj2VrhKAmjrZrvw3FTkQyM1FkDgAp3ZAihUoaOuN-v](/images/lh3.googleusercontent.com/3rtgOOjZrQnbTdoelUi8ABzIsqZqZGRvrggdthbirqmuJcElrlQqWsd1UDZNafvkFHeqVkkRvfS34h8HmqTVSvVIoCpoygqj2VrhKAmjrZrvw3FTkQyM1FkDgAp3ZAihUoaOuN-v)
 .
 
 *Choose Columns to Display*
 
 1.  Click
-    ![](images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w)
+    ![/images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl\_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w](/images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w)
     at the top right of the card.
 
 2.  Click **Change Columns**.
@@ -286,54 +372,77 @@ Hover over a column header and click
 3.  Click the checkbox next to each column name to toggle on/off the
     columns you would like displayed. Columns listed under **Active**
     are displayed. Columns listed under **Inactive** are not displayed.
-
+    
+    <div class="confbox admonition admonition-tip">
+    
+    <div class="admonition-body">
+    
     {{% notice tip %}} When you have a large number of possible columns
     for display, you can search for the column name using the Quick
     Filter to find and select or deselect the column more quickly. {{%
     /notice %}}
+    
+    </div>
+    
+    </div>
 
 4.  Click
-    ![](images/lh4.googleusercontent.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T)
+    ![/images/lh4.googleusercontent.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI\_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T](/images/lh4.googleusercontent.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T)
     to close the selection box and view the updated data grid.
 
 *Change Order of Columns*
 
 1.  Click
-    ![](images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w)
+    ![/images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl\_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w](/images/lh5.googleusercontent.com/TxyRotE-Ks3VoU0rMfISNSl_V0m0yXqQyq8cn7CI6da54YIrMvzU8ttAOXmnbpUJdXBIQBG9OothePcEuJ-DoNYR1SdJIpW6RAlGd5wXxJdRcI0HPR3eMMcrSwotbHTrjqUNFH3w)
     and then click **Change Columns**.
 
 2.  Hover over a column name.
 
 3.  Point to the six dots to the left of the checkbox.
 
-4.  Click and drag the selected column up or down in the list.
-
-    ![](images/download/attachments/8365523/image2019-2-19_11_26_10.png){height="250"}
+4.  Click and drag the selected column up or down in the
+    list.
+    
+    ![/images/download/attachments/8365523/image2019-2-19\_11\_26\_10.png](/images/download/attachments/8365523/image2019-2-19_11_26_10.png)
 
 5.  Click
-    ![](images/lh4.googleusercontent.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T)
-    to close the selection box and view the updated data grid.
+    ![/images/lh4.googleusercontent.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI\_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T](/images/lh4.googleusercontent.com/DO5d-BvJ-vciNs7f0SlTY72rHmQgJpxHGUYsRkK0aDIMZ2VQP9ygWJzCZH5qouUZGI3MZOvOxdfvn8dt8xMxBI_4UvJVTZMJVnmb5Za0LEdQ3lOeqs01w942HG2AJ14kJm1sY56T)
+    to close the selection box and view the updated data
+grid.
 
-### Export Data
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-ExportData" class="section section-3">
+
+#### Export Data
 
 You can export tabular data from a full screen card to a CSV- or
 JSON-formatted file.
 
 To export the data:
 
-1.  Click **EXPORT**.
+1.  Click
+    **EXPORT**.
+    
+    ![/images/download/attachments/8365523/image2019-2-19\_11\_35\_31.png](/images/download/attachments/8365523/image2019-2-19_11_35_31.png)
 
-    ![](images/download/attachments/8365523/image2019-2-19_11_35_31.png)
-
-2.  Select all data or selected data for export in the dialog box:
-
-    ![](images/download/attachments/8365523/image2019-2-13_20_51_19.png){height="250"}
+2.  Select all data or selected data for export in the dialog
+    box:
+    
+    ![/images/download/attachments/8365523/image2019-2-13\_20\_51\_19.png](/images/download/attachments/8365523/image2019-2-13_20_51_19.png)
 
 3.  Select the export format.
 
-4.  Click **EXPORT** to save the file to your downloads directory.
+4.  Click **EXPORT** to save the file to your downloads
+directory.
 
-### Card Size Summary
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-CardSizeSummary" class="section section-3">
+
+#### Card Size Summary
+
+<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -378,7 +487,15 @@ To export the data:
 </tbody>
 </table>
 
-## Card Interactions
+</div>
+
+</div>
+
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-CardInteractions" class="section section-2">
+
+### Card Interactions
 
 Every card contains a standard set of interactions, including the
 ability to switch between card sizes, and change the time period of the
@@ -392,9 +509,12 @@ back of the cards.
 
 To access the time period, card size, and additional actions, hover over
 the card. These options appear, covering the card header, enabling you
-to select the desired option.
+to select the desired
+option.
 
-### Change the Time Period for the Card Data
+<div id="src-8365523_NetQUserInterfaceOverview-ChangetheTimePeriodfortheCardData" class="section section-3">
+
+#### Change the Time Period for the Card Data
 
 All cards have a default time period for the data shown on the card,
 typically the last 24 hours. You can change the time period to view the
@@ -407,14 +527,28 @@ To change the time period for a card:
 
 2.  Click in the header .
 
-3.  Select a time period from the dropdown list.
+3.  Select a time period from the dropdown
+    list.
+    
+    ![/images/download/attachments/8365523/image2019-2-19\_11\_47\_45.png](/images/download/attachments/8365523/image2019-2-19_11_47_45.png)
 
-    ![](images/download/attachments/8365523/image2019-2-19_11_47_45.png)
+<div class="confbox admonition admonition-tip">
+
+<div class="admonition-body">
 
 {{% notice tip %}} Changing the time period in this manner only changes
-the time period for the given card. {{% /notice %}}
+the time period for the given card. {{% /notice
+%}}
 
-### Switch to a Different Card Size
+</div>
+
+</div>
+
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-SwitchtoaDifferentCardSize" class="section section-3">
+
+#### Switch to a Different Card Size
 
 You can switch between the different card sizes at any time. Only one
 size is visible at a time. To view the same card in different sizes,
@@ -425,18 +559,24 @@ To change the card size:
 1.  Hover over the card.
 
 2.  Hover over the Card Size Picker and move the cursor to the right or
-    left until the desired size option is highlighted.
-
-    ![](images/download/attachments/8365523/image2019-2-19_11_50_3.png)
-
+    left until the desired size option is
+    highlighted.
+    
+    ![/images/download/attachments/8365523/image2019-2-19\_11\_50\_3.png](/images/download/attachments/8365523/image2019-2-19_11_50_3.png)
+    
     Single width opens a small card. Double width opens a medium card.
     Triple width opens large cards. Full width opens full-screen cards.
 
-3.  Click the Picker.\
+3.  Click the Picker.  
     The card changes to the selected size, and may move its location on
-    the workbench.
+    the
+workbench.
 
-### Reposition a Card on Your Workbench
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-RepositionaCardonYourWorkbench" class="section section-3">
+
+#### Reposition a Card on Your Workbench
 
 You can also move cards around on the workbench.
 
@@ -450,25 +590,33 @@ To move a card:
     small card on the top right to the left of the medium Devices
     Inventory card. Note when you release the small card, it appears
     greyed out in its original location and the Devices Inventory card
-    has the blue dotted line around it.
+    has the blue dotted line around
+    it.
+    
+    ![/images/download/attachments/8365523/image2019-2-19\_11\_58\_18.png](/images/download/attachments/8365523/image2019-2-19_11_58_18.png)
 
-    ![](images/download/attachments/8365523/image2019-2-19_11_58_18.png){height="250"}
+3.  Click the card with the highlight to move the original
+    card.
+    
+    ![/images/download/attachments/8365523/image2019-2-19\_12\_1\_10.png](/images/download/attachments/8365523/image2019-2-19_12_1_10.png)
 
-3.  Click the card with the highlight to move the original card.
+</div>
 
-    ![](images/download/attachments/8365523/image2019-2-19_12_1_10.png){height="250"}
+</div>
 
-## Add or Remove a Card
+<div id="src-8365523_NetQUserInterfaceOverview-AddDelCardAddorRemoveaCard" class="section section-2">
+
+### Add or Remove a Card
 
 You can add or remove cards from a workbench at any time.
 
 To add a card:
 
 1.  Click
-    ![](images/download/attachments/8365523/image2019-1-28_16_24_47.png)
+    ![/images/download/attachments/8365523/image2019-1-28\_16\_24\_47.png](/images/download/attachments/8365523/image2019-1-28_16_24_47.png)
     .
-
-    ![](images/download/attachments/8365523/image2019-2-13_20_58_15.png)
+    
+    ![/images/download/attachments/8365523/image2019-2-13\_20\_58\_15.png](/images/download/attachments/8365523/image2019-2-13_20_58_15.png)
 
 2.  Select a card from the available list.
 
@@ -482,52 +630,63 @@ To remove a card:
 1.  Hover over the card you want to remove.
 
 2.  Click
-    ![](images/lh4.googleusercontent.com/2VPuKgI9RmbIKGMWYHIZEgLjxxWCG47tMpYrG3KB_60oZ6U6KdeSlUq-mh8gxLyPqLWv7SFVtoBZPxEzGhsXt79fSwNbJEGRetV44mEE33K47ysvnQHGvfYaRTBwMBmXKQVVUWCx)
+    ![/images/lh4.googleusercontent.com/2VPuKgI9RmbIKGMWYHIZEgLjxxWCG47tMpYrG3KB\_60oZ6U6KdeSlUq-mh8gxLyPqLWv7SFVtoBZPxEzGhsXt79fSwNbJEGRetV44mEE33K47ysvnQHGvfYaRTBwMBmXKQVVUWCx](/images/lh4.googleusercontent.com/2VPuKgI9RmbIKGMWYHIZEgLjxxWCG47tMpYrG3KB_60oZ6U6KdeSlUq-mh8gxLyPqLWv7SFVtoBZPxEzGhsXt79fSwNbJEGRetV44mEE33K47ysvnQHGvfYaRTBwMBmXKQVVUWCx)
     (*More Actions* menu).
 
-3.  Click **Remove**.
+3.  Click
+    **Remove**.
+    
+    ![/images/download/attachments/8365523/image2019-2-19\_12\_6\_2.png](/images/download/attachments/8365523/image2019-2-19_12_6_2.png)
 
-    ![](images/download/attachments/8365523/image2019-2-19_12_6_2.png)
+The card is removed from the workbench, but not from the
+application.
 
-The card is removed from the workbench, but not from the application.
+</div>
 
-# Card Workflows
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-CardWorkflows" class="section section-1">
+
+## Card Workflows
 
 The UI provides a number of card workflows. Card workflows focus on a
 particular aspect of your network and are a linked set of each size
 card—a small card, a medium card, one or more large cards, and one or
 more full-screen cards. The following card workflows are available:
 
--   Network Health: network-wide view of network health
+  - Network Health: network-wide view of network health
 
--   Device Inventory: information about all switches and hosts in the
+  - Device Inventory: information about all switches and hosts in the
     network
 
--   Switch Inventory: information about the components on a given switch
+  - Switch Inventory: information about the components on a given switch
 
--   Alarm Events: information about all critical severity events in the
+  - Alarm Events: information about all critical severity events in the
     system
 
--   Info Events: information about all warning, info, and debug events
-    in the system
+  - Info Events: information about all warning, info, and debug events
+    in the
+system
 
-## Access a Card Workflow
+<div id="src-8365523_NetQUserInterfaceOverview-AccessaCardWorkflow" class="section section-2">
+
+### Access a Card Workflow
 
 You can access a card workflow in multiple ways:
 
--   For workbenches available from the main menu, open the workbench
+  - For workbenches available from the main menu, open the workbench
     that contains the card flow
 
--   Open a prior search
+  - Open a prior search
 
--   Add it to a workbench
+  - Add it to a workbench
 
--   Search for it
+  - Search for it
 
 To open the card workflow through a default workbench:
 
 1.  Click
-    ![](images/lh4.googleusercontent.com/Ihm0JTW8BKRYhfGAskurMhk7YX22cYSDKBcT2M8G6PMR9hGBjfVrIno9QFPLjaNzMeedQw1R2Tun8TRNT5T8PWnrL7k63hLMx4ZMb59L8vXjvxmzbQznzTOxXq5G4dp-DD8-aC97)
+    ![/images/lh4.googleusercontent.com/Ihm0JTW8BKRYhfGAskurMhk7YX22cYSDKBcT2M8G6PMR9hGBjfVrIno9QFPLjaNzMeedQw1R2Tun8TRNT5T8PWnrL7k63hLMx4ZMb59L8vXjvxmzbQznzTOxXq5G4dp-DD8-aC97](/images/lh4.googleusercontent.com/Ihm0JTW8BKRYhfGAskurMhk7YX22cYSDKBcT2M8G6PMR9hGBjfVrIno9QFPLjaNzMeedQw1R2Tun8TRNT5T8PWnrL7k63hLMx4ZMb59L8vXjvxmzbQznzTOxXq5G4dp-DD8-aC97)
     .
 
 2.  Select the relevant workbench.
@@ -538,7 +697,7 @@ To open the card workflow from a prior search:
 
 1.  Browse your search list in the navigation panel.
 
-2.  Look for an "Add: &lt;card name&gt;" item.
+2.  Look for an "Add: \<card name\>" item.
 
 3.  If it is still available, click the item.
 
@@ -547,16 +706,24 @@ The card appears on the current workbench, at the bottom.
 To access the card workflow by adding the card:
 
 1.  Click
-    ![](images/lh6.googleusercontent.com/JaXSSELl_nz1tMCRgnfs7dN4bErlnOHc-uteFbWlsLyCqW2khDGqUCVZcZYusEdlvGhDj3cml3sU0YGQq0aST_mpgZe-p1d07LL4bP-GsWr7Xcozg7w7cDhpyYeCSgkrYRFDW9xx)
+    ![/images/lh6.googleusercontent.com/JaXSSELl\_nz1tMCRgnfs7dN4bErlnOHc-uteFbWlsLyCqW2khDGqUCVZcZYusEdlvGhDj3cml3sU0YGQq0aST\_mpgZe-p1d07LL4bP-GsWr7Xcozg7w7cDhpyYeCSgkrYRFDW9xx](/images/lh6.googleusercontent.com/JaXSSELl_nz1tMCRgnfs7dN4bErlnOHc-uteFbWlsLyCqW2khDGqUCVZcZYusEdlvGhDj3cml3sU0YGQq0aST_mpgZe-p1d07LL4bP-GsWr7Xcozg7w7cDhpyYeCSgkrYRFDW9xx)
     .
 
 2.  Select the relevant card.
 
 The card appears on the current workbench, at the bottom.
 
+<div class="confbox admonition admonition-tip">
+
+<div class="admonition-body">
+
 {{% notice tip %}} If you have multiple cards open on your workbench
 already, you might need to scroll down to see the card you have just
 added. {{% /notice %}}
+
+</div>
+
+</div>
 
 To access the card workflow by searching for the card:
 
@@ -566,9 +733,16 @@ To access the card workflow by searching for the card:
 
 3.  Select it from the list.
 
-The card appears on a current workbench, at the bottom.
+The card appears on a current workbench, at the
+bottom.
 
-# Card Decks
+</div>
+
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-CardDecks" class="section section-1">
+
+## Card Decks
 
 A card deck is a collection of related cards that can be added and
 removed from a workbench all at once. They are distinct from card
@@ -578,15 +752,22 @@ performing a broader task. It also simplifies the creation of new
 workbenches when a card deck is available. The following card decks are
 provided by default:
 
--   Inventory: includes the medium Inventory \| Switch card
+  - Inventory: includes the medium Inventory | Switch card
 
--   Events: includes the medium Events \| Alarms card and the small
-    Events \| Info card
+  - Events: includes the medium Events | Alarms card and the small
+    Events | Info
+card
 
-# Basic Terminology and Acronyms
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-BasicTerminologyandAcronyms" class="section section-1">
+
+## Basic Terminology and Acronyms
 
 The following table covers some basic terms used throughout the NetQ
 user documentation.
+
+<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -712,258 +893,91 @@ user documentation.
 </tbody>
 </table>
 
+</div>
+
 The following table covers some common acronyms used throughout the NetQ
 user documentation.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Acronym</p></th>
-<th><p>Meaning</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>ACL</p></td>
-<td><p>Access Control Link</p></td>
-</tr>
-<tr class="even">
-<td><p>ARP</p></td>
-<td><p>Address Resolution Protocol</p></td>
-</tr>
-<tr class="odd">
-<td><p>ASN</p></td>
-<td><p>Autonomous System Number</p></td>
-</tr>
-<tr class="even">
-<td><p>BGP/eBGP/iBGP</p></td>
-<td><p>Border Gateway Protocol, External BGP, Internal BGP</p></td>
-</tr>
-<tr class="odd">
-<td><p>CLAG</p></td>
-<td><p>Cumulus multi-chassis Link Aggregation Group</p></td>
-</tr>
-<tr class="even">
-<td><p>DHCP</p></td>
-<td><p>Dynamic Host Control Protocol</p></td>
-</tr>
-<tr class="odd">
-<td><p>DNS</p></td>
-<td><p>Domain Name Server</p></td>
-</tr>
-<tr class="even">
-<td><p>ECMP</p></td>
-<td><p>Equal Cost Multi-Path routing</p></td>
-</tr>
-<tr class="odd">
-<td><p>EVPN</p></td>
-<td><p>Ethernet Virtual Private Network</p></td>
-</tr>
-<tr class="even">
-<td><p>FDB</p></td>
-<td><p>Forwarding Data Base</p></td>
-</tr>
-<tr class="odd">
-<td><p>GNU</p></td>
-<td><p>GNU’s Not Linux</p></td>
-</tr>
-<tr class="even">
-<td><p>HA</p></td>
-<td><p>High Availability</p></td>
-</tr>
-<tr class="odd">
-<td><p>IGMP</p></td>
-<td><p>Internet Group Management Protocol</p></td>
-</tr>
-<tr class="even">
-<td><p>IPv4/IPv6</p></td>
-<td><p>Internet Protocol, version 4 or 6</p></td>
-</tr>
-<tr class="odd">
-<td><p>LACP</p></td>
-<td><p>Link Aggregation Control Protocol</p></td>
-</tr>
-<tr class="even">
-<td><p>LAN</p></td>
-<td><p>Local Area Network</p></td>
-</tr>
-<tr class="odd">
-<td><p>LLDP</p></td>
-<td><p>Link Layer Data Protocol</p></td>
-</tr>
-<tr class="even">
-<td><p>MAC</p></td>
-<td><p>Media Access Control</p></td>
-</tr>
-<tr class="odd">
-<td><p>MIB</p></td>
-<td><p>Management Information Base</p></td>
-</tr>
-<tr class="even">
-<td><p>MLAG</p></td>
-<td><p>Multi-chassis Link Aggregation Group</p></td>
-</tr>
-<tr class="odd">
-<td><p>MLD</p></td>
-<td><p>Multicast Listener Discovery</p></td>
-</tr>
-<tr class="even">
-<td><p>NTP</p></td>
-<td><p>Network Time Protocol</p></td>
-</tr>
-<tr class="odd">
-<td><p>OOB</p></td>
-<td><p>Out of Band (management)</p></td>
-</tr>
-<tr class="even">
-<td><p>OSPF</p></td>
-<td><p>Open Shortest Path First</p></td>
-</tr>
-<tr class="odd">
-<td><p>RFC</p></td>
-<td><p>Remote Function Call</p></td>
-</tr>
-<tr class="even">
-<td><p>SDN</p></td>
-<td><p>Software-Defined Network</p></td>
-</tr>
-<tr class="odd">
-<td><p>SNMP</p></td>
-<td><p>Simple Network Management Protocol</p></td>
-</tr>
-<tr class="even">
-<td><p>SSH</p></td>
-<td><p>Secure SHell</p></td>
-</tr>
-<tr class="odd">
-<td><p>SQL</p></td>
-<td><p>Structured Query Language</p></td>
-</tr>
-<tr class="even">
-<td><p>STP</p></td>
-<td><p>Spanning Tree Protocol</p></td>
-</tr>
-<tr class="odd">
-<td><p>TCP</p></td>
-<td><p>Transport Control Protocol</p></td>
-</tr>
-<tr class="even">
-<td><p>ToR</p></td>
-<td><p>Top of Rack</p></td>
-</tr>
-<tr class="odd">
-<td><p>UDP</p></td>
-<td><p>User Datagram Protocol</p></td>
-</tr>
-<tr class="even">
-<td><p>URL</p></td>
-<td><p>Universal Resource Locator</p></td>
-</tr>
-<tr class="odd">
-<td><p>USB</p></td>
-<td><p>Universal Serial Bus</p></td>
-</tr>
-<tr class="even">
-<td><p>VLAN</p></td>
-<td><p>Virtual Local Area Network</p></td>
-</tr>
-<tr class="odd">
-<td><p>VNI</p></td>
-<td><p>Virtual Network Instance</p></td>
-</tr>
-<tr class="even">
-<td><p>VPN</p></td>
-<td><p>Virtual Private Network</p></td>
-</tr>
-<tr class="odd">
-<td><p>VRF</p></td>
-<td><p>Virtual Routing and Forwarding</p></td>
-</tr>
-<tr class="even">
-<td><p>VRR</p></td>
-<td><p>Virtual Router Redundancy</p></td>
-</tr>
-<tr class="odd">
-<td><p>VTEP</p></td>
-<td><p>VXLAN Tunnel EndPoint</p></td>
-</tr>
-<tr class="even">
-<td><p>VXLAN</p></td>
-<td><p>Virtual Extensible Local Area Network</p></td>
-</tr>
-<tr class="odd">
-<td><p>ZTP</p></td>
-<td><p>Zero Touch Provisioning</p></td>
-</tr>
-</tbody>
-</table>
+<div class="tablewrap">
+
+| Acronym       | Meaning                                             |
+| ------------- | --------------------------------------------------- |
+| ACL           | Access Control Link                                 |
+| ARP           | Address Resolution Protocol                         |
+| ASN           | Autonomous System Number                            |
+| BGP/eBGP/iBGP | Border Gateway Protocol, External BGP, Internal BGP |
+| CLAG          | Cumulus multi-chassis Link Aggregation Group        |
+| DHCP          | Dynamic Host Control Protocol                       |
+| DNS           | Domain Name Server                                  |
+| ECMP          | Equal Cost Multi-Path routing                       |
+| EVPN          | Ethernet Virtual Private Network                    |
+| FDB           | Forwarding Data Base                                |
+| GNU           | GNU’s Not Linux                                     |
+| HA            | High Availability                                   |
+| IGMP          | Internet Group Management Protocol                  |
+| IPv4/IPv6     | Internet Protocol, version 4 or 6                   |
+| LACP          | Link Aggregation Control Protocol                   |
+| LAN           | Local Area Network                                  |
+| LLDP          | Link Layer Data Protocol                            |
+| MAC           | Media Access Control                                |
+| MIB           | Management Information Base                         |
+| MLAG          | Multi-chassis Link Aggregation Group                |
+| MLD           | Multicast Listener Discovery                        |
+| NTP           | Network Time Protocol                               |
+| OOB           | Out of Band (management)                            |
+| OSPF          | Open Shortest Path First                            |
+| RFC           | Remote Function Call                                |
+| SDN           | Software-Defined Network                            |
+| SNMP          | Simple Network Management Protocol                  |
+| SSH           | Secure SHell                                        |
+| SQL           | Structured Query Language                           |
+| STP           | Spanning Tree Protocol                              |
+| TCP           | Transport Control Protocol                          |
+| ToR           | Top of Rack                                         |
+| UDP           | User Datagram Protocol                              |
+| URL           | Universal Resource Locator                          |
+| USB           | Universal Serial Bus                                |
+| VLAN          | Virtual Local Area Network                          |
+| VNI           | Virtual Network Instance                            |
+| VPN           | Virtual Private Network                             |
+| VRF           | Virtual Routing and Forwarding                      |
+| VRR           | Virtual Router Redundancy                           |
+| VTEP          | VXLAN Tunnel EndPoint                               |
+| VXLAN         | Virtual Extensible Local Area Network               |
+| ZTP           | Zero Touch Provisioning                             |
+
+</div>
 
 Format Cues
 
 Color is used to indicate links, options, and status within the UI.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><p>Item</p></th>
-<th><p>Color</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Hover on item</p></td>
-<td><p>Blue</p></td>
-</tr>
-<tr class="even">
-<td><p>Clickable item</p></td>
-<td><p>Black</p></td>
-</tr>
-<tr class="odd">
-<td><p>Selected item</p></td>
-<td><p>Green</p></td>
-</tr>
-<tr class="even">
-<td><p>Highlighted item</p></td>
-<td><p>Blue</p></td>
-</tr>
-<tr class="odd">
-<td><p>Link</p></td>
-<td><p>Blue</p></td>
-</tr>
-<tr class="even">
-<td><p>Good/Successful results</p></td>
-<td><p>Green</p></td>
-</tr>
-<tr class="odd">
-<td><p>Result with critical severity event</p></td>
-<td><p>Pink</p></td>
-</tr>
-<tr class="even">
-<td><p>Result with high severity event</p></td>
-<td><p>Red</p></td>
-</tr>
-<tr class="odd">
-<td><p>Result with medium severity event</p></td>
-<td><p>Orange</p></td>
-</tr>
-<tr class="even">
-<td><p>Result with low severity event</p></td>
-<td><p>Yellow</p></td>
-</tr>
-</tbody>
-</table>
+<div class="tablewrap">
 
-# Get Help
+| Item                                | Color  |
+| ----------------------------------- | ------ |
+| Hover on item                       | Blue   |
+| Clickable item                      | Black  |
+| Selected item                       | Green  |
+| Highlighted item                    | Blue   |
+| Link                                | Blue   |
+| Good/Successful results             | Green  |
+| Result with critical severity event | Pink   |
+| Result with high severity event     | Red    |
+| Result with medium severity event   | Orange |
+| Result with low severity event      | Yellow |
+
+</div>
+
+</div>
+
+<div id="src-8365523_NetQUserInterfaceOverview-GetHelp" class="section section-1">
+
+## Get Help
 
 You can access the user documentation for the UI from the Main Menu.
 Just click
-![](images/download/attachments/8365523/image2019-1-28_16_51_0.png) and
-select *Help Documentation* under the ADMIN category.
+![/images/download/attachments/8365523/image2019-1-28\_16\_51\_0.png](/images/download/attachments/8365523/image2019-1-28_16_51_0.png)
+and select *Help Documentation* under the ADMIN category.
+
+</div>

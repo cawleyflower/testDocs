@@ -1,3 +1,5 @@
+\--- title: author: keywords: ---
+
 # Monitor the Network
 
 The topics contained in this section describe monitoring tasks that
