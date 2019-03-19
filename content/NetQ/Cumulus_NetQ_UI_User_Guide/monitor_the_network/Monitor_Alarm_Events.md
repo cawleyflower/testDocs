@@ -9,11 +9,7 @@ To focus on events from a single device perspective, refer to Monitor
 Switches . To monitor informational alarms, refer to [Monitor
 Informational Events](Monitor_Informational_Events).
 
-# Contents
-
-This topic describes how to...
-
-# Alarms Card Workflow Summary
+## Alarms Card Workflow Summary
 
 The small Alarms card displays:
 
@@ -66,7 +62,7 @@ The large Alarms card displays:
 
 The full screen Alarms card provides tabs for all events.
 
-# View Alarm Status Summary
+## View Alarm Status Summary
 
 A summary of the critical alarms in the network includes the number of
 alarms, a trend indicator, a performance indicator, and a distribution
@@ -92,9 +88,9 @@ where:
 
 To view the summary, open the small Alarms card.
 
-![](images/download/attachments/8365539/image2019-2-19_16_26_35.png)
+![](/images/download/attachments/8365539/image2019-2-19_16_26_35.png)
 
-# View the Distribution of Alarms
+## View the Distribution of Alarms
 
 It is helpful to know where and when alarms are occurring in your
 network. The Alarms card workflow enables you to see the distribution of
@@ -105,14 +101,14 @@ category.
 To view the alarm distribution, open the medium Alarms card. Scroll down
 to view all of the charts.
 
-![](images/download/attachments/8365539/image2019-2-19_16_28_50.png){height="250"}
+![](/images/download/attachments/8365539/image2019-2-19_16_28_50.png){height="250"}
 
-# Monitor System and Interface Alarm Details
+## Monitor System and Interface Alarm Details
 
 The Alarms card workflow enables users to easily view and track critical
 severity system and interface alarms occurring anywhere in your network.
 
-## View All System and Interface Alarms
+### View All System and Interface Alarms
 
 You can view the alarms associated with the system and interfaces using
 the Alarms card workflow. You can sort alarms based on their occurrence
@@ -120,7 +116,7 @@ or view devices with the most network services alarms.
 
 To view network services alarms, open the large Alarms card.
 
-![](images/download/attachments/8365539/image2019-2-19_16_35_50.png){height="250"}
+![](/images/download/attachments/8365539/image2019-2-19_16_35_50.png){height="250"}
 
 From this card, you can view the distribution of alarms for each of the
 categories over time. Scroll down to view any hidden charts. A list of
@@ -129,16 +125,16 @@ the associated alarms is also displayed.
 By default, the list of the most recent alarms for the systems and
 interfaces is displayed when viewing the large cards.
 
-## View Devices with the Most Alarms
+### View Devices with the Most Alarms
 
 You can filter instead for the devices that have the most alarms.
 
 To view devices with the most alarms, open the large Alarms card, and
 then select **Devices by event count** from the dropdown.
 
-![](images/download/attachments/8365539/image2019-2-19_16_40_52.png){height="250"}
+![](/images/download/attachments/8365539/image2019-2-19_16_40_52.png){height="250"}
 
-## Filter Alarms by System or Interface
+### Filter Alarms by System or Interface
 
 You can focus your view to include alarms for selected system or
 interface categories.
@@ -158,9 +154,9 @@ To filter for selected categories:
 
 In this example, we removed the Services from the event listing.
 
-![](images/download/attachments/8365539/image2019-2-19_16_50_42.png){height="250"}
+![](/images/download/attachments/8365539/image2019-2-19_16_50_42.png){height="250"}
 
-## Compare Alarms with a Prior Time
+### Compare Alarms with a Prior Time
 
 You can change the time period for the data to compare with a prior
 time. If the same devices are consistently indicating the most alarms,
@@ -179,14 +175,14 @@ To compare two time periods:
     contain a large amount of data.
 
 4.  Hover over the card and click
-    ![](images/lh4.googleusercontent.com/fo-yr9tPWzyO_CQPDiddcB5tmuwuX1OS7nIlj4_9iA3_6xnmg_c-54SmAAdNJL_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw)
+    ![](/images/lh4.googleusercontent.com/fo-yr9tPWzyO_CQPDiddcB5tmuwuX1OS7nIlj4_9iA3_6xnmg_c-54SmAAdNJL_odR0UGjeTSxRHw2BHkeZ3YEfiwOhjpUeHVwPVd8s4F2XwOGnRWXD4NfaIzj86ETYgEU8frnzw)
     .
 
-    ![](images/download/attachments/8365539/image2019-2-19_17_20_17.png)
+    ![](/images/download/attachments/8365539/image2019-2-19_17_20_17.png)
 
 5.  Select a different time period.\
-    ![](images/download/attachments/8365539/image2019-2-19_17_22_49.png){height="250"}
-    ![](images/download/attachments/8365539/image2019-2-19_17_22_58.png){height="250"}
+    ![](/images/download/attachments/8365539/image2019-2-19_17_22_49.png){height="250"}
+    ![](/images/download/attachments/8365539/image2019-2-19_17_22_58.png){height="250"}
 
 6.  Compare the two cards with the **Devices by event count** filter
     applied.\
@@ -194,25 +190,25 @@ To compare two time periods:
     has the most alarms in each time period, so it might be worth
     investigating this device in more detail.
 
-# View All Events
+## View All Events
 
 You can view all events in the network either by clicking the **Show All
 Events** link under the table on the large Alarm Events card, or by
 opening the full screen Alarm Events card.
 
-![](images/download/attachments/8365539/image2019-2-19_17_31_15.png) OR
-![](images/download/attachments/8365539/image2019-2-19_17_32_19.png)
+![](/images/download/attachments/8365539/image2019-2-19_17_31_15.png) OR
+![](/images/download/attachments/8365539/image2019-2-19_17_32_19.png)
 
 To return to your workbench, click
-![](images/download/attachments/8365539/close.png) in the top right
+![](/images/download/attachments/8365539/close.png) in the top right
 corner of the card.
 
-# Alarms Reference
+## Alarms Reference
 
 The following table lists alarm messages organized by message type, by
 default. Click the column header to sort the list by that
 characteristic. Click
-![](images/download/attachments/8365539/image2018-12-5_17_18_48.png) in
+![](/images/download/attachments/8365539/image2018-12-5_17_18_48.png) in
 any column header to toggle the sort order between A-Z and Z-A.
 
 {{% notice info %}} The messages can be viewed in syslog or through
