@@ -43,7 +43,7 @@ a list of ports interested in receiving multicast traffic destined to
 that
 group.
 
-![images/download/attachments/8362696/igmp\_snoop\_diagram.png](images/download/attachments/8362696/igmp_snoop_diagram.png)
+![/images/download/attachments/8362696/igmp\_snoop\_diagram.png](/images/download/attachments/8362696/igmp_snoop_diagram.png)
 
 ## Configure IGMP/MLD Snooping over VXLAN
 

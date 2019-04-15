@@ -233,7 +233,7 @@ connected to bridge-B. This means that:
   - host-1 and host-2 cannot communicate with host-3 and
 host-4.
 
-![images/download/attachments/8362670/multiple-bridges.png](images/download/attachments/8362670/multiple-bridges.png)
+![/images/download/attachments/8362670/multiple-bridges.png](/images/download/attachments/8362670/multiple-bridges.png)
 
 This example configuration looks like this in the
 `/etc/network/interfaces` file:
@@ -303,7 +303,7 @@ state.
 
 ### Trunk Example
 
-![images/download/attachments/8362670/trunk.png](images/download/attachments/8362670/trunk.png)
+![/images/download/attachments/8362670/trunk.png](/images/download/attachments/8362670/trunk.png)
 
 To create the above example, add the following configuration to the
 `/etc/network/interfaces` file:

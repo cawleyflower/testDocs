@@ -13,7 +13,7 @@ IPv4 and once for IPv6. Following are the configurations on the server
 hosts, DHCP relay, and DHCP server using the following
 topology:
 
-![images/download/attachments/8363036/dhcp\_relay\_topo.png](images/download/attachments/8363036/dhcp_relay_topo.png)
+![/images/download/attachments/8363036/dhcp\_relay\_topo.png](/images/download/attachments/8363036/dhcp_relay_topo.png)
 
 {{%notice warning%}}
 

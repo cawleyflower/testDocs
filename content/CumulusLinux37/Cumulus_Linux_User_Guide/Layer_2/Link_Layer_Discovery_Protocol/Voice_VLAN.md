@@ -26,7 +26,7 @@ Data traffic is always
 
 ## Cumulus Linux Voice VLAN Example
 
-![images/support.cumulusnetworks.com/hc/en-us/article\_attachments/217676187/voice-vlan.png](images/support.cumulusnetworks.com/hc/en-us/article_attachments/217676187/voice-vlan.png)
+![/images/support.cumulusnetworks.com/hc/en-us/article\_attachments/217676187/voice-vlan.png](/images/support.cumulusnetworks.com/hc/en-us/article_attachments/217676187/voice-vlan.png)
 
 You can configure the topology above using the following
 [NCLU](Network_Command_Line_Utility_-_NCLU.html) commands. In this

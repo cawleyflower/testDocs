@@ -104,7 +104,7 @@ to tier 1 node 1.3. It is also a route reflector client, learning the
 routes between tier 2 nodes 2.2 and 2.3 from the tier 3 node,
 3.1.
 
-![images/download/thumbnails/8362926/bgp\_route\_reflectors.png](images/download/thumbnails/8362926/bgp_route_reflectors.png)
+![/images/download/thumbnails/8362926/bgp\_route\_reflectors.png](/images/download/thumbnails/8362926/bgp_route_reflectors.png)
 
 {{%notice note%}}
 
@@ -1854,7 +1854,7 @@ network is a best practice you should follow. The following image
 illustrates one way you can do so in a typical Clos
 architecture:
 
-![images/download/attachments/8362926/BGP\_Advertisement\_Best\_Practices.png](images/download/attachments/8362926/BGP_Advertisement_Best_Practices.png)
+![/images/download/attachments/8362926/BGP\_Advertisement\_Best\_Practices.png](/images/download/attachments/8362926/BGP_Advertisement_Best_Practices.png)
 
 ### Multiple Routing Tables and Forwarding
 

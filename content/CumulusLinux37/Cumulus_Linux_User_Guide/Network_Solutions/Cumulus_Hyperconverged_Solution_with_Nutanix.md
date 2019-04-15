@@ -97,7 +97,7 @@ configuration focuses on the leaf01 and leaf02 switches. Configurations
 for spine01 and spine02 are not
 included.
 
-![images/download/attachments/9012165/Cumulus\_Nutanix\_topo.png](images/download/attachments/9012165/Cumulus_Nutanix_topo.png)
+![/images/download/attachments/9012165/Cumulus\_Nutanix\_topo.png](/images/download/attachments/9012165/Cumulus_Nutanix_topo.png)
 
 ## Configure Cumulus HCS and Nutanix
 

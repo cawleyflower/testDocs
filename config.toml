@@ -5,6 +5,8 @@ theme = "netDocs"
 
 #URL fixes
 canonifyURLs = true
+
+
 #Book configuration
 disablePathToLower = true
 enableGitInfo= false

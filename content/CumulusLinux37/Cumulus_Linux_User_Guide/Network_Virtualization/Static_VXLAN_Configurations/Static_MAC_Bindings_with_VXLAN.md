@@ -33,7 +33,7 @@ For a basic VXLAN configuration, make sure that:
 Consider the following
 example:
 
-![images/download/attachments/8362790/vxlan.png](images/download/attachments/8362790/vxlan.png)
+![/images/download/attachments/8362790/vxlan.png](/images/download/attachments/8362790/vxlan.png)
 
 {{%notice warning%}}
 

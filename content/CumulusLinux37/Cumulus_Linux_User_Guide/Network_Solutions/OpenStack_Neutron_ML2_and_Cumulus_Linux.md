@@ -29,7 +29,7 @@ Cumulus Linux switches, you need the following:
     node. It's available as a Python package from
 upstream.
 
-![images/download/attachments/8362989/ml2\_driver\_arch.png](images/download/attachments/8362989/ml2_driver_arch.png)
+![/images/download/attachments/8362989/ml2\_driver\_arch.png](/images/download/attachments/8362989/ml2_driver_arch.png)
 
 ## Configure the REST API
 

@@ -48,7 +48,7 @@ subinterfaces.
 
 {{%/notice%}}
 
-![images/download/attachments/8362691/vrr\_active-active.png](images/download/attachments/8362691/vrr_active-active.png)
+![/images/download/attachments/8362691/vrr\_active-active.png](/images/download/attachments/8362691/vrr_active-active.png)
 
 A production implementation will have many more server hosts and network
 connections than are shown here. However, this basic configuration
@@ -515,7 +515,7 @@ VRRP in detail.
 The following example illustrates a basic VRRP
 configuration.
 
-![images/download/attachments/8362691/VRRP\_illustration.png](images/download/attachments/8362691/VRRP_illustration.png)
+![/images/download/attachments/8362691/VRRP\_illustration.png](/images/download/attachments/8362691/VRRP_illustration.png)
 
 ### Configure VRRP
 

@@ -28,7 +28,7 @@ trunk.
 
 {{%/notice%}}
 
-![images/download/attachments/8362655/example-bridge.png](images/download/attachments/8362655/example-bridge.png)
+![/images/download/attachments/8362655/example-bridge.png](/images/download/attachments/8362655/example-bridge.png)
 
 {{%notice tip%}}
 

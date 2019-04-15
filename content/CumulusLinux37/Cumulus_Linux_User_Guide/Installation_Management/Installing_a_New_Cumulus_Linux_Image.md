@@ -59,7 +59,7 @@ installation proceeds as follows:
 4.  Success\! You are now running Cumulus
     Linux.
     
-    ![images/download/attachments/8362643/onie\_install\_dhcp.png](images/download/attachments/8362643/onie_install_dhcp.png)
+    ![/images/download/attachments/8362643/onie\_install\_dhcp.png](/images/download/attachments/8362643/onie_install_dhcp.png)
 
 {{%notice note%}}
 

@@ -1561,7 +1561,7 @@ However, duplicate detection does *not* trigger on VTEP-A when mobility
 events occur between two remote VTEPs (VTEP-B and
 VTEP-C).
 
-![images/download/attachments/8362732/DAD\_example.png](images/download/attachments/8362732/DAD_example.png)
+![/images/download/attachments/8362732/DAD\_example.png](/images/download/attachments/8362732/DAD_example.png)
 
 #### Configure Duplicate Address Detection
 

@@ -31,7 +31,7 @@ The Voyager platform has 16 ports on the front of the switch:
     module connects to four Tomahawk ASIC
 ports.
 
-![images/download/attachments/8363049/voyagerPorts.png](images/download/attachments/8363049/voyagerPorts.png)
+![/images/download/attachments/8363049/voyagerPorts.png](/images/download/attachments/8363049/voyagerPorts.png)
 
 The `fc` designations on the Tomahawk stand for Falcon Core. Each AC400
 module has four 100G interfaces connected to the Tomahawk and two
@@ -94,21 +94,21 @@ interface to network interface connections are as follows:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><img src="images/download/attachments/8363049/image2018-2-22_13_55_38.png" alt="images/download/attachments/8363049/image2018-2-22_13_55_38.png" class="confluence-embedded-image" /></p></td>
+<td><p><img src="/images/download/attachments/8363049/image2018-2-22_13_55_38.png" alt="/images/download/attachments/8363049/image2018-2-22_13_55_38.png" class="confluence-embedded-image" /></p></td>
 <td><p>In this configuration, two client interfaces, 0 and 2, are mapped to the two network interfaces. Client interfaces 1 and 3 are not used.</p></td>
 </tr>
 <tr class="even">
-<td><p><img src="images/download/attachments/8363049/image2018-2-22_13_57_29.png" alt="images/download/attachments/8363049/image2018-2-22_13_57_29.png" class="confluence-embedded-image" /></p></td>
+<td><p><img src="/images/download/attachments/8363049/image2018-2-22_13_57_29.png" alt="/images/download/attachments/8363049/image2018-2-22_13_57_29.png" class="confluence-embedded-image" /></p></td>
 <td><p>In this configuration, two client interfaces are mapped to each network interface. Each network interface, therefore, has two tributaries.</p></td>
 </tr>
 <tr class="odd">
-<td><p><img src="images/download/attachments/8363049/image2018-2-22_13_59_58.png" alt="images/download/attachments/8363049/image2018-2-22_13_59_58.png" class="confluence-embedded-image" /></p>
-<p><img src="images/download/attachments/8363049/image2018-2-22_14_0_23.png" alt="images/download/attachments/8363049/image2018-2-22_14_0_23.png" class="confluence-embedded-image" /></p></td>
+<td><p><img src="/images/download/attachments/8363049/image2018-2-22_13_59_58.png" alt="/images/download/attachments/8363049/image2018-2-22_13_59_58.png" class="confluence-embedded-image" /></p>
+<p><img src="/images/download/attachments/8363049/image2018-2-22_14_0_23.png" alt="/images/download/attachments/8363049/image2018-2-22_14_0_23.png" class="confluence-embedded-image" /></p></td>
 <td><p>These configurations are combinations of the previous two.</p>
 <p>The network interface configured for QPSK connects to one client interface and the network interface configured for 16-QAM connects to two client interfaces.</p></td>
 </tr>
 <tr class="even">
-<td><p><img src="images/download/attachments/8363049/image2018-2-22_14_1_32.png" alt="images/download/attachments/8363049/image2018-2-22_14_1_32.png" class="confluence-embedded-image" /></p></td>
+<td><p><img src="/images/download/attachments/8363049/image2018-2-22_14_1_32.png" alt="/images/download/attachments/8363049/image2018-2-22_14_1_32.png" class="confluence-embedded-image" /></p></td>
 <td><p>This configuration uses three client interfaces, for a total of 300Gbps; 150Gbps on each network interface. Because the network interfaces are coupled, they cannot be connected to different far-end systems. Each network interface carries three tributaries.</p></td>
 </tr>
 </tbody>

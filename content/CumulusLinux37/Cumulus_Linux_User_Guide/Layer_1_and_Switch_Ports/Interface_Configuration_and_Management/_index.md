@@ -392,7 +392,7 @@ You can use `dot` to render the graph on an external system where `dot`
 is
 installed.
 
-![images/download/attachments/8363023/interfaces.png](images/download/attachments/8363023/interfaces.png)
+![/images/download/attachments/8363023/interfaces.png](/images/download/attachments/8363023/interfaces.png)
 
 To print the dependency information of the entire `interfaces` file:
 
@@ -403,7 +403,7 @@ cumulus@switch:~$ sudo ifquery --print-dependency=dot -a >interfaces_all.dot
     
 ```
 
-![images/download/attachments/8363023/interfaces\_all.png](images/download/attachments/8363023/interfaces_all.png)
+![/images/download/attachments/8363023/interfaces\_all.png](/images/download/attachments/8363023/interfaces_all.png)
 
 ## Subinterfaces
 

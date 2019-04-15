@@ -19,7 +19,7 @@ Protocol](Border_Gateway_Protocol_-_BGP.html)
 
 ## Architecture
 
-![images/download/attachments/8362917/daemons.png](images/download/attachments/8362917/daemons.png)
+![/images/download/attachments/8362917/daemons.png](/images/download/attachments/8362917/daemons.png)
 
 <span id="src-8362917_indexterm-2B982F7259FAB50D978630B526A44DF2">As
 shown in the figure above, the FRRouting suite consists of various

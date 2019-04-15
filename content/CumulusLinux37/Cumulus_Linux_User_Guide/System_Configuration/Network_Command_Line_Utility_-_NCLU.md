@@ -25,7 +25,7 @@ and sub-modes. NCLU provides these benefits:
   - Configures dependent features automatically so that you don't have
     to.
 
-![images/download/attachments/8362580/Linux-NCLU-Architecture.png](images/download/attachments/8362580/Linux-NCLU-Architecture.png)
+![/images/download/attachments/8362580/Linux-NCLU-Architecture.png](/images/download/attachments/8362580/Linux-NCLU-Architecture.png)
 
 The NCLU wrapper utility called `net` is capable of configuring layer 2
 and layer 3 features of the networking stack, installing ACLs and

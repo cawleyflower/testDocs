@@ -147,7 +147,7 @@ layer 2 traffic originating from the host. You can configure the anycast
 address under the loopback interface, as shown
 below.
 
-![images/download/thumbnails/8362725/VXLAN\_active\_active\_excerpt.png](images/download/thumbnails/8362725/VXLAN_active_active_excerpt.png)
+![/images/download/thumbnails/8362725/VXLAN\_active\_active\_excerpt.png](/images/download/thumbnails/8362725/VXLAN_active_active_excerpt.png)
 
 ``` 
                     leaf01 /etc/network/interfaces snippet
@@ -173,7 +173,7 @@ iface lo inet loopback
 
 ## Example VXLAN Active-Active Configuration
 
-![images/download/attachments/8362725/VXLAN\_active\_active.png](images/download/attachments/8362725/VXLAN_active_active.png)
+![/images/download/attachments/8362725/VXLAN\_active\_active.png](/images/download/attachments/8362725/VXLAN_active_active.png)
 
 Note the configuration of the local IP address in the VXLAN interfaces
 below. They are configured with individual IP addresses, which `clagd`

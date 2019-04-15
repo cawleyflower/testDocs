@@ -55,7 +55,7 @@ area to another must go through the backbone area. For example, you can
 divide the leaf-spine topology into the following
 areas:
 
-![images/download/attachments/8362922/ospf-areas.png](images/download/attachments/8362922/ospf-areas.png)
+![/images/download/attachments/8362922/ospf-areas.png](/images/download/attachments/8362922/ospf-areas.png)
 
 {{%notice note%}}
 
@@ -317,7 +317,7 @@ scenario:
 
 {{%/notice%}}
 
-![images/download/attachments/8362922/ospf-summarization.png](images/download/attachments/8362922/ospf-summarization.png)
+![/images/download/attachments/8362922/ospf-summarization.png](/images/download/attachments/8362922/ospf-summarization.png)
 
 As shown in the diagram, the ABRs in the right non-zero area summarize
 the host prefixes as 10.1.0.0/16. When the link between R5 and R10

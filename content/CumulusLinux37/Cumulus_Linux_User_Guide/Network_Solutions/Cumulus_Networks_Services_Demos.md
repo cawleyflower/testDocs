@@ -23,7 +23,7 @@ Professional Services Team at Cumulus Networks to fit a majority of
 designs seen in the
 field.
 
-![images/download/attachments/8362987/reference\_topology.png](images/download/attachments/8362987/reference_topology.png)
+![/images/download/attachments/8362987/reference\_topology.png](/images/download/attachments/8362987/reference_topology.png)
 
 ### IP and MAC Addressing
 

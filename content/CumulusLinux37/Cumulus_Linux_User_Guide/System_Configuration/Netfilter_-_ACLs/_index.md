@@ -142,7 +142,7 @@ are known as
 and are shown
 here:
 
-![images/download/attachments/8362563/Linux\_Traffic\_Inspection\_Points\_%28Chains%29.png](images/download/attachments/8362563/Linux_Traffic_Inspection_Points_%28Chains%29.png)
+![/images/download/attachments/8362563/Linux\_Traffic\_Inspection\_Points\_%28Chains%29.png](/images/download/attachments/8362563/Linux_Traffic_Inspection_Points_%28Chains%29.png)
 
 The chains and their uses are:
 
@@ -185,10 +185,10 @@ green are supported by Cumulus Linux, those in red are not supported
 (that is, they are not hardware accelerated) at this
 time.
 
-![images/download/thumbnails/8362563/Linux\_IPtables\_Default\_Tables.png](images/download/thumbnails/8362563/Linux_IPtables_Default_Tables.png)
-![images/download/thumbnails/8362563/Linux\_EBtables\_Default\_Tables.png](images/download/thumbnails/8362563/Linux_EBtables_Default_Tables.png)
+![/images/download/thumbnails/8362563/Linux\_IPtables\_Default\_Tables.png](/images/download/thumbnails/8362563/Linux_IPtables_Default_Tables.png)
+![/images/download/thumbnails/8362563/Linux\_EBtables\_Default\_Tables.png](/images/download/thumbnails/8362563/Linux_EBtables_Default_Tables.png)
 
-![images/download/attachments/8362563/Legend\_%281%29.png](images/download/attachments/8362563/Legend_%281%29.png)
+![/images/download/attachments/8362563/Legend\_%281%29.png](/images/download/attachments/8362563/Legend_%281%29.png)
 
 ### Rules
 
@@ -197,13 +197,13 @@ Rules are applied to chains, which are attached to tables, similar to
 the graphic
 below.
 
-![images/download/thumbnails/8362563/Tables\_Chains\_Rules.png](images/download/thumbnails/8362563/Tables_Chains_Rules.png)
+![/images/download/thumbnails/8362563/Tables\_Chains\_Rules.png](/images/download/thumbnails/8362563/Tables_Chains_Rules.png)
 
 Rules have several different components; the examples below highlight
 those different
 components.
 
-![images/download/attachments/8362563/Anatomy\_of\_a\_Rule.png](images/download/attachments/8362563/Anatomy_of_a_Rule.png)
+![/images/download/attachments/8362563/Anatomy\_of\_a\_Rule.png](/images/download/attachments/8362563/Anatomy_of_a_Rule.png)
 
   - **Table:** The first argument is the *table*. Notice the second
     example does not specify a table, that is because the filter table
@@ -380,13 +380,13 @@ In Cumulus Linux, *update mode* is enabled by default. However, this
 mode limits the number of ACL rules that you can
 configure.
 
-![images/download/attachments/8362563/TCAM\_ACL\_update\_operation\_atomic.png](images/download/attachments/8362563/TCAM_ACL_update_operation_atomic.png)
+![/images/download/attachments/8362563/TCAM\_ACL\_update\_operation\_atomic.png](/images/download/attachments/8362563/TCAM_ACL_update_operation_atomic.png)
 
 To increase the number of ACL rules that can be configured, configure
 the switch to operate in *nonatomic
 mode*.
 
-![images/download/attachments/8362563/TCAM\_ACL\_update\_operation\_nonatomic.png](images/download/attachments/8362563/TCAM_ACL_update_operation_nonatomic.png)
+![/images/download/attachments/8362563/TCAM\_ACL\_update\_operation\_nonatomic.png](/images/download/attachments/8362563/TCAM_ACL_update_operation_nonatomic.png)
 
 How the Rules Get Installed
 
@@ -398,9 +398,9 @@ If there is insufficient free space to complete this task, the original
 nonatomic update is performed, which interrupts
 traffic.
 
-![images/download/attachments/8362563/TCAM\_ACL\_update\_del.png](images/download/attachments/8362563/TCAM_ACL_update_del.png)
+![/images/download/attachments/8362563/TCAM\_ACL\_update\_del.png](/images/download/attachments/8362563/TCAM_ACL_update_del.png)
 
-![images/download/attachments/8362563/TCAM\_ACL\_update\_add.png](images/download/attachments/8362563/TCAM_ACL_update_add.png)
+![/images/download/attachments/8362563/TCAM\_ACL\_update\_add.png](/images/download/attachments/8362563/TCAM_ACL_update_add.png)
 
 #### Enable Nonatomic Update Mode
 
@@ -1119,7 +1119,7 @@ switch.
 
 <span id="src-8362563_Netfilter-ACLs-examples"></span>The following
 example scenario demonstrates how several different rules are applied.
-![images/download/attachments/8362563/acl-diagram.png](images/download/attachments/8362563/acl-diagram.png)
+![/images/download/attachments/8362563/acl-diagram.png](/images/download/attachments/8362563/acl-diagram.png)
 
 Following are the configurations for the two switches used in these
 examples. The configuration for each switch appears in

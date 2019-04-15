@@ -19,7 +19,7 @@ streamlined interface configuration from </span>`ifupdown2`.
 hosts connected to a
 switch.
 
-![images/download/thumbnails/8362655/vlan-trunks-bond-simple.png](images/download/thumbnails/8362655/vlan-trunks-bond-simple.png)
+![/images/download/thumbnails/8362655/vlan-trunks-bond-simple.png](/images/download/thumbnails/8362655/vlan-trunks-bond-simple.png)
 
   - *host1* connects to swp1 with both untagged frames and with 802.1Q
     frames tagged for *vlan100*.
@@ -62,7 +62,7 @@ example of </span>VLAN tagging is more complex, involving three hosts
 and two switches, with a number of bridges and a bond connecting them
 all.
 
-*![images/download/attachments/8362655/vlan-trunks-bond.png](images/download/attachments/8362655/vlan-trunks-bond.png)*
+*![/images/download/attachments/8362655/vlan-trunks-bond.png](/images/download/attachments/8362655/vlan-trunks-bond.png)*
 
   - *host1* connects to bridge *br-untagged* with bare Ethernet frames
     and to bridge *br-tag100* with 802.1q frames tagged for *vlan100*.
@@ -374,4 +374,4 @@ br_mix          8000.4438390032bd       yes             swp10.100
     
 ```
 
-![images/download/thumbnails/8362655/mixed-vlans.png](images/download/thumbnails/8362655/mixed-vlans.png)
+![/images/download/thumbnails/8362655/mixed-vlans.png](/images/download/thumbnails/8362655/mixed-vlans.png)

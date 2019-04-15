@@ -114,7 +114,7 @@ graph G {
     
 ```
 
-![images/download/attachments/8362701/2s2l2s.png](images/download/attachments/8362701/2s2l2s.png)
+![/images/download/attachments/8362701/2s2l2s.png](/images/download/attachments/8362701/2s2l2s.png)
 
 ## Advanced PTM Configuration
 

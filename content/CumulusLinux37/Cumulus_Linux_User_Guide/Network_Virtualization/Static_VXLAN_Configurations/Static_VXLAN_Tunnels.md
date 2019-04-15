@@ -70,7 +70,7 @@ The following topology is used in this chapter. Each IP address
 corresponds to the loopback address of the
 switch.
 
-![images/download/attachments/8362793/static\_vxlan\_tunnels.png](images/download/attachments/8362793/static_vxlan_tunnels.png)
+![/images/download/attachments/8362793/static\_vxlan\_tunnels.png](/images/download/attachments/8362793/static_vxlan_tunnels.png)
 
 ## Configure Static VXLAN Tunnels
 

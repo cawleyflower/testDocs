@@ -61,7 +61,7 @@ is more scalable.
 An example configuration could look like the
 following:
 
-![images/download/attachments/8362784/QinQ\_single\_tag\_translation.png](images/download/attachments/8362784/QinQ_single_tag_translation.png)
+![/images/download/attachments/8362784/QinQ\_single\_tag\_translation.png](/images/download/attachments/8362784/QinQ_single_tag_translation.png)
 
 You configure two switches: one at the service provider edge that faces
 the customer (the switch on the left above), and one on the public cloud
@@ -299,7 +299,7 @@ it.
 An example configuration could look like the
 following:
 
-![images/download/attachments/8362784/qinq\_double\_tag\_translation.png](images/download/attachments/8362784/qinq_double_tag_translation.png)
+![/images/download/attachments/8362784/qinq\_double\_tag\_translation.png](/images/download/attachments/8362784/qinq_double_tag_translation.png)
 
 To configure the switch for double tag translation using the above
 example, edit the `/etc/network/interfaces` file in a text editor and
@@ -367,7 +367,7 @@ iface br10
     
 ```
 
-![images/download/attachments/8362784/qinq\_double\_tagged\_no\_vxlan.png](images/download/attachments/8362784/qinq_double_tagged_no_vxlan.png)
+![/images/download/attachments/8362784/qinq\_double\_tagged\_no\_vxlan.png](/images/download/attachments/8362784/qinq_double_tagged_no_vxlan.png)
 
 {{%/notice%}}
 

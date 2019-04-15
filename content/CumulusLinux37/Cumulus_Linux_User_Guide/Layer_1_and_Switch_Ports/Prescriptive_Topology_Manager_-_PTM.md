@@ -107,7 +107,7 @@ graph G {
     
 ```
 
-![images/download/attachments/8363021/2s2l2s\_DOT.png](images/download/attachments/8363021/2s2l2s_DOT.png)
+![/images/download/attachments/8363021/2s2l2s\_DOT.png](/images/download/attachments/8363021/2s2l2s_DOT.png)
 
 ## ptmd Scripts
 

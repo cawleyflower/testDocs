@@ -13,7 +13,7 @@ NSX-MH controller provides consistent provisioning across virtual and
 physical server
 infrastructures.
 
-![images/download/attachments/8362796/vxlan\_nsx.png](images/download/attachments/8362796/vxlan_nsx.png)
+![/images/download/attachments/8362796/vxlan\_nsx.png](/images/download/attachments/8362796/vxlan_nsx.png)
 
 Cumulus Linux also supports integration with VMware NSX in high
 availability mode. Refer to [OVSDB Server High
@@ -291,7 +291,7 @@ IP address of the NSX Manager is 192.168.100.12.
     tab, then the **Transport Layer** category. Under **Transport
     Node**, click **Add**, then select **Manually Enter All Fields**.
     The Create Gateway wizard opens.
-    ![images/download/attachments/8362796/vxlan\_netcomponents.png](images/download/attachments/8362796/vxlan_netcomponents.png)
+    ![/images/download/attachments/8362796/vxlan\_netcomponents.png](/images/download/attachments/8362796/vxlan_netcomponents.png)
 
 2.  In the Create Gateway dialog, select *Gateway* for the **Transport
     Node Type**, then click **Next**.
@@ -307,10 +307,10 @@ IP address of the NSX Manager is 192.168.100.12.
     the **Security Certificate** text field. Copy only the bottom
     portion, including the `BEGIN CERTIFICATE` and `END CERTIFICATE`
     lines. For example, copy all the highlighted text in the terminal:
-    ![images/download/attachments/8362796/vxlan\_cert\_term.png](images/download/attachments/8362796/vxlan_cert_term.png)
+    ![/images/download/attachments/8362796/vxlan\_cert\_term.png](/images/download/attachments/8362796/vxlan_cert_term.png)
     
     Paste it into NSX Manager, then click **Next**:
-    ![images/download/attachments/8362796/vxlan\_nsx\_cert.png](images/download/attachments/8362796/vxlan_nsx_cert.png)
+    ![/images/download/attachments/8362796/vxlan\_nsx\_cert.png](/images/download/attachments/8362796/vxlan_nsx_cert.png)
 
 6.  In the Connectors dialog, click **Add Connector** to add a transport
     connector. This defines the tunnel endpoint that terminates the
@@ -361,7 +361,7 @@ port.
 
 2.  In the Create Gateway Service dialog, select *VTEP L2 Gateway
     Service* as the **Gateway Service Type**.
-    ![images/download/attachments/8362796/vxlan\_gwsvc\_create.png](images/download/attachments/8362796/vxlan_gwsvc_create.png)
+    ![/images/download/attachments/8362796/vxlan\_gwsvc\_create.png](/images/download/attachments/8362796/vxlan_gwsvc_create.png)
 
 3.  Provide a **Display Name** for the service to represent the VTEP in
     NSX.
@@ -382,7 +382,7 @@ port.
 The gateway service shows up as type *VTEP L2* in
 NSX.
 
-![images/download/attachments/8362796/vxlan\_gwsvc.png](images/download/attachments/8362796/vxlan_gwsvc.png)
+![/images/download/attachments/8362796/vxlan\_gwsvc.png](/images/download/attachments/8362796/vxlan_gwsvc.png)
 
 Next, configure the logical layer on NSX.
 
@@ -403,18 +403,18 @@ To define the logical switch:
     then click
     **Next**.
     
-    ![images/download/attachments/8362796/vxlan\_logswitch.png](images/download/attachments/8362796/vxlan_logswitch.png)
+    ![/images/download/attachments/8362796/vxlan\_logswitch.png](/images/download/attachments/8362796/vxlan_logswitch.png)
 
 3.  Under **Replication Mode**, select **Service Nodes**, then click
     **Next**.
 
 4.  Specify the transport zone bindings for the logical switch. Click
     **Add Binding**. The Create Transport Zone Binding dialog opens.
-    ![images/download/attachments/8362796/vxlan\_addbinding.png](images/download/attachments/8362796/vxlan_addbinding.png)
+    ![/images/download/attachments/8362796/vxlan\_addbinding.png](/images/download/attachments/8362796/vxlan_addbinding.png)
 
 5.  In the **Transport Type** list, select *VXLAN*, then click **OK** to
     add the binding to the logical switch.
-    ![images/download/attachments/8362796/vxlan\_createvni.png](images/download/attachments/8362796/vxlan_createvni.png)
+    ![/images/download/attachments/8362796/vxlan\_createvni.png](/images/download/attachments/8362796/vxlan_createvni.png)
 
 6.  In the **VNI** field, assign the switch a VNI ID, then click **OK**.
     
@@ -427,7 +427,7 @@ To define the logical switch:
 
 7.  Click **Save** to save the logical switch
     configuration.  
-    ![images/download/attachments/8362796/vxlan\_logswitch\_done.png](images/download/attachments/8362796/vxlan_logswitch_done.png)
+    ![/images/download/attachments/8362796/vxlan\_logswitch\_done.png](/images/download/attachments/8362796/vxlan_logswitch_done.png)
 
 ### Define Logical Switch Ports
 
@@ -443,11 +443,11 @@ To define the logical switch ports:
     Components** tab, then the **Logical Layer** category. Under
     **Logical Switch Port**, click **Add**. The Create Logical Switch
     Port wizard opens.
-    ![images/download/attachments/8362796/vxlan\_loglayer.png](images/download/attachments/8362796/vxlan_loglayer.png)
+    ![/images/download/attachments/8362796/vxlan\_loglayer.png](/images/download/attachments/8362796/vxlan_loglayer.png)
 
 2.  In the **Logical Switch UUID** list, select the logical switch you
     created above, then click **Create**.
-    ![images/download/attachments/8362796/vxlan\_logswp\_create.png](images/download/attachments/8362796/vxlan_logswp_create.png)
+    ![/images/download/attachments/8362796/vxlan\_logswp\_create.png](/images/download/attachments/8362796/vxlan_logswp_create.png)
 
 3.  In the **Display Name** field, provide a name for the port that
     indicates it is the port that connects the gateway, then click
@@ -465,7 +465,7 @@ To define the logical switch ports:
 7.  Click **Save** to save the logical switch port. Connectivity is
     established. Repeat this procedure for each logical switch port you
     want to define.
-    ![images/download/attachments/8362796/vxlan\_logswp\_done.png](images/download/attachments/8362796/vxlan_logswp_done.png)
+    ![/images/download/attachments/8362796/vxlan\_logswp\_done.png](/images/download/attachments/8362796/vxlan_logswp_done.png)
 
 ## Verify the VXLAN Configuration
 

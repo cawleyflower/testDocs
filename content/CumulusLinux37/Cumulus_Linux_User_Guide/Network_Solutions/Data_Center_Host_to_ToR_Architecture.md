@@ -15,7 +15,7 @@ hosts.
 
 ### Single-attached Hosts
 
-![images/download/attachments/8362991/Screen\_Shot\_2016-04-04\_at\_4.00.28\_PM.png](images/download/attachments/8362991/Screen_Shot_2016-04-04_at_4.00.28_PM.png)
+![/images/download/attachments/8362991/Screen\_Shot\_2016-04-04\_at\_4.00.28\_PM.png](/images/download/attachments/8362991/Screen_Shot_2016-04-04_at_4.00.28_PM.png)
 
 <div class="tablewrap">
 
@@ -120,7 +120,7 @@ iface eth1 inet static
 
 ### Redistribute Neighbor
 
-![images/download/attachments/8362991/redisneigh.png](images/download/attachments/8362991/redisneigh.png)
+![/images/download/attachments/8362991/redisneigh.png](/images/download/attachments/8362991/redisneigh.png)
 
 <div class="tablewrap">
 
@@ -173,7 +173,7 @@ iface eth1 inet static
 
 ### Routing on the Host
 
-**![images/download/thumbnails/8362991/routingonhost.png](images/download/thumbnails/8362991/routingonhost.png)**
+**![/images/download/thumbnails/8362991/routingonhost.png](/images/download/thumbnails/8362991/routingonhost.png)**
 
 <div class="tablewrap">
 
@@ -227,7 +227,7 @@ iface eth1 inet static
 
 ### Routing on the VM
 
-![images/download/attachments/8362991/routingvm.png](images/download/attachments/8362991/routingvm.png)
+![/images/download/attachments/8362991/routingvm.png](/images/download/attachments/8362991/routingvm.png)
 
 <div class="tablewrap">
 
@@ -282,7 +282,7 @@ instead of one routing process, there are as many as there are VMs</p></li>
 
 ### Virtual Router
 
-![images/download/attachments/8362991/vrouter.png](images/download/attachments/8362991/vrouter.png)
+![/images/download/attachments/8362991/vrouter.png](/images/download/attachments/8362991/vrouter.png)
 
 <div class="tablewrap">
 
@@ -333,7 +333,7 @@ instead of one routing process, there are as many as there are VMs</p></li>
 
 ### Anycast with Manual Redistribution
 
-![images/download/thumbnails/8362991/anycast.png](images/download/thumbnails/8362991/anycast.png)
+![/images/download/thumbnails/8362991/anycast.png](/images/download/thumbnails/8362991/anycast.png)
 
 <div class="tablewrap">
 
@@ -437,7 +437,7 @@ iface eth2 inet static
 **LNV with
 MLAG**
 
-![images/download/attachments/8362991/lnvmlag.png](images/download/attachments/8362991/lnvmlag.png)
+![/images/download/attachments/8362991/lnvmlag.png](/images/download/attachments/8362991/lnvmlag.png)
 
 <div class="tablewrap">
 

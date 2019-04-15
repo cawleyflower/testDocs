@@ -45,14 +45,14 @@ The OVSDB server on the MLAG secondary switch is the hot standby. Only
 the active OVSDB server communicates with the NSX
 controller.
 
-![images/download/attachments/8362860/ovsdb\_example1.png](images/download/attachments/8362860/ovsdb_example1.png)
+![/images/download/attachments/8362860/ovsdb\_example1.png](/images/download/attachments/8362860/ovsdb_example1.png)
 
 **Example 2:** If failover occurs, the OVSDB server on the MLAG
 secondary switch becomes the active OVSDB server and communicates with
 the NSX
 controller.
 
-![images/download/attachments/8362860/ovsdb\_example2.png](images/download/attachments/8362860/ovsdb_example2.png)
+![/images/download/attachments/8362860/ovsdb\_example2.png](/images/download/attachments/8362860/ovsdb_example2.png)
 
 When the OVSDB server on the MLAG primary switch starts responding
 again, it resynchronizes its database, becomes the active OVSDB server,

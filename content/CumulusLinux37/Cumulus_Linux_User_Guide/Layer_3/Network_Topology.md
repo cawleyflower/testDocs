@@ -21,7 +21,7 @@ commonly referred to as </span>leaf-spine topology. We shall use this
 topology throughout the routing protocol
 guide.
 
-![images/download/attachments/8362915/topology.png](images/download/attachments/8362915/topology.png)
+![/images/download/attachments/8362915/topology.png](/images/download/attachments/8362915/topology.png)
 
 This topology allows the building of networks of varying size using
 nodes of different port counts and/or by increasing the tiers. The

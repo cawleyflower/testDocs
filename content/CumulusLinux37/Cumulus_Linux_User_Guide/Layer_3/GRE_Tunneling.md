@@ -49,7 +49,7 @@ inside an IPv4 packet. The packet is routed based on the destination in
 the outer IPv4
 header.
 
-![images/download/attachments/8362966/GRE\_tunnel\_example.png](images/download/attachments/8362966/GRE_tunnel_example.png)
+![/images/download/attachments/8362966/GRE\_tunnel\_example.png](/images/download/attachments/8362966/GRE_tunnel_example.png)
 
 ## Configure GRE Tunneling
 
@@ -76,7 +76,7 @@ The local tunnel endpoint for `Tunnel-R2` is 10.0.0.2 and the remote
 endpoint is
 10.0.0.9.
 
-![images/download/attachments/8362966/GRE-Tunnel-Config.png](images/download/attachments/8362966/GRE-Tunnel-Config.png)
+![/images/download/attachments/8362966/GRE-Tunnel-Config.png](/images/download/attachments/8362966/GRE-Tunnel-Config.png)
 
 **Tunnel-R1 commands:**
 

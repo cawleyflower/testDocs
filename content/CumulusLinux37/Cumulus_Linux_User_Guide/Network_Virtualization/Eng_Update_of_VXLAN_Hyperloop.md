@@ -91,7 +91,7 @@ separated application) — you want to keep the firewall between VXLANs so
 that traffic can be filtered and sanitized to the network operator's
 specification.
 
-![images/download/attachments/8362882/image2017-3-9\_14\_52\_21.png](images/download/attachments/8362882/image2017-3-9_14_52_21.png)
+![/images/download/attachments/8362882/image2017-3-9\_14\_52\_21.png](/images/download/attachments/8362882/image2017-3-9_14_52_21.png)
 
 With integrated VXLAN routing and bridging using a hyperloop:
 
@@ -192,7 +192,7 @@ iface vni-20
 
 ### Packet Flow Diagram
 
-![images/download/attachments/8362882/Screen\_Shot\_2017-03-09\_at\_1.32.01\_PM.png](images/download/attachments/8362882/Screen_Shot_2017-03-09_at_1.32.01_PM.png)
+![/images/download/attachments/8362882/Screen\_Shot\_2017-03-09\_at\_1.32.01\_PM.png](/images/download/attachments/8362882/Screen_Shot_2017-03-09_at_1.32.01_PM.png)
 
 ### Trident II and Tomahawk switchd Flag
 
@@ -313,14 +313,14 @@ is actually due to an incorrect setup on the server OS, whether it is
 Ubuntu, Microsoft Windows, or
 RHEL.  
   
-![images/download/attachments/8362882/Screen\_Shot\_2017-03-29\_at\_10.41.39\_AM.png](images/download/attachments/8362882/Screen_Shot_2017-03-29_at_10.41.39_AM.png)
+![/images/download/attachments/8362882/Screen\_Shot\_2017-03-29\_at\_10.41.39\_AM.png](/images/download/attachments/8362882/Screen_Shot_2017-03-29_at_10.41.39_AM.png)
 
 ### Can you ping from host to host on the same VXLAN?
 
 In the following network diagram, can server01 ping to server03 on any
 of the VLANs (VLAN1, VLAN100,
 VLAN200)?  
-![images/download/attachments/8362882/2017\_Brand\_Ref\_EVPN\_Demo\_%281%29.png](images/download/attachments/8362882/2017_Brand_Ref_EVPN_Demo_%281%29.png)  
+![/images/download/attachments/8362882/2017\_Brand\_Ref\_EVPN\_Demo\_%281%29.png](/images/download/attachments/8362882/2017_Brand_Ref_EVPN_Demo_%281%29.png)  
 If you cannot even ping from server to server, this is not a VXLAN
 gateway problem but a problem with the network itself. You must resolve
 the network problem before you make a VXLAN gateway, with or without a

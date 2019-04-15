@@ -323,7 +323,7 @@ In the following example, the front panel port interfaces swp1 thru swp4
 are slaves in bond0, while swp5 and swp6 are not part of
 bond0.
 
-![images/download/thumbnails/8362653/example-bridge-with-bond.png](images/download/thumbnails/8362653/example-bridge-with-bond.png)
+![/images/download/thumbnails/8362653/example-bridge-with-bond.png](/images/download/thumbnails/8362653/example-bridge-with-bond.png)
 
 {{%notice info%}}
 

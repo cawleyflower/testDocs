@@ -98,7 +98,7 @@ bin. The example shows that the queue length was between 960 and 2495
 bytes 125 times within one
 second.
 
-![images/download/attachments/8362627/histogram\_queue.png](images/download/attachments/8362627/histogram_queue.png)
+![/images/download/attachments/8362627/histogram\_queue.png](/images/download/attachments/8362627/histogram_queue.png)
 
 ## Configure ASIC Monitoring
 

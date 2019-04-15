@@ -73,7 +73,7 @@ routing table, and configuring an instance of the routing protocol — BGP
 or OSPFv2 — for each routing
 table.
 
-![images/download/thumbnails/8362942/mrf2.png](images/download/thumbnails/8362942/mrf2.png)
+![/images/download/thumbnails/8362942/mrf2.png](/images/download/thumbnails/8362942/mrf2.png)
 
 ## Configure VRF
 
@@ -1570,9 +1570,9 @@ In the following example, there is one IPv4 network with a VRF named
 <tbody>
 <tr class="odd">
 <td><p>The IPv4 DHCP server/relay network looks like this:</p>
-<p><img src="images/download/attachments/8362942/VRFrocket.png" alt="images/download/attachments/8362942/VRFrocket.png" class="confluence-embedded-image" height="250" /></p></td>
+<p><img src="/images/download/attachments/8362942/VRFrocket.png" alt="/images/download/attachments/8362942/VRFrocket.png" class="confluence-embedded-image" height="250" /></p></td>
 <td><p>The IPv6 DHCP server/relay network looks like this:</p>
-<p><img src="images/download/attachments/8362942/VRFturtle.png" alt="images/download/attachments/8362942/VRFturtle.png" class="confluence-embedded-image" height="250" /></p></td>
+<p><img src="/images/download/attachments/8362942/VRFturtle.png" alt="/images/download/attachments/8362942/VRFturtle.png" class="confluence-embedded-image" height="250" /></p></td>
 </tr>
 </tbody>
 </table>

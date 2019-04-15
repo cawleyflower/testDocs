@@ -55,7 +55,7 @@ You cannot use LNV and
 Consider the following example
 deployment:
 
-![images/download/thumbnails/8362706/Screen\_Shot\_2015-04-23\_at\_5.00.38\_PM.png](images/download/thumbnails/8362706/Screen_Shot_2015-04-23_at_5.00.38_PM.png)
+![/images/download/thumbnails/8362706/Screen\_Shot\_2015-04-23\_at\_5.00.38\_PM.png](/images/download/thumbnails/8362706/Screen_Shot_2015-04-23_at_5.00.38_PM.png)
 
 The two switches running Cumulus Linux, called leaf1 and leaf2, each
 have a bridge configured. These two bridges contain the physical switch

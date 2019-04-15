@@ -131,7 +131,7 @@ are known as
 and are shown
 here:
 
-![images/download/attachments/8362584/Linux\_Traffic\_Inspection\_Points\_%28Chains%29.png](images/download/attachments/8362584/Linux_Traffic_Inspection_Points_%28Chains%29.png)
+![/images/download/attachments/8362584/Linux\_Traffic\_Inspection\_Points\_%28Chains%29.png](/images/download/attachments/8362584/Linux_Traffic_Inspection_Points_%28Chains%29.png)
 
 The chains and their uses are:
 
@@ -174,10 +174,10 @@ green are supported by Cumulus Linux, those in red are not supported
 (that is, they are not hardware accelerated) at this
 time.
 
-![images/download/thumbnails/8362584/Linux\_IPtables\_Default\_Tables.png](images/download/thumbnails/8362584/Linux_IPtables_Default_Tables.png)
-![images/download/thumbnails/8362584/Linux\_EBtables\_Default\_Tables.png](images/download/thumbnails/8362584/Linux_EBtables_Default_Tables.png)
+![/images/download/thumbnails/8362584/Linux\_IPtables\_Default\_Tables.png](/images/download/thumbnails/8362584/Linux_IPtables_Default_Tables.png)
+![/images/download/thumbnails/8362584/Linux\_EBtables\_Default\_Tables.png](/images/download/thumbnails/8362584/Linux_EBtables_Default_Tables.png)
 
-![images/download/attachments/8362584/Legend\_%281%29.png](images/download/attachments/8362584/Legend_%281%29.png)
+![/images/download/attachments/8362584/Legend\_%281%29.png](/images/download/attachments/8362584/Legend_%281%29.png)
 
 ### Rules
 
@@ -186,13 +186,13 @@ Rules are applied to chains, which are attached to tables, similar to
 the graphic
 below.
 
-![images/download/thumbnails/8362584/Tables\_Chains\_Rules.png](images/download/thumbnails/8362584/Tables_Chains_Rules.png)
+![/images/download/thumbnails/8362584/Tables\_Chains\_Rules.png](/images/download/thumbnails/8362584/Tables_Chains_Rules.png)
 
 Rules have several different components; the examples below highlight
 those different
 components.
 
-![images/download/attachments/8362584/Anatomy\_of\_a\_Rule.png](images/download/attachments/8362584/Anatomy_of_a_Rule.png)
+![/images/download/attachments/8362584/Anatomy\_of\_a\_Rule.png](/images/download/attachments/8362584/Anatomy_of_a_Rule.png)
 
   - **Table:** The first argument is the *table*. Notice the second
     example does not specify a table, that is because the filter table
@@ -1048,7 +1048,7 @@ following example scenario demonstrates where several different rules
 are applied to show what is
 possible.
 
-![images/download/attachments/8362584/acl-diagram.png](images/download/attachments/8362584/acl-diagram.png)
+![/images/download/attachments/8362584/acl-diagram.png](/images/download/attachments/8362584/acl-diagram.png)
 
 Following are the configurations for the two switches used in these
 examples. The configuration for each switch appears in

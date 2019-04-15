@@ -25,7 +25,7 @@ Mode.
 
 ## PIM Overview
 
-![images/download/attachments/8362899/PIM.png](images/download/attachments/8362899/PIM.png)
+![/images/download/attachments/8362899/PIM.png](/images/download/attachments/8362899/PIM.png)
 
 <div class="tablewrap">
 
@@ -134,7 +134,7 @@ Mode.
 <p>{{%notice note%}}</p>
 <p>PIM join/prune messages are sent to PIM neighbors on individual interfaces. Join/prune messages are never unicast.</p>
 <p>{{%/notice%}}</p>
-<p><img src="images/download/attachments/8362899/pim_join-prune.png" alt="images/download/attachments/8362899/pim_join-prune.png" class="confluence-embedded-image" height="250" /></p>
+<p><img src="/images/download/attachments/8362899/pim_join-prune.png" alt="/images/download/attachments/8362899/pim_join-prune.png" class="confluence-embedded-image" height="250" /></p>
 <p>This PIM join/prune is for group 239.1.1.9, with 1 join and 0 prunes for the group. Join/prunes for multiple groups can exist in a single packet.</p>
 <pre><code>                    S,G Prune Example
                    
@@ -252,7 +252,7 @@ the segment that is listening to the IGMPv3 group receives the IGMP
 membership join message and becomes an LHR for this
 group.
 
-![images/download/attachments/8362899/06igmp.png](images/download/attachments/8362899/06igmp.png)
+![/images/download/attachments/8362899/06igmp.png](/images/download/attachments/8362899/06igmp.png)
 
 This creates a (\*,G) mroute with an OIF of the interface on which the
 IGMP Membership Report is received and an IIF of the RPF interface for
@@ -265,7 +265,7 @@ PIM join message is received and an Incoming Interface of the reverse
 path forwarding interface for the
 RP.
 
-![images/download/attachments/8362899/07pimjoin.png](images/download/attachments/8362899/07pimjoin.png)
+![/images/download/attachments/8362899/07pimjoin.png](/images/download/attachments/8362899/07pimjoin.png)
 
 {{%notice note%}}
 
@@ -306,8 +306,8 @@ The RP then receives the multicast packet along the (S,G) tree and sends
 a PIM register stop to the FHR to end the register
 process.
 
-![images/download/attachments/8362899/08data.png](images/download/attachments/8362899/08data.png)
-![images/download/attachments/8362899/09register.png](images/download/attachments/8362899/09register.png)
+![/images/download/attachments/8362899/08data.png](/images/download/attachments/8362899/08data.png)
+![/images/download/attachments/8362899/09register.png](/images/download/attachments/8362899/09register.png)
 
 ##### PIM SPT Switchover
 

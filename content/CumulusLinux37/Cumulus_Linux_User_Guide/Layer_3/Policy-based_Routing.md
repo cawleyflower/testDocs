@@ -184,7 +184,7 @@ The traffic returns to the PBR-enabled switch after being cleaned and is
 then passed onto the regular destination based routing
 mechanism.
 
-![images/download/attachments/8362974/PBR.png](images/download/attachments/8362974/PBR.png)
+![/images/download/attachments/8362974/PBR.png](/images/download/attachments/8362974/PBR.png)
 
 The configuration for the example above is:
 
