@@ -1,0 +1,151 @@
+---
+title: User Accounts
+author: Unknown
+weight: 287
+pageID: 8362553
+---
+# User Accounts
+
+<span id="src-8362553_indexterm-2F464615FFAE9049FDF385BF5767029B">By
+default, Cumulus Linux has two user accounts:
+</span>*cumulus*<span id="src-8362553_indexterm-54F081B196E3C481BB318B4D8ECD6915">
+and </span>*root*.
+
+The *cumulus* account:
+
+  - 
+    
+    <div id="src-8362553_indexterm-CC51283F87775E890358DCD42C557486">
+    
+    Uses the default password *CumulusLinux\!*
+    
+    </div>
+
+  - Is a user account in the *sudo* group with sudo privileges.
+
+  - Can log in to the system through all the usual channels, such as
+    console and [SSH](SSH_for_Remote_Access.html).
+
+  - Along with the cumulus group, has both show and edit rights for
+    [NCLU](Network_Command_Line_Utility_-_NCLU.html).
+
+The *root* account:
+
+  - Has the default password disabled by default.
+
+  - Has the standard Linux root user access to everything on the switch.
+
+  - Disabled password prohibits login to the switch by SSH, telnet, FTP,
+    and so on.
+
+For optimal security, change the default password with the `passwd`
+command before you configure Cumulus Linux on the switch.
+
+<span id="src-8362553_indexterm-63D66EBD131743CD3D52956DDE4306B4">You
+can add additional </span>user accounts as needed. Like the *cumulus*
+account, these accounts must use `sudo` to [execute privileged
+commands](Using_sudo_to_Delegate_Privileges.html); be sure to include
+them in the *sudo* group.
+
+To access the switch without a password, you need to [boot into a single
+shell/user mode](Single_User_Mode_-_Boot_Recovery.html).
+
+You can add and configure user accounts in Cumulus Linux with read-only
+or edit permissions for NCLU. For more information, see [Configure User
+Accounts](Network_Command_Line_Utility_-_NCLU.html#src-8362580_NetworkCommandLineUtility-NCLU-configure-user-accounts).
+
+## Enable Remote Access for the root User
+
+The root user does not have a password and cannot log into a switch
+using SSH. This default account behavior is consistent with Debian. To
+connect to a switch using the root account, you can do one of the
+following:
+
+  - Generate an SSH key
+
+  - Set a password
+
+### Generate an SSH Key for the root Account
+
+1.  In a terminal on your host system (not the switch), check to see if
+    a key already exists:
+    
+    ``` 
+                       
+    root@host:~# ls -al ~/.ssh/
+       
+        
+    ```
+    
+    The key is named something like `id_dsa.pub`, `id_rsa.pub` or
+    `id_ecdsa.pub`.
+
+2.  If a key does not exist, generate a new one by first creating the
+    RSA key pair:
+    
+    ``` 
+                       
+    root@host:~# ssh-keygen -t rsa
+       
+        
+    ```
+
+3.  You are prompted to enter a file in which to save the key
+    (/root/.ssh/id\_rsa)*.* Press Enter to use the home directory of the
+    root user or provide a different destination.
+
+4.  You are prompted to enter a passphrase (empty for no passphrase).
+    This is optional but it does provide an extra layer of security.
+
+5.  The public key is now located in `/root/.ssh/id_rsa.pub`. The
+    private key (identification) is now located in `/root/.ssh/id_rsa`.
+
+6.  Copy the public key to the switch. SSH to the switch as the cumulus
+    user, then run:
+    
+    ``` 
+                       
+    cumulus@switch:~$ sudo mkdir -p /root/.ssh
+    cumulus@switch:~$ echo  | sudo tee -a /root/.ssh/authorized_keys
+       
+        
+    ```
+
+### Set the root User Password
+
+1.  Run the following command:
+    
+    ``` 
+                       
+    cumulus@switch:~$ sudo passwd root
+       
+        
+    ```
+
+2.  Change the `PermitRootLogin` setting in the `/etc/ssh/sshd_config`
+    file from *without-password* to *yes*.
+    
+    ``` 
+                       
+    cumulus@switch:~$ sudo nano /etc/ssh/sshd_config
+     
+    ... 
+          
+    # Authentication:
+    LoginGraceTime 120
+    PermitRootLogin yes
+    StrictModes yes
+          
+    ...  
+       
+        
+    ```
+
+3.  Restart the `ssh` service:
+    
+    ``` 
+                       
+    cumulus@switch:~$ sudo systemctl reload ssh.service
+       
+        
+    ```

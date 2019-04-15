@@ -3,10 +3,11 @@ languageCode = "en-us"
 title = "Cumulus Networks Documentation"
 theme = "netDocs"
 
-
-# Book configuration
+#URL fixes
+canonifyURLs = true
+#Book configuration
 disablePathToLower = true
-enableGitInfo= true
+enableGitInfo= false
 
 #Syntax Highlighting
 pygmentsCodeFences = true
@@ -20,11 +21,11 @@ pygmentsUseClasses = true
 
   # (Optional, default none) Set leaf bundle to render as side menu
   # When not specified file structure and weights will be used
-  #BookMenuBundle= "NetQ"
+  #BookMenuBundle= "Cumulus_Linux_User_Guide"
 
   # (Optional, default docs) Specify section of content to render as menu
   # You can also set value to "*" to render all sections to menu
-  BookSection= "NetQ"
+  BookSection= "*"
 
   # This value is duplicate of $link-color for making active link highlight in menu bundle mode
   #BookMenuBundleActiveLinkColor = $link-color
@@ -41,6 +42,3 @@ pygmentsUseClasses = true
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Path must point to 'content' directory of repo.
   #BookEditPath= edit/master/exampleSite/content
-
-  #Defined options for doc import
-  oldImagePath = true
