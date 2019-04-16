@@ -3,17 +3,19 @@ title: Filtering Learned MAC Addresses
 author: Unknown
 weight: 309
 pageID: 8362575
+aliases:
+ - /old/Filtering_Learned_MAC_Addresses.html
 ---
 # Filtering Learned MAC Addresses
 
 On Broadcom switches, a MAC address is learned on a bridge regardless of
 whether or not a received packet is dropped by an
-[ACL](Netfilter_-_ACLs.html). This is due to how the hardware learns MAC
-addresses and occurs before the ACL lookup. This can be a security or
-resource problem as the MAC address table has the potential to get
-filled with bogus MAC addresses; a malfunctioning host, network error,
-loop, or malicious attack on a shared layer 2 platform can create an
-outage for other hosts if the same MAC address is learned on another
+[ACL](/old/Netfilter_-_ACLs.html). This is due to how the hardware
+learns MAC addresses and occurs before the ACL lookup. This can be a
+security or resource problem as the MAC address table has the potential
+to get filled with bogus MAC addresses; a malfunctioning host, network
+error, loop, or malicious attack on a shared layer 2 platform can create
+an outage for other hosts if the same MAC address is learned on another
 port.
 
 To prevent this from happening, Cumulus Linux filters frames before MAC
@@ -95,7 +97,7 @@ bridge fdb add 00:00:00:00:00:66 dev swp6 master static vlan 600
 ```
 
 Then create the configuration using
-[NCLU](Network_Command_Line_Utility_-_NCLU.html):
+[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html):
 
 ``` 
                    
@@ -150,7 +152,8 @@ iface bridge
 
 ## Interactions with EVPN
 
-If you are using [EVPN](Ethernet_Virtual_Private_Network_-_EVPN.html),
-local static MAC addresses added to the local FDB are exported as static
-MAC addresses to remote switches. Remote MAC addresses are added as MAC
+If you are using
+[EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html), local static
+MAC addresses added to the local FDB are exported as static MAC
+addresses to remote switches. Remote MAC addresses are added as MAC
 addresses to the remote FDB.

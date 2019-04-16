@@ -3,63 +3,63 @@ title: Network Virtualization
 author: Unknown
 weight: 21
 pageID: 8362704
+aliases:
+ - /old/Network_Virtualization.html
 ---
 # Network Virtualization
 
-<span id="src-8362704_indexterm-A1DFA9E80511E36B6170DEBCAFB9FF06">Cumulus
-Linux supports these forms </span>of [network
+Cumulus Linux supports these forms of [network
 virtualization](http://en.wikipedia.org/wiki/Network_virtualization):
 
-  - [Static VXLAN Configurations](Static_VXLAN_Configurations.html)
+  - [Static VXLAN Configurations](/old/Static_VXLAN_Configurations.html)
     
-      - [Static VXLAN Tunnels](Static_VXLAN_Tunnels.html)
+      - [Static VXLAN Tunnels](/old/Static_VXLAN_Tunnels.html)
     
       - [Static MAC Bindings with
-        VXLAN](Static_MAC_Bindings_with_VXLAN.html)
+        VXLAN](/old/Static_MAC_Bindings_with_VXLAN.html)
 
   - [Ethernet Virtual Private Network -
-    EVPN](Ethernet_Virtual_Private_Network_-_EVPN.html)
+    EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html)
 
   - [Lightweight Network Virtualization
-    Overview](Lightweight_Network_Virtualization_Overview.html)
+    Overview](/old/Lightweight_Network_Virtualization_Overview.html)
     
-      - [LNV Full Example](LNV_Full_Example.html)
+      - [LNV Full Example](/old/LNV_Full_Example.html)
 
-  - [VXLAN Active-Active Mode](VXLAN_Active-Active_Mode.html)
+  - [VXLAN Active-Active Mode](/old/VXLAN_Active-Active_Mode.html)
 
-  - [VXLAN Routing](VXLAN_Routing.html)
+  - [VXLAN Routing](/old/VXLAN_Routing.html)
 
-  - [VXLAN Scale](VXLAN_Scale.html)
+  - [VXLAN Scale](/old/VXLAN_Scale.html)
 
   - [Hybrid Cloud Connectivity with QinQ and
-    VXLANs](Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
+    VXLANs](/old/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
 
-  - [Troubleshooting VXLANs](Troubleshooting_VXLANs.html)
+  - [Troubleshooting VXLANs](/old/Troubleshooting_VXLANs.html)
 
-  - [Virtualization Integrations](Virtualization_Integrations.html)
+  - [Virtualization Integrations](/old/Virtualization_Integrations.html)
     
       - [Integrating Hardware VTEPs with Midokura MidoNet and
-        OpenStack](Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
+        OpenStack](/old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
     
       - [Integrating Hardware VTEPs with VMware
-        NSX-V](Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
+        NSX-V](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
     
       - [Integrating Hardware VTEPs with VMware
-        NSX-MH](Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
+        NSX-MH](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
     
       - [OVSDB Server High
-        Availability](OVSDB_Server_High_Availability.html)
+        Availability](/old/OVSDB_Server_High_Availability.html)
 
   - [VXLAN Tunnel DSCP Operations
-    — DRAFT](VXLAN_Tunnel_DSCP_Operations_—%C2%A0DRAFT.html)
+    — DRAFT](/old/VXLAN_Tunnel_DSCP_Operations_—%C2%A0DRAFT.html)
 
-  - [Eng Update of VXLAN Hyperloop](Eng_Update_of_VXLAN_Hyperloop.html)
+  - [Eng Update of VXLAN
+    Hyperloop](/old/Eng_Update_of_VXLAN_Hyperloop.html)
 
-  - [VXLAN
-Active-Active](VXLAN_Active-Active.html)
+  - [VXLAN Active-Active](/old/VXLAN_Active-Active.html)
 
-*VXLAN*<span id="src-8362704_indexterm-4530128C710BDDCCA5AB63F66633E8A4">
-</span>(Virtual Extensible LAN) is a standard overlay protocol that
+*VXLAN* (Virtual Extensible LAN) is a standard overlay protocol that
 abstracts logical virtual networks from the physical network underneath.
 You can deploy simple and scalable layer 3 Clos architectures while
 extending layer 2 segments over that layer 3 network.
@@ -70,11 +70,10 @@ is a VXLAN logical layer 2 segment. VXLAN scales to 16 million segments
 – a 24-bit VXLAN network identifier (VNI ID) in the VXLAN header – for
 multi-tenancy.
 
-<span id="src-8362704_indexterm-6A8B08DB04B119905FFF3E129DCC886A">Hosts
-on a given virtual network are joined together through an overlay
+Hosts on a given virtual network are joined together through an overlay
 protocol that initiates and terminates tunnels at the edge of the
 multi-tenant network, typically the hypervisor vSwitch or top of rack.
-These edge points are the VXLAN tunnel end points (</span>VTEP).
+These edge points are the VXLAN tunnel end points (VTEP).
 
 Cumulus Linux can initiate and terminate VTEPs in hardware and supports
 wire-rate VXLAN. VXLAN provides an efficient hashing scheme across the
@@ -84,8 +83,9 @@ the original frame. The UDP destination port is the standard port 4789.
 
 Cumulus Linux includes the native Linux VXLAN kernel support and
 integrates with controller-based overlay solutions like [VMware
-NSX](Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html) and [Midokura
-MidoNet](Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html).
+NSX](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html) and
+[Midokura
+MidoNet](/old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html).
 
 VXLAN is supported only on switches in the [Cumulus Linux
 HCL](http://cumulusnetworks.com/support/hcl/) using the Broadcom
@@ -108,7 +108,7 @@ at least one layer 3 hop between the VXLAN source and destination.
 ### Cut-through Mode and Store and Forward Switching
 
 [Cut-through
-mode](Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-cut_through_mode)
+mode](/old/Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-cut_through_mode)
 is **not** supported for VXLANs in Cumulus Linux on switches using
 Broadcom Tomahawk, Trident II, Trident II+, and Trident3 ASICs. Store
 and forward switching **is** supported on these ASICs.
@@ -123,7 +123,7 @@ The maximum transmission unit (MTU) size for a virtual network interface
 should be 50 bytes smaller than the MTU for the physical interfaces on
 the switch. For more information on setting MTU, read [Layer 1 and
 Switch Port
-Attributes](Switch_Port_Attributes.html#src-8363026_SwitchPortAttributes-mtu_vxlan).
+Attributes](/old/Switch_Port_Attributes.html#src-8363026_SwitchPortAttributes-mtu_vxlan).
 
 ## Useful Links
 

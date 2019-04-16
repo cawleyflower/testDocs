@@ -3,6 +3,8 @@ title: Voice VLAN
 author: Unknown
 weight: 345
 pageID: 8362651
+aliases:
+ - /old/Voice_VLAN.html
 ---
 # Voice VLAN
 
@@ -22,14 +24,14 @@ VLAN ID (which may or may not be 0) and an 802.1p (3-bit layer 2 COS)
 with a specific value (typically 5 is assigned for voice traffic).
 
 Data traffic is always
-[untagged](VLAN_Tagging.html).
+[untagged](/old/VLAN_Tagging.html).
 
 ## Cumulus Linux Voice VLAN Example
 
 ![/images/support.cumulusnetworks.com/hc/en-us/article\_attachments/217676187/voice-vlan.png](/images/support.cumulusnetworks.com/hc/en-us/article_attachments/217676187/voice-vlan.png)
 
 You can configure the topology above using the following
-[NCLU](Network_Command_Line_Utility_-_NCLU.html) commands. In this
+[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html) commands. In this
 configuration:
 
   - swp1 data traffic traverses the bridge's native VLAN and the voice

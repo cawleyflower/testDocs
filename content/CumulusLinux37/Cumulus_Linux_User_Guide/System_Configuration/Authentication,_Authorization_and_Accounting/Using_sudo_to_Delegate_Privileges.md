@@ -3,6 +3,8 @@ title: Using sudo to Delegate Privileges
 author: Unknown
 weight: 289
 pageID: 8362554
+aliases:
+ - /old/Using_sudo_to_Delegate_Privileges.html
 ---
 # Using sudo to Delegate Privileges
 
@@ -14,12 +16,10 @@ these accounts must use `sudo` to execute privileged commands.
 
 ## sudo Basics
 
-`sudo`<span id="src-8362554_indexterm-8D66C9E69A1BEDDD282DC990186CF68E">
-</span>allows you to execute a command as superuser or another user as
+`sudo` allows you to execute a command as superuser or another user as
 specified by the security policy. See `man sudo(8)` for details.
 
-<span id="src-8362554_indexterm-DBCF993801824580C29D771192E20CAF">The
-default security policy is </span>*sudoers*, which is configured using
+The default security policy is *sudoers*, which is configured using
 `/etc/sudoers`. Use `/etc/sudoers.d/` to add to the default sudoers
 policy. See `man sudoers(5)` for details.
 
@@ -39,11 +39,10 @@ enable the root user by setting a password for the root user.
 
 {{%/notice%}}
 
-By default, users in the *sudo* group can use
-`sudo`<span id="src-8362554_indexterm-CFDFDF8F96D17745DF6E559DDF956E94">
-to execute </span>privileged commands. To add users to the sudo group,
-use the `useradd(8)` or `usermod(8)` command. To see which users belong
-to the sudo group, see `/etc/group` (`man group(5)`).
+By default, users in the *sudo* group can use `sudo` to execute
+privileged commands. To add users to the sudo group, use the
+`useradd(8)` or `usermod(8)` command. To see which users belong to the
+sudo group, see `/etc/group` (`man group(5)`).
 
 Any command can be run as `sudo`, including `su`. A password is
 required.
@@ -72,11 +71,10 @@ link/ether 44:38:39:00:27:9f brd ff:ff:ff:ff:ff:ff
 
 ## sudoers Examples
 
-<span id="src-8362554_indexterm-F573F639AF44634A4DE492468A9BA11E">The
-</span>following examples show how you grant as few privileges as
-necessary to a user or group of users to allow them to perform the
-required task. For each example, the system group *noc* is used; groups
-are prefixed with an %.
+The following examples show how you grant as few privileges as necessary
+to a user or group of users to allow them to perform the required task.
+For each example, the system group *noc* is used; groups are prefixed
+with an %.
 
 When executed by an unprivileged user, the example commands below must
 be prefixed with `sudo.`

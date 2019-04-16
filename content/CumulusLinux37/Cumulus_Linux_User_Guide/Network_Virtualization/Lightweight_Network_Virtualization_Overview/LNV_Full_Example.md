@@ -3,6 +3,8 @@ title: LNV Full Example
 author: Unknown
 weight: 399
 pageID: 8362715
+aliases:
+ - /old/LNV_Full_Example.html
 ---
 # LNV Full Example
 
@@ -11,22 +13,17 @@ pageID: 8362715
 As of Cumulus Linux 3.7.4, the lightweight network virtualization
 feature (LNV) has been deprecated. The feature will be removed in
 Cumulus Linux 4.0. Cumulus Networks recommends you use [Ethernet virtual
-private network (EVPN)](Ethernet_Virtual_Private_Network_-_EVPN.html)
-for network
+private network
+(EVPN)](/old/Ethernet_Virtual_Private_Network_-_EVPN.html) for network
 virtualization.
 
 {{%/notice%}}
 
-<span id="src-8362715_indexterm-955FF001A866AFB2DEDE4779A3D66B26">Lightweight
-Network Virtualization
-(</span><span id="src-8362715_indexterm-DD7B6E8102354E0AFE9A424CF9D1D04E">LNV)
-</span><span id="src-8362715_indexterm-8EE74497DCC77D97519AA241BC1A02F7">is
-a </span>technique for deploying
-[VXLANs](Network_Virtualization.html)<span id="src-8362715_indexterm-30A5D4B8D74C8A1A747935A475E0CE1D">
-</span>without a central controller on bare metal switches. This a full
-example complete with diagram. Refer to the [Lightweight Network
-Virtualization
-chapter](Lightweight_Network_Virtualization_Overview.html) for more
+Lightweight Network Virtualization (LNV) is a technique for deploying
+[VXLANs](/old/Network_Virtualization.html) without a central controller
+on bare metal switches. This a full example complete with diagram. Refer
+to the [Lightweight Network Virtualization
+chapter](/old/Lightweight_Network_Virtualization_Overview.html) for more
 detailed information. This full example uses the **recommended way** of
 deploying LNV, which is to use anycast to load balance the service
 nodes.
@@ -283,9 +280,9 @@ iface br-30
 
 The service nodes and registration nodes must all be routable between
 each other. The layer 3 fabric on Cumulus Linux can either be
-[BGP](Border_Gateway_Protocol_-_BGP.html) or
-[OSPF](Open_Shortest_Path_First_-_OSPF.html). In this example, OSPF is
-used to demonstrate full reachability.
+[BGP](/old/Border_Gateway_Protocol_-_BGP.html) or
+[OSPF](/old/Open_Shortest_Path_First_-_OSPF.html). In this example, OSPF
+is used to demonstrate full reachability.
 
 Here is the FRRouting configuration using OSPF:
 
@@ -587,58 +584,60 @@ svcnode_peers = 10.2.1.3
   - [en.wikipedia.org/wiki/Anycast](http://en.wikipedia.org/wiki/Anycast)
 
   - [Detailed LNV Configuration
-    Guide](Lightweight_Network_Virtualization_Overview.html)
+    Guide](/old/Lightweight_Network_Virtualization_Overview.html)
 
   - [Cumulus Networks
     Training](http://cumulusnetworks.com/education/instructor-led-training/)
 
   - [Network virtualization chapter, Cumulus Linux user
-    guide](Network_Virtualization.html)
+    guide](/old/Network_Virtualization.html)
     
-      - [Static VXLAN Configurations](Static_VXLAN_Configurations.html)
+      - [Static VXLAN
+        Configurations](/old/Static_VXLAN_Configurations.html)
         
-          - [Static VXLAN Tunnels](Static_VXLAN_Tunnels.html)
+          - [Static VXLAN Tunnels](/old/Static_VXLAN_Tunnels.html)
         
           - [Static MAC Bindings with
-            VXLAN](Static_MAC_Bindings_with_VXLAN.html)
+            VXLAN](/old/Static_MAC_Bindings_with_VXLAN.html)
     
       - [Ethernet Virtual Private Network -
-        EVPN](Ethernet_Virtual_Private_Network_-_EVPN.html)
+        EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html)
     
       - [Lightweight Network Virtualization
-        Overview](Lightweight_Network_Virtualization_Overview.html)
+        Overview](/old/Lightweight_Network_Virtualization_Overview.html)
         
-          - [LNV Full Example](#)
+          - [LNV Full Example](/old/#)
     
-      - [VXLAN Active-Active Mode](VXLAN_Active-Active_Mode.html)
+      - [VXLAN Active-Active Mode](/old/VXLAN_Active-Active_Mode.html)
     
-      - [VXLAN Routing](VXLAN_Routing.html)
+      - [VXLAN Routing](/old/VXLAN_Routing.html)
     
-      - [VXLAN Scale](VXLAN_Scale.html)
+      - [VXLAN Scale](/old/VXLAN_Scale.html)
     
       - [Hybrid Cloud Connectivity with QinQ and
-        VXLANs](Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
+        VXLANs](/old/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
     
-      - [Troubleshooting VXLANs](Troubleshooting_VXLANs.html)
+      - [Troubleshooting VXLANs](/old/Troubleshooting_VXLANs.html)
     
-      - [Virtualization Integrations](Virtualization_Integrations.html)
+      - [Virtualization
+        Integrations](/old/Virtualization_Integrations.html)
         
           - [Integrating Hardware VTEPs with Midokura MidoNet and
-            OpenStack](Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
+            OpenStack](/old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
         
           - [Integrating Hardware VTEPs with VMware
-            NSX-V](Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
+            NSX-V](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
         
           - [Integrating Hardware VTEPs with VMware
-            NSX-MH](Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
+            NSX-MH](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
         
           - [OVSDB Server High
-            Availability](OVSDB_Server_High_Availability.html)
+            Availability](/old/OVSDB_Server_High_Availability.html)
     
       - [VXLAN Tunnel DSCP Operations
-        — DRAFT](VXLAN_Tunnel_DSCP_Operations_—%C2%A0DRAFT.html)
+        — DRAFT](/old/VXLAN_Tunnel_DSCP_Operations_—%C2%A0DRAFT.html)
     
       - [Eng Update of VXLAN
-        Hyperloop](Eng_Update_of_VXLAN_Hyperloop.html)
+        Hyperloop](/old/Eng_Update_of_VXLAN_Hyperloop.html)
     
-      - [VXLAN Active-Active](VXLAN_Active-Active.html)
+      - [VXLAN Active-Active](/old/VXLAN_Active-Active.html)

@@ -3,6 +3,8 @@ title: Configuring a Global Proxy
 author: Unknown
 weight: 77
 pageID: 8362577
+aliases:
+ - /old/Configuring_a_Global_Proxy.html
 ---
 # Configuring a Global Proxy
 

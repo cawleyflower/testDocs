@@ -3,6 +3,8 @@ title: Virtual Router Redundancy - VRR and VRRP
 author: Unknown
 weight: 129
 pageID: 8362691
+aliases:
+ - /old/Virtual_Router_Redundancy_-_VRR_and_VRRP.html
 ---
 # Virtual Router Redundancy - VRR and VRRP
 
@@ -38,7 +40,7 @@ configuration.
 The diagram below illustrates a basic VRR-enabled network configuration.
 The network includes several hosts and two routers running Cumulus Linux
 configured with [Multi-chassis Link
-Aggregation](Multi-Chassis_Link_Aggregation_-_MLAG.html) (MLAG).
+Aggregation](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html) (MLAG).
 
 {{%notice note%}}
 
@@ -186,17 +188,14 @@ interfaces as bonds running LACP; the hosts should also configure its
 two interfaces using teaming, port aggregation, port group, or
 EtherChannel running LACP. Configure the hosts, either statically or via
 DHCP, with a gateway address that is the IP address of the virtual
-router; this default gateway address never
-changes.
+router; this default gateway address never changes.
 
-<span id="src-8362691_indexterm-DCB1233D6637E0985F0FBFA74719FEF2">Configure
-the links between the hosts and the routers in
-</span>*active-active*<span id="src-8362691_indexterm-BDA4102072FFB33B00292E710E0974D2">
-mode for </span>First Hop Redundancy Protocol.
+Configure the links between the hosts and the routers in *active-active*
+mode for First Hop Redundancy Protocol.
 
 ### Example VRR Configuration with MLAG
 
-To create an [MLAG](Multi-Chassis_Link_Aggregation_-_MLAG.html)
+To create an [MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html)
 configuration that incorporates VRR, use a configuration like the
 following:
 

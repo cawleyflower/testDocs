@@ -3,12 +3,14 @@ title: Management VRF
 author: Unknown
 weight: 209
 pageID: 8362940
+aliases:
+ - /old/Management_VRF.html
 ---
 # Management VRF
 
 *Management VRF* is a subset of
-[VRF](Virtual_Routing_and_Forwarding_-_VRF.html) (virtual routing tables
-and forwarding) and provides a separation between the out-of-band
+[VRF](/old/Virtual_Routing_and_Forwarding_-_VRF.html) (virtual routing
+tables and forwarding) and provides a separation between the out-of-band
 management network and the in-band data plane network. For all VRFs, the
 *main* routing table is the default table for all of the data plane
 switch ports. With management VRF, a second table, *mgmt*, is used for
@@ -165,7 +167,7 @@ disabled in the default VRF are:
 When you run a service inside the management VRF, that service runs
 **only** on eth0; it no longer runs on any switch port. However, you can
 keep the service running in the default VRF with a wildcard for
-[agentAddress](Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html#src-8362608_safe-id-U2ltcGxlTmV0d29ya01hbmFnZW1lbnRQcm90b2NvbChTTk1QKU1vbml0b3JpbmctYWdlbnRBZGRyZXNz).
+[agentAddress](/old/Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html#src-8362608_safe-id-U2ltcGxlTmV0d29ya01hbmFnZW1lbnRQcm90b2NvbChTTk1QKU1vbml0b3JpbmctYWdlbnRBZGRyZXNz).
 This enables the service to run on **all** interfaces no matter which
 VRF, so you don't have to run a different process for each VRF.
 
@@ -177,11 +179,11 @@ packet is received. This `sysctl` is enabled for Cumulus Linux.
 To enable a service to run in the management VRF, do the following.
 These steps use the NTP service, but you can use any of the services
 listed above, except for `dhcrelay` (discussed
-[here](DHCP_Relays.html#src-8363036_DHCPRelays-multiple)) and `hsflowd`
-(discussed [below](#src-8362940_ManagementVRF-hsflowd)).
+[here](/old/DHCP_Relays.html#src-8363036_DHCPRelays-multiple)) and
+`hsflowd` (discussed [below](/old/#src-8362940_ManagementVRF-hsflowd)).
 
 1.  Configure the management VRF as described in [the Enabling
-    Management VRF section above](#).
+    Management VRF section above](/old/#).
 
 2.  If NTP is running, stop the service:
     
@@ -263,7 +265,7 @@ operation of the switch.
 ### Enable hsflowd
 
 If you are using
-[sFlow](https://docs.cumulusnetworks.com/display/CL31/Monitoring+System+Statistics+and+Network+Traffic+with+sFlow)
+[sFlow](/old/https://docs.cumulusnetworks.com/display/CL31/Monitoring+System+Statistics+and+Network+Traffic+with+sFlow)
 to monitor traffic in the management VRF, you need to complete the
 following steps to enable sFlow.
 
@@ -566,7 +568,7 @@ cumulus@switch:~$ net show route vrf mgmt
 ## mgmt Interface Class
 
 In `ifupdown2`, [interface
-classes](Interface_Configuration_and_Management.html#src-8363023_InterfaceConfigurationandManagement-classes)
+classes](/old/Interface_Configuration_and_Management.html#src-8363023_InterfaceConfigurationandManagement-classes)
 are used to create a user-defined grouping for interfaces. The special
 class *mgmt* is available to separate the management interfaces of the
 switch from the data interfaces. This allows you to manage the data
@@ -580,7 +582,7 @@ class and the *mgmt* interface class when the switch boots.
 
 The management VRF interface class is not supported if you are
 configuring Cumulus Linux using
-[NCLU](Network_Command_Line_Utility_-_NCLU.html).
+[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html).
 
 {{%/notice%}}
 

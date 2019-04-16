@@ -3,6 +3,8 @@ title: GRE Tunneling
 author: Unknown
 weight: 211
 pageID: 8362966
+aliases:
+ - /old/GRE_Tunneling.html
 ---
 # GRE Tunneling
 

@@ -3,25 +3,24 @@ title: Configuring switchd
 author: Unknown
 weight: 73
 pageID: 8362561
+aliases:
+ - /old/Configuring_switchd.html
 ---
 # Configuring switchd
 
-`switchd`<span id="src-8362561_indexterm-D9B1AC1340E728FB10AED8A5C19039A1">
-is the </span>daemon at the heart of Cumulus Linux. It communicates
+`switchd` is the daemon at the heart of Cumulus Linux. It communicates
 between the switch and Cumulus Linux, and all the applications running
 on Cumulus Linux.
 
-The `switchd` configuration is stored in
-`/etc/cumulus/switchd.conf`.
+The `switchd` configuration is stored in `/etc/cumulus/switchd.conf`.
 
 ## The switchd File System
 
-`switchd`<span id="src-8362561_indexterm-3E087284C77D7249CE05CC53316B17BA">
-also exports a </span>file system, mounted on `/cumulus/switchd`, that
-presents all the `switchd` configuration options as a series of files
-arranged in a tree structure. You can see the contents by parsing the
-`switchd` tree; run `tree /cumulus/switchd`. The output below is for a
-switch with one switch port configured:
+`switchd` also exports a file system, mounted on `/cumulus/switchd`,
+that presents all the `switchd` configuration options as a series of
+files arranged in a tree structure. You can see the contents by parsing
+the `switchd` tree; run `tree /cumulus/switchd`. The output below is for
+a switch with one switch port configured:
 
 ``` 
                    
@@ -94,11 +93,10 @@ cumulus@switch:~$ sudo tree /cumulus/switchd/
 
 ## Configure switchd Parameters
 
-<span id="src-8362561_indexterm-C88A1EFD8547F74C744E43B8BEDEC62E">You
-can use </span>`cl-cfg` to configure many `switchd` parameters at
-runtime (like ACLs, interfaces, and route table utilization), which
-minimizes disruption to your running switch. However, some options are
-read only and cannot be configured at runtime.
+You can use `cl-cfg` to configure many `switchd` parameters at runtime
+(like ACLs, interfaces, and route table utilization), which minimizes
+disruption to your running switch. However, some options are read only
+and cannot be configured at runtime.
 
 For example, to see data related to routes, run:
 
@@ -144,11 +142,8 @@ though you cannot update the `switchd` configuration with it.
 
 Whenever you modify any `switchd` hardware configuration file (typically
 changing any `*.conf` file that requires making a change to the
-switching hardware, like
-`/etc/cumulus/datapath/traffic.conf`<span id="src-8362561_indexterm-DA1469432AB3393F3D8542596E937023">),
-you
-</span><span id="src-8362561_indexterm-9E6AADAA90BFEBE870E4DD326424ECC6">must
-</span>restart `switchd` for the change to take effect:
+switching hardware, like `/etc/cumulus/datapath/traffic.conf`), you must
+restart `switchd` for the change to take effect:
 
 ``` 
                    

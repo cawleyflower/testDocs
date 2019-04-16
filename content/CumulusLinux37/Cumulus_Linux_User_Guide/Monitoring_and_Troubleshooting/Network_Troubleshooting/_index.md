@@ -3,6 +3,8 @@ title: Network Troubleshooting
 author: Unknown
 weight: 241
 pageID: 8362596
+aliases:
+ - /old/Network_Troubleshooting.html
 ---
 # Network Troubleshooting
 
@@ -11,8 +13,7 @@ help you troubleshoot issues with your network.
 
 ## Check Reachability Using ping
 
-`ping`<span id="src-8362596_indexterm-DCEECC13917D2C745F872F7BF201D491">
-</span>is used to check reachability of a host. `ping` also calculates
+`ping` is used to check reachability of a host. `ping` also calculates
 the time it takes for packets to travel the round trip. See `man ping`
 for details.
 
@@ -73,14 +74,12 @@ otherwise `ping` waits for two RTTs (round trip time in milliseconds).
 `-O` reports outstanding ICMP ECHO replies before sending the next
 packet.
 
-`-awk` substitutes human readable time format for unix
-time.
+`-awk` substitutes human readable time format for unix time.
 
 ## Print Route Trace Using traceroute
 
-`traceroute`<span id="src-8362596_indexterm-C54E3A44E1099B105FDDBB7E3AB51768">
-</span>tracks the route that packets take from an IP network on their
-way to a given host. See `man traceroute` for details.
+`traceroute` tracks the route that packets take from an IP network on
+their way to a given host. See `man traceroute` for details.
 
 To track the route to an IPv4 host:
 
@@ -100,8 +99,7 @@ traceroute to www.google.com (74.125.239.49), 30 hops max, 60 byte packets
 
 ## Manipulate the System ARP Cache
 
-`arp`<span id="src-8362596_indexterm-EDC65465F9F851BC63E094A3EDCE01FA">
-</span>manipulates or displays the kernel’s IPv4 network neighbor cache.
+`arp` manipulates or displays the kernel’s IPv4 network neighbor cache.
 See `man arp` for details.
 
 To display the ARP cache:
@@ -154,9 +152,7 @@ cumulus@switch:~$ ip link set arp off dev INTERFACE
 
 ## Generate Traffic Using mz
 
-`mz`<span id="src-8362596_indexterm-9931E3689CAF1528F1A3E8EBB2CCEF5F">
-</span><span id="src-8362596_indexterm-6B86B0E72A69ACDAA68108A6D738A401">is
-a fast </span>traffic generator. It can generate a large variety of
+`mz` is a fast traffic generator. It can generate a large variety of
 packet types at high speed. See `man mz` for details.
 
 For example, to send two sets of packets to TCP port 23 and 24, with
@@ -198,11 +194,10 @@ Mausezahn will send 4 frames...
 
 ## Create Counter ACL Rules
 
-<span id="src-8362596_indexterm-C7C102652CE6E8F765C1C1077A64246A">In
-Linux, all </span>ACL rules are always counted. To create an ACL rule
-for counting purposes only, set the rule action to ACCEPT. See the
-[Netfilter](Netfilter_-_ACLs.html) chapter for details on how to use
-`cl-acltool` to set up iptables-/ip6tables-/ebtables-based ACLs.
+In Linux, all ACL rules are always counted. To create an ACL rule for
+counting purposes only, set the rule action to ACCEPT. See the
+[Netfilter](/old/Netfilter_-_ACLs.html) chapter for details on how to
+use `cl-acltool` to set up iptables-/ip6tables-/ebtables-based ACLs.
 
 {{%notice note%}}
 
@@ -248,16 +243,14 @@ to reinstall all the rules.
 
 ## Configure SPAN and ERSPAN
 
-<span id="src-8362596_indexterm-A80D0DF84FC86408518E027A9982A689">SPAN
-(Switched Port Analyzer) </span>provides for the mirroring of all
-packets coming in from or going out of an interface (the *SPAN source*),
-and being copied and transmitted out of a local port (the *SPAN
+SPAN (Switched Port Analyzer) provides for the mirroring of all packets
+coming in from or going out of an interface (the *SPAN source*), and
+being copied and transmitted out of a local port (the *SPAN
 destination*) for monitoring. The SPAN destination port is also referred
 to as a mirror-to-port (MTP). The original packet is still switched,
 while a mirrored copy of the packet is sent out of the MTP.
 
-<span id="src-8362596_indexterm-0D917385CC9CE18B6F26799981A1D574">ERSPAN
-(Encapsulated Remote SPAN) </span>enables the mirrored packets to be
+ERSPAN (Encapsulated Remote SPAN) enables the mirrored packets to be
 sent to a monitoring node located anywhere across the routed network.
 The switch finds the outgoing port of the mirrored packets by doing a
 lookup of the destination IP address in its routing table. The original
@@ -281,14 +274,15 @@ packets may be discarded.
 {{%/notice%}}
 
 SPAN and ERSPAN are configured via `cl-acltool`, the [same utility for
-security ACL configuration](Netfilter_-_ACLs.html). The match criteria
-for SPAN and ERSPAN is usually an interface; for more granular match
-terms, use [selective
-spanning](#src-8362596_NetworkTroubleshooting-selective_spanning). The
-SPAN source interface can be a port, a subinterface or a bond interface.
-Ingress traffic on interfaces can be matched, and on Mellanox Spectrum
-switches, egress traffic can be matched. See the [list of
-limitations](#src-8362596_NetworkTroubleshooting-span_limits) below.
+security ACL configuration](/old/Netfilter_-_ACLs.html). The match
+criteria for SPAN and ERSPAN is usually an interface; for more granular
+match terms, use [selective
+spanning](/old/#src-8362596_NetworkTroubleshooting-selective_spanning).
+The SPAN source interface can be a port, a subinterface or a bond
+interface. Ingress traffic on interfaces can be matched, and on Mellanox
+Spectrum switches, egress traffic can be matched. See the [list of
+limitations](/old/#src-8362596_NetworkTroubleshooting-span_limits)
+below.
 
 Cumulus Linux supports a maximum of 2 SPAN destinations. Multiple rules
 (SPAN sources) can point to the same SPAN destination, although a given
@@ -319,7 +313,7 @@ Always place your rules files under `/etc/cumulus/acl/policy.d/`.
 
   - To configure SPAN or ERSPAN on a Tomahawk or Trident3 switch, you
     must enable [non-atomic update
-    mode](Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-nonatomic-update-mode).
+    mode](/old/Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-nonatomic-update-mode).
 
   - Mellanox switches reject SPAN ACL rules for an output interface that
     is a subinterface.
@@ -528,7 +522,7 @@ from `swp1` to 12.0.0.2.
 {{%notice note%}}
 
 [Cut-through
-mode](Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-cut_through_mode)
+mode](/old/Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-cut_through_mode)
 is **not** supported for ERSPAN in Cumulus Linux on switches using
 Broadcom Tomahawk, Trident II+ and Trident II ASICs.
 
@@ -751,14 +745,9 @@ cumulus@switch:~$
 
 ### Monitor Control Plane Traffic with tcpdump
 
-You can use
-`tcpdump`<span id="src-8362596_indexterm-7ACA5E299111FA17FEF9957BEF252B2F">
-to
-</span><span id="src-8362596_indexterm-FF2E39DF785CCAAF8AFFBB0C38404C30">monitor
-</span><span id="src-8362596_indexterm-49D44D374C0B1768B818E56E70859B5C">control
-</span>plane traffic — traffic sent to and coming from the switch CPUs.
-`tcpdump` does **not** monitor data plane traffic; use `cl-acltool`
-instead (see above).
+You can use `tcpdump` to monitor control plane traffic — traffic sent to
+and coming from the switch CPUs. `tcpdump` does **not** monitor data
+plane traffic; use `cl-acltool` instead (see above).
 
 For more information on tcpdump, read [the `tcpdump`
 documentation](http://www.tcpdump.org/#documentation) and the [`tcpdump`

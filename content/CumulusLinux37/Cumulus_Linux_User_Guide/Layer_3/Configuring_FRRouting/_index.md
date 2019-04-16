@@ -3,6 +3,8 @@ title: Configuring FRRouting
 author: Unknown
 weight: 189
 pageID: 8362919
+aliases:
+ - /old/Configuring_FRRouting.html
 ---
 # Configuring FRRouting
 
@@ -25,11 +27,10 @@ Cumulus Networks has not tested RIP, RIPv6, IS-IS and Babel.
 
 The `zebra` daemon must always be enabled. The others you can enable
 according to how you plan to route your network — using
-[BGP](Border_Gateway_Protocol_-_BGP.html) for example, instead of
-[OSPF](Open_Shortest_Path_First_-_OSPF.html).
+[BGP](/old/Border_Gateway_Protocol_-_BGP.html) for example, instead of
+[OSPF](/old/Open_Shortest_Path_First_-_OSPF.html).
 
-<span id="src-8362919_indexterm-F70437351C2A6204C3DB2CD841C8034C">Before
-you start </span>FRRouting, you need to enable the corresponding
+Before you start FRRouting, you need to enable the corresponding
 daemons. Edit the `/etc/frr/daemons` file and set to *yes* each daemon
 you are enabling. For example, to enable BGP, set both `zebra` and
 `bgpd` to *yes*:
@@ -76,7 +77,7 @@ any of the routing protocol daemons that are enabled and running.
 
 For more information on the `systemctl` command and changing the state
 of daemons, read [Services and Daemons in Cumulus
-Linux](Services_and_Daemons_in_Cumulus_Linux.html).
+Linux](/old/Services_and_Daemons_in_Cumulus_Linux.html).
 
 {{%/notice%}}
 
@@ -86,7 +87,7 @@ By default in Cumulus Linux, FRRouting saves the configuration of all
 daemons in a single integrated configuration file, `frr.conf`.
 
 You can disable this mode by running the following command in the
-[`vtysh` FRRouting CLI](#src-8362919_ConfiguringFRRouting-vtysh):
+[`vtysh` FRRouting CLI](/old/#src-8362919_ConfiguringFRRouting-vtysh):
 
 ``` 
                    
@@ -195,14 +196,13 @@ FRRouting inherits the IP addresses and any associated routing tables
 for the network interfaces from the `/etc/network/interfaces` file. This
 is the recommended way to define the addresses; do **not** create
 interfaces using FRRouting. For more information, see [Configuring IP
-Addresses](Interface_Configuration_and_Management.html#src-8363023_InterfaceConfigurationandManagement-ip)
+Addresses](/old/Interface_Configuration_and_Management.html#src-8363023_InterfaceConfigurationandManagement-ip)
 and [Virtual Routing and Forwarding -
-VRF](Virtual_Routing_and_Forwarding_-_VRF.html).
+VRF](/old/Virtual_Routing_and_Forwarding_-_VRF.html).
 
 ## FRRouting vtysh Modal CLI
 
-<span id="src-8362919_indexterm-2357A94E017F44C2CCB17E653314CD58">FRRouting
-provides a CLI – </span>`vtysh` – for configuring and displaying the
+FRRouting provides a CLI – `vtysh` – for configuring and displaying the
 state of the protocols. It is invoked by running:
 
 ``` 
@@ -518,7 +518,7 @@ started, `vtysh` silently ignores those commands.
 
 Alternately, if you do not want to use a modal CLI to configure
 FRRouting, you can use a suite of [Cumulus Linux-specific
-commands](Comparing_NCLU_and_vtysh_Commands.html) instead.
+commands](/old/Comparing_NCLU_and_vtysh_Commands.html) instead.
 
 ## Reload the FRRouting Configuration
 

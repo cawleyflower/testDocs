@@ -3,20 +3,20 @@ title: VXLAN Active-Active Mode
 author: Unknown
 weight: 153
 pageID: 8362725
+aliases:
+ - /old/VXLAN_Active-Active_Mode.html
 ---
 # VXLAN Active-Active Mode
 
-*<span id="src-8362725_indexterm-D2CF1016C6327811ED1B84FB44257E4F">VXLAN
-</span><span id="src-8362725_indexterm-6F265A871381366A22664EB76A05F02A">active-active
-</span>mode* allows a pair of
-[MLAG](Multi-Chassis_Link_Aggregation_-_MLAG.html) switches to act as a
-single VTEP, providing active-active VXLAN termination for bare metal as
-well as virtualized workloads.
+*VXLAN active-active mode* allows a pair of
+[MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html) switches to act
+as a single VTEP, providing active-active VXLAN termination for bare
+metal as well as virtualized workloads.
 
 There are some differences whether you're deploying this with
-[EVPN](Ethernet_Virtual_Private_Network_-_EVPN.html) or
-[LNV](Lightweight_Network_Virtualization_Overview.html). This chapter
-outlines the configurations for both
+[EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html) or
+[LNV](/old/Lightweight_Network_Virtualization_Overview.html). This
+chapter outlines the configurations for both
 options.
 
 ## Terminology
@@ -58,15 +58,15 @@ to work correctly.
 <tbody>
 <tr class="odd">
 <td><p>MLAG</p></td>
-<td><p>Refer to the <a href="#src-8362725_VXLANActive-ActiveMode-configuring">MLAG chapter</a> for more detailed configuration information. Configurations for the demonstration are provided below.</p></td>
+<td><p>Refer to the <a href="/old/#src-8362725_VXLANActive-ActiveMode-configuring">MLAG chapter</a> for more detailed configuration information. Configurations for the demonstration are provided below.</p></td>
 </tr>
 <tr class="even">
 <td><p>OSPF or BGP</p></td>
-<td><p>Refer to the <a href="https://docs.cumulusnetworks.com/display/DOCS/Open+Shortest+Path+First+-+OSPF+-+Protocol">OSPF chapter</a> or the <a href="Border_Gateway_Protocol_-_BGP.html">BGP chapter</a> for more detailed configuration information. Configurations for the BGP demonstration are provided below.</p></td>
+<td><p>Refer to the <a href="/old/https://docs.cumulusnetworks.com/display/DOCS/Open+Shortest+Path+First+-+OSPF+-+Protocol">OSPF chapter</a> or the <a href="/old/Border_Gateway_Protocol_-_BGP.html">BGP chapter</a> for more detailed configuration information. Configurations for the BGP demonstration are provided below.</p></td>
 </tr>
 <tr class="odd">
 <td><p>STP</p></td>
-<td><p>You must enable <a href="#src-8362725_VXLANActive-ActiveMode-bpdu">BPDU filter and BPDU guard</a> in the VXLAN interfaces if <a href="#">STP</a> is enabled in the bridge that is connected to the VXLAN.<br />
+<td><p>You must enable <a href="/old/#src-8362725_VXLANActive-ActiveMode-bpdu">BPDU filter and BPDU guard</a> in the VXLAN interfaces if <a href="/old/#">STP</a> is enabled in the bridge that is connected to the VXLAN.<br />
 Configurations for the demonstration are provided below.</p></td>
 </tr>
 </tbody>
@@ -182,10 +182,10 @@ changes to anycast upon MLAG peering.
 ### FRRouting Configuration
 
 You can configure the layer 3 fabric using
-[BGP](Border_Gateway_Protocol_-_BGP.html) or
-[OSPF](Open_Shortest_Path_First_-_OSPF.html). The following example uses
-BGP unnumbered. The MLAG switch configuration for the topology above is
-shown below.
+[BGP](/old/Border_Gateway_Protocol_-_BGP.html) or
+[OSPF](/old/Open_Shortest_Path_First_-_OSPF.html). The following example
+uses BGP unnumbered. The MLAG switch configuration for the topology
+above is shown below.
 
 ### Layer 3 IP Addressing
 
@@ -680,7 +680,7 @@ iface bond0.20 inet static
 ## Troubleshooting
 
 In addition to [troubleshooting single-attached
-configurations](Troubleshooting_VXLANs.html), there is now the MLAG
+configurations](/old/Troubleshooting_VXLANs.html), there is now the MLAG
 daemon (`clagd`) to consider. The `clagctl` command gives the output of
 MLAG behavior and any inconsistencies that might arise between a MLAG
 pair.
@@ -753,7 +753,7 @@ Our Interface      Peer Interface     CLAG Id   Conflicts              Proto-Dow
 Do not reuse the VLAN used for the peer link layer 3 subinterface for
 any other interface in the system. A high VLAN ID value is recommended.
 For more information on VLAN ID ranges, refer to the [VLAN-aware bridge
-chapter](VLAN-aware_Bridge_Mode.html#src-8362673_VLAN-awareBridgeMode-vlan_range).
+chapter](/old/VLAN-aware_Bridge_Mode.html#src-8362673_VLAN-awareBridgeMode-vlan_range).
 
 ### Bonds with Vagrant in Cumulus VX
 
@@ -777,7 +777,8 @@ iface swp50
 ```
 
 For more information on using Cumulus VX and Vagrant, refer to the
-[Cumulus VX documentation](https://docs.cumulusnetworks.com/display/VX).
+[Cumulus VX
+documentation](/old/https://docs.cumulusnetworks.com/display/VX).
 
 ### With LNV, Unique Node ID Required for vxrd in Cumulus VX
 
@@ -843,52 +844,54 @@ mode can function correctly.
 ## Related Information
 
   - [Network virtualization chapter, Cumulus Linux user
-    guide](Network_Virtualization.html)
+    guide](/old/Network_Virtualization.html)
     
-      - [Static VXLAN Configurations](Static_VXLAN_Configurations.html)
+      - [Static VXLAN
+        Configurations](/old/Static_VXLAN_Configurations.html)
         
-          - [Static VXLAN Tunnels](Static_VXLAN_Tunnels.html)
+          - [Static VXLAN Tunnels](/old/Static_VXLAN_Tunnels.html)
         
           - [Static MAC Bindings with
-            VXLAN](Static_MAC_Bindings_with_VXLAN.html)
+            VXLAN](/old/Static_MAC_Bindings_with_VXLAN.html)
     
       - [Ethernet Virtual Private Network -
-        EVPN](Ethernet_Virtual_Private_Network_-_EVPN.html)
+        EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html)
     
       - [Lightweight Network Virtualization
-        Overview](Lightweight_Network_Virtualization_Overview.html)
+        Overview](/old/Lightweight_Network_Virtualization_Overview.html)
         
-          - [LNV Full Example](LNV_Full_Example.html)
+          - [LNV Full Example](/old/LNV_Full_Example.html)
     
-      - [VXLAN Active-Active Mode](#)
+      - [VXLAN Active-Active Mode](/old/#)
     
-      - [VXLAN Routing](VXLAN_Routing.html)
+      - [VXLAN Routing](/old/VXLAN_Routing.html)
     
-      - [VXLAN Scale](VXLAN_Scale.html)
+      - [VXLAN Scale](/old/VXLAN_Scale.html)
     
       - [Hybrid Cloud Connectivity with QinQ and
-        VXLANs](Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
+        VXLANs](/old/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
     
-      - [Troubleshooting VXLANs](Troubleshooting_VXLANs.html)
+      - [Troubleshooting VXLANs](/old/Troubleshooting_VXLANs.html)
     
-      - [Virtualization Integrations](Virtualization_Integrations.html)
+      - [Virtualization
+        Integrations](/old/Virtualization_Integrations.html)
         
           - [Integrating Hardware VTEPs with Midokura MidoNet and
-            OpenStack](Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
+            OpenStack](/old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
         
           - [Integrating Hardware VTEPs with VMware
-            NSX-V](Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
+            NSX-V](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
         
           - [Integrating Hardware VTEPs with VMware
-            NSX-MH](Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
+            NSX-MH](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
         
           - [OVSDB Server High
-            Availability](OVSDB_Server_High_Availability.html)
+            Availability](/old/OVSDB_Server_High_Availability.html)
     
       - [VXLAN Tunnel DSCP Operations
-        — DRAFT](VXLAN_Tunnel_DSCP_Operations_—%C2%A0DRAFT.html)
+        — DRAFT](/old/VXLAN_Tunnel_DSCP_Operations_—%C2%A0DRAFT.html)
     
       - [Eng Update of VXLAN
-        Hyperloop](Eng_Update_of_VXLAN_Hyperloop.html)
+        Hyperloop](/old/Eng_Update_of_VXLAN_Hyperloop.html)
     
-      - [VXLAN Active-Active](VXLAN_Active-Active.html)
+      - [VXLAN Active-Active](/old/VXLAN_Active-Active.html)

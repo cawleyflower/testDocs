@@ -3,6 +3,8 @@ title: Hardware-enabled DDOS Protection
 author: Unknown
 weight: 333
 pageID: 8363034
+aliases:
+ - /old/Hardware-enabled_DDOS_Protection.html
 ---
 # Hardware-enabled DDOS Protection
 
@@ -123,9 +125,9 @@ Spectrum ASICs.
     {{%notice note%}}
     
     Configuring any of the following settings affects the [BFD
-    echo](Bidirectional_Forwarding_Detection_-_BFD.html) function. For
-    example, if you enable `dos.udp_ports_eq`, all the BFD packets will
-    get dropped because the BFD protocol uses the same source and
+    echo](/old/Bidirectional_Forwarding_Detection_-_BFD.html) function.
+    For example, if you enable `dos.udp_ports_eq`, all the BFD packets
+    will get dropped because the BFD protocol uses the same source and
     destination UDP ports.
     
     dos.sip\_eq\_dip

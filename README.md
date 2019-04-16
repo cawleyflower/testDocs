@@ -1,6 +1,6 @@
 # Cumulus Networks Test Documentation Site
 
-This a development website for Cumulus Networks Technical Documentation
+This a development website for Cumulus Networks Technical Documentation.
 The site is built with the static site generator [Hugo](https://gohugo.io/documentation/)
 
 ## Installing the Test Documentation Site
@@ -39,7 +39,7 @@ use `hugo server -D` to include drafts
 
 ## Theme
 
-Theme netDocs is forked from the Book Hugo theme
+Theme netDocs is forked from the Book Hugo theme.
 Some features added from docDock Hugo theme
 
 ## Resources

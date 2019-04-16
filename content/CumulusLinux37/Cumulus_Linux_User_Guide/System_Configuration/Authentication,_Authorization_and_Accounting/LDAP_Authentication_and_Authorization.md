@@ -3,15 +3,13 @@ title: LDAP Authentication and Authorization
 author: Unknown
 weight: 291
 pageID: 8362556
+aliases:
+ - /old/LDAP_Authentication_and_Authorization.html
 ---
 # LDAP Authentication and Authorization
 
-<span id="src-8362556_indexterm-E99646EB36D84DD6C79AC33EE8EC7F2B">Cumulus
-Linux uses
-</span><span id="src-8362556_indexterm-4309F2A51AC02D36C5E99EEA9A079FE4">Pluggable
-Authentication Modules (PAM) and
-</span><span id="src-8362556_indexterm-DEE26088CF575B2054316B51B30B2C05">Name
-Service Switch (NSS) for </span>user authentication.
+Cumulus Linux uses Pluggable Authentication Modules (PAM) and Name
+Service Switch (NSS) for user authentication.
 
 NSS specifies the order of information sources used to resolve names for
 each service. Using this with authentication and authorization, it
@@ -25,8 +23,7 @@ mapping, and information for other services on the system.
 
 ## Configure LDAP Authentication
 
-<span id="src-8362556_indexterm-D36F4BAD1AED090267DD3107DCE89574">There
-are 3 common ways to configure </span>LDAP authentication on Linux:
+There are 3 common ways to configure LDAP authentication on Linux:
 
   - libnss-ldap
 
@@ -64,7 +61,7 @@ and create the pre-seeded parameters using `debconf-set-selections` with
 the appropriate answers. Run `debconf-show <pkg>` to check the settings.
 Here is an [example of how to pre-seed answers to the installer
 questions using
-`debconf-set-selections`](attachments_8362555_1_kb_debconf.txt) .
+`debconf-set-selections`](/old/attachments_8362555_1_kb_debconf.txt) .
 
 {{%/notice%}}
 
@@ -200,7 +197,8 @@ the manpage for `nslcd.conf` (such as *passwd* or *group*).
 ### Example Configuration
 
 Here is an [example
-configuration ](attachments_8362557_1_nslcd.conf)using Cumulus Linux.
+configuration ](/old/attachments_8362557_1_nslcd.conf)using Cumulus
+Linux.
 
 ## Troubleshooting
 

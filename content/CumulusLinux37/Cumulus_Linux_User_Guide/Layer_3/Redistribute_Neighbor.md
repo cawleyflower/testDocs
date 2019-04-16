@@ -3,6 +3,8 @@ title: Redistribute Neighbor
 author: Unknown
 weight: 205
 pageID: 8362959
+aliases:
+ - /old/Redistribute_Neighbor.html
 ---
 # Redistribute Neighbor
 
@@ -44,7 +46,7 @@ Redistribute neighbor was created with these use cases in mind:
 
   - Hosts that are dual connected to two leaf nodes without using
     proprietary protocols such as
-    [MLAG](Multi-Chassis_Link_Aggregation_-_MLAG.html)
+    [MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html)
 
   - Anycast services needing dynamic advertisement from multiple hosts
 
@@ -124,7 +126,7 @@ This release of redistribute neighbor supports IPv4 only.
 ### VRFs Are not Supported
 
 This release of redistribute neighbor does not support
-[VRFs](Virtual_Routing_and_Forwarding_-_VRF.html).
+[VRFs](/old/Virtual_Routing_and_Forwarding_-_VRF.html).
 
 ### Only 1024 Interfaces Supported
 

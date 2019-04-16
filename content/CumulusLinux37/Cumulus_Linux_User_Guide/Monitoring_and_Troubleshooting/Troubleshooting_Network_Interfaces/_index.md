@@ -3,33 +3,28 @@ title: Troubleshooting Network Interfaces
 author: Unknown
 weight: 239
 pageID: 8362603
+aliases:
+ - /old/Troubleshooting_Network_Interfaces.html
 ---
 # Troubleshooting Network Interfaces
 
-<span id="src-8362603_indexterm-4FDBD42233179883DB1F4CBBD1170781">The
-following sections describe various ways you can </span>troubleshoot
+The following sections describe various ways you can troubleshoot
 `ifupdown2`.
 
 ## Enable Logging for Networking
 
-The
-`/etc/default/networking`<span id="src-8362603_indexterm-28A994E2895EEB4A10D4482ABFD2C32E">
-</span><span id="src-8362603_indexterm-25748A1C9C1EA25716DE096F1F4186FB">file
-</span><span id="src-8362603_indexterm-313A31D81192D9D6F13995AC71179D7D">contains
-</span><span id="src-8362603_indexterm-21A02D942BEF9A08710A7A9BD39377D5">two
-</span>settings for logging:
+The `/etc/default/networking` file contains two settings for logging:
 
   - To get `ifupdown2` logs when the switch boots (stored in `syslog`)
 
   - To enable logging when you run `systemctl [start|stop|reload]
     networking.service`
 
-<span id="src-8362603_indexterm-C7739075780D23F654D6DC348E62C714">This
-file also contains an option for </span>excluding interfaces when you
-boot the switch or run ` systemctl start|stop|reload networking.service
- `. You can exclude any interface specified in
-`/etc/network/interfaces`. These interfaces do not come up when you boot
-the switch or start/stop/reload the networking service.
+This file also contains an option for excluding interfaces when you boot
+the switch or run ` systemctl start|stop|reload networking.service  `.
+You can exclude any interface specified in `/etc/network/interfaces`.
+These interfaces do not come up when you boot the switch or
+start/stop/reload the networking service.
 
 ``` 
                    
@@ -57,8 +52,7 @@ EXCLUDE_INTERFACES=
 
 ## Use ifquery to Validate and Debug Interface Configurations
 
-<span id="src-8362603_indexterm-853EFE6BD5C336DF253CA393A96F6C08">You
-use </span>`ifquery` to print parsed `interfaces` file entries.
+You use `ifquery` to print parsed `interfaces` file entries.
 
 To use `ifquery` to pretty print `iface` entries from the `interfaces`
 file, run:
@@ -133,9 +127,8 @@ iface eth0 inet dhcp
 
 ## Mako Template Errors
 
-<span id="src-8362603_indexterm-E7E5860CE38D5B8160C23B81861B3EAE">An
-easy way to </span>debug and get details about template errors is to use
-the `mako-render` command on your interfaces template file or on
+An easy way to debug and get details about template errors is to use the
+`mako-render` command on your interfaces template file or on
 `/etc/network/interfaces` itself.
 
 ``` 
@@ -235,9 +228,8 @@ br0.
 
 ## MTU Set on a Logical Interface Fails with Error: "Numerical result out of range"
 
-<span id="src-8362603_indexterm-DF8658DE0CE444DFC36C710948DCC114">This
-error occurs when the
-</span>[MTU](Switch_Port_Attributes.html#src-8363026_SwitchPortAttributes-mtu)
+This error occurs when the
+[MTU](/old/Switch_Port_Attributes.html#src-8363026_SwitchPortAttributes-mtu)
 you are trying to set on an interface is higher than the MTU of the
 lower interface or dependent interface. Linux expects the upper
 interface to have an MTU less than or equal to the MTU on the lower
@@ -263,8 +255,7 @@ iface swp1
 
 ## iproute2 batch Command Failures
 
-`ifupdown2`<span id="src-8362603_indexterm-6357AF1EF740FB49E263C15E7E1380A0">
-batches </span>`iproute2` commands for performance reasons. A batch
+`ifupdown2` batches `iproute2` commands for performance reasons. A batch
 command contains `ip -force -batch -` in the error message. The command
 number that failed is at the end of this line: `Command failed -:1`.
 
@@ -300,4 +291,4 @@ Losing a large number of packets across an MLAG peerlink interface may
 not be a problem. Instead this could be occurring in order to prevent
 looping of BUM (broadcast, unknown unicast and multicast) packets. For
 more information, and how to detect these drops, read the [MLAG
-chapter](Multi-Chassis_Link_Aggregation_-_MLAG.html#src-8362677_Multi-ChassisLinkAggregation-MLAG-drops).
+chapter](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html#src-8362677_Multi-ChassisLinkAggregation-MLAG-drops).

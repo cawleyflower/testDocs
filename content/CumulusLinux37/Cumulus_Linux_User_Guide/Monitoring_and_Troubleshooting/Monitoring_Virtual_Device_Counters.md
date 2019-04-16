@@ -3,20 +3,15 @@ title: Monitoring Virtual Device Counters
 author: Unknown
 weight: 233
 pageID: 8362605
+aliases:
+ - /old/Monitoring_Virtual_Device_Counters.html
 ---
 # Monitoring Virtual Device Counters
 
-<span id="src-8362605_indexterm-33A0456DC6268D6C6D6C493F7C794097">Cumulus
-Linux gathers statistics for
-</span><span id="src-8362605_indexterm-0AF7520148D75141415B7897E26B225F">VXLANs
-and
-</span><span id="src-8362605_indexterm-44C161D5FCA04FB32261FEE51CAC8755">VLANs
-using
-</span><span id="src-8362605_indexterm-EBABE34B036DA2E201DF42231EC9B8C0">virtual
-</span>device counters. These counters are supported on Tomahawk,
-Trident II+ and Trident II-based platforms only; see the [Cumulus
-Networks HCL](http://cumulusnetworks.com/hcl/) for a list of supported
-platforms.
+Cumulus Linux gathers statistics for VXLANs and VLANs using virtual
+device counters. These counters are supported on Tomahawk, Trident II+
+and Trident II-based platforms only; see the [Cumulus Networks
+HCL](http://cumulusnetworks.com/hcl/) for a list of supported platforms.
 
 You can retrieve the data from these counters using tools like `ip -s
 link show`, `ifconfig`, `/proc/net/dev`, or `netstat -i`.
@@ -99,7 +94,7 @@ cumulus@switch:~$ ip -s link show vxln16757104
 ### For VLANs Using the VLAN-aware Bridge Mode Driver
 
 For a bridge using the [VLAN-aware bridge
-mode](VLAN-aware_Bridge_Mode.html) driver, the bridge is a just a
+mode](/old/VLAN-aware_Bridge_Mode.html) driver, the bridge is a just a
 container and each VLAN (VID/PVID) in the bridge is an independent L2
 broadcast domain. As there is no netdev available to display these VLAN
 statistics, the `switchd` nodes are used instead:
@@ -132,9 +127,9 @@ Total Out Packets               : 3
 ### For VLANs Using the Traditional Bridge Mode Driver
 
 For a bridge using the [traditional bridge
-mode](Traditional_Bridge_Mode.html) driver, each bridge is a single L2
-broadcast domain and is associated with an internal VLAN. This internal
-VLAN's counters are displayed as bridge netdev stats.
+mode](/old/Traditional_Bridge_Mode.html) driver, each bridge is a single
+L2 broadcast domain and is associated with an internal VLAN. This
+internal VLAN's counters are displayed as bridge netdev stats.
 
 ``` 
                    
@@ -155,12 +150,10 @@ cumulus@switch:~$ ip -s link show br0
 
 ## Configure the Counters in switchd
 
-<span id="src-8362605_indexterm-371E33548AF8D596147D7472AED1AC3B">These
-</span><span id="src-8362605_indexterm-E098F4B98A9A0C8F92D8576039C07624">counters
-are enabled by default. To configure them, use </span>`cl-cfg` and
-configure them as you would any other [`switchd`
-parameter](Configuring_switchd.html). The `switchd` parameters are as
-follows:
+These counters are enabled by default. To configure them, use `cl-cfg`
+and configure them as you would any other [`switchd`
+parameter](/old/Configuring_switchd.html). The `switchd` parameters are
+as follows:
 
   - `stats.vlan.aggregate`, which controls the statistics available for
     each VLAN. Its value defaults to *BRIEF*.
@@ -194,8 +187,7 @@ changed; previously allocated counters remain as is.
 
 ### Configure the Poll Interval
 
-<span id="src-8362605_indexterm-FACC4B889C79630CCE34E902597406F2">The
-</span>virtual device counters are polled periodically. This can be CPU
+The virtual device counters are polled periodically. This can be CPU
 intensive, so the interval is configurable in `switchd`, with a default
 of 2 seconds.
 
@@ -209,8 +201,7 @@ of 2 seconds.
 
 ### Configure Internal VLAN Statistics
 
-<span id="src-8362605_indexterm-416EFCFD2F41EF0E7799CA8818B23D28">For
-debugging purposes, you may need to access </span>packet statistics
+For debugging purposes, you may need to access packet statistics
 associated with internal VLAN IDs. These statistics are hidden by
 default, but can be configured in `switchd`:
 

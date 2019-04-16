@@ -3,15 +3,12 @@ title: Static MAC Bindings with VXLAN
 author: Unknown
 weight: 387
 pageID: 8362790
+aliases:
+ - /old/Static_MAC_Bindings_with_VXLAN.html
 ---
 # Static MAC Bindings with VXLAN
 
-<span id="src-8362790_indexterm-72C2F0ED576EB499822A1E531B8AC3AC">Cumulus
-Linux
-</span><span id="src-8362790_indexterm-1A8D4948C14C6442157120DFA14A35E4">includes
-native
-</span><span id="src-8362790_indexterm-589B76581144ED882914F09F9E8B65D0">Linux
-</span>VXLAN kernel support.
+Cumulus Linux includes native Linux VXLAN kernel support.
 
 ## Requirements
 
@@ -39,11 +36,11 @@ example:
 
 Preconfiguring remote MAC addresses does not scale. A better solution is
 to use the Cumulus Networks [Lightweight Network
-Virtualization](https://docs.cumulusnetworks.com/display/CL253a/Lightweight+Network+Virtualization+-+LNV)
+Virtualization](/old/https://docs.cumulusnetworks.com/display/CL253a/Lightweight+Network+Virtualization+-+LNV)
 feature, or a controller-based option like [Midokura MidoNet and
-OpenStack](https://docs.cumulusnetworks.com/display/CL253a/Integrating+Hardware+VTEPs+with+Midokura+MidoNet+and+OpenStack)
+OpenStack](/old/https://docs.cumulusnetworks.com/display/CL253a/Integrating+Hardware+VTEPs+with+Midokura+MidoNet+and+OpenStack)
 or [VMware
-NSX](https://docs.cumulusnetworks.com/display/CL253a/Integrating+with+VMware+NSX).
+NSX](/old/https://docs.cumulusnetworks.com/display/CL253a/Integrating+with+VMware+NSX).
 
 {{%/notice%}}
 

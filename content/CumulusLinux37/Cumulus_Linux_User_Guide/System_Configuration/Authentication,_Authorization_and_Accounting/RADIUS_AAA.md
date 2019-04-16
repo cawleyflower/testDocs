@@ -3,6 +3,8 @@ title: RADIUS AAA
 author: Unknown
 weight: 295
 pageID: 8362559
+aliases:
+ - /old/RADIUS_AAA.html
 ---
 # RADIUS AAA
 
@@ -96,8 +98,8 @@ file:
     option, you must also specify the `timeout` option.
 
 4.  Set the `vrf-name` field. This is typically set to *mgmt* if you are
-    using a [management VRF](Management_VRF.html). You cannot specify
-    more than one VRF.
+    using a [management VRF](/old/Management_VRF.html). You cannot
+    specify more than one VRF.
 
 The configuration file includes the `mapped_priv_user` field that sets
 the account used for privileged RADIUS users and the `priv-lvl` field
@@ -381,7 +383,7 @@ mapping file; this might be the first or second user that logged in.
 
 ## Related Information
 
-  - [TACACS+ client](TACACS_Plus.html)
+  - [TACACS+ client](/old/TACACS_Plus.html)
 
   - [Cumulus Networks RADIUS demo on
     GitHub](https://github.com/CumulusNetworks/cldemo-radius)

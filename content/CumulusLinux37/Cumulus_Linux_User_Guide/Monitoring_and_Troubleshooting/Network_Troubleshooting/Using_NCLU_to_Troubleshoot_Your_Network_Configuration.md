@@ -3,12 +3,14 @@ title: Using NCLU to Troubleshoot Your Network Configuration
 author: Unknown
 weight: 491
 pageID: 8362599
+aliases:
+ - /old/Using_NCLU_to_Troubleshoot_Your_Network_Configuration.html
 ---
 # Using NCLU to Troubleshoot Your Network Configuration
 
 The [network command line
-utility](Network_Command_Line_Utility_-_NCLU.html) (NCLU) can quickly
-return a lot of information about your network configuration.
+utility](/old/Network_Command_Line_Utility_-_NCLU.html) (NCLU) can
+quickly return a lot of information about your network configuration.
 
 ## net show Commands
 

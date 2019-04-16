@@ -3,6 +3,8 @@ title: FRRouting Log Message Reference
 author: Unknown
 weight: 249
 pageID: 8362628
+aliases:
+ - /old/FRRouting_Log_Message_Reference.html
 ---
 # FRRouting Log Message Reference
 

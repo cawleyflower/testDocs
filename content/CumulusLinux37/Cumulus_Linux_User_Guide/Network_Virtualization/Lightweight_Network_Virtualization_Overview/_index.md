@@ -3,6 +3,8 @@ title: Lightweight Network Virtualization Overview
 author: Unknown
 weight: 151
 pageID: 8362706
+aliases:
+ - /old/Lightweight_Network_Virtualization_Overview.html
 ---
 # Lightweight Network Virtualization Overview
 
@@ -11,27 +13,22 @@ pageID: 8362706
 As of Cumulus Linux 3.7.4, the lightweight network virtualization
 feature (LNV) has been deprecated. The feature will be removed in
 Cumulus Linux 4.0. Cumulus Networks recommends you use [Ethernet virtual
-private network (EVPN)](Ethernet_Virtual_Private_Network_-_EVPN.html)
-for network
+private network
+(EVPN)](/old/Ethernet_Virtual_Private_Network_-_EVPN.html) for network
 virtualization.
 
 {{%/notice%}}
 
-<span id="src-8362706_indexterm-26B1C818C123F7D6463D1E13B18A6564">Lightweight
-Network Virtualization
-(</span><span id="src-8362706_indexterm-F667176C297FCAB7ED87C019A841C3FD">LNV)
-</span><span id="src-8362706_indexterm-E9CE1F6FE42949A0EB4AE581E93CB73C">is
-a </span>technique for deploying
-[VXLANs](Network_Virtualization.html)<span id="src-8362706_indexterm-F8C9C52D5E83DB92CCA463E9CA406BF0">
-</span>without a central controller on bare metal switches. This
-solution requires no external controller or software suite; it runs the
-VXLAN service and registration daemons on Cumulus Linux itself. The data
-path between bridge entities is established on top of a layer 3 fabric
-by means of a simple service node coupled with traditional MAC address
-learning.
+Lightweight Network Virtualization (LNV) is a technique for deploying
+[VXLANs](/old/Network_Virtualization.html) without a central controller
+on bare metal switches. This solution requires no external controller or
+software suite; it runs the VXLAN service and registration daemons on
+Cumulus Linux itself. The data path between bridge entities is
+established on top of a layer 3 fabric by means of a simple service node
+coupled with traditional MAC address learning.
 
 To see an example of a full solution before reading the following
-background information, [read this chapter](LNV_Full_Example.html).
+background information, [read this chapter](/old/LNV_Full_Example.html).
 
 {{%notice note%}}
 
@@ -46,7 +43,8 @@ Cumulus Linux.
 {{%notice note%}}
 
 You cannot use LNV and
-[EVPN](Ethernet_Virtual_Private_Network_-_EVPN.html) at the same time.
+[EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html) at the same
+time.
 
 {{%/notice%}}
 
@@ -119,14 +117,11 @@ to every remote VTEP.
 
 #### Head End Replication
 
-<span id="src-8362706_indexterm-0B89AAD455BF9ED29380AC55285C3D28">The
-Broadcom switch with the Tomahawk, Trident II+, and Trident II ASIC and
-the Mellanox switch with the Spectrum ASIC are capable of
-</span><span id="src-8362706_indexterm-BE7A9F7D2124E00BBAE61617F08FECC8">head
-</span><span id="src-8362706_indexterm-0ED6C5BBC6422342B4AA58D015175CDE">end
-</span>replication (HER), which is the ability to generate all the BUM
-traffic in hardware. The most scalable solution available with LNV is to
-have each VTEP (top of rack switch) generate all of its own BUM traffic
+The Broadcom switch with the Tomahawk, Trident II+, and Trident II ASIC
+and the Mellanox switch with the Spectrum ASIC are capable of head end
+replication (HER), which is the ability to generate all the BUM traffic
+in hardware. The most scalable solution available with LNV is to have
+each VTEP (top of rack switch) generate all of its own BUM traffic
 instead of relying on an external service node. HER is enabled by
 default in Cumulus Linux.
 
@@ -134,21 +129,16 @@ Cumulus Linux verified support for up to 128 VTEPs with head end
 replication.
 
 To disable head end replication, edit the `/etc/vxrd.conf` file and set
-`head_rep` to
-*False*.
+`head_rep` to *False*.
 
 #### Service Node Replication
 
-<span id="src-8362706_indexterm-B8A250CDB6D51BCC6D032FBDF5FA92D5">Cumulus
-Linux also supports
-</span><span id="src-8362706_indexterm-21CC53C46DD767FE831FA7B4F6A99448">service
-</span><span id="src-8362706_indexterm-9898241189D9D36E7397EB37BAC983A1">node
-</span>replication for VXLAN BUM packets. This is useful with LNV if you
-have more than 128 VTEPs. However, it is not recommended because it
-forces the spine switches running the `vxsnd` (service node daemon) to
-replicate the packets in software instead of in hardware, unlike head
-end replication. If you are not using a controller but have more than
-128 VTEPs, contact [Cumulus
+Cumulus Linux also supports service node replication for VXLAN BUM
+packets. This is useful with LNV if you have more than 128 VTEPs.
+However, it is not recommended because it forces the spine switches
+running the `vxsnd` (service node daemon) to replicate the packets in
+software instead of in hardware, unlike head end replication. If you are
+not using a controller but have more than 128 VTEPs, contact [Cumulus
 Networks](mailto:support@cumulusnetworks.com).
 
 To enable service node replication:
@@ -929,51 +919,53 @@ the IP
   - [en.wikipedia.org/wiki/Anycast](http://en.wikipedia.org/wiki/Anycast)
 
   - [Network virtualization chapter, Cumulus Linux user
-    guide](Network_Virtualization.html)
+    guide](/old/Network_Virtualization.html)
     
-      - [Static VXLAN Configurations](Static_VXLAN_Configurations.html)
+      - [Static VXLAN
+        Configurations](/old/Static_VXLAN_Configurations.html)
         
-          - [Static VXLAN Tunnels](Static_VXLAN_Tunnels.html)
+          - [Static VXLAN Tunnels](/old/Static_VXLAN_Tunnels.html)
         
           - [Static MAC Bindings with
-            VXLAN](Static_MAC_Bindings_with_VXLAN.html)
+            VXLAN](/old/Static_MAC_Bindings_with_VXLAN.html)
     
       - [Ethernet Virtual Private Network -
-        EVPN](Ethernet_Virtual_Private_Network_-_EVPN.html)
+        EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html)
     
-      - [Lightweight Network Virtualization Overview](#)
+      - [Lightweight Network Virtualization Overview](/old/#)
         
-          - [LNV Full Example](LNV_Full_Example.html)
+          - [LNV Full Example](/old/LNV_Full_Example.html)
     
-      - [VXLAN Active-Active Mode](VXLAN_Active-Active_Mode.html)
+      - [VXLAN Active-Active Mode](/old/VXLAN_Active-Active_Mode.html)
     
-      - [VXLAN Routing](VXLAN_Routing.html)
+      - [VXLAN Routing](/old/VXLAN_Routing.html)
     
-      - [VXLAN Scale](VXLAN_Scale.html)
+      - [VXLAN Scale](/old/VXLAN_Scale.html)
     
       - [Hybrid Cloud Connectivity with QinQ and
-        VXLANs](Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
+        VXLANs](/old/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
     
-      - [Troubleshooting VXLANs](Troubleshooting_VXLANs.html)
+      - [Troubleshooting VXLANs](/old/Troubleshooting_VXLANs.html)
     
-      - [Virtualization Integrations](Virtualization_Integrations.html)
+      - [Virtualization
+        Integrations](/old/Virtualization_Integrations.html)
         
           - [Integrating Hardware VTEPs with Midokura MidoNet and
-            OpenStack](Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
+            OpenStack](/old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
         
           - [Integrating Hardware VTEPs with VMware
-            NSX-V](Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
+            NSX-V](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
         
           - [Integrating Hardware VTEPs with VMware
-            NSX-MH](Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
+            NSX-MH](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
         
           - [OVSDB Server High
-            Availability](OVSDB_Server_High_Availability.html)
+            Availability](/old/OVSDB_Server_High_Availability.html)
     
       - [VXLAN Tunnel DSCP Operations
-        — DRAFT](VXLAN_Tunnel_DSCP_Operations_—%C2%A0DRAFT.html)
+        — DRAFT](/old/VXLAN_Tunnel_DSCP_Operations_—%C2%A0DRAFT.html)
     
       - [Eng Update of VXLAN
-        Hyperloop](Eng_Update_of_VXLAN_Hyperloop.html)
+        Hyperloop](/old/Eng_Update_of_VXLAN_Hyperloop.html)
     
-      - [VXLAN Active-Active](VXLAN_Active-Active.html)
+      - [VXLAN Active-Active](/old/VXLAN_Active-Active.html)

@@ -3,6 +3,8 @@ title: Using Nutanix Prism as a Monitoring Tool
 author: Unknown
 weight: 505
 pageID: 8362618
+aliases:
+ - /old/Using_Nutanix_Prism_as_a_Monitoring_Tool.html
 ---
 # Using Nutanix Prism as a Monitoring Tool
 

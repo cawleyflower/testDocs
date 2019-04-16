@@ -3,11 +3,12 @@ title: Setting Date and Time
 author: Unknown
 weight: 65
 pageID: 8362545
+aliases:
+ - /old/Setting_Date_and_Time.html
 ---
 # Setting Date and Time
 
-<span id="src-8362545_indexterm-A2F5095C206773AA788096D94CE2FEF1">Setting
-the time zone, </span>date and time requires root privileges; use
+Setting the time zone, date and time requires root privileges; use
 `sudo`.
 
 ## Set the Time Zone
@@ -20,8 +21,7 @@ You can use one of two methods to set the time zone on the switch:
 
 ### Edit the /etc/timezone File
 
-<span id="src-8362545_indexterm-83C341046D8FDB0BEDF5FA43DC497DAD">To see
-the current </span>time zone, list the contents of `/etc/timezone`:
+To see the current time zone, list the contents of `/etc/timezone`:
 
 ``` 
                    
@@ -46,11 +46,8 @@ cumulus@switch:~$ sudo dpkg-reconfigure --frontend noninteractive tzdata
 
 ### Use the Guided Wizard
 
-<span id="src-8362545_indexterm-7D8949960380C2AB2A832F53363EB473">To set
-the
-</span><span id="src-8362545_indexterm-DD9E1F1325F7B976BA3093493A71ADAC">time
-zone using the guided wizard, run </span>`dpkg-reconfigure tzdata` as
-root:
+To set the time zone using the guided wizard, run `dpkg-reconfigure
+tzdata` as root:
 
 ``` 
                    
@@ -97,11 +94,9 @@ Time](http://www.debian.org/doc/manuals/system-administrator/ch-sysadmin-time.ht
 
 ## Set the Date and Time
 
-<span id="src-8362545_indexterm-06DDF48761908BD4BE6297AFE20954DC">The
-</span><span id="src-8362545_indexterm-CC9D714D706B1F54AE6BDCAB44C64F84">switch
-</span>contains a battery backed hardware clock that maintains the time
-while the switch is powered off and in between reboots. When the switch
-is running, the Cumulus Linux operating system maintains its own
+The switch contains a battery backed hardware clock that maintains the
+time while the switch is powered off and in between reboots. When the
+switch is running, the Cumulus Linux operating system maintains its own
 software clock.
 
 During boot up, the time from the hardware clock is copied into the
@@ -137,9 +132,8 @@ cumulus@switch$ sudo date -s "Tue Jan 12 00:37:13 2016"
 
 See `man date(1)` for more information.
 
-<span id="src-8362545_indexterm-863855BFAF8648D30AC3F6BC13D83F4E">You
-can write the current value of the system (software) clock to the
-hardware clock using the </span>`hwclock` command:
+You can write the current value of the system (software) clock to the
+hardware clock using the `hwclock` command:
 
 ``` 
                    
@@ -158,9 +152,7 @@ clock](http://www.debian.org/doc/manuals/system-administrator/ch-sysadmin-time.h
 
 ## Set the Time Using NTP and NCLU
 
-<span id="src-8362545_indexterm-491714F921CEE04708ACC9BF1B445084">The
-</span>`ntpd`<span id="src-8362545_indexterm-DBD66CF0876423C9FF1C38C7D2ABB387">
-daemon running on the switch implements the </span>NTP protocol. It
+The `ntpd` daemon running on the switch implements the NTP protocol. It
 synchronizes the system time with time servers listed in
 `/etc/ntp.conf`. The `ntpd` daemon is started at boot by default. See
 `man ntpd(8)` for `ntpd` details. You can check [this
@@ -169,8 +161,8 @@ explanation of the output.
 
 By default, `/etc/ntp.conf` contains some default time servers. You can
 specify the NTP server or servers you want to use with
-[NCLU](Network_Command_Line_Utility_-_NCLU.html); include the `iburst`
-option to increase the sync speed.
+[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html); include the
+`iburst` option to increase the sync speed.
 
 ``` 
                    

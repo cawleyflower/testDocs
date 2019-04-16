@@ -3,14 +3,14 @@ title: Single User Mode - Boot Recovery
 author: Unknown
 weight: 227
 pageID: 8362606
+aliases:
+ - /old/Single_User_Mode_-_Boot_Recovery.html
 ---
 # Single User Mode - Boot Recovery
 
-<span id="src-8362606_indexterm-3264DDA3C14F460422BF94033784BDAA">Use
-</span><span id="src-8362606_indexterm-C9F507CE4BA12AD3FD2BAF7A201B2156">single
-</span><span id="src-8362606_indexterm-B410EED72B4AD5CFD1A94DD938394221">user
-mode to assist in troubleshooting system </span>boot issues or for
-password recovery. To enter single user mode, follow the steps below.
+Use single user mode to assist in troubleshooting system boot issues or
+for password recovery. To enter single user mode, follow the steps
+below.
 
 1.  Boot the switch, as soon as you see the GRUB menu.
     

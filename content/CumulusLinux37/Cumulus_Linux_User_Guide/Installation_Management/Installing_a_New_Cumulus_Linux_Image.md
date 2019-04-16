@@ -3,6 +3,8 @@ title: Installing a New Cumulus Linux Image
 author: Unknown
 weight: 43
 pageID: 8362643
+aliases:
+ - /old/Installing_a_New_Cumulus_Linux_Image.html
 ---
 # Installing a New Cumulus Linux Image
 
@@ -11,8 +13,7 @@ This topic discusses how to install a new Cumulus Linux disk image using
 on servers) that enables the installation of network operating systems
 (NOS) on bare metal switches.
 
-<span id="src-8362643_indexterm-B20EF734A614ADD053C508CCC008A7DC">Before
-you install Cumulus Linux, the </span>switch can be in two different
+Before you install Cumulus Linux, the switch can be in two different
 states:
 
   - No image is installed on the switch (the switch is only running
@@ -114,4 +115,4 @@ example](https://www.apachefriends.org/index.html).
     Stick](https://cumulusnetworks.com/cumulus-on-a-stick/)
 
   - [Managing Cumulus Linux Disk
-    Images](Managing_Cumulus_Linux_Disk_Images.html)
+    Images](/old/Managing_Cumulus_Linux_Disk_Images.html)

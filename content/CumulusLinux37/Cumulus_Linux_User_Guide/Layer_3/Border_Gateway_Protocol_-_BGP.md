@@ -3,11 +3,12 @@ title: Border Gateway Protocol - BGP
 author: Unknown
 weight: 197
 pageID: 8362926
+aliases:
+ - /old/Border_Gateway_Protocol_-_BGP.html
 ---
 # Border Gateway Protocol - BGP
 
-<span id="src-8362926_indexterm-7042776B1E088973CC0766C18DDF1FFC">BGP
-</span>is the routing protocol that runs the Internet. It is an
+BGP is the routing protocol that runs the Internet. It is an
 increasingly popular protocol for use in the data center as it lends
 itself well to the rich interconnections in a Clos topology.
 Specifically, BGP:
@@ -31,10 +32,8 @@ of the use of BGP within the data center.
 
 ## Autonomous System Number (ASN)
 
-<span id="src-8362926_indexterm-3A4BDE5BF78216BDB470B4B7AE2BAFBB">One of
-the key concepts in BGP is an
-</span>*<span id="src-8362926_indexterm-87F63F25DDB2D58219F685E786572292">autonomous</span>*
-*system number* or ASN. An [autonomous
+One of the key concepts in BGP is an *autonomous* *system number* or
+ASN. An [autonomous
 system](https://en.wikipedia.org/wiki/Autonomous_System_%28Internet%29)
 is defined as a set of routers under a common administration. Because
 BGP was originally designed to peer between independently managed
@@ -46,13 +45,12 @@ and 65535 are reserved for private use. Using BGP within the data center
 relies on either using this number space or using the single ASN you
 own.
 
-<span id="src-8362926_indexterm-D6641C78054A1030E3CFDC4C093032EB">The
-ASN is central to how BGP builds a forwarding topology. A BGP route
+The ASN is central to how BGP builds a forwarding topology. A BGP route
 advertisement carries with it not only the originator’s ASN, but also
-the list of ASNs that this </span>route advertisement has passed
-through. When forwarding a route advertisement, a BGP speaker adds
-itself to this list. This list of ASNs is called the *AS path*. BGP uses
-the AS path to detect and avoid loops.
+the list of ASNs that this route advertisement has passed through. When
+forwarding a route advertisement, a BGP speaker adds itself to this
+list. This list of ASNs is called the *AS path*. BGP uses the AS path to
+detect and avoid loops.
 
 ASNs were originally 16-bit numbers, but were later modified to be
 32-bit. FRRouting supports both 16-bit and 32-bit ASNs, but most
@@ -60,16 +58,10 @@ implementations still run with 16-bit ASNs.
 
 ## eBGP and iBGP
 
-<span id="src-8362926_indexterm-EB4464B3E49F76F1DC77CC18B20D0107">When
-BGP is used to peer between autonomous systems, the peering is referred
-to as
-</span>*<span id="src-8362926_indexterm-1D90689C97D4AC8E93A13031888E5682">external
-</span>BGP*<span id="src-8362926_indexterm-44C5621840B1D38A0283B81A92267483">
-or eBGP. When BGP is used within an autonomous system, the peering used
-is referred to as
-</span>*<span id="src-8362926_indexterm-75DFBC3D24A62C1E4246325D3FCE2C1A">internal
-</span>BGP* or iBGP. eBGP peers have different ASNs while iBGP peers
-have the same ASN.
+When BGP is used to peer between autonomous systems, the peering is
+referred to as *external BGP* or eBGP. When BGP is used within an
+autonomous system, the peering used is referred to as *internal BGP* or
+iBGP. eBGP peers have different ASNs while iBGP peers have the same ASN.
 
 The heart of the protocol is the same when used as eBGP or iBGP,
 however, there is a key difference in the protocol behavior between use
@@ -174,9 +166,7 @@ cumulus@switch:~$ net commit
 
 ## ECMPwith BGP
 
-<span id="src-8362926_indexterm-94F95FF34B536F42E8C08A26DFA54485">If a
-</span><span id="src-8362926_indexterm-1A9FE38143C804653D5FCCD8F77F2303">BGP
-</span>node hears a prefix **p** from multiple peers, it has all the
+If a BGP node hears a prefix **p** from multiple peers, it has all the
 information necessary to program the routing table to forward traffic
 for that prefix **p** through all of these peers; BGP supports
 equal-cost multipathing (ECMP).
@@ -192,11 +182,9 @@ paths.
 
 ### BGP for Both IPv4 and IPv6
 
-<span id="src-8362926_indexterm-7923C5B8C068689D250755EEF2B26BE8">Unlike
-OSPF, which has separate versions of the protocol to announce
-</span><span id="src-8362926_indexterm-818D36A78A8A9BFFB08BC18F1ACA062A">IPv4
-and </span>IPv6 routes, BGP is a multi-protocol routing engine, capable
-of announcing both IPv4 and IPv6 prefixes. It supports announcing IPv4
+Unlike OSPF, which has separate versions of the protocol to announce
+IPv4 and IPv6 routes, BGP is a multi-protocol routing engine, capable of
+announcing both IPv4 and IPv6 prefixes. It supports announcing IPv4
 prefixes over an IPv4 session and IPv6 prefixes over an IPv6 session. It
 also supports announcing prefixes of both these address families over a
 single IPv4 session or over a single IPv6 session.
@@ -209,7 +197,7 @@ unnumbered interfaces to route maps.
 
 1.  Enable the BGP and Zebra daemons (`zebra` and `bgpd`), then enable
     the FRRouting service and start it, as described in [Configuring
-    FRRouting](Configuring_FRRouting.html).
+    FRRouting](/old/Configuring_FRRouting.html).
 
 2.  Identify the BGP node by assigning an ASN and `router-id`:
     
@@ -332,7 +320,7 @@ address, as suggested by RFC 4291.
 Cumulus Linux 3.7.2 and later also supports advertising IPv4 prefixes
 with IPv6 next hop addresses while peering over IPv6 global unicast
 addresses. See [RFC 5549 Support with Global IPv6
-Peers](#src-8362926_BorderGatewayProtocol-BGP-rfc-5549) below.
+Peers](/old/#src-8362926_BorderGatewayProtocol-BGP-rfc-5549) below.
 
 {{%/notice%}}
 
@@ -347,7 +335,7 @@ only for the link-local address peerings (as shown below). In Cumulus
 Linux 3.7.2 and later, extended next hop encoding can be sent for the
 both link-local and global unicast address peerings (see [RFC 5549
 Support with Global IPv6
-Peers](#src-8362926_BorderGatewayProtocol-BGP-rfc-5549)).
+Peers](/old/#src-8362926_BorderGatewayProtocol-BGP-rfc-5549)).
 
 ``` 
                    
@@ -395,8 +383,8 @@ router bgp 65020
 
 For an unnumbered configuration, you can use a single command to
 configure a neighbor and attach it to a [peer
-group](#src-8362926_BorderGatewayProtocol-BGP-peergroups) (making sure
-to substitute for the interface and peer group below):
+group](/old/#src-8362926_BorderGatewayProtocol-BGP-peergroups) (making
+sure to substitute for the interface and peer group below):
 
 ``` 
                    
@@ -1253,8 +1241,7 @@ seconds and defaults to 10 seconds.
 
 ## Peer Groups to Simplify Configuration
 
-<span id="src-8362926_indexterm-82F792ACC97A660DBFF78700BDEE2945">When
-a</span> switch has many peers to connect to, the amount of redundant
+When a switch has many peers to connect to, the amount of redundant
 configuration becomes overwhelming. For example, repeating the
 `activate` and `next-hop-self` commands for even 60 neighbors makes for
 a very long configuration file. To address this problem, you can use
@@ -1347,19 +1334,16 @@ router bgp 65001 
 
 ## Configure BGP Peering Relationships across Switches
 
-<span id="src-8362926_indexterm-CEC541A86A7746A467E014DC37B93D31">A
-</span>BGP peering relationship is typically initiated with the
-`neighbor x.x.x.x remote-as [internal|external]` command.
+A BGP peering relationship is typically initiated with the `neighbor
+x.x.x.x remote-as [internal|external]` command.
 
 Specifying *internal* signifies an iBGP peering; that is, the neighbor
 only creates or accepts a connection with the specified neighbor if the
-remote peer AS number matches this BGP AS
-number.
+remote peer AS number matches this BGP AS number.
 
-<span id="src-8362926_indexterm-87294B402A60BDF2337FC6EE17268B58">Specifying
-</span>*external* signifies an eBGP peering; that is, the neighbor will
-only create a connection with the neighbor if the remote peer AS number
-does **not** match this BGP AS number.
+Specifying *external* signifies an eBGP peering; that is, the neighbor
+will only create a connection with the neighbor if the remote peer AS
+number does **not** match this BGP AS number.
 
 You can make this distinction using the `neighbor` command or the
 `peer-group` command.
@@ -1860,14 +1844,14 @@ architecture:
 
 You can run multiple routing tables (one for in-band/data plane traffic
 and one for out-of-band/management plane traffic) on the same switch
-using [management VRF](Management_VRF.html) (multiple routing tables and
-forwarding).
+using [management VRF](/old/Management_VRF.html) (multiple routing
+tables and forwarding).
 
 {{%notice note%}}
 
 BGP and static routing (IPv4 and IPv6) are supported within a VRF
 context. For more information, refer to [Virtual Routing and Forwarding
-- VRF](Virtual_Routing_and_Forwarding_-_VRF.html).
+- VRF](/old/Virtual_Routing_and_Forwarding_-_VRF.html).
 
 {{%/notice%}}
 
@@ -2102,8 +2086,7 @@ it is not heard by any neighbors.
 
 ### Log Neighbor State Changes
 
-<span id="src-8362926_indexterm-C9E4CC461B097E02492037BDA1FE1915">To
-</span>log the changes that a neighbor goes through so that you can
+To log the changes that a neighbor goes through so that you can
 troubleshoot issues associated with that neighbor, run the
 `log-neighbor-changes` command, which is enabled by default.
 
@@ -2122,14 +2105,12 @@ The output is sent to the specified log file, usually
 
 ### Troubleshoot Link-local Addresses
 
-To verify that
-`frr`<span id="src-8362926_indexterm-596431ACB071D81D96777910A07D1A78">
-learned the neighboring </span>link-local IPv6 address via the IPv6
-neighbor discovery router advertisements on a given interface, run the
-`show interface <if-name>` command. If `ipv6 nd suppress-ra` is not
-enabled on both ends of the interface, then `Neighbor address(s):` has
-the other end's link-local address. That is the address that BGP uses
-when BGP is enabled on that interface.
+To verify that `frr` learned the neighboring link-local IPv6 address via
+the IPv6 neighbor discovery router advertisements on a given interface,
+run the `show interface <if-name>` command. If `ipv6 nd suppress-ra` is
+not enabled on both ends of the interface, then `Neighbor address(s):`
+has the other end's link-local address. That is the address that BGP
+uses when BGP is enabled on that interface.
 
 {{%notice note%}}
 
@@ -2318,8 +2299,7 @@ bgp summary` command.
 
 ## Apply a Route Map for Route Updates
 
-<span id="src-8362926_indexterm-8A35C96B8BF91882E55DB49435BCEF04">There
-are </span>two ways you can apply [route
+There are two ways you can apply [route
 maps](http://www.nongnu.org/quagga/docs/docs-multi/Route-Map.html#Route-Map)
 for BGP:
 
@@ -2364,8 +2344,7 @@ cumulus@switch:$ net add routing protocol bgp route-map
 
 ### Converge Quickly On Link Failures
 
-<span id="src-8362926_indexterm-94655FA893ADC4C182E0DB9A32B41B7C">In the
-Clos </span>topology, we recommend that you only use interface addresses
+In the Clos topology, we recommend that you only use interface addresses
 to set up peering sessions. This means that when the link fails, the BGP
 session is torn down immediately, triggering route updates to propagate
 through the network quickly. This requires the following commands be
@@ -2530,7 +2509,7 @@ INGRESS_INTF = swp1
 {{%notice note%}}
 
 For more information about ACLs, see [Netfilter
-(ACLs)](Netfilter_-_ACLs.html).
+(ACLs)](/old/Netfilter_-_ACLs.html).
 
 {{%/notice%}}
 
@@ -2542,8 +2521,8 @@ an already established peer, are not supported in Cumulus Linux.
 ### Related Information
 
   - [Bidirectional forwarding
-    detection](Bidirectional_Forwarding_Detection_-_BFD.html) (BFD) and
-    BGP
+    detection](/old/Bidirectional_Forwarding_Detection_-_BFD.html) (BFD)
+    and BGP
 
   - [Wikipedia entry for
     BGP](http://en.wikipedia.org/wiki/Border_Gateway_Protocol) (includes

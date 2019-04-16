@@ -3,6 +3,8 @@ title: switchd Log Message Reference
 author: Unknown
 weight: 247
 pageID: 8362629
+aliases:
+ - /old/switchd_Log_Message_Reference.html
 ---
 # switchd Log Message Reference
 

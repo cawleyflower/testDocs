@@ -3,37 +3,32 @@ title: Copy of Netfilter - ACLs
 author: Unknown
 weight: 79
 pageID: 8362584
+aliases:
+ - /old/Copy_of_Netfilter_-_ACLs.html
 ---
 # Copy of Netfilter - ACLs
 
-[Netfilter](http://www.netfilter.org/)<span id="src-8362584_indexterm-D91093CE5645E2A950775888A8098897">
-</span><span id="src-8362584_indexterm-CB6B2E8E10136412B7EB5E8C551D4431">is
-the packet filtering framework in Cumulus Linux as well as most other
-Linux distributions. There are a number of tools available for
-configuring
-</span><span id="src-8362584_indexterm-B5BE28B7A9973FEC77A8CD3A44E769D4">ACLs
-in </span>Cumulus Linux, including:
+[Netfilter](http://www.netfilter.org/) is the packet filtering framework
+in Cumulus Linux as well as most other Linux distributions. There are a
+number of tools available for configuring ACLs in Cumulus Linux,
+including:
 
   - `iptables`, `ip6tables` and `ebtables` are Linux userspace tools to
     administer filtering rules for IPv4 packets, IPv6 packets and
     Ethernet frames (layer 2 using MAC addresses) respectively.
 
-  - [NCLU](Network_Command_Line_Utility_-_NCLU.html), a Cumulus
+  - [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html), a Cumulus
     Linux-specific userspace tool for configuring custom ACLs.
 
   - `cl-acltool`, another Cumulus Linux-specific userspace tool to
     administer filtering rules and for configuring the default ACLs.
 
-NCLU and
-`cl-acltool`<span id="src-8362584_indexterm-C2E55238809C05FACBE0A4F32DE96330">
-</span><span id="src-8362584_indexterm-020BBC590637E7BCD9ABD0191059653B">operate
-on various configuration files, and use
-</span>`iptables`<span id="src-8362584_indexterm-F7CF2A3462BDB8D5CFB28DCD74F82B4D">,
-</span>`ip6tables`<span id="src-8362584_indexterm-82636A31DF5ADE7EFCFC535820C7C422">
-and </span>`ebtables` to install rules into the kernel. In addition to
-programming rules in the kernel, NCLU and `cl-acltool` program rules in
-hardware for interfaces involving switch port interfaces, which
-`iptables`, `ip6tables` and `ebtables` cannot do on their own.
+NCLU and `cl-acltool` operate on various configuration files, and use
+`iptables`, `ip6tables` and `ebtables` to install rules into the kernel.
+In addition to programming rules in the kernel, NCLU and `cl-acltool`
+program rules in hardware for interfaces involving switch port
+interfaces, which `iptables`, `ip6tables` and `ebtables` cannot do on
+their own.
 
 {{%notice note%}}
 
@@ -123,12 +118,9 @@ by inspecting packet and frame headers based on a list of rules. Rules
 are defined using syntax provided by the `iptables`, `ip6tables` and
 `ebtables` userspace applications.
 
-<span id="src-8362584_indexterm-F8BBC74B2756FE854F041CE0581A214B">The
-rules created by these programs inspect or operate on packets at several
-points in the life of the packet through the system. These five points
-are known as
-</span>*<span id="src-8362584_indexterm-D735FFAB6759996F9FA7E55D3B15D371">chains</span>*
-and are shown
+The rules created by these programs inspect or operate on packets at
+several points in the life of the packet through the system. These five
+points are known as *chains* and are shown
 here:
 
 ![/images/download/attachments/8362584/Linux\_Traffic\_Inspection\_Points\_%28Chains%29.png](/images/download/attachments/8362584/Linux_Traffic_Inspection_Points_%28Chains%29.png)
@@ -214,8 +206,8 @@ components.
     the one this rule is in), one of the special built-in targets that
     decides the fate of the packet immediately (like DROP), or an
     extended target. See the [Supported Rule Types and Common
-    Usages](#src-8362584_CopyofNetfilter-ACLs-supported) section below
-    for examples of different targets.
+    Usages](/old/#src-8362584_CopyofNetfilter-ACLs-supported) section
+    below for examples of different targets.
 
 ### How Rules Are Parsed and Applied
 
@@ -361,13 +353,10 @@ valid rule.
 
 ### Enable Nonatomic Updates
 
-<span id="src-8362584_indexterm-62E544C8805EFF7F69A8232CD33E2FFC">You
-can enable
-</span><span id="src-8362584_indexterm-AD476A0B0DF1C36A1D3538C7E19B5D39">nonatomic
-updates for </span>`switchd`, which offer better scaling because all
-TCAM resources are used to actively impact traffic. With atomic updates,
-half of the hardware resources are on standby and do not actively impact
-traffic.
+You can enable nonatomic updates for `switchd`, which offer better
+scaling because all TCAM resources are used to actively impact traffic.
+With atomic updates, half of the hardware resources are on standby and
+do not actively impact traffic.
 
 Nonatomic updates are now table based, so they don't interrupt network
 traffic when new rules are installed. The rules are mapped into the
@@ -404,7 +393,7 @@ To always start `switchd` with nonatomic updates:
     ```
 
 3.  [Restart
-    `switchd`](https://docs.cumulusnetworks.com/display/CL257/Configuring+switchd#Configuringswitchd-restartswitchd)
+    `switchd`](/old/https://docs.cumulusnetworks.com/display/CL257/Configuring+switchd#Configuringswitchd-restartswitchd)
     :
     
     ``` 
@@ -522,10 +511,10 @@ entry is one of the following:
 ### Match SVI/Bridged Interfaces in Rules
 
 Cumulus Linux supports matching ACL rules for both ingress and egress
-interfaces on both [VLAN-aware](VLAN-aware_Bridge_Mode.html) and
-[traditional mode](Traditional_Bridge_Mode.html) bridges, including
+interfaces on both [VLAN-aware](/old/VLAN-aware_Bridge_Mode.html) and
+[traditional mode](/old/Traditional_Bridge_Mode.html) bridges, including
 bridge SVIs ([switch VLAN
-interfaces](Ethernet_Bridging_-_VLANs.html#src-8362655_EthernetBridging-VLANs-svi))
+interfaces](/old/Ethernet_Bridging_-_VLANs.html#src-8362655_EthernetBridging-VLANs-svi))
 for input and output. However, keep the following in mind:
 
   - If a traditional mode bridge has a mix of different VLANs, or has
@@ -767,8 +756,7 @@ ACL policy file contains `iptables`, `ip6tables` and `ebtables`
 categories under the tags `[iptables]`, `[ip6tables]` and `[ebtables]`
 respectively.
 
-<span id="src-8362584_indexterm-85ED51C8E6F88631E5B11328239CB4A4">Each
-rule in an </span>ACL policy must be assigned to one of the rule
+Each rule in an ACL policy must be assigned to one of the rule
 categories above.
 
 See `man cl-acltool(5)` for ACL rule details. For `iptables` rule
@@ -777,7 +765,8 @@ ip6tables(8)`. For `ebtables` rule syntax, see `man ebtables(8)`.
 
 See `man cl-acltool(5)` and `man cl-acltool(8)` for further details on
 using `cl-acltool`; however, some examples are listed here, and more are
-listed [later in this chapter](#src-8362584_CopyofNetfilter-ACLs-exm).
+listed [later in this
+chapter](/old/#src-8362584_CopyofNetfilter-ACLs-exm).
 
 {{%notice note%}}
 
@@ -904,8 +893,7 @@ cumulus@switch:~$ sudo cl-acltool -i
 
 ## Specify the Policy Files to Install
 
-<span id="src-8362584_indexterm-AA4EF0B152F0305475250FB7265600B3">By
-</span>default, any `.rules` file you configure in
+By default, any `.rules` file you configure in
 `/etc/cumulus/acl/policy.d/` get installed by Cumulus Linux. To add
 other policy files to an ACL, you need to include them in
 `/etc/cumulus/acl/policy.conf`. For example, in order for Cumulus Linux
@@ -953,7 +941,7 @@ function of the following factors:
 
   - Whether the rules are in atomic or nonatomic mode; nonatomic mode
     rules are used when nonatomic updates are enabled ([see
-    above](#src-8362584_CopyofNetfilter-ACLs-nonatomic))
+    above](/old/#src-8362584_CopyofNetfilter-ACLs-nonatomic))
 
 If the maximum number of rules for a particular table is exceeded,
 `cl-acltool -i` generates the following error:
@@ -1027,8 +1015,8 @@ The Mellanox Spectrum ASIC has one common
 [TCAM](https://en.wikipedia.org/wiki/Content-addressable_memory#Ternary_CAMs)
 for both ingress and egress, and it may be used for other
 non-ACL-related resources. However, the number of supported rules varies
-with the [TCAM profile](Routing.html#src-8362912_Routing-tcam) specified
-for the
+with the [TCAM profile](/old/Routing.html#src-8362912_Routing-tcam)
+specified for the
 switch.
 
 <div class="tablewrap">
@@ -1239,9 +1227,9 @@ from any switch port egress/ingress.
 ### Not All Rules Supported
 
 As mentioned in the [Supported Rules
-section](#src-8362584_CopyofNetfilter-ACLs-supported) above, not all
-`iptables`, `ip6tables` or `ebtables` rules are supported. Refer to that
-section for specific rule support.
+section](/old/#src-8362584_CopyofNetfilter-ACLs-supported) above, not
+all `iptables`, `ip6tables` or `ebtables` rules are supported. Refer to
+that section for specific rule support.
 
 ### ACL Log Policer Limits Traffic
 
@@ -1299,7 +1287,7 @@ acl.non_atomic_update_mode = TRUE
 ```
 
 Then [restart
-`switchd`](https://docs.cumulusnetworks.com/display/CL30/Configuring+switchd#Configuringswitchd-restartswitchd)
+`switchd`](/old/https://docs.cumulusnetworks.com/display/CL30/Configuring+switchd#Configuringswitchd-restartswitchd)
 .
 
 #### Packets Undercounted during ACL Updates

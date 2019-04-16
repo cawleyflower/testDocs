@@ -3,6 +3,8 @@ title: Routing
 author: Unknown
 weight: 181
 pageID: 8362912
+aliases:
+ - /old/Routing.html
 ---
 # Routing
 
@@ -11,8 +13,8 @@ This chapter discusses routing on switches running Cumulus Linux.
 ## Manage Static Routes
 
 You manage static routes using
-[NCLU](Network_Command_Line_Utility_-_NCLU.html) or the Cumulus Linux
-`ip route` command. The routes are added to the
+[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html) or the Cumulus
+Linux `ip route` command. The routes are added to the
 [FRRouting](https://frrouting.org) routing table, and are then updated
 into the kernel routing table as well.
 
@@ -155,12 +157,10 @@ in the route table.
 
 {{%/notice%}}
 
-The `ip
-route`<span id="src-8362912_indexterm-0EDD8BD0E5511086E3BD518D6D9A3158">
-</span>command allows manipulating the kernel routing table directly
-from the Linux shell. See `man ip(8)` for details. FRRouting monitors
-the kernel routing table changes and updates its own routing table
-accordingly.
+The `ip route` command allows manipulating the kernel routing table
+directly from the Linux shell. See `man ip(8)` for details. FRRouting
+monitors the kernel routing table changes and updates its own routing
+table accordingly.
 
 To display the routing table:
 
@@ -190,8 +190,7 @@ default via 10.0.1.2 dev eth0
 
 ### Apply a Route Map for Route Updates
 
-<span id="src-8362912_indexterm-0C9A12DBBADD7AD35F0B8ED2A376060F">To
-apply </span>a [route
+To apply a [route
 map](http://www.nongnu.org/quagga/docs/docs-multi/Route-Map.html#Route-Map)
 to filter route updates from Zebra into the Linux kernel:
 
@@ -248,16 +247,13 @@ including:
 
   - MAC addresses
 
-<span id="src-8362912_indexterm-89032CDBA9ACBCEFD337E08D42E7EA3C">In
-addition, switches on the Tomahawk, Trident II, Trident II+, and
+In addition, switches on the Tomahawk, Trident II, Trident II+, and
 Trident3 platforms are configured to manage route table entries using
-</span><span id="src-8362912_indexterm-83D4DD45DB520734E538526C8375E854">Algorithm
-</span><span id="src-8362912_indexterm-E27D61C920832E2466F562BDC54E0726">Longest
-Prefix Match (ALPM). In </span>ALPM mode, the hardware can store
-significantly more route entries.
+Algorithm Longest Prefix Match (ALPM). In ALPM mode, the hardware can
+store significantly more route entries.
 
 You can use
-[`cl-resource-query`](Resource_Diagnostics_Using_cl-resource-query.html)
+[`cl-resource-query`](/old/Resource_Diagnostics_Using_cl-resource-query.html)
 to determine the current table sizes on a given switch.
 
 ### Forwarding Table Profiles
@@ -287,7 +283,7 @@ forwarding_table.profile = default
 ```
 
 After you specify a different profile, [restart
-`switchd`](Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
+`switchd`](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
 for the change to take effect. You can see the forwarding table profile
 when you run `cl-resource-query`.
 
@@ -406,14 +402,14 @@ cumulus@switch:~$ cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/mlx
 ```
 
 After you specify a different profile, [restart
-`switchd`](Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
+`switchd`](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
 for the change to take effect.
 
 When [nonatomic
-updates](Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-nonatomic) are
-enabled (that is, the `acl.non_atomic_update_mode` is set to *TRUE* in
-`/etc/cumulus/switchd.conf` file), the maximum number of mroute and ACL
-entries for each profile are as follows:
+updates](/old/Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-nonatomic)
+are enabled (that is, the `acl.non_atomic_update_mode` is set to *TRUE*
+in `/etc/cumulus/switchd.conf` file), the maximum number of mroute and
+ACL entries for each profile are as follows:
 
 <div class="tablewrap">
 
@@ -427,10 +423,10 @@ entries for each profile are as follows:
 </div>
 
 When [nonatomic
-updates](Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-nonatomic) are
-disabled (that is, the `acl.non_atomic_update_mode` is set to *FALSE* in
-`/etc/cumulus/switchd.conf` file), the maximum number of mroute and ACL
-entries for each profile are as follows:
+updates](/old/Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-nonatomic)
+are disabled (that is, the `acl.non_atomic_update_mode` is set to
+*FALSE* in `/etc/cumulus/switchd.conf` file), the maximum number of
+mroute and ACL entries for each profile are as follows:
 
 <div class="tablewrap">
 

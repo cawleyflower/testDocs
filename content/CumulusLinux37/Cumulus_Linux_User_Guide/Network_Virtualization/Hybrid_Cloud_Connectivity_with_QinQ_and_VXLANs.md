@@ -3,12 +3,14 @@ title: Hybrid Cloud Connectivity with QinQ and VXLANs
 author: Unknown
 weight: 159
 pageID: 8362784
+aliases:
+ - /old/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html
 ---
 # Hybrid Cloud Connectivity with QinQ and VXLANs
 
 *QinQ* is an amendment to the [IEEE 802.1Q
 specification](http://www.ieee802.org/1/pages/802.1Q.html) that provides
-the capability for multiple [VLAN tags](VLAN_Tagging.html) to be
+the capability for multiple [VLAN tags](/old/VLAN_Tagging.html) to be
 inserted into a single Ethernet frame.
 
 The primary use case for QinQ with VXLAN is where a service provider who
@@ -32,8 +34,8 @@ QinQ is available on the following switches:
     Trident II switches.
 
   - Mellanox switches, only with [VLAN-aware
-    bridges](VLAN-aware_Bridge_Mode.html) with 802.1ad and only with
-    single tag translation.
+    bridges](/old/VLAN-aware_Bridge_Mode.html) with 802.1ad and only
+    with single tag translation.
 
 ## Remove the Early Access QinQ Metapackage
 
@@ -54,7 +56,7 @@ to the provider. The public cloud handoff interface is a QinQ trunk
 where packets on the wire carry both the S-tag and the C-tag.
 
 Single tag translation leverages [VLAN-aware bridge
-mode](VLAN-aware_Bridge_Mode.html) with the use of the 802.1ad VLAN
+mode](/old/VLAN-aware_Bridge_Mode.html) with the use of the 802.1ad VLAN
 protocol (the only supported protocol at the time of writing). Hence, it
 is more scalable.
 
@@ -86,7 +88,7 @@ For the switch facing the public cloud:
     the C-tag is for the service.
 
 To configure the public cloud-facing switch, run the following
-[NCLU](Network_Command_Line_Utility_-_NCLU.html) commands:
+[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html) commands:
 
 ``` 
                    
@@ -148,7 +150,7 @@ For the switch facing the customer:
     encapsulation.
 
 To configure the customer-facing switch, run the following
-[NCLU](Network_Command_Line_Utility_-_NCLU.html) commands:
+[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html) commands:
 
 ``` 
                    
@@ -290,9 +292,9 @@ as swp3.100 in the example below.
 {{%notice note%}}
 
 Double tag translation only works with bridges in [traditional
-mode](Traditional_Bridge_Mode.html) (not VLAN-aware mode). As such, you
-cannot use [NCLU](Network_Command_Line_Utility_-_NCLU.html) to configure
-it.
+mode](/old/Traditional_Bridge_Mode.html) (not VLAN-aware mode). As such,
+you cannot use [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html) to
+configure it.
 
 {{%/notice%}}
 
@@ -380,8 +382,8 @@ iface br10
   - Single-tagged translation supports only VLAN-aware bridge mode with
     the bridge’s VLAN 802.1ad protocol.
 
-  - [MLAG](Multi-Chassis_Link_Aggregation_-_MLAG.html) is only supported
-    with single-tagged translation.
+  - [MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html) is only
+    supported with single-tagged translation.
 
   - No layer 2 protocol (STP BPDU, LLDP) tunneling support.
 

@@ -3,15 +3,16 @@ title: IGMP and MLD Snooping
 author: Unknown
 weight: 131
 pageID: 8362696
+aliases:
+ - /old/IGMP_and_MLD_Snooping.html
 ---
 # IGMP and MLD Snooping
 
-<span id="src-8362696_indexterm-A2E87E9BB6A2DC0EF80537DEF34B59BD">IGMP
-(Internet Group Management Protocol) and MLD (Multicast Listener
+IGMP (Internet Group Management Protocol) and MLD (Multicast Listener
 Discovery) snooping are implemented in the bridge driver in the Cumulus
-Linux kernel and are enabled by default. </span>IGMP snooping processes
-IGMP v1/v2/v3 reports received on a bridge port in a bridge to identify
-the hosts which would like to receive multicast traffic destined to that
+Linux kernel and are enabled by default. IGMP snooping processes IGMP
+v1/v2/v3 reports received on a bridge port in a bridge to identify the
+hosts which would like to receive multicast traffic destined to that
 group.
 
 {{%notice note%}}
@@ -20,7 +21,7 @@ In Cumulus Linux 3.7.4 and later, IGMP and MLD snooping is supported
 over VXLAN bridges on Broadcom switches; however, this feature is *not*
 enabled by default. To enable IGMP and MLD over VXLAN, see [Configure
 IGMP/MLD Snooping over
-VXLAN](#src-8362696_safe-id-SUdNUGFuZE1MRFNub29waW5nLUNvbmZpZ3VyZUlHTVAvTUxEU25vb3BpbmdvdmVyVlhMQU4).
+VXLAN](/old/#src-8362696_safe-id-SUdNUGFuZE1MRFNub29waW5nLUNvbmZpZ3VyZUlHTVAvTUxEU25vb3BpbmdvdmVyVlhMQU4).
 
 {{%/notice%}}
 
@@ -32,15 +33,13 @@ An IGMP query message received on a port is used to identify the port
 that is connected to a router and is interested in receiving multicast
 traffic.
 
-<span id="src-8362696_indexterm-001887EB769DF9C6FAAD23846CE4E534">MLD
-</span>snooping processes MLD v1/v2 reports, queries and v1 done
-messages for IPv6 groups. If IGMP or MLD snooping is disabled, multicast
-traffic gets flooded to all the bridge ports in the bridge. Similarly,
-in the absence of receivers in a VLAN, multicast traffic would be
-flooded to all ports in the VLAN. The multicast group IP address is
-mapped to a multicast MAC address and a forwarding entry is created with
-a list of ports interested in receiving multicast traffic destined to
-that
+MLD snooping processes MLD v1/v2 reports, queries and v1 done messages
+for IPv6 groups. If IGMP or MLD snooping is disabled, multicast traffic
+gets flooded to all the bridge ports in the bridge. Similarly, in the
+absence of receivers in a VLAN, multicast traffic would be flooded to
+all ports in the VLAN. The multicast group IP address is mapped to a
+multicast MAC address and a forwarding entry is created with a list of
+ports interested in receiving multicast traffic destined to that
 group.
 
 ![/images/download/attachments/8362696/igmp\_snoop\_diagram.png](/images/download/attachments/8362696/igmp_snoop_diagram.png)
@@ -64,7 +63,7 @@ cumulus@switch:~$ net commit
 
 Cumulus Networks recommends that you also configure IGMP/MLD querier.
 See [Configure IGMP/MLD
-Querier](#src-8362696_safe-id-SUdNUGFuZE1MRFNub29waW5nLUNvbmZpZ3VyZUlHTVAvTUxEUXVlcmllcg),
+Querier](/old/#src-8362696_safe-id-SUdNUGFuZE1MRFNub29waW5nLUNvbmZpZ3VyZUlHTVAvTUxEUXVlcmllcg),
 below.
 
 To disable IGMP/MLD snooping over VXLAN, run the `net add bridge
@@ -72,8 +71,7 @@ To disable IGMP/MLD snooping over VXLAN, run the `net add bridge
 
 ## Configure IGMP/MLD Querier
 
-<span id="src-8362696_indexterm-D69C2F1A37C9ADB95C719EA07F32456C">If no
-multicast router is sending </span>queries to configure IGMP/MLD querier
+If no multicast router is sending queries to configure IGMP/MLD querier
 on the switch, you can add a configuration similar to the following in
 `/etc/network/interfaces`. To enable IGMP and MLD snooping for a bridge,
 set `bridge-mcquerier` to *1* in the bridge stanza. By default, the
@@ -84,7 +82,7 @@ address of the queries to be the bridge IP address, configure
 For an explanation of the relevant parameters, see the
 `ifupdown-addons-interfaces` man page.
 
-For a [VLAN-aware bridge](VLAN-aware_Bridge_Mode.html), use a
+For a [VLAN-aware bridge](/old/VLAN-aware_Bridge_Mode.html), use a
 configuration like the following:
 
 ``` 
@@ -120,8 +118,8 @@ vlan bridge.[1-200]
     
 ```
 
-For a bridge in [traditional mode](Ethernet_Bridging_-_VLANs.html), use
-a configuration like the following:
+For a bridge in [traditional mode](/old/Ethernet_Bridging_-_VLANs.html),
+use a configuration like the following:
 
 ``` 
                    

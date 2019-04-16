@@ -3,6 +3,8 @@ title: Facebook Voyager Optical Interfaces
 author: Unknown
 weight: 101
 pageID: 8363049
+aliases:
+ - /old/Facebook_Voyager_Optical_Interfaces.html
 ---
 # Facebook Voyager Optical Interfaces
 

@@ -3,16 +3,16 @@ title: Interface Configuration and Management
 author: Unknown
 weight: 93
 pageID: 8363023
+aliases:
+ - /old/Interface_Configuration_and_Management.html
 ---
 # Interface Configuration and Management
 
-`ifupdown`<span id="src-8363023_indexterm-5CC81C80EFF07D2FD812A44B2739ABB8">
-</span><span id="src-8363023_indexterm-B1FCBD85144162CF41B6868AA7661929">is
-the </span>network interface manager for Cumulus Linux. Cumulus Linux
-uses an updated version of this tool, `ifupdown2`.
+`ifupdown` is the network interface manager for Cumulus Linux. Cumulus
+Linux uses an updated version of this tool, `ifupdown2`.
 
 For more information on network interfaces, see [Switch Port
-Attributes](Switch_Port_Attributes.html).
+Attributes](/old/Switch_Port_Attributes.html).
 
 {{%notice info%}}
 
@@ -23,9 +23,7 @@ want to know what is going on when bringing an interface down or up.
 
 ## Basic Commands
 
-<span id="src-8363023_indexterm-65E833F8A2967CA6C79C1ED7D89C9BC3">To
-</span>bring up an interface or apply changes to an existing interface,
-run:
+To bring up an interface or apply changes to an existing interface, run:
 
 ``` 
                    
@@ -34,8 +32,7 @@ cumulus@switch:~$ sudo ifup
     
 ```
 
-<span id="src-8363023_indexterm-9A266545F86EED2D17A1D4B698A54CC0">To
-bring </span>down a single interface, run:
+To bring down a single interface, run:
 
 ``` 
                    
@@ -140,14 +137,14 @@ cumulus@switch:~$ sudo ifreload -a
     
 ```
 
-If you are using [Management VRF](Management_VRF.html), you can use the
-special interface class called *mgmt*, and put the management interface
-into that class.
+If you are using [Management VRF](/old/Management_VRF.html), you can use
+the special interface class called *mgmt*, and put the management
+interface into that class.
 
 {{%notice warning%}}
 
 The mgmt interface class is not supported if you are configuring Cumulus
-Linux using [NCLU](Network_Command_Line_Utility_-_NCLU.html).
+Linux using [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html).
 
 {{%/notice%}}
 
@@ -236,16 +233,14 @@ which is up and assigned an IP address of 127.0.0.1.
 {{%notice tip%}}
 
 The loopback interface *lo* must always be specified in
-`/etc/network/interfaces` and must always be
-up.
+`/etc/network/interfaces` and must always be up.
 
 {{%/notice%}}
 
 ## ifupdown2 Interface Dependencies
 
-`ifupdown2`<span id="src-8363023_indexterm-A4EA0EC883C76E87F69AD8DC07027CC9">
-understands </span>interface dependency relationships. When `ifup` and
-`ifdown` are run with all interfaces, they always run with all
+`ifupdown2` understands interface dependency relationships. When `ifup`
+and `ifdown` are run with all interfaces, they always run with all
 interfaces in dependency order. When run with the interface list on the
 command line, the default behavior is to not run with dependents. But if
 there are any built-in dependents, they will be brought up or down.
@@ -310,9 +305,8 @@ example, `ifdown br2001` deletes `br2001`.
 To guide you through which interfaces will be brought down and up, use
 the `--print-dependency` option to get the list of dependents.
 
-<span id="src-8363023_indexterm-1A6C43BFCF7026C912AEF37AFACC1AA7">Use
-</span>`ifquery --print-dependency=list -a` to get the dependency list
-of all interfaces:
+Use `ifquery --print-dependency=list -a` to get the dependency list of
+all interfaces:
 
 ``` 
                    
@@ -417,28 +411,26 @@ device name is a standard way to specify a VLAN device on Linux. Many
 Linux configuration tools, most notably `ifupdown2` and its predecessor
 `ifupdown`, recognize such a name as a VLAN interface name.
 
-A VLAN subinterface only receives traffic [tagged](VLAN_Tagging.html)
-for that VLAN, so swp1.100 only receives packets tagged with VLAN 100 on
-switch port swp1. Similarly, any transmits from swp1.100 result in
-tagging the packet with VLAN 100.
+A VLAN subinterface only receives traffic
+[tagged](/old/VLAN_Tagging.html) for that VLAN, so swp1.100 only
+receives packets tagged with VLAN 100 on switch port swp1. Similarly,
+any transmits from swp1.100 result in tagging the packet with VLAN 100.
 
-For an [MLAG](Multi-Chassis_Link_Aggregation_-_MLAG.html) deployment,
-the peerlink interface that connects the two switches in the MLAG pair
-has a VLAN subinterface named 4094 by default, provided you configured
-the subinterface with [NCLU](Network_Command_Line_Utility_-_NCLU.html).
-The peerlink.4094 subinterface only receives traffic tagged for VLAN
-4094.
+For an [MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html)
+deployment, the peerlink interface that connects the two switches in the
+MLAG pair has a VLAN subinterface named 4094 by default, provided you
+configured the subinterface with
+[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html). The peerlink.4094
+subinterface only receives traffic tagged for VLAN 4094.
 
 ## ifup and Upper (Parent) Interfaces
 
-When you run
-`ifup`<span id="src-8363023_indexterm-84F9FFE84BCCB4CF64183CC1907A4B2E">
-on a </span>logical interface (like a bridge, bond or VLAN interface),
-if the `ifup` resulted in the creation of the logical interface, by
-default it implicitly tries to execute on the interface's upper (or
-parent) interfaces as well. This helps in most cases, especially when a
-bond is brought down and up, as in the example below. This section
-describes the behavior of bringing up the upper interfaces.
+When you run `ifup` on a logical interface (like a bridge, bond or VLAN
+interface), if the `ifup` resulted in the creation of the logical
+interface, by default it implicitly tries to execute on the interface's
+upper (or parent) interfaces as well. This helps in most cases,
+especially when a bond is brought down and up, as in the example below.
+This section describes the behavior of bringing up the upper interfaces.
 
 Consider this example configuration:
 
@@ -659,13 +651,10 @@ valid_lft forever preferred_lft forever
 
 ### Purge Existing IP Addresses on an Interface
 
-<span id="src-8363023_indexterm-A6A98855518C372DE15945A17BC8F27C">By
-</span>default,
-`ifupdown2`<span id="src-8363023_indexterm-F842F65EBB59AE5016D76BD14B7FEEF0">
-</span>purges existing IP addresses on an interface. If you have other
-processes that manage IP addresses for an interface, you can disable
-this feature including the `address-purge` setting in the interface's
-configuration.
+By default, `ifupdown2` purges existing IP addresses on an interface. If
+you have other processes that manage IP addresses for an interface, you
+can disable this feature including the `address-purge` setting in the
+interface's configuration.
 
 ``` 
                    
@@ -697,7 +686,7 @@ reload the configuration with `ifreload -a`. If this happens, you must
 shut down and restart the interface with `ifup` and `ifdown`, or
 manually delete superfluous addresses with `ip address delete
 specify.ip.address.here/mask dev DEVICE`. See also the [Caveats and
-Errata](#src-8363023_InterfaceConfigurationandManagement-caveats)
+Errata](/old/#src-8363023_InterfaceConfigurationandManagement-caveats)
 section below for some cautions about using multiple `iface` stanzas for
 the same interface.
 
@@ -705,8 +694,7 @@ the same interface.
 
 ## Specify User Commands
 
-<span id="src-8363023_indexterm-F5D4B3F040FCB8AC544D2BDD06B85029">You
-can specify additional </span>user commands in the `interfaces` file. As
+You can specify additional user commands in the `interfaces` file. As
 shown in the example below, the interface stanzas in
 `/etc/network/interfaces` can have a command that runs at pre-up, up,
 post-up, pre-down, down, and post-down:
@@ -817,11 +805,9 @@ iface bond0
 
 ## Use Globs for Port Lists
 
-<span id="src-8363023_indexterm-5ABEA1CBE86A19F94234F1B0E0E15DEF">NCLU
-supports
-</span><span id="src-8363023_indexterm-C041303D87DDA8441958CAAA2B9CC14A">globs
-to define </span>port lists (that is, a range of ports). The `glob`
-keyword is implied when you specify bridge ports and bond slaves:
+NCLU supports globs to define port lists (that is, a range of ports).
+The `glob` keyword is implied when you specify bridge ports and bond
+slaves:
 
 ``` 
                    
@@ -880,10 +866,9 @@ iface swp12
 
 ## Use Templates
 
-`ifupdown2`<span id="src-8363023_indexterm-81C876F0172ABFB655C124A9A4F0B2E2">
-</span><span id="src-8363023_indexterm-31E0807A42092C3B8C8B1FC8765ED100">supports
-</span>[Mako-style templates](http://www.makotemplates.org/). The Mako
-template engine is run over the `interfaces` file before parsing.
+`ifupdown2` supports [Mako-style
+templates](http://www.makotemplates.org/). The Mako template engine is
+run over the `interfaces` file before parsing.
 
 Use the template to declare cookie-cutter bridges in the `interfaces`
 file:
@@ -1035,7 +1020,8 @@ hypervisor_port_1
 ```
 
 Interface descriptions also appear in the
-[SNMP](Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html) OID
+[SNMP](/old/Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html)
+OID
 [IF-MIB::ifAlias](https://cumulusnetworks.com/static/mibs/IF-MIB.txt).
 
 {{%notice note%}}

@@ -3,6 +3,8 @@ title: TACACS Plus
 author: Unknown
 weight: 293
 pageID: 8362558
+aliases:
+ - /old/TACACS_Plus.html
 ---
 # TACACS Plus
 
@@ -20,7 +22,7 @@ per-command authorization requires additional setup on the switch.
 
   - Runs over the eth0 management interface
 
-  - Ability to run in the [management VRF](Management_VRF.html)
+  - Ability to run in the [management VRF](/old/Management_VRF.html)
 
   - TACACS+ privilege 15 users can run any command with sudo using the
     `/etc/sudoers.d/tacplus` file that is installed by the
@@ -93,8 +95,8 @@ configuration to see the changed server list.
 
 You can also configure the IP address used as the source IP address when
 communicating with the TACACS+ server. See [TACACS Configuration
-Parameters](#src-8362558_TACACSPlus-TACACS_config_params) below for the
-full list of TACACS+ parameters.
+Parameters](/old/#src-8362558_TACACSPlus-TACACS_config_params) below for
+the full list of TACACS+ parameters.
 
 Following is the complete list of the TACACS+ client configuration
 files, and their
@@ -248,7 +250,7 @@ accounting. These records are installed as part of the package.
 
 `audisp-tacplus` installs the audit rules for command accounting.
 Modifying the configuration files is not usually necessary. However,
-when a [management VRF](Management_VRF.html) is configured, the
+when a [management VRF](/old/Management_VRF.html) is configured, the
 accounting configuration does need special modification because the
 `auditd` service starts prior to networking. It is necessary to add the
 *vrf* parameter and to signal the `audisp-tacplus` process to reread the

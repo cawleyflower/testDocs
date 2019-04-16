@@ -3,27 +3,29 @@ title: Layer 1 and Switch Ports
 author: Unknown
 weight: 17
 pageID: 8363019
+aliases:
+ - /old/Layer_1_and_Switch_Ports.html
 ---
 # Layer 1 and Switch Ports
 
   - [Interface Configuration and
-    Management](Interface_Configuration_and_Management.html)
+    Management](/old/Interface_Configuration_and_Management.html)
     
-      - [Switch Port Attributes](Switch_Port_Attributes.html)
+      - [Switch Port Attributes](/old/Switch_Port_Attributes.html)
 
-  - [Buffer and Queue Management](Buffer_and_Queue_Management.html)
+  - [Buffer and Queue Management](/old/Buffer_and_Queue_Management.html)
     
       - [Hardware-enabled DDOS
-        Protection](Hardware-enabled_DDOS_Protection.html)
+        Protection](/old/Hardware-enabled_DDOS_Protection.html)
 
-  - [DHCP Relays](DHCP_Relays.html)
+  - [DHCP Relays](/old/DHCP_Relays.html)
 
-  - [DHCP Servers](DHCP_Servers.html)
+  - [DHCP Servers](/old/DHCP_Servers.html)
 
   - [Facebook Voyager Optical
-    Interfaces](Facebook_Voyager_Optical_Interfaces.html)
+    Interfaces](/old/Facebook_Voyager_Optical_Interfaces.html)
 
-  - [802.1X Interfaces](802.1X_Interfaces.html)
+  - [802.1X Interfaces](/old/802.1X_Interfaces.html)
 
   - [Prescriptive Topology Manager -
-    PTM](Prescriptive_Topology_Manager_-_PTM.html)
+    PTM](/old/Prescriptive_Topology_Manager_-_PTM.html)

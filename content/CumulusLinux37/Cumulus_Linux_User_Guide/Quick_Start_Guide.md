@@ -3,6 +3,8 @@ title: Quick Start Guide
 author: Unknown
 weight: 11
 pageID: 8362542
+aliases:
+ - /old/Quick_Start_Guide.html
 ---
 # Quick Start Guide
 

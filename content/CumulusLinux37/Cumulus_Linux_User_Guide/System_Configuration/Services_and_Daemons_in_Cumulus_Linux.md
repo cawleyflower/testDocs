@@ -3,6 +3,8 @@ title: Services and Daemons in Cumulus Linux
 author: Unknown
 weight: 71
 pageID: 8362578
+aliases:
+ - /old/Services_and_Daemons_in_Cumulus_Linux.html
 ---
 # Services and Daemons in Cumulus Linux
 
@@ -229,8 +231,7 @@ itself might hang after starting or restarting.
 
 ## Identify Active Listener Ports for IPv4 and IPv6
 
-<span id="src-8362578_indexterm-CF3DD1DE338E5873F7A5DAC769DF11BE">You
-can identify the </span>active listener ports under both IPv4 and IPv6
+You can identify the active listener ports under both IPv4 and IPv6
 using the `netstat` command:
 
 ``` 
@@ -326,23 +327,23 @@ Linux.
 
 <div class="tablewrap">
 
-| Service Name | Description                                                                                                                                                                                                                         | Affects Forwarding?                          |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| switchd      | Hardware abstraction daemon, synchronizes the kernel with the ASIC.                                                                                                                                                                 | YES                                          |
-| sx\_sdk      | Only on Mellanox switches, interfaces with the Spectrum ASIC.                                                                                                                                                                       | YES                                          |
-| portwd       | Reads pluggable information over the I2C bus. Identifies and classifies the optics that are inserted into the system. Sets interface speeds and capabilities to match the optics.                                                   | YES, eventually, if optics are added/removed |
-| frr          | [FRRouting](FRRouting_Overview.html), handles routing protocols. There are separate processes for each routing protocol, like bgpd and ospfd.                                                                                       | YES if routing                               |
-| clag         | Cumulus link aggregation daemon, handles [MLAG](Multi-Chassis_Link_Aggregation_-_MLAG.html).                                                                                                                                        | YES if using MLAG                            |
-| neighmgrd    | Synchronizes MAC address information when MLAG is in use.                                                                                                                                                                           | YES if using MLAG                            |
-| mstpd        | [Spanning tree protocol](Spanning_Tree_and_Rapid_Spanning_Tree.html) daemon.                                                                                                                                                        | YES if using layer 2                         |
-| ptmd         | [Prescriptive Topology Manager](Prescriptive_Topology_Manager_-_PTM.html), verifies cabling based on [LLDP](Link_Layer_Discovery_Protocol.html) output, also sets up [BFD](Bidirectional_Forwarding_Detection_-_BFD.html) sessions. | YES if using BFD                             |
-| netd         | [NCLU](Network_Command_Line_Utility_-_NCLU.html) back end.                                                                                                                                                                          | NO                                           |
-| rsyslog      | Handles logging of syslog messages.                                                                                                                                                                                                 | NO                                           |
-| ntp          | [Network time protocol](Setting_Date_and_Time.html).                                                                                                                                                                                | NO                                           |
-| ledmgrd      | [LED manager](Network_Switch_Port_LED_and_Status_LED_Guidelines.html), reads the state of system LEDs.                                                                                                                              | NO                                           |
-| sysmonitor   | Watches and logs critical system load (free memory, disk, CPU).                                                                                                                                                                     | NO                                           |
-| lldpd        | Handles Tx/Rx of [LLDP](Link_Layer_Discovery_Protocol.html) information.                                                                                                                                                            | NO                                           |
-| smond        | Reads [platform sensors and fan information](Monitoring_System_Hardware.html) from pwmd.                                                                                                                                            | NO                                           |
-| pwmd         | Reads and sets fan speeds.                                                                                                                                                                                                          | NO                                           |
+| Service Name | Description                                                                                                                                                                                                                                        | Affects Forwarding?                          |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| switchd      | Hardware abstraction daemon, synchronizes the kernel with the ASIC.                                                                                                                                                                                | YES                                          |
+| sx\_sdk      | Only on Mellanox switches, interfaces with the Spectrum ASIC.                                                                                                                                                                                      | YES                                          |
+| portwd       | Reads pluggable information over the I2C bus. Identifies and classifies the optics that are inserted into the system. Sets interface speeds and capabilities to match the optics.                                                                  | YES, eventually, if optics are added/removed |
+| frr          | [FRRouting](/old/FRRouting_Overview.html), handles routing protocols. There are separate processes for each routing protocol, like bgpd and ospfd.                                                                                                 | YES if routing                               |
+| clag         | Cumulus link aggregation daemon, handles [MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html).                                                                                                                                                  | YES if using MLAG                            |
+| neighmgrd    | Synchronizes MAC address information when MLAG is in use.                                                                                                                                                                                          | YES if using MLAG                            |
+| mstpd        | [Spanning tree protocol](/old/Spanning_Tree_and_Rapid_Spanning_Tree.html) daemon.                                                                                                                                                                  | YES if using layer 2                         |
+| ptmd         | [Prescriptive Topology Manager](/old/Prescriptive_Topology_Manager_-_PTM.html), verifies cabling based on [LLDP](/old/Link_Layer_Discovery_Protocol.html) output, also sets up [BFD](/old/Bidirectional_Forwarding_Detection_-_BFD.html) sessions. | YES if using BFD                             |
+| netd         | [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html) back end.                                                                                                                                                                                    | NO                                           |
+| rsyslog      | Handles logging of syslog messages.                                                                                                                                                                                                                | NO                                           |
+| ntp          | [Network time protocol](/old/Setting_Date_and_Time.html).                                                                                                                                                                                          | NO                                           |
+| ledmgrd      | [LED manager](/old/Network_Switch_Port_LED_and_Status_LED_Guidelines.html), reads the state of system LEDs.                                                                                                                                        | NO                                           |
+| sysmonitor   | Watches and logs critical system load (free memory, disk, CPU).                                                                                                                                                                                    | NO                                           |
+| lldpd        | Handles Tx/Rx of [LLDP](/old/Link_Layer_Discovery_Protocol.html) information.                                                                                                                                                                      | NO                                           |
+| smond        | Reads [platform sensors and fan information](/old/Monitoring_System_Hardware.html) from pwmd.                                                                                                                                                      | NO                                           |
+| pwmd         | Reads and sets fan speeds.                                                                                                                                                                                                                         | NO                                           |
 
 </div>

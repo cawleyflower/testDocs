@@ -3,6 +3,8 @@ title: ASIC Monitoring
 author: Unknown
 weight: 235
 pageID: 8362627
+aliases:
+ - /old/ASIC_Monitoring.html
 ---
 # ASIC Monitoring
 
@@ -303,7 +305,7 @@ monitor.buffers_pg.stat_type = buffer
 Certain settings in the procedure above (such as the histogram size,
 boundary size, and sampling time) only apply to the histogram monitor.
 All ASIC monitor settings are described in [ASIC Monitoring
-Settings](#src-8362627_ASICMonitoring-ASIC_Settings).
+Settings](/old/#src-8362627_ASICMonitoring-ASIC_Settings).
 
 ## Configuration Examples
 
@@ -454,7 +456,7 @@ monitor.discards_pg.snapshot.file_count               = 16
 Certain actions require additional settings. For example, if the
 `snapshot` action is specified, a snapshot file is also required. If the
 `log` action is specified, a log threshold is also required. See
-[action\_list](#src-8362627_ASICMonitoring-action_setting) for
+[action\_list](/old/#src-8362627_ASICMonitoring-action_setting) for
 additional settings required for each *action*.
 
 {{%/notice%}}

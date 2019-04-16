@@ -3,24 +3,20 @@ title: Buffer and Queue Management
 author: Unknown
 weight: 95
 pageID: 8363032
+aliases:
+ - /old/Buffer_and_Queue_Management.html
 ---
 # Buffer and Queue Management
 
-<span id="src-8363032_indexterm-2D583928E5DAF48A6770F72F1C6406D1">Hardware
-</span><span id="src-8363032_indexterm-4B5C2F6D4E2914FF2CFB24549D6C4B6A">datapath
-configuration manages
-</span><span id="src-8363032_indexterm-D2F8EE5315B1D539A23B20078FA5300B">packet
-buffering,
-</span><span id="src-8363032_indexterm-767B31A3202D1E41D99029A46A8995C3">queueing
-and </span>scheduling in hardware. There are two configuration input
-files:
+Hardware datapath configuration manages packet buffering, queueing and
+scheduling in hardware. There are two configuration input files:
 
   - `/etc/cumulus/datapath/traffic.conf`, which describes priority
     groups and assigns the scheduling algorithm and
     weights
 
-  - `/usr/lib/python2.7/dist-packages/cumulus/__chip_config/[bcm|mlx]/datapath.conf`<span id="src-8363032_indexterm-4823FFFC68BB2272EE28CC8530D33B76">,
-    </span>which assigns buffer space and egress queues
+  - `/usr/lib/python2.7/dist-packages/cumulus/__chip_config/[bcm|mlx]/datapath.conf`,
+    which assigns buffer space and egress queues
     
     {{%notice note%}}
     
@@ -32,18 +28,11 @@ files:
     
     {{%/notice%}}
 
-<span id="src-8363032_indexterm-CC0E58FE49C795179299C8294FA84362">Each
-packet is assigned to an ASIC
-</span><span id="src-8363032_indexterm-CE871240F2E5B6503C936873E2660898">Class
-of Service (CoS) value based on the packet's priority value stored in
-the
-</span><span id="src-8363032_indexterm-54926F49A653D38EF589C7E704571CD9">802.1p
-(Class of Service) or
-</span><span id="src-8363032_indexterm-5B8794BE7577F37AED5293C0C8B36577">DSCP
-(</span>Differentiated Services Code Point) header field. The choice to
+Each packet is assigned to an ASIC Class of Service (CoS) value based on
+the packet's priority value stored in the 802.1p (Class of Service) or
+DSCP (Differentiated Services Code Point) header field. The choice to
 schedule packets based on COS or DSCP is a configurable option in the
-`/etc/cumulus/datapath/traffic.conf`<span id="src-8363032_indexterm-D2DD2BCB72B722E17F8806B44D3D2B5A">
-</span>file.
+`/etc/cumulus/datapath/traffic.conf` file.
 
 Priority groups include:
 
@@ -61,7 +50,7 @@ which are assigned equal scheduling weights.
 
 Datapath configuration takes effect when you initialize `switchd`.
 Changes to the `traffic.conf` file require you to [restart the
-`switchd`](Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
+`switchd`](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
 service.
 
 {{%notice note%}}
@@ -78,7 +67,7 @@ Quality of Service (QoS) for switches on the following platforms only:
 
 If you modify the configuration in the
 `/etc/cumulus/datapath/traffic.conf` file, you must [restart
-`switchd`](Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
+`switchd`](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
 for the changes to take effect:
 
 ``` 
@@ -90,18 +79,15 @@ cumulus@switch:~$ sudo systemctl restart switchd.service
 
 ## Configure Traffic Marking through ACL Rules
 
-<span id="src-8363032_indexterm-DDDAAA68CA92DB233C379BDCB1B0F9D5">You
-can </span>mark traffic for egress packets through `iptables` or
-`ip6tables`<span id="src-8363032_indexterm-47A8CABB2966B8B9A2B85BF7F1233761">
-rule classifications. To enable these </span>rules, you do one of the
-following:
+You can mark traffic for egress packets through `iptables` or
+`ip6tables` rule classifications. To enable these rules, you do one of
+the following:
 
   - Mark DSCP values in egress packets.
 
   - Mark 802.1p CoS values in egress packets.
 
-<span id="src-8363032_indexterm-8C8644BE794BE02CBD86B27BEC080061">To
-enable traffic marking, use </span>`cl-acltool`. Add the `-p` option to
+To enable traffic marking, use `cl-acltool`. Add the `-p` option to
 specify the location of the policy file. By default, if you don't
 include the `-p` option, `cl-acltool` looks for the policy file in
 `/etc/cumulus/acl/policy.d/`.
@@ -158,20 +144,16 @@ Here are two example rules:
     
 ```
 
-<span id="src-8363032_indexterm-6A855B4116A0507CBD67B52A4A58AEE2">You
-can put the rule in either the </span>*mangle* table or the default
+You can put the rule in either the *mangle* table or the default
 *filter* table; the mangle table and filter table are put into separate
 TCAM slices in the hardware.
 
 To put the rule in the mangle table, include `-t mangle`; to put the
-rule in the filter table, omit `-t
-mangle`.
+rule in the filter table, omit `-t mangle`.
 
 ## Configure Priority Flow Control
 
-*<span id="src-8363032_indexterm-CF4D39A3530E71DFBB6AB2D2506BCEBE">Priority
-</span><span id="src-8363032_indexterm-2DCBC6A2EBB483600B91C286001242F0">flow
-</span>control*, as defined in the [IEEE 802.1Qbb
+*Priority flow control*, as defined in the [IEEE 802.1Qbb
 standard](http://www.ieee802.org/1/pages/802.1bb.html), provides a
 link-level flow control mechanism that can be controlled independently
 for each Class of Service (CoS) with the intention to ensure no data
@@ -353,7 +335,7 @@ sequences of contiguous ports; you can see which ports are contiguous in
     ```
 
 [Restart
-`switchd`](Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
+`switchd`](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
 to allow the PFC configuration changes to take effect:
 
 ``` 
@@ -365,10 +347,8 @@ cumulus@switch:~$ sudo systemctl restart switchd.service
 
 ## Configure Link Pause
 
-<span id="src-8363032_indexterm-1B6EA48A5AB8F8C2EA0C3233A1746840">The
-</span><span id="src-8363032_indexterm-60CCC9525D0784E5AF43B48010320A57">PAUSE
-</span>frame is a flow control mechanism that halts the transmission of
-the transmitter for a specified period of time. A server or other
+The PAUSE frame is a flow control mechanism that halts the transmission
+of the transmitter for a specified period of time. A server or other
 network node within the data center may be receiving traffic faster than
 it can handle it, thus the PAUSE frame. In Cumulus Linux, individual
 ports can be configured to execute link pause by:
@@ -380,8 +360,8 @@ ports can be configured to execute link pause by:
 
 Link pause is disabled by default. Enabling link pause requires
 configuring settings in `/etc/cumulus/datapath/traffic.conf`, similar to
-how you configure [priority flow control](#). The settings are explained
-in that section as well.
+how you configure [priority flow control](/old/#). The settings are
+explained in that section as well.
 
 {{%notice tip%}}
 
@@ -422,7 +402,7 @@ link_pause.pause_port_group.tx_enable = true
 ```
 
 [Restart
-`switchd`](Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
+`switchd`](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
 to allow link pause configuration changes to take effect:
 
 ``` 
@@ -490,7 +470,7 @@ cut_through_enable = false
 
 On Mellanox switches, you can collect a fine-grained history of queue
 lengths using histograms maintained by the ASIC; see the [ASIC
-monitoring chapter](ASIC_Monitoring.html) for details.
+monitoring chapter](/old/ASIC_Monitoring.html) for details.
 
 On Broadcom switches, the buffer status is not visible currently.
 

@@ -3,37 +3,30 @@ title: Netfilter - ACLs
 author: Unknown
 weight: 69
 pageID: 8362563
+aliases:
+ - /old/Netfilter_-_ACLs.html
 ---
 # Netfilter - ACLs
 
-[Netfilter](http://www.netfilter.org/)<span id="src-8362563_indexterm-21A4358750073357C3D536B25F039C6C">
-</span><span id="src-8362563_indexterm-1790D11D806579E024AA08C304581C85">is
-the packet filtering framework in Cumulus Linux as well as most other
-Linux distributions. There are a number of tools available for
-configuring
-</span><span id="src-8362563_indexterm-A3AAECEFE5EA348279BB7885B3143129">ACLs
-in </span>Cumulus Linux:
+[Netfilter](http://www.netfilter.org/) is the packet filtering framework
+in Cumulus Linux as well as most other Linux distributions. There are a
+number of tools available for configuring ACLs in Cumulus Linux:
 
   - `iptables`, `ip6tables`, and `ebtables` are Linux userspace tools
     used to administer filtering rules for IPv4 packets, IPv6 packets,
     and Ethernet frames (layer 2 using MAC addresses).
 
-  - [NCLU](Network_Command_Line_Utility_-_NCLU.html) is a Cumulus
+  - [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html) is a Cumulus
     Linux-specific userspace tool used to configure custom ACLs.
 
   - `cl-acltool` is a Cumulus Linux-specific userspace tool used to
     administer filtering rules and configure default ACLs.
 
-NCLU and
-`cl-acltool`<span id="src-8362563_indexterm-35DAEC605B11404AAC3E9360FB7FD483">
-</span><span id="src-8362563_indexterm-A957DA4B1B6383B15156C6001FFA1DE3">operate
-on various configuration files and use
-</span>`iptables`<span id="src-8362563_indexterm-E777200CC95DFBDE2E3049BAC4A4A837">,
-</span>`ip6tables`<span id="src-8362563_indexterm-B7C8D8BF1F396B0EE98AEAC1A6D8AF02">,
-and </span>`ebtables` to install rules into the kernel. In addition,
-NCLU and `cl-acltool` program rules in hardware for interfaces involving
-switch port interfaces, which `iptables`, `ip6tables` and `ebtables`
-cannot do on their own.
+NCLU and `cl-acltool` operate on various configuration files and use
+`iptables`, `ip6tables`, and `ebtables` to install rules into the
+kernel. In addition, NCLU and `cl-acltool` program rules in hardware for
+interfaces involving switch port interfaces, which `iptables`,
+`ip6tables` and `ebtables` cannot do on their own.
 
 {{%notice note%}}
 
@@ -134,12 +127,9 @@ by inspecting packet and frame headers based on a list of rules. Rules
 are defined using syntax provided by the `iptables`, `ip6tables` and
 `ebtables` userspace applications.
 
-<span id="src-8362563_indexterm-077E594BA4E1108B6BD2478348BE64C3">The
-rules created by these programs inspect or operate on packets at several
-points in the life of the packet through the system. These five points
-are known as
-</span>*<span id="src-8362563_indexterm-E7A9D8A2D5B8927D7BEBF1E6638C138B">chains</span>*
-and are shown
+The rules created by these programs inspect or operate on packets at
+several points in the life of the packet through the system. These five
+points are known as *chains* and are shown
 here:
 
 ![/images/download/attachments/8362563/Linux\_Traffic\_Inspection\_Points\_%28Chains%29.png](/images/download/attachments/8362563/Linux_Traffic_Inspection_Points_%28Chains%29.png)
@@ -225,8 +215,8 @@ components.
     the one this rule is in), one of the special built-in targets that
     decides the fate of the packet immediately (like DROP), or an
     extended target. See the [Supported Rule Types and Common
-    Usages](#src-8362563_Netfilter-ACLs-supported) section below for
-    examples of different targets.
+    Usages](/old/#src-8362563_Netfilter-ACLs-supported) section below
+    for examples of different targets.
 
 ### How Rules Are Parsed and Applied
 
@@ -404,13 +394,10 @@ traffic.
 
 #### Enable Nonatomic Update Mode
 
-<span id="src-8362563_indexterm-6F469536B9CB54A3D849272E3085C06A">You
-can enable
-</span><span id="src-8362563_indexterm-213971561FA684EFB18BB7A735398E26">nonatomic
-updates for </span>`switchd`, which offer better scaling because all
-TCAM resources are used to actively impact traffic. With atomic updates,
-half of the hardware resources are on standby and do not actively impact
-traffic.
+You can enable nonatomic updates for `switchd`, which offer better
+scaling because all TCAM resources are used to actively impact traffic.
+With atomic updates, half of the hardware resources are on standby and
+do not actively impact traffic.
 
 *Incremental nonatomic updates* are table based, so they do not
 interrupt network traffic when new rules are installed. The rules are
@@ -467,7 +454,7 @@ To always start `switchd` with nonatomic updates:
     ```
 
 3.  [Restart
-    `switchd`](https://docs.cumulusnetworks.com/display/CL257/Configuring+switchd#Configuringswitchd-restartswitchd):
+    `switchd`](/old/https://docs.cumulusnetworks.com/display/CL257/Configuring+switchd#Configuringswitchd-restartswitchd):
     
     ``` 
                        
@@ -591,10 +578,10 @@ entry is one of the following:
 ### Match SVI and Bridged Interfaces in Rules
 
 Cumulus Linux supports matching ACL rules for both ingress and egress
-interfaces on both [VLAN-aware](VLAN-aware_Bridge_Mode.html) and
-[traditional mode](Traditional_Bridge_Mode.html) bridges, including
+interfaces on both [VLAN-aware](/old/VLAN-aware_Bridge_Mode.html) and
+[traditional mode](/old/Traditional_Bridge_Mode.html) bridges, including
 bridge SVIs ([switch VLAN
-interfaces](Ethernet_Bridging_-_VLANs.html#src-8362655_EthernetBridging-VLANs-svi))
+interfaces](/old/Ethernet_Bridging_-_VLANs.html#src-8362655_EthernetBridging-VLANs-svi))
 for input and output. However, keep the following in mind:
 
   - If a traditional mode bridge has a mix of different VLANs, or has
@@ -840,8 +827,7 @@ ACL policy file contains `iptables`, `ip6tables` and `ebtables`
 categories under the tags `[iptables]`, `[ip6tables]` and `[ebtables]`
 respectively.
 
-<span id="src-8362563_indexterm-F25DD7B12DEBD8BF00E3A31A90D67F48">Each
-rule in an </span>ACL policy must be assigned to one of the rule
+Each rule in an ACL policy must be assigned to one of the rule
 categories above.
 
 See `man cl-acltool(5)` for ACL rule details. For `iptables` rule
@@ -850,7 +836,7 @@ ip6tables(8)`. For `ebtables` rule syntax, see `man ebtables(8)`.
 
 See `man cl-acltool(5)` and `man cl-acltool(8)` for further details on
 using `cl-acltool`. Some examples are listed here and more are listed
-[later in this chapter](#src-8362563_Netfilter-ACLs-exm).
+[later in this chapter](/old/#src-8362563_Netfilter-ACLs-exm).
 
 {{%notice note%}}
 
@@ -977,11 +963,10 @@ cumulus@switch:~$ sudo cl-acltool -i
 
 ## Specify the Policy Files to Install
 
-<span id="src-8362563_indexterm-3A4868E955F25E1C0FE68805984688CB">By
-</span>default, Cumulus Linux installs any `.rules` file you configure
-in `/etc/cumulus/acl/policy.d/`. To add other policy files to an ACL,
-you need to include them in `/etc/cumulus/acl/policy.conf`. For example,
-for Cumulus Linux to install a rule in a policy file called
+By default, Cumulus Linux installs any `.rules` file you configure in
+`/etc/cumulus/acl/policy.d/`. To add other policy files to an ACL, you
+need to include them in `/etc/cumulus/acl/policy.conf`. For example, for
+Cumulus Linux to install a rule in a policy file called
 `01_new.datapathacl`, add `include
 /etc/cumulus/acl/policy.d/01_new.rules` to `policy.conf`, as in this
 example:
@@ -1026,7 +1011,7 @@ function of the following factors:
 
   - Whether the rules are in atomic or nonatomic mode; nonatomic mode
     rules are used when nonatomic updates are enabled ([see
-    above](#src-8362563_Netfilter-ACLs-nonatomic)).
+    above](/old/#src-8362563_Netfilter-ACLs-nonatomic)).
 
 If the maximum number of rules for a particular table is exceeded,
 `cl-acltool -i` generates the following error:
@@ -1100,7 +1085,7 @@ The Mellanox Spectrum ASIC has one common
 [TCAM](https://en.wikipedia.org/wiki/Content-addressable_memory#Ternary_CAMs)
 for both ingress and egress, which can be used for other non-ACL-related
 resources. However, the number of supported rules varies with the [TCAM
-profile](Routing.html#src-8362912_Routing-tcam) specified for the
+profile](/old/Routing.html#src-8362912_Routing-tcam) specified for the
 switch.
 
 <div class="tablewrap">
@@ -1311,8 +1296,8 @@ from any switch port egress/ingress.
 
 Not all `iptables`, `ip6tables`, or `ebtables` rules are supported.
 Refer to the [Supported Rules
-section](#src-8362563_Netfilter-ACLs-supported) above for specific rule
-support.
+section](/old/#src-8362563_Netfilter-ACLs-supported) above for specific
+rule support.
 
 ### ACL Log Policer Limits Traffic
 
@@ -1349,7 +1334,7 @@ SPAN sessions that reference an outgoing interface create mirrored
 packets based on the ingress interface before the routing/switching
 decision. For an example, see the [SPAN Sessions that Reference an
 Outgoing
-Interface](Network_Troubleshooting.html#src-8362596_NetworkTroubleshooting-span_outgoing)
+Interface](/old/Network_Troubleshooting.html#src-8362596_NetworkTroubleshooting-span_outgoing)
 in the Network Troubleshooting chapter.
 
 ### Tomahawk Hardware Limitations
@@ -1377,7 +1362,7 @@ disable atomic update mode.
 To do so, enable nonatomic update mode by setting the value for
 `acl.non_atomic_update_mode` to TRUE in `/etc/cumulus/switchd.conf`,
 then [restart
-`switchd`](https://docs.cumulusnetworks.com/display/CL30/Configuring+switchd#Configuringswitchd-restartswitchd).
+`switchd`](/old/https://docs.cumulusnetworks.com/display/CL30/Configuring+switchd#Configuringswitchd-restartswitchd).
 
 ``` 
                    
@@ -1412,7 +1397,7 @@ On a Trident3 switch, you must enable nonatomic update mode before you
 can configure ERSPAN. To do so, set the value for
 `acl.non_atomic_update_mode` to TRUE in `/etc/cumulus/switchd.conf`,
 then [restart
-`switchd`](https://docs.cumulusnetworks.com/display/CL30/Configuring+switchd#Configuringswitchd-restartswitchd).
+`switchd`](/old/https://docs.cumulusnetworks.com/display/CL30/Configuring+switchd#Configuringswitchd-restartswitchd).
 
 ``` 
                    
@@ -1473,7 +1458,7 @@ instead because:
 ### Mellanox Spectrum Hardware Limitations
 
 Due to hardware limitations in the Spectrum ASIC, [BFD
-policers](Bidirectional_Forwarding_Detection_-_BFD.html) are shared
+policers](/old/Bidirectional_Forwarding_Detection_-_BFD.html) are shared
 between all BFD-related control plane rules. Specifically the following
 default rules share the same policer in the `00control_plan.rules` file:
 

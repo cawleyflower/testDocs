@@ -3,11 +3,13 @@ title: Troubleshooting the etc Directory
 author: Unknown
 weight: 467
 pageID: 8362601
+aliases:
+ - /old/Troubleshooting_the_etc_Directory.html
 ---
 # Troubleshooting the etc Directory
 
-The [`cl-support`](Understanding_the_cl-support_Output_File.html) script
-replicates the /`etc` directory.
+The [`cl-support`](/old/Understanding_the_cl-support_Output_File.html)
+script replicates the /`etc` directory.
 
 Files that `cl-support` deliberately excludes
 are:

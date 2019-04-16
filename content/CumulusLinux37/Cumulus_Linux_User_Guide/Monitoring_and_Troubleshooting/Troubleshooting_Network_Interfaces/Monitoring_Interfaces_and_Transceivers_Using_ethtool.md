@@ -3,16 +3,16 @@ title: Monitoring Interfaces and Transceivers Using ethtool
 author: Unknown
 weight: 479
 pageID: 8362604
+aliases:
+ - /old/Monitoring_Interfaces_and_Transceivers_Using_ethtool.html
 ---
 # Monitoring Interfaces and Transceivers Using ethtool
 
-<span id="src-8362604_indexterm-D714EEAD72DCB578915937A5AB405ECE">The
-</span>`ethtool`<span id="src-8362604_indexterm-372F782D8D6987D4C51D70DDCD456156">
-</span>command enables you to query or control the network driver and
-hardware settings. It takes the device name (like swp1) as an argument.
-When the device name is the only argument to `ethtool`, it prints the
-current settings of the network device. See `man ethtool(8)` for
-details. Not all options are currently supported on switch port
+The `ethtool` command enables you to query or control the network driver
+and hardware settings. It takes the device name (like swp1) as an
+argument. When the device name is the only argument to `ethtool`, it
+prints the current settings of the network device. See `man ethtool(8)`
+for details. Not all options are currently supported on switch port
 interfaces.
 
 ## Monitor Interface Status Using ethtool
@@ -81,11 +81,10 @@ NIC statistics:
 
 ## View and Clear Interface Counters
 
-<span id="src-8362604_indexterm-7669C0B51E7EEE2EFE1E3F021B2DFC0B">Interface
-</span><span id="src-8362604_indexterm-A604928BD1801628A22A6F9EEB746AAA">counters
-contain information about an interface. You can view this information
-when you run </span>`cl-netstat`, `ifconfig`, or `cat /proc/net/dev`.
-You can also use `cl-netstat` to save or clear this information:
+Interface counters contain information about an interface. You can view
+this information when you run `cl-netstat`, `ifconfig`, or `cat
+/proc/net/dev`. You can also use `cl-netstat` to save or clear this
+information:
 
 ``` 
                    
@@ -154,14 +153,12 @@ Cleared counters
 
 ## Monitor Switch Port SFP/QSFP Hardware Information Using ethtool
 
-<span id="src-8362604_indexterm-5742A7019B6279D2D4845ECCED1CE37D">To see
-hardware capabilities and measurement information on the
-</span><span id="src-8362604_indexterm-7A3E28A48C39CF5885F0561675E4EA94">SFP
-or </span>QSFP module installed in a particular port, use the `ethtool
--m` command. If the SFP/QSFP supports Digital Optical Monitoring (that
-is, the `Optical diagnostics support` field in the output below is set
-to *Yes*), the optical power levels and thresholds are also printed
-below the standard hardware details.
+To see hardware capabilities and measurement information on the SFP or
+QSFP module installed in a particular port, use the `ethtool -m`
+command. If the SFP/QSFP supports Digital Optical Monitoring (that is,
+the `Optical diagnostics support` field in the output below is set to
+*Yes*), the optical power levels and thresholds are also printed below
+the standard hardware details.
 
 In the sample output below, you can see that this module is a
 1000BASE-SX short-range optical module, manufactured by JDSU, part

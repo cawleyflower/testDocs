@@ -3,14 +3,14 @@ title: Bonding - Link Aggregation
 author: Unknown
 weight: 121
 pageID: 8362653
+aliases:
+ - /old/Bonding_-_Link_Aggregation.html
 ---
 # Bonding - Link Aggregation
 
-<span id="src-8362653_indexterm-658860A5252809768086C7BFBA614BAD">Linux
-</span><span id="src-8362653_indexterm-F62A4695B796E07AC537D25BB69E3DBA">bonding
-provides a method for </span>aggregating multiple network interfaces
-(*slaves*) into a single logical bonded interface (*bond*). Cumulus
-Linux supports two bonding modes:
+Linux bonding provides a method for aggregating multiple network
+interfaces (*slaves*) into a single logical bonded interface (*bond*).
+Cumulus Linux supports two bonding modes:
 
   - IEEE 802.3ad link aggregation mode, which allows one or more links
     to be aggregated together to form a *link aggregation group* (LAG),
@@ -21,7 +21,7 @@ Linux supports two bonding modes:
   - Balance-xor mode, where the bonding of slave interfaces are static
     and all slave interfaces are active for load balancing and fault
     tolerance purposes. This is useful for
-    [MLAG](Multi-Chassis_Link_Aggregation_-_MLAG.html) deployments.
+    [MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html) deployments.
 
 The benefits of link aggregation include:
 
@@ -29,24 +29,20 @@ The benefits of link aggregation include:
 
   - Load balancing
 
-  - Failover
-protection
+  - Failover protection
 
-<span id="src-8362653_indexterm-45C19362678157280D93124BF62042A7">Cumulus
-Linux uses version 1 of the LAG control protocol </span>(LACP).
+Cumulus Linux uses version 1 of the LAG control protocol (LACP).
 
 To temporarily bring up a bond even when there is no LACP partner, use
-[LACP Bypass](LACP_Bypass.html).
+[LACP Bypass](/old/LACP_Bypass.html).
 
 ## Hash Distribution
 
-<span id="src-8362653_indexterm-A03D0C462674BD29AA031D2F7AE3118D">Egress
-</span><span id="src-8362653_indexterm-FE987D220A9CE3FECEDD5DAE8054E41C">traffic
-</span>through a bond is distributed to a slave based on a packet hash
-calculation, providing load balancing over the slaves; many conversation
-flows are distributed over all available slaves to load balance the
-total traffic. Traffic for a single conversation flow always hashes to
-the same slave.
+Egress traffic through a bond is distributed to a slave based on a
+packet hash calculation, providing load balancing over the slaves; many
+conversation flows are distributed over all available slaves to load
+balance the total traffic. Traffic for a single conversation flow always
+hashes to the same slave.
 
 The hash calculation uses packet header data to choose to which slave to
 transmit the packet:
@@ -67,8 +63,8 @@ over available slaves.
 ## Create a Bond
 
 You can create and configure a bond with the Network Command Line
-Utility ([NCLU](Network_Command_Line_Utility_-_NCLU.html)). Follow the
-steps below to create a new bond:
+Utility ([NCLU](/old/Network_Command_Line_Utility_-_NCLU.html)). Follow
+the steps below to create a new bond:
 
 1.  SSH into the switch.
 
@@ -86,7 +82,7 @@ steps below to create a new bond:
     
     The bond is configured by default in IEEE 802.3ad link aggregation
     mode. To configure the bond in balance-xor mode, see [bond
-    mode](#src-8362653_Bonding-LinkAggregation-bond_mode) below.
+    mode](/old/#src-8362653_Bonding-LinkAggregation-bond_mode) below.
 
 {{%notice note%}}
 
@@ -109,7 +105,7 @@ Each bond configuration option, except for `bond slaves,` is set to the
 recommended value by default in Cumulus Linux. Only configure an option
 if a different setting is needed. For more information on configuration
 values, refer to the [Related
-Information](#src-8362653_Bonding-LinkAggregation-related-information)
+Information](/old/#src-8362653_Bonding-LinkAggregation-related-information)
 section below.
 
 {{%/notice%}}
@@ -134,7 +130,7 @@ section below.
 <td><p><code>bond mode</code></p></td>
 <td><p>The bonding mode. Cumulus Linux supports IEEE 802.3ad link aggregation mode and balance-xor mode. IEEE 802.3ad link aggregation is the default mode.</p>
 <p>You can change the bond mode using NCLU. The following example changes bond1 to balance-xor mode.</p>
-<p><strong>Note</strong>: Use balance-xor mode only if you cannot use LACP. <a href="#src-8362653_Bonding-LinkAggregation-balance_xor">See below</a> for more information.</p>
+<p><strong>Note</strong>: Use balance-xor mode only if you cannot use LACP. <a href="/old/#src-8362653_Bonding-LinkAggregation-balance_xor">See below</a> for more information.</p>
 <pre><code>                   
 cumulus@switch:~$ net add bond bond1 bond mode balance-xor
 cumulus@switch:~$ net pending
@@ -185,13 +181,13 @@ cumulus@switch:~$ net commit
 </tr>
 <tr class="even">
 <td><p><code>bond lacp-bypass-allow</code></p></td>
-<td><p>Enables <a href="LACP_Bypass.html">LACP bypass</a>.</p></td>
+<td><p>Enables <a href="/old/LACP_Bypass.html">LACP bypass</a>.</p></td>
 <td><p>N/A</p></td>
 </tr>
 <tr class="odd">
 <td><p><code>bond lacp-rate</code></p></td>
 <td><p>Sets the rate to ask the link partner to transmit LACP control packets.</p>
-<p>You can set the LACP rate to slow using <a href="Network_Command_Line_Utility_-_NCLU.html">NCLU</a>:</p>
+<p>You can set the LACP rate to slow using <a href="/old/Network_Command_Line_Utility_-_NCLU.html">NCLU</a>:</p>
 <pre><code>                   
 cumulus@switch:~$ net add bond bond01 bond lacp-rate slow
    
@@ -219,7 +215,7 @@ tolerance purposes. Packet transmission on the bond is based on the hash
 policy specified by `xmit-hash-policy`.
 
 When using balance-xor mode to dual-connect host-facing bonds in an
-[MLAG](Multi-Chassis_Link_Aggregation_-_MLAG.html) environment, you
+[MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html) environment, you
 **must** configure the `clag_id` parameter on the MLAG bonds and it must
 be the same on both MLAG switches. Otherwise, the bonds are treated by
 the MLAG switch pair as single-connected.
@@ -273,7 +269,8 @@ iface bond1
     
 ```
 
-To view the bond, use [NCLU](Network_Command_Line_Utility_-_NCLU.html):
+To view the bond, use
+[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html):
 
 ``` 
                    
@@ -416,7 +413,7 @@ address traffic to the bond.
     sure they match the link partner’s slave ports.
 
   - On a [Cumulus
-    RMP](https://docs.cumulusnetworks.com/display/RMP/Cumulus+RMP)
+    RMP](/old/https://docs.cumulusnetworks.com/display/RMP/Cumulus+RMP)
     switch, if you create a bond with multiple 10G member ports, traffic
     gets dropped when the bond uses members of the same *unit* listed in
     the `/var/lib/cumulus/porttab` file. For example, traffic gets

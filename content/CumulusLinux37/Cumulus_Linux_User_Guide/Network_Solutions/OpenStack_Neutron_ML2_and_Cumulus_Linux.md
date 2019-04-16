@@ -3,6 +3,8 @@ title: OpenStack Neutron ML2 and Cumulus Linux
 author: Unknown
 weight: 267
 pageID: 8362989
+aliases:
+ - /old/OpenStack_Neutron_ML2_and_Cumulus_Linux.html
 ---
 # OpenStack Neutron ML2 and Cumulus Linux
 
@@ -119,8 +121,9 @@ You configure them in the `/etc/neutron/plugins/ml2/ml2_conf.ini` file.
     value is *False*.
 
   - `new_bridge` — Enables/disables [VLAN-aware bridge
-    mode](VLAN-aware_Bridge_Mode.html) for the bridge configuration. The
-    default value is *False*, so a traditional mode bridge is created.
+    mode](/old/VLAN-aware_Bridge_Mode.html) for the bridge
+    configuration. The default value is *False*, so a traditional mode
+    bridge is created.
 
 ## Try OpenStack with Cumulus in the Cloud
 
@@ -128,4 +131,4 @@ OpenStack Neutron is available as a preconfigured option with [Cumulus
 in the
 Cloud](https://cumulusnetworks.com/products/cumulus-in-the-cloud/). You
 just need to add the ML2 driver, as per the [instructions
-above](#src-8362989_OpenStackNeutronML2andCumulusLinux-install).
+above](/old/#src-8362989_OpenStackNeutronML2andCumulusLinux-install).

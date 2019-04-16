@@ -3,6 +3,8 @@ title: Equal Cost Multipath Load Sharing - Hardware ECMP
 author: Unknown
 weight: 203
 pageID: 8362929
+aliases:
+ - /old/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html
 ---
 # Equal Cost Multipath Load Sharing - Hardware ECMP
 
@@ -42,7 +44,7 @@ For routes to be considered equal they must:
 
 The BGP `maximum-paths` setting is enabled, so multiple routes are
 installed by default. See the [ECMP
-section](Border_Gateway_Protocol_-_BGP.html#src-8362926_BorderGatewayProtocol-BGP-ecmp)
+section](/old/Border_Gateway_Protocol_-_BGP.html#src-8362926_BorderGatewayProtocol-BGP-ecmp)
 of the BGP chapter for more information.
 
 {{%/notice%}}
@@ -88,9 +90,8 @@ the same input, you can query the hardware and determine the hash result
 of a given input. This is useful when determining exactly which path a
 flow takes through a network.
 
-On Cumulus Linux, use the
-`cl-ecmpcalc`<span id="src-8362929_indexterm-5DD1B80EDE9EC8EEED55683793A708AE">
-</span>command to determine a hardware hash result.
+On Cumulus Linux, use the `cl-ecmpcalc` command to determine a hardware
+hash result.
 
 In order to use `cl-ecmpcalc`, all fields that are used in the hash must
 be provided. This includes ingress interface, layer 3 source IP, layer 3
@@ -298,16 +299,14 @@ buckets.
 ![/images/download/attachments/8362929/Reshash\_Add.png](/images/download/attachments/8362929/Reshash_Add.png)
 
 As a result, some flows may hash to new next hops, which can impact
-anycast
-deployments.
+anycast deployments.
 
 ### Configure Resilient Hashing
 
-<span id="src-8362929_indexterm-4E4E4B4B961D41C1634AD7B56A735BA8">Resilient
-</span><span id="src-8362929_indexterm-44C63CC1C5A35B652EBB02808D8B36E2">hashing</span>
-is not enabled by default. When resilient hashing is enabled, 65,536
-buckets are created to be shared among all ECMP groups. An ECMP group is
-a list of unique next hops that are referenced by multiple ECMP routes.
+Resilient hashing is not enabled by default. When resilient hashing is
+enabled, 65,536 buckets are created to be shared among all ECMP groups.
+An ECMP group is a list of unique next hops that are referenced by
+multiple ECMP routes.
 
 {{%notice info%}}
 
@@ -372,7 +371,7 @@ To enable resilient hashing, edit `/etc/cumulus/datapath/traffic.conf`:
         
     ```
 
-3.  [Restart](Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
+3.  [Restart](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
     the `switchd` service:
     
     ``` 

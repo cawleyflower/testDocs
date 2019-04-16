@@ -3,19 +3,17 @@ title: Monitoring System Statistics and Network Traffic with sFlow
 author: Unknown
 weight: 493
 pageID: 8362597
+aliases:
+ - /old/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow.html
 ---
 # Monitoring System Statistics and Network Traffic with sFlow
 
-[sFlow](http://www.sflow.org/index.php)<span id="src-8362597_indexterm-C1025BA4289C275C1562CF737245F071">
-</span><span id="src-8362597_indexterm-7ADBF62EF98FFBE3E36F2D2A6923319B">is
-a
-</span><span id="src-8362597_indexterm-70201E914A1945AAC5DF4EA426613AE8">monitoring
-protocol that samples network packets, application operations, and
-system counters. sFlow collects both interface counters and sampled
-5-tuple packet information, enabling you to monitor your </span>network
-traffic as well as your switch state and performance metrics. An outside
-server, known as an *sFlow collector*, is required to collect and
-analyze this data.
+[sFlow](http://www.sflow.org/index.php) is a monitoring protocol that
+samples network packets, application operations, and system counters.
+sFlow collects both interface counters and sampled 5-tuple packet
+information, enabling you to monitor your network traffic as well as
+your switch state and performance metrics. An outside server, known as
+an *sFlow collector*, is required to collect and analyze this data.
 
 `hsflowd` is the daemon that samples and sends sFlow data to configured
 collectors. `hsflowd` is not included in the base Cumulus Linux
@@ -24,8 +22,7 @@ when the switch boots up.
 
 ## Install hsflowd
 
-<span id="src-8362597_indexterm-57B0C545381D994E874B45E7E03CFE30">To
-download and install the </span>`hsflowd` package, use `apt-get`:
+To download and install the `hsflowd` package, use `apt-get`:
 
 ``` 
                    
@@ -155,9 +152,8 @@ for your collector for more information.
 
 ## Configure sFlow Visualization Tools
 
-<span id="src-8362597_indexterm-35960571AC71087017C63F0381E69B1F">For
-information on configuring various </span>sFlow visualization tools,
-read this [Help Center
+For information on configuring various sFlow visualization tools, read
+this [Help Center
 article](https://support.cumulusnetworks.com/hc/en-us/articles/201787866--WIP-Configuring-and-using-sFlow-visualization-tools).
 
 ## Related Information

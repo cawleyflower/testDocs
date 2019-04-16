@@ -3,12 +3,13 @@ title: Upgrading Cumulus Linux
 author: Unknown
 weight: 45
 pageID: 8362647
+aliases:
+ - /old/Upgrading_Cumulus_Linux.html
 ---
 # Upgrading Cumulus Linux
 
-<span id="src-8362647_indexterm-18960E4D59FE486ECC74A93EA8220363">This
-topic describes how to </span>upgrade Cumulus Linux on your switches to
-a more recent release.
+This topic describes how to upgrade Cumulus Linux on your switches to a
+more recent release.
 
 Cumulus Networks recommends that you deploy, provision, configure, and
 upgrade switches using automation, even with small networks or test
@@ -32,8 +33,8 @@ You can upgrade Cumulus Linux in one of two ways:
 Upgrading an MLAG pair requires additional steps. If you are using MLAG
 to dual connect two Cumulus Linux switches in your environment, follow
 the steps in [Upgrade Switches in an MLAG
-Pair](#src-8362647_UpgradingCumulusLinux-mlag) below to ensure a smooth
-upgrade.
+Pair](/old/#src-8362647_UpgradingCumulusLinux-mlag) below to ensure a
+smooth upgrade.
 
 {{%/notice%}}
 
@@ -64,7 +65,8 @@ Be aware of the following when installing the disk image:
     
       - Identifying all the locations of configuration data is not
         always an easy task. See [Before You Upgrade Cumulus
-        Linux](#src-8362647_UpgradingCumulusLinux-before-upgrade) above.
+        Linux](/old/#src-8362647_UpgradingCumulusLinux-before-upgrade)
+        above.
     
       - Merge conflicts with configuration file changes in the new
         release might go undetected.
@@ -127,7 +129,7 @@ To upgrade the switch with a new disk image using ONIE:
     then reboots the switch. There are additional ways to install the
     disk image, such as using FTP, a local file, or a USB drive. For
     more information, see [Installing a New Cumulus Linux
-    Image](Installing_a_New_Cumulus_Linux_Image.html).
+    Image](/old/Installing_a_New_Cumulus_Linux_Image.html).
     
     ``` 
                        
@@ -303,8 +305,8 @@ packages, be aware of the following:
 
 ## Upgrade Switches in an MLAG Pair
 
-If you are using [MLAG](Multi-Chassis_Link_Aggregation_-_MLAG.html) to
-dual connect two switches in your environment, follow the steps below
+If you are using [MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html)
+to dual connect two switches in your environment, follow the steps below
 according to the version of Cumulus Linux from which you are upgrading.
 
 ### Upgrade from Cumulus Linux 3.y.z to a Later 3.y.z Release
@@ -360,7 +362,7 @@ To upgrade the switches:
     There are additional ways to install the disk image, such as using
     FTP, a local file, or a USB drive. For more information, see
     [Installing a New Cumulus Linux
-    Image](Installing_a_New_Cumulus_Linux_Image.html).
+    Image](/old/Installing_a_New_Cumulus_Linux_Image.html).
     
     ``` 
                        
@@ -389,7 +391,7 @@ To upgrade the switches:
 
 7.  If you were originally running Cumulus Linux 3.0.0 through 3.3.2,
     follow the steps for [upgrading from Quagga to
-    FRRouting](Upgrading_from_Quagga_to_FRRouting.html).
+    FRRouting](/old/Upgrading_from_Quagga_to_FRRouting.html).
 
 8.  Verify STP convergence across both switches:
     
@@ -443,8 +445,8 @@ To upgrade the switches:
 
 ### Upgrade from Cumulus Linux 2.y.z to 3.y.z
 
-If you are using [MLAG](Multi-Chassis_Link_Aggregation_-_MLAG.html) to
-dual connect two switches in your environment and those switches are
+If you are using [MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html)
+to dual connect two switches in your environment and those switches are
 still running Cumulus Linux 2.5 ESR or any other release earlier than
 3.0.0, the switches are not dual-connected after you upgrade the first
 switch.
@@ -522,7 +524,7 @@ ONIE; you cannot use package upgrade:
     files you backed up.
 
 11. Follow the steps for [upgrading from Quagga to
-    FRRouting](Upgrading_from_Quagga_to_FRRouting.html).
+    FRRouting](/old/Upgrading_from_Quagga_to_FRRouting.html).
 
 12. Enable `clagd` again in the `/etc/network/interfaces` file (set
     `clagd-enable` to *yes*), then run `ifreload -a`.
@@ -601,9 +603,10 @@ any third party packages or any Cumulus Linux add-on packages, such as
     Specification](http://opencomputeproject.github.io/onie/design-spec/)
 
   - [Multi-Chassis Link Aggregation -
-    MLAG](Multi-Chassis_Link_Aggregation_-_MLAG.html)
+    MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html)
 
   - [Configuration File Migration
     Script](https://support.cumulusnetworks.com/hc/en-us/articles/360011472734-Configuration-File-Migration-Script)
 
-  - [Zero Touch Provisioning - ZTP](Zero_Touch_Provisioning_-_ZTP.html)
+  - [Zero Touch Provisioning -
+    ZTP](/old/Zero_Touch_Provisioning_-_ZTP.html)

@@ -3,6 +3,8 @@ title: Introduction to Routing Protocols
 author: Unknown
 weight: 183
 pageID: 8362913
+aliases:
+ - /old/Introduction_to_Routing_Protocols.html
 ---
 # Introduction to Routing Protocols
 
@@ -11,10 +13,9 @@ configure them.
 
 ## Routing Protocols
 
-<span id="src-8362913_indexterm-F2CC228FB7596D402B5BDCD2572471E1">A
-</span>*routing protocol* dynamically computes reachability between
-various end points. This enables communication to work around link and
-node failures, and additions and withdrawals of various addresses.
+A *routing protocol* dynamically computes reachability between various
+end points. This enables communication to work around link and node
+failures, and additions and withdrawals of various addresses.
 
 *IP routing protocols* are typically distributed; that is, an instance
 of the routing protocol runs on each of the routers in a network.
@@ -50,7 +51,7 @@ differently.
 The way they answer these questions affects the network design and
 thereby configuration. For example, in a link-state protocol such as
 OSPF (see [Open Shortest Path First (OSPF)
-Protocol](Open_Shortest_Path_First_-_OSPF.html)) or IS-IS, complete
+Protocol](/old/Open_Shortest_Path_First_-_OSPF.html)) or IS-IS, complete
 local information (links and attached address prefixes) about a node is
 disseminated to every other node in the network. Since the state that a
 node has to keep grows rapidly in such a case, link-state protocols
@@ -65,15 +66,12 @@ usually specific to each protocol.
 
 ## Protocol Tuning
 
-<span id="src-8362913_indexterm-432EA61A7A5F5CF5C2FE8CE41582A07C">Most
-</span>protocols provide certain tunable parameters that are specific to
-convergence during
-changes.
+Most protocols provide certain tunable parameters that are specific to
+convergence during changes.
 
-<span id="src-8362913_indexterm-47AA6F7AB64C8853C000CA853FC6A1B4">Wikipedia
-defines
-</span>[convergence](http://en.wikipedia.org/wiki/Convergence_%28routing%29)
-as the “state of a set of routers that have the same topological
+Wikipedia defines
+[convergence](http://en.wikipedia.org/wiki/Convergence_%28routing%29) as
+the “state of a set of routers that have the same topological
 information about the network in which they operate”. It is imperative
 that the routers in a network have the same topological state for the
 proper functioning of a network. Without this, traffic can be

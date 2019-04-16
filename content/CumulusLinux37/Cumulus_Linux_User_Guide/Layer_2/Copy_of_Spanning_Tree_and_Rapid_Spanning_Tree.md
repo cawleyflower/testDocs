@@ -3,32 +3,32 @@ title: Copy of Spanning Tree and Rapid Spanning Tree
 author: Unknown
 weight: 135
 pageID: 8362703
+aliases:
+ - /old/Copy_of_Spanning_Tree_and_Rapid_Spanning_Tree.html
 ---
 # Copy of Spanning Tree and Rapid Spanning Tree
 
-<span id="src-8362703_indexterm-91682A43CC90813093F9F0C1B1FC9FA6">Spanning
-</span><span id="src-8362703_indexterm-2D7C78485F93B942F2528974C2CEF2D5">tree
-protocol (</span>STP) is always recommended in layer 2 topologies, as it
-prevents bridge loops and broadcast radiation on a bridged network.
-`mstpd` is a daemon that implements IEEE802.1D 2004 and IEEE802.1Q 2011.
+Spanning tree protocol (STP) is always recommended in layer 2
+topologies, as it prevents bridge loops and broadcast radiation on a
+bridged network. `mstpd` is a daemon that implements IEEE802.1D 2004 and
+IEEE802.1Q 2011.
 
 STP is enabled by default in Cumulus Linux.
 
 {{%notice warning%}}
 
 The STP modes Cumulus Linux supports vary depending upon which [bridge
-driver mode](Ethernet_Bridging_-_VLANs.html) is in use. For a bridge
-configured in *traditional* mode, STP, RSTP, PVST and PVRST are
+driver mode](/old/Ethernet_Bridging_-_VLANs.html) is in use. For a
+bridge configured in *traditional* mode, STP, RSTP, PVST and PVRST are
 supported; with the default set to PVRST.
-[VLAN-aware](VLAN-aware_Bridge_Mode.html) bridges only operate in RSTP
-mode.
+[VLAN-aware](/old/VLAN-aware_Bridge_Mode.html) bridges only operate in
+RSTP mode.
 
 If a bridge running RSTP (802.1w) receives a common STP (802.1D) BPDU,
 it will automatically fall back to 802.1D operation.
 
 You can configure `mstpd` to be in common STP mode only, by setting
-`setforcevers` to
-*STP*.
+`setforcevers` to *STP*.
 
 {{%/notice%}}
 
@@ -38,27 +38,21 @@ You can configure `mstpd` to be in common STP mode only, by setting
 
   - mstpctl
 
-`mstpctl`<span id="src-8362703_indexterm-F5225BBF296FC78E29F888E382BA2528">
-</span>is a utility to configure STP. `mstpd` is started by default on
-bootup. `mstpd` logs and errors are located in `/var/log/syslog`.
+`mstpctl` is a utility to configure STP. `mstpd` is started by default
+on bootup. `mstpd` logs and errors are located in `/var/log/syslog`.
 
 ## PVST/PVRST
 
-<span id="src-8362703_indexterm-73B59F2CBC53FEA728160F5799F9C2AC">Per
-</span><span id="src-8362703_indexterm-0ACCAE1CB72F4B65CA757BF64B5DDC05">VLAN
-</span><span id="src-8362703_indexterm-6BD1AE970C69FAE38A86CB5C23C55DBA">Spanning
-Tree (PVST) creates a spanning tree instance for a bridge. Rapid
-</span><span id="src-8362703_indexterm-6C153F275D5E3DAF1A64FB729BEF2658">PVST
-(</span><span id="src-8362703_indexterm-6CE4CCF059D1DBD8B59492EE9A0374E1">PVRST)
-supports </span>RSTP enhancements for each spanning tree instance. You
-must create a bridge corresponding to the untagged native/access VLAN,
-and all the physical switch ports must be part of the same VLAN. When
-connected to a switch that has a native VLAN configuration, the native
-VLAN **must** be configured to be VLAN 1 only.
+Per VLAN Spanning Tree (PVST) creates a spanning tree instance for a
+bridge. Rapid PVST (PVRST) supports RSTP enhancements for each spanning
+tree instance. You must create a bridge corresponding to the untagged
+native/access VLAN, and all the physical switch ports must be part of
+the same VLAN. When connected to a switch that has a native VLAN
+configuration, the native VLAN **must** be configured to be VLAN 1 only.
 
 Cumulus Linux supports the RSTP/PVRST/PVST modes of STP natively when
 the bridge is configured in [traditional
-mode](Ethernet_Bridging_-_VLANs.html).
+mode](/old/Ethernet_Bridging_-_VLANs.html).
 
 ## Configure Spanning Tree Parameters
 
@@ -97,8 +91,7 @@ iface br2 inet static
 
 ### Spanning Tree Parameters
 
-<span id="src-8362703_indexterm-59E3635A37C5ABC209BC05BBABF103E0">The
-spanning tree </span>parameters are defined in the IEEE
+The spanning tree parameters are defined in the IEEE
 [802.1D](http://standards.ieee.org/getieee802/download/802.1D-2004.pdf),
 [802.1Q](http://standards.ieee.org/getieee802/download/802.1Q-2005.pdf)
 specifications and in the table below.
@@ -408,11 +401,10 @@ cumulus@switch:~$ sudo mstpctl setportbpdufilter br2 swp4.101 yes
 
 ## Bridge Assurance
 
-<span id="src-8362703_indexterm-1186ED546E7C4D090C8463E6B42C6AF6">On</span><span id="src-8362703_indexterm-9D221B7DCAF8DA5265FD3B3192223733">
-a point-to-point</span> link where RSTP is running, if you want to
-detect unidirectional links and put the port in a discarding state (in
-error), you can enable bridge assurance on the port by enabling port
-type network. The port would be in a bridge assurance inconsistent state
+On a point-to-point link where RSTP is running, if you want to detect
+unidirectional links and put the port in a discarding state (in error),
+you can enable bridge assurance on the port by enabling port type
+network. The port would be in a bridge assurance inconsistent state
 until a BPDU is received from the peer. You need to configure the port
 type network on both the ends of the link:
 
@@ -431,8 +423,7 @@ cumulus@switch:~$ sudo grep -in assurance /var/log/syslog | grep mstp
 
 ## Storm Control
 
-*<span id="src-8362703_indexterm-93E5E8B9F411435A2E7A5D227EFC32F4">Storm
-</span>control* provides protection against excessive inbound BUM
+*Storm control* provides protection against excessive inbound BUM
 (broadcast, unknown unicast, multicast) traffic on layer 2 switch port
 interfaces, which can cause poor network performance.
 
@@ -440,7 +431,7 @@ You configure storm control in `/etc/cumulus/switchd.conf`. The
 configuration persists across reboots and restarting `switchd`. If you
 change the storm control configuration in this file after rebooting the
 switch, you must [restart
-`switchd`](Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
+`switchd`](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
 to activate the new configuration.
 
 You configure storm control for each physical port. For example, to

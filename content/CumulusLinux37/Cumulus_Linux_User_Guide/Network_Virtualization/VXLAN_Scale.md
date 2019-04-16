@@ -3,6 +3,8 @@ title: VXLAN Scale
 author: Unknown
 weight: 157
 pageID: 8362768
+aliases:
+ - /old/VXLAN_Scale.html
 ---
 # VXLAN Scale
 

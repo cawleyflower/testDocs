@@ -3,6 +3,8 @@ title: Bidirectional Forwarding Detection - BFD
 author: Unknown
 weight: 201
 pageID: 8362938
+aliases:
+ - /old/Bidirectional_Forwarding_Detection_-_BFD.html
 ---
 # Bidirectional Forwarding Detection - BFD
 
@@ -54,9 +56,10 @@ sessions:
 ## Configure BFD
 
 You configure BFD one of two ways: by specifying the configuration in
-the [PTM `topology.dot` file](Prescriptive_Topology_Manager_-_PTM.html),
-or using [FRRouting](FRRouting_Overview.html). However, the topology
-file has some limitations:
+the [PTM `topology.dot`
+file](/old/Prescriptive_Topology_Manager_-_PTM.html), or using
+[FRRouting](/old/FRRouting_Overview.html). However, the topology file
+has some limitations:
 
   - The `topology.dot` file supports creating BFD IPv4 and IPv6 single
     hop sessions only; you cannot specify IPv4 or IPv6 multihop sessions
@@ -70,7 +73,7 @@ file has some limitations:
 
 You cannot specify BFD multihop sessions in the `topology.dot` file
 since you cannot specify the source and destination IP address pairs in
-that file. Use [FRRouting](Configuring_FRRouting.html) to configure
+that file. Use [FRRouting](/old/Configuring_FRRouting.html) to configure
 multihop sessions.
 
 {{%/notice%}}
@@ -104,7 +107,7 @@ table before BFD can start sending control packets.
 ## BFD in BGP
 
 For FRRouting when using **BGP**, neighbors are registered and
-de-registered with [PTM](Prescriptive_Topology_Manager_-_PTM.html)
+de-registered with [PTM](/old/Prescriptive_Topology_Manager_-_PTM.html)
 dynamically when you enable BFD in BGP using `net add bgp neighbor
 <neighbor|IP|interface> bfd`. For example:
 
@@ -170,12 +173,12 @@ cumulus@switch:~$ net commit
 ## BFD in OSPF
 
 For FRRouting using **OSFP**, neighbors are registered and de-registered
-dynamically with [PTM](Prescriptive_Topology_Manager_-_PTM.html) when
-you enable or disable BFD in OSPF. A neighbor is registered with BFD
-when two-way adjacency is established and deregistered when adjacency
-goes down if the BFD is enabled on the interface. The BFD configuration
-is per interface and any IPv4 and IPv6 neighbors discovered on that
-interface inherit the configuration.
+dynamically with [PTM](/old/Prescriptive_Topology_Manager_-_PTM.html)
+when you enable or disable BFD in OSPF. A neighbor is registered with
+BFD when two-way adjacency is established and deregistered when
+adjacency goes down if the BFD is enabled on the interface. The BFD
+configuration is per interface and any IPv4 and IPv6 neighbors
+discovered on that interface inherit the configuration.
 
 ``` 
                     BFD in OSPF
@@ -306,18 +309,13 @@ cumulus@switch:~$ net show ospf neighbor detail
 `bfd-sess-down` when a BFD session goes down and running `bfd-sess-up`
 when a BFD session goes up.
 
-You should modify these default scripts as
-needed.
+You should modify these default scripts as needed.
 
 ## Echo Function
 
-<span id="src-8362938_indexterm-FA34767C50ACE94ACBA917E457BC5476">Cumulus
-Linux supports the
-</span>*<span id="src-8362938_indexterm-07EC14580D1FCAF39804235752FA4D7E">echo
-</span>function*<span id="src-8362938_indexterm-C140BAB766620F3A1CBC24B72A864FF2">
-</span><span id="src-8362938_indexterm-EC7C4D7D7A427FBF12DDA18BD734CCDC">for
-</span>IPv4 single hops only, and with the asynchronous operating mode
-only (Cumulus Linux does not support demand mode).
+Cumulus Linux supports the *echo function* for IPv4 single hops only,
+and with the asynchronous operating mode only (Cumulus Linux does not
+support demand mode).
 
 You use the echo function primarily to test the forwarding path on a
 remote system. To enable the echo function, set `echoSupport` to *1* in

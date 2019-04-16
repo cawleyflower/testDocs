@@ -3,6 +3,8 @@ title: Managing Cumulus Linux Disk Images
 author: Unknown
 weight: 41
 pageID: 8362634
+aliases:
+ - /old/Managing_Cumulus_Linux_Disk_Images.html
 ---
 # Managing Cumulus Linux Disk Images
 
@@ -11,9 +13,9 @@ image*. This section discusses how to manage the disk image.
 
 For information on installing a new Cumulus Linux disk image, refer to
 [Installing a New Cumulus Linux
-Image](Installing_a_New_Cumulus_Linux_Image.html). For information on
-upgrading Cumulus Linux, refer to [Upgrading Cumulus
-Linux](Upgrading_Cumulus_Linux.html).
+Image](/old/Installing_a_New_Cumulus_Linux_Image.html). For information
+on upgrading Cumulus Linux, refer to [Upgrading Cumulus
+Linux](/old/Upgrading_Cumulus_Linux.html).
 
 Contents
 
@@ -46,13 +48,11 @@ cumulus@ARMswitch$ uname -m
 
 You can also visit the HCL ([hardware compatibility
 list](http://cumulusnetworks.com/support/linux-hardware-compatibility-list/))
-to look at your hardware and determine the processor
-type.
+to look at your hardware and determine the processor type.
 
 ## Reprovision the System (Restart the Installer)
 
-<span id="src-8362634_indexterm-C2C94DB5F8D7B8FD7A863ED64F938D80">Reprovisioning
-the </span>system deletes all system data from the switch.
+Reprovisioning the system deletes all system data from the switch.
 
 To initiate the provisioning and installation process, run the
 `onie-select -i` command:
@@ -89,9 +89,8 @@ command:
 
 ## Uninstall All Images and Remove the Configuration
 
-<span id="src-8362634_indexterm-423AF0F6295EC957619C0F5EE5D11F94">To
-remove all installed </span>images and configurations and return the
-switch to its factory defaults, run the `onie-select -k` command:
+To remove all installed images and configurations and return the switch
+to its factory defaults, run the `onie-select -k` command:
 
 ``` 
                    
@@ -130,13 +129,10 @@ Cancelling pending uninstall at next reboot...done.
 
 ## Boot into Rescue Mode
 
-<span id="src-8362634_indexterm-10C64EC344DA1CF5F1C0B755B436A0B5">If
-your system becomes broken is some way, you can correct certain issues
-by booting into
-</span><span id="src-8362634_indexterm-9F1108C35B14776139C87784827A7056">ONIE
-</span>rescue mode. In rescue mode, the file systems are unmounted and
-you can use various Cumulus Linux utilities to try and resolve a
-problem.
+If your system becomes broken is some way, you can correct certain
+issues by booting into ONIE rescue mode. In rescue mode, the file
+systems are unmounted and you can use various Cumulus Linux utilities to
+try and resolve a problem.
 
 To reboot the system into ONIE rescue mode, run the `onie-select -r`
 command:
@@ -177,9 +173,8 @@ Cancelling pending rescue at next reboot...done.
 
 ## Inspect Image File Contents
 
-<span id="src-8362634_indexterm-1F25C3966591431F57C751992B7EDE79">The
-Cumulus Linux installation disk image file is executable. From a running
-</span>switch, you can display the contents of the Cumulus Linux image
+The Cumulus Linux installation disk image file is executable. From a
+running switch, you can display the contents of the Cumulus Linux image
 file by passing the `info` option to the image file. For example, if the
 image file is called `onie-installer` and is located in
 `/var/lib/cumulus/installer`, you can obtain information about the disk

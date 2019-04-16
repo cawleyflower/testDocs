@@ -3,6 +3,8 @@ title: "VXLAN Tunnel DSCP Operations —\_DRAFT"
 author: Unknown
 weight: 165
 pageID: 8362787
+aliases:
+ - "/old/VXLAN_Tunnel_DSCP_Operations_—\_DRAFT.html"
 ---
 # VXLAN Tunnel DSCP Operations — DRAFT
 
@@ -13,7 +15,7 @@ Ethernet.
 
 On Mellanox switches, you can use these options to propagate [explicit
 congestion
-notification](Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-ecn)
+notification](/old/Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-ecn)
 (ECN) between the underlay and overlay. Because they are based on
 [RFC-6040](https://tools.ietf.org/html/rfc6040), which describes how to
 construct the IP header of an ECN field on both ingress to and egress

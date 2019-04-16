@@ -3,28 +3,29 @@ title: Spanning Tree and Rapid Spanning Tree
 author: Unknown
 weight: 117
 pageID: 8362689
+aliases:
+ - /old/Spanning_Tree_and_Rapid_Spanning_Tree.html
 ---
 # Spanning Tree and Rapid Spanning Tree
 
-<span id="src-8362689_indexterm-28B473F9A4F716CC0BFAB8530E2270A2">Spanning
-</span><span id="src-8362689_indexterm-4741A876E48F89F382D9C4D62C812D99">tree
-protocol (</span>STP) is always recommended in layer 2 topologies as it
-prevents bridge loops and broadcast radiation on a bridged network. STP
-also provides redundant links for automatic failover when an active link
-fails. STP is enabled by default in Cumulus Linux.
+Spanning tree protocol (STP) is always recommended in layer 2 topologies
+as it prevents bridge loops and broadcast radiation on a bridged
+network. STP also provides redundant links for automatic failover when
+an active link fails. STP is enabled by default in Cumulus Linux.
 
 ## Supported Modes
 
 The STP modes Cumulus Linux supports vary depending upon whether the
 traditional or VLAN-aware bridge driver mode is in use.
 
-  - Bridges configured in *[VLAN-aware](VLAN-aware_Bridge_Mode.html)*
-    mode operate **only** in RSTP mode.
+  - Bridges configured in
+    *[VLAN-aware](/old/VLAN-aware_Bridge_Mode.html)* mode operate
+    **only** in RSTP mode.
 
   - Bridges configured in [*traditional*
-    mode](Traditional_Bridge_Mode.html) operate in both PVST and PVRST
-    mode. The default is set to PVRST. Each traditional bridge has its
-    own separate STP instance.
+    mode](/old/Traditional_Bridge_Mode.html) operate in both PVST and
+    PVRST mode. The default is set to PVRST. Each traditional bridge has
+    its own separate STP instance.
 
 ### STP for a VLAN-aware Bridge
 
@@ -53,16 +54,11 @@ switchport trunk allowed vlan 1-100
 
 ### STP within a Traditional Mode Bridge
 
-<span id="src-8362689_indexterm-E7FD87A72D370DAE13DC85E570297ECF">Per
-</span><span id="src-8362689_indexterm-4E734F4CACB793C5690B9AD7C914A4DD">VLAN
-</span><span id="src-8362689_indexterm-8B851B5DE7B3773FFB0FC0BD3CAA9254">Spanning
-Tree (PVST) creates a spanning tree instance for a bridge. Rapid
-</span><span id="src-8362689_indexterm-19DB44EB516ADC291A4FD46742BED5E2">PVST
-(</span><span id="src-8362689_indexterm-7EE976D7B46635F9D291BB11A9EE7AEC">PVRST)
-supports </span>RSTP enhancements for each spanning tree instance. To
-use PVRST with a traditional bridge, you must create a bridge
-corresponding to the untagged native VLAN and all the physical switch
-ports must be part of the same VLAN.
+Per VLAN Spanning Tree (PVST) creates a spanning tree instance for a
+bridge. Rapid PVST (PVRST) supports RSTP enhancements for each spanning
+tree instance. To use PVRST with a traditional bridge, you must create a
+bridge corresponding to the untagged native VLAN and all the physical
+switch ports must be part of the same VLAN.
 
 {{%notice note%}}
 
@@ -117,7 +113,7 @@ learning states to move immediately to forwarding.
 
 Using PortAdminEdge mode has the potential to cause loops if it is not
 accompanied by the [BPDU
-guard](#src-8362689_SpanningTreeandRapidSpanningTree-bpdu) feature.
+guard](/old/#src-8362689_SpanningTreeandRapidSpanningTree-bpdu) feature.
 
 {{%/notice%}}
 
@@ -157,7 +153,7 @@ iface swp5
 
 {{%notice info has%}}
 
-For a bridge in [traditional mode](Ethernet_Bridging_-_VLANs.html),
+For a bridge in [traditional mode](/old/Ethernet_Bridging_-_VLANs.html),
 configure `PortAdminEdge` under the bridge stanza in
 `/etc/network/interfaces`:
 
@@ -237,9 +233,8 @@ cumulus@switch:~$ net commit
 
 ### BPDU Guard
 
-<span id="src-8362689_indexterm-1DEF6F3758450ED04D5694DED407DEE1">To
-protect the spanning tree topology from unauthorized switches affecting
-the forwarding path, you can </span>configure *BPDU guard* (Bridge
+To protect the spanning tree topology from unauthorized switches
+affecting the forwarding path, you can configure *BPDU guard* (Bridge
 Protocol Data Unit). One very common example is when someone hooks up a
 new switch to an access port off of a leaf switch. If this new switch is
 configured with a low priority, it could become the new root switch and
@@ -364,11 +359,10 @@ bridge:bond0 CIST info
 
 ### Bridge Assurance
 
-<span id="src-8362689_indexterm-21EEE2A6277623E0765999F17F039C18">On</span><span id="src-8362689_indexterm-AC5F7A0AF8796A893AFE239D1CC5BC26">
-a point-to-point </span>link where RSTP is running, if you want to
-detect unidirectional links and put the port in a discarding state (in
-error), you can enable bridge assurance on the port by enabling a port
-type network. The port would be in a bridge assurance inconsistent state
+On a point-to-point link where RSTP is running, if you want to detect
+unidirectional links and put the port in a discarding state (in error),
+you can enable bridge assurance on the port by enabling a port type
+network. The port would be in a bridge assurance inconsistent state
 until a BPDU is received from the peer. You need to configure the port
 type network on both the ends of the link in order for bridge assurance
 to operate properly.
@@ -417,8 +411,7 @@ cumulus@switch:~$ sudo grep -in assurance /var/log/syslog | grep mstp
 
 ### BPDU Filter
 
-<span id="src-8362689_indexterm-173DDC3D03A5BA140B36103726D20BA4">You
-can enable </span>`bpdufilter` on a switch port, which filters BPDUs in
+You can enable `bpdufilter` on a switch port, which filters BPDUs in
 both directions. This effectively disables STP on the port as no BPDUs
 are transiting.
 
@@ -459,16 +452,14 @@ iface swp6
 
 ### Storm Control
 
-*<span id="src-8362689_indexterm-1F965823D368422A15D48F2A4F17993E">Storm
-</span>control*<span id="src-8362689_indexterm-BB351508B9EB0A0E845A13260A9E5E32">
-</span>provides protection against excessive inbound BUM (broadcast,
-unknown unicast, multicast) traffic on layer 2 switch port interfaces,
-which can cause poor network performance.
+*Storm control* provides protection against excessive inbound BUM
+(broadcast, unknown unicast, multicast) traffic on layer 2 switch port
+interfaces, which can cause poor network performance.
 
 You configure storm control for each physical port by [configuring
-`switchd`](Configuring_switchd.html). For example, to enable unicast and
-multicast storm control at 400 packets per second (pps) and 3000 pps,
-respectively, for swp1, run the following:
+`switchd`](/old/Configuring_switchd.html). For example, to enable
+unicast and multicast storm control at 400 packets per second (pps) and
+3000 pps, respectively, for swp1, run the following:
 
 ``` 
                    
@@ -481,8 +472,7 @@ cumulus@switch:~$ sudo sh -c 'echo 3000 > /cumulus/switchd/config/interface/swp1
 
 ### Spanning Tree Parameter List
 
-<span id="src-8362689_indexterm-90529E9E0A1F46925D4752C596DFD5C6">Spanning
-tree </span>parameters are defined in the IEEE
+Spanning tree parameters are defined in the IEEE
 [802.1D](http://standards.ieee.org/findstds/standard/802.1D-2004.html),
 [802.1Q](http://standards.ieee.org/findstds/standard/802.1Q-2018.html)
 specifications.
@@ -497,7 +487,7 @@ article](https://support.cumulusnetworks.com/hc/en-us/articles/206908397).
 Most of these parameters are blacklisted in the `ifupdown_blacklist`
 section of the`  /etc/ ``netd.conf` file. Before you configure these
 parameters, you must [edit the
-file](Network_Command_Line_Utility_-_NCLU.html#src-8362580_NetworkCommandLineUtility-NCLU-conf)
+file](/old/Network_Command_Line_Utility_-_NCLU.html#src-8362580_NetworkCommandLineUtility-NCLU-conf)
 to remove them from the blacklist.
 
 {{%/notice%}}

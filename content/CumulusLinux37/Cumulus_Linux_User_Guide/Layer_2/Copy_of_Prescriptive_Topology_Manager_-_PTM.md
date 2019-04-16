@@ -3,20 +3,15 @@ title: Copy of Prescriptive Topology Manager - PTM
 author: Unknown
 weight: 133
 pageID: 8362701
+aliases:
+ - /old/Copy_of_Prescriptive_Topology_Manager_-_PTM.html
 ---
 # Copy of Prescriptive Topology Manager - PTM
 
-<span id="src-8362701_indexterm-A08B4FC4306CF8CC34130E466F7C5260">In
-data center
-</span><span id="src-8362701_indexterm-73310406BAEB85E9E3F9D696FDF22FF9">topologies,
-right cabling is a time-consuming endeavor and is error prone.
-</span><span id="src-8362701_indexterm-D8DDECC692C73646B30AD4FDA757E94A">Prescriptive
-Topology Manager
-(</span><span id="src-8362701_indexterm-D199A2D3A4EA70C9B9D4C53FF6E76DE7">PTM)
-is a dynamic
-</span><span id="src-8362701_indexterm-CC4F5C4311CFEDA591E3EFC0BF1D34F8">cabling
-verification tool to help detect and eliminate such errors. It takes a
-</span>graphviz-DOT specified network cabling plan (something many
+In data center topologies, right cabling is a time-consuming endeavor
+and is error prone. Prescriptive Topology Manager (PTM) is a dynamic
+cabling verification tool to help detect and eliminate such errors. It
+takes a graphviz-DOT specified network cabling plan (something many
 operators already generate), stored in a `topology.dot` file, and
 couples it with runtime information derived from LLDP to verify that the
 cabling matches the specification. The check is performed on every link
@@ -25,8 +20,7 @@ transition on each node in the network.
 You can customize the `topology.dot` file to control `ptmd` at both the
 global/network level and the node/port level.
 
-<span id="src-8362701_indexterm-3AAB7FE69AD8798CDC8C2FB11EEDEC2B">PTM
-runs as a daemon, named </span>`ptmd`.
+PTM runs as a daemon, named `ptmd`.
 
 For more information, see `man ptmd(8)`.
 
@@ -46,8 +40,8 @@ For more information, see `man ptmd(8)`.
     Detection](http://tools.ietf.org/html/rfc5880) (BFD); however,
     demand mode is not supported. For more information on how BFD
     operates in Cumulus Linux, [see
-    below](#src-8362701_CopyofPrescriptiveTopologyManager-PTM-bfd) and
-    see `man ptmd(8)`.
+    below](/old/#src-8362701_CopyofPrescriptiveTopologyManager-PTM-bfd)
+    and see `man ptmd(8)`.
 
   - Integration with Quagga (PTM to Quagga notification).
 
@@ -58,7 +52,7 @@ For more information, see `man ptmd(8)`.
   - Event notifications: see Scripts below.
 
   - User configuration via a `topology.dot` file; [see
-    below](#src-8362701_CopyofPrescriptiveTopologyManager-PTM-configuring).
+    below](/old/#src-8362701_CopyofPrescriptiveTopologyManager-PTM-configuring).
 
 ## Configure PTM
 
@@ -75,13 +69,11 @@ an alternate file using the `-c` option.
 PTM supports [undirected
 graphs](http://en.wikipedia.org/wiki/DOT_%28graph_description_language%29).
 
-At startup,
-`ptmd`<span id="src-8362701_indexterm-1B96EB66606A6AFF73462F27A3F6B149">
-connects to </span>`lldpd`, the LLDP daemon, over a Unix socket and
-retrieves the neighbor name and port information. It then compares the
-retrieved port information with the configuration information that it
-read from the topology file. If there is a match, then it is a PASS,
-else it is a FAIL.
+At startup, `ptmd` connects to `lldpd`, the LLDP daemon, over a Unix
+socket and retrieves the neighbor name and port information. It then
+compares the retrieved port information with the configuration
+information that it read from the topology file. If there is a match,
+then it is a PASS, else it is a FAIL.
 
 {{%notice note%}}
 
@@ -123,14 +115,13 @@ parameters you specify in the topology file.
 
 ### Scripts
 
-`ptmd`<span id="src-8362701_indexterm-1C491D2A4358DADCF56973ABD7258E02">
-executes </span>scripts at `/etc/ptm.d/if-topo-pass` and
+`ptmd` executes scripts at `/etc/ptm.d/if-topo-pass` and
 ` /etc/ptm.d/if-topo-fail  `for each interface that goes through a
 change, running `if-topo-pass` when an LLDP or BFD check passes and
 running `if-topo-fails` when the check fails. The scripts receive an
 argument string that is the result of the `ptmctl` command, described in
 the [`ptmd` commands section
-below](#src-8362701_CopyofPrescriptiveTopologyManager-PTM-ptmd_commands).
+below](/old/#src-8362701_CopyofPrescriptiveTopologyManager-PTM-ptmd_commands).
 
 You should modify these default scripts as needed.
 
@@ -257,8 +248,7 @@ while BFD1 and BFD2 are template for BFD parameters.
 
 #### Supported BFD and LLDP Parameters
 
-`ptmd`<span id="src-8362701_indexterm-C8B45A84C4263BB19D46626B5C2D7BA6">
-supports the following </span>BFD parameters:
+`ptmd` supports the following BFD parameters:
 
   - `upMinTx`: the minimum transmit interval, which defaults to *300ms*,
     specified in milliseconds.
@@ -345,7 +335,7 @@ detection over all media and protocol layers. Use BFD to detect failures
 for IPv4 and IPv6 single or multihop paths between any two network
 devices, including unidirectional path failure detection. For more
 information, see the [BFD
-chapter](Bidirectional_Forwarding_Detection_-_BFD.html).
+chapter](/old/Bidirectional_Forwarding_Detection_-_BFD.html).
 
 {{%notice note%}}
 
@@ -359,7 +349,7 @@ table before BFD can start sending control packets.
 
 You cannot specify BFD multihop sessions in the `topology.dot` file
 since you cannot specify the source and destination IP address pairs in
-that file. Use [Quagga](Configuring_FRRouting.html) to configure
+that file. Use [Quagga](/old/Configuring_FRRouting.html) to configure
 multihop sessions.
 
 {{%/notice%}}
@@ -368,8 +358,8 @@ multihop sessions.
 
 You configure BFD one of two ways: by specifying the configuration in
 the `topology.dot` file, or using
-[Quagga](Bidirectional_Forwarding_Detection_-_BFD.html). However, the
-topology file has some limitations:
+[Quagga](/old/Bidirectional_Forwarding_Detection_-_BFD.html). However,
+the topology file has some limitations:
 
   - The `topology.dot` file supports creating BFD IPv4 and IPv6 single
     hop sessions only; you cannot specify IPv4 or IPv6 multihop sessions
@@ -377,18 +367,13 @@ topology file has some limitations:
 
   - The topology file supports BFD sessions for only link-local IPv6
     peers; BFD sessions for global IPv6 peers discovered on the link
-    will not be
-created.
+    will not be created.
 
 #### Echo Function
 
-<span id="src-8362701_indexterm-5E2B38C044B18803478C690B60DD42BF">Cumulus
-Linux supports the
-</span>*<span id="src-8362701_indexterm-01550CC06907A035BF8905A81BC81522">echo
-</span>function*<span id="src-8362701_indexterm-F982F2A0915B3E2842A19580DAD5CA53">
-</span><span id="src-8362701_indexterm-83AD41E3918D84A850E6407CE0806878">for
-</span>IPv4 single hops only, and with the a synchronous operating mode
-only (Cumulus Linux does not support demand mode).
+Cumulus Linux supports the *echo function* for IPv4 single hops only,
+and with the a synchronous operating mode only (Cumulus Linux does not
+support demand mode).
 
 You use the echo function primarily to test the forwarding path on a
 remote system. To enable the echo function, set `echoSupport` to 1 in
@@ -479,12 +464,9 @@ the topology file at the global, template and port level:
 
 ## Enable Quagga to Check Link State
 
-<span id="src-8362701_indexterm-2ECE0680D2F8CD83A5D5951B6AB8B2CC">The
-</span><span id="src-8362701_indexterm-41F0843D0188CC4C1DCC25FC70783B3E">Quagga
-</span><span id="src-8362701_indexterm-8E0AB7C7ACEBEFCE9BE2D23AF54ADD0E">routing
-</span>suite enables additional checks to ensure that routing
-adjacencies are formed only on links that have connectivity conformant
-to the specification, as determined by `ptmd`.
+The Quagga routing suite enables additional checks to ensure that
+routing adjacencies are formed only on links that have connectivity
+conformant to the specification, as determined by `ptmd`.
 
 {{%notice note%}}
 
@@ -553,13 +535,11 @@ applying the new configuration to the running state.
 service.
 
 `cumulus@switch:~$ sudo systemctl status ptmd.service`: Retrieves the
-current running state of
-`ptmd`.
+current running state of `ptmd`.
 
 ## ptmctl Commands
 
-`ptmctl`<span id="src-8362701_indexterm-013DA401CB183145C2D7B1E6511972E9">
-</span>is a client of `ptmd`; it retrieves the daemon’s operational
+`ptmctl` is a client of `ptmd`; it retrieves the daemon’s operational
 state. It connects to `ptmd` over a Unix socket and listens for
 notifications. `ptmctl` parses the CSV notifications sent by `ptmd`.
 

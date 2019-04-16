@@ -3,15 +3,15 @@ title: Open Shortest Path First v3 - OSPFv3
 author: Unknown
 weight: 195
 pageID: 8362924
+aliases:
+ - /old/Open_Shortest_Path_First_v3_-_OSPFv3.html
 ---
 # Open Shortest Path First v3 - OSPFv3
 
-<span id="src-8362924_indexterm-9E3375CE54CAE64F58FEB35EADC4DB54">OSPFv3
-</span><span id="src-8362924_indexterm-89158741B8A05A68C015A01C79CE35C0">is
-a revised </span>version of OSPFv2 to support the IPv6 address family.
-Refer to [Open Shortest Path First (OSPF)
-Protocol](Open_Shortest_Path_First_-_OSPF.html) for a discussion on the
-basic concepts, which remain the same between the two versions.
+OSPFv3 is a revised version of OSPFv2 to support the IPv6 address
+family. Refer to [Open Shortest Path First (OSPF)
+Protocol](/old/Open_Shortest_Path_First_-_OSPF.html) for a discussion on
+the basic concepts, which remain the same between the two versions.
 
 OSPFv3 has changed the formatting in some of the packets and LSAs either
 as a necessity to support IPv6 or to improve the protocol behavior based
@@ -24,20 +24,18 @@ optimized SPF computation.
 {{%notice note%}}
 
 IETF has defined extensions to OSPFv3 to support multiple address
-families (that is, both IPv6 and IPv4). [FRR](FRRouting_Overview.html)
-does not support it
-yet.
+families (that is, both IPv6 and IPv4).
+[FRR](/old/FRRouting_Overview.html) does not support it yet.
 
 {{%/notice%}}
 
 ## Configure OSPFv3
 
-<span id="src-8362924_indexterm-CCCD4969A275993C7CE1AFC4CA5B7D49">Configuring
-</span>OSPFv3 involves the following tasks:
+Configuring OSPFv3 involves the following tasks:
 
 1.  Enabling the `zebra` and `ospf6` daemons, as described in
-    [Configuring FRRouting](Configuring_FRRouting.html) then start the
-    FRRouting service:
+    [Configuring FRRouting](/old/Configuring_FRRouting.html) then start
+    the FRRouting service:
     
     ``` 
                        
@@ -74,8 +72,7 @@ yet.
         
     ```
     
-    <span id="src-8362924_indexterm-FDB328FD560EF3F73D8B09E4FC3E37CC">The
-    OSPFv3 configuration is saved </span>in `/etc/frr/frr.conf`.
+    The OSPFv3 configuration is saved in `/etc/frr/frr.conf`.
 
 {{%notice note%}}
 
@@ -240,7 +237,7 @@ cumulus@switch:~$ net commit
 ## Troubleshooting
 
 See [Debugging
-OSPF](Open_Shortest_Path_First_-_OSPF.html#src-8362922_OpenShortestPathFirst-OSPF-ospf_debug)
+OSPF](/old/Open_Shortest_Path_First_-_OSPF.html#src-8362922_OpenShortestPathFirst-OSPF-ospf_debug)
 for OSPFv2 for the troubleshooting discussion. The equivalent commands
 are:
 
@@ -259,7 +256,8 @@ topology as computed by SPF to help visualize the network view.
 ## Related Information
 
   - [Bidirectional forwarding
-    detection](Bidirectional_Forwarding_Detection_-_BFD.html) (BFD) and
+    detection](/old/Bidirectional_Forwarding_Detection_-_BFD.html) (BFD)
+    and
     OSPF
 
   - [en.wikipedia.org/wiki/Open\_Shortest\_Path\_First](http://en.wikipedia.org/wiki/Open_Shortest_Path_First)
@@ -269,5 +267,5 @@ topology as computed by SPF to help visualize the network view.
   - [RFC 2740 OSPFv3 OSPF for IPv6](https://tools.ietf.org/html/rfc2740)
 
   - [Auto-cost reference
-    bandwidth](Open_Shortest_Path_First_-_OSPF.html#src-8362922_OpenShortestPathFirst-OSPF-acrb)
+    bandwidth](/old/Open_Shortest_Path_First_-_OSPF.html#src-8362922_OpenShortestPathFirst-OSPF-acrb)
     (OSPFv2 chapter)

@@ -3,20 +3,19 @@ title: VLAN Tagging
 author: Unknown
 weight: 361
 pageID: 8362668
+aliases:
+ - /old/VLAN_Tagging.html
 ---
 # VLAN Tagging
 
-<span id="src-8362668_indexterm-405C7F030B9DE7F3A07166FD0A9BD345">This
-topic shows two examples of
-</span><span id="src-8362668_indexterm-C71C20B8858D3154772AE8A6260DCA43">VLAN
-tagging, one basic and one more advanced. They both demonstrate the
-streamlined interface configuration from </span>`ifupdown2`.
+This topic shows two examples of VLAN tagging, one basic and one more
+advanced. They both demonstrate the streamlined interface configuration
+from `ifupdown2`.
 
 ## VLAN Tagging, a Basic Example
 
-<span id="src-8362668_indexterm-61874B70BD953C48D61B29BDD3037FD9">A
-</span>simple configuration demonstrating VLAN tagging involves two
-hosts connected to a
+A simple configuration demonstrating VLAN tagging involves two hosts
+connected to a
 switch.
 
 ![/images/download/thumbnails/8362655/vlan-trunks-bond-simple.png](/images/download/thumbnails/8362655/vlan-trunks-bond-simple.png)
@@ -57,9 +56,8 @@ iface swp2.130
 
 ## VLAN Tagging, an Advanced Example
 
-<span id="src-8362668_indexterm-7E2F55FC9D10FBB1132CD5B75371F351">This
-example of </span>VLAN tagging is more complex, involving three hosts
-and two switches, with a number of bridges and a bond connecting them
+This example of VLAN tagging is more complex, involving three hosts and
+two switches, with a number of bridges and a bond connecting them
 all.
 
 *![/images/download/attachments/8362655/vlan-trunks-bond.png](/images/download/attachments/8362655/vlan-trunks-bond.png)*
@@ -75,17 +73,11 @@ all.
     for *vlan120* and to bridge *v130* with 802.1q frames tagged for
     *vlan130*.
 
-  - *bond2* carries tagged and untagged frames in this
-example.
+  - *bond2* carries tagged and untagged frames in this example.
 
-<span id="src-8362668_indexterm-7C301F99D7FD57FFF3A771DBDF28B409">Although
-not explicitly designated, the bridge member ports function as 802.1Q
-</span>*<span id="src-8362668_indexterm-CF4EC8B2A2A88FC5D94163079AC8F7DE">access
-</span>ports*<span id="src-8362668_indexterm-D5D01ABB1182DFB3825BDC014B2BF8CF">
-and
-</span>*<span id="src-8362668_indexterm-D83539CB36442EFF162F2DEB577F64E2">trunk
-</span>ports*. In the example above, comparing Cumulus Linux with a
-traditional Cisco device:
+Although not explicitly designated, the bridge member ports function as
+802.1Q *access ports* and *trunk ports*. In the example above, comparing
+Cumulus Linux with a traditional Cisco device:
 
   - *swp1* is equivalent to a trunk port with untagged and *vlan100*.
 
@@ -175,8 +167,7 @@ iface v130
     
 ```
 
-<span id="src-8362668_indexterm-D5F4E94406BCAF9DD65DF1C20E618716">To
-</span>verify:
+To verify:
 
 ``` 
                    
@@ -318,11 +309,10 @@ bridge cannot contain multiple subinterfaces of the same port: swp9, swp9.100
 
 ## VLAN Translation
 
-<span id="src-8362668_indexterm-63525555324181E91930DEDAC1B3835B">By
-default, Cumulus Linux </span>does not allow VLAN subinterfaces
-associated with different VLAN IDs to be part of the same bridge. Base
-interfaces are not explicitly associated with any VLAN IDs and are
-exempt from this restriction.
+By default, Cumulus Linux does not allow VLAN subinterfaces associated
+with different VLAN IDs to be part of the same bridge. Base interfaces
+are not explicitly associated with any VLAN IDs and are exempt from this
+restriction.
 
 In some cases, it may be useful to relax this restriction. For example,
 two servers might be connected to the switch using VLAN trunks, but the
@@ -335,9 +325,10 @@ with the VLAN ID translated.
 
 {{%notice note%}}
 
-A bridge in [VLAN-aware mode](VLAN-aware_Bridge_Mode.html) cannot have
-VLAN translation enabled for it; only bridges configured in [traditional
-mode](Traditional_Bridge_Mode.html) can utilize VLAN translation.
+A bridge in [VLAN-aware mode](/old/VLAN-aware_Bridge_Mode.html) cannot
+have VLAN translation enabled for it; only bridges configured in
+[traditional mode](/old/Traditional_Bridge_Mode.html) can utilize VLAN
+translation.
 
 {{%/notice%}}
 

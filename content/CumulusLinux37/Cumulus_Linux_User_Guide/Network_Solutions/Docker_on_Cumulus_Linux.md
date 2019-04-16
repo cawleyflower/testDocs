@@ -3,6 +3,8 @@ title: Docker on Cumulus Linux
 author: Unknown
 weight: 265
 pageID: 8362980
+aliases:
+ - /old/Docker_on_Cumulus_Linux.html
 ---
 # Docker on Cumulus Linux
 

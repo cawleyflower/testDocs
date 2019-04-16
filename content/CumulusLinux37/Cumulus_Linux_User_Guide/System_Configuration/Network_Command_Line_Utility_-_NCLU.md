@@ -3,6 +3,8 @@ title: Network Command Line Utility - NCLU
 author: Unknown
 weight: 63
 pageID: 8362580
+aliases:
+ - /old/Network_Command_Line_Utility_-_NCLU.html
 ---
 # Network Command Line Utility - NCLU
 
@@ -104,8 +106,8 @@ configuration with the following commands:
     OSPF neighbor content, and more.
 
   - `net rollback` provides a mechanism to [revert
-    back](Using_Snapshots.html#src-8362648_UsingSnapshots-rollback) to
-    an earlier configuration.
+    back](/old/Using_Snapshots.html#src-8362648_UsingSnapshots-rollback)
+    to an earlier configuration.
 
   - `net commit confirm` requires you to press *Enter* to commit changes
     using NCLU. If you run `net commit confirm` but do not press *Enter*
@@ -115,10 +117,10 @@ configuration with the following commands:
   - `net commit description <description>` enables you to provide a
     descriptive summary of the changes you are about to commit.
 
-  - `net commit permanent` retains the [snapshot](Using_Snapshots.html)
-    taken when committing the change. Otherwise, the snapshots created
-    from NCLU commands are cleaned up periodically with a snapper cron
-    job.
+  - `net commit permanent` retains the
+    [snapshot](/old/Using_Snapshots.html) taken when committing the
+    change. Otherwise, the snapshots created from NCLU commands are
+    cleaned up periodically with a snapper cron job.
 
   - `net commit delete` deletes one or more snapshots created when
     committing changes with NCLU.
@@ -129,8 +131,8 @@ configuration with the following commands:
     {{%notice note%}}
     
     The `net del all` command does not remove [management
-    VRF](Management_VRF.html) configurations; NCLU does not interact
-    with eth0 interfaces and management VRF.
+    VRF](/old/Management_VRF.html) configurations; NCLU does not
+    interact with eth0 interfaces and management VRF.
     
     {{%/notice%}}
 
@@ -451,8 +453,8 @@ Done
 You can use the `adduser` command for local user accounts only. You can
 use the `addgroup` command for both local and remote user accounts. For
 a remote user account, you must use the mapping username, such as
-`tacacs3` or `radius_user`, not the [TACACS](TACACS_Plus.html) or
-[RADIUS](RADIUS_AAA.html) account name.
+`tacacs3` or `radius_user`, not the [TACACS](/old/TACACS_Plus.html) or
+[RADIUS](/old/RADIUS_AAA.html) account name.
 
 {{%/notice%}}
 
@@ -504,7 +506,7 @@ To configure a new user group to use NCLU, add that group to the
 
 Use caution giving edit permissions to groups. For example, don't give
 edit permissions to the [*tacacs*
-group](TACACS_Plus.html#src-8362558_TACACSPlus-nclu).
+group](/old/TACACS_Plus.html#src-8362558_TACACSPlus-nclu).
 
 {{%/notice%}}
 

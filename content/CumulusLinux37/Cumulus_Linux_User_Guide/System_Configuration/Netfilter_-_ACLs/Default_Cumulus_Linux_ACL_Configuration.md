@@ -3,14 +3,17 @@ title: Default Cumulus Linux ACL Configuration
 author: Unknown
 weight: 307
 pageID: 8362574
+aliases:
+ - /old/Default_Cumulus_Linux_ACL_Configuration.html
 ---
 # Default Cumulus Linux ACL Configuration
 
 The Cumulus Linux default ACL configuration is split into three parts,
-as outlined in the [netfilter ACL documentation](Netfilter_-_ACLs.html):
-IP tables, IPv6 tables, and EB tables. The sections below describe the
-default configurations for each part. You can see the default file by
-clicking the Default ACL Configuration link:
+as outlined in the [netfilter ACL
+documentation](/old/Netfilter_-_ACLs.html): IP tables, IPv6 tables, and
+EB tables. The sections below describe the default configurations for
+each part. You can see the default file by clicking the Default ACL
+Configuration link:
 
 Default ACL Configuration
 

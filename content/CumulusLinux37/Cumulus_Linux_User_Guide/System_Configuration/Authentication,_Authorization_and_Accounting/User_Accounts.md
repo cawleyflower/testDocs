@@ -3,13 +3,12 @@ title: User Accounts
 author: Unknown
 weight: 287
 pageID: 8362553
+aliases:
+ - /old/User_Accounts.html
 ---
 # User Accounts
 
-<span id="src-8362553_indexterm-2F464615FFAE9049FDF385BF5767029B">By
-default, Cumulus Linux has two user accounts:
-</span>*cumulus*<span id="src-8362553_indexterm-54F081B196E3C481BB318B4D8ECD6915">
-and </span>*root*.
+By default, Cumulus Linux has two user accounts: *cumulus* and *root*.
 
 The *cumulus* account:
 
@@ -24,10 +23,10 @@ The *cumulus* account:
   - Is a user account in the *sudo* group with sudo privileges.
 
   - Can log in to the system through all the usual channels, such as
-    console and [SSH](SSH_for_Remote_Access.html).
+    console and [SSH](/old/SSH_for_Remote_Access.html).
 
   - Along with the cumulus group, has both show and edit rights for
-    [NCLU](Network_Command_Line_Utility_-_NCLU.html).
+    [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html).
 
 The *root* account:
 
@@ -41,18 +40,17 @@ The *root* account:
 For optimal security, change the default password with the `passwd`
 command before you configure Cumulus Linux on the switch.
 
-<span id="src-8362553_indexterm-63D66EBD131743CD3D52956DDE4306B4">You
-can add additional </span>user accounts as needed. Like the *cumulus*
+You can add additional user accounts as needed. Like the *cumulus*
 account, these accounts must use `sudo` to [execute privileged
-commands](Using_sudo_to_Delegate_Privileges.html); be sure to include
-them in the *sudo* group.
+commands](/old/Using_sudo_to_Delegate_Privileges.html); be sure to
+include them in the *sudo* group.
 
 To access the switch without a password, you need to [boot into a single
-shell/user mode](Single_User_Mode_-_Boot_Recovery.html).
+shell/user mode](/old/Single_User_Mode_-_Boot_Recovery.html).
 
 You can add and configure user accounts in Cumulus Linux with read-only
 or edit permissions for NCLU. For more information, see [Configure User
-Accounts](Network_Command_Line_Utility_-_NCLU.html#src-8362580_NetworkCommandLineUtility-NCLU-configure-user-accounts).
+Accounts](/old/Network_Command_Line_Utility_-_NCLU.html#src-8362580_NetworkCommandLineUtility-NCLU-configure-user-accounts).
 
 ## Enable Remote Access for the root User
 

@@ -3,22 +3,22 @@ title: Network Topology
 author: Unknown
 weight: 185
 pageID: 8362915
+aliases:
+ - /old/Network_Topology.html
 ---
 # Network Topology
 
-<span id="src-8362915_indexterm-5C84826D88826F4CC780DB9334D2EC60">In
-computer networks, </span>*topology* refers to the structure of
+In computer networks, *topology* refers to the structure of
 interconnecting various nodes. Some commonly used topologies in networks
 are star, hub and spoke, leaf and spine, and broadcast.
 
 ## Clos Topologies
 
-<span id="src-8362915_indexterm-A9FA8086C73E79BB672E7E805EC16CB0">In the
-vast majority of modern data centers, </span>[Clos or fat tree
-topology](http://en.wikipedia.org/wiki/Clos_network)<span id="src-8362915_indexterm-4219E896ED2974D4C3D0AB769C8D19C0">
-is very popular. This topology is shown in the figure below. It is also
-commonly referred to as </span>leaf-spine topology. We shall use this
-topology throughout the routing protocol
+In the vast majority of modern data centers, [Clos or fat tree
+topology](http://en.wikipedia.org/wiki/Clos_network) is very popular.
+This topology is shown in the figure below. It is also commonly referred
+to as leaf-spine topology. We shall use this topology throughout the
+routing protocol
 guide.
 
 ![/images/download/attachments/8362915/topology.png](/images/download/attachments/8362915/topology.png)
@@ -59,9 +59,7 @@ this kind of topology can serve quite a large network with three tiers.
 
 ## Over-Subscribed and Non-Blocking Configurations
 
-<span id="src-8362915_indexterm-BE2271201A148EFC14F5277A3CF0E003">In the
-</span><span id="src-8362915_indexterm-C2ED2CD6E40AC692EACCAB7F8AD6E8F5">above
-example, the network is </span>*over-subscribed*; that is, 400G of
+In the above example, the network is *over-subscribed*; that is, 400G of
 bandwidth from end stations (40 servers \* 10GE links) is serviced by
 only 240G of inter-rack bandwidth. The over-subscription ratio is 0.6
 (240/400).
@@ -76,15 +74,13 @@ without necessarily blocking traffic between other servers.
 
 In such a network, the total number of servers that can be connected are
 (64\*64)/2 = 2048. Similarly, a three-tier version of the same can serve
-up to (64\*64\*64)/4 = 65536
-servers.
+up to (64\*64\*64)/4 = 65536 servers.
 
 ## Containing the Failure Domain
 
-<span id="src-8362915_indexterm-E74BCCDE4EAA65D2BDBA0308A5ADE6D6">Traditional
-</span>data centers were built using just two spine switches. This means
-that if one of those switches fails, the network bandwidth is cut in
-half, thereby greatly increasing network congestion and adversely
+Traditional data centers were built using just two spine switches. This
+means that if one of those switches fails, the network bandwidth is cut
+in half, thereby greatly increasing network congestion and adversely
 affecting many applications. To avoid this, vendors typically try and
 make the spine switches resilient to failures by providing such features
 as dual control line cards and attempting to make the software highly
@@ -105,11 +101,8 @@ to 32 spine switches.
 
 ## Load Balancing
 
-<span id="src-8362915_indexterm-08C62F7B4939F3CE7463D8E51DDD9C2B">In a
-</span><span id="src-8362915_indexterm-A9E3BD7908B8EAD271AD2071EAF7171E">Clos
-network, traffic is load balanced across the multiple links using
-</span><span id="src-8362915_indexterm-E2B706A52004C3568C4DD9C156D43EAA">equal
-</span>cost multi-pathing (ECMP).
+In a Clos network, traffic is load balanced across the multiple links
+using equal cost multi-pathing (ECMP).
 
 Routing algorithms compute shortest paths between two end stations where
 shortest is typically the lowest path cost. Each link is assigned a

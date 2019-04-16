@@ -3,11 +3,12 @@ title: Open Shortest Path First - OSPF
 author: Unknown
 weight: 193
 pageID: 8362922
+aliases:
+ - /old/Open_Shortest_Path_First_-_OSPF.html
 ---
 # Open Shortest Path First - OSPF
 
-<span id="src-8362922_indexterm-C22C462A859753EB1F987F60B6FC600B">OSPF
-</span>maintains the view of the network topology conceptually as a
+OSPF maintains the view of the network topology conceptually as a
 directed graph. Each router represents a vertex in the graph. Each link
 between neighboring routers represents a unidirectional edge and each
 link has an associated weight (called cost) that is either automatically
@@ -17,25 +18,22 @@ with itself as the root, and applies the results to build its forwarding
 table. The computation is generally referred to as *SPF computation* and
 the resultant tree as the *SPF tree*.
 
-<span id="src-8362922_indexterm-74ADC32A1282D4ED9CEE99FB03A5D04A">An
-</span><span id="src-8362922_indexterm-F7A325AFD2E94BAE3025CE00E2CA738A">LSA
-</span>(*link-state advertisement*) is the fundamental quantum of
+An LSA (*link-state advertisement*) is the fundamental quantum of
 information that OSPF routers exchange with each other. It seeds the
 graph building process on the node and triggers SPF computation. LSAs
 originated by a node are distributed to all the other nodes in the
-network through a mechanism called
-*flooding*<span id="src-8362922_indexterm-1368F6DA4249CC60481C1F339B9BC836">.
-Flooding is done hop-by-hop. OSPF ensures reliability by using link
-state acknowledgement packets. The set of LSAs in a router’s memory is
-termed </span>*link-state database* (LSDB), a representation of the
-network graph. Therefore, OSPF ensures a consistent view of LSDB on each
-node in the network in a distributed fashion (eventual consistency
-model); this is key to the protocol’s correctness.
+network through a mechanism called *flooding*. Flooding is done
+hop-by-hop. OSPF ensures reliability by using link state acknowledgement
+packets. The set of LSAs in a router’s memory is termed *link-state
+database* (LSDB), a representation of the network graph. Therefore, OSPF
+ensures a consistent view of LSDB on each node in the network in a
+distributed fashion (eventual consistency model); this is key to the
+protocol’s correctness.
 
 This topic describes OSPFv2, which is a [link-state routing
 protocol](http://en.wikipedia.org/wiki/Link-state_routing_protocol) for
 IPv4. For IPv6 commands, refer to [Open Shortest Path First v3 -
-OSPFv3](Open_Shortest_Path_First_v3_-_OSPFv3.html)
+OSPFv3](/old/Open_Shortest_Path_First_v3_-_OSPFv3.html)
 
 ## Scalability and Areas
 
@@ -85,7 +83,7 @@ To configure OSPF, you need to:
 ### Enable the OSPF and Zebra Daemons
 
 To enable OSPF, enable the `zebra` and `ospf` daemons, as described in
-[Configuring FRRouting](Configuring_FRRouting.html), then start the
+[Configuring FRRouting](/old/Configuring_FRRouting.html), then start the
 FRRouting service:
 
 ``` 
@@ -278,12 +276,10 @@ Here are some tips for how to scale out OSPF.
 
 ### Summarization
 
-<span id="src-8362922_indexterm-6D6A916E4B24F42FC582C8A9A1245B5C">By
-default, an ABR creates a summary (type-3) LSA for each route in an area
-and advertises it in adjacent areas. Prefix range configuration
-optimizes this behavior by creating and advertising one
-</span><span id="src-8362922_indexterm-D30D9D1FCF16A237752F1056ADB42B74">summary
-</span>LSA for multiple routes.
+By default, an ABR creates a summary (type-3) LSA for each route in an
+area and advertises it in adjacent areas. Prefix range configuration
+optimizes this behavior by creating and advertising one summary LSA for
+multiple routes.
 
 To configure a range:
 
@@ -560,7 +556,7 @@ Don't specify a process ID unless you are using multi-instance OSPF.
 {{%notice note%}}
 
 If you disabled the
-[integrated](Configuring_FRRouting.html#src-8362919_ConfiguringFRRouting-integrated_cfg)
+[integrated](/old/Configuring_FRRouting.html#src-8362919_ConfiguringFRRouting-integrated_cfg)
 FRRouting configuration, you must create a separate `ospfd`
 configuration file for each instance. The `ospfd.conf` file must include
 the instance ID in the file name. Continuing with our example, you would
@@ -682,14 +678,12 @@ auto-cost reference-bandwidth 90000
 
 ## Unnumbered Interfaces
 
-<span id="src-8362922_indexterm-0E2D52F9D77099259846C8574BA6E025">Unnumbered
-</span><span id="src-8362922_indexterm-4E5E0A2B751A07286EFE26D406AB3251">interfaces
-</span>are interfaces without unique IP addresses. In OSPFv2,
-configuring unnumbered interfaces reduces the links between routers into
-pure topological elements, which dramatically simplifies network
-configuration and reconfiguration. In addition, the routing database
-contains only the real networks, so the memory footprint is reduced and
-SPF is faster.
+Unnumbered interfaces are interfaces without unique IP addresses. In
+OSPFv2, configuring unnumbered interfaces reduces the links between
+routers into pure topological elements, which dramatically simplifies
+network configuration and reconfiguration. In addition, the routing
+database contains only the real networks, so the memory footprint is
+reduced and SPF is faster.
 
 {{%notice note%}}
 
@@ -763,10 +757,8 @@ cumulus@switch:~$ net add interface swp1 ospf area 0.0.0.1
 
 ## Apply a Route Map for Route Updates
 
-<span id="src-8362922_indexterm-C8866ACCF29EDCB072163282F4B0C0DE">To
-apply </span>a [route
-map](https://frrouting.org/user-guide/routemap.html) to filter route
-updates from Zebra into the Linux kernel:
+To apply a [route map](https://frrouting.org/user-guide/routemap.html)
+to filter route updates from Zebra into the Linux kernel:
 
 ``` 
                    
@@ -777,19 +769,14 @@ cumulus@switch:$ net add routing protocol ospf route-map
 
 ## ECMP
 
-<span id="src-8362922_indexterm-478714BBC170547406092EAF7BA7D5C3">During
-</span><span id="src-8362922_indexterm-BB221D6CC79915730F0493B679C5CDD2">SPF
-</span>computation for an area, if OSPF finds multiple paths with equal
-cost (metric), all those paths are used for forwarding. For example, in
-the reference topology diagram, R8 uses both R3 and R4 as next hops to
-reach a destination attached to
-R9.
+During SPF computation for an area, if OSPF finds multiple paths with
+equal cost (metric), all those paths are used for forwarding. For
+example, in the reference topology diagram, R8 uses both R3 and R4 as
+next hops to reach a destination attached to R9.
 
 ## Topology Changes and OSPF Reconvergence
 
-<span id="src-8362922_indexterm-95D61ABE78DF497CD8E233208F083D3B">Topology
-</span><span id="src-8362922_indexterm-E98CBDCECD3E7F9065898A1CF098743D">changes
-</span>usually occur due to one of four events:
+Topology changes usually occur due to one of four events:
 
 1.  Maintenance of a router node
 
@@ -858,7 +845,8 @@ lists all of the OSPF debug options.
 ## Related Information
 
   - [Bidirectional forwarding
-    detection](Bidirectional_Forwarding_Detection_-_BFD.html) (BFD) and
+    detection](/old/Bidirectional_Forwarding_Detection_-_BFD.html) (BFD)
+    and
     OSPF
 
   - [en.wikipedia.org/wiki/Open\_Shortest\_Path\_First](http://en.wikipedia.org/wiki/Open_Shortest_Path_First)

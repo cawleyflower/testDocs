@@ -3,6 +3,8 @@ title: Data Center Host to ToR Architecture
 author: Unknown
 weight: 261
 pageID: 8362991
+aliases:
+ - /old/Data_Center_Host_to_ToR_Architecture.html
 ---
 # Data Center Host to ToR Architecture
 
@@ -190,7 +192,7 @@ iface eth1 inet static
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Routing on the host means there is a routing application (such as <a href="FRRouting_Overview.html">FRRouting</a>) either on the bare metal host (no VMs/containers) or the hypervisor (for example, Ubuntu with KVM). This is highly recommended by the Cumulus Networks Professional Services team.</p></td>
+<td><p>Routing on the host means there is a routing application (such as <a href="/old/FRRouting_Overview.html">FRRouting</a>) either on the bare metal host (no VMs/containers) or the hypervisor (for example, Ubuntu with KVM). This is highly recommended by the Cumulus Networks Professional Services team.</p></td>
 <td><p><strong>Benefits</strong></p>
 <ul>
 <li><p>No requirement for MLAG</p></li>
@@ -217,7 +219,7 @@ iface eth1 inet static
 </ul></td>
 <td><ul>
 <li><p><a href="https://support.cumulusnetworks.com/hc/en-us/articles/213177027-Installing-the-Cumulus-Linux-Quagga-Package-on-an-Ubuntu-Server" class="external-link">Installing the Cumulus Linux FRRouting Package on an Ubuntu Server</a></p></li>
-<li><p><a href="Configuring_FRRouting.html">Configuring FRRouting</a></p></li>
+<li><p><a href="/old/Configuring_FRRouting.html">Configuring FRRouting</a></p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -272,7 +274,7 @@ instead of one routing process, there are as many as there are VMs</p></li>
 </ul></td>
 <td><ul>
 <li><p><a href="https://support.cumulusnetworks.com/hc/en-us/articles/213177027-Installing-the-Cumulus-Linux-Quagga-Package-on-an-Ubuntu-Server" class="external-link">Installing the Cumulus Linux FRRouting Package on an Ubuntu Server</a></p></li>
-<li><p><a href="Configuring_FRRouting.html">Configuring FRRouting</a></p></li>
+<li><p><a href="/old/Configuring_FRRouting.html">Configuring FRRouting</a></p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -299,7 +301,7 @@ instead of one routing process, there are as many as there are VMs</p></li>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Virtual router (vRouter) runs as a VM on the hypervisor/host, sends routes to the ToR using <a href="/pages/createpage.action?spaceKey=DOCS&amp;title=Configuring+Border+Gateway+Protocol+-+BGP&amp;linkCreation=true&amp;fromPageId=8362991" class="createlink">BGP</a> or <a href="Open_Shortest_Path_First_-_OSPF.html">OSPF</a>.</p></td>
+<td><p>Virtual router (vRouter) runs as a VM on the hypervisor/host, sends routes to the ToR using <a href="/old//pages/createpage.action?spaceKey=DOCS&amp;title=Configuring+Border+Gateway+Protocol+-+BGP&amp;linkCreation=true&amp;fromPageId=8362991" class="createlink">BGP</a> or <a href="/old/Open_Shortest_Path_First_-_OSPF.html">OSPF</a>.</p></td>
 <td><p><strong><strong>Benefits</strong></strong></p>
 <p>In addition to routing on a host:</p>
 <ul>
@@ -308,7 +310,7 @@ instead of one routing process, there are as many as there are VMs</p></li>
 </ul>
 <p><strong><strong>Caveats</strong></strong></p>
 <ul>
-<li><p><a href="Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html">ECMP</a> might not work correctly (load balancing to multiple ToRs); Linux kernel in older versions is not capable of ECMP per flow (does it per packet)</p></li>
+<li><p><a href="/old/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html">ECMP</a> might not work correctly (load balancing to multiple ToRs); Linux kernel in older versions is not capable of ECMP per flow (does it per packet)</p></li>
 <li><p>No L2 adjacency between servers without VXLAN</p></li>
 </ul></td>
 </tr>
@@ -323,7 +325,7 @@ instead of one routing process, there are as many as there are VMs</p></li>
 </ul></td>
 <td><ul>
 <li><p><a href="https://support.cumulusnetworks.com/hc/en-us/articles/213177027-Installing-the-Cumulus-Linux-Quagga-Package-on-an-Ubuntu-Server" class="external-link">Installing the Cumulus Linux FRRouting Package on an Ubuntu Server</a></p></li>
-<li><p><a href="Configuring_FRRouting.html">Configuring FRRouting</a></p></li>
+<li><p><a href="/old/Configuring_FRRouting.html">Configuring FRRouting</a></p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -457,7 +459,7 @@ MLAG**
 <tbody>
 <tr class="odd">
 <td><p> </p></td>
-<td><p>The host runs LACP (Etherchannel/bond) to the pair of ToRs. <a href="Lightweight_Network_Virtualization_Overview.html">LNV</a> (Lightweight Network Virtualization) then transports the L2 bridges across an L3 fabric.</p>
+<td><p>The host runs LACP (Etherchannel/bond) to the pair of ToRs. <a href="/old/Lightweight_Network_Virtualization_Overview.html">LNV</a> (Lightweight Network Virtualization) then transports the L2 bridges across an L3 fabric.</p>
 <p><strong>Configurations</strong></p>
 <p><strong>leaf01 Config</strong></p>
 <p><code>/etc/network/interfaces</code></p>
@@ -508,7 +510,7 @@ iface br-10
 </ul>
 <p><strong><strong>Caveats</strong></strong></p>
 <ul>
-<li><p>Needs MLAG (with the same caveats from the <a href="#src-8362991_DataCenterHosttoToRArchitecture-mlag">MLAG section</a> above) and <a href="Spanning_Tree_and_Rapid_Spanning_Tree.html">spanning tree</a></p></li>
+<li><p>Needs MLAG (with the same caveats from the <a href="/old/#src-8362991_DataCenterHosttoToRArchitecture-mlag">MLAG section</a> above) and <a href="/old/Spanning_Tree_and_Rapid_Spanning_Tree.html">spanning tree</a></p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -534,7 +536,7 @@ iface br-10
 <tbody>
 <tr class="odd">
 <td><ul>
-<li><p><a href="Virtual_Router_Redundancy_-_VRR_and_VRRP.html">VRR</a></p></li>
+<li><p><a href="/old/Virtual_Router_Redundancy_-_VRR_and_VRRP.html">VRR</a></p></li>
 </ul></td>
 <td><p>None</p></td>
 <td><ul>
@@ -550,7 +552,7 @@ iface br-10
 <td><p> </p></td>
 <td><p> </p></td>
 <td><ul>
-<li><p><a href="Lightweight_Network_Virtualization_Overview.html">Cumulus Linux Lightweight Network Virtualization (LNV) documentation</a></p></li>
+<li><p><a href="/old/Lightweight_Network_Virtualization_Overview.html">Cumulus Linux Lightweight Network Virtualization (LNV) documentation</a></p></li>
 </ul></td>
 </tr>
 </tbody>

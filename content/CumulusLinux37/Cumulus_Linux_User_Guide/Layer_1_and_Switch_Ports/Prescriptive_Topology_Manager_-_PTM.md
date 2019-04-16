@@ -3,20 +3,15 @@ title: Prescriptive Topology Manager - PTM
 author: Unknown
 weight: 105
 pageID: 8363021
+aliases:
+ - /old/Prescriptive_Topology_Manager_-_PTM.html
 ---
 # Prescriptive Topology Manager - PTM
 
-<span id="src-8363021_indexterm-A5504258E4CF19E438BB95C83F30B195">In
-data center
-</span><span id="src-8363021_indexterm-88DB1EF94F681FDD4458AE54BEEB0DA0">topologies,
-right cabling is a time-consuming endeavor and is error prone.
-</span><span id="src-8363021_indexterm-5E3DF83C35888C88E973E9195DDB4D08">Prescriptive
-Topology Manager
-(</span><span id="src-8363021_indexterm-B044EFCD9F1FAD7D9E9CBCB79285E2DB">PTM)
-is a dynamic
-</span><span id="src-8363021_indexterm-C5CEF90FCF1D1F44E335EB1456F80967">cabling
-verification tool to help detect and eliminate such errors. It takes a
-</span>Graphviz-DOT specified network cabling plan (something many
+In data center topologies, right cabling is a time-consuming endeavor
+and is error prone. Prescriptive Topology Manager (PTM) is a dynamic
+cabling verification tool to help detect and eliminate such errors. It
+takes a Graphviz-DOT specified network cabling plan (something many
 operators already generate), stored in a `topology.dot` file, and
 couples it with runtime information derived from LLDP to verify that the
 cabling matches the specification. The check is performed on every link
@@ -25,8 +20,7 @@ transition on each node in the network.
 You can customize the `topology.dot` file to control `ptmd` at both the
 global/network level and the node/port level.
 
-<span id="src-8363021_indexterm-618E5E30E784B89835453D8E10115A88">PTM
-runs as a daemon, named </span>`ptmd`.
+PTM runs as a daemon, named `ptmd`.
 
 For more information, see `man ptmd(8)`.
 
@@ -46,7 +40,7 @@ For more information, see `man ptmd(8)`.
     Detection](http://tools.ietf.org/html/rfc5880) (BFD); however,
     demand mode is not supported. For more information on how BFD
     operates in Cumulus Linux, read the [Bidirectional Forwarding
-    Detection - BFD](Bidirectional_Forwarding_Detection_-_BFD.html)
+    Detection - BFD](/old/Bidirectional_Forwarding_Detection_-_BFD.html)
     chapter and read `man ptmd(8)`.
 
   - Integration with FRRouting (PTM to FRRouting notification).
@@ -58,7 +52,7 @@ For more information, see `man ptmd(8)`.
   - Event notifications: see Scripts below.
 
   - User configuration via a `topology.dot` file; [see
-    below](#src-8363021_PrescriptiveTopologyManager-PTM-configuring).
+    below](/old/#src-8363021_PrescriptiveTopologyManager-PTM-configuring).
 
 ## Configure PTM
 
@@ -68,13 +62,11 @@ network graph file, `/etc/ptm.d/topology.dot`.
 PTM supports [undirected
 graphs](http://en.wikipedia.org/wiki/DOT_%28graph_description_language%29).
 
-At startup,
-`ptmd`<span id="src-8363021_indexterm-6F575412BD7FB666909CDDFC794C0D82">
-connects to </span>`lldpd`, the LLDP daemon, over a Unix socket and
-retrieves the neighbor name and port information. It then compares the
-retrieved port information with the configuration information that it
-read from the topology file. If there is a match, then it is a PASS,
-else it is a FAIL.
+At startup, `ptmd` connects to `lldpd`, the LLDP daemon, over a Unix
+socket and retrieves the neighbor name and port information. It then
+compares the retrieved port information with the configuration
+information that it read from the topology file. If there is a match,
+then it is a PASS, else it is a FAIL.
 
 {{%notice note%}}
 
@@ -111,14 +103,13 @@ graph G {
 
 ## ptmd Scripts
 
-`ptmd`<span id="src-8363021_indexterm-42B2FD96B079AFBAC2CC4C1E4072F2E7">
-executes </span>scripts at `/etc/ptm.d/if-topo-pass` and
+`ptmd` executes scripts at `/etc/ptm.d/if-topo-pass` and
 ` /etc/ptm.d/if-topo-fail  `for each interface that goes through a
 change, running `if-topo-pass` when an LLDP or BFD check passes and
 running `if-topo-fails` when the check fails. The scripts receive an
 argument string that is the result of the `ptmctl` command, described in
 the [`ptmd` commands section
-below](#src-8363021_PrescriptiveTopologyManager-PTM-ptmd_commands).
+below](/old/#src-8363021_PrescriptiveTopologyManager-PTM-ptmd_commands).
 
 You should modify these default scripts as needed.
 
@@ -249,8 +240,7 @@ while BFD1 and BFD2 are templates for BFD parameters.
 
 ### Supported BFD and LLDP Parameters
 
-`ptmd`<span id="src-8363021_indexterm-7569CD02DA6E014E9FD1DCFD56920F4D">
-supports the following </span>BFD parameters:
+`ptmd` supports the following BFD parameters:
 
   - `upMinTx`: the minimum transmit interval, which defaults to *300ms*,
     specified in milliseconds.
@@ -337,16 +327,13 @@ detection over all media and protocol layers. Use BFD to detect failures
 for IPv4 and IPv6 single or multihop paths between any two network
 devices, including unidirectional path failure detection. For
 information about configuring BFD using PTM, see the [BFD
-topic](Bidirectional_Forwarding_Detection_-_BFD.html).
+topic](/old/Bidirectional_Forwarding_Detection_-_BFD.html).
 
 ## Check Link State with FRRouting
 
-<span id="src-8363021_indexterm-28EEDE916A1513B9E8A314AD90482A75">The
-</span><span id="src-8363021_indexterm-541DA9700AC88FCECD83A363C607C24A">FRRouting
-</span><span id="src-8363021_indexterm-C1531014B8E32A0B45BAC5B77B04E6C3">routing
-</span>suite enables additional checks to ensure that routing
-adjacencies are formed only on links that have connectivity conformant
-to the specification, as determined by `ptmd`.
+The FRRouting routing suite enables additional checks to ensure that
+routing adjacencies are formed only on links that have connectivity
+conformant to the specification, as determined by `ptmd`.
 
 {{%notice note%}}
 
@@ -437,15 +424,13 @@ new configuration to the running state.
 service.
 
 `cumulus@switch:~$ sudo systemctl status ptmd.service`: Retrieves the
-current running state of
-`ptmd`.
+current running state of `ptmd`.
 
 ## ptmctl Commands
 
-`ptmctl`<span id="src-8363021_indexterm-183FDEF479910E32FB2BA88E87846091">
-</span>is a client of `ptmd`; it retrieves the operational state of the
-ports configured on the switch and information about BFD sessions from
-`ptmd`. `ptmctl` parses the CSV notifications sent by `ptmd`.
+`ptmctl` is a client of `ptmd`; it retrieves the operational state of
+the ports configured on the switch and information about BFD sessions
+from `ptmd`. `ptmctl` parses the CSV notifications sent by `ptmd`.
 
 See `man ptmctl` for more information.
 

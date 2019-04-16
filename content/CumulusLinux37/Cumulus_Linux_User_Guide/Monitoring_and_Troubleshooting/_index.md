@@ -3,15 +3,12 @@ title: Monitoring and Troubleshooting
 author: Unknown
 weight: 25
 pageID: 8362592
+aliases:
+ - /old/Monitoring_and_Troubleshooting.html
 ---
 # Monitoring and Troubleshooting
 
-<span id="src-8362592_indexterm-F09EF22A204A11AE2A8B7EAF9231F8F8">This
-chapter introduces
-</span><span id="src-8362592_indexterm-2C997458D82780BB0EF4449F632E8C4E">monitoring
-</span><span id="src-8362592_indexterm-56C7E1630B8843118106E4FBFEF1DE15">and
-</span><span id="src-8362592_indexterm-B927291FE1F06CB5E98FEB99DD340F9B">troubleshooting
-</span>Cumulus Linux.
+This chapter introduces monitoring and troubleshooting Cumulus Linux.
 
 ## Serial Console
 
@@ -24,8 +21,7 @@ The default serial console baud rate is 115200, which is the baud rate
 
 ### Configure the Serial Console on ARM Switches
 
-<span id="src-8362592_indexterm-870ED33249995FA0B29B2BA7E3058476">On ARM
-switches, the </span>U-Boot environment variable `baudrate` identifies
+On ARM switches, the U-Boot environment variable `baudrate` identifies
 the baud rate of the serial console. To change the `baudrate` variable,
 use the `fw_setenv` command:
 
@@ -173,12 +169,11 @@ Serial Number.... A1010B2A011212AB000001
 
 ## Diagnostics Using cl-support
 
-<span id="src-8362592_indexterm-35738C2625DE8DE998032AB5A2B18BBB">You
-can use </span>`cl-support` to generate a single export file that
-contains various details and the configuration from a switch. This is
-useful for remote debugging and troubleshooting. For more information
-about `cl-support`, read [Understanding the cl-support Output
-File](Understanding_the_cl-support_Output_File.html).
+You can use `cl-support` to generate a single export file that contains
+various details and the configuration from a switch. This is useful for
+remote debugging and troubleshooting. For more information about
+`cl-support`, read [Understanding the cl-support Output
+File](/old/Understanding_the_cl-support_Output_File.html).
 
 You should run `cl-support` before you submit a support request to
 Cumulus Networks as this file helps in the investigation of issues.
@@ -207,52 +202,53 @@ Options:
 The links below discuss more specific monitoring topics.
 
   - [Single User Mode - Boot
-    Recovery](Single_User_Mode_-_Boot_Recovery.html)
+    Recovery](/old/Single_User_Mode_-_Boot_Recovery.html)
 
   - [Resource Diagnostics Using
-    cl-resource-query](Resource_Diagnostics_Using_cl-resource-query.html)
+    cl-resource-query](/old/Resource_Diagnostics_Using_cl-resource-query.html)
 
-  - [Monitoring System Hardware](Monitoring_System_Hardware.html)
+  - [Monitoring System Hardware](/old/Monitoring_System_Hardware.html)
     
       - [Network Switch Port LED and Status LED
-        Guidelines](Network_Switch_Port_LED_and_Status_LED_Guidelines.html)
+        Guidelines](/old/Network_Switch_Port_LED_and_Status_LED_Guidelines.html)
 
   - [Monitoring Virtual Device
-    Counters](Monitoring_Virtual_Device_Counters.html)
+    Counters](/old/Monitoring_Virtual_Device_Counters.html)
 
-  - [ASIC Monitoring](ASIC_Monitoring.html)
+  - [ASIC Monitoring](/old/ASIC_Monitoring.html)
 
   - [Understanding the cl-support Output
-    File](Understanding_the_cl-support_Output_File.html)
+    File](/old/Understanding_the_cl-support_Output_File.html)
     
-      - [Troubleshooting Log Files](Troubleshooting_Log_Files.html)
+      - [Troubleshooting Log Files](/old/Troubleshooting_Log_Files.html)
     
       - [Troubleshooting the etc
-        Directory](Troubleshooting_the_etc_Directory.html)
+        Directory](/old/Troubleshooting_the_etc_Directory.html)
 
   - [Troubleshooting Network
-    Interfaces](Troubleshooting_Network_Interfaces.html)
+    Interfaces](/old/Troubleshooting_Network_Interfaces.html)
     
       - [Monitoring Interfaces and Transceivers Using
-        ethtool](Monitoring_Interfaces_and_Transceivers_Using_ethtool.html)
+        ethtool](/old/Monitoring_Interfaces_and_Transceivers_Using_ethtool.html)
 
-  - [Network Troubleshooting](Network_Troubleshooting.html)
+  - [Network Troubleshooting](/old/Network_Troubleshooting.html)
     
       - [Using NCLU to Troubleshoot Your Network
-        Configuration](Using_NCLU_to_Troubleshoot_Your_Network_Configuration.html)
+        Configuration](/old/Using_NCLU_to_Troubleshoot_Your_Network_Configuration.html)
     
       - [Monitoring System Statistics and Network Traffic with
-        sFlow](Monitoring_System_Statistics_and_Network_Traffic_with_sFlow.html)
+        sFlow](/old/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow.html)
 
   - [Simple Network Management Protocol (SNMP)
-    Monitoring](Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html)
+    Monitoring](/old/Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html)
     
       - [Using Nutanix Prism as a Monitoring
-        Tool](Using_Nutanix_Prism_as_a_Monitoring_Tool.html)
+        Tool](/old/Using_Nutanix_Prism_as_a_Monitoring_Tool.html)
 
-  - [Monitoring Best Practices](Monitoring_Best_Practices.html)
+  - [Monitoring Best Practices](/old/Monitoring_Best_Practices.html)
 
-  - [switchd Log Message Reference](switchd_Log_Message_Reference.html)
+  - [switchd Log Message
+    Reference](/old/switchd_Log_Message_Reference.html)
 
   - [FRRouting Log Message
-    Reference](FRRouting_Log_Message_Reference.html)
+    Reference](/old/FRRouting_Log_Message_Reference.html)

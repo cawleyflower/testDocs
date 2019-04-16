@@ -3,6 +3,8 @@ title: Power over Ethernet - PoE
 author: Unknown
 weight: 75
 pageID: 8362576
+aliases:
+ - /old/Power_over_Ethernet_-_PoE.html
 ---
 # Power over Ethernet - PoE
 

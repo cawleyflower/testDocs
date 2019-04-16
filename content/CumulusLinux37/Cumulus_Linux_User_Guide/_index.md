@@ -3,6 +3,8 @@ title: Cumulus Linux User Guide
 author: Unknown
 weight: 1
 pageID: 8362527
+aliases:
+ - /old/Cumulus_Linux_User_Guide.html
 ---
 # Cumulus Linux User Guide
 
@@ -39,34 +41,35 @@ improvements:
       - [FS.com](http://FS.com) N8500-48B6C (25G Tomahawk+)
 
   - [Virtual Router Redundancy Protocol
-    (VRRP)](Virtual_Router_Redundancy_-_VRR_and_VRRP.html#src-8362691_VirtualRouterRedundancy-VRRandVRRP-VRRP)
+    (VRRP)](/old/Virtual_Router_Redundancy_-_VRR_and_VRRP.html#src-8362691_VirtualRouterRedundancy-VRRandVRRP-VRRP)
 
   - [Dynamic VRF route
-    leaking](Virtual_Routing_and_Forwarding_-_VRF.html#src-8362942_VirtualRoutingandForwarding-VRF-routeleaking)
+    leaking](/old/Virtual_Routing_and_Forwarding_-_VRF.html#src-8362942_VirtualRoutingandForwarding-VRF-routeleaking)
     is now supported for EVPN
 
-  - [802.1X Multi Domain Authentication (MDA)](802.1X_Interfaces.html)
-    is supported for phone and PCs connected to the same port
+  - [802.1X Multi Domain Authentication
+    (MDA)](/old/802.1X_Interfaces.html) is supported for phone and PCs
+    connected to the same port
 
   - [Multiple Dynamic Authorization Server
-    (DAS)](802.1X_Interfaces.html#src-8363046_id-802.1XInterfaces-CoArequests)
+    (DAS)](/old/802.1X_Interfaces.html#src-8363046_id-802.1XInterfaces-CoArequests)
     support
 
-  - [IGMP/MLD snooping](IGMP_and_MLD_Snooping.html) is supported over
-    VXLAN bridges on Broadcom switches
+  - [IGMP/MLD snooping](/old/IGMP_and_MLD_Snooping.html) is supported
+    over VXLAN bridges on Broadcom switches
 
   - NCLU commands support [MLAG
-    unnumbered](Multi-Chassis_Link_Aggregation_-_MLAG.html)
+    unnumbered](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html)
 
   - [Ability to disable FEC on Mellanox
-    switches](Switch_Port_Attributes.html#src-8363026_SwitchPortAttributes-FEC)
+    switches](/old/Switch_Port_Attributes.html#src-8363026_SwitchPortAttributes-FEC)
 
   - [Lightweight network virtualization
-    (LNV)](Lightweight_Network_Virtualization_Overview.html) has been
-    deprecated. The feature will be removed in Cumulus Linux 4.0.
+    (LNV)](/old/Lightweight_Network_Virtualization_Overview.html) has
+    been deprecated. The feature will be removed in Cumulus Linux 4.0.
     Cumulus Networks recommends you use [Ethernet virtual private
-    network (EVPN)](Ethernet_Virtual_Private_Network_-_EVPN.html) for
-    network virtualization.
+    network (EVPN)](/old/Ethernet_Virtual_Private_Network_-_EVPN.html)
+    for network virtualization.
 
 ### What's New in Cumulus Linux 3.7.3
 
@@ -94,14 +97,14 @@ improvements:
       - Penguin Arctica NX4804x (10G Broadcom Maverick)
 
   - The [EVPN duplicate address
-    detection](Ethernet_Virtual_Private_Network_-_EVPN.html#src-8362732_EthernetVirtualPrivateNetwork-EVPN-dad)
+    detection](/old/Ethernet_Virtual_Private_Network_-_EVPN.html#src-8362732_EthernetVirtualPrivateNetwork-EVPN-dad)
     freeze option lets you freeze a duplicate address permanently or for
     a certain amount of time
 
   - The [Cumulus Hyperconverged Solution
-    (HCS)](Cumulus_Hyperconverged_Solution_with_Nutanix.html) supports
-    automated integration with the Nutanix Prism Management solution and
-    the Nutanix AHV hypervisor
+    (HCS)](/old/Cumulus_Hyperconverged_Solution_with_Nutanix.html)
+    supports automated integration with the Nutanix Prism Management
+    solution and the Nutanix AHV hypervisor
 
 ### What's New in Cumulus Linux 3.7.2
 
@@ -123,24 +126,24 @@ improvements:
 
   - On Facebook Voyager, the NCLU `net show transponder` command output
     shows the [Optical Signal to Noise ratio
-    (OSNR)](Facebook_Voyager_Optical_Interfaces.html#src-8363049_FacebookVoyagerOpticalInterfaces-showTransponderStatus)
+    (OSNR)](/old/Facebook_Voyager_Optical_Interfaces.html#src-8363049_FacebookVoyagerOpticalInterfaces-showTransponderStatus)
     in the network
 
   - Support for [egress IPv6 ACL
-    rules](Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-ipv6EgressRules)
+    rules](/old/Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-ipv6EgressRules)
     on Broadcom switches
 
   - Support for [VRF route leaking on Mellanox
-    switches](Virtual_Routing_and_Forwarding_-_VRF.html#src-8362942_VirtualRoutingandForwarding-VRF-routeleaking)
+    switches](/old/Virtual_Routing_and_Forwarding_-_VRF.html#src-8362942_VirtualRoutingandForwarding-VRF-routeleaking)
 
   - [RFC 5549 support with global IPv6
-    peers](Border_Gateway_Protocol_-_BGP.html#src-8362926_BorderGatewayProtocol-BGP-rfc-5549)
+    peers](/old/Border_Gateway_Protocol_-_BGP.html#src-8362926_BorderGatewayProtocol-BGP-rfc-5549)
 
   - [EVPN duplicate address
-    detection](Ethernet_Virtual_Private_Network_-_EVPN.html#src-8362732_EthernetVirtualPrivateNetwork-EVPN-dad)
+    detection](/old/Ethernet_Virtual_Private_Network_-_EVPN.html#src-8362732_EthernetVirtualPrivateNetwork-EVPN-dad)
 
   - New TCAM profile for Mellanox switches
-    ([ip-acl-heavy](Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-MS-limits))
+    ([ip-acl-heavy](/old/Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-MS-limits))
     to support creation of 16K 3-tuple and 5-tuple IPv4 ACLs
 
 ### What's New in Cumulus Linux 3.7.1
@@ -163,15 +166,15 @@ improvements:
       - Penguin Arctica 4806xt (10G Trident 2+)
 
   - [Line side
-    loopback](Facebook_Voyager_Optical_Interfaces.html#src-8363049_FacebookVoyagerOpticalInterfaces-lineSideLoopback)
+    loopback](/old/Facebook_Voyager_Optical_Interfaces.html#src-8363049_FacebookVoyagerOpticalInterfaces-lineSideLoopback)
     and [Terminal
-    loopback](Facebook_Voyager_Optical_Interfaces.html#src-8363049_FacebookVoyagerOpticalInterfaces-terminalLoopback)
+    loopback](/old/Facebook_Voyager_Optical_Interfaces.html#src-8363049_FacebookVoyagerOpticalInterfaces-terminalLoopback)
     mode for Facebook Voyager troubleshooting
 
   - OVSDB Server High Availability (Early Access)
 
   - [RADIUS Change of Authorization (CoA)
-    requests](802.1X_Interfaces.html#src-8363046_id-802.1XInterfaces-CoArequests)
+    requests](/old/802.1X_Interfaces.html#src-8363046_id-802.1XInterfaces-CoArequests)
 
   - RADIUS AAA local fallback authentication
 
@@ -180,7 +183,7 @@ improvements:
   - EVPN enhancements
     
       - [Neighbor Discovery (ND) Extended
-        Community](Ethernet_Virtual_Private_Network_-_EVPN.html#src-8362732_EthernetVirtualPrivateNetwork-EVPN-ND_extended_community)
+        Community](/old/Ethernet_Virtual_Private_Network_-_EVPN.html#src-8362732_EthernetVirtualPrivateNetwork-EVPN-ND_extended_community)
         support
     
       - Extended mobility support
@@ -191,7 +194,7 @@ improvements:
   - New NCLU commands:
     
       - [Show the version of a
-        package](Adding_and_Updating_Packages.html#src-8362631_AddingandUpdatingPackages-versionDisplay)
+        package](/old/Adding_and_Updating_Packages.html#src-8362631_AddingandUpdatingPackages-versionDisplay)
     
       - Show the interface description (alias) for all interfaces on the
         switch
@@ -207,11 +210,10 @@ notes](https://support.cumulusnetworks.com/hc/en-us/articles/360007793174-Cumulu
 
 ### Open Source Contributions
 
-<span id="src-8362527_indexterm-817213A88880AEC13452290445FA6C2F">To
-implement various Cumulus Linux features, Cumulus Networks has forked
-various </span>software projects, like CFEngine, `Netdev` and some
-Puppet Labs packages. The forked code resides in the Cumulus Networks
-[GitHub repository](https://github.com/CumulusNetworks).
+To implement various Cumulus Linux features, Cumulus Networks has forked
+various software projects, like CFEngine, `Netdev` and some Puppet Labs
+packages. The forked code resides in the Cumulus Networks [GitHub
+repository](https://github.com/CumulusNetworks).
 
 Cumulus Networks has also developed and released new applications as
 open source. The list of open source projects is on the [open source
@@ -219,13 +221,11 @@ software](http://oss.cumulusnetworks.com/) page.
 
 ### Hardware Compatibility List
 
-<span id="src-8362527_indexterm-8276DDF95B65CCB943B2DB06106F0DD5">You
-can find the most up-to-date
-</span><span id="src-8362527_indexterm-DD8C5327E1108E16338A81BBD56EA0FC">hardware
-</span>compatibility list (HCL) [here](http://cumulusnetworks.com/hcl/).
-Use the HCL to confirm that your switch model is supported by Cumulus
-Networks. The HCL is updated regularly, listing products by port
-configuration, manufacturer, and SKU part number.
+You can find the most up-to-date hardware compatibility list (HCL)
+[here](http://cumulusnetworks.com/hcl/). Use the HCL to confirm that
+your switch model is supported by Cumulus Networks. The HCL is updated
+regularly, listing products by port configuration, manufacturer, and SKU
+part number.
 
 {{%notice tip%}}
 
@@ -238,310 +238,317 @@ searchable by customers about to file a ticket in Zendesk.
 
 {{%/notice%}}
 
-  - [Quick Start Guide](Quick_Start_Guide.html)
+  - [Quick Start Guide](/old/Quick_Start_Guide.html)
 
-  - [Installation Management](Installation_Management.html)
+  - [Installation Management](/old/Installation_Management.html)
     
       - [Managing Cumulus Linux Disk
-        Images](Managing_Cumulus_Linux_Disk_Images.html)
+        Images](/old/Managing_Cumulus_Linux_Disk_Images.html)
     
       - [Installing a New Cumulus Linux
-        Image](Installing_a_New_Cumulus_Linux_Image.html)
+        Image](/old/Installing_a_New_Cumulus_Linux_Image.html)
     
-      - [Upgrading Cumulus Linux](Upgrading_Cumulus_Linux.html)
+      - [Upgrading Cumulus Linux](/old/Upgrading_Cumulus_Linux.html)
     
-      - [Using Snapshots](Using_Snapshots.html)
+      - [Using Snapshots](/old/Using_Snapshots.html)
     
       - [Adding and Updating
-        Packages](Adding_and_Updating_Packages.html)
+        Packages](/old/Adding_and_Updating_Packages.html)
     
       - [Zero Touch Provisioning -
-        ZTP](Zero_Touch_Provisioning_-_ZTP.html)
+        ZTP](/old/Zero_Touch_Provisioning_-_ZTP.html)
 
-  - [System Configuration](System_Configuration.html)
+  - [System Configuration](/old/System_Configuration.html)
     
       - [Network Command Line Utility -
-        NCLU](Network_Command_Line_Utility_-_NCLU.html)
+        NCLU](/old/Network_Command_Line_Utility_-_NCLU.html)
     
-      - [Setting Date and Time](Setting_Date_and_Time.html)
+      - [Setting Date and Time](/old/Setting_Date_and_Time.html)
     
       - [Authentication, Authorization and
-        Accounting](Authentication,_Authorization_and_Accounting.html)
+        Accounting](/old/Authentication,_Authorization_and_Accounting.html)
         
-          - [SSH for Remote Access](SSH_for_Remote_Access.html)
+          - [SSH for Remote Access](/old/SSH_for_Remote_Access.html)
         
-          - [User Accounts](User_Accounts.html)
+          - [User Accounts](/old/User_Accounts.html)
         
           - [Using sudo to Delegate
-            Privileges](Using_sudo_to_Delegate_Privileges.html)
+            Privileges](/old/Using_sudo_to_Delegate_Privileges.html)
         
           - [LDAP Authentication and
-            Authorization](LDAP_Authentication_and_Authorization.html)
+            Authorization](/old/LDAP_Authentication_and_Authorization.html)
         
-          - [TACACS Plus](TACACS_Plus.html)
+          - [TACACS Plus](/old/TACACS_Plus.html)
         
-          - [RADIUS AAA](RADIUS_AAA.html)
+          - [RADIUS AAA](/old/RADIUS_AAA.html)
     
-      - [Netfilter - ACLs](Netfilter_-_ACLs.html)
+      - [Netfilter - ACLs](/old/Netfilter_-_ACLs.html)
         
           - [Default Cumulus Linux ACL
-            Configuration](Default_Cumulus_Linux_ACL_Configuration.html)
+            Configuration](/old/Default_Cumulus_Linux_ACL_Configuration.html)
         
           - [Filtering Learned MAC
-            Addresses](Filtering_Learned_MAC_Addresses.html)
+            Addresses](/old/Filtering_Learned_MAC_Addresses.html)
     
       - [Services and Daemons in Cumulus
-        Linux](Services_and_Daemons_in_Cumulus_Linux.html)
+        Linux](/old/Services_and_Daemons_in_Cumulus_Linux.html)
     
-      - [Configuring switchd](Configuring_switchd.html)
+      - [Configuring switchd](/old/Configuring_switchd.html)
     
-      - [Power over Ethernet - PoE](Power_over_Ethernet_-_PoE.html)
+      - [Power over Ethernet - PoE](/old/Power_over_Ethernet_-_PoE.html)
     
-      - [Configuring a Global Proxy](Configuring_a_Global_Proxy.html)
+      - [Configuring a Global
+        Proxy](/old/Configuring_a_Global_Proxy.html)
     
-      - [Copy of Netfilter - ACLs](Copy_of_Netfilter_-_ACLs.html)
+      - [Copy of Netfilter - ACLs](/old/Copy_of_Netfilter_-_ACLs.html)
     
-      - [HTTP API](HTTP_API.html)
+      - [HTTP API](/old/HTTP_API.html)
 
-  - [Layer 1 and Switch Ports](Layer_1_and_Switch_Ports.html)
+  - [Layer 1 and Switch Ports](/old/Layer_1_and_Switch_Ports.html)
     
       - [Interface Configuration and
-        Management](Interface_Configuration_and_Management.html)
+        Management](/old/Interface_Configuration_and_Management.html)
         
-          - [Switch Port Attributes](Switch_Port_Attributes.html)
+          - [Switch Port Attributes](/old/Switch_Port_Attributes.html)
     
-      - [Buffer and Queue Management](Buffer_and_Queue_Management.html)
+      - [Buffer and Queue
+        Management](/old/Buffer_and_Queue_Management.html)
         
           - [Hardware-enabled DDOS
-            Protection](Hardware-enabled_DDOS_Protection.html)
+            Protection](/old/Hardware-enabled_DDOS_Protection.html)
     
-      - [DHCP Relays](DHCP_Relays.html)
+      - [DHCP Relays](/old/DHCP_Relays.html)
     
-      - [DHCP Servers](DHCP_Servers.html)
+      - [DHCP Servers](/old/DHCP_Servers.html)
     
       - [Facebook Voyager Optical
-        Interfaces](Facebook_Voyager_Optical_Interfaces.html)
+        Interfaces](/old/Facebook_Voyager_Optical_Interfaces.html)
     
-      - [802.1X Interfaces](802.1X_Interfaces.html)
+      - [802.1X Interfaces](/old/802.1X_Interfaces.html)
     
       - [Prescriptive Topology Manager -
-        PTM](Prescriptive_Topology_Manager_-_PTM.html)
+        PTM](/old/Prescriptive_Topology_Manager_-_PTM.html)
 
-  - [Layer 2](Layer_2.html)
+  - [Layer 2](/old/Layer_2.html)
     
       - [Spanning Tree and Rapid Spanning
-        Tree](Spanning_Tree_and_Rapid_Spanning_Tree.html)
+        Tree](/old/Spanning_Tree_and_Rapid_Spanning_Tree.html)
     
       - [Link Layer Discovery
-        Protocol](Link_Layer_Discovery_Protocol.html)
+        Protocol](/old/Link_Layer_Discovery_Protocol.html)
         
-          - [Voice VLAN](Voice_VLAN.html)
+          - [Voice VLAN](/old/Voice_VLAN.html)
     
-      - [Bonding - Link Aggregation](Bonding_-_Link_Aggregation.html)
+      - [Bonding - Link
+        Aggregation](/old/Bonding_-_Link_Aggregation.html)
     
-      - [Ethernet Bridging - VLANs](Ethernet_Bridging_-_VLANs.html)
+      - [Ethernet Bridging - VLANs](/old/Ethernet_Bridging_-_VLANs.html)
         
-          - [VLAN-aware Bridge Mode](VLAN-aware_Bridge_Mode.html)
+          - [VLAN-aware Bridge Mode](/old/VLAN-aware_Bridge_Mode.html)
         
-          - [Traditional Bridge Mode](Traditional_Bridge_Mode.html)
+          - [Traditional Bridge Mode](/old/Traditional_Bridge_Mode.html)
         
-          - [VLAN Tagging](VLAN_Tagging.html)
+          - [VLAN Tagging](/old/VLAN_Tagging.html)
     
       - [Multi-Chassis Link Aggregation -
-        MLAG](Multi-Chassis_Link_Aggregation_-_MLAG.html)
+        MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html)
     
-      - [LACP Bypass](LACP_Bypass.html)
+      - [LACP Bypass](/old/LACP_Bypass.html)
     
       - [Virtual Router Redundancy - VRR and
-        VRRP](Virtual_Router_Redundancy_-_VRR_and_VRRP.html)
+        VRRP](/old/Virtual_Router_Redundancy_-_VRR_and_VRRP.html)
         
-          - [ifplugd](ifplugd.html)
+          - [ifplugd](/old/ifplugd.html)
     
-      - [IGMP and MLD Snooping](IGMP_and_MLD_Snooping.html)
+      - [IGMP and MLD Snooping](/old/IGMP_and_MLD_Snooping.html)
     
       - [Copy of Prescriptive Topology Manager -
-        PTM](Copy_of_Prescriptive_Topology_Manager_-_PTM.html)
+        PTM](/old/Copy_of_Prescriptive_Topology_Manager_-_PTM.html)
     
       - [Copy of Spanning Tree and Rapid Spanning
-        Tree](Copy_of_Spanning_Tree_and_Rapid_Spanning_Tree.html)
+        Tree](/old/Copy_of_Spanning_Tree_and_Rapid_Spanning_Tree.html)
 
-  - [Network Virtualization](Network_Virtualization.html)
+  - [Network Virtualization](/old/Network_Virtualization.html)
     
-      - [Static VXLAN Configurations](Static_VXLAN_Configurations.html)
+      - [Static VXLAN
+        Configurations](/old/Static_VXLAN_Configurations.html)
         
-          - [Static VXLAN Tunnels](Static_VXLAN_Tunnels.html)
+          - [Static VXLAN Tunnels](/old/Static_VXLAN_Tunnels.html)
         
           - [Static MAC Bindings with
-            VXLAN](Static_MAC_Bindings_with_VXLAN.html)
+            VXLAN](/old/Static_MAC_Bindings_with_VXLAN.html)
     
       - [Ethernet Virtual Private Network -
-        EVPN](Ethernet_Virtual_Private_Network_-_EVPN.html)
+        EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html)
     
       - [Lightweight Network Virtualization
-        Overview](Lightweight_Network_Virtualization_Overview.html)
+        Overview](/old/Lightweight_Network_Virtualization_Overview.html)
         
-          - [LNV Full Example](LNV_Full_Example.html)
+          - [LNV Full Example](/old/LNV_Full_Example.html)
     
-      - [VXLAN Active-Active Mode](VXLAN_Active-Active_Mode.html)
+      - [VXLAN Active-Active Mode](/old/VXLAN_Active-Active_Mode.html)
     
-      - [VXLAN Routing](VXLAN_Routing.html)
+      - [VXLAN Routing](/old/VXLAN_Routing.html)
     
-      - [VXLAN Scale](VXLAN_Scale.html)
+      - [VXLAN Scale](/old/VXLAN_Scale.html)
     
       - [Hybrid Cloud Connectivity with QinQ and
-        VXLANs](Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
+        VXLANs](/old/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
     
-      - [Troubleshooting VXLANs](Troubleshooting_VXLANs.html)
+      - [Troubleshooting VXLANs](/old/Troubleshooting_VXLANs.html)
     
-      - [Virtualization Integrations](Virtualization_Integrations.html)
+      - [Virtualization
+        Integrations](/old/Virtualization_Integrations.html)
         
           - [Integrating Hardware VTEPs with Midokura MidoNet and
-            OpenStack](Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
+            OpenStack](/old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
         
           - [Integrating Hardware VTEPs with VMware
-            NSX-V](Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
+            NSX-V](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
         
           - [Integrating Hardware VTEPs with VMware
-            NSX-MH](Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
+            NSX-MH](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
         
           - [OVSDB Server High
-            Availability](OVSDB_Server_High_Availability.html)
+            Availability](/old/OVSDB_Server_High_Availability.html)
     
       - [VXLAN Tunnel DSCP Operations
-        — DRAFT](VXLAN_Tunnel_DSCP_Operations_—%C2%A0DRAFT.html)
+        — DRAFT](/old/VXLAN_Tunnel_DSCP_Operations_—%C2%A0DRAFT.html)
     
       - [Eng Update of VXLAN
-        Hyperloop](Eng_Update_of_VXLAN_Hyperloop.html)
+        Hyperloop](/old/Eng_Update_of_VXLAN_Hyperloop.html)
     
-      - [VXLAN Active-Active](VXLAN_Active-Active.html)
+      - [VXLAN Active-Active](/old/VXLAN_Active-Active.html)
 
-  - [Layer 3](Layer_3.html)
+  - [Layer 3](/old/Layer_3.html)
     
-      - [Routing](Routing.html)
+      - [Routing](/old/Routing.html)
     
       - [Introduction to Routing
-        Protocols](Introduction_to_Routing_Protocols.html)
+        Protocols](/old/Introduction_to_Routing_Protocols.html)
     
-      - [Network Topology](Network_Topology.html)
+      - [Network Topology](/old/Network_Topology.html)
     
-      - [FRRouting Overview](FRRouting_Overview.html)
+      - [FRRouting Overview](/old/FRRouting_Overview.html)
         
           - [Upgrading from Quagga to
-            FRRouting](Upgrading_from_Quagga_to_FRRouting.html)
+            FRRouting](/old/Upgrading_from_Quagga_to_FRRouting.html)
     
-      - [Configuring FRRouting](Configuring_FRRouting.html)
+      - [Configuring FRRouting](/old/Configuring_FRRouting.html)
         
           - [Comparing NCLU and vtysh
-            Commands](Comparing_NCLU_and_vtysh_Commands.html)
+            Commands](/old/Comparing_NCLU_and_vtysh_Commands.html)
     
       - [Address Resolution Protocol -
-        ARP](Address_Resolution_Protocol_-_ARP.html)
+        ARP](/old/Address_Resolution_Protocol_-_ARP.html)
     
       - [Open Shortest Path First -
-        OSPF](Open_Shortest_Path_First_-_OSPF.html)
+        OSPF](/old/Open_Shortest_Path_First_-_OSPF.html)
     
       - [Open Shortest Path First v3 -
-        OSPFv3](Open_Shortest_Path_First_v3_-_OSPFv3.html)
+        OSPFv3](/old/Open_Shortest_Path_First_v3_-_OSPFv3.html)
     
       - [Border Gateway Protocol -
-        BGP](Border_Gateway_Protocol_-_BGP.html)
+        BGP](/old/Border_Gateway_Protocol_-_BGP.html)
     
-      - [Policy-based Routing](Policy-based_Routing.html)
+      - [Policy-based Routing](/old/Policy-based_Routing.html)
     
       - [Bidirectional Forwarding Detection -
-        BFD](Bidirectional_Forwarding_Detection_-_BFD.html)
+        BFD](/old/Bidirectional_Forwarding_Detection_-_BFD.html)
     
       - [Equal Cost Multipath Load Sharing - Hardware
-        ECMP](Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html)
+        ECMP](/old/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html)
     
-      - [Redistribute Neighbor](Redistribute_Neighbor.html)
+      - [Redistribute Neighbor](/old/Redistribute_Neighbor.html)
     
       - [Virtual Routing and Forwarding -
-        VRF](Virtual_Routing_and_Forwarding_-_VRF.html)
+        VRF](/old/Virtual_Routing_and_Forwarding_-_VRF.html)
     
-      - [Management VRF](Management_VRF.html)
+      - [Management VRF](/old/Management_VRF.html)
     
-      - [GRE Tunneling](GRE_Tunneling.html)
+      - [GRE Tunneling](/old/GRE_Tunneling.html)
     
       - [Protocol Independent Multicast -
-        PIM](Protocol_Independent_Multicast_-_PIM.html)
+        PIM](/old/Protocol_Independent_Multicast_-_PIM.html)
     
-      - [Segment Routing](Segment_Routing.html)
+      - [Segment Routing](/old/Segment_Routing.html)
 
   - [Monitoring and
-    Troubleshooting](Monitoring_and_Troubleshooting.html)
+    Troubleshooting](/old/Monitoring_and_Troubleshooting.html)
     
       - [Single User Mode - Boot
-        Recovery](Single_User_Mode_-_Boot_Recovery.html)
+        Recovery](/old/Single_User_Mode_-_Boot_Recovery.html)
     
       - [Resource Diagnostics Using
-        cl-resource-query](Resource_Diagnostics_Using_cl-resource-query.html)
+        cl-resource-query](/old/Resource_Diagnostics_Using_cl-resource-query.html)
     
-      - [Monitoring System Hardware](Monitoring_System_Hardware.html)
+      - [Monitoring System
+        Hardware](/old/Monitoring_System_Hardware.html)
         
           - [Network Switch Port LED and Status LED
-            Guidelines](Network_Switch_Port_LED_and_Status_LED_Guidelines.html)
+            Guidelines](/old/Network_Switch_Port_LED_and_Status_LED_Guidelines.html)
     
       - [Monitoring Virtual Device
-        Counters](Monitoring_Virtual_Device_Counters.html)
+        Counters](/old/Monitoring_Virtual_Device_Counters.html)
     
-      - [ASIC Monitoring](ASIC_Monitoring.html)
+      - [ASIC Monitoring](/old/ASIC_Monitoring.html)
     
       - [Understanding the cl-support Output
-        File](Understanding_the_cl-support_Output_File.html)
+        File](/old/Understanding_the_cl-support_Output_File.html)
         
-          - [Troubleshooting Log Files](Troubleshooting_Log_Files.html)
+          - [Troubleshooting Log
+            Files](/old/Troubleshooting_Log_Files.html)
         
           - [Troubleshooting the etc
-            Directory](Troubleshooting_the_etc_Directory.html)
+            Directory](/old/Troubleshooting_the_etc_Directory.html)
     
       - [Troubleshooting Network
-        Interfaces](Troubleshooting_Network_Interfaces.html)
+        Interfaces](/old/Troubleshooting_Network_Interfaces.html)
         
           - [Monitoring Interfaces and Transceivers Using
-            ethtool](Monitoring_Interfaces_and_Transceivers_Using_ethtool.html)
+            ethtool](/old/Monitoring_Interfaces_and_Transceivers_Using_ethtool.html)
     
-      - [Network Troubleshooting](Network_Troubleshooting.html)
+      - [Network Troubleshooting](/old/Network_Troubleshooting.html)
         
           - [Using NCLU to Troubleshoot Your Network
-            Configuration](Using_NCLU_to_Troubleshoot_Your_Network_Configuration.html)
+            Configuration](/old/Using_NCLU_to_Troubleshoot_Your_Network_Configuration.html)
         
           - [Monitoring System Statistics and Network Traffic with
-            sFlow](Monitoring_System_Statistics_and_Network_Traffic_with_sFlow.html)
+            sFlow](/old/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow.html)
     
       - [Simple Network Management Protocol (SNMP)
-        Monitoring](Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html)
+        Monitoring](/old/Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html)
         
           - [Using Nutanix Prism as a Monitoring
-            Tool](Using_Nutanix_Prism_as_a_Monitoring_Tool.html)
+            Tool](/old/Using_Nutanix_Prism_as_a_Monitoring_Tool.html)
     
-      - [Monitoring Best Practices](Monitoring_Best_Practices.html)
+      - [Monitoring Best Practices](/old/Monitoring_Best_Practices.html)
     
       - [switchd Log Message
-        Reference](switchd_Log_Message_Reference.html)
+        Reference](/old/switchd_Log_Message_Reference.html)
     
       - [FRRouting Log Message
-        Reference](FRRouting_Log_Message_Reference.html)
+        Reference](/old/FRRouting_Log_Message_Reference.html)
 
-  - [Network Solutions](Network_Solutions.html)
+  - [Network Solutions](/old/Network_Solutions.html)
     
       - [Data Center Host to ToR
-        Architecture](Data_Center_Host_to_ToR_Architecture.html)
+        Architecture](/old/Data_Center_Host_to_ToR_Architecture.html)
     
       - [Cumulus Networks Services
-        Demos](Cumulus_Networks_Services_Demos.html)
+        Demos](/old/Cumulus_Networks_Services_Demos.html)
     
-      - [Docker on Cumulus Linux](Docker_on_Cumulus_Linux.html)
+      - [Docker on Cumulus Linux](/old/Docker_on_Cumulus_Linux.html)
     
       - [OpenStack Neutron ML2 and Cumulus
-        Linux](OpenStack_Neutron_ML2_and_Cumulus_Linux.html)
+        Linux](/old/OpenStack_Neutron_ML2_and_Cumulus_Linux.html)
     
-      - [Anycast Design Guide](Anycast_Design_Guide.html)
+      - [Anycast Design Guide](/old/Anycast_Design_Guide.html)
     
       - [RDMA over Converged Ethernet -
-        RoCE](RDMA_over_Converged_Ethernet_-_RoCE.html)
+        RoCE](/old/RDMA_over_Converged_Ethernet_-_RoCE.html)
     
       - [Cumulus Hyperconverged Solution with
-        Nutanix](Cumulus_Hyperconverged_Solution_with_Nutanix.html)
+        Nutanix](/old/Cumulus_Hyperconverged_Solution_with_Nutanix.html)
 
-  - [Cumulus Linux Index](Cumulus_Linux_Index.html)
+  - [Cumulus Linux Index](/old/Cumulus_Linux_Index.html)

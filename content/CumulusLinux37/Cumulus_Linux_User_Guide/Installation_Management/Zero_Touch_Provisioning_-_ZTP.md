@@ -3,16 +3,15 @@ title: Zero Touch Provisioning - ZTP
 author: Unknown
 weight: 51
 pageID: 8362632
+aliases:
+ - /old/Zero_Touch_Provisioning_-_ZTP.html
 ---
 # Zero Touch Provisioning - ZTP
 
-*<span id="src-8362632_indexterm-69F8D9757C0D4EF07DA8F1CDF8B2DF42">Zero
-</span><span id="src-8362632_indexterm-D0A71535D658E2C5049285BA615F2B70">touch
-</span><span id="src-8362632_indexterm-21DF3FB33FB50D480C40F3DAFB32EAF6">provisioning
-</span>*(ZTP) enables you to deploy network devices quickly in
-large-scale environments. On first boot, Cumulus Linux invokes ZTP,
-which executes the provisioning automation used to deploy the device for
-its intended role in the network.
+*Zero touch provisioning* (ZTP) enables you to deploy network devices
+quickly in large-scale environments. On first boot, Cumulus Linux
+invokes ZTP, which executes the provisioning automation used to deploy
+the device for its intended role in the network.
 
 The provisioning framework allows for a one-time, user-provided script
 to be executed. You can develop this script using a variety of
@@ -84,11 +83,9 @@ external large USB hard drive.
 
 If the `ztp` process does not discover a local script, it tries once to
 locate an inserted but unmounted USB drive. If it discovers one, it
-begins the ZTP
-process.
+begins the ZTP process.
 
-<span id="src-8362632_indexterm-BB6AF504F947BB22C92A3A96086A4E09">Cumulus
-Linux supports the use of a FAT32, FAT16, or VFAT-formatted </span>USB
+Cumulus Linux supports the use of a FAT32, FAT16, or VFAT-formatted USB
 drive as an installation source for ZTP scripts. You must plug in the
 USB drive **before** you power up the switch.
 
@@ -114,7 +111,7 @@ Follow these steps to perform zero touch provisioning using a USB drive:
 
 3.  The contents of the script are parsed to ensure it contains the
     `CUMULUS-AUTOPROVISIONING` flag (see [example
-    scripts](#src-8362632_ZeroTouchProvisioning-ZTP-example_scripts)).
+    scripts](/old/#src-8362632_ZeroTouchProvisioning-ZTP-example_scripts)).
 
 {{%notice note%}}
 
@@ -149,12 +146,12 @@ The zero touch provisioning process over DHCP follows these steps:
 
 4.  The zero touch provisioning process requests the contents of the
     script from the URL, sending additional [HTTP
-    headers](#src-8362632_ZeroTouchProvisioning-ZTP-http_headers)
+    headers](/old/#src-8362632_ZeroTouchProvisioning-ZTP-http_headers)
     containing details about the switch.
 
 5.  The contents of the script are parsed to ensure it contains the
     `CUMULUS-AUTOPROVISIONING` flag (see [example
-    scripts](#src-8362632_ZeroTouchProvisioning-ZTP-example_scripts)).
+    scripts](/old/#src-8362632_ZeroTouchProvisioning-ZTP-example_scripts)).
 
 6.  If provisioning is necessary, the script executes locally on the
     switch with root privileges.

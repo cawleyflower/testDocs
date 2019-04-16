@@ -3,6 +3,8 @@ title: DHCP Relays
 author: Unknown
 weight: 97
 pageID: 8363036
+aliases:
+ - /old/DHCP_Relays.html
 ---
 # DHCP Relays
 
@@ -26,7 +28,7 @@ services.
 ## Configure IPv4 DHCP Relays
 
 Configure `isc-dhcp-relay` using
-[NCLU](Network_Command_Line_Utility_-_NCLU.html), specifying the IP
+[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html), specifying the IP
 addresses to each DHCP server and the interfaces that are used as the
 uplinks.
 

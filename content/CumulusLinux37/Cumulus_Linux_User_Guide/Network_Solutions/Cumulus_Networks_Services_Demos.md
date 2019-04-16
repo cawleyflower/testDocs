@@ -3,6 +3,8 @@ title: Cumulus Networks Services Demos
 author: Unknown
 weight: 263
 pageID: 8362987
+aliases:
+ - /old/Cumulus_Networks_Services_Demos.html
 ---
 # Cumulus Networks Services Demos
 
@@ -17,8 +19,8 @@ code and simulate failure scenarios.
 
 The Cumulus Networks *reference topology* includes cabling (in DOT
 format for dual use with
-[PTM](Prescriptive_Topology_Manager_-_PTM.html)), MAC addressing, IP
-addressing, switches and servers. This topology is blessed by the
+[PTM](/old/Prescriptive_Topology_Manager_-_PTM.html)), MAC addressing,
+IP addressing, switches and servers. This topology is blessed by the
 Professional Services Team at Cumulus Networks to fit a majority of
 designs seen in the
 field.

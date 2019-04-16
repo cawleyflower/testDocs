@@ -3,22 +3,14 @@ title: Resource Diagnostics Using cl-resource-query
 author: Unknown
 weight: 229
 pageID: 8362593
+aliases:
+ - /old/Resource_Diagnostics_Using_cl-resource-query.html
 ---
 # Resource Diagnostics Using cl-resource-query
 
-<span id="src-8362593_indexterm-E43D4E020D0BC7517297975C29A3578C">You
-can use the
-</span>`cl-resource-query`<span id="src-8362593_indexterm-D4EBE5FBA89BDC587585A11D435C8046">
-command
-to</span><span id="src-8362593_indexterm-5E96386EF7A2E291ADAEA2B24E98FE3F">
-retrieve information about
-</span><span id="src-8362593_indexterm-A14A82F658B2A476CE03434A15A6F623">host
-entries,
-</span><span id="src-8362593_indexterm-37AA5B06922CDC89A41BB31EAA8F93C0">MAC
-entries, layer 2 and layer 3
-</span><span id="src-8362593_indexterm-B9118142303C54511F188C79CC54C7C5">routes,
-and
-</span>[ECMP](Network_Topology.html#src-8362915_NetworkTopology-load_balancing)
+You can use the `cl-resource-query` command to retrieve information
+about host entries, MAC entries, layer 2 and layer 3 routes, and
+[ECMP](/old/Network_Topology.html#src-8362915_NetworkTopology-load_balancing)
 routes that are in use. Because Cumulus Linux synchronizes routes
 between the kernel and the switching silicon, if the required resource
 pools in hardware fill up, new kernel routes can cause existing routes
@@ -130,7 +122,7 @@ ACL L4 port range checkers:             2,   8% of maximum value     24
 Ingress ACL and Egress ACL entries show the counts in single wide (*not*
 double-wide). For information about ACL entries, see [Estimate the
 Number of ACL
-Rules](Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-estimate-rules).
+Rules](/old/Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-estimate-rules).
 
 {{%/notice%}}
 

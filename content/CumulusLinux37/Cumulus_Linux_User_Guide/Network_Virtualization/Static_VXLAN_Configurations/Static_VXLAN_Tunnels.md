@@ -3,6 +3,8 @@ title: Static VXLAN Tunnels
 author: Unknown
 weight: 385
 pageID: 8362793
+aliases:
+ - /old/Static_VXLAN_Tunnels.html
 ---
 # Static VXLAN Tunnels
 
@@ -10,13 +12,13 @@ In VXLAN-based networks, there are a range of complexities and
 challenges in determining the destination *virtual tunnel endpoints*
 (VTEPs) for any given VXLAN. At scale, various solutions, including
 [Lightweight Network
-Virtualization](Lightweight_Network_Virtualization_Overview.html) (LNV),
-controller-based options like [Midokura
-MidoNet](Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
-or [VMware NSX](Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html) and
-even new standards like
-[EVPN](Ethernet_Virtual_Private_Network_-_EVPN.html) are attempts to
-address these complexities, however do retain their own complexities.
+Virtualization](/old/Lightweight_Network_Virtualization_Overview.html)
+(LNV), controller-based options like [Midokura
+MidoNet](/old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
+or [VMware NSX](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
+and even new standards like
+[EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html) are attempts
+to address these complexities, however do retain their own complexities.
 
 Enter *static VXLAN tunnels*, which simply serve to connect two VTEPs in
 a given environment. Static VXLAN tunnels are the simplest deployment

@@ -3,6 +3,8 @@ title: Eng Update of VXLAN Hyperloop
 author: Unknown
 weight: 167
 pageID: 8362882
+aliases:
+ - /old/Eng_Update_of_VXLAN_Hyperloop.html
 ---
 # Eng Update of VXLAN Hyperloop
 
@@ -25,7 +27,8 @@ determine which ASIC is running on the switch.
 **This limitation does not exist in some ASICs.** For example, the
 Trident II+ provides the [RIOT (Routing In/Out of
 Tunnels)](https://www.broadcom.com/press/release.php?id=s907324)
-feature; see [VXLAN Routing](VXLAN_Routing.html) for more information.
+feature; see [VXLAN Routing](/old/VXLAN_Routing.html) for more
+information.
 
 ## Requirements
 
@@ -42,12 +45,12 @@ feature; see [VXLAN Routing](VXLAN_Routing.html) for more information.
 
   - VXLAN hyperloop is supported on Cumulus Linux 3.2.1 and later. Make
     sure to [upgrade to the latest
-    version](Upgrading_Cumulus_Linux.html) of Cumulus Linux.
+    version](/old/Upgrading_Cumulus_Linux.html) of Cumulus Linux.
 
   - If you are using
-    [EVPN](Ethernet_Virtual_Private_Network_-_EVPN.html), you must be
-    running FRRouting version eau8. Use the `dpkg -l` command to check
-    the FRRouting version:
+    [EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html), you must
+    be running FRRouting version eau8. Use the `dpkg -l` command to
+    check the FRRouting version:
     
     ``` 
                        
@@ -64,7 +67,7 @@ feature; see [VXLAN Routing](VXLAN_Routing.html) for more information.
     
     If you are not running the correct version of FRRouting for EVPN,
     [follow these
-    directions](Ethernet_Virtual_Private_Network_-_EVPN.html) to
+    directions](/old/Ethernet_Virtual_Private_Network_-_EVPN.html) to
     upgrade.
 
 {{%notice note%}}
@@ -237,7 +240,7 @@ specific ASIC type.
 
 Before you follow these troubleshooting steps, make sure your switch
 meets the [requirements specified
-above](#src-8362882_EngUpdateofVXLANHyperloop-reqs).
+above](/old/#src-8362882_EngUpdateofVXLANHyperloop-reqs).
 
 ### Are HER (Head End Replication) entries being programmed into the bridge fdb table?
 
@@ -263,7 +266,7 @@ cumulus@leaf03:mgmt-vrf:~$ bridge fdb show | grep 00:00:00:00:00:00
     
 ```
 
-or use [NCLU](Comparing_NCLU_and_vtysh_Commands.html):
+or use [NCLU](/old/Comparing_NCLU_and_vtysh_Commands.html):
 
 ``` 
                    
@@ -298,8 +301,8 @@ untagged  bridge    vni-50       d6:df:b4:85:4d:55                permanent     
 If you are not seeing HER entries, make sure that:
 
   - You are using either
-    [LNV](Lightweight_Network_Virtualization_Overview.html) **OR** EVPN.
-    You cannot use both at the same time.
+    [LNV](/old/Lightweight_Network_Virtualization_Overview.html) **OR**
+    EVPN. You cannot use both at the same time.
 
   - You are not using the reserved VLAN range; the default is 3000-3999.
     This range is stored in the `resv_vlan_range` variable in the
@@ -370,5 +373,5 @@ it is connected to itself.
 ### Is the VRR MAC address unique per subnet?
 
 Make sure that [VRR is configured
-correctly](Virtual_Router_Redundancy_-_VRR_and_VRRP.html) and that each
-MAC address is unique per VLAN.
+correctly](/old/Virtual_Router_Redundancy_-_VRR_and_VRRP.html) and that
+each MAC address is unique per VLAN.

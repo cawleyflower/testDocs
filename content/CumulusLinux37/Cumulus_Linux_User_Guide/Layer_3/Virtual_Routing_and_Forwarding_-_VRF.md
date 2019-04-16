@@ -3,6 +3,8 @@ title: Virtual Routing and Forwarding - VRF
 author: Unknown
 weight: 207
 pageID: 8362942
+aliases:
+ - /old/Virtual_Routing_and_Forwarding_-_VRF.html
 ---
 # Virtual Routing and Forwarding - VRF
 
@@ -41,14 +43,14 @@ characteristics:
     using `cmsg`. By default, applications on the switch run against the
     default VRF. Services started by `systemd` run in the default VRF
     unless the VRF instance is used. If [management
-    VRF](Management_VRF.html) is enabled, logins to the switch default
-    to the management VRF. This is a convenience for users to not have
-    to specify management VRF for each command.
+    VRF](/old/Management_VRF.html) is enabled, logins to the switch
+    default to the management VRF. This is a convenience for users to
+    not have to specify management VRF for each command.
 
   - Listen sockets used by services are VRF-global by default unless the
     application is configured to use a more limited scope — for example,
     read about [services in the management
-    VRF](Management_VRF.html#src-8362940_ManagementVRF-services).
+    VRF](/old/Management_VRF.html#src-8362940_ManagementVRF-services).
     Connected sockets (like TCP) are then bound to the VRF domain in
     which the connection originates. The kernel provides a sysctl that
     allows a single instance to accept connections over all VRFs. For
@@ -79,8 +81,9 @@ table.
 
 Each routing table is called a *VRF table*, and has its own table ID.
 You configure VRF using
-[NCLU](Network_Command_Line_Utility_-_NCLU.html), then place the layer 3
-interface in the VRF. You can have a maximum of 255 VRFs on a switch.
+[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html), then place the
+layer 3 interface in the VRF. You can have a maximum of 255 VRFs on a
+switch.
 
 When you configure a VRF, you follow a similar process to other network
 interfaces. Keep in mind the following for a VRF table:
@@ -94,7 +97,7 @@ interfaces. Keep in mind the following for a VRF table:
 
   - Names for VRF tables can be up to 15 characters. However, you
     **cannot** use the name *mgmt*, as this name can **only** be used
-    for [management VRF](Management_VRF.html).
+    for [management VRF](/old/Management_VRF.html).
 
 To configure a VRF, run:
 
@@ -129,9 +132,8 @@ iface rocket
 Instead of having Cumulus Linux assign a table ID for the VRF table, you
 can specify your own table ID in the configuration. The table ID to name
 mapping is saved in `/etc/iproute2/rt_tables.d/` for name-based
-references. So instead of using the
-`auto`<span id="src-8362942_indexterm-984D3A9ED4D7C92BCAA350CB10AFD0CB">
-option above, specify the </span>table ID like this:
+references. So instead of using the `auto` option above, specify the
+table ID like this:
 
 ``` 
                    
@@ -273,8 +275,8 @@ is VRF global. `systemd`-based services are stopped when the VRF is
 deleted and started when the VRF is created. For example, when you
 restart networking or run an `ifdown`/`ifup` sequence — as mentioned
 above. The [management VRF
-chapter](Management_VRF.html#src-8362940_ManagementVRF-services) details
-how to do this.
+chapter](/old/Management_VRF.html#src-8362940_ManagementVRF-services)
+details how to do this.
 
 In Cumulus Linux, the following services work with VRF instances:
 
@@ -363,14 +365,14 @@ of static route leaking. Dynamic route leaking is easier to configure,
 easier to maintain (static route leaking configuration requires changes
 when you want to leak new routes), and supports route maps for better
 control. See [Configure Dynamic Route
-Leaking](#src-8362942_VirtualRoutingandForwarding-VRF-ConfigureDynamicRouteLeaking).
+Leaking](/old/#src-8362942_VirtualRoutingandForwarding-VRF-ConfigureDynamicRouteLeaking).
 
 {{%/notice%}}
 
 To configure static route leaking in a non-EVPN configuration, follow
 the steps below. To configure static route leaking with EVPN, see
 [Configure Static Route Leaking with
-EVPN](#src-8362942_VirtualRoutingandForwarding-VRF-ConfigureStaticRouteLeakingwithEVPN).
+EVPN](/old/#src-8362942_VirtualRoutingandForwarding-VRF-ConfigureStaticRouteLeakingwithEVPN).
 
 1.  <span id="src-8362942_VirtualRoutingandForwarding-VRF-enable_route_leaking"></span>In
     the `/etc/cumulus/switchd.conf` file, change the
@@ -432,7 +434,7 @@ To configure static route leaking with EVPN symmetric
 
 1.  <span id="src-8362942_VirtualRoutingandForwarding-VRF-enable_route_leaking"></span>Enable
     VRF route leaking, as shown in step 1 of
-    [configure-static-routing](#src-8362942_VirtualRoutingandForwarding-VRF-configure-static-routing)
+    [configure-static-routing](/old/#src-8362942_VirtualRoutingandForwarding-VRF-configure-static-routing)
     above.
 
 2.  Configure static route leaking for EVPN. The following commands
@@ -669,15 +671,15 @@ Do not use the kernel commands; they are no longer supported and might
 ## FRRouting Operation in a VRF
 
 In Cumulus Linux 3.5 and later,
-[BGP](Border_Gateway_Protocol_-_BGP.html),
-[OSPFv2](Open_Shortest_Path_First_-_OSPF.html) and [static
-routing](Routing.html) (IPv4 and IPv6) are supported within a VRF
+[BGP](/old/Border_Gateway_Protocol_-_BGP.html),
+[OSPFv2](/old/Open_Shortest_Path_First_-_OSPF.html) and [static
+routing](/old/Routing.html) (IPv4 and IPv6) are supported within a VRF
 context. Various FRRouting routing constructs, such as routing tables,
 nexthops, router-id, and related processing are also VRF-aware.
 
-[FRRouting](FRRouting_Overview.html) learns of VRFs provisioned on the
-system as well as interface attachment to a VRF through notifications
-from the kernel.
+[FRRouting](/old/FRRouting_Overview.html) learns of VRFs provisioned on
+the system as well as interface attachment to a VRF through
+notifications from the kernel.
 
 You can assign switch ports to each VRF table with an interface-level
 configuration, and BGP instances can be assigned to the table with a BGP
@@ -690,9 +692,9 @@ overlapping address spaces in different VRFs. Each VRF can have its own
 parameters, such as address families and redistribution. Incoming
 connections rely on the Linux kernel for VRF-global sockets. BGP
 neighbors can be tracked using
-[BFD](Bidirectional_Forwarding_Detection_-_BFD.html), both for single
-and multiple hops. You can configure multiple BGP instances, associating
-each with a VRF.
+[BFD](/old/Bidirectional_Forwarding_Detection_-_BFD.html), both for
+single and multiple hops. You can configure multiple BGP instances,
+associating each with a VRF.
 
 A VRF-aware OSPFv2 configuration also supports numbered and unnumbered
 interfaces. Supported layer 3 interfaces include SVIs, sub-interfaces
@@ -700,7 +702,7 @@ and physical interfaces. The VRF supports types 1 through 5 (ABR/ASBR –
 external LSAs) and types 9 through 11 (opaque LSAs) link state
 advertisements, redistributing other routing protocols, connected and
 static routes, and route maps. As with BGP, you can track OSPF neighbors
-with [BFD](Bidirectional_Forwarding_Detection_-_BFD.html).
+with [BFD](/old/Bidirectional_Forwarding_Detection_-_BFD.html).
 
 {{%notice note%}}
 
@@ -730,7 +732,7 @@ FRRouting too, but they become active only when configured with NCLU.
     for this configuration to be accepted — either already defined
     through `/etc/network/interfaces` or pre-provisioned in FRRouting.
     If you want to leak a static route in a VRF, see the [note
-    above](#src-8362942_VirtualRoutingandForwarding-VRF-leakstatic).
+    above](/old/#src-8362942_VirtualRoutingandForwarding-VRF-leakstatic).
 
 ### Example BGP and OSPF Configurations
 
@@ -1365,8 +1367,8 @@ output.
 ## BGP Unnumbered Interfaces with VRF
 
 [BGP unnumbered interface
-configurations](Border_Gateway_Protocol_-_BGP.html) are supported with
-VRF. In BGP unnumbered, there are no addresses on any interface.
+configurations](/old/Border_Gateway_Protocol_-_BGP.html) are supported
+with VRF. In BGP unnumbered, there are no addresses on any interface.
 However, debugging tools like `traceroute` need at least a single IP
 address per node as the node's source IP address. Typically, this
 address was assigned to the loopback device. With VRF, you need a
@@ -1622,7 +1624,7 @@ or<br />
 <code>cumulus@switch:~$ sudo systemctl status dhcpd@rocket.service</code></p></li>
 </ol>
 <p>{{%notice tip%}}</p>
-<p>You can create this configuration using the <code>vrf</code> command (<a href="#src-8362942_VirtualRoutingandForwarding-VRF-exec">see above</a> for more details):</p>
+<p>You can create this configuration using the <code>vrf</code> command (<a href="/old/#src-8362942_VirtualRoutingandForwarding-VRF-exec">see above</a> for more details):</p>
 <pre><code>                   
 cumulus@switch:~$ sudo vrf task exec rocket /usr/sbin/dhcpd -f -q -cf /
     /etc/dhcp/dhcpd-rocket.conf -pf /var/run/dhcpd-rocket.pid swp2
@@ -1661,7 +1663,7 @@ or<br />
 <code>cumulus@switch:~$ sudo systemctl status dhcpd6@turtle.service</code></p></li>
 </ol>
 <p>{{%notice tip%}}</p>
-<p>You can create this configuration using the <code>vrf</code> command (<a href="#src-8362942_VirtualRoutingandForwarding-VRF-exe">see above</a> for more details):</p>
+<p>You can create this configuration using the <code>vrf</code> command (<a href="/old/#src-8362942_VirtualRoutingandForwarding-VRF-exe">see above</a> for more details):</p>
 <pre><code>                   
 cumulus@switch:~$ sudo vrf task exec turtle dhcpd -6 -q -cf / 
     /etc/dhcp/dhcpd6-turtle.conf -pf /var/run/dhcpd6-turtle.pid swp3
@@ -1702,7 +1704,7 @@ or<br />
 <code>cumulus@switch:~$ sudo systemctl status dhcrelay@rocket.service</code></p></li>
 </ol>
 <p>{{%notice tip%}}</p>
-<p>You can create this configuration using the <code>vrf</code> command (<a href="#src-8362942_VirtualRoutingandForwarding-VRF-exec">see above</a> for more details):</p>
+<p>You can create this configuration using the <code>vrf</code> command (<a href="/old/#src-8362942_VirtualRoutingandForwarding-VRF-exec">see above</a> for more details):</p>
 <pre><code>                   
 cumulus@switch:~$ sudo vrf task exec rocket /usr/sbin/dhcrelay -d -q -i /
     swp2s2 -i swp2s3 102.0.0.2
@@ -1741,7 +1743,7 @@ or<br />
 <code>cumulus@switch:~$ sudo systemctl status dhcrelay6@turtle.service</code></p></li>
 </ol>
 <p>{{%notice tip%}}</p>
-<p>You can create this configuration using the <code>vrf</code> command (<a href="#src-8362942_VirtualRoutingandForwarding-VRF-ex">see above</a> for more details):</p>
+<p>You can create this configuration using the <code>vrf</code> command (<a href="/old/#src-8362942_VirtualRoutingandForwarding-VRF-ex">see above</a> for more details):</p>
 <pre><code>                   
 cumulus@switch:~$ sudo vrf task exec turtle /usr/sbin/dhcrelay -d -q -6 -l /
     swp18s0 -u swp18s1 -pf /var/run/dhcrelay6@turtle.pid
@@ -1792,5 +1794,5 @@ cumulus@switch:~$ sudo traceroute -i turtle
     BGP.
 
   - You cannot configure [EVPN address
-    families](Ethernet_Virtual_Private_Network_-_EVPN.html) within a
-    VRF.
+    families](/old/Ethernet_Virtual_Private_Network_-_EVPN.html) within
+    a VRF.

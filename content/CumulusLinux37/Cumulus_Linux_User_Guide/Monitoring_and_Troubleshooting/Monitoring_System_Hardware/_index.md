@@ -3,11 +3,12 @@ title: Monitoring System Hardware
 author: Unknown
 weight: 231
 pageID: 8362594
+aliases:
+ - /old/Monitoring_System_Hardware.html
 ---
 # Monitoring System Hardware
 
-<span id="src-8362594_indexterm-72D435EA4CB122E5145ECF5B9702A20A">You
-monitor system </span>hardware in these ways,
+You monitor system hardware in these ways,
     using:
 
   - `decode-syseeprom`
@@ -16,16 +17,15 @@ monitor system </span>hardware in these ways,
 
   - `smond`
 
-  - [Net-SNMP](Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html)
+  - [Net-SNMP](/old/Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html)
 
   - watchdog
 
 ## Monitor Hardware Using decode-syseeprom
 
-<span id="src-8362594_indexterm-A4EAF661904CE17A7513C1229597E7DD">The
-</span>`decode-syseeprom` command enables you to retrieve information
-about the switch's EEPROM. If the EEPROM is writable, you can set values
-on the EEPROM.
+The `decode-syseeprom` command enables you to retrieve information about
+the switch's EEPROM. If the EEPROM is writable, you can set values on
+the EEPROM.
 
 For example:
 
@@ -74,19 +74,15 @@ Usage: `/usr/cumulus/bin/decode-syseeprom [-a][-r][-s
 
 ### Related Commands
 
-<span id="src-8362594_indexterm-CA50F968284A6C6948CD278A7221207D">You
-can also use the </span>`dmidecode` command to retrieve hardware
+You can also use the `dmidecode` command to retrieve hardware
 configuration information that’s been populated in the BIOS.
 
-You can use
-`apt-get`<span id="src-8362594_indexterm-9BB4DC8939CDD263BCDA5A5EADDF53AA">
-to install the </span>`lshw` program on the switch, which also retrieves
-hardware configuration information.
+You can use `apt-get` to install the `lshw` program on the switch, which
+also retrieves hardware configuration information.
 
 ## Monitor Hardware Using sensors
 
-<span id="src-8362594_indexterm-77CF22362C429A25A371F48EABCE26D5">The
-</span>`sensors` command provides a method for monitoring the health of
+The `sensors` command provides a method for monitoring the health of
 your switch hardware, such as power, temperature and fan speeds. This
 command executes [lm-sensors](https://en.wikipedia.org/wiki/Lm_sensors).
 
@@ -163,21 +159,19 @@ printed. Example chip names include:
 ## Monitor Switch Hardware Using SNMP
 
 The Net-SNMP documentation is discussed
-[here](Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html).
+[here](/old/Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html).
 
 ## Monitor System Units Using smond
 
-<span id="src-8362594_indexterm-E3DEC488E132B52A1885B1ACDD265205">The
-</span>`smond` daemon monitors system units like power supply and fan,
+The `smond` daemon monitors system units like power supply and fan,
 updates their corresponding LEDs, and logs the change in the state.
 Changes in system unit state are detected via the `cpld` registers.
 `smond` utilizes these registers to read all sources, which impacts the
 health of the system unit, determines the unit's health, and updates the
 system LEDs.
 
-Use ` smonctl
- `<span id="src-8362594_indexterm-33C267466AE340214C8348AE62B581DD">to
-</span>display sensor information for the various system units:
+Use ` smonctl  `to display sensor information for the various system
+units:
 
 ``` 
                    
@@ -251,21 +245,18 @@ Usage: `smonctl [OPTION]...
 
 </div>
 
-For more information, read `man smond` and `man
-smonctl`.
+For more information, read `man smond` and `man smonctl`.
 
 ## Keep the Switch Alive Using the Hardware Watchdog
 
-<span id="src-8362594_indexterm-6ADE7676780A49FD9F0C1594385DC973">Cumulus
-</span><span id="src-8362594_indexterm-EC79CDE1590B275D6845B42F97732834">Linux
-</span>includes a simplified version of the ` wd_keepalive(8)  `daemon
-from the standard ` watchdog  `Debian package. `wd_keepalive` writes to
-a file called `/dev/watchdog` periodically to keep the switch from
-resetting, at least once per minute. Each write delays the reboot time
-by another minute. After one minute of inactivity where `wd_keepalive`
-doesn't write to `/dev/watchdog`, the switch resets itself. The watchdog
-is enabled by default on all supported switches, and starts when you
-boot the switch, before `switchd` starts.
+Cumulus Linux includes a simplified version of the ` wd_keepalive(8)
+ `daemon from the standard ` watchdog  `Debian package. `wd_keepalive`
+writes to a file called `/dev/watchdog` periodically to keep the switch
+from resetting, at least once per minute. Each write delays the reboot
+time by another minute. After one minute of inactivity where
+`wd_keepalive` doesn't write to `/dev/watchdog`, the switch resets
+itself. The watchdog is enabled by default on all supported switches,
+and starts when you boot the switch, before `switchd` starts.
 
 To enable the hardware watchdog, edit the
 `/etc/watchdog.d/<your_platform>` file and set `run_watchdog` to *1*:

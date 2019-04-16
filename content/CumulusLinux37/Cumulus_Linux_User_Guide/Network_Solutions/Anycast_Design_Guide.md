@@ -3,13 +3,16 @@ title: Anycast Design Guide
 author: Unknown
 weight: 269
 pageID: 8363010
+aliases:
+ - /old/Anycast_Design_Guide.html
 ---
 # Anycast Design Guide
 
 Cumulus Networks' [Routing on the
-Host](https://docs.cumulusnetworks.com/display/ROH/Routing+on+the+Host)
-provides the ability to run [OSPF](Open_Shortest_Path_First_-_OSPF.html)
-or [BGP](Border_Gateway_Protocol_-_BGP.html) directly on server hosts.
+Host](/old/https://docs.cumulusnetworks.com/display/ROH/Routing+on+the+Host)
+provides the ability to run
+[OSPF](/old/Open_Shortest_Path_First_-_OSPF.html) or
+[BGP](/old/Border_Gateway_Protocol_-_BGP.html) directly on server hosts.
 This can enable a network architecture known as *anycast*, where many
 servers can provide the same service without needing layer 2 extensions
 or load balancer appliances.
@@ -17,7 +20,7 @@ or load balancer appliances.
 Anycast is not a new protocol or protocol implementation and does not
 require any additional network configuration. Anycast leverages the
 [equal cost
-multipath](Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html)
+multipath](/old/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html)
 (ECMP) capabilities inherent in layer 3 networks to provide stateless
 load sharing services.
 
@@ -118,7 +121,7 @@ impact of network changes or failures.
 ## Resilient Hashing
 
 [Resilient
-hashing](Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html#src-8362929_EqualCostMultipathLoadSharing-HardwareECMP-resilient_hashing)
+hashing](/old/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html#src-8362929_EqualCostMultipathLoadSharing-HardwareECMP-resilient_hashing)
 provides a method to prevent failures from impacting the hash result of
 unrelated flows. However, resilient hashing does not prevent rehashing
 when new next hops are added.
@@ -182,7 +185,7 @@ Although resilient hashing can prevent rehashing on next hop failure, it
 cannot prevent rehashing on next hop addition.
 
 You can read more information on resilient hashing in the [ECMP
-chapter](Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html).
+chapter](/old/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html).
 
 ## Applications for Anycast
 

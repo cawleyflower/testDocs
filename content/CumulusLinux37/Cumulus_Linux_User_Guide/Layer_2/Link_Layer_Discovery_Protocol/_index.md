@@ -3,18 +3,17 @@ title: Link Layer Discovery Protocol
 author: Unknown
 weight: 119
 pageID: 8362650
+aliases:
+ - /old/Link_Layer_Discovery_Protocol.html
 ---
 # Link Layer Discovery Protocol
 
-<span id="src-8362650_indexterm-66B04A14C76A452C142BE8B5F60D6C1F">The
-</span>`lldpd`<span id="src-8362650_indexterm-C706EDBC6C37CDB3537221998F2785AE">
-daemon implements the IEEE802.1AB
-(</span><span id="src-8362650_indexterm-20A50142E364822419513BBD631DF4AB">Link
-Layer Discovery Protocol, or </span>LLDP) standard. LLDP enables you to
-know which ports are neighbors of a given port. By default, `lldpd` runs
-as a daemon and is started at system boot. `lldpd` command line
-arguments are placed in `/etc/default/lldpd`. `lldpd` configuration
-options are placed in `/etc/lldpd.conf` or under `/etc/lldpd.d/`.
+The `lldpd` daemon implements the IEEE802.1AB (Link Layer Discovery
+Protocol, or LLDP) standard. LLDP enables you to know which ports are
+neighbors of a given port. By default, `lldpd` runs as a daemon and is
+started at system boot. `lldpd` command line arguments are placed in
+`/etc/default/lldpd`. `lldpd` configuration options are placed in
+`/etc/lldpd.conf` or under `/etc/lldpd.d/`.
 
 For more details on the command line arguments and config options, see
 `man lldpd(8)`.
@@ -74,8 +73,7 @@ Aug  7 17:26:32 switch lldpd[1805]: NET-SNMP version 5.4.3 AgentX subagent conne
 
 ## Enable the SNMP Subagent in LLDP
 
-<span id="src-8362650_indexterm-A620F234AFE30ACE69E1059EAB22ABC6">LLDP</span>
-does not enable the SNMP subagent by default. You need to edit
+LLDP does not enable the SNMP subagent by default. You need to edit
 `/etc/default/lldpd` and enable the `-x` option.
 
 ``` 
