@@ -42,9 +42,13 @@ use `hugo server -D` to include drafts
 Theme netDocs is forked from the Book Hugo theme
 Some features added from docDock Hugo theme
 
-### Resources
-[Cumulus Networks Documentation](https://docs.cumulusnetworks.com)
+## Resources
+[Cumulus Networks Documentation](https://docs.cumulusnetworks.com
+
 [Content Organization with Hugo](https://gohugo.io/content-management/organization/)
+
 [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lists)
+
 [hugo-theme-book](https://github.com/alex-shpak/hugo-book)
+
 [hugo-theme-dockdock](https://github.com/vjeantet/hugo-theme-docdock)
