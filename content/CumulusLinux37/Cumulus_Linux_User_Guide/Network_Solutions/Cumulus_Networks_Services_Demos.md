@@ -5,6 +5,8 @@ weight: 263
 pageID: 8362987
 aliases:
  - /old/Cumulus_Networks_Services_Demos.html
+imagePaths:
+ - /images/download/attachments/8362987
 ---
 # Cumulus Networks Services Demos
 
@@ -22,10 +24,14 @@ format for dual use with
 [PTM](/old/Prescriptive_Topology_Manager_-_PTM.html)), MAC addressing,
 IP addressing, switches and servers. This topology is blessed by the
 Professional Services Team at Cumulus Networks to fit a majority of
-designs seen in the
-field.
+designs seen in the field.
 
-![/images/download/attachments/8362987/reference\_topology.png](/images/download/attachments/8362987/reference_topology.png)
+<div>
+
+{{%imgOld "reference\_topology.png" 0 250
+%}}
+
+</div>
 
 ### IP and MAC Addressing
 

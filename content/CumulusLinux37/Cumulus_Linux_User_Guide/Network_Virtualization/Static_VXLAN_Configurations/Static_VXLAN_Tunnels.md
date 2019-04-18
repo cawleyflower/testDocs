@@ -5,6 +5,8 @@ weight: 385
 pageID: 8362793
 aliases:
  - /old/Static_VXLAN_Tunnels.html
+imagePaths:
+ - /images/download/attachments/8362793
 ---
 # Static VXLAN Tunnels
 
@@ -69,10 +71,13 @@ For a basic VXLAN configuration, make sure that:
 ## Example Configuration
 
 The following topology is used in this chapter. Each IP address
-corresponds to the loopback address of the
-switch.
+corresponds to the loopback address of the switch.
 
-![/images/download/attachments/8362793/static\_vxlan\_tunnels.png](/images/download/attachments/8362793/static_vxlan_tunnels.png)
+<div>
+
+{{%imgOld "static\_vxlan\_tunnels.png" 0 250 %}}
+
+</div>
 
 ## Configure Static VXLAN Tunnels
 

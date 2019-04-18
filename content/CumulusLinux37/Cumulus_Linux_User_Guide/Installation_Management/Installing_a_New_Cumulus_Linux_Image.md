@@ -5,6 +5,8 @@ weight: 43
 pageID: 8362643
 aliases:
  - /old/Installing_a_New_Cumulus_Linux_Image.html
+imagePaths:
+ - /images/download/attachments/8362643
 ---
 # Installing a New Cumulus Linux Image
 
@@ -57,10 +59,13 @@ installation proceeds as follows:
 
 3.  ONIE downloads the Cumulus Linux disk image, installs, and reboots.
 
-4.  Success\! You are now running Cumulus
-    Linux.
+4.  Success\! You are now running Cumulus Linux.
     
-    ![/images/download/attachments/8362643/onie\_install\_dhcp.png](/images/download/attachments/8362643/onie_install_dhcp.png)
+    <div>
+    
+    {{%imgOld "onie\_install\_dhcp.png" 0 %}}
+    
+    </div>
 
 {{%notice note%}}
 

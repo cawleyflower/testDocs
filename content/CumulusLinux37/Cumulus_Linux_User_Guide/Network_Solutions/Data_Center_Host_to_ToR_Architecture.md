@@ -5,19 +5,25 @@ weight: 261
 pageID: 8362991
 aliases:
  - /old/Data_Center_Host_to_ToR_Architecture.html
+imagePaths:
+ - /images/download/attachments/8362991
+ - /images/download/thumbnails/8362991
 ---
 # Data Center Host to ToR Architecture
 
 This chapter discusses the various architectures and strategies
 available from the top of rack (ToR) switches all the way down to the
-server
-hosts.
+server hosts.
 
 ## Layer 3 Architecture
 
 ### Single-attached Hosts
 
-![/images/download/attachments/8362991/Screen\_Shot\_2016-04-04\_at\_4.00.28\_PM.png](/images/download/attachments/8362991/Screen_Shot_2016-04-04_at_4.00.28_PM.png)
+<div>
+
+{{%imgOld "Screen\_Shot\_2016-04-04\_at\_4.00.28\_PM.png" 0 250 %}}
+
+</div>
 
 <div class="tablewrap">
 
@@ -122,7 +128,11 @@ iface eth1 inet static
 
 ### Redistribute Neighbor
 
-![/images/download/attachments/8362991/redisneigh.png](/images/download/attachments/8362991/redisneigh.png)
+<div>
+
+{{%imgOld "redisneigh.png" 0 250 %}}
+
+</div>
 
 <div class="tablewrap">
 
@@ -175,7 +185,13 @@ iface eth1 inet static
 
 ### Routing on the Host
 
-**![/images/download/thumbnails/8362991/routingonhost.png](/images/download/thumbnails/8362991/routingonhost.png)**
+****
+
+<div>
+
+{{%imgOld "routingonhost.png" 1 250 %}}
+
+</div>
 
 <div class="tablewrap">
 
@@ -229,7 +245,11 @@ iface eth1 inet static
 
 ### Routing on the VM
 
-![/images/download/attachments/8362991/routingvm.png](/images/download/attachments/8362991/routingvm.png)
+<div>
+
+{{%imgOld "routingvm.png" 0 250 %}}
+
+</div>
 
 <div class="tablewrap">
 
@@ -284,7 +304,11 @@ instead of one routing process, there are as many as there are VMs</p></li>
 
 ### Virtual Router
 
-![/images/download/attachments/8362991/vrouter.png](/images/download/attachments/8362991/vrouter.png)
+<div>
+
+{{%imgOld "vrouter.png" 0 250 %}}
+
+</div>
 
 <div class="tablewrap">
 
@@ -335,7 +359,11 @@ instead of one routing process, there are as many as there are VMs</p></li>
 
 ### Anycast with Manual Redistribution
 
-![/images/download/thumbnails/8362991/anycast.png](/images/download/thumbnails/8362991/anycast.png)
+<div>
+
+{{%imgOld "anycast.png" 1 150 %}}
+
+</div>
 
 <div class="tablewrap">
 
@@ -436,10 +464,13 @@ iface eth2 inet static
 
 ## Network Virtualization
 
-**LNV with
-MLAG**
+**LNV with MLAG**
 
-![/images/download/attachments/8362991/lnvmlag.png](/images/download/attachments/8362991/lnvmlag.png)
+<div>
+
+{{%imgOld "lnvmlag.png" 0 250 %}}
+
+</div>
 
 <div class="tablewrap">
 

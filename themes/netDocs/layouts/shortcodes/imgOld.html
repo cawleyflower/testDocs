@@ -1,0 +1,4 @@
+{{$ind := int (.Get 1)}}
+{{$bn := .Get 0}}
+{{$sc := (index .Page.Params.imagePaths $ind) }}
+<img src = "{{path.Join $sc $bn}}" alt = "{{path.Join $sc $bn}}" {{ if len .Params | eq 3 }} height = {{.Get 2}} {{end}}/>

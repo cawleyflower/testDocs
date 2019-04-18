@@ -5,6 +5,8 @@ weight: 159
 pageID: 8362784
 aliases:
  - /old/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html
+imagePaths:
+ - /images/download/attachments/8362784
 ---
 # Hybrid Cloud Connectivity with QinQ and VXLANs
 
@@ -60,10 +62,13 @@ mode](/old/VLAN-aware_Bridge_Mode.html) with the use of the 802.1ad VLAN
 protocol (the only supported protocol at the time of writing). Hence, it
 is more scalable.
 
-An example configuration could look like the
-following:
+An example configuration could look like the following:
 
-![/images/download/attachments/8362784/QinQ\_single\_tag\_translation.png](/images/download/attachments/8362784/QinQ_single_tag_translation.png)
+<div>
+
+{{%imgOld "QinQ\_single\_tag\_translation.png" 0 250 %}}
+
+</div>
 
 You configure two switches: one at the service provider edge that faces
 the customer (the switch on the left above), and one on the public cloud
@@ -298,10 +303,13 @@ configure it.
 
 {{%/notice%}}
 
-An example configuration could look like the
-following:
+An example configuration could look like the following:
 
-![/images/download/attachments/8362784/qinq\_double\_tag\_translation.png](/images/download/attachments/8362784/qinq_double_tag_translation.png)
+<div>
+
+{{%imgOld "qinq\_double\_tag\_translation.png" 0 250 %}}
+
+</div>
 
 To configure the switch for double tag translation using the above
 example, edit the `/etc/network/interfaces` file in a text editor and
@@ -369,7 +377,11 @@ iface br10
     
 ```
 
-![/images/download/attachments/8362784/qinq\_double\_tagged\_no\_vxlan.png](/images/download/attachments/8362784/qinq_double_tagged_no_vxlan.png)
+<div>
+
+{{%imgOld "qinq\_double\_tagged\_no\_vxlan.png" 0 250 %}}
+
+</div>
 
 {{%/notice%}}
 

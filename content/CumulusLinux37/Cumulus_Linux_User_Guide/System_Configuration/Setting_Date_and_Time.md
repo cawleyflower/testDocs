@@ -5,6 +5,8 @@ weight: 65
 pageID: 8362545
 aliases:
  - /old/Setting_Date_and_Time.html
+imagePaths:
+ - /images/download/attachments/8362545
 ---
 # Setting Date and Time
 
@@ -436,10 +438,13 @@ To configure a boundary clock:
 In the following example, the boundary clock on the switch receives time
 from Master 1 (the grandmaster) on PTP slave port swp3s0, sets its clock
 and passes the time down through PTP master ports swp3s1, swp3s2, and
-swp3s3 to the hosts that receive the
-time.
+swp3s3 to the hosts that receive the time.
 
-![/images/download/attachments/8362545/PTPConfiguration.png](/images/download/attachments/8362545/PTPConfiguration.png)
+<div>
+
+{{%imgOld "PTPConfiguration.png" 0 400 %}}
+
+</div>
 
 The configuration for the above example is shown below. The example
 assumes that you have already configured the layer 3 routed interfaces

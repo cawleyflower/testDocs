@@ -5,6 +5,7 @@ weight: 289
 pageID: 8362554
 aliases:
  - /old/Using_sudo_to_Delegate_Privileges.html
+imagePaths: []
 ---
 # Using sudo to Delegate Privileges
 

@@ -5,6 +5,7 @@ weight: 271
 pageID: 8363018
 aliases:
  - /old/RDMA_over_Converged_Ethernet_-_RoCE.html
+imagePaths: []
 ---
 # RDMA over Converged Ethernet - RoCE
 

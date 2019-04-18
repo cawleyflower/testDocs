@@ -5,6 +5,8 @@ weight: 185
 pageID: 8362915
 aliases:
  - /old/Network_Topology.html
+imagePaths:
+ - /images/download/attachments/8362915
 ---
 # Network Topology
 
@@ -18,10 +20,13 @@ In the vast majority of modern data centers, [Clos or fat tree
 topology](http://en.wikipedia.org/wiki/Clos_network) is very popular.
 This topology is shown in the figure below. It is also commonly referred
 to as leaf-spine topology. We shall use this topology throughout the
-routing protocol
-guide.
+routing protocol guide.
 
-![/images/download/attachments/8362915/topology.png](/images/download/attachments/8362915/topology.png)
+<div>
+
+{{%imgOld "topology.png" 0 %}}
+
+</div>
 
 This topology allows the building of networks of varying size using
 nodes of different port counts and/or by increasing the tiers. The

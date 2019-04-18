@@ -5,6 +5,9 @@ weight: 505
 pageID: 8362618
 aliases:
  - /old/Using_Nutanix_Prism_as_a_Monitoring_Tool.html
+imagePaths:
+ - /images/download/attachments/8362618
+ - /images/download/thumbnails/8362618
 ---
 # Using Nutanix Prism as a Monitoring Tool
 
@@ -93,21 +96,41 @@ take special steps within Cumulus Linux before you can configure Prism.
 
 1.  Log into the Nutanix Prism. Nutanix defaults to the Home menu,
     referred to as the Dashboard:
-    ![/images/download/attachments/8362618/Screen\_Shot\_2016-01-05\_at\_11.21.05\_AM.png](/images/download/attachments/8362618/Screen_Shot_2016-01-05_at_11.21.05_AM.png)
+    
+    <div>
+    
+    {{%imgOld "Screen\_Shot\_2016-01-05\_at\_11.21.05\_AM.png" 0 250 %}}
+    
+    </div>
 
 2.  Click on the gear icon
-    ![/images/download/thumbnails/8362618/Screen\_Shot\_2016-01-05\_at\_11.39.49\_AM.png](/images/download/thumbnails/8362618/Screen_Shot_2016-01-05_at_11.39.49_AM.png)
+    
+    <div>
+    
+    {{%imgOld "Screen\_Shot\_2016-01-05\_at\_11.39.49\_AM.png" 1 %}}
+    
+    </div>
+    
     in the top right corner of the dashboard, and select NetworkSwitch:
-    ![/images/download/attachments/8362618/Screen\_Shot\_2016-01-05\_at\_11.39.31\_AM.png](/images/download/attachments/8362618/Screen_Shot_2016-01-05_at_11.39.31_AM.png)
+    
+    <div>
+    
+    {{%imgOld "Screen\_Shot\_2016-01-05\_at\_11.39.31\_AM.png" 0 250 %}}
+    
+    </div>
 
 3.  Click the **+Add Switch Configuration** button in the **Network
     Switch Configuration** pop up window.
 
 4.  Fill out the **Network Switch Configuration** for the Top of Rack
-    (ToR) switch configured for snmpd in the previous
-    section:
+    (ToR) switch configured for snmpd in the previous section:
     
-    ![/images/download/attachments/8362618/Screen\_Shot\_2016-01-05\_at\_11.45.38\_AM.png](/images/download/attachments/8362618/Screen_Shot_2016-01-05_at_11.45.38_AM.png)
+    <div>
+    
+    {{%imgOld "Screen\_Shot\_2016-01-05\_at\_11.45.38\_AM.png" 0 250
+    %}}
+    
+    </div>
     
     <div class="tablewrap">
     
@@ -135,14 +158,25 @@ take special steps within Cumulus Linux before you can configure Prism.
 6.  Close the pop up window to return to the dashboard.
 
 7.  Open the **Hardware** option from the **Home** dropdown menu:
-    ![/images/download/attachments/8362618/Screen\_Shot\_2016-01-05\_at\_11.58.00\_AM\_%281%29.png](/images/download/attachments/8362618/Screen_Shot_2016-01-05_at_11.58.00_AM_%281%29.png)
+    
+    <div>
+    
+    {{%imgOld "Screen\_Shot\_2016-01-05\_at\_11.58.00\_AM\_%281%29.png"
+    0 250 %}}
+    
+    </div>
 
 8.  Click the **Table** button.
 
 9.  Click the **Switch** button. Configured switches are shown in the
     table, as indicated in the screenshot below, and can be selected in
     order to view interface statistics:
-    ![/images/download/thumbnails/8362618/Screen\_Shot\_2016-01-05\_at\_1.07.48\_PM.png](/images/download/thumbnails/8362618/Screen_Shot_2016-01-05_at_1.07.48_PM.png)
+    
+    <div>
+    
+    {{%imgOld "Screen\_Shot\_2016-01-05\_at\_1.07.48\_PM.png" 1 250 %}}
+    
+    </div>
 
 {{%notice note%}}
 
@@ -203,10 +237,13 @@ nutanix@NTNX-14SM15270093-D-CVM:192.168.0.184:~$ ncli network list-switch
 
 ## Troubleshooting
 
-To help visualize the following diagram is
-provided:
+To help visualize the following diagram is provided:
 
-![/images/download/attachments/8362618/Screen\_Shot\_2016-01-06\_at\_10.36.29\_AM.png](/images/download/attachments/8362618/Screen_Shot_2016-01-06_at_10.36.29_AM.png)
+<div>
+
+{{%imgOld "Screen\_Shot\_2016-01-06\_at\_10.36.29\_AM.png" 0 250 %}}
+
+</div>
 
 <div class="tablewrap">
 

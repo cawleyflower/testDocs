@@ -5,6 +5,7 @@ weight: 189
 pageID: 8362919
 aliases:
  - /old/Configuring_FRRouting.html
+imagePaths: []
 ---
 # Configuring FRRouting
 

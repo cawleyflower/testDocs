@@ -5,6 +5,8 @@ weight: 411
 pageID: 8362812
 aliases:
  - /old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html
+imagePaths:
+ - /images/download/attachments/8362812
 ---
 # Integrating Hardware VTEPs with Midokura MidoNet and OpenStack
 
@@ -14,10 +16,13 @@ terminating VXLAN tunnels from within MidoNet. MidoNet connects to the
 OVSDB server running on the Cumulus Linux switch, and exchanges
 information about the VTEPs and MAC addresses associated with the
 OpenStack Neutron networks. This provides seamless Ethernet connectivity
-between virtual and physical server
-infrastructures.
+between virtual and physical server infrastructures.
 
-![/images/download/attachments/8362812/MidoNet.png](/images/download/attachments/8362812/MidoNet.png)
+<div>
+
+{{%imgOld "MidoNet.png" 0 %}}
+
+</div>
 
 ## Getting Started
 
@@ -200,18 +205,24 @@ Manager GUI or the MidoNet CLI.
 3.  Give the tunnel zone a **Name** and select **VTEP** for the
     **Type**.
 
-4.  Click
-    **Save**.
+4.  Click **Save**.
     
-    ![/images/download/attachments/8362812/Midonet\_Add\_Tzone.png](/images/download/attachments/8362812/Midonet_Add_Tzone.png)
+    <div>
+    
+    {{%imgOld "Midonet\_Add\_Tzone.png" 0 %}}
+    
+    </div>
 
 #### Add Hosts to a Tunnel Zone
 
 After you create the tunnel zone, click the name of the tunnel zone to
-view the hosts
-table.
+view the hosts table.
 
-![/images/download/attachments/8362812/MidoNet\_tzone\_list.png](/images/download/attachments/8362812/MidoNet_tzone_list.png)
+<div>
+
+{{%imgOld "MidoNet\_tzone\_list.png" 0 %}}
+
+</div>
 
 The tunnel zone is a construct used to define the VXLAN source address
 used for the tunnel. The address of this host is used for the source of
@@ -228,15 +239,21 @@ Next, add a host entry to the tunnel zone:
 3.  Provide the tunnel source **IP Address** to use on the selected
     host.
 
-4.  Click
-    **Save**.
+4.  Click **Save**.
     
-    ![/images/download/attachments/8362812/MidoNet\_tzone\_add\_host.png](/images/download/attachments/8362812/MidoNet_tzone_add_host.png)
+    <div>
+    
+    {{%imgOld "MidoNet\_tzone\_add\_host.png" 0 %}}
+    
+    </div>
 
-The host list now displays the new
-entry:
+The host list now displays the new entry:
 
-![/images/download/attachments/8362812/MidoNet\_tzone\_host\_done\_list.png](/images/download/attachments/8362812/MidoNet_tzone_host_done_list.png)
+<div>
+
+{{%imgOld "MidoNet\_tzone\_host\_done\_list.png" 0 %}}
+
+</div>
 
 #### Create the VTEP
 
@@ -254,19 +271,25 @@ entry:
     \- **Tunnel Zone** is the name of the zone you created in the
     previous procedure.
 
-4.  Click
-    **Save**.
+4.  Click **Save**.
     
-    ![/images/download/attachments/8362812/MidoNet\_Add\_VTEP.png](/images/download/attachments/8362812/MidoNet_Add_VTEP.png)
+    <div>
+    
+    {{%imgOld "MidoNet\_Add\_VTEP.png" 0 %}}
+    
+    </div>
 
 The new VTEP appears in the list below. MidoNet then initiates a
 connection between the OpenStack Controller and the Cumulus Linux
 switch. If the OVS client successfully connects to the OVSDB server, the
 VTEP entry displays the switch name and VXLAN tunnel IP address, which
-you specified during the bootstrapping
-process.
+you specified during the bootstrapping process.
 
-![/images/download/attachments/8362812/MidoNet\_Add\_VTEP\_list.png](/images/download/attachments/8362812/MidoNet_Add_VTEP_list.png)
+<div>
+
+{{%imgOld "MidoNet\_Add\_VTEP\_list.png" 0 %}}
+
+</div>
 
 #### Bind Ports to the VTEP
 
@@ -283,15 +306,21 @@ physical port binding to the VTEP on the Cumulus Linux switch:
 4.  In the **Bridge** list, select the MidoNet bridge that the instances
     (VMs) are using in OpenStack.
 
-5.  Click
-    **Save**.
+5.  Click **Save**.
     
-    ![/images/download/attachments/8362812/MidoNet\_Add\_Port\_Binding.png](/images/download/attachments/8362812/MidoNet_Add_Port_Binding.png)
+    <div>
+    
+    {{%imgOld "MidoNet\_Add\_Port\_Binding.png" 0 %}}
+    
+    </div>
 
-You see the port binding displayed in the binding table under the
-VTEP.
+You see the port binding displayed in the binding table under the VTEP.
 
-![/images/download/attachments/8362812/MidoNet\_Add\_Port\_Binding\_list.png](/images/download/attachments/8362812/MidoNet_Add_Port_Binding_list.png)
+<div>
+
+{{%imgOld "MidoNet\_Add\_Port\_Binding\_list.png" 0 %}}
+
+</div>
 
 After the port is bound, this automatically configures a VXLAN bridge
 interface, and includes the VTEP interface and the port bound to the

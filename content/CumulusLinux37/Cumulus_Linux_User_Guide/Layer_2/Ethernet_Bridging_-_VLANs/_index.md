@@ -5,6 +5,8 @@ weight: 123
 pageID: 8362655
 aliases:
  - /old/Ethernet_Bridging_-_VLANs.html
+imagePaths:
+ - /images/download/attachments/8362655
 ---
 # Ethernet Bridging - VLANs
 
@@ -23,12 +25,15 @@ bridge can also be assigned an IP address, as discussed
 {{%notice note%}}
 
 Bridge members can be individual physical interfaces, bonds or logical
-interfaces that traverse an 802.1Q VLAN
-trunk.
+interfaces that traverse an 802.1Q VLAN trunk.
 
 {{%/notice%}}
 
-![/images/download/attachments/8362655/example-bridge.png](/images/download/attachments/8362655/example-bridge.png)
+<div>
+
+{{%imgOld "example-bridge.png" 0 %}}
+
+</div>
 
 {{%notice tip%}}
 

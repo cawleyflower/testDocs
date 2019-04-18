@@ -5,6 +5,8 @@ weight: 105
 pageID: 8363021
 aliases:
  - /old/Prescriptive_Topology_Manager_-_PTM.html
+imagePaths:
+ - /images/download/attachments/8363021
 ---
 # Prescriptive Topology Manager - PTM
 
@@ -99,7 +101,11 @@ graph G {
     
 ```
 
-![/images/download/attachments/8363021/2s2l2s\_DOT.png](/images/download/attachments/8363021/2s2l2s_DOT.png)
+<div>
+
+{{%imgOld "2s2l2s\_DOT.png" 0 %}}
+
+</div>
 
 ## ptmd Scripts
 

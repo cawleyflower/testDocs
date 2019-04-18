@@ -5,6 +5,8 @@ weight: 131
 pageID: 8362696
 aliases:
  - /old/IGMP_and_MLD_Snooping.html
+imagePaths:
+ - /images/download/attachments/8362696
 ---
 # IGMP and MLD Snooping
 
@@ -39,10 +41,13 @@ gets flooded to all the bridge ports in the bridge. Similarly, in the
 absence of receivers in a VLAN, multicast traffic would be flooded to
 all ports in the VLAN. The multicast group IP address is mapped to a
 multicast MAC address and a forwarding entry is created with a list of
-ports interested in receiving multicast traffic destined to that
-group.
+ports interested in receiving multicast traffic destined to that group.
 
-![/images/download/attachments/8362696/igmp\_snoop\_diagram.png](/images/download/attachments/8362696/igmp_snoop_diagram.png)
+<div>
+
+{{%imgOld "igmp\_snoop\_diagram.png" 0 400 %}}
+
+</div>
 
 ## Configure IGMP/MLD Snooping over VXLAN
 

@@ -5,6 +5,7 @@ weight: 205
 pageID: 8362959
 aliases:
  - /old/Redistribute_Neighbor.html
+imagePaths: []
 ---
 # Redistribute Neighbor
 

@@ -5,6 +5,8 @@ weight: 273
 pageID: 9012165
 aliases:
  - /old/Cumulus_Hyperconverged_Solution_with_Nutanix.html
+imagePaths:
+ - /images/download/attachments/9012165
 ---
 # Cumulus Hyperconverged Solution with Nutanix
 
@@ -97,10 +99,13 @@ typical Nutanix deployment with the following configuration:
 
 The example configuration utilizes the following topology. All
 configuration focuses on the leaf01 and leaf02 switches. Configurations
-for spine01 and spine02 are not
-included.
+for spine01 and spine02 are not included.
 
-![/images/download/attachments/9012165/Cumulus\_Nutanix\_topo.png](/images/download/attachments/9012165/Cumulus_Nutanix_topo.png)
+<div>
+
+{{%imgOld "Cumulus\_Nutanix\_topo.png" 0 %}}
+
+</div>
 
 ## Configure Cumulus HCS and Nutanix
 

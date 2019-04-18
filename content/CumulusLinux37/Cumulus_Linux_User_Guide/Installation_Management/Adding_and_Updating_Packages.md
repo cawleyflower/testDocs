@@ -5,6 +5,7 @@ weight: 49
 pageID: 8362631
 aliases:
  - /old/Adding_and_Updating_Packages.html
+imagePaths: []
 ---
 # Adding and Updating Packages
 

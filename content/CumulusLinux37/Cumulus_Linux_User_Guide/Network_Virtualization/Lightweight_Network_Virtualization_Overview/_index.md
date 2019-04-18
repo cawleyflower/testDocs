@@ -5,6 +5,8 @@ weight: 151
 pageID: 8362706
 aliases:
  - /old/Lightweight_Network_Virtualization_Overview.html
+imagePaths:
+ - /images/download/thumbnails/8362706
 ---
 # Lightweight Network Virtualization Overview
 
@@ -50,10 +52,13 @@ time.
 
 ## LNV Concepts
 
-Consider the following example
-deployment:
+Consider the following example deployment:
 
-![/images/download/thumbnails/8362706/Screen\_Shot\_2015-04-23\_at\_5.00.38\_PM.png](/images/download/thumbnails/8362706/Screen_Shot_2015-04-23_at_5.00.38_PM.png)
+<div>
+
+{{%imgOld "Screen\_Shot\_2015-04-23\_at\_5.00.38\_PM.png" 0 %}}
+
+</div>
 
 The two switches running Cumulus Linux, called leaf1 and leaf2, each
 have a bridge configured. These two bridges contain the physical switch

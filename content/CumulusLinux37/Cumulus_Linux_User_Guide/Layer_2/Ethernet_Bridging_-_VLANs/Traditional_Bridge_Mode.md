@@ -5,6 +5,8 @@ weight: 359
 pageID: 8362670
 aliases:
  - /old/Traditional_Bridge_Mode.html
+imagePaths:
+ - /images/download/attachments/8362670
 ---
 # Traditional Bridge Mode
 
@@ -232,10 +234,13 @@ connected to bridge-B. This means that:
 
   - host-3 and host-4 can communicate with each other.
 
-  - host-1 and host-2 cannot communicate with host-3 and
-host-4.
+  - host-1 and host-2 cannot communicate with host-3 and host-4.
 
-![/images/download/attachments/8362670/multiple-bridges.png](/images/download/attachments/8362670/multiple-bridges.png)
+<div>
+
+{{%imgOld "multiple-bridges.png" 0 %}}
+
+</div>
 
 This example configuration looks like this in the
 `/etc/network/interfaces` file:
@@ -296,14 +301,17 @@ information.
 The interaction of tagged and un-tagged frames on the same trunk often
 leads to undesired and unexpected behavior. A switch that uses VLAN 1
 for the native VLAN may send frames to a switch that uses VLAN 2 for the
-native VLAN, thus merging those two VLANs and their spanning tree
-state.
+native VLAN, thus merging those two VLANs and their spanning tree state.
 
 {{%/notice%}}
 
 ### Trunk Example
 
-![/images/download/attachments/8362670/trunk.png](/images/download/attachments/8362670/trunk.png)
+<div>
+
+{{%imgOld "trunk.png" 0 400 %}}
+
+</div>
 
 To create the above example, add the following configuration to the
 `/etc/network/interfaces` file:

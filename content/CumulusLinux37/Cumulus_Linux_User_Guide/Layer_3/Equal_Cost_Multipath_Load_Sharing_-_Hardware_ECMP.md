@@ -5,6 +5,8 @@ weight: 203
 pageID: 8362929
 aliases:
  - /old/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html
+imagePaths:
+ - /images/download/attachments/8362929
 ---
 # Equal Cost Multipath Load Sharing - Hardware ECMP
 
@@ -69,10 +71,13 @@ For TCP/UDP frames, Cumulus Linux also hashes on:
 
   - Source port
 
-  - Destination
-port
+  - Destination port
 
-![/images/download/attachments/8362929/Packet\_Hash.png](/images/download/attachments/8362929/Packet_Hash.png)
+<div>
+
+{{%imgOld "Packet\_Hash.png" 0 %}}
+
+</div>
 
 To prevent out of order packets, ECMP hashing is done on a per-flow
 basis, which means that all packets with the same source and destination
@@ -144,19 +149,27 @@ of the hash determines which bucket gets used.
 
 In the following example, 4 next hops exist. Three different flows are
 hashed to different hash buckets. Each next hop is assigned to a unique
-hash
-bucket.
+hash bucket.
 
-![/images/download/attachments/8362929/ECMP\_Hash\_Bucket.png](/images/download/attachments/8362929/ECMP_Hash_Bucket.png)
+<div>
+
+{{%imgOld "ECMP\_Hash\_Bucket.png" 0 %}}
+
+</div>
 
 #### Add a Next Hop
 
 When a next hop is added, a new hash bucket is created. The assignment
 of next hops to hash buckets, as well as the hash result, may change
-when additional next hops are
-added.
+when additional next hops are added.
 
-![/images/download/attachments/8362929/ECMP\_Hash\_Bucket\_Added.png](/images/download/attachments/8362929/ECMP_Hash_Bucket_Added.png)  
+<div>
+
+{{%imgOld "ECMP\_Hash\_Bucket\_Added.png" 0 %}}
+
+</div>
+
+  
 A new next hop is added and a new hash bucket is created. As a result,
 the hash and hash bucket assignment changed, causing the existing flows
 to be sent to different next hops.
@@ -165,11 +178,21 @@ to be sent to different next hops.
 
 When a next hop is removed, the remaining hash bucket assignments may
 change, again, potentially changing the next hop selected for an
-existing
-flow.
+existing flow.
 
-![/images/download/attachments/8362929/Hash\_Failure.png](/images/download/attachments/8362929/Hash_Failure.png)
-![/images/download/attachments/8362929/Hash\_Post-Failure.png](/images/download/attachments/8362929/Hash_Post-Failure.png)  
+<div>
+
+{{%imgOld "Hash\_Failure.png" 0 %}}
+
+</div>
+
+<div>
+
+{{%imgOld "Hash\_Post-Failure.png" 0 %}}
+
+</div>
+
+  
 A next hop fails and the next hop and hash bucket are removed. The
 remaining next hops may be reassigned.
 
@@ -266,24 +289,35 @@ show system  `to determine the chipset.
 When resilient hashing is configured, a fixed number of buckets are
 defined. Next hops are then assigned in round robin fashion to each of
 those buckets. In this example, 12 buckets are created and four next
-hops are
-assigned.
+hops are assigned.
 
-![/images/download/attachments/8362929/Reshash\_bucket\_assignment.png](/images/download/attachments/8362929/Reshash_bucket_assignment.png)
+<div>
+
+{{%imgOld "Reshash\_bucket\_assignment.png" 0 %}}
+
+</div>
 
 ### Remove Next Hops
 
 Unlike default ECMP hashing, when a next hop needs to be removed, the
-number of hash buckets does not
-change.
+number of hash buckets does not change.
 
-![/images/download/attachments/8362929/Reshash\_Failure.png](/images/download/attachments/8362929/Reshash_Failure.png)  
+<div>
+
+{{%imgOld "Reshash\_Failure.png" 0 %}}
+
+</div>
+
+  
 With 12 buckets assigned and four next hops, instead of reducing the
 number of buckets — which would impact flows to known good hosts — the
-remaining next hops replace the failed next
-hop.
+remaining next hops replace the failed next hop.
 
-![/images/download/attachments/8362929/Reshash\_Restore.png](/images/download/attachments/8362929/Reshash_Restore.png)
+<div>
+
+{{%imgOld "Reshash\_Restore.png" 0 %}}
+
+</div>
 
 After the failed next hop is removed, the remaining next hops are
 installed as replacements. This prevents impact to any flows that hash
@@ -293,10 +327,13 @@ to working next hops.
 
 Resilient hashing does not prevent possible impact to existing flows
 when new next hops are added. Due to the fact there are a fixed number
-of buckets, a new next hop requires reassigning next hops to
-buckets.
+of buckets, a new next hop requires reassigning next hops to buckets.
 
-![/images/download/attachments/8362929/Reshash\_Add.png](/images/download/attachments/8362929/Reshash_Add.png)
+<div>
+
+{{%imgOld "Reshash\_Add.png" 0 %}}
+
+</div>
 
 As a result, some flows may hash to new next hops, which can impact
 anycast deployments.

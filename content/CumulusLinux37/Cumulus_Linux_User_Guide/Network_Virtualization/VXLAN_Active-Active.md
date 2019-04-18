@@ -5,6 +5,9 @@ weight: 169
 pageID: 9015260
 aliases:
  - /old/VXLAN_Active-Active.html
+imagePaths:
+ - /images/download/thumbnails/9015260
+ - /images/download/attachments/9015260
 ---
 # VXLAN Active-Active
 
@@ -144,10 +147,13 @@ encapsulation and decapsulation. This allows remote VTEPs to learn the
 host MAC addresses attached to the MLAG switches against one logical
 VTEP, even though the switches independently encapsulate and decapsulate
 layer 2 traffic originating from the host. You can configure the anycast
-address under the loopback interface, as shown
-below.
+address under the loopback interface, as shown below.
 
-![/images/download/thumbnails/9015260/VXLAN\_active\_active\_excerpt.png](/images/download/thumbnails/9015260/VXLAN_active_active_excerpt.png)
+<div>
+
+{{%imgOld "VXLAN\_active\_active\_excerpt.png" 0 150 %}}
+
+</div>
 
 ``` 
                     leaf01 /etc/network/interfaces snippet
@@ -173,7 +179,11 @@ iface lo inet loopback
 
 ## Example VXLAN Active-Active Configuration
 
-![/images/download/attachments/9015260/VXLAN\_active\_active.png](/images/download/attachments/9015260/VXLAN_active_active.png)
+<div>
+
+{{%imgOld "VXLAN\_active\_active.png" 1 400 %}}
+
+</div>
 
 Note the configuration of the local IP address in the VXLAN interfaces
 below. They are configured with individual IP addresses, which `clagd`

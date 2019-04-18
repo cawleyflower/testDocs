@@ -5,6 +5,7 @@ weight: 231
 pageID: 8362594
 aliases:
  - /old/Monitoring_System_Hardware.html
+imagePaths: []
 ---
 # Monitoring System Hardware
 

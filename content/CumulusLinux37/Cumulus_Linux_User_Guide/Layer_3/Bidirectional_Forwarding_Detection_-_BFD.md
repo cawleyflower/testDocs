@@ -5,6 +5,7 @@ weight: 201
 pageID: 8362938
 aliases:
  - /old/Bidirectional_Forwarding_Detection_-_BFD.html
+imagePaths: []
 ---
 # Bidirectional Forwarding Detection - BFD
 

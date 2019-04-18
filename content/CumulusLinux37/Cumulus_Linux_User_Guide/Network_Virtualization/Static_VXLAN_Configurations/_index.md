@@ -5,6 +5,7 @@ weight: 147
 pageID: 8362788
 aliases:
  - /old/Static_VXLAN_Configurations.html
+imagePaths: []
 ---
 # Static VXLAN Configurations
 

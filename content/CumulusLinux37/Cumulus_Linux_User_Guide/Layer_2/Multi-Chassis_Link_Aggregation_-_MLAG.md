@@ -5,6 +5,10 @@ weight: 125
 pageID: 8362677
 aliases:
  - /old/Multi-Chassis_Link_Aggregation_-_MLAG.html
+imagePaths:
+ - /images/download/thumbnails/8362677
+ - /images/download/attachments/8362677
+ - /images/raw.githubusercontent.com/CumulusNetworks/cldemo-config-mlag/master
 ---
 # Multi-Chassis Link Aggregation - MLAG
 
@@ -30,10 +34,13 @@ physical switch. Therefore, active-active links from the dual-connected
 devices are supported even though they are connected to two different
 physical switches.
 
-A basic setup looks like
-this:
+A basic setup looks like this:
 
-![/images/download/thumbnails/8362677/host\_ha1.png](/images/download/thumbnails/8362677/host_ha1.png)
+<div>
+
+{{%imgOld "host\_ha1.png" 0 %}}
+
+</div>
 
 {{%notice tip%}}
 
@@ -93,17 +100,23 @@ MLAG has these requirements:
 
 More elaborate configurations are also possible. The number of links
 between the host and the switches can be greater than two, and does not
-have to be
-symmetrical:
+have to be symmetrical:
 
-![/images/download/thumbnails/8362677/host\_ha2.png](/images/download/thumbnails/8362677/host_ha2.png)
+<div>
+
+{{%imgOld "host\_ha2.png" 0 %}}
+
+</div>
 
 Additionally, because S1 and S2 appear as a single switch to other
 bonding devices, you can also connect pairs of MLAG switches to each
-other in a switch-to-switch MLAG
-setup:
+other in a switch-to-switch MLAG setup:
 
-![/images/download/attachments/8362677/2pair\_mlag.png](/images/download/attachments/8362677/2pair_mlag.png)
+<div>
+
+{{%imgOld "2pair\_mlag.png" 1 %}}
+
+</div>
 
 In this case, L1 and L2 are also MLAG peer switches, and present a
 two-port bond from a single logical system to S1 and S2. S1 and S2 do
@@ -140,10 +153,13 @@ matching `clag_id` and any misconnection will **not** be detected.
 On each of the peer switches, you must place the links that are
 connected to the dual-connected host or switch in the bond. This is true
 even if the links are a single port on each peer switch, where each port
-is placed into a bond, as shown
-below:
+is placed into a bond, as shown below:
 
-![/images/download/thumbnails/8362677/2l\_3h.png](/images/download/thumbnails/8362677/2l_3h.png)
+<div>
+
+{{%imgOld "2l\_3h.png" 0 %}}
+
+</div>
 
 All of the dual-connected bonds on the peer switches have their system
 ID set to the MLAG system ID. Therefore, from the point of view of the
@@ -173,12 +189,15 @@ three VLANs on each port.
 You can see a more traditional layer 2 example configuration in NCLU;
 run `net example clag l2-with-server-vlan-trunks`. For a very basic
 configuration with just one pair of switches and a single host, run `net
-example clag
-l2-with-server-vlan-trunks`.
+example clag l2-with-server-vlan-trunks`.
 
 {{%/notice%}}
 
-![/images/raw.githubusercontent.com/CumulusNetworks/cldemo-config-mlag/master/bgp-unnumbered.png](/images/raw.githubusercontent.com/CumulusNetworks/cldemo-config-mlag/master/bgp-unnumbered.png)
+<div>
+
+{{%imgOld "bgp-unnumbered.png" 2 400 %}}
+
+</div>
 
 You configure these interfaces using
 [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html), so the bridges
@@ -1066,10 +1085,13 @@ cumulus@spine01:~$ net commit
 
 In this scenario, the spine switches connect at layer 3, as shown in the
 image below. Alternatively, the spine switches can be singly connected
-to each core switch at layer 3 (not shown
-below).
+to each core switch at layer 3 (not shown below).
 
-![/images/download/attachments/8362677/mlag\_cfg\_l3.png](/images/download/attachments/8362677/mlag_cfg_l3.png)
+<div>
+
+{{%imgOld "mlag\_cfg\_l3.png" 1 %}}
+
+</div>
 
 In this design, the spine switches route traffic between the server
 hosts in the layer 2 domains and the core. The servers (host1 thru

@@ -5,6 +5,8 @@ weight: 187
 pageID: 8362917
 aliases:
  - /old/FRRouting_Overview.html
+imagePaths:
+ - /images/download/attachments/8362917
 ---
 # FRRouting Overview
 
@@ -16,12 +18,15 @@ Cumulus Linux supports the following:
     ([v2](/old/Open_Shortest_Path_First_-_OSPF.html) and
     [v3](/old/Open_Shortest_Path_First_v3_-_OSPFv3.html))
 
-  - [Border Gateway
-Protocol](/old/Border_Gateway_Protocol_-_BGP.html)
+  - [Border Gateway Protocol](/old/Border_Gateway_Protocol_-_BGP.html)
 
 ## Architecture
 
-![/images/download/attachments/8362917/daemons.png](/images/download/attachments/8362917/daemons.png)
+<div>
+
+{{%imgOld "daemons.png" 0 250 %}}
+
+</div>
 
 As shown in the figure above, the FRRouting suite consists of various
 protocol-specific daemons and a protocol-independent daemon called

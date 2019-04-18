@@ -5,6 +5,8 @@ weight: 211
 pageID: 8362966
 aliases:
  - /old/GRE_Tunneling.html
+imagePaths:
+ - /images/download/attachments/8362966
 ---
 # GRE Tunneling
 
@@ -48,10 +50,13 @@ subnets, and allow VPNs across wide area networks.
 The following example shows two sites that use IPv4 addresses. Using GRE
 tunneling, the two end points can encapsulate an IPv4 or IPv6 payload
 inside an IPv4 packet. The packet is routed based on the destination in
-the outer IPv4
-header.
+the outer IPv4 header.
 
-![/images/download/attachments/8362966/GRE\_tunnel\_example.png](/images/download/attachments/8362966/GRE_tunnel_example.png)
+<div>
+
+{{%imgOld "GRE\_tunnel\_example.png" 0 150 %}}
+
+</div>
 
 ## Configure GRE Tunneling
 
@@ -75,10 +80,13 @@ bidirectional GRE tunnel between two endpoints: `Tunnel-R1` and
 The local tunnel endpoint for `Tunnel-R1` is 10.0.0.9 and the remote
 endpoint is 10.0.0.2.  
 The local tunnel endpoint for `Tunnel-R2` is 10.0.0.2 and the remote
-endpoint is
-10.0.0.9.
+endpoint is 10.0.0.9.
 
-![/images/download/attachments/8362966/GRE-Tunnel-Config.png](/images/download/attachments/8362966/GRE-Tunnel-Config.png)
+<div>
+
+{{%imgOld "GRE-Tunnel-Config.png" 0 250 %}}
+
+</div>
 
 **Tunnel-R1 commands:**
 

@@ -5,6 +5,9 @@ weight: 361
 pageID: 8362668
 aliases:
  - /old/VLAN_Tagging.html
+imagePaths:
+ - /images/download/thumbnails/8362655
+ - /images/download/attachments/8362655
 ---
 # VLAN Tagging
 
@@ -15,10 +18,13 @@ from `ifupdown2`.
 ## VLAN Tagging, a Basic Example
 
 A simple configuration demonstrating VLAN tagging involves two hosts
-connected to a
-switch.
+connected to a switch.
 
-![/images/download/thumbnails/8362655/vlan-trunks-bond-simple.png](/images/download/thumbnails/8362655/vlan-trunks-bond-simple.png)
+<div>
+
+{{%imgOld "vlan-trunks-bond-simple.png" 0 %}}
+
+</div>
 
   - *host1* connects to swp1 with both untagged frames and with 802.1Q
     frames tagged for *vlan100*.
@@ -57,10 +63,15 @@ iface swp2.130
 ## VLAN Tagging, an Advanced Example
 
 This example of VLAN tagging is more complex, involving three hosts and
-two switches, with a number of bridges and a bond connecting them
-all.
+two switches, with a number of bridges and a bond connecting them all.
 
-*![/images/download/attachments/8362655/vlan-trunks-bond.png](/images/download/attachments/8362655/vlan-trunks-bond.png)*
+**
+
+<div>
+
+{{%imgOld "vlan-trunks-bond.png" 1 %}}
+
+</div>
 
   - *host1* connects to bridge *br-untagged* with bare Ethernet frames
     and to bridge *br-tag100* with 802.1q frames tagged for *vlan100*.
@@ -365,4 +376,8 @@ br_mix          8000.4438390032bd       yes             swp10.100
     
 ```
 
-![/images/download/thumbnails/8362655/mixed-vlans.png](/images/download/thumbnails/8362655/mixed-vlans.png)
+<div>
+
+{{%imgOld "mixed-vlans.png" 0 %}}
+
+</div>

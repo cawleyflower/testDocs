@@ -5,6 +5,7 @@ weight: 429
 pageID: 8362918
 aliases:
  - /old/Upgrading_from_Quagga_to_FRRouting.html
+imagePaths: []
 ---
 # Upgrading from Quagga to FRRouting
 

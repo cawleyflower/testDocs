@@ -5,6 +5,7 @@ weight: 195
 pageID: 8362924
 aliases:
  - /old/Open_Shortest_Path_First_v3_-_OSPFv3.html
+imagePaths: []
 ---
 # Open Shortest Path First v3 - OSPFv3
 

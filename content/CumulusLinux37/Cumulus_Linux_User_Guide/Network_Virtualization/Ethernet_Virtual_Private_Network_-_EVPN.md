@@ -5,6 +5,8 @@ weight: 149
 pageID: 8362732
 aliases:
  - /old/Ethernet_Virtual_Private_Network_-_EVPN.html
+imagePaths:
+ - /images/download/attachments/8362732
 ---
 # Ethernet Virtual Private Network - EVPN
 
@@ -1562,10 +1564,13 @@ The following illustration shows VTEP-A, VTEP-B, and VTEP-C in an EVPN
 configuration. Duplicate address detection triggers on VTEP-A when there
 is a duplicate MAC address for two hosts attached to VTEP-A and VTEP-B.
 However, duplicate detection does *not* trigger on VTEP-A when mobility
-events occur between two remote VTEPs (VTEP-B and
-VTEP-C).
+events occur between two remote VTEPs (VTEP-B and VTEP-C).
 
-![/images/download/attachments/8362732/DAD\_example.png](/images/download/attachments/8362732/DAD_example.png)
+<div>
+
+{{%imgOld "DAD\_example.png" 0 %}}
+
+</div>
 
 #### Configure Duplicate Address Detection
 

@@ -5,6 +5,8 @@ weight: 345
 pageID: 8362651
 aliases:
  - /old/Voice_VLAN.html
+imagePaths:
+ - /images/support.cumulusnetworks.com/hc/en-us/article_attachments/217676187
 ---
 # Voice VLAN
 
@@ -23,12 +25,15 @@ The voice traffic is an 802.1q-tagged packet with a VLAN ID that has a
 VLAN ID (which may or may not be 0) and an 802.1p (3-bit layer 2 COS)
 with a specific value (typically 5 is assigned for voice traffic).
 
-Data traffic is always
-[untagged](/old/VLAN_Tagging.html).
+Data traffic is always [untagged](/old/VLAN_Tagging.html).
 
 ## Cumulus Linux Voice VLAN Example
 
-![/images/support.cumulusnetworks.com/hc/en-us/article\_attachments/217676187/voice-vlan.png](/images/support.cumulusnetworks.com/hc/en-us/article_attachments/217676187/voice-vlan.png)
+<div>
+
+{{%imgOld "voice-vlan.png" 0 400 %}}
+
+</div>
 
 You can configure the topology above using the following
 [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html) commands. In this

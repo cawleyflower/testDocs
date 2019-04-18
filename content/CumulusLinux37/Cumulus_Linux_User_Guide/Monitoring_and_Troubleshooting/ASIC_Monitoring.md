@@ -5,6 +5,8 @@ weight: 235
 pageID: 8362627
 aliases:
  - /old/ASIC_Monitoring.html
+imagePaths:
+ - /images/download/attachments/8362627
 ---
 # ASIC Monitoring
 
@@ -97,10 +99,13 @@ bytes:
 The following illustration demonstrates a histogram showing how many
 times the queue length for a port was in the ranges specified by each
 bin. The example shows that the queue length was between 960 and 2495
-bytes 125 times within one
-second.
+bytes 125 times within one second.
 
-![/images/download/attachments/8362627/histogram\_queue.png](/images/download/attachments/8362627/histogram_queue.png)
+<div>
+
+{{%imgOld "histogram\_queue.png" 0 400 %}}
+
+</div>
 
 ## Configure ASIC Monitoring
 

@@ -5,6 +5,8 @@ weight: 213
 pageID: 8362899
 aliases:
  - /old/Protocol_Independent_Multicast_-_PIM.html
+imagePaths:
+ - /images/download/attachments/8362899
 ---
 # Protocol Independent Multicast - PIM
 
@@ -20,14 +22,17 @@ PIM has two modes of operation: Sparse Mode (PIM-SM) and Dense Mode
 
 {{%notice note%}}
 
-Cumulus Linux supports only PIM Sparse
-Mode.
+Cumulus Linux supports only PIM Sparse Mode.
 
 {{%/notice%}}
 
 ## PIM Overview
 
-![/images/download/attachments/8362899/PIM.png](/images/download/attachments/8362899/PIM.png)
+<div>
+
+{{%imgOld "PIM.png" 0 250 %}}
+
+</div>
 
 <div class="tablewrap">
 
@@ -136,7 +141,9 @@ Mode.
 <p>{{%notice note%}}</p>
 <p>PIM join/prune messages are sent to PIM neighbors on individual interfaces. Join/prune messages are never unicast.</p>
 <p>{{%/notice%}}</p>
-<p><img src="/images/download/attachments/8362899/pim_join-prune.png" alt="/images/download/attachments/8362899/pim_join-prune.png" class="confluence-embedded-image" height="250" /></p>
+<div>
+{{%imgOld "pim_join-prune.png" 0 250 %}}
+</div>
 <p>This PIM join/prune is for group 239.1.1.9, with 1 join and 0 prunes for the group. Join/prunes for multiple groups can exist in a single packet.</p>
 <pre><code>                    S,G Prune Example
                    
@@ -251,10 +258,13 @@ tries to join a stream before there are any sources.
 When a receiver joins a group, an IGMP membership join message is sent
 to the IGMPv3 multicast group, 224.0.0.22. The PIM multicast router for
 the segment that is listening to the IGMPv3 group receives the IGMP
-membership join message and becomes an LHR for this
-group.
+membership join message and becomes an LHR for this group.
 
-![/images/download/attachments/8362899/06igmp.png](/images/download/attachments/8362899/06igmp.png)
+<div>
+
+{{%imgOld "06igmp.png" 0 300 %}}
+
+</div>
 
 This creates a (\*,G) mroute with an OIF of the interface on which the
 IGMP Membership Report is received and an IIF of the RPF interface for
@@ -264,10 +274,13 @@ The LHR generates a PIM (\*,G) join message and sends it from the
 interface towards the RP. Each multicast router between the LHR and the
 RP builds a (\*,G) mroute with the OIF being the interface on which the
 PIM join message is received and an Incoming Interface of the reverse
-path forwarding interface for the
-RP.
+path forwarding interface for the RP.
 
-![/images/download/attachments/8362899/07pimjoin.png](/images/download/attachments/8362899/07pimjoin.png)
+<div>
+
+{{%imgOld "07pimjoin.png" 0 300 %}}
+
+</div>
 
 {{%notice note%}}
 
@@ -305,11 +318,19 @@ sending PIM register messages, but also makes a copy of the packet and
 sends it along the (S,G) mroute.
 
 The RP then receives the multicast packet along the (S,G) tree and sends
-a PIM register stop to the FHR to end the register
-process.
+a PIM register stop to the FHR to end the register process.
 
-![/images/download/attachments/8362899/08data.png](/images/download/attachments/8362899/08data.png)
-![/images/download/attachments/8362899/09register.png](/images/download/attachments/8362899/09register.png)
+<div>
+
+{{%imgOld "08data.png" 0 300 %}}
+
+</div>
+
+<div>
+
+{{%imgOld "09register.png" 0 300 %}}
+
+</div>
 
 ##### PIM SPT Switchover
 

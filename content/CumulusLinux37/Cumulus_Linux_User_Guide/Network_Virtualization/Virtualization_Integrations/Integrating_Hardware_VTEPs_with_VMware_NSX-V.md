@@ -5,15 +5,20 @@ weight: 413
 pageID: 8362823
 aliases:
  - /old/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html
+imagePaths:
+ - /images/download/attachments/8362823
 ---
 # Integrating Hardware VTEPs with VMware NSX-V
 
 Switches running Cumulus Linux can integrate with VMware NSX-V to act as
 hardware VTEP gateways. The VMware NSX-V controller provides consistent
-provisioning across virtual and physical server
-infrastructures.
+provisioning across virtual and physical server infrastructures.
 
-![/images/download/attachments/8362823/vxlan\_nsx.png](/images/download/attachments/8362823/vxlan_nsx.png)
+<div>
+
+{{%imgOld "vxlan\_nsx.png" 0 %}}
+
+</div>
 
 Cumulus Linux also supports integration with VMware NSX in high
 availability mode. Refer to [OVSDB Server High
@@ -291,7 +296,12 @@ example, the IP address of the NSX Manager is 192.168.110.23.
     Security** icon, **Service Definitions** category, then the
     **Hardware Devices** tab. Under **Hardware Devices**, click **+**.
     The Create Add Hardware Devices window opens.
-    ![/images/download/attachments/8362823/add\_hw\_devs.png](/images/download/attachments/8362823/add_hw_devs.png)
+    
+    <div>
+    
+    {{%imgOld "add\_hw\_devs.png" 0 250 %}}
+    
+    </div>
 
 2.  In the **Name** field, provide a name for the HW VTEP gateway.
 
@@ -315,11 +325,19 @@ example, the IP address of the NSX Manager is 192.168.110.23.
         
     ```
     
-    ![/images/download/attachments/8362823/add\_hw\_vtep.png](/images/download/attachments/8362823/add_hw_vtep.png)
+    <div>
+    
+    {{%imgOld "add\_hw\_vtep.png" 0 250 %}}
+    
+    </div>
 
-5.  Click **OK** to save the
-    gateway.  
-    ![/images/download/attachments/8362823/nsx\_mgr\_svc\_defs.png](/images/download/attachments/8362823/nsx_mgr_svc_defs.png)
+5.  Click **OK** to save the gateway.  
+    
+    <div>
+    
+    {{%imgOld "nsx\_mgr\_svc\_defs.png" 0 400 %}}
+    
+    </div>
 
 After communication is established between the switch and the
 controller, a `controller.cacert` file is downloaded onto the switch.
@@ -354,20 +372,38 @@ the transport zone and segment ID.
 
 2.  Click **Edit** and add the segment IDs (VNIDs) to be used. Here VNIs
     5000-5999 are configured.
-    ![/images/download/attachments/8362823/segment\_ID\_tab.png](/images/download/attachments/8362823/segment_ID_tab.png)
     
-    ![/images/download/attachments/8362823/segment\_ID\_edit.png](/images/download/attachments/8362823/segment_ID_edit.png)
+    <div>
+    
+    {{%imgOld "segment\_ID\_tab.png" 0 150 %}}
+    
+    </div>
+    
+    <div>
+    
+    {{%imgOld "segment\_ID\_edit.png" 0 250 %}}
+    
+    </div>
 
 3.  Click **OK** to save and provision the segment IDs.
 
 4.  Click the **Transport Zones** tab, choose the name of the transport
     zone.  
-    ![/images/download/attachments/8362823/transport\_zone\_new.png](/images/download/attachments/8362823/transport_zone_new.png)
+    
+    <div>
+    
+    {{%imgOld "transport\_zone\_new.png" 0 400 %}}
+    
+    </div>
 
 5.  Select **Unicast** to choose the NSX-V Controller Cluster to handle
-    the VXLAN control
-    plane.  
-    ![/images/download/attachments/8362823/transport\_zone\_new\_2.png](/images/download/attachments/8362823/transport_zone_new_2.png)
+    the VXLAN control plane.  
+    
+    <div>
+    
+    {{%imgOld "transport\_zone\_new\_2.png" 0 400 %}}
+    
+    </div>
 
 6.  Click **OK** to save the new transport zone.
 
@@ -380,9 +416,13 @@ instance) and all the logical ports needed.
 To define the logical switch:
 
 1.  In NSX Manager, select the **Logical Switches** category. Click
-    **+** to add a logical switch
-    instance.  
-    ![/images/download/attachments/8362823/logical\_switch\_new.png](/images/download/attachments/8362823/logical_switch_new.png)
+    **+** to add a logical switch instance.  
+    
+    <div>
+    
+    {{%imgOld "logical\_switch\_new.png" 0 250 %}}
+    
+    </div>
 
 2.  In the **Name** field, enter a name for the logical switch.
 
@@ -393,26 +433,36 @@ To define the logical switch:
     replication by the service node. Then check the **Enable IP
     Discovery** check box.
 
-5.  Click
-    **OK**.  
-    ![/images/download/attachments/8362823/logical\_switches.png](/images/download/attachments/8362823/logical_switches.png)
+5.  Click **OK**.  
+    
+    <div>
+    
+    {{%imgOld "logical\_switches.png" 0 %}}
+    
+    </div>
 
 To configure the Replication Cluster:
 
 1.  Select the **Service Definitions** category, then click the
     **Hardware Devices** tab. Next to the **Replication Cluster** field,
-    click
-    **Edit**.
+    click **Edit**.
     
-    ![/images/download/attachments/8362823/replication\_cluster\_select.png](/images/download/attachments/8362823/replication_cluster_select.png)
+    <div>
+    
+    {{%imgOld "replication\_cluster\_select.png" 0 250 %}}
+    
+    </div>
 
 2.  Hypervisors connected to the NSX controller for replication appear
     in the **Available Objects** list. Select the required service
     nodes, then click the green arrow to move them to the **Selected
-    Objects**
-    list.
+    Objects** list.
     
-    ![/images/download/attachments/8362823/replication\_cluster\_save.png](/images/download/attachments/8362823/replication_cluster_save.png)
+    <div>
+    
+    {{%imgOld "replication\_cluster\_save.png" 0 250 %}}
+    
+    </div>
 
 3.  Click **OK** to save the replication node configuration.
 
@@ -424,11 +474,20 @@ for each switch port associated with a particular logical switch):
 1.  In NSX Manager, add a new logical switch port. Click the **Logical
     Switches** category. Under **Actions**, click **Manage Hardware
     Bindings**. The Manage Hardware Binding wizard appears.
-    ![/images/download/attachments/8362823/manage\_hw\_bindings\_menu.png](/images/download/attachments/8362823/manage_hw_bindings_menu.png)
+    
+    <div>
+    
+    {{%imgOld "manage\_hw\_bindings\_menu.png" 0 250 %}}
+    
+    </div>
 
-2.  Click **+** to add a logical port to the logical
-    switch.  
-    ![/images/download/attachments/8362823/manage\_hw\_bindings\_new.png](/images/download/attachments/8362823/manage_hw_bindings_new.png)
+2.  Click **+** to add a logical port to the logical switch.  
+    
+    <div>
+    
+    {{%imgOld "manage\_hw\_bindings\_new.png" 0 400 %}}
+    
+    </div>
 
 3.  Select the logical switch that you created earlier (5000).
 
@@ -438,9 +497,13 @@ for each switch port associated with a particular logical switch):
 
 5.  Click **OK** to save the logical switch port. Connectivity is
     established. Repeat this procedure for each logical switch port you
-    want to
-    define.  
-    ![/images/download/attachments/8362823/manage\_hw\_bindings\_save.png](/images/download/attachments/8362823/manage_hw_bindings_save.png)
+    want to define.  
+    
+    <div>
+    
+    {{%imgOld "manage\_hw\_bindings\_save.png" 0 400 %}}
+    
+    </div>
 
 ## Verify the VXLAN Configuration
 

@@ -5,6 +5,8 @@ weight: 193
 pageID: 8362922
 aliases:
  - /old/Open_Shortest_Path_First_-_OSPF.html
+imagePaths:
+ - /images/download/attachments/8362922
 ---
 # Open Shortest Path First - OSPF
 
@@ -50,10 +52,13 @@ to achieve high scale. You can divide the topology into areas, resulting
 in a two-level hierarchy. Area 0 (or 0.0.0.0), called the backbone area,
 is the top level of the hierarchy. Packets traveling from one non-zero
 area to another must go through the backbone area. For example, you can
-divide the leaf-spine topology into the following
-areas:
+divide the leaf-spine topology into the following areas:
 
-![/images/download/attachments/8362922/ospf-areas.png](/images/download/attachments/8362922/ospf-areas.png)
+<div>
+
+{{%imgOld "ospf-areas.png" 0 %}}
+
+</div>
 
 {{%notice note%}}
 
@@ -308,12 +313,15 @@ summarized routes and injects them to other areas already summarized.
 {{%notice note%}}
 
 Summarization can cause non-optimal forwarding of packets during
-failures. Here is an example
-scenario:
+failures. Here is an example scenario:
 
 {{%/notice%}}
 
-![/images/download/attachments/8362922/ospf-summarization.png](/images/download/attachments/8362922/ospf-summarization.png)
+<div>
+
+{{%imgOld "ospf-summarization.png" 0 %}}
+
+</div>
 
 As shown in the diagram, the ABRs in the right non-zero area summarize
 the host prefixes as 10.1.0.0/16. When the link between R5 and R10

@@ -5,6 +5,7 @@ weight: 19
 pageID: 8362649
 aliases:
  - /old/Layer_2.html
+imagePaths: []
 ---
 # Layer 2
 

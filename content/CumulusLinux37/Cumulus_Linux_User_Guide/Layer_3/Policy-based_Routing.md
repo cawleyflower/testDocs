@@ -5,6 +5,8 @@ weight: 199
 pageID: 8362974
 aliases:
  - /old/Policy-based_Routing.html
+imagePaths:
+ - /images/download/attachments/8362974
 ---
 # Policy-based Routing
 
@@ -183,10 +185,13 @@ To configure a PBR policy:
 In the following example, the PBR-enabled switch has a PBR policy to
 route all traffic from the Internet to a server that performs anti-DDOS.
 The traffic returns to the PBR-enabled switch after being cleaned and is
-then passed onto the regular destination based routing
-mechanism.
+then passed onto the regular destination based routing mechanism.
 
-![/images/download/attachments/8362974/PBR.png](/images/download/attachments/8362974/PBR.png)
+<div>
+
+{{%imgOld "PBR.png" 0 %}}
+
+</div>
 
 The configuration for the example above is:
 

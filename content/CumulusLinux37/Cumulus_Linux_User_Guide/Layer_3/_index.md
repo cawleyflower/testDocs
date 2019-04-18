@@ -5,6 +5,7 @@ weight: 23
 pageID: 8362897
 aliases:
  - /old/Layer_3.html
+imagePaths: []
 ---
 # Layer 3
 

@@ -5,6 +5,8 @@ weight: 399
 pageID: 8362715
 aliases:
  - /old/LNV_Full_Example.html
+imagePaths:
+ - /images/download/thumbnails/8362715
 ---
 # LNV Full Example
 
@@ -52,9 +54,13 @@ The following images illustrate the configuration:
 <tbody>
 <tr class="odd">
 <td><p>Physical Cabling Diagram</p>
-<p><img src="/images/download/thumbnails/8362715/Screen_Shot_2015-04-20_at_10.02.57_AM.png" alt="/images/download/thumbnails/8362715/Screen_Shot_2015-04-20_at_10.02.57_AM.png" class="confluence-embedded-image confluence-thumbnail image-center" width="300" /></p></td>
+<div>
+{{%imgOld "Screen_Shot_2015-04-20_at_10.02.57_AM.png" 0 %}}
+</div></td>
 <td><p>Network Virtualization Diagram</p>
-<p><img src="/images/download/thumbnails/8362715/Screen_Shot_2015-04-22_at_1.58.50_PM.png" alt="/images/download/thumbnails/8362715/Screen_Shot_2015-04-22_at_1.58.50_PM.png" class="confluence-embedded-image confluence-thumbnail" width="300" /></p></td>
+<div>
+{{%imgOld "Screen_Shot_2015-04-22_at_1.58.50_PM.png" 0 %}}
+</div></td>
 </tr>
 </tbody>
 </table>
@@ -68,10 +74,14 @@ Check out [Cumulus VX](https://cumulusnetworks.com/cumulus-vx/) .
 
 {{%/notice%}}
 
-{{%notice
-tip%}}
+{{%notice tip%}}
 
-![/images/download/thumbnails/8362715/turtle\_training.png](/images/download/thumbnails/8362715/turtle_training.png)
+<div>
+
+{{%imgOld "turtle\_training.png" 0 %}}
+
+</div>
+
 Feeling Overwhelmed? Come join a [Cumulus Boot
 Camp](http://cumulusnetworks.com/education/instructor-led-training/) and
 get instructor-led training\!

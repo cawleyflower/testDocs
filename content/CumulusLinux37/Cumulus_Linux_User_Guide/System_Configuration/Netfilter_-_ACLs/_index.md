@@ -5,6 +5,9 @@ weight: 69
 pageID: 8362563
 aliases:
  - /old/Netfilter_-_ACLs.html
+imagePaths:
+ - /images/download/attachments/8362563
+ - /images/download/thumbnails/8362563
 ---
 # Netfilter - ACLs
 
@@ -129,10 +132,14 @@ are defined using syntax provided by the `iptables`, `ip6tables` and
 
 The rules created by these programs inspect or operate on packets at
 several points in the life of the packet through the system. These five
-points are known as *chains* and are shown
-here:
+points are known as *chains* and are shown here:
 
-![/images/download/attachments/8362563/Linux\_Traffic\_Inspection\_Points\_%28Chains%29.png](/images/download/attachments/8362563/Linux_Traffic_Inspection_Points_%28Chains%29.png)
+<div>
+
+{{%imgOld "Linux\_Traffic\_Inspection\_Points\_%28Chains%29.png" 0 250
+%}}
+
+</div>
 
 The chains and their uses are:
 
@@ -172,28 +179,46 @@ inspect packets at different points of the path through the switch.
 Chains contain the individual rules to influence traffic. Each table and
 the default chains they support are shown below. Tables and chains in
 green are supported by Cumulus Linux, those in red are not supported
-(that is, they are not hardware accelerated) at this
-time.
+(that is, they are not hardware accelerated) at this time.
 
-![/images/download/thumbnails/8362563/Linux\_IPtables\_Default\_Tables.png](/images/download/thumbnails/8362563/Linux_IPtables_Default_Tables.png)
-![/images/download/thumbnails/8362563/Linux\_EBtables\_Default\_Tables.png](/images/download/thumbnails/8362563/Linux_EBtables_Default_Tables.png)
+<div>
 
-![/images/download/attachments/8362563/Legend\_%281%29.png](/images/download/attachments/8362563/Legend_%281%29.png)
+{{%imgOld "Linux\_IPtables\_Default\_Tables.png" 1 250 %}}
+
+</div>
+
+<div>
+
+{{%imgOld "Linux\_EBtables\_Default\_Tables.png" 1 250 %}}
+
+</div>
+
+<div>
+
+{{%imgOld "Legend\_%281%29.png" 0 150 %}}
+
+</div>
 
 ### Rules
 
 Rules are the items that actually classify traffic to be acted upon.
 Rules are applied to chains, which are attached to tables, similar to
-the graphic
-below.
+the graphic below.
 
-![/images/download/thumbnails/8362563/Tables\_Chains\_Rules.png](/images/download/thumbnails/8362563/Tables_Chains_Rules.png)
+<div>
+
+{{%imgOld "Tables\_Chains\_Rules.png" 1 150 %}}
+
+</div>
 
 Rules have several different components; the examples below highlight
-those different
-components.
+those different components.
 
-![/images/download/attachments/8362563/Anatomy\_of\_a\_Rule.png](/images/download/attachments/8362563/Anatomy_of_a_Rule.png)
+<div>
+
+{{%imgOld "Anatomy\_of\_a\_Rule.png" 0 250 %}}
+
+</div>
 
   - **Table:** The first argument is the *table*. Notice the second
     example does not specify a table, that is because the filter table
@@ -367,16 +392,22 @@ However, removing the `-o` option and interface make it a valid rule.
 ### Nonatomic Update Mode and Update Mode
 
 In Cumulus Linux, *update mode* is enabled by default. However, this
-mode limits the number of ACL rules that you can
-configure.
+mode limits the number of ACL rules that you can configure.
 
-![/images/download/attachments/8362563/TCAM\_ACL\_update\_operation\_atomic.png](/images/download/attachments/8362563/TCAM_ACL_update_operation_atomic.png)
+<div>
+
+{{%imgOld "TCAM\_ACL\_update\_operation\_atomic.png" 0 400 %}}
+
+</div>
 
 To increase the number of ACL rules that can be configured, configure
-the switch to operate in *nonatomic
-mode*.
+the switch to operate in *nonatomic mode*.
 
-![/images/download/attachments/8362563/TCAM\_ACL\_update\_operation\_nonatomic.png](/images/download/attachments/8362563/TCAM_ACL_update_operation_nonatomic.png)
+<div>
+
+{{%imgOld "TCAM\_ACL\_update\_operation\_nonatomic.png" 0 400 %}}
+
+</div>
 
 How the Rules Get Installed
 
@@ -385,12 +416,19 @@ incremental update uses the available free space to write the new TCAM
 rules and swap over to the new rules after this is complete. Cumulus
 Linux then deletes the old rules and frees up the original TCAM space.
 If there is insufficient free space to complete this task, the original
-nonatomic update is performed, which interrupts
-traffic.
+nonatomic update is performed, which interrupts traffic.
 
-![/images/download/attachments/8362563/TCAM\_ACL\_update\_del.png](/images/download/attachments/8362563/TCAM_ACL_update_del.png)
+<div>
 
-![/images/download/attachments/8362563/TCAM\_ACL\_update\_add.png](/images/download/attachments/8362563/TCAM_ACL_update_add.png)
+{{%imgOld "TCAM\_ACL\_update\_del.png" 0 250 %}}
+
+</div>
+
+<div>
+
+{{%imgOld "TCAM\_ACL\_update\_add.png" 0 %}}
+
+</div>
 
 #### Enable Nonatomic Update Mode
 
@@ -1104,7 +1142,12 @@ switch.
 
 <span id="src-8362563_Netfilter-ACLs-examples"></span>The following
 example scenario demonstrates how several different rules are applied.
-![/images/download/attachments/8362563/acl-diagram.png](/images/download/attachments/8362563/acl-diagram.png)
+
+<div>
+
+{{%imgOld "acl-diagram.png" 0 %}}
+
+</div>
 
 Following are the configurations for the two switches used in these
 examples. The configuration for each switch appears in

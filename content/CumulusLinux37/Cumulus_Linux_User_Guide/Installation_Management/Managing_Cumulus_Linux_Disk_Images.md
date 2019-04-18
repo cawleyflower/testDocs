@@ -5,6 +5,7 @@ weight: 41
 pageID: 8362634
 aliases:
  - /old/Managing_Cumulus_Linux_Disk_Images.html
+imagePaths: []
 ---
 # Managing Cumulus Linux Disk Images
 

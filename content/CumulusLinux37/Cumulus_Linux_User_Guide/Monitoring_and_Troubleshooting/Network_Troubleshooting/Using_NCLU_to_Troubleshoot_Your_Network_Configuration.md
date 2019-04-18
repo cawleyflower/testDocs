@@ -5,6 +5,8 @@ weight: 491
 pageID: 8362599
 aliases:
  - /old/Using_NCLU_to_Troubleshoot_Your_Network_Configuration.html
+imagePaths:
+ - /images/download/attachments/8362599
 ---
 # Using NCLU to Troubleshoot Your Network Configuration
 
@@ -139,7 +141,9 @@ Serial Number.... A1010B2A011212AB000001
 <td><p>VISIBLE ONLY TO EDITORS</p>
 <h4 id="troubleshooting-example-openstack">Troubleshooting Example: OpenStack</h4>
 <p>Looking at an OpenStack Environment, here is the physical diagram:</p>
-<p><img src="/images/download/attachments/8362599/openstack-diagram.png" alt="/images/download/attachments/8362599/openstack-diagram.png" class="confluence-embedded-image" height="400" /></p>
+<div>
+{{%imgOld "openstack-diagram.png" 0 400 %}}
+</div>
 <p>For server2, <code>netshow</code> can help us see the OpenStack network configuration. The <code>netshow</code> output below shows an summary of a Kilo-based OpenStack server running 3 tenants.</p>
 <pre><code>                   
 [root@host ~]# netshow int

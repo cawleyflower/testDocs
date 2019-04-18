@@ -5,6 +5,8 @@ weight: 129
 pageID: 8362691
 aliases:
  - /old/Virtual_Router_Redundancy_-_VRR_and_VRRP.html
+imagePaths:
+ - /images/download/attachments/8362691
 ---
 # Virtual Router Redundancy - VRR and VRRP
 
@@ -45,12 +47,15 @@ Aggregation](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html) (MLAG).
 {{%notice note%}}
 
 Cumulus Linux only supports VRR on switched virtual interfaces (SVIs).
-VRR is not supported on physical interfaces or virtual
-subinterfaces.
+VRR is not supported on physical interfaces or virtual subinterfaces.
 
 {{%/notice%}}
 
-![/images/download/attachments/8362691/vrr\_active-active.png](/images/download/attachments/8362691/vrr_active-active.png)
+<div>
+
+{{%imgOld "vrr\_active-active.png" 0 %}}
+
+</div>
 
 A production implementation will have many more server hosts and network
 connections than are shown here. However, this basic configuration
@@ -511,10 +516,13 @@ the IP addresses of the virtual router.
 [RFC 5798](https://tools.ietf.org/html/rfc5798#section-4.1) describes
 VRRP in detail.
 
-The following example illustrates a basic VRRP
-configuration.
+The following example illustrates a basic VRRP configuration.
 
-![/images/download/attachments/8362691/VRRP\_illustration.png](/images/download/attachments/8362691/VRRP_illustration.png)
+<div>
+
+{{%imgOld "VRRP\_illustration.png" 0 %}}
+
+</div>
 
 ### Configure VRRP
 
