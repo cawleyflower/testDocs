@@ -5,8 +5,6 @@ weight: 359
 pageID: 8362670
 aliases:
  - /old/Traditional_Bridge_Mode.html
-imagePaths:
- - /images/download/attachments/8362670
 ---
 # Traditional Bridge Mode
 
@@ -236,11 +234,7 @@ connected to bridge-B. This means that:
 
   - host-1 and host-2 cannot communicate with host-3 and host-4.
 
-<div>
-
-{{%imgOld "multiple-bridges.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 This example configuration looks like this in the
 `/etc/network/interfaces` file:
@@ -307,11 +301,7 @@ native VLAN, thus merging those two VLANs and their spanning tree state.
 
 ### Trunk Example
 
-<div>
-
-{{%imgOld "trunk.png" 0 400 %}}
-
-</div>
+{{%imgOld 1 %}}
 
 To create the above example, add the following configuration to the
 `/etc/network/interfaces` file:

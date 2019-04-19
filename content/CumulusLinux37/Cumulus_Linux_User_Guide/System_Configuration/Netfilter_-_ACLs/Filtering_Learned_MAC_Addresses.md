@@ -5,7 +5,6 @@ weight: 309
 pageID: 8362575
 aliases:
  - /old/Filtering_Learned_MAC_Addresses.html
-imagePaths: []
 ---
 # Filtering Learned MAC Addresses
 

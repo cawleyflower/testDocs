@@ -5,7 +5,6 @@ weight: 29
 pageID: 8362977
 aliases:
  - /old/Cumulus_Linux_Index.html
-imagePaths: []
 ---
 # Cumulus Linux Index
 

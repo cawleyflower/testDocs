@@ -5,7 +5,6 @@ weight: 321
 pageID: 8363026
 aliases:
  - /old/Switch_Port_Attributes.html
-imagePaths: []
 ---
 # Switch Port Attributes
 

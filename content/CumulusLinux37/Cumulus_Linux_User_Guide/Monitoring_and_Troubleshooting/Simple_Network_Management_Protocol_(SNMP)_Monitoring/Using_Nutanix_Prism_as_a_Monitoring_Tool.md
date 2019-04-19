@@ -5,9 +5,6 @@ weight: 505
 pageID: 8362618
 aliases:
  - /old/Using_Nutanix_Prism_as_a_Monitoring_Tool.html
-imagePaths:
- - /images/download/attachments/8362618
- - /images/download/thumbnails/8362618
 ---
 # Using Nutanix Prism as a Monitoring Tool
 
@@ -97,27 +94,15 @@ take special steps within Cumulus Linux before you can configure Prism.
 1.  Log into the Nutanix Prism. Nutanix defaults to the Home menu,
     referred to as the Dashboard:
     
-    <div>
-    
-    {{%imgOld "Screen\_Shot\_2016-01-05\_at\_11.21.05\_AM.png" 0 250 %}}
-    
-    </div>
+    {{%imgOld 0 %}}
 
 2.  Click on the gear icon
     
-    <div>
-    
-    {{%imgOld "Screen\_Shot\_2016-01-05\_at\_11.39.49\_AM.png" 1 %}}
-    
-    </div>
+    {{%imgOld 1 %}}
     
     in the top right corner of the dashboard, and select NetworkSwitch:
     
-    <div>
-    
-    {{%imgOld "Screen\_Shot\_2016-01-05\_at\_11.39.31\_AM.png" 0 250 %}}
-    
-    </div>
+    {{%imgOld 2 %}}
 
 3.  Click the **+Add Switch Configuration** button in the **Network
     Switch Configuration** pop up window.
@@ -125,12 +110,8 @@ take special steps within Cumulus Linux before you can configure Prism.
 4.  Fill out the **Network Switch Configuration** for the Top of Rack
     (ToR) switch configured for snmpd in the previous section:
     
-    <div>
-    
-    {{%imgOld "Screen\_Shot\_2016-01-05\_at\_11.45.38\_AM.png" 0 250
+    {{%imgOld 3
     %}}
-    
-    </div>
     
     <div class="tablewrap">
     
@@ -159,12 +140,7 @@ take special steps within Cumulus Linux before you can configure Prism.
 
 7.  Open the **Hardware** option from the **Home** dropdown menu:
     
-    <div>
-    
-    {{%imgOld "Screen\_Shot\_2016-01-05\_at\_11.58.00\_AM\_%281%29.png"
-    0 250 %}}
-    
-    </div>
+    {{%imgOld 4 %}}
 
 8.  Click the **Table** button.
 
@@ -172,11 +148,7 @@ take special steps within Cumulus Linux before you can configure Prism.
     table, as indicated in the screenshot below, and can be selected in
     order to view interface statistics:
     
-    <div>
-    
-    {{%imgOld "Screen\_Shot\_2016-01-05\_at\_1.07.48\_PM.png" 1 250 %}}
-    
-    </div>
+    {{%imgOld 5 %}}
 
 {{%notice note%}}
 
@@ -239,11 +211,7 @@ nutanix@NTNX-14SM15270093-D-CVM:192.168.0.184:~$ ncli network list-switch
 
 To help visualize the following diagram is provided:
 
-<div>
-
-{{%imgOld "Screen\_Shot\_2016-01-06\_at\_10.36.29\_AM.png" 0 250 %}}
-
-</div>
+{{%imgOld 6 %}}
 
 <div class="tablewrap">
 

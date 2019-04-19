@@ -5,10 +5,6 @@ weight: 125
 pageID: 8362677
 aliases:
  - /old/Multi-Chassis_Link_Aggregation_-_MLAG.html
-imagePaths:
- - /images/download/thumbnails/8362677
- - /images/download/attachments/8362677
- - /images/raw.githubusercontent.com/CumulusNetworks/cldemo-config-mlag/master
 ---
 # Multi-Chassis Link Aggregation - MLAG
 
@@ -36,11 +32,7 @@ physical switches.
 
 A basic setup looks like this:
 
-<div>
-
-{{%imgOld "host\_ha1.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 {{%notice tip%}}
 
@@ -102,21 +94,13 @@ More elaborate configurations are also possible. The number of links
 between the host and the switches can be greater than two, and does not
 have to be symmetrical:
 
-<div>
-
-{{%imgOld "host\_ha2.png" 0 %}}
-
-</div>
+{{%imgOld 1 %}}
 
 Additionally, because S1 and S2 appear as a single switch to other
 bonding devices, you can also connect pairs of MLAG switches to each
 other in a switch-to-switch MLAG setup:
 
-<div>
-
-{{%imgOld "2pair\_mlag.png" 1 %}}
-
-</div>
+{{%imgOld 2 %}}
 
 In this case, L1 and L2 are also MLAG peer switches, and present a
 two-port bond from a single logical system to S1 and S2. S1 and S2 do
@@ -155,11 +139,7 @@ connected to the dual-connected host or switch in the bond. This is true
 even if the links are a single port on each peer switch, where each port
 is placed into a bond, as shown below:
 
-<div>
-
-{{%imgOld "2l\_3h.png" 0 %}}
-
-</div>
+{{%imgOld 3 %}}
 
 All of the dual-connected bonds on the peer switches have their system
 ID set to the MLAG system ID. Therefore, from the point of view of the
@@ -193,11 +173,7 @@ example clag l2-with-server-vlan-trunks`.
 
 {{%/notice%}}
 
-<div>
-
-{{%imgOld "bgp-unnumbered.png" 2 400 %}}
-
-</div>
+{{%imgOld 4 %}}
 
 You configure these interfaces using
 [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html), so the bridges
@@ -1087,11 +1063,7 @@ In this scenario, the spine switches connect at layer 3, as shown in the
 image below. Alternatively, the spine switches can be singly connected
 to each core switch at layer 3 (not shown below).
 
-<div>
-
-{{%imgOld "mlag\_cfg\_l3.png" 1 %}}
-
-</div>
+{{%imgOld 5 %}}
 
 In this design, the spine switches route traffic between the server
 hosts in the layer 2 domains and the core. The servers (host1 thru

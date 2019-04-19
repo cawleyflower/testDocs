@@ -5,8 +5,6 @@ weight: 97
 pageID: 8363036
 aliases:
  - /old/DHCP_Relays.html
-imagePaths:
- - /images/download/attachments/8363036
 ---
 # DHCP Relays
 
@@ -16,11 +14,7 @@ To run DHCP for both IPv4 and IPv6, initiate the DHCP relay once for
 IPv4 and once for IPv6. Following are the configurations on the server
 hosts, DHCP relay, and DHCP server using the following topology:
 
-<div>
-
-{{%imgOld "dhcp\_relay\_topo.png" 0 250 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 {{%notice warning%}}
 

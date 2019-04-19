@@ -5,7 +5,6 @@ weight: 181
 pageID: 8362912
 aliases:
  - /old/Routing.html
-imagePaths: []
 ---
 # Routing
 

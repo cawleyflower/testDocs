@@ -5,7 +5,6 @@ weight: 243
 pageID: 8362608
 aliases:
  - /old/Simple_Network_Management_Protocol_(SNMP)_Monitoring.html
-imagePaths: []
 ---
 # Simple Network Management Protocol (SNMP) Monitoring
 

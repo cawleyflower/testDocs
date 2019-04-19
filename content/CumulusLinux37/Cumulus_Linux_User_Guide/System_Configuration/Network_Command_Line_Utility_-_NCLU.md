@@ -5,8 +5,6 @@ weight: 63
 pageID: 8362580
 aliases:
  - /old/Network_Command_Line_Utility_-_NCLU.html
-imagePaths:
- - /images/download/attachments/8362580
 ---
 # Network Command Line Utility - NCLU
 
@@ -29,11 +27,7 @@ and sub-modes. NCLU provides these benefits:
   - Configures dependent features automatically so that you don't have
     to.
 
-<div>
-
-{{%imgOld "Linux-NCLU-Architecture.png" 0 400 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 The NCLU wrapper utility called `net` is capable of configuring layer 2
 and layer 3 features of the networking stack, installing ACLs and

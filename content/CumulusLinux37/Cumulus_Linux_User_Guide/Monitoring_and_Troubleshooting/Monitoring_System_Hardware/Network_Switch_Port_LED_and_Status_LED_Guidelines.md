@@ -5,7 +5,6 @@ weight: 453
 pageID: 8362595
 aliases:
  - /old/Network_Switch_Port_LED_and_Status_LED_Guidelines.html
-imagePaths: []
 ---
 # Network Switch Port LED and Status LED Guidelines
 

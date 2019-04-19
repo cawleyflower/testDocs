@@ -5,9 +5,6 @@ weight: 197
 pageID: 8362926
 aliases:
  - /old/Border_Gateway_Protocol_-_BGP.html
-imagePaths:
- - /images/download/thumbnails/8362926
- - /images/download/attachments/8362926
 ---
 # Border Gateway Protocol - BGP
 
@@ -98,11 +95,7 @@ reflector server, announcing the routes between tier 1 nodes 1.1 and 1.2
 to tier 1 node 1.3. It is also a route reflector client, learning the
 routes between tier 2 nodes 2.2 and 2.3 from the tier 3 node, 3.1.
 
-<div>
-
-{{%imgOld "bgp\_route\_reflectors.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 {{%notice note%}}
 
@@ -1843,11 +1836,7 @@ Limiting the exchange of routing information at various parts in the
 network is a best practice you should follow. The following image
 illustrates one way you can do so in a typical Clos architecture:
 
-<div>
-
-{{%imgOld "BGP\_Advertisement\_Best\_Practices.png" 1 400 %}}
-
-</div>
+{{%imgOld 1 %}}
 
 ### Multiple Routing Tables and Forwarding
 

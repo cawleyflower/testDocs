@@ -5,8 +5,6 @@ weight: 185
 pageID: 8362915
 aliases:
  - /old/Network_Topology.html
-imagePaths:
- - /images/download/attachments/8362915
 ---
 # Network Topology
 
@@ -22,11 +20,7 @@ This topology is shown in the figure below. It is also commonly referred
 to as leaf-spine topology. We shall use this topology throughout the
 routing protocol guide.
 
-<div>
-
-{{%imgOld "topology.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 This topology allows the building of networks of varying size using
 nodes of different port counts and/or by increasing the tiers. The

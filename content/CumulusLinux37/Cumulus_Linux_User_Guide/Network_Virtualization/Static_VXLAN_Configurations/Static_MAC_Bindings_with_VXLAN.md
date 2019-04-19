@@ -5,8 +5,6 @@ weight: 387
 pageID: 8362790
 aliases:
  - /old/Static_MAC_Bindings_with_VXLAN.html
-imagePaths:
- - /images/download/attachments/8362790
 ---
 # Static MAC Bindings with VXLAN
 
@@ -31,11 +29,7 @@ For a basic VXLAN configuration, make sure that:
 
 Consider the following example:
 
-<div>
-
-{{%imgOld "vxlan.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 {{%notice warning%}}
 

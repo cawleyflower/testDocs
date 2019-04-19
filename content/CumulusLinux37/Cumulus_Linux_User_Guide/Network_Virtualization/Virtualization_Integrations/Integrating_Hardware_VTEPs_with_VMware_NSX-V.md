@@ -5,8 +5,6 @@ weight: 413
 pageID: 8362823
 aliases:
  - /old/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html
-imagePaths:
- - /images/download/attachments/8362823
 ---
 # Integrating Hardware VTEPs with VMware NSX-V
 
@@ -14,11 +12,7 @@ Switches running Cumulus Linux can integrate with VMware NSX-V to act as
 hardware VTEP gateways. The VMware NSX-V controller provides consistent
 provisioning across virtual and physical server infrastructures.
 
-<div>
-
-{{%imgOld "vxlan\_nsx.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 Cumulus Linux also supports integration with VMware NSX in high
 availability mode. Refer to [OVSDB Server High
@@ -297,11 +291,7 @@ example, the IP address of the NSX Manager is 192.168.110.23.
     **Hardware Devices** tab. Under **Hardware Devices**, click **+**.
     The Create Add Hardware Devices window opens.
     
-    <div>
-    
-    {{%imgOld "add\_hw\_devs.png" 0 250 %}}
-    
-    </div>
+    {{%imgOld 1 %}}
 
 2.  In the **Name** field, provide a name for the HW VTEP gateway.
 
@@ -325,19 +315,11 @@ example, the IP address of the NSX Manager is 192.168.110.23.
         
     ```
     
-    <div>
-    
-    {{%imgOld "add\_hw\_vtep.png" 0 250 %}}
-    
-    </div>
+    {{%imgOld 2 %}}
 
 5.  Click **OK** to save the gateway.  
     
-    <div>
-    
-    {{%imgOld "nsx\_mgr\_svc\_defs.png" 0 400 %}}
-    
-    </div>
+    {{%imgOld 3 %}}
 
 After communication is established between the switch and the
 controller, a `controller.cacert` file is downloaded onto the switch.
@@ -373,37 +355,21 @@ the transport zone and segment ID.
 2.  Click **Edit** and add the segment IDs (VNIDs) to be used. Here VNIs
     5000-5999 are configured.
     
-    <div>
+    {{%imgOld 4 %}}
     
-    {{%imgOld "segment\_ID\_tab.png" 0 150 %}}
-    
-    </div>
-    
-    <div>
-    
-    {{%imgOld "segment\_ID\_edit.png" 0 250 %}}
-    
-    </div>
+    {{%imgOld 5 %}}
 
 3.  Click **OK** to save and provision the segment IDs.
 
 4.  Click the **Transport Zones** tab, choose the name of the transport
     zone.  
     
-    <div>
-    
-    {{%imgOld "transport\_zone\_new.png" 0 400 %}}
-    
-    </div>
+    {{%imgOld 6 %}}
 
 5.  Select **Unicast** to choose the NSX-V Controller Cluster to handle
     the VXLAN control plane.  
     
-    <div>
-    
-    {{%imgOld "transport\_zone\_new\_2.png" 0 400 %}}
-    
-    </div>
+    {{%imgOld 7 %}}
 
 6.  Click **OK** to save the new transport zone.
 
@@ -418,11 +384,7 @@ To define the logical switch:
 1.  In NSX Manager, select the **Logical Switches** category. Click
     **+** to add a logical switch instance.  
     
-    <div>
-    
-    {{%imgOld "logical\_switch\_new.png" 0 250 %}}
-    
-    </div>
+    {{%imgOld 8 %}}
 
 2.  In the **Name** field, enter a name for the logical switch.
 
@@ -435,11 +397,7 @@ To define the logical switch:
 
 5.  Click **OK**.  
     
-    <div>
-    
-    {{%imgOld "logical\_switches.png" 0 %}}
-    
-    </div>
+    {{%imgOld 9 %}}
 
 To configure the Replication Cluster:
 
@@ -447,22 +405,14 @@ To configure the Replication Cluster:
     **Hardware Devices** tab. Next to the **Replication Cluster** field,
     click **Edit**.
     
-    <div>
-    
-    {{%imgOld "replication\_cluster\_select.png" 0 250 %}}
-    
-    </div>
+    {{%imgOld 10 %}}
 
 2.  Hypervisors connected to the NSX controller for replication appear
     in the **Available Objects** list. Select the required service
     nodes, then click the green arrow to move them to the **Selected
     Objects** list.
     
-    <div>
-    
-    {{%imgOld "replication\_cluster\_save.png" 0 250 %}}
-    
-    </div>
+    {{%imgOld 11 %}}
 
 3.  Click **OK** to save the replication node configuration.
 
@@ -475,19 +425,11 @@ for each switch port associated with a particular logical switch):
     Switches** category. Under **Actions**, click **Manage Hardware
     Bindings**. The Manage Hardware Binding wizard appears.
     
-    <div>
-    
-    {{%imgOld "manage\_hw\_bindings\_menu.png" 0 250 %}}
-    
-    </div>
+    {{%imgOld 12 %}}
 
 2.  Click **+** to add a logical port to the logical switch.  
     
-    <div>
-    
-    {{%imgOld "manage\_hw\_bindings\_new.png" 0 400 %}}
-    
-    </div>
+    {{%imgOld 13 %}}
 
 3.  Select the logical switch that you created earlier (5000).
 
@@ -499,11 +441,7 @@ for each switch port associated with a particular logical switch):
     established. Repeat this procedure for each logical switch port you
     want to define.  
     
-    <div>
-    
-    {{%imgOld "manage\_hw\_bindings\_save.png" 0 400 %}}
-    
-    </div>
+    {{%imgOld 14 %}}
 
 ## Verify the VXLAN Configuration
 

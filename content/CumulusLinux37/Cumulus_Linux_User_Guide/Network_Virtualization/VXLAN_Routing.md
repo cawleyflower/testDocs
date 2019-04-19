@@ -5,8 +5,6 @@ weight: 155
 pageID: 8362747
 aliases:
  - /old/VXLAN_Routing.html
-imagePaths:
- - /images/download/attachments/5869109
 ---
 # VXLAN Routing
 
@@ -200,11 +198,7 @@ into an external hyperloop and bonded together.
 The following diagram illustrates the configuration and operation of an
 external hyperloop.
 
-<div>
-
-{{%imgOld "Screen\_Shot\_2017-03-09\_at\_12.39.53\_PM.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 In the above diagram, VTEPs *exit01* and *exit02* are acting as VXLAN
 layer 3 gateways. On *exit01*, two pairs of ports are externally looped

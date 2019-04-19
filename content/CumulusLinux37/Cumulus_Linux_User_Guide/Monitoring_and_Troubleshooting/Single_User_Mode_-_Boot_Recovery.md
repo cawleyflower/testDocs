@@ -5,7 +5,6 @@ weight: 227
 pageID: 8362606
 aliases:
  - /old/Single_User_Mode_-_Boot_Recovery.html
-imagePaths: []
 ---
 # Single User Mode - Boot Recovery
 

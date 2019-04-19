@@ -5,7 +5,6 @@ weight: 15
 pageID: 8362543
 aliases:
  - /old/System_Configuration.html
-imagePaths: []
 ---
 # System Configuration
 

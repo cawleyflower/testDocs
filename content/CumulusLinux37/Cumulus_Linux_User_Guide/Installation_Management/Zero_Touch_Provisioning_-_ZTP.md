@@ -5,7 +5,6 @@ weight: 51
 pageID: 8362632
 aliases:
  - /old/Zero_Touch_Provisioning_-_ZTP.html
-imagePaths: []
 ---
 # Zero Touch Provisioning - ZTP
 

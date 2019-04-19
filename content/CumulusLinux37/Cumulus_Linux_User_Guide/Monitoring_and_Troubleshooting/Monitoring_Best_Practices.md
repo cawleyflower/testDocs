@@ -5,7 +5,6 @@ weight: 245
 pageID: 8362625
 aliases:
  - /old/Monitoring_Best_Practices.html
-imagePaths: []
 ---
 # Monitoring Best Practices
 

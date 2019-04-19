@@ -5,7 +5,6 @@ weight: 229
 pageID: 8362593
 aliases:
  - /old/Resource_Diagnostics_Using_cl-resource-query.html
-imagePaths: []
 ---
 # Resource Diagnostics Using cl-resource-query
 

@@ -5,8 +5,6 @@ weight: 123
 pageID: 8362655
 aliases:
  - /old/Ethernet_Bridging_-_VLANs.html
-imagePaths:
- - /images/download/attachments/8362655
 ---
 # Ethernet Bridging - VLANs
 
@@ -29,11 +27,7 @@ interfaces that traverse an 802.1Q VLAN trunk.
 
 {{%/notice%}}
 
-<div>
-
-{{%imgOld "example-bridge.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 {{%notice tip%}}
 

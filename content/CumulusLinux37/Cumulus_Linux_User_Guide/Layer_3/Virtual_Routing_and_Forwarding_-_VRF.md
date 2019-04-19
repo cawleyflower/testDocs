@@ -5,9 +5,6 @@ weight: 207
 pageID: 8362942
 aliases:
  - /old/Virtual_Routing_and_Forwarding_-_VRF.html
-imagePaths:
- - /images/download/thumbnails/8362942
- - /images/download/attachments/8362942
 ---
 # Virtual Routing and Forwarding - VRF
 
@@ -77,11 +74,7 @@ You configure VRF by associating each subset of interfaces to a VRF
 routing table, and configuring an instance of the routing protocol — BGP
 or OSPFv2 — for each routing table.
 
-<div>
-
-{{%imgOld "mrf2.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 ## Configure VRF
 
@@ -1578,13 +1571,9 @@ In the following example, there is one IPv4 network with a VRF named
 <tbody>
 <tr class="odd">
 <td><p>The IPv4 DHCP server/relay network looks like this:</p>
-<div>
-{{%imgOld "VRFrocket.png" 1 250 %}}
-</div></td>
+<p>{{%imgOld 1 %}}</p></td>
 <td><p>The IPv6 DHCP server/relay network looks like this:</p>
-<div>
-{{%imgOld "VRFturtle.png" 1 250 %}}
-</div></td>
+<p>{{%imgOld 2 %}}</p></td>
 </tr>
 </tbody>
 </table>

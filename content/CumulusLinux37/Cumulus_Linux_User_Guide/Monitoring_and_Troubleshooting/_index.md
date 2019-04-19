@@ -5,7 +5,6 @@ weight: 25
 pageID: 8362592
 aliases:
  - /old/Monitoring_and_Troubleshooting.html
-imagePaths: []
 ---
 # Monitoring and Troubleshooting
 

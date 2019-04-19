@@ -5,7 +5,6 @@ weight: 479
 pageID: 8362604
 aliases:
  - /old/Monitoring_Interfaces_and_Transceivers_Using_ethtool.html
-imagePaths: []
 ---
 # Monitoring Interfaces and Transceivers Using ethtool
 

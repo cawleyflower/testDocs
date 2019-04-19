@@ -5,8 +5,6 @@ weight: 415
 pageID: 8362796
 aliases:
  - /old/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html
-imagePaths:
- - /images/download/attachments/8362796
 ---
 # Integrating Hardware VTEPs with VMware NSX-MH
 
@@ -15,11 +13,7 @@ Multi-Hypervisor (MH) to act as hardware VTEP gateways. The VMware
 NSX-MH controller provides consistent provisioning across virtual and
 physical server infrastructures.
 
-<div>
-
-{{%imgOld "vxlan\_nsx.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 Cumulus Linux also supports integration with VMware NSX in high
 availability mode. Refer to [OVSDB Server High
@@ -297,11 +291,7 @@ IP address of the NSX Manager is 192.168.100.12.
     Node**, click **Add**, then select **Manually Enter All Fields**.
     The Create Gateway wizard opens.
     
-    <div>
-    
-    {{%imgOld "vxlan\_netcomponents.png" 0 %}}
-    
-    </div>
+    {{%imgOld 1 %}}
 
 2.  In the Create Gateway dialog, select *Gateway* for the **Transport
     Node Type**, then click **Next**.
@@ -318,19 +308,11 @@ IP address of the NSX Manager is 192.168.100.12.
     portion, including the `BEGIN CERTIFICATE` and `END CERTIFICATE`
     lines. For example, copy all the highlighted text in the terminal:
     
-    <div>
-    
-    {{%imgOld "vxlan\_cert\_term.png" 0 %}}
-    
-    </div>
+    {{%imgOld 2 %}}
     
     Paste it into NSX Manager, then click **Next**:
     
-    <div>
-    
-    {{%imgOld "vxlan\_nsx\_cert.png" 0 %}}
-    
-    </div>
+    {{%imgOld 3 %}}
 
 6.  In the Connectors dialog, click **Add Connector** to add a transport
     connector. This defines the tunnel endpoint that terminates the
@@ -382,11 +364,7 @@ port.
 2.  In the Create Gateway Service dialog, select *VTEP L2 Gateway
     Service* as the **Gateway Service Type**.
     
-    <div>
-    
-    {{%imgOld "vxlan\_gwsvc\_create.png" 0 %}}
-    
-    </div>
+    {{%imgOld 4 %}}
 
 3.  Provide a **Display Name** for the service to represent the VTEP in
     NSX.
@@ -406,11 +384,7 @@ port.
 
 The gateway service shows up as type *VTEP L2* in NSX.
 
-<div>
-
-{{%imgOld "vxlan\_gwsvc.png" 0 %}}
-
-</div>
+{{%imgOld 5 %}}
 
 Next, configure the logical layer on NSX.
 
@@ -430,11 +404,7 @@ To define the logical switch:
 2.  In the **Display Name** field, enter a name for the logical switch,
     then click **Next**.
     
-    <div>
-    
-    {{%imgOld "vxlan\_logswitch.png" 0 215 %}}
-    
-    </div>
+    {{%imgOld 6 %}}
 
 3.  Under **Replication Mode**, select **Service Nodes**, then click
     **Next**.
@@ -442,20 +412,12 @@ To define the logical switch:
 4.  Specify the transport zone bindings for the logical switch. Click
     **Add Binding**. The Create Transport Zone Binding dialog opens.
     
-    <div>
-    
-    {{%imgOld "vxlan\_addbinding.png" 0 %}}
-    
-    </div>
+    {{%imgOld 7 %}}
 
 5.  In the **Transport Type** list, select *VXLAN*, then click **OK** to
     add the binding to the logical switch.
     
-    <div>
-    
-    {{%imgOld "vxlan\_createvni.png" 0 %}}
-    
-    </div>
+    {{%imgOld 8 %}}
 
 6.  In the **VNI** field, assign the switch a VNI ID, then click **OK**.
     
@@ -468,11 +430,7 @@ To define the logical switch:
 
 7.  Click **Save** to save the logical switch configuration.  
     
-    <div>
-    
-    {{%imgOld "vxlan\_logswitch\_done.png" 0 %}}
-    
-    </div>
+    {{%imgOld 9 %}}
 
 ### Define Logical Switch Ports
 
@@ -489,20 +447,12 @@ To define the logical switch ports:
     **Logical Switch Port**, click **Add**. The Create Logical Switch
     Port wizard opens.
     
-    <div>
-    
-    {{%imgOld "vxlan\_loglayer.png" 0 %}}
-    
-    </div>
+    {{%imgOld 10 %}}
 
 2.  In the **Logical Switch UUID** list, select the logical switch you
     created above, then click **Create**.
     
-    <div>
-    
-    {{%imgOld "vxlan\_logswp\_create.png" 0 %}}
-    
-    </div>
+    {{%imgOld 11 %}}
 
 3.  In the **Display Name** field, provide a name for the port that
     indicates it is the port that connects the gateway, then click
@@ -521,11 +471,7 @@ To define the logical switch ports:
     established. Repeat this procedure for each logical switch port you
     want to define.
     
-    <div>
-    
-    {{%imgOld "vxlan\_logswp\_done.png" 0 %}}
-    
-    </div>
+    {{%imgOld 12 %}}
 
 ## Verify the VXLAN Configuration
 

@@ -5,7 +5,6 @@ weight: 47
 pageID: 8362648
 aliases:
  - /old/Using_Snapshots.html
-imagePaths: []
 ---
 # Using Snapshots
 

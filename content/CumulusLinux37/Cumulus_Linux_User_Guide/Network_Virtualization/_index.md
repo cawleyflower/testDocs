@@ -5,7 +5,6 @@ weight: 21
 pageID: 8362704
 aliases:
  - /old/Network_Virtualization.html
-imagePaths: []
 ---
 # Network Virtualization
 

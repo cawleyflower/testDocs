@@ -5,8 +5,6 @@ weight: 411
 pageID: 8362812
 aliases:
  - /old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html
-imagePaths:
- - /images/download/attachments/8362812
 ---
 # Integrating Hardware VTEPs with Midokura MidoNet and OpenStack
 
@@ -18,11 +16,7 @@ information about the VTEPs and MAC addresses associated with the
 OpenStack Neutron networks. This provides seamless Ethernet connectivity
 between virtual and physical server infrastructures.
 
-<div>
-
-{{%imgOld "MidoNet.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 ## Getting Started
 
@@ -207,22 +201,14 @@ Manager GUI or the MidoNet CLI.
 
 4.  Click **Save**.
     
-    <div>
-    
-    {{%imgOld "Midonet\_Add\_Tzone.png" 0 %}}
-    
-    </div>
+    {{%imgOld 1 %}}
 
 #### Add Hosts to a Tunnel Zone
 
 After you create the tunnel zone, click the name of the tunnel zone to
 view the hosts table.
 
-<div>
-
-{{%imgOld "MidoNet\_tzone\_list.png" 0 %}}
-
-</div>
+{{%imgOld 2 %}}
 
 The tunnel zone is a construct used to define the VXLAN source address
 used for the tunnel. The address of this host is used for the source of
@@ -241,19 +227,11 @@ Next, add a host entry to the tunnel zone:
 
 4.  Click **Save**.
     
-    <div>
-    
-    {{%imgOld "MidoNet\_tzone\_add\_host.png" 0 %}}
-    
-    </div>
+    {{%imgOld 3 %}}
 
 The host list now displays the new entry:
 
-<div>
-
-{{%imgOld "MidoNet\_tzone\_host\_done\_list.png" 0 %}}
-
-</div>
+{{%imgOld 4 %}}
 
 #### Create the VTEP
 
@@ -273,11 +251,7 @@ The host list now displays the new entry:
 
 4.  Click **Save**.
     
-    <div>
-    
-    {{%imgOld "MidoNet\_Add\_VTEP.png" 0 %}}
-    
-    </div>
+    {{%imgOld 5 %}}
 
 The new VTEP appears in the list below. MidoNet then initiates a
 connection between the OpenStack Controller and the Cumulus Linux
@@ -285,11 +259,7 @@ switch. If the OVS client successfully connects to the OVSDB server, the
 VTEP entry displays the switch name and VXLAN tunnel IP address, which
 you specified during the bootstrapping process.
 
-<div>
-
-{{%imgOld "MidoNet\_Add\_VTEP\_list.png" 0 %}}
-
-</div>
+{{%imgOld 6 %}}
 
 #### Bind Ports to the VTEP
 
@@ -308,19 +278,11 @@ physical port binding to the VTEP on the Cumulus Linux switch:
 
 5.  Click **Save**.
     
-    <div>
-    
-    {{%imgOld "MidoNet\_Add\_Port\_Binding.png" 0 %}}
-    
-    </div>
+    {{%imgOld 7 %}}
 
 You see the port binding displayed in the binding table under the VTEP.
 
-<div>
-
-{{%imgOld "MidoNet\_Add\_Port\_Binding\_list.png" 0 %}}
-
-</div>
+{{%imgOld 8 %}}
 
 After the port is bound, this automatically configures a VXLAN bridge
 interface, and includes the VTEP interface and the port bound to the

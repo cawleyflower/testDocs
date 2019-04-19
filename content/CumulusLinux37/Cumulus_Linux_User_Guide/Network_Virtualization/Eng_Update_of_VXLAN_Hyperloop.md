@@ -5,8 +5,6 @@ weight: 167
 pageID: 8362882
 aliases:
  - /old/Eng_Update_of_VXLAN_Hyperloop.html
-imagePaths:
- - /images/download/attachments/8362882
 ---
 # Eng Update of VXLAN Hyperloop
 
@@ -96,11 +94,7 @@ separated application) — you want to keep the firewall between VXLANs so
 that traffic can be filtered and sanitized to the network operator's
 specification.
 
-<div>
-
-{{%imgOld "image2017-3-9\_14\_52\_21.png" 0 250 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 With integrated VXLAN routing and bridging using a hyperloop:
 
@@ -201,11 +195,7 @@ iface vni-20
 
 ### Packet Flow Diagram
 
-<div>
-
-{{%imgOld "Screen\_Shot\_2017-03-09\_at\_1.32.01\_PM.png" 0 400 %}}
-
-</div>
+{{%imgOld 1 %}}
 
 ### Trident II and Tomahawk switchd Flag
 
@@ -326,22 +316,14 @@ is actually due to an incorrect setup on the server OS, whether it is
 Ubuntu, Microsoft Windows, or RHEL.  
   
 
-<div>
-
-{{%imgOld "Screen\_Shot\_2017-03-29\_at\_10.41.39\_AM.png" 0 400 %}}
-
-</div>
+{{%imgOld 2 %}}
 
 ### Can you ping from host to host on the same VXLAN?
 
 In the following network diagram, can server01 ping to server03 on any
 of the VLANs (VLAN1, VLAN100, VLAN200)?  
 
-<div>
-
-{{%imgOld "2017\_Brand\_Ref\_EVPN\_Demo\_%281%29.png" 0 400 %}}
-
-</div>
+{{%imgOld 3 %}}
 
   
 If you cannot even ping from server to server, this is not a VXLAN

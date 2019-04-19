@@ -5,8 +5,6 @@ weight: 211
 pageID: 8362966
 aliases:
  - /old/GRE_Tunneling.html
-imagePaths:
- - /images/download/attachments/8362966
 ---
 # GRE Tunneling
 
@@ -52,11 +50,7 @@ tunneling, the two end points can encapsulate an IPv4 or IPv6 payload
 inside an IPv4 packet. The packet is routed based on the destination in
 the outer IPv4 header.
 
-<div>
-
-{{%imgOld "GRE\_tunnel\_example.png" 0 150 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 ## Configure GRE Tunneling
 
@@ -82,11 +76,7 @@ endpoint is 10.0.0.2.
 The local tunnel endpoint for `Tunnel-R2` is 10.0.0.2 and the remote
 endpoint is 10.0.0.9.
 
-<div>
-
-{{%imgOld "GRE-Tunnel-Config.png" 0 250 %}}
-
-</div>
+{{%imgOld 1 %}}
 
 **Tunnel-R1 commands:**
 

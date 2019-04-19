@@ -5,8 +5,6 @@ weight: 43
 pageID: 8362643
 aliases:
  - /old/Installing_a_New_Cumulus_Linux_Image.html
-imagePaths:
- - /images/download/attachments/8362643
 ---
 # Installing a New Cumulus Linux Image
 
@@ -61,11 +59,7 @@ installation proceeds as follows:
 
 4.  Success\! You are now running Cumulus Linux.
     
-    <div>
-    
-    {{%imgOld "onie\_install\_dhcp.png" 0 %}}
-    
-    </div>
+    {{%imgOld 0 %}}
 
 {{%notice note%}}
 

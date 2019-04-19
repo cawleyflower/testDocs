@@ -5,7 +5,6 @@ weight: 239
 pageID: 8362603
 aliases:
  - /old/Troubleshooting_Network_Interfaces.html
-imagePaths: []
 ---
 # Troubleshooting Network Interfaces
 

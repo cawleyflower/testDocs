@@ -5,8 +5,6 @@ weight: 187
 pageID: 8362917
 aliases:
  - /old/FRRouting_Overview.html
-imagePaths:
- - /images/download/attachments/8362917
 ---
 # FRRouting Overview
 
@@ -22,11 +20,7 @@ Cumulus Linux supports the following:
 
 ## Architecture
 
-<div>
-
-{{%imgOld "daemons.png" 0 250 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 As shown in the figure above, the FRRouting suite consists of various
 protocol-specific daemons and a protocol-independent daemon called

@@ -5,7 +5,6 @@ weight: 77
 pageID: 8362577
 aliases:
  - /old/Configuring_a_Global_Proxy.html
-imagePaths: []
 ---
 # Configuring a Global Proxy
 

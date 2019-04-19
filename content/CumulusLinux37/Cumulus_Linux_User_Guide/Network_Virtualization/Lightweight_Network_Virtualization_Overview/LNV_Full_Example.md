@@ -5,8 +5,6 @@ weight: 399
 pageID: 8362715
 aliases:
  - /old/LNV_Full_Example.html
-imagePaths:
- - /images/download/thumbnails/8362715
 ---
 # LNV Full Example
 
@@ -54,13 +52,9 @@ The following images illustrate the configuration:
 <tbody>
 <tr class="odd">
 <td><p>Physical Cabling Diagram</p>
-<div>
-{{%imgOld "Screen_Shot_2015-04-20_at_10.02.57_AM.png" 0 %}}
-</div></td>
+<p>{{%imgOld 0 %}}</p></td>
 <td><p>Network Virtualization Diagram</p>
-<div>
-{{%imgOld "Screen_Shot_2015-04-22_at_1.58.50_PM.png" 0 %}}
-</div></td>
+<p>{{%imgOld 1 %}}</p></td>
 </tr>
 </tbody>
 </table>
@@ -76,11 +70,7 @@ Check out [Cumulus VX](https://cumulusnetworks.com/cumulus-vx/) .
 
 {{%notice tip%}}
 
-<div>
-
-{{%imgOld "turtle\_training.png" 0 %}}
-
-</div>
+{{%imgOld 2 %}}
 
 Feeling Overwhelmed? Come join a [Cumulus Boot
 Camp](http://cumulusnetworks.com/education/instructor-led-training/) and

@@ -5,7 +5,6 @@ weight: 17
 pageID: 8363019
 aliases:
  - /old/Layer_1_and_Switch_Ports.html
-imagePaths: []
 ---
 # Layer 1 and Switch Ports
 

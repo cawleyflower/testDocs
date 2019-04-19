@@ -5,7 +5,6 @@ weight: 73
 pageID: 8362561
 aliases:
  - /old/Configuring_switchd.html
-imagePaths: []
 ---
 # Configuring switchd
 

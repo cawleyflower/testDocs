@@ -5,8 +5,6 @@ weight: 193
 pageID: 8362922
 aliases:
  - /old/Open_Shortest_Path_First_-_OSPF.html
-imagePaths:
- - /images/download/attachments/8362922
 ---
 # Open Shortest Path First - OSPF
 
@@ -54,11 +52,7 @@ is the top level of the hierarchy. Packets traveling from one non-zero
 area to another must go through the backbone area. For example, you can
 divide the leaf-spine topology into the following areas:
 
-<div>
-
-{{%imgOld "ospf-areas.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 {{%notice note%}}
 
@@ -317,11 +311,7 @@ failures. Here is an example scenario:
 
 {{%/notice%}}
 
-<div>
-
-{{%imgOld "ospf-summarization.png" 0 %}}
-
-</div>
+{{%imgOld 1 %}}
 
 As shown in the diagram, the ABRs in the right non-zero area summarize
 the host prefixes as 10.1.0.0/16. When the link between R5 and R10

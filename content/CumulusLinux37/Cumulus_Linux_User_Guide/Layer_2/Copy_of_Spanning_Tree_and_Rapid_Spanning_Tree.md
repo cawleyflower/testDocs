@@ -5,7 +5,6 @@ weight: 135
 pageID: 8362703
 aliases:
  - /old/Copy_of_Spanning_Tree_and_Rapid_Spanning_Tree.html
-imagePaths: []
 ---
 # Copy of Spanning Tree and Rapid Spanning Tree
 

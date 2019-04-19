@@ -5,7 +5,6 @@ weight: 119
 pageID: 8362650
 aliases:
  - /old/Link_Layer_Discovery_Protocol.html
-imagePaths: []
 ---
 # Link Layer Discovery Protocol
 

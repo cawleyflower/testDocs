@@ -5,7 +5,6 @@ weight: 333
 pageID: 8363034
 aliases:
  - /old/Hardware-enabled_DDOS_Protection.html
-imagePaths: []
 ---
 # Hardware-enabled DDOS Protection
 

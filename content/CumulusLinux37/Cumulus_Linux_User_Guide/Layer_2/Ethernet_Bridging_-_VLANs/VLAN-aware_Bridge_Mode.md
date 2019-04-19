@@ -5,8 +5,6 @@ weight: 357
 pageID: 8362673
 aliases:
  - /old/VLAN-aware_Bridge_Mode.html
-imagePaths:
- - /images/download/thumbnails/8362673
 ---
 # VLAN-aware Bridge Mode
 
@@ -59,9 +57,7 @@ bridge configured for STP, that contains two switch ports, and includes
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><div>
-{{%imgOld "vlan-aware_basic_trunking.png" 0 %}}
-</div></td>
+<td><p>{{%imgOld 0 %}}</p></td>
 <td><pre><code>                   
 cumulus@switch:~$ net add bridge bridge ports swp1-2 
 cumulus@switch:~$ net add bridge bridge vids 100,200 
@@ -245,9 +241,7 @@ attribute:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><div>
-{{%imgOld "vlan-aware_pruned.png" 0 %}}
-</div></td>
+<td><p>{{%imgOld 1 %}}</p></td>
 <td><pre><code>                   
 cumulus@switch:~$ net add bridge bridge ports swp1-3
 cumulus@switch:~$ net add bridge bridge vids 100,200
@@ -291,9 +285,7 @@ to VLAN 100, as specified in the example below:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><div>
-{{%imgOld "vlan-aware_untagged_access_ports.png" 0 %}}
-</div></td>
+<td><p>{{%imgOld 2 %}}</p></td>
 <td><pre><code>                   
 cumulus@switch:~$ net add bridge bridge ports swp1-2
 cumulus@switch:~$ net add bridge bridge vids 100,200

@@ -5,7 +5,6 @@ weight: 493
 pageID: 8362597
 aliases:
  - /old/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow.html
-imagePaths: []
 ---
 # Monitoring System Statistics and Network Traffic with sFlow
 

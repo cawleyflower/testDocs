@@ -5,8 +5,6 @@ weight: 345
 pageID: 8362651
 aliases:
  - /old/Voice_VLAN.html
-imagePaths:
- - /images/support.cumulusnetworks.com/hc/en-us/article_attachments/217676187
 ---
 # Voice VLAN
 
@@ -29,11 +27,7 @@ Data traffic is always [untagged](/old/VLAN_Tagging.html).
 
 ## Cumulus Linux Voice VLAN Example
 
-<div>
-
-{{%imgOld "voice-vlan.png" 0 400 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 You can configure the topology above using the following
 [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html) commands. In this

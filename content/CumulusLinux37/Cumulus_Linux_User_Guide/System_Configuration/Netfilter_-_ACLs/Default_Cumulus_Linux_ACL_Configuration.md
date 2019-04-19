@@ -5,7 +5,6 @@ weight: 307
 pageID: 8362574
 aliases:
  - /old/Default_Cumulus_Linux_ACL_Configuration.html
-imagePaths: []
 ---
 # Default Cumulus Linux ACL Configuration
 

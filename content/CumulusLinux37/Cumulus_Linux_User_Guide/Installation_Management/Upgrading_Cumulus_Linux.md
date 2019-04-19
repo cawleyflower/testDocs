@@ -5,7 +5,6 @@ weight: 45
 pageID: 8362647
 aliases:
  - /old/Upgrading_Cumulus_Linux.html
-imagePaths: []
 ---
 # Upgrading Cumulus Linux
 

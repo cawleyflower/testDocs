@@ -5,8 +5,6 @@ weight: 417
 pageID: 8362860
 aliases:
  - /old/OVSDB_Server_High_Availability.html
-imagePaths:
- - /images/download/attachments/8362860
 ---
 # OVSDB Server High Availability
 
@@ -48,21 +46,13 @@ The following examples show OVSDB server high availability mode.
 The OVSDB server on the MLAG secondary switch is the hot standby. Only
 the active OVSDB server communicates with the NSX controller.
 
-<div>
-
-{{%imgOld "ovsdb\_example1.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 **Example 2:** If failover occurs, the OVSDB server on the MLAG
 secondary switch becomes the active OVSDB server and communicates with
 the NSX controller.
 
-<div>
-
-{{%imgOld "ovsdb\_example2.png" 0 %}}
-
-</div>
+{{%imgOld 1 %}}
 
 When the OVSDB server on the MLAG primary switch starts responding
 again, it resynchronizes its database, becomes the active OVSDB server,

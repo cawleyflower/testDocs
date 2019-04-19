@@ -5,8 +5,6 @@ weight: 263
 pageID: 8362987
 aliases:
  - /old/Cumulus_Networks_Services_Demos.html
-imagePaths:
- - /images/download/attachments/8362987
 ---
 # Cumulus Networks Services Demos
 
@@ -26,12 +24,8 @@ IP addressing, switches and servers. This topology is blessed by the
 Professional Services Team at Cumulus Networks to fit a majority of
 designs seen in the field.
 
-<div>
-
-{{%imgOld "reference\_topology.png" 0 250
+{{%imgOld 0
 %}}
-
-</div>
 
 ### IP and MAC Addressing
 

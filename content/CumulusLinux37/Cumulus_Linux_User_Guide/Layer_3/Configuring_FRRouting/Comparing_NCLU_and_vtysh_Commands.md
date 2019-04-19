@@ -5,7 +5,6 @@ weight: 441
 pageID: 8362920
 aliases:
  - /old/Comparing_NCLU_and_vtysh_Commands.html
-imagePaths: []
 ---
 # Comparing NCLU and vtysh Commands
 

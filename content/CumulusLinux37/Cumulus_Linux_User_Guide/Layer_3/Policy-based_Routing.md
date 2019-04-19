@@ -5,8 +5,6 @@ weight: 199
 pageID: 8362974
 aliases:
  - /old/Policy-based_Routing.html
-imagePaths:
- - /images/download/attachments/8362974
 ---
 # Policy-based Routing
 
@@ -187,11 +185,7 @@ route all traffic from the Internet to a server that performs anti-DDOS.
 The traffic returns to the PBR-enabled switch after being cleaned and is
 then passed onto the regular destination based routing mechanism.
 
-<div>
-
-{{%imgOld "PBR.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 The configuration for the example above is:
 

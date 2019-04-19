@@ -5,8 +5,6 @@ weight: 267
 pageID: 8362989
 aliases:
  - /old/OpenStack_Neutron_ML2_and_Cumulus_Linux.html
-imagePaths:
- - /images/download/attachments/8362989
 ---
 # OpenStack Neutron ML2 and Cumulus Linux
 
@@ -32,11 +30,7 @@ Cumulus Linux switches, you need the following:
     OpenStack, which you install on the OpenStack Neutron controller
     node. It's available as a Python package from upstream.
 
-<div>
-
-{{%imgOld "ml2\_driver\_arch.png" 0 400 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 ## Configure the REST API
 

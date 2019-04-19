@@ -1,4 +1,5 @@
-{{$ind := int (.Get 1)}}
-{{$bn := .Get 0}}
-{{$sc := (index .Page.Params.imagePaths $ind) }}
-<img src = "{{path.Join $sc $bn}}" alt = "{{path.Join $sc $bn}}" {{ if len .Params | eq 3 }} height = {{.Get 2}} {{end}}/>
+{{$ind := int (.Get 0)}}
+{{$pgid := string $.Page.Params.pageID}}
+{{$pg := index $.Site.Data.images.imgs $pgid }}
+{{$cur := index $pg $ind}}
+<img class = "{{$cur.class}}" src = "{{$cur.src}}" alt = "{{$cur.alt}}" height = {{int $cur.height}} width = {{int $cur.width}} />

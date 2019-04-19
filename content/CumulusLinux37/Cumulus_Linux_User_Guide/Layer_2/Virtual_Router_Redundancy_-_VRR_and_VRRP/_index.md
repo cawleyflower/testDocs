@@ -5,8 +5,6 @@ weight: 129
 pageID: 8362691
 aliases:
  - /old/Virtual_Router_Redundancy_-_VRR_and_VRRP.html
-imagePaths:
- - /images/download/attachments/8362691
 ---
 # Virtual Router Redundancy - VRR and VRRP
 
@@ -51,11 +49,7 @@ VRR is not supported on physical interfaces or virtual subinterfaces.
 
 {{%/notice%}}
 
-<div>
-
-{{%imgOld "vrr\_active-active.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 A production implementation will have many more server hosts and network
 connections than are shown here. However, this basic configuration
@@ -518,11 +512,7 @@ VRRP in detail.
 
 The following example illustrates a basic VRRP configuration.
 
-<div>
-
-{{%imgOld "VRRP\_illustration.png" 0 %}}
-
-</div>
+{{%imgOld 1 %}}
 
 ### Configure VRRP
 

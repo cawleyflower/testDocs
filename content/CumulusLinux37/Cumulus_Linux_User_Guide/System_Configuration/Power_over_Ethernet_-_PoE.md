@@ -5,7 +5,6 @@ weight: 75
 pageID: 8362576
 aliases:
  - /old/Power_over_Ethernet_-_PoE.html
-imagePaths: []
 ---
 # Power over Ethernet - PoE
 

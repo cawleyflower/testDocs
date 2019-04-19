@@ -5,8 +5,6 @@ weight: 93
 pageID: 8363023
 aliases:
  - /old/Interface_Configuration_and_Management.html
-imagePaths:
- - /images/download/attachments/8363023
 ---
 # Interface Configuration and Management
 
@@ -387,11 +385,7 @@ digraph G {
 You can use `dot` to render the graph on an external system where `dot`
 is installed.
 
-<div>
-
-{{%imgOld "interfaces.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 To print the dependency information of the entire `interfaces` file:
 
@@ -402,11 +396,7 @@ cumulus@switch:~$ sudo ifquery --print-dependency=dot -a >interfaces_all.dot
     
 ```
 
-<div>
-
-{{%imgOld "interfaces\_all.png" 0 %}}
-
-</div>
+{{%imgOld 1 %}}
 
 ## Subinterfaces
 

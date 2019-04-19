@@ -5,9 +5,6 @@ weight: 261
 pageID: 8362991
 aliases:
  - /old/Data_Center_Host_to_ToR_Architecture.html
-imagePaths:
- - /images/download/attachments/8362991
- - /images/download/thumbnails/8362991
 ---
 # Data Center Host to ToR Architecture
 
@@ -19,11 +16,7 @@ server hosts.
 
 ### Single-attached Hosts
 
-<div>
-
-{{%imgOld "Screen\_Shot\_2016-04-04\_at\_4.00.28\_PM.png" 0 250 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 <div class="tablewrap">
 
@@ -128,11 +121,7 @@ iface eth1 inet static
 
 ### Redistribute Neighbor
 
-<div>
-
-{{%imgOld "redisneigh.png" 0 250 %}}
-
-</div>
+{{%imgOld 1 %}}
 
 <div class="tablewrap">
 
@@ -187,11 +176,7 @@ iface eth1 inet static
 
 ****
 
-<div>
-
-{{%imgOld "routingonhost.png" 1 250 %}}
-
-</div>
+{{%imgOld 2 %}}
 
 <div class="tablewrap">
 
@@ -245,11 +230,7 @@ iface eth1 inet static
 
 ### Routing on the VM
 
-<div>
-
-{{%imgOld "routingvm.png" 0 250 %}}
-
-</div>
+{{%imgOld 3 %}}
 
 <div class="tablewrap">
 
@@ -304,11 +285,7 @@ instead of one routing process, there are as many as there are VMs</p></li>
 
 ### Virtual Router
 
-<div>
-
-{{%imgOld "vrouter.png" 0 250 %}}
-
-</div>
+{{%imgOld 4 %}}
 
 <div class="tablewrap">
 
@@ -359,11 +336,7 @@ instead of one routing process, there are as many as there are VMs</p></li>
 
 ### Anycast with Manual Redistribution
 
-<div>
-
-{{%imgOld "anycast.png" 1 150 %}}
-
-</div>
+{{%imgOld 5 %}}
 
 <div class="tablewrap">
 
@@ -466,11 +439,7 @@ iface eth2 inet static
 
 **LNV with MLAG**
 
-<div>
-
-{{%imgOld "lnvmlag.png" 0 250 %}}
-
-</div>
+{{%imgOld 6 %}}
 
 <div class="tablewrap">
 

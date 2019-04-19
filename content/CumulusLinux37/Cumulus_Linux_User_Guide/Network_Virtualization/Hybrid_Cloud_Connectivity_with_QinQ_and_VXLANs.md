@@ -5,8 +5,6 @@ weight: 159
 pageID: 8362784
 aliases:
  - /old/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html
-imagePaths:
- - /images/download/attachments/8362784
 ---
 # Hybrid Cloud Connectivity with QinQ and VXLANs
 
@@ -64,11 +62,7 @@ is more scalable.
 
 An example configuration could look like the following:
 
-<div>
-
-{{%imgOld "QinQ\_single\_tag\_translation.png" 0 250 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 You configure two switches: one at the service provider edge that faces
 the customer (the switch on the left above), and one on the public cloud
@@ -305,11 +299,7 @@ configure it.
 
 An example configuration could look like the following:
 
-<div>
-
-{{%imgOld "qinq\_double\_tag\_translation.png" 0 250 %}}
-
-</div>
+{{%imgOld 1 %}}
 
 To configure the switch for double tag translation using the above
 example, edit the `/etc/network/interfaces` file in a text editor and
@@ -377,11 +367,7 @@ iface br10
     
 ```
 
-<div>
-
-{{%imgOld "qinq\_double\_tagged\_no\_vxlan.png" 0 250 %}}
-
-</div>
+{{%imgOld 2 %}}
 
 {{%/notice%}}
 

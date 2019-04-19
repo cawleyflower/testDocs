@@ -5,8 +5,6 @@ weight: 99
 pageID: 8363042
 aliases:
  - /old/DHCP_Servers.html
-imagePaths:
- - /images/download/thumbnails/8363042
 ---
 # DHCP Servers
 
@@ -14,11 +12,7 @@ To run DHCP for both IPv4 and IPv6, you need to initiate the DHCP server
 twice: once for IPv4 and once for IPv6. The following configuration uses
 the following topology for the host, DHCP relay and DHCP server:
 
-<div>
-
-{{%imgOld "DHCP\_relay\_-\_swp.png" 0 250 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 For the configurations used in this chapter, the DHCP server is a switch
 running Cumulus Linux; however, the DHCP server can also be located on a

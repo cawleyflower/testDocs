@@ -5,7 +5,6 @@ weight: 81
 pageID: 8362591
 aliases:
  - /old/HTTP_API.html
-imagePaths: []
 ---
 # HTTP API
 

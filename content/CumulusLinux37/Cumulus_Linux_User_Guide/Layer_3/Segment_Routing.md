@@ -5,7 +5,6 @@ weight: 215
 pageID: 8362962
 aliases:
  - /old/Segment_Routing.html
-imagePaths: []
 ---
 # Segment Routing
 

@@ -5,9 +5,6 @@ weight: 79
 pageID: 8362584
 aliases:
  - /old/Copy_of_Netfilter_-_ACLs.html
-imagePaths:
- - /images/download/attachments/8362584
- - /images/download/thumbnails/8362584
 ---
 # Copy of Netfilter - ACLs
 
@@ -125,12 +122,7 @@ The rules created by these programs inspect or operate on packets at
 several points in the life of the packet through the system. These five
 points are known as *chains* and are shown here:
 
-<div>
-
-{{%imgOld "Linux\_Traffic\_Inspection\_Points\_%28Chains%29.png" 0 250
-%}}
-
-</div>
+{{%imgOld 0 %}}
 
 The chains and their uses are:
 
@@ -172,23 +164,11 @@ the default chains they support are shown below. Tables and chains in
 green are supported by Cumulus Linux, those in red are not supported
 (that is, they are not hardware accelerated) at this time.
 
-<div>
+{{%imgOld 1 %}}
 
-{{%imgOld "Linux\_IPtables\_Default\_Tables.png" 1 250 %}}
+{{%imgOld 2 %}}
 
-</div>
-
-<div>
-
-{{%imgOld "Linux\_EBtables\_Default\_Tables.png" 1 250 %}}
-
-</div>
-
-<div>
-
-{{%imgOld "Legend\_%281%29.png" 0 150 %}}
-
-</div>
+{{%imgOld 3 %}}
 
 ### Rules
 
@@ -196,20 +176,12 @@ Rules are the items that actually classify traffic to be acted upon.
 Rules are applied to chains, which are attached to tables, similar to
 the graphic below.
 
-<div>
-
-{{%imgOld "Tables\_Chains\_Rules.png" 1 150 %}}
-
-</div>
+{{%imgOld 4 %}}
 
 Rules have several different components; the examples below highlight
 those different components.
 
-<div>
-
-{{%imgOld "Anatomy\_of\_a\_Rule.png" 0 250 %}}
-
-</div>
+{{%imgOld 5 %}}
 
   - **Table:** The first argument is the *table*. Notice the second
     example does not specify a table, that is because the filter table
@@ -1060,11 +1032,7 @@ switch.
 following example scenario demonstrates where several different rules
 are applied to show what is possible.
 
-<div>
-
-{{%imgOld "acl-diagram.png" 0 %}}
-
-</div>
+{{%imgOld 6 %}}
 
 Following are the configurations for the two switches used in these
 examples. The configuration for each switch appears in

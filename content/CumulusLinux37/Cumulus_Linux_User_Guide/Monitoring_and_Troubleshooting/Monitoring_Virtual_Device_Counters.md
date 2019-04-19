@@ -5,7 +5,6 @@ weight: 233
 pageID: 8362605
 aliases:
  - /old/Monitoring_Virtual_Device_Counters.html
-imagePaths: []
 ---
 # Monitoring Virtual Device Counters
 

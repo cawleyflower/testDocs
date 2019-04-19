@@ -5,8 +5,6 @@ weight: 121
 pageID: 8362653
 aliases:
  - /old/Bonding_-_Link_Aggregation.html
-imagePaths:
- - /images/download/thumbnails/8362653
 ---
 # Bonding - Link Aggregation
 
@@ -321,11 +319,7 @@ swp4(P)  ====  swp2(p1c1h1)Routing
 In the following example, the front panel port interfaces swp1 thru swp4
 are slaves in bond0, while swp5 and swp6 are not part of bond0.
 
-<div>
-
-{{%imgOld "example-bridge-with-bond.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 {{%notice info%}}
 

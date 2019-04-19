@@ -5,8 +5,6 @@ weight: 149
 pageID: 8362732
 aliases:
  - /old/Ethernet_Virtual_Private_Network_-_EVPN.html
-imagePaths:
- - /images/download/attachments/8362732
 ---
 # Ethernet Virtual Private Network - EVPN
 
@@ -1566,11 +1564,7 @@ is a duplicate MAC address for two hosts attached to VTEP-A and VTEP-B.
 However, duplicate detection does *not* trigger on VTEP-A when mobility
 events occur between two remote VTEPs (VTEP-B and VTEP-C).
 
-<div>
-
-{{%imgOld "DAD\_example.png" 0 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 #### Configure Duplicate Address Detection
 

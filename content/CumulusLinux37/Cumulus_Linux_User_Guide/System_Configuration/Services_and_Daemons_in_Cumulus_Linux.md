@@ -5,7 +5,6 @@ weight: 71
 pageID: 8362578
 aliases:
  - /old/Services_and_Daemons_in_Cumulus_Linux.html
-imagePaths: []
 ---
 # Services and Daemons in Cumulus Linux
 

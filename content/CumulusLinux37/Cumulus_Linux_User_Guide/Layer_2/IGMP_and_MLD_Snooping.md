@@ -5,8 +5,6 @@ weight: 131
 pageID: 8362696
 aliases:
  - /old/IGMP_and_MLD_Snooping.html
-imagePaths:
- - /images/download/attachments/8362696
 ---
 # IGMP and MLD Snooping
 
@@ -43,11 +41,7 @@ all ports in the VLAN. The multicast group IP address is mapped to a
 multicast MAC address and a forwarding entry is created with a list of
 ports interested in receiving multicast traffic destined to that group.
 
-<div>
-
-{{%imgOld "igmp\_snoop\_diagram.png" 0 400 %}}
-
-</div>
+{{%imgOld 0 %}}
 
 ## Configure IGMP/MLD Snooping over VXLAN
 
