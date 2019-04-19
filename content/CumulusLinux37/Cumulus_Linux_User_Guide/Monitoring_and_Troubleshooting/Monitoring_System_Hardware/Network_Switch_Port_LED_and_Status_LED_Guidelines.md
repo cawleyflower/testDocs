@@ -69,8 +69,6 @@ activity etc.. Here are the requirements for these LEDs
         500 ms and then off for
         500ms.
         
-        <div class="tablewrap">
-        
         | Activity            | Max Speed indication | Lower Speed Indication |
         | ------------------- | -------------------- | ---------------------- |
         | Physical Link Down  | Off                  | Off                    |
@@ -79,8 +77,6 @@ activity etc.. Here are the requirements for these LEDs
         | Beaconing           | Slow Blinking Amber  | Slow Blinking Amber    |
         | Fault               | Slow Blinking Amber  | Slow Blinking Amber    |
         
-
-        </div>
 
 ## Status LEDs
 
@@ -122,8 +118,6 @@ components for which the LEDs are there as just units for now.
     he or she can quickly check if it is powered up correctly and if
     that fault persists, replace the PSU.
     
-    <div class="tablewrap">
-    
     | Unit Activity                       | Indication          |
     | ----------------------------------- | ------------------- |
     | Installed and power OK              | Solid Green         |
@@ -131,14 +125,10 @@ components for which the LEDs are there as just units for now.
     | Installed, powered, but has faults. | Slow Blinking Amber |
     
 
-    </div>
-
   - **Fan LED** — A network switch may have multiple fan trays (3 - 6).
     It is difficult to put an LED for each fan tray on the front panel,
     given the limited real estate. Hence, the recommendation is one LED
     for all fans.
-    
-    <div class="tablewrap">
     
     | Unit Activity                 | Indication          |
     | ----------------------------- | ------------------- |
@@ -146,15 +136,11 @@ components for which the LEDs are there as just units for now.
     | Fault on any one of the fans. | Slow Blinking Amber |
     
 
-    </div>
-
   - **System LED** — A network switch must have a system LED that
     indicates the general state of a switch. This state could be of
     hardware, software, or both. It is up to the individual switch NOS
     to decide what this LED indicates. But the LED can have only the
     following indications:
-    
-    <div class="tablewrap">
     
     | Unit Activity | Indication          |
     | ------------- | ------------------- |
@@ -162,22 +148,16 @@ components for which the LEDs are there as just units for now.
     | Not OK        | Slow Blinking Amber |
     
 
-    </div>
-
   - **Locator LED** — The locator LED helps locate a particular switch
     in a data center full of switches. Thus, it should have a different
     color and predefined location. It must be located at the top right
     corner on the front panel of the switch and its color must be blue.
-    
-    <div class="tablewrap">
     
     | Unit Activity   | Indication    |
     | --------------- | ------------- |
     | Locate enabled  | Blinking Blue |
     | Locate disabled | Off           |
     
-
-    </div>
 
 ## Locate a Switch
 

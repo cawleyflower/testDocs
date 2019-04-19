@@ -1023,8 +1023,6 @@ present.
 
 ### Broadcom Tomahawk Limits
 
-<div class="tablewrap">
-
 | Direction                        | Atomic Mode IPv4 Rules | Atomic Mode IPv6 Rules | Nonatomic Mode IPv4 Rules | Nonatomic Mode IPv6 Rules |
 | -------------------------------- | ---------------------- | ---------------------- | ------------------------- | ------------------------- |
 | Ingress raw limit                | 512                    | 512                    | 1024                      | 1024                      |
@@ -1032,11 +1030,7 @@ present.
 | Egress raw limit                 | 256                    | 0                      | 512                       | 0                         |
 | Egress limit with default rules  | 256 (29 default)       | 0                      | 512 (29 default)          | 0                         |
 
-</div>
-
 ### Broadcom Trident II+ and Trident3 Limits
-
-<div class="tablewrap">
 
 | Direction                        | Atomic Mode IPv4 Rules | Atomic Mode IPv6 Rules | Nonatomic Mode IPv4 Rules | Nonatomic Mode IPv6 Rules |
 | -------------------------------- | ---------------------- | ---------------------- | ------------------------- | ------------------------- |
@@ -1045,11 +1039,7 @@ present.
 | Egress raw limit                 | 256                    | 0                      | 512                       | 0                         |
 | Egress limit with default rules  | 256 (29 default)       | 0                      | 512 (29 default)          | 0                         |
 
-</div>
-
 ### Broadcom Trident II Limits
-
-<div class="tablewrap">
 
 | Direction                        | Atomic Mode IPv4 Rules | Atomic Mode IPv6 Rules | Nonatomic Mode IPv4 Rules | Nonatomic Mode IPv6 Rules |
 | -------------------------------- | ---------------------- | ---------------------- | ------------------------- | ------------------------- |
@@ -1058,11 +1048,7 @@ present.
 | Egress raw limit                 | 256                    | 0                      | 512                       | 0                         |
 | Egress limit with default rules  | 256 (29 default)       | 0                      | 512 (29 default)          | 0                         |
 
-</div>
-
 ### Broadcom Helix4 Limits
-
-<div class="tablewrap">
 
 | Direction                        | Atomic Mode IPv4 Rules | Atomic Mode IPv6 Rules | Nonatomic Mode IPv4 Rules | Nonatomic Mode IPv6 Rules |
 | -------------------------------- | ---------------------- | ---------------------- | ------------------------- | ------------------------- |
@@ -1070,8 +1056,6 @@ present.
 | Ingress limit with default rules | 768 (36 default)       | 384 (29 default)       | 1792 (36 default)         | 896 (29 default)          |
 | Egress raw limit                 | 256                    | 0                      | 512                       | 0                         |
 | Egress limit with default rules  | 256 (29 default)       | 0                      | 512 (29 default)          | 0                         |
-
-</div>
 
 ### Mellanox Spectrum Limits
 
@@ -1082,8 +1066,6 @@ resources. However, the number of supported rules varies with the [TCAM
 profile](/old/Routing.html#src-8362912_Routing-tcam) specified for the
 switch.
 
-<div class="tablewrap">
-
 | Profile      | Atomic Mode IPv4 Rules | Atomic Mode IPv6 Rules | Nonatomic Mode IPv4 Rules | Nonatomic Mode IPv6 Rules |
 | ------------ | ---------------------- | ---------------------- | ------------------------- | ------------------------- |
 | default      | 500                    | 250                    | 1000                      | 500                       |
@@ -1091,8 +1073,6 @@ switch.
 | acl-heavy    | 1750                   | 1000                   | 3500                      | 2000                      |
 | ipmc-max     | 1000                   | 500                    | 2000                      | 1000                      |
 | ip-acl-heavy | 7500                   | 0                      | 15000                     | 0                         |
-
-</div>
 
 ## Example Scenario
 

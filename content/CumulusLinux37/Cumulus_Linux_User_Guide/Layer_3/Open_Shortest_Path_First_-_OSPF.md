@@ -366,15 +366,11 @@ cumulus@switch:~$ net add ospf area 0.0.0.1 stub no-summary
 Here is a brief tabular summary of the area type
 differences:
 
-<div class="tablewrap">
-
 | Type                  | Behavior                                                                            |
 | --------------------- | ----------------------------------------------------------------------------------- |
 | Normal non- zero area | LSA types 1, 2, 3, 4 area-scoped, type 5 externals, inter-area routes summarized    |
 | Stub area             | LSA types 1, 2, 3, 4 area-scoped, No type 5 externals, inter-area routes summarized |
 | Totally stubby area   | LSA types 1, 2 area-scoped, default summary, No type 3, 4, 5 LSA types allowed      |
-
-</div>
 
 ### Multiple ospfd Instances
 

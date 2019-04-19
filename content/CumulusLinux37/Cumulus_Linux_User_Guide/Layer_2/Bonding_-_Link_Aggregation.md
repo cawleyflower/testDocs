@@ -110,8 +110,6 @@ section below.
 
 {{%/notice%}}
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -204,8 +202,6 @@ cumulus@switch:~$ net add bond bond01 bond lacp-rate slow
 </tr>
 </tbody>
 </table>
-
-</div>
 
 ### Enable balance-xor Mode
 

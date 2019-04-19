@@ -79,8 +79,6 @@ with an %.
 When executed by an unprivileged user, the example commands below must
 be prefixed with `sudo.`
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -273,8 +271,6 @@ be prefixed with `sudo.`
 </tr>
 </tbody>
 </table>
-
-</div>
 
 ## Related Information
 

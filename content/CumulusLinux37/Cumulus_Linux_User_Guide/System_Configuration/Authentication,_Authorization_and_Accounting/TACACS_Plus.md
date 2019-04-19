@@ -102,8 +102,6 @@ Following is the complete list of the TACACS+ client configuration
 files, and their
 use.
 
-<div class="tablewrap">
-
 | Filename                                | Description                                                                                                                                                                                                                                                                                                                                                                                          |
 | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | /etc/tacplus\_servers                   | This is the primary file that requires configuration after installation. The file is used by all packages with `include=/etc/tacplus_servers` parameters in the other configuration files that are installed. Typically, this file contains the shared secrets; make sure that the Linux file mode is 600.                                                                                           |
@@ -116,8 +114,6 @@ use.
 | /etc/audisp/audisp-tac\_plus.conf       | This is the TACACS+ server configuration file for accounting. Typically, no modifications are required. You can use this configuration file when you only want to debug TACACS+ accounting issues, not all TACACS+ users.                                                                                                                                                                            |
 | /etc/audit/rules.d/audisp-tacplus.rules | The `auditd` rules for TACACS+ accounting. The `augenrules` command uses all rule files to generate the rules file (described below).                                                                                                                                                                                                                                                                |
 | /etc/audit/audit.rules                  | This is the audit rules file generated when `auditd` is installed.                                                                                                                                                                                                                                                                                                                                   |
-
-</div>
 
 {{%notice warning%}}
 
@@ -365,8 +361,6 @@ net not authorized by TACACS+ with given arguments, not executing
 
 The following table provides the command options:
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -399,8 +393,6 @@ The following table provides the command options:
 </tr>
 </tbody>
 </table>
-
-</div>
 
 For example, if you want to allow the user to be able to run the `net`
 and `ip` commands (if authorized by the TACACS+ server), use the
@@ -494,8 +486,6 @@ package.
 
 The table below describes the configuration options available:
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -584,8 +574,6 @@ The table below describes the configuration options available:
 </tr>
 </tbody>
 </table>
-
-</div>
 
 ## Remove the TACACS+ Client Packages
 
@@ -757,8 +745,6 @@ The following table describes the different pieces of software involved
 with delivering
 TACACS.
 
-<div class="tablewrap">
-
 | Package Name                    | Description                                                                                                                                                                                                                                                                                                                                                                      |
 | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | audisp-tacplus\_1.0.0-1-cl3u3   | This package uses auditing data from `auditd` to send accounting records to the TACACS+ server and is started as part of `auditd`.                                                                                                                                                                                                                                               |
@@ -769,8 +755,6 @@ TACACS.
 | libtacplus-map1\_1.0.0-cl3u2    | The mapping functionality between local and TACACS+ users on the server. Sets the immutable `sessionid` and auditing UID to ensure the original user can be tracked through multiple processes and privilege changes. Sets the auditing `loginuid` as immutable if supported. Creates and maintains a status database in `/run/tacacs_client_map` to manage and lookup mappings. |
 | libsimple-tacacct1\_1.0.0-cl3u2 | Provides an interface for programs to send accounting records to the TACACS+ server. Used by `audisp-tacplus`.                                                                                                                                                                                                                                                                   |
 | libtac2-bin\_1.4.0-cl3u2        | Provides the `tacc` testing program and TACACS+ man page.                                                                                                                                                                                                                                                                                                                        |
-
-</div>
 
 ## Limitations
 

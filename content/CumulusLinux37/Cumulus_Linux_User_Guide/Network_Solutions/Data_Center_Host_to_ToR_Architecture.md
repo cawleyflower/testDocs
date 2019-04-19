@@ -18,8 +18,6 @@ server hosts.
 
 {{%imgOld 0 %}}
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -117,13 +115,9 @@ iface eth1 inet static
 </tbody>
 </table>
 
-</div>
-
 ### Redistribute Neighbor
 
 {{%imgOld 1 %}}
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -170,15 +164,11 @@ iface eth1 inet static
 </tbody>
 </table>
 
-</div>
-
 ### Routing on the Host
 
 ****
 
 {{%imgOld 2 %}}
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -226,13 +216,9 @@ iface eth1 inet static
 </tbody>
 </table>
 
-</div>
-
 ### Routing on the VM
 
 {{%imgOld 3 %}}
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -281,13 +267,9 @@ instead of one routing process, there are as many as there are VMs</p></li>
 </tbody>
 </table>
 
-</div>
-
 ### Virtual Router
 
 {{%imgOld 4 %}}
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -332,13 +314,9 @@ instead of one routing process, there are as many as there are VMs</p></li>
 </tbody>
 </table>
 
-</div>
-
 ### Anycast with Manual Redistribution
 
 {{%imgOld 5 %}}
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -433,15 +411,11 @@ iface eth2 inet static
 </tbody>
 </table>
 
-</div>
-
 ## Network Virtualization
 
 **LNV with MLAG**
 
 {{%imgOld 6 %}}
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -516,10 +490,6 @@ iface br-10
 </tbody>
 </table>
 
-</div>
-
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -557,5 +527,3 @@ iface br-10
 </tr>
 </tbody>
 </table>
-
-</div>

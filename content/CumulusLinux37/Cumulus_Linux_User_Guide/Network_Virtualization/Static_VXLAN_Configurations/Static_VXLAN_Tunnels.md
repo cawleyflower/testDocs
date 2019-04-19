@@ -144,8 +144,6 @@ iface vni-10
 
 Repeat these steps for leaf02, leaf03, and leaf04:
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -309,8 +307,6 @@ iface vni-10
 </tr>
 </tbody>
 </table>
-
-</div>
 
 ## Verify the Configuration
 

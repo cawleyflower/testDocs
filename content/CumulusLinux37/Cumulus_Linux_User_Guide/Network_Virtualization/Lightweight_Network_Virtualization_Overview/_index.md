@@ -230,8 +230,6 @@ associated with VNIs 10, 2000 and 30 respectively. The loopback address,
 used as the `vxlan-local-tunnelip`, is the only difference between leaf1
 and leaf2 for this demonstration.
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -362,8 +360,6 @@ iface vni-30
 </tr>
 </tbody>
 </table>
-
-</div>
 
 {{%notice info%}}
 
@@ -546,8 +542,6 @@ cumulus@spine1:~$ sudo systemctl restart vxsnd.service
 The complete list of options you can configure is listed
 below:
 
-<div class="tablewrap">
-
 | Name                  | Description                                                                                                                                                                                                             | Default            |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
 | loglevel              | The log level: DEBUG, INFO, WARNING, ERROR, CRITICAL.                                                                                                                                                                   | INFO               |
@@ -564,8 +558,6 @@ below:
 | enable\_vxlan\_listen | When set to true, the service node listens for VXLAN data traffic.                                                                                                                                                      | true               |
 | install\_svcnode\_ip  | When set to true, the `snd_peer_address` gets installed on the loopback interface. It gets withdrawn when the `vxsnd` is not in service. If set to true, you must define the `snd_peer_address` configuration variable. | false              |
 | age\_check            | Number of seconds to wait before checking the database to age out stale entries.                                                                                                                                        | 90 seconds         |
-
-</div>
 
 {{%notice note%}}
 
@@ -601,8 +593,6 @@ cumulus@spine2:~$ sudo systemctl restart vxsnd.service
 ```
 
 #### Configure the Anycast Address on All Participating Service Nodes
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -671,11 +661,7 @@ cumulus@spine2:~$ ip addr show lo
 </tbody>
 </table>
 
-</div>
-
 #### Configure the Service Node vxsnd.conf File
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -732,11 +718,7 @@ cumulus@spine1:~$ sudo systemctl restart vxsnd.service
 </tbody>
 </table>
 
-</div>
-
 #### Reconfigure the VTEPs (Leafs) to Use the Anycast Address
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -849,22 +831,16 @@ VNI     Local Addr       Svc Node
 </tbody>
 </table>
 
-</div>
-
 #### Test Connectivity
 
 Repeat the ping tests from the previous section. Here is the table again
 for reference:
-
-<div class="tablewrap">
 
 | VNI  | server1    | server2    |
 | ---- | ---------- | ---------- |
 | 10   | 10.10.10.1 | 10.10.10.2 |
 | 2000 | 10.10.20.1 | 10.10.20.2 |
 | 30   | 10.10.30.1 | 10.10.30.2 |
-
-</div>
 
 ``` 
                    

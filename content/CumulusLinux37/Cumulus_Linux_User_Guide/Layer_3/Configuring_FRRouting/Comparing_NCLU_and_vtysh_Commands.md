@@ -16,8 +16,6 @@ CLI. The available commands are as follows:
 The following table compares the various FRRouting commands with their
 Cumulus Linux NCLU counterparts.
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -175,5 +173,3 @@ switch# show debugging ospf
 </tr>
 </tbody>
 </table>
-
-</div>

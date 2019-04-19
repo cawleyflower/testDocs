@@ -439,8 +439,6 @@ See `man ptmctl` for more information.
 The examples below contain the following keywords in the output of the
 cbl status column, which are described here:
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -469,8 +467,6 @@ cbl status column, which are described here:
 </tr>
 </tbody>
 </table>
-
-</div>
 
 For basic output, use `ptmctl` without any options:
 

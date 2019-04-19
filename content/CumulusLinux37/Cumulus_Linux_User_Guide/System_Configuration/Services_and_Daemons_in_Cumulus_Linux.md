@@ -277,8 +277,6 @@ cumulus@switch:~$ systemctl list-dependencies --before basic.target
 
 To see which services are needed for networking, run:
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -294,11 +292,7 @@ network.target</code></pre>
 </tbody>
 </table>
 
-</div>
-
 To identify the services needed for a multi-user environment, run:
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -318,14 +312,10 @@ multi-user.target</code></pre>
 </tbody>
 </table>
 
-</div>
-
 ### Important Services
 
 The following table lists the most important services in Cumulus
 Linux.
-
-<div class="tablewrap">
 
 | Service Name | Description                                                                                                                                                                                                                                        | Affects Forwarding?                          |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
@@ -345,5 +335,3 @@ Linux.
 | lldpd        | Handles Tx/Rx of [LLDP](/old/Link_Layer_Discovery_Protocol.html) information.                                                                                                                                                                      | NO                                           |
 | smond        | Reads [platform sensors and fan information](/old/Monitoring_System_Hardware.html) from pwmd.                                                                                                                                                      | NO                                           |
 | pwmd         | Reads and sets fan speeds.                                                                                                                                                                                                                         | NO                                           |
-
-</div>

@@ -393,8 +393,6 @@ Cumulus Linux excludes a number of directories when taking a snapshot of
 the root file system (and from any
 rollbacks):
 
-<div class="tablewrap">
-
 | Directory                                                         | Reason                                                                                                                                                                                                                  |
 | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `/home`                                                           | This directory is excluded to avoid user data loss on rollbacks.                                                                                                                                                        |
@@ -406,5 +404,3 @@ rollbacks):
 | `/var/spool`                                                      | Exclude this directory to avoid loss of mail after a rollback.                                                                                                                                                          |
 | `/var/lib/libvirt/images`                                         | This is the default directory for libvirt VM images. Exclude this directory from the snapshot. Additionally, disable Copy-On-Write (COW) for this subvolume as COW and VM image I/O access patterns are not compatible. |
 | `/boot/grub/i386-pc, /boot/grub/x86_64-efi, /boot/grub/arm-uboot` | The GRUB kernel modules must stay in sync with the GRUB kernel installed in the master boot record or UEFI system partition.                                                                                            |
-
-</div>

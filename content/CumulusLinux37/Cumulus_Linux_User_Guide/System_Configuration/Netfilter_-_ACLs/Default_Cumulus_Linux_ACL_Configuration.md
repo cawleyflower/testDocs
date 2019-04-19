@@ -198,8 +198,6 @@ Bridge chain: OUTPUT, entries: 0, policy: ACCEPT
 
 ## IP Tables
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -305,8 +303,6 @@ Bridge chain: OUTPUT, entries: 0, policy: ACCEPT
 </tbody>
 </table>
 
-</div>
-
 {{%notice note%}}
 
 Set class is internal to the switch - it does not set any precedence
@@ -315,8 +311,6 @@ bits.
 {{%/notice%}}
 
 ## IPv6 Tables
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -440,8 +434,6 @@ bits.
 </tbody>
 </table>
 
-</div>
-
 {{%notice note%}}
 
 Set class is internal to the switch - it does not set any precedence
@@ -450,8 +442,6 @@ bits.
 {{%/notice%}}
 
 ## EB Tables
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -502,8 +492,6 @@ bits.
 </tr>
 </tbody>
 </table>
-
-</div>
 
 {{%notice note%}}
 

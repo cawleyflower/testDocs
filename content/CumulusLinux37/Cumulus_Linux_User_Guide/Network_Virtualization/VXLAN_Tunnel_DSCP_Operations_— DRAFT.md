@@ -27,8 +27,6 @@ overlay.
 
 You can set these DSCP operations:
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -60,8 +58,6 @@ You can set these DSCP operations:
 </tr>
 </tbody>
 </table>
-
-</div>
 
 You set the DSCP operations in `/etc/cumulus/switchd.conf`. Edit the
 `switchd.conf` file in a text editor. The following example file shows

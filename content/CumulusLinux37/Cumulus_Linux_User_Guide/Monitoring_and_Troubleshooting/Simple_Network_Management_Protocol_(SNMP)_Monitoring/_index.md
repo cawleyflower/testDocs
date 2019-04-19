@@ -285,8 +285,6 @@ configuring SNMP. An example command set is provided below the table.
 NCLU restarts the `snmpd` daemon after configuration changes are made
 and committed.
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -441,12 +439,8 @@ net add snmp-server trap-cpu-load-average one-minute 4.34 five-minute 2.32 fifte
 </tbody>
 </table>
 
-</div>
-
 This table describes system setting configuration commands for
 SNMPv2-MIB.
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -487,8 +481,6 @@ net add snmp-server system-name CumulusBox number 1,543,567
 </tbody>
 </table>
 
-</div>
-
 The example commands below enable an SNMP agent to listen on all IPv4
 addresses with a community string password, set the trap destination
 host IP address, and create four types of SNMP traps.
@@ -523,8 +515,6 @@ with the package manager the next time you update Cumulus Linux.
 The SNMP daemon, `snmpd`, uses the `/etc/snmp/snmpd.conf` configuration
 file for most of its configuration. The syntax of the most important
 keywords are defined in the following table.
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -619,8 +609,6 @@ monitor   -o fileName -o fileErrorMsg  &quot;fileTable&quot; fileErrorFlag != 0
 </tr>
 </tbody>
 </table>
-
-</div>
 
 ### Start the SNMP Daemon
 
@@ -822,8 +810,6 @@ To enable read-only querying by a client:
         
     ```
     
-    <div class="tablewrap">
-    
     <table>
     <colgroup>
     <col style="width: 50%" />
@@ -857,8 +843,6 @@ To enable read-only querying by a client:
     </tr>
     </tbody>
     </table>
-    
-    </div>
 
 3.  Restart `snmpd`:
     
@@ -1763,8 +1747,6 @@ Below are the MIBs supported by Cumulus Linux, as well as suggested uses
 for them. The overall Cumulus Linux MIB is defined in the
 `/usr/share/snmp/mibs/Cumulus-Snmp-MIB.txt` file.
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -1917,8 +1899,6 @@ SNMPDOPTS=&#39;-LS 0-4 d -Lf /dev/null -u snmp -g snmp -I -smux -p /run/snmpd.pi
 </tr>
 </tbody>
 </table>
-
-</div>
 
 {{%notice note%}}
 

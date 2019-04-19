@@ -56,8 +56,6 @@ The ARP tunable parameters are set to the following values by default in
 Cumulus Linux. Each parameter is described in detail, including why
 Cumulus Networks chose the value used.
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -133,8 +131,6 @@ Cumulus Networks chose the value used.
 </tbody>
 </table>
 
-</div>
-
 ## Change Tunable ARP Parameters
 
 You can change the ARP parameter settings in several places, including:
@@ -157,8 +153,6 @@ reason for this uncertainty is that the *all* value is applied to each
 parameter using either *MAX* or *OR* logic between the *all* and any
 *port-specific* settings, as the following table shows:
 
-<div class="tablewrap">
-
 | ARP Parameter | Condition |
 | ------------- | --------- |
 | arp\_accept   | OR        |
@@ -166,8 +160,6 @@ parameter using either *MAX* or *OR* logic between the *all* and any
 | arp\_filter   | OR        |
 | arp\_ignore   | MAX       |
 | arp\_notify   | MAX       |
-
-</div>
 
 For example, if the `/proc/sys/net/conf/all/arp_ignore` value is set to
 *1* and the `/proc/sys/net/conf/swp1/arp_ignore` value is set to *0*, to

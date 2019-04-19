@@ -2,4 +2,11 @@
 {{$pgid := string $.Page.Params.pageID}}
 {{$pg := index $.Site.Data.images.imgs $pgid }}
 {{$cur := index $pg $ind}}
-<img class = "{{$cur.class}}" src = "{{$cur.src}}" alt = "{{$cur.alt}}" height = {{int $cur.height}} width = {{int $cur.width}} />
+<img class = "{{$cur.class}}" src = "{{$cur.src}}" alt = "{{$cur.alt}}"
+{{with $cur.height}}
+height = {{int . }}
+{{end}}
+{{with $cur.width}}
+width = {{int .}}
+{{end}}
+ />

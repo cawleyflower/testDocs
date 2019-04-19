@@ -198,8 +198,6 @@ To create an [MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html)
 configuration that incorporates VRR, use a configuration like the
 following:
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -471,8 +469,6 @@ iface uplink:400 inet static
 </tbody>
 </table>
 
-</div>
-
 ## VRRP
 
 VRRP allows for a single virtual default gateway to be shared among two
@@ -532,15 +528,11 @@ You can also set these optional parameters. If you do not set these
 parameters, the defaults are
 used:
 
-<div class="tablewrap">
-
 | Optional Parameter       | Default Value     | Description                                                                                                                                                                                                                                                                                                                              |
 | ------------------------ | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `priority`               | 100               | The priority level of the virtual router within the virtual router group, which determines the role that each virtual router plays and what happens if the master fails. Virtual routers have a priority between 1 and 254; the router with the highest priority becomes the master.                                                     |
 | `advertisement interval` | 1000 milliseconds | The advertisement interval is the interval between successive advertisements by the master in a virtual router group. You can specify a value between 10 and 40950.                                                                                                                                                                      |
 | `preempt`                | enabled           | Preempt mode lets the router take over as master for a virtual router group if it has a higher priority than the current master. Preempt mode is enabled by default. To disable preempt mode, you need to edit the `/etc/frr/frr.conf` file and add the line `vrrp <VRID> preempt no` to the interface stanza, then restart FRR service. |
-
-</div>
 
 The NCLU commands write VRRP configuration to the
 `/etc/network/interfaces` file and the `/etc/frr/frr.conf` file.

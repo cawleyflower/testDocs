@@ -18,8 +18,6 @@ is amazing for understanding how `/var/log` works. The green highlighted
 rows below are the most important logs and usually looked at first when
 debugging.
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -165,5 +163,3 @@ cumulus@switch:~$ last -f /var/log/btmp | more
 </tr>
 </tbody>
 </table>
-
-</div>

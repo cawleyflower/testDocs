@@ -14,21 +14,15 @@ script replicates the /`etc` directory.
 Files that `cl-support` deliberately excludes
 are:
 
-<div class="tablewrap">
-
 | File              | Description                                                                                                                                    |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | /etc/nologin      | ` nologin  `prevents unprivileged users from logging into the system.                                                                          |
 | /etc/alternatives | `update-alternatives` creates, removes, maintains and displays information about the symbolic links comprising the Debian alternatives system. |
 
-</div>
-
 This is the alphabetical of the output from running `ls -l` on the
 `/etc` directory structure created by `cl-support`. The green
 highlighted rows are the ones Cumulus Networks finds most important when
 troubleshooting problems.
-
-<div class="tablewrap">
 
 | **File**                  |
 | ------------------------- |
@@ -220,5 +214,3 @@ troubleshooting problems.
 | wgetrc                    |
 | X11                       |
 | xdg                       |
-
-</div>

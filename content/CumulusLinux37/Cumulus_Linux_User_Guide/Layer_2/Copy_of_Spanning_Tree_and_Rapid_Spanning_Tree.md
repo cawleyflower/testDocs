@@ -117,8 +117,6 @@ article](https://support.cumulusnetworks.com/hc/en-us/articles/206908397).
 
 Examples are included below:
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -396,8 +394,6 @@ cumulus@switch:~$ sudo mstpctl setportbpdufilter br2 swp4.101 yes
 </tr>
 </tbody>
 </table>
-
-</div>
 
 ## Bridge Assurance
 

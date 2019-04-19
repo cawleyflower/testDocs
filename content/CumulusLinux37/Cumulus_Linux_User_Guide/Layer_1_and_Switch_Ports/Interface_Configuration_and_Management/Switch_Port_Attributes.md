@@ -143,16 +143,12 @@ terms of Mbps, where the setting for 1G is *1000*, 40G is *40000* and
 You can configure ports to one speed less than their maximum
 speed.
 
-<div class="tablewrap">
-
 | Switch Port Type | Lowest Configurable Speed                                 |
 | ---------------- | --------------------------------------------------------- |
 | 1G               | 100 Mb                                                    |
 | 10G              | 1 Gigabit (1000 Mb)                                       |
 | 40G              | 10G\*                                                     |
 | 100G             | 50G\* & 40G (with or without breakout port), 25G\*, 10G\* |
-
-</div>
 
 \*Requires the port to be converted into a breakout port. See
 [Configuring Breakout
@@ -818,8 +814,6 @@ recommended settings as show below on this switch in this case.
 
 {{%/notice%}}
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 20%" />
@@ -1178,8 +1172,6 @@ iface swp1
 </tr>
 </tbody>
 </table>
-
-</div>
 
 ## Default Policies for Interface Settings
 

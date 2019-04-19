@@ -48,8 +48,6 @@ bridge configured for STP, that contains two switch ports, and includes
 3 VLANs — the tagged VLANs 100 and 200 and the untagged (native) VLAN of
 1:
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -81,8 +79,6 @@ iface bridge
 </tr>
 </tbody>
 </table>
-
-</div>
 
 The following attributes are useful for configuring VLAN-aware bridges:
 
@@ -126,8 +122,6 @@ users for readability.
 The following configurations are identical to each other and the
 configuration above:
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -164,8 +158,6 @@ iface bridge
 </tr>
 </tbody>
 </table>
-
-</div>
 
 {{%/notice%}}
 
@@ -232,8 +224,6 @@ By default, the bridge port inherits the bridge VIDs. A port's
 configuration can override the bridge VIDs, by using the `bridge-vids`
 attribute:
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -268,15 +258,11 @@ iface swp3
 </tbody>
 </table>
 
-</div>
-
 ### Untagged/Access Ports
 
 Access ports ignore all tagged packets. In the configuration below, swp1
 and swp2 are configured as access ports, while all untagged traffic goes
 to VLAN 100, as specified in the example below:
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -317,8 +303,6 @@ iface swp2
 </tr>
 </tbody>
 </table>
-
-</div>
 
 ### Drop Untagged Frames
 

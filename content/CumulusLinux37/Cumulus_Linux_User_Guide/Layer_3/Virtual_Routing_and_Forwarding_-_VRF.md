@@ -1561,8 +1561,6 @@ See the example configuration below for more details.
 In the following example, there is one IPv4 network with a VRF named
 *rocket* and one IPv6 network with a VRF named *turtle*.
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -1578,11 +1576,7 @@ In the following example, there is one IPv4 network with a VRF named
 </tbody>
 </table>
 
-</div>
-
 Configure each DHCP server and relay as follows:
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -1752,8 +1746,6 @@ cumulus@switch:~$ sudo vrf task exec turtle /usr/sbin/dhcrelay -d -q -6 -l /
 </tr>
 </tbody>
 </table>
-
-</div>
 
 ## ping or traceroute on a VRF
 

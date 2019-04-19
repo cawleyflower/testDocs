@@ -28,8 +28,6 @@ Cumulus Linux supports only PIM Sparse Mode.
 
 {{%imgOld 0 %}}
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -92,11 +90,7 @@ Cumulus Linux supports only PIM Sparse Mode.
 </tbody>
 </table>
 
-</div>
-
 ### PIM Messages
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -177,8 +171,6 @@ Cumulus Linux supports only PIM Sparse Mode.
 </tr>
 </tbody>
 </table>
-
-</div>
 
 ### PIM Neighbors
 

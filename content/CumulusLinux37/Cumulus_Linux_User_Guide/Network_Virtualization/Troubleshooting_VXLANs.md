@@ -17,8 +17,6 @@ Use the `vxrdctl vxlans` ****command to see the configured VNIs, the
 local address being used to source the VXLAN tunnel, and the service
 node being used.
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -48,12 +46,8 @@ VNI     Local Addr       Svc Node
 </tbody>
 </table>
 
-</div>
-
 Use the `vxrdctl peers` command to see configured VNIs and all VTEPs
 (leaf switches) within the network that have them configured.
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -83,8 +77,6 @@ VNI         Peer Addrs
 </tr>
 </tbody>
 </table>
-
-</div>
 
 {{%notice note%}}
 
@@ -195,15 +187,11 @@ cannot be an IP address on the bridge that also contains a VXLAN.
 Following is the IP address information used in this example
 configuration.
 
-<div class="tablewrap">
-
 | VNI  | server1    | server2    |
 | ---- | ---------- | ---------- |
 | 10   | 10.10.10.1 | 10.10.10.2 |
 | 2000 | 10.10.20.1 | 10.10.20.2 |
 | 30   | 10.10.30.1 | 10.10.30.2 |
-
-</div>
 
 Test connectivity between VNI 10 connected servers by pinging from
 server1:

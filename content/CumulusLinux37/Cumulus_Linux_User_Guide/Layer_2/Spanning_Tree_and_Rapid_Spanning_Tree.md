@@ -492,8 +492,6 @@ to remove them from the blacklist.
 
 {{%/notice%}}
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -676,8 +674,6 @@ net add interface  stp treeportcost
 </tr>
 </tbody>
 </table>
-
-</div>
 
 ### Caveats and Errata
 

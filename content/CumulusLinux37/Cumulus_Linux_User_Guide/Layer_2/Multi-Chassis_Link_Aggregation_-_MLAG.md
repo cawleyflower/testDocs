@@ -211,8 +211,6 @@ The commands to create the configurations for both spines look like the
 following. Note that the `clag-id` and `clagd-sys-mac` must be the same
 for the corresponding bonds on spine01 and spine02:
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -288,13 +286,9 @@ iface swp4
 </tbody>
 </table>
 
-</div>
-
 Here is an example configuration for the switches leaf01 through leaf04.
 Note that the `clag-id` and `clagd-sys-mac` must be the same for the
 corresponding bonds on leaf01 and leaf02 as well as leaf03 and leaf04:
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -727,8 +721,6 @@ iface vlan100
 </tr>
 </tbody>
 </table>
-
-</div>
 
 ## Disable clagd on an Interface
 

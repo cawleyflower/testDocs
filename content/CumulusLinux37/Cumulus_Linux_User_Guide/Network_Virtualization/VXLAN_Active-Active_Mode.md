@@ -21,8 +21,6 @@ options.
 
 ## Terminology
 
-<div class="tablewrap">
-
 | Term                     | Definition                                                                                                                                                                                                                                                                                                                                                                                      |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | VTEP                     | The virtual tunnel endpoint. This is an encapsulation and decapsulation point for VXLANs.                                                                                                                                                                                                                                                                                                       |
@@ -35,14 +33,10 @@ options.
 | VXLAN routing            | The industry standard term for the ability to route in and out of a VXLAN. Equivalent to the Broadcom RIOT feature.                                                                                                                                                                                                                                                                             |
 | `clagd-vxlan-anycast-ip` | The anycast address for the MLAG pair to share and bind to when MLAG is up and running.                                                                                                                                                                                                                                                                                                         |
 
-</div>
-
 ## Configure VXLAN Active-active Mode
 
 VXLAN active-active mode requires the following underlying technologies
 to work correctly.
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -71,8 +65,6 @@ Configurations for the demonstration are provided below.</p></td>
 </tr>
 </tbody>
 </table>
-
-</div>
 
 ### Active-active VTEP Anycast IP Behavior
 
@@ -106,8 +98,6 @@ pair.
 
 ### Failure Scenario Behaviors
 
-<div class="tablewrap">
-
 | Scenario                                                                            | Behavior                                                                                                                                                                                                                                                                                                                                                                            |
 | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | The peer link goes down.                                                            | The primary MLAG switch continues to keep all VXLAN interfaces up with the anycast IP address while the secondary switch brings down all VXLAN interfaces and places them in a PROTO\_DOWN state. The secondary MLAG switch removes the anycast IP address from the loopback interface and changes the local IP address of the VXLAN interface to the configured unique IP address. |
@@ -116,8 +106,6 @@ pair.
 | MLAG peering could not be established between the switches.                         | `clagd` brings up all the VXLAN interfaces after the reload timer expires with the configured anycast IP address. This allows the VXLAN interface to be up and running on both switches even though peering is not established.                                                                                                                                                     |
 | When the peer link goes down but the peer switch is up (the backup link is active). | All VXLAN interfaces are put into a PROTO\_DOWN state on the secondary switch.                                                                                                                                                                                                                                                                                                      |
 | A configuration mismatch between the MLAG switches                                  | The VXLAN interface is placed into a PROTO\_DOWN state on the secondary switch.                                                                                                                                                                                                                                                                                                     |
-
-</div>
 
 ### Check VXLAN Interface Configuration Consistency
 
@@ -189,8 +177,6 @@ above is shown below.
 ### Layer 3 IP Addressing
 
 The IP address configuration for this example:
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -575,15 +561,11 @@ iface swp52
 </tbody>
 </table>
 
-</div>
-
 ### Host Configuration
 
 In this example, the servers are running Ubuntu 14.04. A layer2 bond
 must be mapped from server01 and server03 to the respective switch. In
 Ubuntu this is done with subinterfaces.
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -674,8 +656,6 @@ iface bond0.20 inet static
 </tbody>
 </table>
 
-</div>
-
 ## Troubleshooting
 
 In addition to [troubleshooting single-attached
@@ -708,15 +688,11 @@ Our Interface      Peer Interface     CLAG Id   Conflicts              Proto-Dow
 The additions to normal MLAG behavior are the
 following:
 
-<div class="tablewrap">
-
 | Output                          | Explanation                                                                                             |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------- |
 | `VXLAN Anycast IP: 10.10.10.30` | The anycast IP address being shared by the MLAG pair for VTEP termination is in use and is 10.10.10.30. |
 | `Conflicts: -`                  | There are no conflicts for this MLAG Interface.                                                         |
 | `Proto-Down Reason: -`          | The VXLAN is up and running (there is no Proto-Down).                                                   |
-
-</div>
 
 In the next example the `vxlan-id` on VXLAN10 is switched to the wrong
 `vxlan-id`. When the `clagctl` command is run, you see that VXLAN10 goes

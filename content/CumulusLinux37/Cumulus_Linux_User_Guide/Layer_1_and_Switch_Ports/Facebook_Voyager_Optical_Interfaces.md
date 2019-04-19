@@ -45,8 +45,6 @@ AC400 depends on the modulation format and coupling mode. Cumulus Linux
 supports five different modulation and coupling mode options on each
 AC400 module.
 
-<div class="tablewrap">
-
 | Network 0 Modulation | Network 1 Modulation | Independent/Coupled |
 | -------------------- | -------------------- | ------------------- |
 | QPSK                 | QPSK                 | Independent         |
@@ -54,8 +52,6 @@ AC400 module.
 | QPSK                 | 16-QAM               | Independent         |
 | 16-QAM               | QPSK                 | Independent         |
 | 8-QAM                | 8-QAM                | Coupled             |
-
-</div>
 
 QPSK—[Quadrature phase shift
 keying](https://www.allaboutcircuits.com/technical-articles/quadrature-phase-shift-keying-qpsk-modulation/).
@@ -86,8 +82,6 @@ interface is carried on both of the network interfaces.
 For each of the five supported modulation configurations, the client
 interface to network interface connections are as follows:
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -115,8 +109,6 @@ interface to network interface connections are as follows:
 </tbody>
 </table>
 
-</div>
-
 ## Configure the Voyager Ports
 
 To configure the five modulation and coupling configurations described
@@ -126,8 +118,6 @@ until you configure them.
 The file has lines for the 12 QSPF28 ports. The four DWDM Line ports are
 labeled labeled **L1** thru **L4**. To program the AC400 modulation and
 coupling into the five configurations, configure these ports as follows:
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -182,8 +172,6 @@ L2=3/2</p></td>
 </tr>
 </tbody>
 </table>
-
-</div>
 
 The following example `/etc/cumulus/ports.conf` file shows configuration
 for all of the modes.

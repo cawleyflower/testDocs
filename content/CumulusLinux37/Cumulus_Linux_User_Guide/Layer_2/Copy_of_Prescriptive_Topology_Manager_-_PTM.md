@@ -401,11 +401,7 @@ vendor-specific and has not been defined in the RFC. BFD echo packets
 that originate from Cumulus Linux are 8 bytes long and have the
 following format:
 
-<div class="tablewrap">
-
 0
-
-</div>
 
 1
 

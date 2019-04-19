@@ -72,8 +72,6 @@ hardware elements. Minimum or maximum values are output depending on the
 flags applied to the basic command. The hardware elements and applicable
 commands and flags are listed in the table below.
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -133,8 +131,6 @@ cumulus@switch:~$ ledmgrd -j</code></pre></td>
 </tbody>
 </table>
 
-</div>
-
 {{%notice note%}}
 
 Not all switch models include a sensor for monitoring power consumption
@@ -143,8 +139,6 @@ note](/old/Monitoring_System_Hardware.html#src-8362594_MonitoringSystemHardware-
 for details.
 
 {{%/notice%}}
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -197,14 +191,10 @@ for details.
 </tbody>
 </table>
 
-</div>
-
 ## Layer 1 Protocols and Interfaces
 
 Link and port state interface transitions are logged to
 `/var/log/syslog` and `/var/log/switchd.log`.
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -241,13 +231,9 @@ cumulus@switch:~$ net show interface all json</code></pre></td>
 </tbody>
 </table>
 
-</div>
-
 Interface counters are obtained from either querying the hardware or the
 Linux kernel. The two outputs should align, but the Linux kernel
 aggregates the output from the hardware.
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -273,10 +259,6 @@ cumulus@switch:~$ ethtool -S [iface]</code></pre></td>
 </tr>
 </tbody>
 </table>
-
-</div>
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -497,8 +479,6 @@ clagd[14291]: server01 is now dual connected.
 </tbody>
 </table>
 
-</div>
-
 Prescriptive Topology Manager (PTM) uses LLDP information to compare
 against a `topology.dot` file that describes the network. It has built
 in alerting capabilities, so it is preferable to use PTM on box rather
@@ -514,8 +494,6 @@ PTM. For more information, refer to the [Prescriptive Topology Manager
 documentation](/old/Prescriptive_Topology_Manager_-_PTM.html).
 
 {{%/notice%}}
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -544,16 +522,12 @@ documentation](/old/Prescriptive_Topology_Manager_-_PTM.html).
 </tbody>
 </table>
 
-</div>
-
 ## Layer 2 Protocols
 
 Spanning tree is a protocol that prevents loops in a layer 2
 infrastructure. In a stable state, the spanning tree protocol should
 stably converge. Monitoring the Topology Change Notifications (TCN) in
 STP helps identify when new BPDUs are received.
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -590,10 +564,6 @@ cumulus@switch:~$ clagctl dumpourmacs </code></pre></td>
 </tr>
 </tbody>
 </table>
-
-</div>
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -653,8 +623,6 @@ mstpd: MSTP_OUT_flush_all_fids: bridge:swp2:0 Flushing forwarding database
 </tbody>
 </table>
 
-</div>
-
 ## Layer 3 Protocols
 
 When FRRouting boots up for the first time, there is a different log
@@ -676,8 +644,6 @@ Monitoring the routing table provides trending on the size of the
 infrastructure. This is especially useful when integrated with
 host-based solutions (such as Routing on the Host) when the routes track
 with the number of applications available.
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -708,10 +674,6 @@ cumulus@switch:~$ cl-bgp route show</code></pre></td>
 </tbody>
 </table>
 
-</div>
-
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -739,8 +701,6 @@ bgpd[3000]: %ADJCHANGE: neighbor swp1 Down BGP Notification send
 </tbody>
 </table>
 
-</div>
-
 ### OSPF
 
 When monitoring OSPF, check if OSPF peers are operational. There is not
@@ -752,8 +712,6 @@ Monitoring the routing table provides trending on the size of the
 infrastructure. This is especially useful when integrated with
 host-based solutions (such as Routing on the Host) when the routes track
 with the number of applications available.
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -783,11 +741,7 @@ cumulus@switch:~$ cl-ospf summary show json</code></pre></td>
 </tbody>
 </table>
 
-</div>
-
 ### Route and Host Entries
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -818,11 +772,7 @@ cumulus@switch:~$ cl-resource-query -k</code></pre></td>
 </tbody>
 </table>
 
-</div>
-
 ### Routing Logs
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -861,13 +811,9 @@ watchfrr[1853]: watchfrr: Notifying Systemd we are up and running
 </tbody>
 </table>
 
-</div>
-
 ## Logging
 
 The table below describes the various log files.
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -913,8 +859,6 @@ However, when you manually define a log target with the <code>log file /var/log/
 </tbody>
 </table>
 
-</div>
-
 ## Protocols and Services
 
 Run the following command to confirm that the NTP process is working
@@ -930,8 +874,6 @@ cumulus@switch:~$ /usr/bin/ntpq -p
 ## Device Management
 
 ### Device Access Logs
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -959,11 +901,7 @@ sshd[31830]: pam_unix(sshd:session): session opened for user cumulus by (uid=0)
 </tbody>
 </table>
 
-</div>
-
 ### Device Super User Command Logs
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -991,5 +929,3 @@ sudo: pam_unix(sudo:session): session closed for user root
 </tr>
 </tbody>
 </table>
-
-</div>

@@ -59,8 +59,6 @@ CRC-32               0xFE   4 0x96543BC5
 Usage: `/usr/cumulus/bin/decode-syseeprom [-a][-r][-s
 [args]][-t]`
 
-<div class="tablewrap">
-
 | Option       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | \-h, –help   | Displays the help message and exits.                                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -69,8 +67,6 @@ Usage: `/usr/cumulus/bin/decode-syseeprom [-a][-r][-s
 | \-s          | Sets the EEPROM content if the EEPROM is writable. `args` can be supplied in command line in a comma separated list of the form `'<field>=<value>, ...'. ','` and `'='` are illegal characters in field names and values. Fields that are not specified will default to their current values. If `args` are supplied in the command line, they will be written without confirmation. If `args` is empty, the values will be prompted interactively. |
 | \-t TARGET   | Selects the target EEPROM (`board`, `psu2`, `psu1`) for the read or write operation; default is `board`.                                                                                                                                                                                                                                                                                                                                            |
 | \-e, –serial | Prints the device serial number.                                                                                                                                                                                                                                                                                                                                                                                                                    |
-
-</div>
 
 ### Related Commands
 
@@ -127,8 +123,6 @@ The following table shows the `sensors` command options.
 Usage: `sensors [OPTION]...
 [CHIP]...`
 
-<div class="tablewrap">
-
 | Option             | Description                                                                                                                                                   |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | \-c, --config-file | Specify a config file; use `-` after `-c` to read the config file from `stdin`; by default, `sensors` references the configuration file in `/etc/sensors.d/`. |
@@ -136,8 +130,6 @@ Usage: `sensors [OPTION]...
 | \-f, --fahrenheit  | Show temperatures in degrees Fahrenheit.                                                                                                                      |
 | \-A, --no-adapter  | Do not show the adapter for each chip.                                                                                                                        |
 | \--bus-list        | Generate bus statements for `sensors.conf`.                                                                                                                   |
-
-</div>
 
 If `[CHIP]` is not specified in the command, all chip info will be
 printed. Example chip names include:
@@ -236,14 +228,10 @@ The following table shows the `smonctl` command options.
 Usage: `smonctl [OPTION]...
 [CHIP]...`
 
-<div class="tablewrap">
-
 | Option                      | Description                              |
 | --------------------------- | ---------------------------------------- |
 | \-s SENSOR, --sensor SENSOR | Displays data for the specified sensor.  |
 | \-v, --verbose              | Displays detailed hardware sensors data. |
-
-</div>
 
 For more information, read `man smond` and `man smonctl`.
 

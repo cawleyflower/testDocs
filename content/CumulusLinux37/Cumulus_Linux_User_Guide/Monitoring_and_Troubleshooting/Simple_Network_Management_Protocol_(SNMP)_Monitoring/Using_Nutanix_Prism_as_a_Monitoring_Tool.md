@@ -113,8 +113,6 @@ take special steps within Cumulus Linux before you can configure Prism.
     {{%imgOld 3
     %}}
     
-    <div class="tablewrap">
-    
     | Configuration Parameter         | Description                                                                                     | Value Used in Example                                   |
     | ------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
     | Switch Management IP Address    | This can be any IP address on the box. In the screenshot above, the eth0 management IP is used. | 192.168.0.111                                           |
@@ -124,8 +122,6 @@ take special steps within Cumulus Linux before you can configure Prism.
     | SNMP Community Name             | SNMP v2c uses communities to share MIBs. The default community for snmpd is 'public'.           | public                                                  |
     
 
-    </div>
-    
     {{%notice note%}}
     
     The rest of the values were not touched for this demonstration. They
@@ -213,16 +209,12 @@ To help visualize the following diagram is provided:
 
 {{%imgOld 6 %}}
 
-<div class="tablewrap">
-
 | Nutanix Node    | Physical Port | Cumulus Linux Port |
 | --------------- | ------------- | ------------------ |
 | Node A (Green)  | vmnic2        | swp49              |
 | Node B (Blue)   | vmnic2        | swp50              |
 | Node C (Red)    | vmnic2        | swp51              |
 | Node D (Yellow) | vmnic2        | swp52              |
-
-</div>
 
 ## Enable LLDP/CDP on VMware ESXi (Hypervisor on Nutanix)
 

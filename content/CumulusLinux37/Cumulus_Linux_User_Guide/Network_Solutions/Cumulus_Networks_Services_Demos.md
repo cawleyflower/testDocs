@@ -29,8 +29,6 @@ designs seen in the field.
 
 ### IP and MAC Addressing
 
-<div class="tablewrap">
-
 | Hostname        | eth0 IP       | eth0 MAC          | Interface Count                                                  |
 | --------------- | ------------- | ----------------- | ---------------------------------------------------------------- |
 | oob-mgmt-server | 192.168.0.254 | any               |                                                                  |
@@ -49,8 +47,6 @@ designs seen in the field.
 | exit02          | 192.168.0.42  | A0:00:00:00:00:42 | 48x10g w/ 6x40g uplink (exit leaf)                               |
 | edge01          | 192.168.0.51  | A0:00:00:00:00:51 | 10g NICs (customer edge device, firewall, load balancer, etc.)   |
 | internet        | 192.168.0.253 | any               | (represents internet provider edge device)                       |
-
-</div>
 
 ### Build the Topology
 

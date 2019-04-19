@@ -330,8 +330,6 @@ buckets cannot be configured per ECMP route).
 The number of buckets can be configured as 64, 128, 256, 512 or 1024;
 the default is 128:
 
-<div class="tablewrap">
-
 | Number of Hash Buckets | Number of Supported ECMP Groups |
 | ---------------------- | ------------------------------- |
 | 64                     | 1024                            |
@@ -339,8 +337,6 @@ the default is 128:
 | 256                    | 256                             |
 | 512                    | 128                             |
 | 1024                   | 64                              |
-
-</div>
 
 A larger number of ECMP buckets reduces the impact on adding new next
 hops to an ECMP route. However, the system supports fewer ECMP routes.

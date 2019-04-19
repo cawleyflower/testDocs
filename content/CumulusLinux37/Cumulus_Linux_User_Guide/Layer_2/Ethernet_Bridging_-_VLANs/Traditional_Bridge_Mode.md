@@ -144,8 +144,6 @@ To create a traditional mode bridge manually, you need to hand edit the
         
     ```
     
-    <div class="tablewrap">
-    
     <table>
     <colgroup>
     <col style="width: 33%" />
@@ -178,8 +176,6 @@ To create a traditional mode bridge manually, you need to hand edit the
     </tr>
     </tbody>
     </table>
-    
-    </div>
     
     {{%notice note%}}
     

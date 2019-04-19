@@ -491,8 +491,6 @@ system sends this message to the `/var/log/syslog` file:
 
 The following table provides descriptions of the ASIC monitor settings.
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -634,5 +632,3 @@ In the following example, because the snapshot file count is set to 64, the firs
 </tr>
 </tbody>
 </table>
-
-</div>

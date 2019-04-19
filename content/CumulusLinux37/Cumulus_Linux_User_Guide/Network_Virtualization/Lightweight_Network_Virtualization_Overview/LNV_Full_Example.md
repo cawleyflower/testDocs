@@ -42,8 +42,6 @@ Cumulus Linux.
 
 The following images illustrate the configuration:
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -58,8 +56,6 @@ The following images illustrate the configuration:
 </tr>
 </tbody>
 </table>
-
-</div>
 
 {{%notice tip%}}
 
@@ -82,8 +78,6 @@ get instructor-led training\!
 
 Here is the configuration for the IP addressing information used in this
 example:
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -274,8 +268,6 @@ iface br-30
 </tbody>
 </table>
 
-</div>
-
 ### FRRouting Configuration
 
 The service nodes and registration nodes must all be routable between
@@ -285,8 +277,6 @@ each other. The layer 3 fabric on Cumulus Linux can either be
 is used to demonstrate full reachability.
 
 Here is the FRRouting configuration using OSPF:
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -417,15 +407,11 @@ router ospf
 </tbody>
 </table>
 
-</div>
-
 ### Host Configuration
 
 In this example, the servers are running Ubuntu 14.04. You must map a
 trunk from server1 and server2 to the respective switch. In Ubuntu, this
 is done with subinterfaces.
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -468,11 +454,7 @@ iface eth3.30 inet static
 </tbody>
 </table>
 
-</div>
-
 ### Service Node Configuration
-
-<div class="tablewrap">
 
 <table>
 <colgroup>
@@ -574,8 +556,6 @@ svcnode_peers = 10.2.1.3
 </tr>
 </tbody>
 </table>
-
-</div>
 
 ## Related Information
 

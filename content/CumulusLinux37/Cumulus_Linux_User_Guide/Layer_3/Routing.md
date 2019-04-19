@@ -319,8 +319,6 @@ chipsets.
 
 #### Mellanox Spectrum Switches
 
-<div class="tablewrap">
-
 | Profile        | MAC Addresses | L3 Neighbors              | Longest Prefix Match (LPM)     |
 | -------------- | ------------- | ------------------------- | ------------------------------ |
 | default        | 40k           | 32k (IPv4) and 16k (IPv6) | 64k (IPv4) or 28k (IPv6-long)  |
@@ -330,11 +328,7 @@ chipsets.
 | v4-lpm-heavy-1 | 8k            | 8k (IPv4) and 2k (IPv6)   | 176k (IPv4) and 2k (IPv6-long) |
 | v6-lpm-heavy   | 40k           | 8k (IPv4) and 40k (IPv6)  | 8k (IPv4) and 64k (IPv6-long)  |
 
-</div>
-
 #### Broadcom Tomahawk/Tomahawk+ Switches
-
-<div class="tablewrap">
 
 | Profile                    | MAC Addresses | L3 Neighbors | Longest Prefix Match (LPM)     |
 | -------------------------- | ------------- | ------------ | ------------------------------ |
@@ -342,11 +336,7 @@ chipsets.
 | l2-heavy                   | 72k           | 72k          | 8k (IPv4) or 2k (IPv6-long)    |
 | v4-lpm-heavy, v6-lpm-heavy | 8k            | 8k           | 128k (IPv4) or 20k (IPv6-long) |
 
-</div>
-
 #### Broadcom Trident II/Trident II+/Trident3 Switches
-
-<div class="tablewrap">
 
 | Profile                    | MAC Addresses | L3 Neighbors | Longest Prefix Match (LPM)     |
 | -------------------------- | ------------- | ------------ | ------------------------------ |
@@ -354,19 +344,13 @@ chipsets.
 | l2-heavy                   | 160k          | 96k          | 8k (IPv4) or 2k (IPv6-long)    |
 | v4-lpm-heavy, v6-lpm-heavy | 32k           | 16k          | 128k (IPv4) or 20k (IPv6-long) |
 
-</div>
-
 #### Broadcom Helix4 Switches
 
 Note that Helix4 switches do not have profiles
 
-<div class="tablewrap">
-
 | MAC Addresses | L3 Neighbors | Longest Prefix Match (LPM)    |
 | ------------- | ------------ | ----------------------------- |
 | 24k           | 12k          | 7.8k (IPv4) or 2k (IPv6-long) |
-
-</div>
 
 {{%notice note%}}
 
@@ -411,8 +395,6 @@ are enabled (that is, the `acl.non_atomic_update_mode` is set to *TRUE*
 in `/etc/cumulus/switchd.conf` file), the maximum number of mroute and
 ACL entries for each profile are as follows:
 
-<div class="tablewrap">
-
 | Profile    | Mroute Entries | ACL Entries                |
 | ---------- | -------------- | -------------------------- |
 | default    | 1000           | 500 (IPv6) or 1000 (IPv4)  |
@@ -420,15 +402,11 @@ ACL entries for each profile are as follows:
 | acl-heavy  | 450            | 2000 (IPv6) or 3500 (IPv4) |
 | ipmc-max   | 13000          | 1000 (IPv6) or 2000 (IPv4) |
 
-</div>
-
 When [nonatomic
 updates](/old/Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-nonatomic)
 are disabled (that is, the `acl.non_atomic_update_mode` is set to
 *FALSE* in `/etc/cumulus/switchd.conf` file), the maximum number of
 mroute and ACL entries for each profile are as follows:
-
-<div class="tablewrap">
 
 | Profile    | Mroute Entries | ACL Entries                |
 | ---------- | -------------- | -------------------------- |
@@ -436,8 +414,6 @@ mroute and ACL entries for each profile are as follows:
 | ipmc-heavy | 8500           | 500 (IPv6) or 750 (IPv4)   |
 | acl-heavy  | 450            | 1000 (IPv6) or 1750 (IPv4) |
 | ipmc-max   | 13000          | 500 (IPv6) or 1000 (IPv4)  |
-
-</div>
 
 ## Caveats and Errata
 

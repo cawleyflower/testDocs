@@ -956,8 +956,6 @@ below.
 
 ### Broadcom Tomahawk Limits
 
-<div class="tablewrap">
-
 | Direction                  | Atomic Mode IPv4 Rules | Atomic Mode IPv6 Rules | Nonatomic Mode IPv4 Rules | Nonatomic Mode IPv6 Rules |
 | -------------------------- | ---------------------- | ---------------------- | ------------------------- | ------------------------- |
 | Ingress raw limit          | 256                    | 256                    | 768                       | 768                       |
@@ -965,11 +963,7 @@ below.
 | Egress raw limit           | 256                    | N/A                    | 512                       | N/A                       |
 | Egress with default rules  | 256 (29 default)       | N/A                    | 256 (29 default)          | N/A                       |
 
-</div>
-
 ### Broadcom Trident II+ and Trident3 Limits
-
-<div class="tablewrap">
 
 | Direction                  | Atomic Mode IPv4 Rules | Atomic Mode IPv6 Rules | Nonatomic Mode IPv4 Rules | Nonatomic Mode IPv6 Rules |
 | -------------------------- | ---------------------- | ---------------------- | ------------------------- | ------------------------- |
@@ -978,11 +972,7 @@ below.
 | Egress raw limit           | 256                    | N/A                    | 512                       | N/A                       |
 | Egress with default rules  | 256 (29 default)       | N/A                    | 256 (29 default)          | N/A                       |
 
-</div>
-
 ### Broadcom Trident II Limits
-
-<div class="tablewrap">
 
 | Direction                  | Atomic Mode IPv4 Rules | Atomic Mode IPv6 Rules | Nonatomic Mode IPv4 Rules | Nonatomic Mode IPv6 Rules |
 | -------------------------- | ---------------------- | ---------------------- | ------------------------- | ------------------------- |
@@ -991,11 +981,7 @@ below.
 | Egress raw limit           | 256                    | N/A                    | 512                       | N/A                       |
 | Egress with default rules  | 256 (29 default)       | N/A                    | 256 (29 default)          | N/A                       |
 
-</div>
-
 ### Broadcom Helix4 Limits
-
-<div class="tablewrap">
 
 | Direction                  | Atomic Mode IPv4 Rules | Atomic Mode IPv6 Rules | Nonatomic Mode IPv4 Rules | Nonatomic Mode IPv6 Rules |
 | -------------------------- | ---------------------- | ---------------------- | ------------------------- | ------------------------- |
@@ -1003,8 +989,6 @@ below.
 | Ingress with default rules | 128 (36 default)       | 128 (29 default)       | 128 (36 default)          | 128 (29 default)          |
 | Egress raw limit           | 256                    | N/A                    | 512                       | N/A                       |
 | Egress with default rules  | 256 (29 default)       | N/A                    | 256 (29 default)          | N/A                       |
-
-</div>
 
 ### Mellanox Spectrum Limits
 
@@ -1016,15 +1000,11 @@ with the [TCAM profile](/old/Routing.html#src-8362912_Routing-tcam)
 specified for the
 switch.
 
-<div class="tablewrap">
-
 | Profile    | Atomic Mode IPv4 Rules | Atomic Mode IPv6 Rules | Nonatomic Mode IPv4 Rules | Nonatomic Mode IPv6 Rules |
 | ---------- | ---------------------- | ---------------------- | ------------------------- | ------------------------- |
 | default    | 1750                   | 750                    | 3500                      | 1500                      |
 | ipmc-heavy | 200                    | 80                     | 400                       | 160                       |
 | acl-heavy  | 3000                   | 2000                   | 6000                      | 2500                      |
-
-</div>
 
 ## Example Scenario
 

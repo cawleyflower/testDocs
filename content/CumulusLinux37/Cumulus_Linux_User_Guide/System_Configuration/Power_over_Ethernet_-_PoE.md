@@ -42,15 +42,11 @@ powered device is connected to the switch via an Ethernet cable:
 
 Power is available as follows:
 
-<div class="tablewrap">
-
 | PSU 1 | PSU 2 | PoE Power Budget |
 | ----- | ----- | ---------------- |
 | 920W  | x     | 750W             |
 | x     | 920W  | 750W             |
 | 920W  | 920W  | 1650W            |
-
-</div>
 
 The AS4610-54P has an LED on the front panel to indicate PoE status:
 

@@ -102,8 +102,6 @@ Cleared counters
     
 ```
 
-<div class="tablewrap">
-
 <table>
 <thead>
 <tr class="header">
@@ -148,8 +146,6 @@ Cleared counters
 </tr>
 </tbody>
 </table>
-
-</div>
 
 ## Monitor Switch Port SFP/QSFP Hardware Information Using ethtool
 

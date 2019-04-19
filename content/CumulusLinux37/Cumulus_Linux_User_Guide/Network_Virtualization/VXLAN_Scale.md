@@ -67,15 +67,11 @@ the time). It is much more common for subsets of ports to be used for
 different VXLANs. For example, a 10G (48 \* 10G + 6 \* 40G uplinks) can
 have the following configuration:
 
-<div class="tablewrap">
-
 | Ports    | Trunks          |
 | -------- | --------------- |
 | swp1-20  | 100 VXLAN/VLANs |
 | swp21-30 | 100 VXLAN/VLANs |
 | swp31-48 | X VXLAN/VLANs   |
-
-</div>
 
 The equation now looks like this:
 

@@ -128,8 +128,6 @@ Serial Number.... A1010B2A011212AB000001
     
 ```
 
-<div class="tablewrap">
-
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -190,8 +188,6 @@ UP  tapfc2203e4-5b  10M      1500   Access/L2       Untagged: brq8ff99102-29
 </tr>
 </tbody>
 </table>
-
-</div>
 
 ## Other Useful Features
 
