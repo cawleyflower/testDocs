@@ -3,7 +3,7 @@ title: Cumulus Linux User Guide
 author: Unknown
 weight: 1
 pageID: 8362527
-bookFLatSection: true
+bookFLatSection: false
 aliases:
  - /old/Cumulus_Linux_User_Guide.html
 ---

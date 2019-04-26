@@ -1,12 +1,13 @@
+@import "normalize";
 @import "variables";
 @import "markdown";
 @import "utils";
-@import "notices";
 @import "syntax";
-
+@import "notices";
 
 html {
   font-size: $font-size-base;
+  letter-spacing: 0.33px;
   scroll-behavior: smooth;
 }
 
@@ -54,7 +55,6 @@ img {
   vertical-align: middle;
 }
 
-
 aside nav ul {
   padding: 0;
   margin: 0;
@@ -87,7 +87,6 @@ ul.pagination {
 }
 
 .container {
-  min-width: $container-min-width;
   max-width: $container-max-width;
   margin: 0 auto;
 }
@@ -104,14 +103,32 @@ ul.pagination {
     width: $menu-width;
     padding: $padding-16;
 
+    a{
+      display: block;
+
+    }
     @include fixed;
+
   }
 
   @include dark-links;
 }
 
+.book-section-flat {
+  margin-bottom: $padding-16 * 2;
+
+  > a, > span {
+    font-weight: 600
+  }
+
+  > ul {
+    padding-left: 0;
+  }
+}
+
 .book-page {
   min-width: $body-min-width;
+  flex-grow: 1;
   padding: $padding-16;
 }
 
@@ -148,14 +165,31 @@ ul.pagination {
   }
 }
 
+.book-footer {
+  display: flex;
+  margin-top: $padding-16;
+  font-size: $font-size-14;
+  align-items: baseline;
+
+  img {
+    width: $font-size-14;
+    vertical-align: bottom;
+  }
+}
+
 .book-posts {
   min-width: $body-min-width;
   max-width: $sm-breakpoint;
+  flex-grow: 1;
   padding: $padding-16;
 
   article {
     padding-bottom: $padding-16;
   }
+}
+
+.book-home {
+  padding: $padding-16;
 }
 
 // Responsive styles
@@ -203,8 +237,12 @@ aside nav,
 // Extra space for big screens
 @media screen and (min-width: $container-max-width) {
   .book-page,
+  .book-posts,
   .book-menu nav,
   .book-toc nav {
     padding: $padding-16 * 2 $padding-16;
   }
 }
+
+// Add custom defined styles
+@import 'custom'
