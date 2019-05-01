@@ -59,6 +59,7 @@ aside nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
+  transition: all 0.4s ease-in-out;
 
   li {
     margin: 1em 0;
@@ -73,9 +74,11 @@ aside nav ul {
   }
 
   ul {
-    padding-left: $padding-16;
+    padding-left: $padding-8;
   }
 }
+
+
 
 ul.pagination {
   display: flex;
@@ -192,6 +195,17 @@ ul.pagination {
   padding: $padding-16;
 }
 
+.cn-book-section-container{
+  display: block;
+
+}
+
+.menuCollapse{
+  display: inline-block;
+  float: left;
+  margin-right: 5px;
+}
+
 // Responsive styles
 aside nav,
 .book-page,
@@ -233,6 +247,7 @@ aside nav,
     }
   }
 }
+
 
 // Extra space for big screens
 @media screen and (min-width: $container-max-width) {

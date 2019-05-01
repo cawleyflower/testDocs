@@ -39,19 +39,31 @@
 </script>
 {{ end }}
 
+
 {{ define "jscollapse"}}
 <script>
-$('.toggle').click(function(e) {
-  	e.preventDefault();
-    var $this = $(this);
-    if($this.next().hasClass('show')){
-      this.children('ul').children('li').Class('show', 'hide');
-      } else {
-        $this.parent().parent().find('li .inner').removeClass('show');
-        $this.parent().parent().find('li .inner').slideUp(350);
-        $this.next().toggleClass('show');
-        $this.next().slideUp(350);
-      }
-});
+
+let elesSections = document.querySelectorAll('.cn-book-section-container')
+elesSections.forEach(node => {
+  eleToggler = document.createElement('input')
+  eleToggler.setAttribute('type', 'checkbox')
+  eleToggler.setAttribute('class', 'menuCollapse')
+  eleToggler.addEventListener('click', function(event){
+    if(node.style.display == ""){
+      node.style.display = 'none'
+    }else {
+      node.style.display = ''
+    }
+  })
+  let par = node.parentNode
+  let lnk = par.querySelector('a')
+  if(par.tagName == 'LI'){
+    par.insertBefore(eleToggler, lnk)
+  }
+})
+
+
+
+
 </script>
 {{ end }}

@@ -5,6 +5,7 @@ weight: 19
 pageID: 8362649
 aliases:
  - /old/Layer_2.html
+topSection: true
 ---
 # Layer 2
 
@@ -13,17 +14,17 @@ aliases:
 
   - [Link Layer Discovery
     Protocol](/old/Link_Layer_Discovery_Protocol.html)
-    
+
       - [Voice VLAN](/old/Voice_VLAN.html)
 
   - [Bonding - Link Aggregation](/old/Bonding_-_Link_Aggregation.html)
 
   - [Ethernet Bridging - VLANs](/old/Ethernet_Bridging_-_VLANs.html)
-    
+
       - [VLAN-aware Bridge Mode](/old/VLAN-aware_Bridge_Mode.html)
-    
+
       - [Traditional Bridge Mode](/old/Traditional_Bridge_Mode.html)
-    
+
       - [VLAN Tagging](/old/VLAN_Tagging.html)
 
   - [Multi-Chassis Link Aggregation -
@@ -33,7 +34,7 @@ aliases:
 
   - [Virtual Router Redundancy - VRR and
     VRRP](/old/Virtual_Router_Redundancy_-_VRR_and_VRRP.html)
-    
+
       - [ifplugd](/old/ifplugd.html)
 
   - [IGMP and MLD Snooping](/old/IGMP_and_MLD_Snooping.html)

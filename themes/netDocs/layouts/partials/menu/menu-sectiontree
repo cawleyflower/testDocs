@@ -1,0 +1,58 @@
+
+
+{{ $bookSection := default "docs" .Page.Params.BookSection  }}
+{{ $currentSect := .Page.Section}}
+
+{{ $bookSections := where .Site.Sections "Section" $currentSect}}
+{{ .Scratch.Set "BookSections" $bookSections }}
+
+
+{{ $sections := .Scratch.Get "BookSections" }}
+{{/* If there is only one section to render then render its children, else render all sections */}}
+
+
+{{ if eq (len $sections) 1 }}
+  {{ with index $sections 0 }}
+    {{ template "book-section-children" (dict "Section" . "CurrentPage" $.Permalink) }}
+  {{ end }}
+{{ else }}
+  <ul id = "col_ul">
+  {{ range $sections }}
+    {{ template "book-section" (dict "Section" . "CurrentPage" $.Permalink) }}
+  {{ end }}
+  </ul>
+{{ end }}
+
+{{ define "book-section" }}
+{{ with .Section }}
+  <li class="cn-book-section">
+      {{ template "book-page-link" (dict "Page" . "CurrentPage" $.CurrentPage) }}
+
+      {{ template "book-section-children" (dict "Section" . "CurrentPage" $.CurrentPage ) }}
+  </li>
+{{ end }}
+{{ end }}
+
+{{ define "book-section-children" }}
+{{ with .Section }}
+  <ul class="cn-book-section-container">
+    {{ range .Sections }}
+      {{ template "book-section" (dict "Section" . "CurrentPage" $.CurrentPage ) }}
+    {{ end }}
+    {{ range .Pages }}
+    <li >
+      {{ template "book-page-link" (dict "Page" . "CurrentPage" $.CurrentPage) }}
+    </li>
+    {{ end }}
+  </ul>
+{{ end }}
+{{ end }}
+
+{{ define "book-page-link" }}
+{{ with .Page }}
+  <a href="{{ .RelPermalink }}" {{ if eq $.CurrentPage .Permalink }} class="active" {{ end }}>
+    {{ template "title" . }}
+  </a>
+
+{{ end }}
+{{ end }}

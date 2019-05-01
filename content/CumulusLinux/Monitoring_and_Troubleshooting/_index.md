@@ -5,6 +5,8 @@ weight: 25
 pageID: 8362592
 aliases:
  - /old/Monitoring_and_Troubleshooting.html
+topSection: true
+ 
 ---
 # Monitoring and Troubleshooting
 
@@ -17,7 +19,7 @@ when you find yourself rebooting the switch often or if you don’t have a
 reliable network connection.
 
 The default serial console baud rate is 115200, which is the baud rate
-[ONIE](http://opencomputeproject.github.io/onie/) uses.
+[ONIE](http://opencomputeroject.github.io/onie/) uses.
 
 ### Configure the Serial Console on ARM Switches
 
@@ -25,13 +27,13 @@ On ARM switches, the U-Boot environment variable `baudrate` identifies
 the baud rate of the serial console. To change the `baudrate` variable,
 use the `fw_setenv` command:
 
-``` 
-                   
+```
+
 cumulus@switch:~$ sudo fw_setenv baudrate 9600
 Updating environment variable: `baudrate'
 Proceed with update [N/y]? y
-   
-    
+
+
 ```
 
 You must reboot the switch for the `baudrate` change to take effect.
@@ -95,23 +97,23 @@ To change the serial console baud rate:
     `/etc/default/grub` are as follows; replace the *115200* value with
     a valid value specified above in the `--speed` variable in the first
     line and in the `console` variable in the second line:
-    
-    ``` 
-                       
-    GRUB_SERIAL_COMMAND="serial --port=0x2f8 --speed=115200 --word=8 --parity=no --stop=1"              
+
+    ```
+
+    GRUB_SERIAL_COMMAND="serial --port=0x2f8 --speed=115200 --word=8 --parity=no --stop=1"
     GRUB_CMDLINE_LINUX="console=ttyS1,115200n8 cl_platform=accton_as5712_54x"
-       
-        
+
+
     ```
 
 2.  After you save your changes to the grub configuration, type the
     following at the command prompt:
-    
-    ``` 
-                       
+
+    ```
+
     cumulus@switch:~$ update-grub
-       
-        
+
+
     ```
 
 3.  If you plan on accessing your switch's BIOS over the serial console,
@@ -132,29 +134,29 @@ For information about the version of Cumulus Linux running on the
 switch, run `net show version`, which displays the contents of
 `/etc/lsb-release`:
 
-``` 
-                   
+```
+
 cumulus@switch:~$ net show version
 NCLU_VERSION=1.0
 DISTRIB_ID="Cumulus Linux"
 DISTRIB_RELEASE=3.4.0
 DISTRIB_DESCRIPTION="Cumulus Linux 3.4.0"
-   
-    
+
+
 ```
 
 For general information about the switch, run `net show system`, which
 gathers information about the switch from a number of files in the
 system:
 
-``` 
-                   
+```
+
 cumulus@switch:~$ net show system
 Hostname......... celRED
  
 Build............ Cumulus Linux 3.7.4~1551312781.35d3264
 Uptime........... 8 days, 12:24:01.770000
- 
+
 Model............ Cel REDSTONE
 CPU.............. x86_64 Intel Atom C2538 2.4 GHz
 Memory........... 4GB
@@ -163,8 +165,8 @@ ASIC............. Broadcom Trident2 BCM56854
 Ports............ 48 x 10G-SFP+ & 6 x 40G-QSFP+
 Base MAC Address. a0:00:00:00:00:50
 Serial Number.... A1010B2A011212AB000001
-   
-    
+
+
 ```
 
 ## Diagnostics Using cl-support
@@ -178,8 +180,8 @@ File](/old/Understanding_the_cl-support_Output_File.html).
 You should run `cl-support` before you submit a support request to
 Cumulus Networks as this file helps in the investigation of issues.
 
-``` 
-                   
+```
+
 cumulus@switch:~$ sudo cl-support -h
 Usage: cl-support [-h] [-s] [-t] [-v] [reason]...
  
@@ -193,8 +195,8 @@ Options:
 -v: Verbose
 -e MODULES: Enable modules. Comma separated module list (run with -e help for module names)
 -d MODULES: Disable modules. Comma separated module list (run with -d help for module names)
-   
-    
+
+
 ```
 
 ## Next Steps
@@ -208,7 +210,7 @@ The links below discuss more specific monitoring topics.
     cl-resource-query](/old/Resource_Diagnostics_Using_cl-resource-query.html)
 
   - [Monitoring System Hardware](/old/Monitoring_System_Hardware.html)
-    
+
       - [Network Switch Port LED and Status LED
         Guidelines](/old/Network_Switch_Port_LED_and_Status_LED_Guidelines.html)
 
@@ -219,29 +221,29 @@ The links below discuss more specific monitoring topics.
 
   - [Understanding the cl-support Output
     File](/old/Understanding_the_cl-support_Output_File.html)
-    
+
       - [Troubleshooting Log Files](/old/Troubleshooting_Log_Files.html)
-    
+
       - [Troubleshooting the etc
         Directory](/old/Troubleshooting_the_etc_Directory.html)
 
   - [Troubleshooting Network
     Interfaces](/old/Troubleshooting_Network_Interfaces.html)
-    
+
       - [Monitoring Interfaces and Transceivers Using
         ethtool](/old/Monitoring_Interfaces_and_Transceivers_Using_ethtool.html)
 
   - [Network Troubleshooting](/old/Network_Troubleshooting.html)
-    
+
       - [Using NCLU to Troubleshoot Your Network
         Configuration](/old/Using_NCLU_to_Troubleshoot_Your_Network_Configuration.html)
-    
+
       - [Monitoring System Statistics and Network Traffic with
         sFlow](/old/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow.html)
 
   - [Simple Network Management Protocol (SNMP)
     Monitoring](/old/Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html)
-    
+
       - [Using Nutanix Prism as a Monitoring
         Tool](/old/Using_Nutanix_Prism_as_a_Monitoring_Tool.html)
 
