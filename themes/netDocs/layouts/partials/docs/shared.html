@@ -45,14 +45,27 @@
 
 let elesSections = document.querySelectorAll('.cn-book-section-container')
 elesSections.forEach(node => {
+  if(node.querySelector('.active') != null){
+    node.setAttribute('class', '.cn-book-section-container disp')
+  }else{
+    node.setAttribute('class', '.cn-book-section-container hide')
+  }
+
+  if(node.parentNode.querySelector('.active') != null){
+    node.setAttribute('class', '.cn-book-section-container disp')
+  }
+
+
   eleToggler = document.createElement('input')
   eleToggler.setAttribute('type', 'checkbox')
   eleToggler.setAttribute('class', 'menuCollapse')
+
   eleToggler.addEventListener('click', function(event){
-    if(node.style.display == ""){
-      node.style.display = 'none'
-    }else {
-      node.style.display = ''
+
+    if(node.getAttribute('class') == '.cn-book-section-container hide'){
+      node.setAttribute('class', '.cn-book-section-container disp')
+    }else if(node.getAttribute('class') == '.cn-book-section-container disp'){
+      node.setAttribute('class', '.cn-book-section-container hide')
     }
   })
   let par = node.parentNode

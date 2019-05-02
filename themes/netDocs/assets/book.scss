@@ -5,6 +5,8 @@
 @import "syntax";
 @import "notices";
 
+
+
 html {
   font-size: $font-size-base;
   letter-spacing: 0.33px;
@@ -15,6 +17,8 @@ html,
 body {
   min-width: $body-min-width;
   overflow-x: hidden;
+  height: 100%;
+
 }
 
 body {
@@ -55,11 +59,14 @@ img {
   vertical-align: middle;
 }
 
+
 aside nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
   transition: all 0.4s ease-in-out;
+
+
 
   li {
     margin: 1em 0;
@@ -89,9 +96,10 @@ ul.pagination {
   }
 }
 
-.container {
-  max-width: $container-max-width;
-  margin: 0 auto;
+main.flex.container {
+  margin: 0 0;
+  height: 100%;
+  flex-basis: max-content;
 }
 
 .book-brand {
@@ -99,13 +107,13 @@ ul.pagination {
 }
 
 .book-menu {
+  background-color: $nav-background;
   flex: 0 0 $menu-width;
   font-size: $font-size-14;
 
   nav {
     width: $menu-width;
     padding: $padding-16;
-
     a{
       display: block;
 
@@ -133,6 +141,7 @@ ul.pagination {
   min-width: $body-min-width;
   flex-grow: 1;
   padding: $padding-16;
+  overflow-x: scroll;
 }
 
 .book-header {
@@ -196,14 +205,23 @@ ul.pagination {
 }
 
 .cn-book-section-container{
-  display: block;
+  .disp{
+    display: block;
+    border-left: solid #00ad69;
+    background-color:#8c9aa6;
+  }
 
+  .hide{
+    display: none;
+  }
 }
+
 
 .menuCollapse{
   display: inline-block;
   float: left;
   margin-right: 5px;
+
 }
 
 // Responsive styles
@@ -216,13 +234,13 @@ aside nav,
   will-change: transform, margin-left;
 }
 
-@media screen and (max-width: $md-breakpoint) {
+@media screen and (max-width: $sm-breakpoint) {
   .book-toc {
     display: none;
   }
 }
 
-@media screen and (max-width: $sm-breakpoint) {
+@media screen and (max-width: $md-breakpoint) {
   .book-menu {
     margin-left: -$menu-width;
   }
@@ -251,11 +269,22 @@ aside nav,
 
 // Extra space for big screens
 @media screen and (min-width: $container-max-width) {
-  .book-page,
+  main.containter{
+    justify-content: center
+
+  }
+  .book-page{
+    flex: 0 0 $body-max-width;
+  }
   .book-posts,
-  .book-menu nav,
-  .book-toc nav {
-    padding: $padding-16 * 2 $padding-16;
+  .book-toc {
+    flex: 1 0 auto;
+  }
+  .book-menu {
+    flex: 0 0 auto;
+    flex-basis: $menu-width
+
+
   }
 }
 

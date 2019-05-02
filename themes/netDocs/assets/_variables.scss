@@ -32,17 +32,20 @@ $color-dark-link: $gray-800;
 $body-background: white;
 $body-font-color: $gray-800;
 $body-font-weight: 400;
-$body-min-width: 2rem;
+$body-min-width: 5rem;
 
-$nav-background: $body-background;
+
+$nav-background: #eaedf2;
 $nav-link-color: $gray-800;
 
 $header-height: 3.5rem;
-$menu-width: 16rem;
+$menu-width: 20rem;
 $toc-width: 14rem;
 
 $container-min-width: $body-min-width;
-$container-max-width: 125rem;
+$container-max-width: 130rem;
 
 $sm-breakpoint: $menu-width + $body-min-width + 5;
 $md-breakpoint: $sm-breakpoint + $toc-width;
+
+$body-max-width: $container-max-width - $menu-width - $toc-width

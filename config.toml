@@ -8,7 +8,7 @@ theme = "netDocs"
 
 #Book configuration
 disablePathToLower = true
-enableGitInfo= false
+enableGitInfo= true
 
 #Syntax Highlighting
 pygmentsCodeFences = true
