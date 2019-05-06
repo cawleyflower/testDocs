@@ -5,16 +5,23 @@ $block-border-radius: 0.15rem;
 .markdown {
   line-height: 1.7;
 
-  h1, h2, h3, h4, h5 {
-    font-weight: bold;
-    line-height: 1.25;
-
-    // remove padding at the beginning of page
-    &:first-child {
+    h1 {
       margin-top: 0;
+      font-weight: 400;
       line-height: 1em;
     }
-  }
+    h2 {
+      font-weight: 300;
+    }
+    h3 {
+      transform: uppercase;
+    }
+    h4, h5 {
+      font-weight: 600;
+    }
+
+    // remove padding at the beginning of page
+
 
   b, optgroup, strong {
     font-weight: 700;
