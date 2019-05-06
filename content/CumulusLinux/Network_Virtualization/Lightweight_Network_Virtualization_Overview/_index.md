@@ -147,42 +147,42 @@ To enable service node replication:
 
 2.  Configure a service node IP address for every VXLAN interface using
     the `vxlan-svcnodeip` parameter:
-    
-    ``` 
-                       
-    cumulus@switch:~$ net add vxlan VXLAN vxlan svcnodeip IP_ADDRESS
-       
-        
+
     ```
-    
+
+    cumulus@switch:~$ net add vxlan VXLAN vxlan svcnodeip IP_ADDRESS
+
+
+    ```
+
     {{%notice note%}}
-    
+
     You only specify this parameter when head end replication is
     disabled. For the loopback, the parameter is still named
     `vxrd-svcnode-ip`.
-    
+
     {{%/notice%}}
 
 3.  Edit the `/etc/vxsnd.conf` file and configure the following:
-    
+
       - Set the same service node IP address that you configured in the
         previous step:
-        
-        ``` 
-                           
-        svcnode_ip = <>
-           
-            
+
         ```
-    
+
+        svcnode_ip = <>
+
+
+        ```
+
       - To forward VXLAN data traffic, set the following variable to
         *True*:
-        
-        ``` 
-                           
+
+        ```
+
         enable_vxlan_listen = true
-           
-            
+
+
         ```
 
 ## Requirements
@@ -238,7 +238,7 @@ and leaf2 for this demonstration.
 <tbody>
 <tr class="odd">
 <td><p><strong>leaf1:</strong></p>
-<pre><code>                   
+<pre><code>
 cumulus@leaf1:~$ net add loopback lo ip address 10.2.1.1/32
 cumulus@leaf1:~$ net add loopback lo vxrd-src-ip 10.2.1.1
 cumulus@leaf1:~$ net add loopback lo vxrd-svcnode-ip 10.2.1.3
@@ -252,14 +252,14 @@ cumulus@leaf1:~$ net add vxlan vni-30 vxlan id 30
 cumulus@leaf1:~$ net add vxlan vni-30 vxlan local-tunnelip 10.2.1.1
 cumulus@leaf1:~$ net add vxlan vni-30 bridge access 30
 cumulus@leaf1:~$ net add bridge bridge ports swp32s0.10
-cumulus@leaf1:~$ net pending 
+cumulus@leaf1:~$ net pending
 cumulus@leaf1:~$ net commit
-   
+
     </code></pre>
 <p>These commands create the following configuration in the <code>/etc/network/interfaces</code> file:</p>
-<pre><code>                   
+<pre><code>
 auto lo
-iface lo 
+iface lo
   address 10.2.1.1/32
   vxrd-src-ip 10.2.1.1
  
@@ -295,10 +295,10 @@ iface vni-30
   mstpctl-portbpdufilter yes
   vxlan-id 30
   vxlan-local-tunnelip 10.2.1.1
-   
+
     </code></pre></td>
 <td><p><strong>leaf2:</strong></p>
-<pre><code>                   
+<pre><code>
 cumulus@leaf2:~$ net add loopback lo ip address 10.2.1.2/32
 cumulus@leaf2:~$ net add loopback lo vxrd-src-ip 10.2.1.2
 cumulus@leaf2:~$ net add loopback lo vxrd-svcnode-ip 10.2.1.3
@@ -312,15 +312,15 @@ cumulus@leaf2:~$ net add vxlan vni-30 vxlan id 30
 cumulus@leaf2:~$ net add vxlan vni-30 vxlan local-tunnelip 10.2.1.2
 cumulus@leaf2:~$ net add vxlan vni-30 bridge access 30
 cumulus@leaf1:~$ net add bridge bridge ports swp32s0.10
-cumulus@leaf2:~$ net pending 
+cumulus@leaf2:~$ net pending
 cumulus@leaf2:~$ net commit
-   
+
     </code></pre>
 <p>These commands create the following configuration in the <code>/etc/network/interfaces</code> file:</p>
-<pre><code>                   
+<pre><code>
 auto lo
 iface lo
-  address 10.2.1.2/32 
+  address 10.2.1.2/32
   vxrd-src-ip 10.2.1.2
  
 auto swp32s0.10
@@ -347,7 +347,7 @@ iface vni-2000
   mstpctl-portbpdufilter yes
   vxlan-id 2000
   vxlan-local-tunnelip 10.2.1.2
- 
+
 auto vni-30
 iface vni-30
   bridge-access 30
@@ -355,7 +355,7 @@ iface vni-30
   mstpctl-portbpdufilter yes
   vxlan-id 30
   vxlan-local-tunnelip 10.2.1.2
-   
+
     </code></pre></td>
 </tr>
 </tbody>
@@ -376,31 +376,31 @@ completely up to you.
 Use the `brctl show` command to see the physical and logical interfaces
 associated with that bridge:
 
-``` 
-                   
+```
+
 cumulus@leaf1:~$ brctl show
 bridge name bridge id           STP enabled     interfaces
 bridge      8000.443839008404   yes             swp32s0.10
                                                 vni-10
                                                 vni-2000
                                                 vni-30
-   
-    
+
+
 ```
 
 As with any logical interfaces on Linux, the name does not matter (other
 than a 15-character limit). To verify the associated VNI for the logical
 name, use the `ip -d link show` command:
 
-``` 
-                   
+```
+
 cumulus@leaf1:~$ ip -d link show vni-10
 43: vni-10:  mtu 1500 qdisc noqueue master br-10 state UNKNOWN mode DEFAULT
     link/ether 02:ec:ec:bd:7f:c6 brd ff:ff:ff:ff:ff:ff
     vxlan id 10 srcport 32768 61000 dstport 4789 ageing 1800
     bridge_slave
-   
-    
+
+
 ```
 
 The *vxlan id 10* indicates the VXLAN ID/VNI is indeed 10 as the logical
@@ -421,12 +421,12 @@ switch running Cumulus Linux as long as that switch is not also a VXLAN
 VTEP. In this example, enable the service node only on the spine1
 switch, then restart the service.
 
-``` 
-                   
+```
+
 cumulus@spine1:~$ sudo systemctl enable vxsnd.service
 cumulus@spine1:~$ sudo systemctl restart vxsnd.service
-   
-    
+
+
 ```
 
 {{%notice warning%}}
@@ -442,22 +442,22 @@ package as `vxfld-vxrd`. The registration daemon must run on each VTEP
 participating in LNV, so you must enable it on every TOR (leaf) switch
 acting as a VTEP, then restart the `vxrd` daemon. For example, on leaf1:
 
-``` 
-                   
+```
+
 cumulus@leaf1:~$ sudo systemctl enable vxrd.service
 cumulus@leaf1:~$ sudo systemctl restart vxrd.service
-   
-    
+
+
 ```
 
 Then enable and restart the `vxrd` daemon on leaf2:
 
-``` 
-                   
+```
+
 cumulus@leaf2:~$ sudo systemctl enable vxrd.service
 cumulus@leaf2:~$ sudo systemctl restart vxrd.service
-   
-    
+
+
 ```
 
 ### Check the Daemon Status
@@ -467,8 +467,8 @@ name>.service` command.
 
 For the service node daemon:
 
-``` 
-                   
+```
+
 cumulus@spine1:~$ sudo systemctl status vxsnd.service
 ● vxsnd.service - Lightweight Network Virt Discovery Svc and Replicator
    Loaded: loaded (/lib/systemd/system/vxsnd.service; enabled)
@@ -478,15 +478,15 @@ cumulus@spine1:~$ sudo systemctl status vxsnd.service
            └─774 /usr/bin/python /usr/bin/vxsnd
  
 May 11 11:42:55 cumulus vxsnd[774]: INFO: Starting (pid 774) ...
-   
-    
+
+
 ```
 
 For the registration daemon:
 
-``` 
-                   
-cumulus@leaf1:~$ sudo systemctl status vxrd.service 
+```
+
+cumulus@leaf1:~$ sudo systemctl status vxrd.service
 ● vxrd.service - Lightweight Network Virtualization Peer Discovery Daemon
    Loaded: loaded (/lib/systemd/system/vxrd.service; enabled)
    Active: active (running) since Wed 2016-05-11 11:42:55 UTC; 10min ago
@@ -495,8 +495,8 @@ cumulus@leaf1:~$ sudo systemctl status vxrd.service
            └─929 /usr/bin/python /usr/bin/vxrd
  
 May 11 11:42:55 cumulus vxrd[929]: INFO: Starting (pid 929) ...
-   
-    
+
+
 ```
 
 ## Configure the Service Node
@@ -511,32 +511,32 @@ For the example configuration, default values are used, except for the
 
 {{%/notice%}}
 
-``` 
-                   
+```
+
 cumulus@spine1:~$ sudo nano /etc/vxsnd.conf
-   
-    
+
+
 ```
 
 The address field is set to the loopback address of the switch running
 the `vxsnd` daemon.
 
-``` 
-                   
+```
+
 svcnode_ip = 10.2.1.3
-   
-    
+
+
 ```
 
 Enable, then restart the service node daemon for the change to take
 effect:
 
-``` 
-                   
+```
+
 cumulus@spine1:~$ sudo systemctl enable vxsnd.service
 cumulus@spine1:~$ sudo systemctl restart vxsnd.service
-   
-    
+
+
 ```
 
 The complete list of options you can configure is listed
@@ -577,19 +577,19 @@ multiple service nodes, use
 traffic to reach the topologically nearest service node instead of
 overwhelming a single service node.
 
-#### 
+####
 
 #### Enable the Service Node Daemon on Additional Spine Switches
 
 In this example, spine1 already has the service node daemon enabled.
 Enable it on the spine2 switch, then restart the `vxsnd` daemon:
 
-``` 
-                   
+```
+
 cumulus@spine2:~$ sudo systemctl enable vxsnd.service
 cumulus@spine2:~$ sudo systemctl restart vxsnd.service
-   
-    
+
+
 ```
 
 #### Configure the Anycast Address on All Participating Service Nodes
@@ -603,22 +603,22 @@ cumulus@spine2:~$ sudo systemctl restart vxsnd.service
 <tr class="odd">
 <td><p><strong>spine1:</strong></p>
 <p>Add the 10.10.10.10/32 address to the loopback address:</p>
-<pre><code>                   
+<pre><code>
 cumulus@spine1:~$ net add loopback lo ip address 10.10.10.10/32
 cumulus@spine1:~$ net pending
 cumulus@spine1:~$ net commit
-   
+
     </code></pre>
 <p>These commands create the following configuration in the <code>/etc/network/interfaces</code> file:</p>
-<pre><code>                   
+<pre><code>
 auto lo
 iface lo inet loopback
   address 10.2.1.3/32
   address 10.10.10.10/32
-   
+
     </code></pre>
 <p>Verify the IP address is configured:</p>
-<pre><code>                   
+<pre><code>
 cumulus@spine1:~$ ip addr show lo
 1: lo:  mtu 16436 qdisc noqueue state UNKNOWN
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -627,26 +627,26 @@ cumulus@spine1:~$ ip addr show lo
     inet 10.10.10.10/32 scope global lo
     inet6 ::1/128 scope host
        valid_lft forever preferred_lft forever
-   
+
     </code></pre></td>
 <td><p><strong>spine2:</strong></p>
 <p>Add the 10.10.10.10/32 address to the loopback address:</p>
-<pre><code>                   
+<pre><code>
 cumulus@spine2:~$ net add loopback lo ip address 10.10.10.10/32
 cumulus@spine2:~$ net pending
 cumulus@spine2:~$ net commit
-   
+
     </code></pre>
 <p>These commands create the following configuration in the <code>/etc/network/interfaces</code> file:</p>
-<pre><code>                   
+<pre><code>
 auto lo
 iface lo inet loopback
   address 10.2.1.4/32
   address 10.10.10.10/32
-   
+
     </code></pre>
 <p>Verify the IP address is configured:</p>
-<pre><code>                   
+<pre><code>
 cumulus@spine2:~$ ip addr show lo
 1: lo:  mtu 16436 qdisc noqueue state UNKNOWN
     link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
@@ -655,7 +655,7 @@ cumulus@spine2:~$ ip addr show lo
     inet 10.10.10.10/32 scope global lo
     inet6 ::1/128 scope host
        valid_lft forever preferred_lft forever
-   
+
     </code></pre></td>
 </tr>
 </tbody>
@@ -664,55 +664,51 @@ cumulus@spine2:~$ ip addr show lo
 #### Configure the Service Node vxsnd.conf File
 
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><p><strong>spine1:</strong></p>
 <p>Use a text editor to edit the network configuration:</p>
-<pre><code>                   
+<pre><code>
 cumulus@spine1:~$ sudo nano /etc/vxsnd.conf
-   
+
     </code></pre>
 <p>Change the following values:</p>
-<pre><code>                   
+<pre><code>
 svcnode_ip = 10.10.10.10
  
 svcnode_peers = 10.2.1.4
  
 src_ip = 10.2.1.3
-   
+
     </code></pre>
 <p>This sets the address on which the service node listens to VXLAN messages to the configured Anycast address and sets it to sync with spine2.</p>
 <p>Enable, then restart the <code>vxsnd</code> daemon:</p>
-<pre><code>                   
+<pre><code>
 cumulus@spine1:~$ sudo systemctl enable vxsnd.service
 cumulus@spine1:~$ sudo systemctl restart vxsnd.service
-   
+
     </code></pre></td>
 <td><p><strong>spine2:</strong></p>
 <p>Use a text editor to edit the network configuration:</p>
-<pre><code>                   
+<pre><code>
 cumulus@spine2:~$ sudo nano /etc/vxsnd.conf
-   
+
     </code></pre>
 <p>Change the following values:</p>
-<pre><code>                   
+<pre><code>
 svcnode_ip = 10.10.10.10
  
 svcnode_peers = 10.2.1.3
  
 src_ip = 10.2.1.4
-   
+
     </code></pre>
 <p>This sets the address on which the service node listens to VXLAN messages to the configured Anycast address and sets it to sync with spine1.</p>
 <p>Enable, then restart the <code>vxsnd</code> daemon:</p>
-<pre><code>                   
+<pre><code>
 cumulus@spine1:~$ sudo systemctl enable vxsnd.service
 cumulus@spine1:~$ sudo systemctl restart vxsnd.service
-   
+
     </code></pre></td>
 </tr>
 </tbody>
@@ -721,30 +717,26 @@ cumulus@spine1:~$ sudo systemctl restart vxsnd.service
 #### Reconfigure the VTEPs (Leafs) to Use the Anycast Address
 
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
 <tr class="odd">
 <td><p><strong>leaf1:</strong></p>
 <p>Change the <code>vxrd-svcnode-ip</code> field to the anycast address:</p>
-<pre><code>                   
+<pre><code>
 cumulus@leaf1:~$ net add loopback lo vxrd-svcnode-ip 10.10.10.10
 cumulus@leaf1:~$ net pending
 cumulus@leaf1:~$ net commit
-   
+
     </code></pre>
 <p>These commands create the following configuration in the <code>/etc/network/interfaces</code> file:</p>
-<pre><code>                   
+<pre><code>
 auto lo
 iface lo inet loopback
   address 10.2.1.1
   vxrd-svcnode-ip 10.10.10.10
-   
+
     </code></pre>
 <p>Verify the new service node is configured:</p>
-<pre><code>                   
+<pre><code>
 cumulus@leaf1:~$ ip -d link show vni-10
 35: vni-10:  mtu 1500 qdisc noqueue master br-10 state UNKNOWN mode DEFAULT
     link/ether 46:c6:57:fc:1f:54 brd ff:ff:ff:ff:ff:ff
@@ -762,39 +754,39 @@ cumulus@leaf1:~$ ip -d link show vni-30
     link/ether 3e:b3:dc:f3:bd:2b brd ff:ff:ff:ff:ff:ff
     vxlan id 30 remote 10.10.10.10 local 10.2.1.1 srcport 32768 61000 dstport 4789 ageing 1800 svcnode 10.10.10.10
     bridge_slave
-   
+
     </code></pre>
 <p>{{%notice note%}}</p>
 <p>The <code>svcnode</code> 10.10.10.10 means the interface has the correct service node configured.</p>
 <p>{{%/notice%}}</p>
 <p>Use the <code>vxrdctl vxlans</code> command to check the service node:</p>
-<pre><code>                   
+<pre><code>
 cumulus@leaf1:~$ vxrdctl vxlans
 VNI     Local Addr       Svc Node
 ===     ==========       ========
  10      10.2.1.1        10.2.1.3
  30      10.2.1.1        10.2.1.3
 2000      10.2.1.1        10.2.1.3
-   
+
     </code></pre></td>
 <td><p><strong>leaf2:</strong></p>
 <p>Change the <code>vxrd-svcnode-ip</code> field to the anycast address:</p>
-<pre><code>                   
+<pre><code>
 cumulus@leaf1:~$ net add loopback lo vxrd-svcnode-ip 10.10.10.10
 cumulus@leaf1:~$ net pending
 cumulus@leaf1:~$ net commit
-   
+
     </code></pre>
 <p>These commands create the following configuration in the <code>/etc/network/interfaces</code> file:</p>
-<pre><code>                   
+<pre><code>
 auto lo
 iface lo inet loopback
   address 10.2.1.2
   vxrd-svcnode-ip 10.10.10.10
-   
+
     </code></pre>
 <p>Verify the new service node is configured:</p>
-<pre><code>                   
+<pre><code>
 cumulus@leaf2:~$ ip -d link show vni-10
 35: vni-10:  mtu 1500 qdisc noqueue master br-10 state UNKNOWN mode DEFAULT
     link/ether 4e:03:a7:47:a7:9d brd ff:ff:ff:ff:ff:ff
@@ -812,20 +804,20 @@ cumulus@leaf2:~$ ip -d link show vni-30
     link/ether 22:65:3f:63:08:bd brd ff:ff:ff:ff:ff:ff
     vxlan id 30 remote 10.10.10.10 local 10.2.1.2 srcport 32768 61000 dstport 4789 ageing 1800 svcnode 10.10.10.10
     bridge_slave
-   
+
     </code></pre>
 <p>{{%notice note%}}</p>
 <p>The <code>svcnode</code> 10.10.10.10 means the interface has the correct service node configured.</p>
 <p>{{%/notice%}}</p>
 <p>Use the <code>vxrdctl vxlans</code> command to check the service node:</p>
-<pre><code>                   
+<pre><code>
 cumulus@leaf2:~$ vxrdctl vxlans
 VNI     Local Addr       Svc Node
 ===     ==========       ========
  10      10.2.1.2        10.2.1.3
  30      10.2.1.2        10.2.1.3
 2000      10.2.1.2        10.2.1.3
-   
+
     </code></pre></td>
 </tr>
 </tbody>
@@ -842,8 +834,8 @@ for reference:
 | 2000 | 10.10.20.1 | 10.10.20.2 |
 | 30   | 10.10.30.1 | 10.10.30.2 |
 
-``` 
-                   
+```
+
 cumulus@server1:~$ ping 10.10.10.2
 PING 10.10.10.2 (10.10.10.2) 56(84) bytes of data.
 64 bytes from 10.10.10.2: icmp_seq=1 ttl=64 time=5.32 ms
@@ -869,8 +861,8 @@ PING 10.10.30.2 (10.10.30.2) 56(84) bytes of data.
 --- 10.10.30.2 ping statistics ---
 2 packets transmitted, 2 received, 0% packet loss, time 1001ms
 rtt min/avg/max/mdev = 0.191/0.913/1.635/0.722 ms
-   
-    
+
+
 ```
 
 ### Restart Network Removes vxsnd Anycast IP Address from Loopback Interface
@@ -895,52 +887,52 @@ the IP
 
   - [Network virtualization chapter, Cumulus Linux user
     guide](/old/Network_Virtualization.html)
-    
+
       - [Static VXLAN
         Configurations](/old/Static_VXLAN_Configurations.html)
-        
+
           - [Static VXLAN Tunnels](/old/Static_VXLAN_Tunnels.html)
-        
+
           - [Static MAC Bindings with
             VXLAN](/old/Static_MAC_Bindings_with_VXLAN.html)
-    
+
       - [Ethernet Virtual Private Network -
         EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html)
-    
+
       - [Lightweight Network Virtualization Overview](/old/#)
-        
+
           - [LNV Full Example](/old/LNV_Full_Example.html)
-    
+
       - [VXLAN Active-Active Mode](/old/VXLAN_Active-Active_Mode.html)
-    
+
       - [VXLAN Routing](/old/VXLAN_Routing.html)
-    
+
       - [VXLAN Scale](/old/VXLAN_Scale.html)
-    
+
       - [Hybrid Cloud Connectivity with QinQ and
         VXLANs](/old/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
-    
+
       - [Troubleshooting VXLANs](/old/Troubleshooting_VXLANs.html)
-    
+
       - [Virtualization
         Integrations](/old/Virtualization_Integrations.html)
-        
+
           - [Integrating Hardware VTEPs with Midokura MidoNet and
             OpenStack](/old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
-        
+
           - [Integrating Hardware VTEPs with VMware
             NSX-V](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
-        
+
           - [Integrating Hardware VTEPs with VMware
             NSX-MH](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
-        
+
           - [OVSDB Server High
             Availability](/old/OVSDB_Server_High_Availability.html)
-    
+
       - [VXLAN Tunnel DSCP Operations
         — DRAFT](/old/VXLAN_Tunnel_DSCP_Operations_—%C2%A0DRAFT.html)
-    
+
       - [Eng Update of VXLAN
         Hyperloop](/old/Eng_Update_of_VXLAN_Hyperloop.html)
-    
+
       - [VXLAN Active-Active](/old/VXLAN_Active-Active.html)

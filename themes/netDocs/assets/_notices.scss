@@ -25,7 +25,7 @@ div.notices > *:first-child:after {
   font-family: $cumulus-font-family;
   font-size: initial;
   font-weight: bold;
-  color : black;
+
 
 
 
@@ -70,7 +70,6 @@ div.notices.tip {
     display: block;
     font-size: 1rem;
     background-color: #E6F9E6;
-    color: #666;
     border: 3px solid rgba(92, 184, 92, 0.8);
     border-radius:5px;
 }
@@ -78,13 +77,10 @@ div.notices.tip > *:first-child:before{
   display: block;
   content:url('/icons/check-circle_20x20.png');
   position: absolute;
-  top: 3px;
+  top: 5px;
   left: 5px;
   right: 10px;
 
-  height: 20px;
-  width: 20px;
-  line-height: 21px;
 
 
 }
@@ -102,17 +98,15 @@ div.notices.info {
     display: block;
     font-size: 1rem;
     background-color: #E7F2FA;
-    color: #666;
+    border: 3px solid #6AB0DE;
+    border-radius:5px;
 }
-div.notices.info > *:first-child{
-  border: 3px solid #6AB0DE;
-  border-radius:5px;
-}
+
 div.notices.info > *:first-child:before{
   display: block;
-  content:url('information-circle_20x20.png');
+  content:url('/icons/info-circle_20x20.png');
   position: absolute;
-  top: 3px;
+  top: 5px;
   left: 5px;
   right: 10px;
 
@@ -130,7 +124,6 @@ div.notices.note {
     display: block;
     font-size: 1rem;
     background-color: #FFF2DB;
-    color: #666;
     border: 3px solid #F0B37E;
     border-radius:5px;
 
@@ -140,7 +133,7 @@ div.notices.note > *:first-child:before{
   display: block;
   content:url('/icons/alert-triangle_20x20.png');
   position: absolute;
-  top: 3px;
+  top: 5px;
   left: 5px;
   right: 10px;
 

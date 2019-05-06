@@ -20,13 +20,15 @@
       {{ partial "docs/mobile-header" . }}
       {{ template "main" . }}
       {{ partial "docs/git-footer" . }}
+
     </div>
 
     {{ template "toc" . }}
 
   </main>
-
+  {{ partial "docs/inject/body" . }}
   {{ template "_internal/google_analytics_async.html" . }}
 </body>
+{{ partial "docs/inject/footer" . }}
 
 </html>
