@@ -16,7 +16,7 @@
     {{ template "book-section-children" (dict "Section" . "CurrentPage" $.Permalink) }}
   {{ end }}
 {{ else }}
-  <ul id = "col_ul">
+  <ul class = "cn-book-section-container">
   {{ range $sections }}
     {{ template "book-section" (dict "Section" . "CurrentPage" $.Permalink) }}
   {{ end }}

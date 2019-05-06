@@ -56,3 +56,6 @@ showVisitedLinks = true
   # - In git information
   # - In blog posts
   BookDateFormat= "Jan 2, 2006"
+
+[blackfriday]
+hrefTargetBlank = true

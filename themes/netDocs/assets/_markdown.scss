@@ -6,7 +6,7 @@ $block-border-radius: 0.15rem;
   line-height: 1.7;
 
   h1, h2, h3, h4, h5 {
-    font-weight: 400;
+    font-weight: bold;
     line-height: 1.25;
 
     // remove padding at the beginning of page
@@ -32,13 +32,13 @@ $block-border-radius: 0.15rem;
     //font-family: 'Oxygen Mono', monospace;
 
     padding: 0 $padding-4;
-    background: $gray-100;
+    background: $gray-300;
     border-radius: $block-border-radius;
   }
 
   pre {
     padding: $padding-16;
-    background: $gray-100;
+    background: $gray-300;
     border-radius: $block-border-radius;
     font-size: $font-size-14;
     overflow-x: auto;

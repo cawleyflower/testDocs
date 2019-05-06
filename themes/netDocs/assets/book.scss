@@ -51,7 +51,9 @@ a {
   color: $color-link;
 
   &:visited {
-    color: $color-visited-link;
+    color: $cn-limited-spruce;
+
+
   }
 }
 
@@ -65,8 +67,21 @@ aside nav ul {
   margin: 0;
   list-style: none;
   transition: all 0.4s ease-in-out;
+  font-stretch: condensed;
 
-
+  .expand{
+    display: block;
+    visibility: visible;
+    border-left: solid $cn-jade;
+    border-width: 2px;
+    li>a{
+      padding-left: 12px;
+    }
+  }
+  .collapse{
+    display: none;
+    visibility: hidden;
+  }
 
   li {
     margin: 1em 0;
@@ -74,14 +89,18 @@ aside nav ul {
 
   a {
     display: block;
-  }
 
+  }
+  a:active{
+    color: $cn-jade
+  }
   a:hover {
     opacity: .5;
   }
 
   ul {
-    padding-left: $padding-8;
+    padding-left: 3px;
+    margin-left: 10px;
   }
 }
 
@@ -113,7 +132,7 @@ main.flex.container {
 
   nav {
     width: $menu-width;
-    padding: $padding-16;
+    padding: $padding-8;
     a{
       display: block;
 
@@ -127,7 +146,7 @@ main.flex.container {
 
 .book-section-flat {
   margin-bottom: $padding-16 * 2;
-
+  bo
   > a, > span {
     font-weight: 600
   }
@@ -152,6 +171,7 @@ main.flex.container {
 .book-toc {
   flex: 0 0 $toc-width;
   font-size: $font-size-12;
+  background-color: $nav-background;
 
   nav {
     width: $toc-width;
@@ -204,26 +224,17 @@ main.flex.container {
   padding: $padding-16;
 }
 
-.cn-book-section-container{
-  .disp{
-    display: block;
-    border-left: solid #00ad69;
-    background-color:#8c9aa6;
-  }
-
-  .hide{
-    display: none;
-  }
-}
-
-
-.menuCollapse{
+.menuControl{
   display: inline-block;
   float: left;
-  margin-right: 5px;
-
+  padding-right: 5px;
+  padding-bottom: 5px;
+  color: $cn-limited-spruce;
 }
 
+.menuControl.empty{
+visibility: hidden;
+}
 // Responsive styles
 aside nav,
 .book-page,
