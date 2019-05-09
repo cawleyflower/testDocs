@@ -1,7 +1,7 @@
 ---
 title: Cumulus Hyperconverged Solution with Nutanix
 author: Unknown
-weight: 273
+weight: 261
 pageID: 9012165
 aliases:
  - /old/Cumulus_Hyperconverged_Solution_with_Nutanix.html
@@ -22,11 +22,9 @@ In addition, you can augment the deployment with:
     and Cumulus HCS without any user interaction or additional
     equipment.
 
-  - [Cumulus
-    NetQ](/old/https://docs.cumulusnetworks.com/display/NETQ/Cumulus+NetQ)
-    for network telemetry and unprecedented real-time and historic
-    visibility into dynamic changes in both the network and virtual
-    machines.
+  - [Cumulus NetQ](/old/#src-9012165) for network telemetry and
+    unprecedented real-time and historic visibility into dynamic changes
+    in both the network and virtual machines.
 
   - Out-of-band management and IPMI access using [Cumulus
     RMP](/old/https://docs.cumulusnetworks.com/display/RMP/Cumulus+RMP)
@@ -105,8 +103,8 @@ for spine01 and spine02 are not included.
 
 The method you choose for configuring Cumulus HCS and Nutanix depends
 upon whether or not you already have Cumulus Linux installed on your
-switches, which are named leaf01 and leaf02 in the example configuration
-above.
+switches, which are named <span style="color: #000000;"> *leaf01* and
+*leaf02* </span> in the example configuration above.
 
   - If you have bare-metal switches without Cumulus Linux installed,
     follow the steps below for configuring a bare-metal switch with ZTP.
@@ -117,19 +115,22 @@ above.
 
 ### Configure the Service with ZTP
 
-The following steps describe how to use zero touch provisioning to
-install Cumulus Linux and fully configure Cumulus HCS and Nutanix on
-your network.
+The following steps describe how to <span style="color: #000000;"> use
+zero touch provisioning </span> to install Cumulus Linux and fully
+configure Cumulus HCS and Nutanix on your network.
 
-To do this, you need a Cumulus on a Stick disk image and a USB stick
-with at least 1GB of storage.
+To do this, you need a [Cumulus on a
+Stick](https://cumulusnetworks.com/cumulus-on-a-stick/) disk image and a
+USB stick with at least 1GB of storage.
 
 1.  Insert the USB stick into your computer and copy the Cumulus on a
     Stick files onto it.
 
-2.  On the USB stick, open the ztp\_config.txt file in a text editor and
-    set your Nutanix username and password and the server IP address,
-    then save and close the file.
+2.  <span style="color: #000000;"> On the USB stick, open the
+    `ztp_config.txt` file in a text editor and set your Nutanix username
+    and password and the server IP address, then save and close the
+    file.  
+    </span>
     
     ``` 
                        
@@ -327,6 +328,10 @@ below to configure Cumulus Linux, Nutanix and Cumulus HCS.
     
     {{%notice tip%}}
     
+    If the service fails to start, you may find more information in the
+    service's log file. View the log with `sudo journalctl -u
+    cumulus-hyperconverged`.
+    
     {{%/notice%}}
 
 6.  Enable the server-facing ports to accept inbound LLDP frames and
@@ -359,23 +364,23 @@ Some of the settings you can configure include:
     the Nutanix API. By default, it follows the routing table.
 
   - HOOK\_PORT: the port on which the Nutanix CVM is running. The
-    default is 9440.
+    default is *9440*.
 
   - SOCKET\_TIMEOUT: the amount of time to wait for a timeout when
-    attempting to communicate with the Nutanix API. The default is 10
+    attempting to communicate with the Nutanix API. The default is *10*
     seconds.
 
-  - VXLAN\_CONFIG: when set to TRUE, Cumulus HCS automatically
+  - VXLAN\_CONFIG: when set to *TRUE*, Cumulus HCS automatically
     provisions VXLAN VNIs as well as VLANs.
 
-  - LOGLEVEL: describes the logging level. Verbose and Debug are
+  - LOGLEVEL: describes the logging level. *Verbose* and *Debug* are
     acceptable values. Verbose provides information about bond and VLAN
     creation while Debug helps in troubleshooting by providing more
     information from sources like LLDP and the Nutanix webhook.
 
   - PERIODIC\_SYNC\_TIMEOUT: how long before Cumulus HCS times out
     dynamic configurations without contacting the Nutanix API. The
-    default is 60 seconds.
+    default is *60* seconds.
 
 ## Configure Uplinks
 
@@ -427,14 +432,16 @@ you configured Cumulus HCS with ZTP or manually. ZTP does not add any
 gateway configuration.
 
 To provide redundant gateways for the dual-attached Nutanix servers,
-Cumulus Linux relies on Virtual Router Redundancy (VRR). VRR enables
-hosts to communicate with any redundant router without reconfiguration,
-running dynamic routing protocols, or running router redundancy
-protocols. This means that redundant routers will respond to Address
-Resolution Protocol (ARP) requests from hosts. Routers are configured to
-respond in an identical manner, but if one fails, the other redundant
-routers will continue to respond, leaving the hosts with the impression
-that nothing has changed.
+Cumulus Linux relies on [Virtual Router
+Redundancy](/old/Virtual_Router_Redundancy_-_VRR_and_VRRP.html) (VRR).
+VRR enables hosts to communicate with any redundant router without
+reconfiguration, running dynamic routing protocols, or running router
+redundancy protocols. This means that redundant routers will respond to
+[Address Resolution
+Protocol](/old/Address_Resolution_Protocol_-_ARP.html) (ARP) requests
+from hosts. Routers are configured to respond in an identical manner,
+but if one fails, the other redundant routers will continue to respond,
+leaving the hosts with the impression that nothing has changed.
 
 ``` 
                     Configure leaf01
@@ -458,11 +465,11 @@ cumulus@leaf02:~$ net commit
 
 The first configuration line defines the IP address assigned to each
 switch, which is required and must be unique. On leaf01, this IP address
-is 10.1.1.11/24; on leaf02, it is 10.1.1.12/24.
+is *10.1.1.11/24*; on leaf02, it is *10.1.1.12/24*.
 
 The second line defines the virtual IP address that is used as the
 default gateway address for any hosts in this VLAN. On both leaf01 and
-leaf02 this IP address is 10.1.1.1/24. The address-virtual MAC address
+leaf02 this IP address is *10.1.1.1/24*. The address-virtual MAC address
 is assigned from a reserved pool of Cumulus Networks MAC addresses. The
 address must start with 00:00:05:00:01: and end with any hex value
 between 00 and ff. Both leaf01 and leaf02 must have the same MAC
@@ -473,9 +480,12 @@ and only be assigned to a single switch pair in your network.
 
 You can configure out-of-band management in one of two ways:
 
-  - Using Cumulus RMP, which is the recommended way.
+  - Using [Cumulus
+    RMP](/old/https://docs.cumulusnetworks.com/display/RMP/Cumulus+RMP),
+    which is the recommended way.
 
-  - Running Cumulus Linux on a supported 1G non-Cumulus RMP switch.
+  - Running Cumulus Linux on a [supported 1G non-Cumulus RMP
+    switch](https://cumulusnetworks.com/products/hardware-compatibility-list/?Speed=1G).
 
 ### Cumulus RMP
 
@@ -490,14 +500,18 @@ configuration is required.
 
 Cumulus RMP does not support MLAG or active/active connections across
 Cumulus RMP switches. Connections across more than one Cumulus RMP
-switch rely on traditional spanning tree protocol for redundancy.
+switch rely on traditional [spanning tree
+protocol](/old/Spanning_Tree_and_Rapid_Spanning_Tree.html) for
+redundancy.
 
 ### Other Cumulus Linux 1G Switches
 
 If you want to use a non-Cumulus RMP 1G switch that supports Cumulus
 Linux for out-of-band management, you must manually install the Cumulus
 Linux software and license and set up the baseline configuration. The
-default Cumulus on a Stick image has this information.
+default [Cumulus on a Stick
+image](https://cumulusnetworks.com/cumulus-on-a-stick/) has this
+information.
 
 Once you install the software, you can use the following command to
 configure all ports for a single, untagged management VLAN, including
@@ -549,12 +563,12 @@ Some ways you can troubleshoot Cumulus HCS include:
 
 ### Verify Dynamic Bonds Are Being Created
 
-Use the net show interface bonds command to verify that bonds are being
-dynamically created. The following example shows that three bonds,
-bond\_swp1, bond\_swp2 and bond\_swp3 are created automatically, which
-means that Cumulus HCS is operating correctly. The name of every
-dynamically created bond begins with bond\_ and ends with the interface
-name.
+Use the `net show interface bonds` command to verify that bonds are
+being dynamically created. The following example shows that three bonds,
+*bond\_swp1*, *_bond\_swp2_* and *__bond\_swp3__* are created
+automatically, which means that Cumulus HCS is operating correctly. The
+name of every dynamically created bond begins with *_bond\__* and ends
+with the interface name.
 
 ``` 
                    
@@ -594,9 +608,9 @@ swp52      1G     NotConfigured  spine02          swp1
 
 ### View Detailed Nutanix LLDP Information
 
-Cumulus HCS replies on the LLDP SysDescr field to identify a Nutanix
+Cumulus HCS replies on the LLDP `SysDescr` field to identify a Nutanix
 host. Run the `net show lldp <swp>` command to view the complete LLDP
-details of the Nutanix node and verify the SysDescr field.
+details of the Nutanix node and verify the `SysDescr` field.
 
 ``` 
                    

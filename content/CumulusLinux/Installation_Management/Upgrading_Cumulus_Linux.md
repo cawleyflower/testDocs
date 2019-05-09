@@ -44,10 +44,10 @@ The decision to upgrade Cumulus Linux by either installing a disk image
 or upgrading packages depends on your environment and your preferences.
 Here are some recommendations for each upgrade method.
 
-Installing a disk image is recommended if you are performing a rolling
-upgrade in a production environment and if are using up-to-date and
-comprehensive automation scripts. This upgrade method enables you to
-choose the exact release to which you want to upgrade and is the only
+**Installing a disk image** is recommended if you are performing a
+rolling upgrade in a production environment and if are using up-to-date
+and comprehensive automation scripts. This upgrade method enables you to
+choose the exact release to which you want to upgrade and is the *only*
 method available to upgrade your switch to a new release train (for
 example, from 2.5.6 to 3.7.0) or from a release earlier than 3.6.2.
 
@@ -75,18 +75,18 @@ Be aware of the following when installing the disk image:
     unable to ssh to the switch from in-band management. Out-of-band
     connectivity (eth0 or console) is recommended.
 
-  - You must reinstall and reconfigure third-party applications after
+  - You *must* reinstall and reconfigure third-party applications after
     upgrade.
 
-Package upgrade is recommended if you are upgrading from Cumulus Linux
-3.6.2 or later, or if you use third-party applications (package upgrade
-does not replace or remove third-party applications, unlike disk image
-install).
+**Package upgrade** is recommended if you are upgrading from Cumulus
+Linux 3.6.2 or later, or if you use third-party applications (package
+upgrade does not replace or remove third-party applications, unlike disk
+image install).
 
 Be aware of the following when upgrading packages:
 
   - You cannot upgrade the switch to a new release train. For example,
-    you cannot upgrade the switch from 2.5.6 to 3.y.z.
+    you **cannot** upgrade the switch from **2**.5.6 to **3**.y.z.
 
   - If you are upgrading Cumulus Linux from a release earlier than
     3.6.2, you might encounter certain issues due to package changes and
@@ -99,13 +99,17 @@ Be aware of the following when upgrading packages:
   - If you are upgrading from a release earlier than 3.6.2, certain
     upgrade operations terminate SSH sessions and/or routing on the
     in-band (front panel) ports, leaving you unable to monitor the
-    upgrade process. (As a workaround, you can use the dtach tool .)
+    upgrade process. (As a workaround, you can use the
+    [<span style="color: #000000;"> dtach tool
+    </span>](https://support.cumulusnetworks.com/hc/en-us/articles/215453578)
+    .)
     
-      - The sudo -E apt-get upgrade command might result in services
-        being restarted or stopped as part of the upgrade process.
+      - The ` sudo  ``-E``  apt-get upgrade ` command might result in
+        services being restarted or stopped as part of the upgrade
+        process.
     
-      - The sudo -E apt-get install command might disrupt core services
-        by changing core service dependency packages.
+      - The ` sudo  ``-E``   ``apt-get install` command might disrupt
+        core services by changing core service dependency packages.
 
   - After you upgrade, account UIDs and GIDs created by packages might
     be different on different switches, depending on the configuration
@@ -123,7 +127,7 @@ To upgrade the switch with a new disk image using ONIE:
 
 2.  Download the Cumulus Linux image you want to install.
 
-3.  Install the disk image with the onie-install -a -i ` 
+3.  Install the disk image with the `onie-install -a -i` ` 
     <image-location> ` command, which boots the switch into ONIE.  
     The following example command installs the image from a web server,
     then reboots the switch. There are additional ways to install the
@@ -356,7 +360,7 @@ To upgrade the switches:
 
 5.  Perform the upgrade either by installing a disk image or upgrading
     packages.  
-    To *install a disk image*, run the onie-install -a -i ` 
+    To *install a disk image*, run the `onie-install -a -i` ` 
     <image-location> ` command to boot the switch into ONIE. The
     following example command installs the image from a web server.
     There are additional ways to install the disk image, such as using

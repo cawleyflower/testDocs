@@ -5,17 +5,18 @@ weight: 17
 pageID: 8363019
 aliases:
  - /old/Layer_1_and_Switch_Ports.html
-topSection: true
 ---
 # Layer 1 and Switch Ports
 
   - [Interface Configuration and
     Management](/old/Interface_Configuration_and_Management.html)
-
+    
       - [Switch Port Attributes](/old/Switch_Port_Attributes.html)
+    
+      - [ifplugd](/old/ifplugd.html)
 
   - [Buffer and Queue Management](/old/Buffer_and_Queue_Management.html)
-
+    
       - [Hardware-enabled DDOS
         Protection](/old/Hardware-enabled_DDOS_Protection.html)
 

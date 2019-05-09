@@ -1,7 +1,7 @@
 ---
 title: Bonding - Link Aggregation
 author: Unknown
-weight: 121
+weight: 119
 pageID: 8362653
 aliases:
  - /old/Bonding_-_Link_Aggregation.html
@@ -345,6 +345,8 @@ iface bond0
 ```
 
 <div class="confbox admonition admonition-note">
+
+<span class="admonition-icon confluence-information-macro-icon"></span>
 
 <div class="admonition-body">
 

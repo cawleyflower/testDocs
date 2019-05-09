@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting the etc Directory
 author: Unknown
-weight: 467
+weight: 445
 pageID: 8362601
 aliases:
  - /old/Troubleshooting_the_etc_Directory.html

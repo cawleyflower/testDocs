@@ -1,7 +1,7 @@
 ---
 title: Default Cumulus Linux ACL Configuration
 author: Unknown
-weight: 307
+weight: 295
 pageID: 8362574
 aliases:
  - /old/Default_Cumulus_Linux_ACL_Configuration.html

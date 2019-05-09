@@ -1,7 +1,7 @@
 ---
 title: Using sudo to Delegate Privileges
 author: Unknown
-weight: 289
+weight: 277
 pageID: 8362554
 aliases:
  - /old/Using_sudo_to_Delegate_Privileges.html
@@ -25,8 +25,8 @@ policy. See `man sudoers(5)` for details.
 
 {{%notice warning%}}
 
-`visudo` only to edit the `sudoers` file; do not use another editor like
-`vi` or `emacs`. See `man` `visudo(8)` for details.
+Use `visudo` only to edit the `sudoers` file; do not use another editor
+like `vi` or `emacs`. See `man` `visudo(8)` for details.
 
 When creating a new file in `/etc/sudoers.d`, use `visudo -f`. This
 option performs sanity checks before writing the file to avoid errors

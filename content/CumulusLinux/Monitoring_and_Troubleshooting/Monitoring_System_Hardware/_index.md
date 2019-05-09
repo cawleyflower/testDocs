@@ -1,7 +1,7 @@
 ---
 title: Monitoring System Hardware
 author: Unknown
-weight: 231
+weight: 219
 pageID: 8362594
 aliases:
  - /old/Monitoring_System_Hardware.html

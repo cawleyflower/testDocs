@@ -1,7 +1,7 @@
 ---
 title: Virtual Routing and Forwarding - VRF
 author: Unknown
-weight: 207
+weight: 195
 pageID: 8362942
 aliases:
  - /old/Virtual_Routing_and_Forwarding_-_VRF.html
@@ -495,6 +495,9 @@ between a pair of VRFs.
 
 {{%notice note%}}
 
+  - Dynamic route leaking with EVPN is supported in Cumulus Linux 3.7.4
+    and later.
+
   - You cannot reach the loopback address of a VRF (the address assigned
     to the VRF device) from another VRF.
 
@@ -503,15 +506,22 @@ between a pair of VRFs.
     you cannot use the `network` command.
 
   - Routes in the management VRF with the next-hop as eth0 or the
-    management interface are not leaked.
+    management interface are *not* leaked.
 
   - Routes learned with iBGP or multi-hop eBGP in a VRF can be leaked
     even if their next hops become unreachable. Therefore, route leaking
     for BGP-learned routes is recommended only when they are learned
     through single-hop eBGP.
 
-  - Dynamic route leaking with EVPN is supported in Cumulus Linux 3.7.4
-    and later.
+  - Cumulus Networks recommends that you do not use the default VRF as a
+    shared service VRF. Create another VRF for shared services.
+
+  - Broadcom switches have certain limitations when leaking routes
+    between the default VRF and non-default VRFs.
+
+  - On Mellanox switches, only leak the specific routes you need from
+    the default VRF; do not include the VTEP routes or filter out the
+    VTEP routes with a route filter.
 
 {{%/notice%}}
 
@@ -664,6 +674,7 @@ cumulus@switch:~$ net commit
 {{%notice note%}}
 
 Do not use the kernel commands; they are no longer supported and might
+cause issues when used with VRF route leaking in FRR.
 
 {{%/notice%}}
 
@@ -966,8 +977,9 @@ O>* 9.9.12.5/32 [110/20] via 200.254.2.10, swp2s0.2, 00:13:29
     
 ```
 
-To show which interfaces are in a VRF (either BGP or OSPF), run the net
-show vrf list command. The following command shows which interfaces are
+<span id="src-8362942_VirtualRoutingandForwarding-VRF-vrf-interfaces"></span>To
+show which interfaces are in a VRF (either BGP or OSPF), run the `net
+show vrf list` command. The following command shows which interfaces are
 in the VRFs configured on the switch:
 
 ``` 
@@ -988,8 +1000,9 @@ vlan4001@bridge   UP     44:39:39:ff:40:94
     
 ```
 
-To show the interfaces for a specific VRF, run the net show vrf list
-command. The following command shows which interfaces are in VRF turtle:
+To show the interfaces for a specific VRF, run the `net show vrf list
+<vrf_name>` command. The following command shows which interfaces are in
+VRF turtle:
 
 ``` 
                    
@@ -1013,7 +1026,7 @@ command.
 
 {{%/notice%}}
 
-To show the VNIs for the interfaces in a VRF, run the net show vrf vni
+To show the VNIs for the interfaces in a VRF, run the `net show vrf vni`
 command. For example:
 
 ``` 
@@ -1025,8 +1038,8 @@ turtle      104001  vxlan4001   vlan4001  Up     44:39:39:ff:40:94
     
 ```
 
-To see the VNIs for the interfaces in a VRF in JSON format, run the net
-show vrf vni json command. For example:
+To see the VNIs for the interfaces in a VRF in JSON format, run the `net
+show vrf vni json` command. For example:
 
 ``` 
                    

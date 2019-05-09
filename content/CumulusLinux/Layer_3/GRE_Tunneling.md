@@ -1,7 +1,7 @@
 ---
 title: GRE Tunneling
 author: Unknown
-weight: 211
+weight: 199
 pageID: 8362966
 aliases:
  - /old/GRE_Tunneling.html
@@ -77,6 +77,8 @@ The local tunnel endpoint for `Tunnel-R2` is 10.0.0.2 and the remote
 endpoint is 10.0.0.9.
 
 {{%imgOld 1 %}}
+
+  
 
 **Tunnel-R1 commands:**
 

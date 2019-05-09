@@ -1,7 +1,7 @@
 ---
 title: Network Troubleshooting
 author: Unknown
-weight: 241
+weight: 229
 pageID: 8362596
 aliases:
  - /old/Network_Troubleshooting.html
@@ -45,37 +45,6 @@ PING 2001::db8:ff:fe00:2(2001::db8:ff:fe00:2) from 2001::db8:ff:fe00:1 swp1: 56 
 When troubleshooting intermittent connectivity issues, it is helpful to
 send continuous pings to a host.
 
-To send continuous pings to an IPv4 host:
-
-``` 
-                   
-ping -i 1 -W1 -D -O 192.0.2.45 | while read row ; do awk '{ sub(/[0-9]{10}/, strftime("%Y-%m-%d %H:%M:%S",  substr($0,2,10))) }1' <<< "$row"; done
-   
-    
-```
-
-To send continuous pings to an IPv6 host:
-
-``` 
-                   
-ping6 -i 1 -W1 -D -O swp1 2001::db8:ff:fe00:2 | while read row ; do awk '{ sub(/[0-9]{10}/, strftime("%Y-%m-%d %H:%M:%S",  substr($0,2,10))) }1' <<< "$row"; done
-   
-    
-```
-
-where:
-
-`-i` specifies the wait interval between sending each packet, in
-seconds.  
-`-W` specifies the number of seconds that the `ping` command waits for a
-response. The option affects only timeout in absence of any responses,
-otherwise `ping` waits for two RTTs (round trip time in milliseconds).  
-`-D` prints a timestamp (unix time) before each line.  
-`-O` reports outstanding ICMP ECHO replies before sending the next
-packet.
-
-`-awk` substitutes human readable time format for unix time.
-
 ## Print Route Trace Using traceroute
 
 `traceroute` tracks the route that packets take from an IP network on
@@ -96,6 +65,98 @@ traceroute to www.google.com (74.125.239.49), 30 hops max, 60 byte packets
    
     
 ```
+
+## Run Commands in a Non-default VRF
+
+You can use `ip vrf exec` to run commands in a non-default VRF context.
+This is particularly useful for network utilities like `ping`,
+`traceroute`, and `nslookup`.
+
+The full syntax is `ip vrf exec <vrf-name> <command> <arguments>`. For
+example:
+
+``` 
+                   
+cumulus@switch:~$ sudo ip vrf exec Tenant1 nslookup google.com - 8.8.8.8
+   
+    
+```
+
+By default, `ping`/`ping6` and `traceroute`/`traceroute6` all use the
+default VRF. This is done using a mechanism that checks the VRF context
+of the current shell — which can be seen when you run `ip vrf id` — at
+the time one of these commands is run. If the shell's VRF context is
+*mgmt*, then these commands are run in the default VRF context.
+
+`ping` and `traceroute` have additional arguments that you can use to
+specify an egress interface and/or a source address. In the default VRF,
+the source interface flag (`ping -I` or `traceroute -i`) specifies the
+egress interface for the `ping`/`traceroute` operation. However, you can
+use the source interface flag instead to specify a non-default VRF to
+use for the command. Doing so causes the routing lookup for the
+destination address to occur in that VRF.
+
+With `ping -I`, you can specify the source interface or the source IP
+address, but you cannot use the flag more than once. Thus, you can
+choose either an egress interface/VRF or a source IP address. For
+`traceroute`, you can use `traceroute -s` to specify the source IP
+address.
+
+You gain some additional flexibility if you run `ip vrf exec` in
+combination with `ping`/`ping6` or `traceroute`/`traceroute6`, as the
+VRF context is specified outside of the `ping` and `traceroute`
+commands. This allows for the most granular control of `ping` and
+`traceroute`, as you can specify both the VRF and the source interface
+flag.
+
+For `ping`, use the following syntax:
+
+``` 
+                   
+ip vrf exec  [ping|ping6] -I [ | ] 
+   
+    
+```
+
+For example:
+
+``` 
+                   
+cumulus@switch:~$ sudo ip vrf exec Tenant1 ping -I swp1 8.8.8.8
+cumulus@switch:~$ sudo ip vrf exec Tenant1 ping -I 192.0.1.1 8.8.8.8
+cumulus@switch:~$ sudo ip vrf exec Tenant1 ping6 -I swp1 2001:4860:4860::8888
+cumulus@switch:~$ sudo ip vrf exec Tenant1 ping6 -I 2001:db8::1 2001:4860:4860::8888
+   
+    
+```
+
+For `traceroute`, use the following syntax:
+
+``` 
+                   
+ip vrf exec  [traceroute|traceroute6] -i  -s  
+   
+    
+```
+
+For example:
+
+``` 
+                   
+cumulus@switch:~$ sudo ip vrf exec Tenant1 traceroute -i swp1 -s 192.0.1.1 8.8.8.8
+cumulus@switch:~$ sudo ip vrf exec Tenant1 traceroute6 -i swp1 -s 2001:db8::1 2001:4860:4860::8888
+   
+    
+```
+
+Because the VRF context for `ping` and `traceroute` commands is
+automatically shifted to the default VRF context, you must use the
+source interface flag to specify the management VRF. Typically, this is
+not an issue since there is only a single interface in the management
+VRF — eth0 — and in most situations only a single IPv4 address or IPv6
+global unicast address is assigned to it. But it is worth mentioning
+since, as stated earlier, you cannot specify both a source interface and
+a source IP address with `ping -I`.
 
 ## Manipulate the System ARP Cache
 
@@ -791,6 +852,6 @@ listening on bond0, link-type EN10MB (Ethernet), capture size 65535 bytes
 
   - [en.wikipedia.org/wiki/Ping](http://en.wikipedia.org/wiki/Ping)
 
-  - [www.tcpdump.org](http://www.tcpdump.org)
-
   - [en.wikipedia.org/wiki/Traceroute](https://en.wikipedia.org/wiki/Traceroute)
+
+  - [www.tcpdump.org](http://www.tcpdump.org)

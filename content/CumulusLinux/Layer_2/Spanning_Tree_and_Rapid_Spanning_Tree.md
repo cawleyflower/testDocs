@@ -1,7 +1,7 @@
 ---
 title: Spanning Tree and Rapid Spanning Tree
 author: Unknown
-weight: 117
+weight: 115
 pageID: 8362689
 aliases:
  - /old/Spanning_Tree_and_Rapid_Spanning_Tree.html
@@ -40,8 +40,11 @@ giant switch.
 
 {{%notice note%}}
 
-When connecting a VLAN-aware bridge to a PVST+ switch using STP, . This
-is because only
+When connecting a VLAN-aware bridge to a proprietary PVST+ switch using
+STP, VLAN 1 must be allowed on all 802.1Q trunks that interconnect them,
+regardless of the configured *native* VLAN . This is because only VLAN 1
+enables the switches to address the BPDU frames to the IEEE multicast
+MAC address. The proprietary switch might be configured like this:
 
 ``` 
                    
@@ -49,6 +52,8 @@ switchport trunk allowed vlan 1-100
    
     
 ```
+
+  
 
 {{%/notice%}}
 

@@ -1,7 +1,7 @@
 ---
 title: Integrating Hardware VTEPs with Midokura MidoNet and OpenStack
 author: Unknown
-weight: 411
+weight: 389
 pageID: 8362812
 aliases:
  - /old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html
@@ -69,8 +69,9 @@ cumulus@switch:~$ sudo systemctl start openvswitch-vtep.service
 {{%notice note%}}
 
 In previous versions of Cumulus Linux, you had to edit the
-`/etc/default/openvswitch-vtep` file and then start the . Now, you just
-have to enable and start the ` openvswitch-vtep  `service.
+`/etc/default/openvswitch-vtep` file and then start the
+`openvswitch-vtep` service . Now, you just have to enable and start the
+` openvswitch-vtep  `service.
 
 {{%/notice%}}
 

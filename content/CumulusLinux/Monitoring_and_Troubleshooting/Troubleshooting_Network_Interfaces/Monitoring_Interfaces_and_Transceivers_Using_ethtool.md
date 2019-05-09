@@ -1,7 +1,7 @@
 ---
 title: Monitoring Interfaces and Transceivers Using ethtool
 author: Unknown
-weight: 479
+weight: 457
 pageID: 8362604
 aliases:
  - /old/Monitoring_Interfaces_and_Transceivers_Using_ethtool.html

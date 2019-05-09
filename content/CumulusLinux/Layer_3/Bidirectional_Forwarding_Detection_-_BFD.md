@@ -1,7 +1,7 @@
 ---
 title: Bidirectional Forwarding Detection - BFD
 author: Unknown
-weight: 201
+weight: 189
 pageID: 8362938
 aliases:
  - /old/Bidirectional_Forwarding_Detection_-_BFD.html
@@ -450,11 +450,18 @@ tx_timeout  rx_timeout  hop_cnt
 
 ## Related Information
 
-  - RFC 5880 - Bidirectional Forwarding Detection
+  - [RFC 5880 - Bidirectional Forwarding
+    Detection](https://tools.ietf.org/html/rfc5880)
 
-  - RFC 5881 - BFD for IPv4 and IPv6 (Single Hop)
+  - <span style="color: #222222;"> [RFC 5881 - BFD for IPv4 and IPv6
+    (Single Hop)](https://tools.ietf.org/html/rfc5881) </span>
 
-  - RFC 5882 - Generic Application of BFD
+  - <span style="color: #222222;"> <span style="color: #222222;">
+    [RFC 5882 - Generic Application of
+    BFD](https://tools.ietf.org/html/rfc5882) </span> </span>
 
-  - RFC 5883 - Bidirectional Forwarding Detection (BFD) for Multihop
-    Paths
+  - <span style="color: #222222;"> <span style="color: #222222;">
+    [RFC 5883 - Bidirectional Forwarding Detection (BFD) for Multihop
+    Paths](https://tools.ietf.org/html/rfc5883) </span> </span>
+    <span style="color: #222222;"> <span style="color: #222222;">  
+    </span> </span>

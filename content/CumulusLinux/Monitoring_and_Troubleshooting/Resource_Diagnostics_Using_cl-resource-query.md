@@ -1,7 +1,7 @@
 ---
 title: Resource Diagnostics Using cl-resource-query
 author: Unknown
-weight: 229
+weight: 217
 pageID: 8362593
 aliases:
  - /old/Resource_Diagnostics_Using_cl-resource-query.html

@@ -1,7 +1,7 @@
 ---
 title: Interface Configuration and Management
 author: Unknown
-weight: 93
+weight: 91
 pageID: 8363023
 aliases:
  - /old/Interface_Configuration_and_Management.html
@@ -514,6 +514,8 @@ iface swp1
 
 <div class="confbox admonition admonition-note">
 
+<span class="admonition-icon confluence-information-macro-icon"></span>
+
 <div class="admonition-body">
 
 You can specify both IPv4 and IPv6 addresses for the same interface.
@@ -536,6 +538,8 @@ cumulus@switch:~$ net add interface swp1 ipv6 address 2001:DB8::1/126
 </div>
 
 <div class="confbox admonition admonition-note">
+
+<span class="admonition-icon confluence-information-macro-icon"></span>
 
 <div class="admonition-body">
 
@@ -936,14 +940,22 @@ For example:
 
 ## Run ifupdown Scripts under /etc/network/ with ifupdown2
 
-Unlike the traditional ifupdown system, ifupdown2 does not run scripts
-installed in /etc/network/\*/ a utomatically to configure network
-interfaces.
+Unlike the traditional <span style="color: #434343;"> `ifupdown` </span>
+<span style="color: #434343;"> </span> system, `ifupdown2` does not run
+scripts installed in `/etc/network/*/` a utomatically to configure
+network interfaces.
 
-To enable or disable ifupdown2 scripting, edit the
-addon\_scripts\_support line in the
-/etc/network/ifupdown2/ifupdown2.conf file. 1 enables scripting and 2
-disables scripting. The following example enables scripting.
+<span style="color: #000000;"> To enable or disable `ifupdown2` </span>
+<span style="color: #000000;"> scripting, edit the
+<span style="color: #000000;"> `addon_scripts_support` </span> </span>
+<span style="color: #000000;"> line <span style="color: #000000;"> in
+the </span> `/etc/network/ifupdown2/ifupdown2.conf` </span>
+<span style="color: #000000;"> file. `1` </span>
+<span style="color: #000000;"> enables scripting and `2` </span>
+<span style="color: #000000;"> disables scripting. The following example
+enables scripting. </span>
+
+<span style="color: #000000;"> </span>
 
 ``` 
                    
@@ -955,22 +967,30 @@ addon_scripts_support=1
     
 ```
 
-ifupdown2 sets the following environment variables when executing
+`ifupdown2` sets the following environment variables when executing
 commands:
 
-  - $IFACE represents the physical name of the interface being
-    processed; for example, br0 or vxlan42. The name is obtained from
-    the /etc/network/interfaces file.
+  - <span style="color: #000000;"> `$IFACE` represents the physical name
+    of the interface being processed; for example, `br0`
+    <span style="color: #000000;"> or </span> vxlan42. </span>
+    <span style="color: #000000;"> <span style="color: #000000;"> The
+    name is obtained from <span style="color: #000000;"> the </span>
+    `/etc/network/interfaces` </span> <span style="color: #000000;">
+    file. </span> </span>
 
-  - $LOGICAL represents the logical name (configuration name) of the
-    interface being processed.
+  - <span style="color: #000000;"> <span style="color: #000000;">
+    `$LOGICAL` <span style="color: #000000;"> represents the logical
+    name (configuration name) of the interface being processed. </span>
+    </span> </span>
 
-  - $METHOD represents the address method; for example, loopback, DHCP,
-    DHCP6, manual, static, and so on.
+  - <span style="color: #000000;"> <span style="color: #000000;">
+    `$METHOD` </span> </span> represents the address method; for
+    example, loopback, DHCP, DHCP6, manual, static, and so on.
 
-  - $ADDRFAM r epresents the address families associated with the
-    interface, formatted in a comma-separated list; for example,
-    `"inet,inet6"` .
+  - <span style="color: #000000;"> <span style="color: #000000;">
+    `$ADDRFAM` r </span> </span> epresents the address families
+    associated with the interface, formatted in a comma-separated list;
+    for example, `"inet,inet6"` .
 
 ## Add Descriptions to Interfaces
 
@@ -1025,12 +1045,14 @@ OID
 
 {{%notice note%}}
 
-Aliases are limited to 256 characters.
+Aliases are limited to 256
+characters.
 
 {{%/notice%}}
 
-To show the interface description (alias) for all interfaces on the
-switch, run the net show interface alias command. For example:
+<span id="src-8363023_InterfaceConfigurationandManagement-show_alias"></span>To
+show the interface description (alias) for all interfaces on the switch,
+run the `net show interface alias` command. For example:
 
 ``` 
                    
@@ -1053,7 +1075,7 @@ UP       swp2            BondMember        to Server02
 ```
 
 To show the interface description for all interfaces on the switch in
-JSON format, run the net show interface alias json command.
+JSON format, run the `net show interface alias json` command.
 
 ## Caveats and Errata
 
@@ -1106,18 +1128,23 @@ interfaces with multiple `iface` stanzas.
 
 ### ifupdown2 and sysctl
 
-For sysctl commands in the pre-up , up , post-up , pre-down , down, and
-post-down lines that use the $IFACE variable, if the interface name
-contains a dot (.), ifupdown2 does not change the name to work with
-sysctl. For example, the interface name bridge.1 is not converted to
-bridge/1 .
+For sysctl commands in <span style="color: #000000;"> the </span>
+`pre-up` <span style="color: #000000;"> , `up`
+<span style="color: #000000;"> , </span> `post-up` </span> ,
+<span style="color: #000000;"> </span> `pre-down`
+<span style="color: #000000;"> , </span> `down`, and
+<span style="color: #000000;"> </span> `post-down` lines that use the
+`$IFACE` <span style="color: #000000;"> </span> variable, if the
+interface name contains a dot (.), `ifupdown2` does not change the name
+to work with sysctl. For example, the interface name `bridge.1` is not
+converted to <span style="color: #000000;"> `bridge/1` </span> .
 
 ### Long Interface Names
 
 The Linux kernel limits interface names to 15 characters in length and
 cannot have a number as the first character. Longer interface names can
 result in errors. To work around this issue, remove the interface from
-the /etc/network/interfaces file, then restart the networking.service.
+the `/etc/network/interfaces` file, then restart the networking.service.
 
 ``` 
                    

@@ -638,7 +638,7 @@ URL        http://192.0.2.1/demo.sh
     
 ```
 
-Use the following command to check syslog for information about ZTP:
+Use the following command to check `syslog` for information about ZTP:
 
 ``` 
                    

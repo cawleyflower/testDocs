@@ -1,7 +1,7 @@
 ---
 title: SSH for Remote Access
 author: Unknown
-weight: 285
+weight: 273
 pageID: 8362551
 aliases:
  - /old/SSH_for_Remote_Access.html

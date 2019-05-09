@@ -1,7 +1,7 @@
 ---
 title: Multi-Chassis Link Aggregation - MLAG
 author: Unknown
-weight: 125
+weight: 123
 pageID: 8362677
 aliases:
  - /old/Multi-Chassis_Link_Aggregation_-_MLAG.html
@@ -173,7 +173,7 @@ example clag l2-with-server-vlan-trunks`.
 
 {{%/notice%}}
 
-{{%imgOld 4 %}}
+{{%imgOld 5 %}}
 
 You configure these interfaces using
 [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html), so the bridges
@@ -839,6 +839,8 @@ cumulus@spine01:~$ net commit
 
 <div class="confbox admonition admonition-note">
 
+<span class="admonition-icon confluence-information-macro-icon"></span>
+
 <div class="admonition-body">
 
 The backup IP address must be different than the peer link IP address
@@ -846,8 +848,25 @@ The backup IP address must be different than the peer link IP address
 peer link and it must be in the same network namespace as the peer link
 IP address.
 
-Cumulus Networks recommends you use the management IP address of the
-switch for this purpose.
+Cumulus Networks recommends you use the switch's loopback or management
+IP address for this purpose. Which one should you choose?
+
+  - If your MLAG configuration has **routed uplinks** (a modern approach
+    to the data center fabric network), then configure `clagd` to use
+    the peer switch **loopback** address for the health check. When the
+    peer link is down, the secondary switch must route towards the
+    loopback address using uplinks (towards spine layer). If the primary
+    switch is also suffering a more significant problem (for example,
+    `switchd` is unresponsive /or stopped), then the secondary switch
+    eventually promotes itself to primary and traffic now flows
+    normally.
+
+  - If your MLAG configuration has **bridged uplinks** (such as a campus
+    network or a large, flat layer 2 network), then configure `clagd` to
+    use the peer switch **eth0** address for the health check. When the
+    peer link is down, the secondary switch must route towards the eth0
+    address using the OOB network (provided you have implemented an OOB
+    network).
 
 </div>
 
@@ -874,7 +893,7 @@ cumulus@spine01:~$ net show clag
 The peer is alive
      Our Priority, ID, and Role: 32768 44:38:39:00:00:41 primary
     Peer Priority, ID, and Role: 32768 44:38:39:00:00:42 secondary
-          Peer Interface and IP: peerlink.4094 linklocal
+          Peer Interface and IP: peerlink.4094 169.254.1.1 
                       Backup IP: 192.168.0.22 (active)
                      System MAC: 44:38:39:FF:40:90
  
@@ -910,6 +929,8 @@ cumulus@spine01:~$ net commit
 ```
 
 <div class="confbox admonition admonition-note">
+
+<span class="admonition-icon confluence-information-macro-icon"></span>
 
 <div class="admonition-body">
 
@@ -956,6 +977,7 @@ iface green
  
 auto peer5.4000
 iface peer5.4000
+        address 192.0.2.15/24
         clagd-peer-ip 192.0.2.16
         clagd-backup-ip 192.0.2.2 vrf green
         clagd-sys-mac 44:38:39:01:01:01    
@@ -973,7 +995,7 @@ cumulus@leaf01:~$ net show clag status verbose
 The peer is alive
     Peer Priority, ID, and Role: 32768 00:02:00:00:00:13 primary
      Our Priority, ID, and Role: 32768 c4:54:44:f6:44:5a secondary
-          Peer Interface and IP: peer5.4000 linklocal
+          Peer Interface and IP: peer5.4000 192.0.2.2
                       Backup IP: 192.0.2.2 vrf green (active)
                      System MAC: 44:38:39:01:01:01
  
@@ -1055,7 +1077,7 @@ In this scenario, the spine switches connect at layer 3, as shown in the
 image below. Alternatively, the spine switches can be singly connected
 to each core switch at layer 3 (not shown below).
 
-{{%imgOld 5 %}}
+{{%imgOld 6 %}}
 
 In this design, the spine switches route traffic between the server
 hosts in the layer 2 domains and the core. The servers (host1 thru
@@ -1127,6 +1149,8 @@ cumulus@switch:~$ net commit
 ```
 
 <div class="confbox admonition admonition-note">
+
+<span class="admonition-icon confluence-information-macro-icon"></span>
 
 <div class="admonition-body">
 
@@ -1254,9 +1278,9 @@ bridge:peerlink CIST info
 
 {{%/notice%}}
 
-Best Practices for STP with MLAG:
+### Best Practices for STP with MLAG
 
-  - The STP global configuration must be the same on both the switches.
+  - The STP global configuration must be the same on both peer switches.
 
   - The STP configuration for dual-connected ports should be the same on
     both peer switches.

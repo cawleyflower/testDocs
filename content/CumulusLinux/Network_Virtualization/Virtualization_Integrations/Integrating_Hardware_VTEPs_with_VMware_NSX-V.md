@@ -1,7 +1,7 @@
 ---
 title: Integrating Hardware VTEPs with VMware NSX-V
 author: Unknown
-weight: 413
+weight: 391
 pageID: 8362823
 aliases:
  - /old/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html
@@ -69,8 +69,9 @@ cumulus@switch:~$ sudo systemctl start openvswitch-vtep.service
 {{%notice note%}}
 
 In previous versions of Cumulus Linux, you had to edit the
-`/etc/default/openvswitch-vtep` file and then start the . Now, you just
-have to enable and start the ` openvswitch-vtep  ` .
+`/etc/default/openvswitch-vtep` file and then start the
+`openvswitch-vtep` service . Now, you just have to enable and start the
+` openvswitch-vtep  ` service .
 
 {{%/notice%}}
 

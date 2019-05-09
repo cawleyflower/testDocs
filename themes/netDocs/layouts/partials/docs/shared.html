@@ -43,6 +43,7 @@
 {{ define "jscollapse"}}
 <script>
 
+
 let elesSections = document.querySelectorAll('.cn-book-section-container')
 elesSections.forEach(node => {
   if(node.querySelector('.active') != null){
@@ -83,5 +84,44 @@ elesSections.forEach(node => {
     par.insertBefore(eleToggler, lnk)
   }
 })
+</script>
+{{ end }}
+
+{{ define "headerBehavior" }}
+<script>
+  // Not sure what this is
+  function ShowHideBurger() {
+    if($('.burger-menu-items').hasClass('active1')) {
+      $('.burger-menu-items').removeClass('active1').hide();
+      $('.burger-lines').removeClass('open');
+    }else {
+      $('.burger-menu-items').addClass('active1').show();
+      $('.burger-lines').addClass('open');
+    }
+  }
+
+  (function() {
+    window.addEventListener('scroll', function(event) {
+
+      document.querySelector('.header-wrapper').
+    });
+    menu.scrollTop = localStorage.getItem('menu.scrollTop')
+  })()
+
+
+
+  $(document).ready(function(){
+
+    // Give the mobile and tablet navbar a black background when the user scrolls down
+    $(window).scroll(function () {
+      if ( $(window).scrollTop() > 0 ) {
+        $('.header-wrapper').addClass('scrolling');
+      } else {
+        $('.header-wrapper').removeClass('scrolling');
+        console.log($(window).scrollTop())
+      }
+    });
+
+  });
 </script>
 {{ end }}

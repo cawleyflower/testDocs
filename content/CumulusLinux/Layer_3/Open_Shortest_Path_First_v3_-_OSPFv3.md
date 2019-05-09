@@ -1,7 +1,7 @@
 ---
 title: Open Shortest Path First v3 - OSPFv3
 author: Unknown
-weight: 195
+weight: 183
 pageID: 8362924
 aliases:
  - /old/Open_Shortest_Path_First_v3_-_OSPFv3.html
@@ -76,10 +76,10 @@ Configuring OSPFv3 involves the following tasks:
 
 {{%notice note%}}
 
-supports unnumbered interfaces. Forwarding to the next hop router is
-done entirely using IPv6 link local addresses. Therefore, you are not
-required to configure any global IPv6 address to interfaces between
-routers.
+Unlike OSPFv2, OSPFv3 intrinsically supports unnumbered interfaces.
+Forwarding to the next hop router is done entirely using IPv6 link local
+addresses. Therefore, you are not required to configure any global IPv6
+address to interfaces between routers.
 
 {{%/notice%}}
 

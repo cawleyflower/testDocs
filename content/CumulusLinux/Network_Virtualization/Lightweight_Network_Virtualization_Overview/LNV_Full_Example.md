@@ -1,7 +1,7 @@
 ---
 title: LNV Full Example
 author: Unknown
-weight: 399
+weight: 377
 pageID: 8362715
 aliases:
  - /old/LNV_Full_Example.html
@@ -613,11 +613,3 @@ svcnode_peers = 10.2.1.3
         
           - [OVSDB Server High
             Availability](/old/OVSDB_Server_High_Availability.html)
-    
-      - [VXLAN Tunnel DSCP Operations
-        — DRAFT](/old/VXLAN_Tunnel_DSCP_Operations_—%C2%A0DRAFT.html)
-    
-      - [Eng Update of VXLAN
-        Hyperloop](/old/Eng_Update_of_VXLAN_Hyperloop.html)
-    
-      - [VXLAN Active-Active](/old/VXLAN_Active-Active.html)

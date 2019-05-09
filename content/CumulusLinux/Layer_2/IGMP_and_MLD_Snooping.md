@@ -1,7 +1,7 @@
 ---
 title: IGMP and MLD Snooping
 author: Unknown
-weight: 131
+weight: 129
 pageID: 8362696
 aliases:
  - /old/IGMP_and_MLD_Snooping.html

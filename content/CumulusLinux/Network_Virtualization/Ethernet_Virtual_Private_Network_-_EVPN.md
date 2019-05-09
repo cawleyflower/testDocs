@@ -1,7 +1,7 @@
 ---
 title: Ethernet Virtual Private Network - EVPN
 author: Unknown
-weight: 149
+weight: 143
 pageID: 8362732
 aliases:
  - /old/Ethernet_Virtual_Private_Network_-_EVPN.html
@@ -20,7 +20,12 @@ in Cumulus Linux.
 
 {{%notice note%}}
 
-You cannot use EVPN and LNV at the same time.
+  - You cannot use EVPN and LNV at the same time.
+
+  - When using EVPN, you *must* disable data plane MAC learning on all
+    VXLAN interfaces. This is described in [Basic EVPN
+    Configuration](/old/#src-8362732_EthernetVirtualPrivateNetwork-EVPN-BasicEVPNConfiguration),
+    below.
 
 {{%/notice%}}
 
@@ -477,9 +482,9 @@ iface bridge1
 ### BUM Traffic and Head End Replication
 
 <span id="src-8362732_EthernetVirtualPrivateNetwork-EVPN-head-end"></span>
-With EVPN, the only method of generating BUM traffic in hardware is head
-end replication. Head end replication is enabled by default in Cumulus
-Linux.
+With EVPN, the only method of generating BUM traffic in hardware is
+*head end replication*. Head end replication is enabled by default in
+Cumulus Linux.
 
 Broadcom switches with Tomahawk, Trident3, Trident II+, and Trident II
 ASICs and Mellanox switches with Spectrum ASICs are capable of head end
@@ -496,6 +501,14 @@ suppress ARP flooding over VXLAN tunnels as much as possible. Instead, a
 local proxy handles ARP requests received from locally attached hosts
 for remote hosts. ARP suppression is the implementation for IPv4; ND
 suppression is the implementation for IPv6.
+
+{{%notice note%}}
+
+Cumulus Networks recommends that you *enable* ARP and ND suppression in
+all EVPN bridging and symmetric routing deployments to reduce flooding
+of ARP/ND packets over VXLAN tunnels.
+
+{{%/notice%}}
 
 {{%notice note%}}
 
@@ -907,7 +920,9 @@ referred to as the layer 2 VNI.
   - The VRF to layer 3 VNI mapping has to be consistent across all
     VTEPs. The layer 3 VNI has to be provisioned by the operator.
 
-  - Layer 3 VNI and layer 2 VNI cannot share the same number space.
+  - Layer 3 VNI and layer 2 VNI cannot share the same number space; that
+    is, you cannot have vlan10 and vxlan10 for example. Otherwise, the
+    layer 2 VNI does not get created.
 
   - In an MLAG configuration, the SVI used for the layer 3 VNI cannot be
     part of the bridge. This ensures that traffic tagged with that VLAN
@@ -1280,8 +1295,9 @@ advertised to all the other leafs within the pod. Any leaf within the
 pod follows the default route towards the border leaf for all external
 traffic (towards the Internet or a different pod).
 
-To originate a default type-5 route in EVPN, you need to execute
-FRRouting commands. The following shows an example:
+<span style="color: #000000;"> To originate a default type-5 route in
+EVPN, you need to execute <span style="color: #000000;"> FRRouting
+</span> commands. The following shows an example: </span>
 
 ``` 
                    
@@ -1541,9 +1557,19 @@ duplicate address flag. No functional action is taken on the address.
 
 {{%notice note%}}
 
+If a MAC address is flagged as a duplicate, all IP addresses associated
+with that MAC are flagged as duplicates.****
+
 {{%/notice%}}
 
 {{%notice note%}}
+
+In an MLAG configuration, duplicate address detection runs independently
+on each switch in the MLAG pair. Based on the sequence in which local
+learn and/or route withdrawal from the remote VTEP occurs, an IP address
+might be flagged as duplicate only on one of the switches in the MLAG
+pair. In rare cases, neither switch might flag the IP address as a
+duplicate.
 
 {{%/notice%}}
 
@@ -1555,8 +1581,9 @@ detection independently. Detection always starts with the first mobility
 event from *remote* to *local*. If the address is initially remote, the
 detection count can start with the very first move for the address. If
 the address is initially local, the detection count starts only with the
-second or higher move for the address . If an address is undergoing a
-mobility event between remote VTEPs, duplicate detection is not started.
+second or higher move for the address . <span style="color: #222222;">
+If an address is undergoing a mobility event between remote VTEPs,
+duplicate detection is not started. </span>
 
 The following illustration shows VTEP-A, VTEP-B, and VTEP-C in an EVPN
 configuration. Duplicate address detection triggers on VTEP-A when there
@@ -1760,10 +1787,10 @@ configuration and all existing duplicate addresses.
 #### Show Detected Duplicate Address Information
 
 During the duplicate address detection process, you can see the start
-time and current detection count with the net show evpn mac vni mac
-command. The following command example shows that detection started for
-MAC address 00:01:02:03:04:11 for VNI 1001 on Tuesday, Nov 6 at 18:55:05
-and the number of moves detected is 1.
+time and current detection count with the `net show evpn mac vni
+<vni_id> mac <mac_addr>` command. The following command example shows
+that detection started for MAC address 00:01:02:03:04:11 for VNI 1001 on
+Tuesday, Nov 6 at 18:55:05 and the number of moves detected is 1.
 
 ``` 
                    

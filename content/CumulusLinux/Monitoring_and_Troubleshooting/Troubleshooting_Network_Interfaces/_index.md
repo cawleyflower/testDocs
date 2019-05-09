@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting Network Interfaces
 author: Unknown
-weight: 239
+weight: 227
 pageID: 8362603
 aliases:
  - /old/Troubleshooting_Network_Interfaces.html

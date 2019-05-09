@@ -1,7 +1,7 @@
 ---
 title: ASIC Monitoring
 author: Unknown
-weight: 235
+weight: 223
 pageID: 8362627
 aliases:
  - /old/ASIC_Monitoring.html
@@ -194,7 +194,7 @@ To monitor queue lengths using a histogram:
 7.  Add the following line to set the actions you want to take when data
     is collected. In the following example, the system writes the
     results of data collection to a snapshot file and sends a message to
-    the /var/log/syslog file .
+    the `/var/log/syslog` file .
     
     ``` 
                        
@@ -235,7 +235,7 @@ To monitor queue lengths using a histogram:
 10. Add the following line to include a threshold, which determines how
     to collect data. Setting a threshold is optional. In the following
     example, when the size of the queue reaches 500 bytes, the system
-    sends a message to the /var/log/syslog file .
+    sends a message to the `/var/log/syslog` file .
     
     ``` 
                        

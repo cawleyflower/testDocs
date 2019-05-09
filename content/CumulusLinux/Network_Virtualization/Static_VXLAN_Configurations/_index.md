@@ -1,7 +1,7 @@
 ---
 title: Static VXLAN Configurations
 author: Unknown
-weight: 147
+weight: 141
 pageID: 8362788
 aliases:
  - /old/Static_VXLAN_Configurations.html

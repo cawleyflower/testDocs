@@ -1,7 +1,7 @@
 ---
 title: Segment Routing
 author: Unknown
-weight: 215
+weight: 203
 pageID: 8362962
 aliases:
  - /old/Segment_Routing.html
