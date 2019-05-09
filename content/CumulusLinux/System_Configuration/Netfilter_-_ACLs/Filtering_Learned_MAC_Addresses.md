@@ -1,7 +1,7 @@
 ---
 title: Filtering Learned MAC Addresses
 author: Unknown
-weight: 309
+weight: 297
 pageID: 8362575
 aliases:
  - /old/Filtering_Learned_MAC_Addresses.html

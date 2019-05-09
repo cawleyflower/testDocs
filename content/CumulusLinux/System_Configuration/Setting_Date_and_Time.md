@@ -325,6 +325,10 @@ receives the time on a PTP slave port, sets its clock and passes the
 time down the hierarchy through the PTP master ports to the hosts that
 receive the time.
 
+{{%imgOld 0 %}}
+
+  
+
 ### Enable the PTP Boundary Clock on the Switch
 
 To enable the PTP boundary clock on the switch:
@@ -438,7 +442,7 @@ from Master 1 (the grandmaster) on PTP slave port swp3s0, sets its clock
 and passes the time down through PTP master ports swp3s1, swp3s2, and
 swp3s3 to the hosts that receive the time.
 
-{{%imgOld 0 %}}
+{{%imgOld 1 %}}
 
 The configuration for the above example is shown below. The example
 assumes that you have already configured the layer 3 routed interfaces

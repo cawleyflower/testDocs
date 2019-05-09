@@ -1,7 +1,7 @@
 ---
 title: Open Shortest Path First - OSPF
 author: Unknown
-weight: 193
+weight: 181
 pageID: 8362922
 aliases:
  - /old/Open_Shortest_Path_First_-_OSPF.html
@@ -56,10 +56,10 @@ divide the leaf-spine topology into the following areas:
 
 {{%notice note%}}
 
-  - Routers R3, R4, R5, R6 are *border routers* (ABRs). These routers
-    have links to multiple areas and perform a set of specialized tasks,
-    such as SPF computation per area and summarization of routes across
-    areas.
+  - Routers R3, R4, R5, R6 are *area border routers* (ABRs). These
+    routers have links to multiple areas and perform a set of
+    specialized tasks, such as SPF computation per area and
+    summarization of routes across areas.
 
   - Most of the LSAs have an area-level flooding scope. These include
     router LSA, network LSA, and summary LSA.

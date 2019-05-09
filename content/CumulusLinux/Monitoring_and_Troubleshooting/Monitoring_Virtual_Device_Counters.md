@@ -1,7 +1,7 @@
 ---
 title: Monitoring Virtual Device Counters
 author: Unknown
-weight: 233
+weight: 221
 pageID: 8362605
 aliases:
  - /old/Monitoring_Virtual_Device_Counters.html

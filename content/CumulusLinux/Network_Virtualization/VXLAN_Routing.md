@@ -1,7 +1,7 @@
 ---
 title: VXLAN Routing
 author: Unknown
-weight: 155
+weight: 149
 pageID: 8362747
 aliases:
  - /old/VXLAN_Routing.html
@@ -37,8 +37,8 @@ The following chipsets support VXLAN routing:
 
   - Broadcom Trident II+, Trident3, and Maverick
 
-  - Broadcom Tomahawk, using an internal loopback on one or more switch
-    ports
+  - Broadcom Tomahawk and Tomahawk+, using an internal loopback on one
+    or more switch ports
 
   - Broadcom Trident II, static VXLAN routing only, using an external
     loopback on one or more switch ports
@@ -49,7 +49,7 @@ The following chipsets support VXLAN routing:
 
   - Using ECMP with VXLAN routing is supported only on RIOT-capable
     Broadcom switches (Trident 3, Maverick, Trident 2+) in addition to
-    Tomahawk and Mellanox Spectrum-A1 switches.
+    Tomahawk, Tomahawk+ and Mellanox Spectrum-A1 switches.
 
   - For additional restrictions and considerations for VXLAN routing
     with EVPN, refer to [the EVPN
@@ -57,7 +57,7 @@ The following chipsets support VXLAN routing:
 
 {{%/notice%}}
 
-## VXLAN Routing Data Plane and the Broadcom Trident II+, Trident3, Maverick, and Tomahawk Platforms
+## VXLAN Routing Data Plane and the Broadcom Trident II+, Trident3, Maverick, Tomahawk, and Tomahawk+ Platforms
 
 ### Trident II+, Trident3, and Maverick
 
@@ -104,7 +104,7 @@ vxlan_routing_overlay.profile = default
     
 ```
 
-The Trident II+ and Trident3 ASIC supports a maximum of 48k underlay
+The Trident II+ and Trident3 ASICs support a maximum of 48k underlay
 next hops.
 
 For any profile you specify, you can allocate a *maximum* of 2K (2048)
@@ -113,21 +113,21 @@ VXLAN SVI interfaces.
 To disable the VXLAN routing capability on a Trident II+ or Trident3
 switch, set the `vxlan_routing_overlay.profile` field to *disable*.
 
-### Tomahawk
+### Tomahawk and Tomahawk+
 
-The Tomahawk ASIC does not support RIOT natively; you must configure the
-switch ports for VXLAN routing to use internal loopback (also referred
-to as *internal hyperloop)*. The internal loopback facilitates the
-recirculation of packets through the ingress pipeline to achieve VXLAN
-routing.
+The Tomahawk and Tomahawk+ ASICs do not support RIOT natively; you must
+configure the switch ports for VXLAN routing to use internal loopback
+(also referred to as *internal hyperloop)*. The internal loopback
+facilitates the recirculation of packets through the ingress pipeline to
+achieve VXLAN routing.
 
-F or routing into a VXLAN tunnel, the first pass of the ASIC performs
-routing and routing rewrites of the packet MAC source and destination
-address and VLAN, then packets recirculate through the internal
-hyperloop for VXLAN encapsulation and underlay forwarding on the second
-pass.
+F or routing **into** a VXLAN tunnel, the first pass of the ASIC
+performs routing and routing rewrites of the packet MAC source and
+destination address and VLAN, then packets recirculate through the
+internal hyperloop for VXLAN encapsulation and underlay forwarding on
+the second pass.
 
-For routing out of a VXLAN tunnel, the first pass performs VXLAN
+For routing **out of** a VXLAN tunnel, the first pass performs VXLAN
 decapsulation, then packets recirculate through the hyperloop for
 routing on the second pass.
 

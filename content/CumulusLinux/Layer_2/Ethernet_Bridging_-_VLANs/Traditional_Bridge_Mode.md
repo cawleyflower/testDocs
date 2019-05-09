@@ -1,7 +1,7 @@
 ---
 title: Traditional Bridge Mode
 author: Unknown
-weight: 359
+weight: 349
 pageID: 8362670
 aliases:
  - /old/Traditional_Bridge_Mode.html
@@ -206,11 +206,14 @@ To create a traditional mode bridge manually, you need to hand edit the
 
 {{%notice info%}}
 
-multiple bridges, in order to logically divide a switch into multiple
-layer 2 domains. This allows for hosts to communicate with other hosts
-in the same domain, while separating them fro hosts in other domains.
+You can configure multiple bridges, in order to logically divide a
+switch into multiple layer 2 domains. This allows for hosts to
+communicate with other hosts in the same domain, while separating them
+fro hosts in other domains.
 
 <div class="confbox admonition admonition-note">
+
+<span class="admonition-icon confluence-information-macro-icon"></span>
 
 <div class="admonition-body">
 

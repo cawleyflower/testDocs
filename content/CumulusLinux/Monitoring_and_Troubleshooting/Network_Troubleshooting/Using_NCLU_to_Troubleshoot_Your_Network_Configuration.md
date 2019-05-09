@@ -1,7 +1,7 @@
 ---
 title: Using NCLU to Troubleshoot Your Network Configuration
 author: Unknown
-weight: 491
+weight: 471
 pageID: 8362599
 aliases:
  - /old/Using_NCLU_to_Troubleshoot_Your_Network_Configuration.html
@@ -127,67 +127,6 @@ Serial Number.... A1010B2A011212AB000001
    
     
 ```
-
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>VISIBLE ONLY TO EDITORS</p>
-<h4 id="troubleshooting-example-openstack">Troubleshooting Example: OpenStack</h4>
-<p>Looking at an OpenStack Environment, here is the physical diagram:</p>
-<p>{{%imgOld 0 %}}</p>
-<p>For server2, <code>netshow</code> can help us see the OpenStack network configuration. The <code>netshow</code> output below shows an summary of a Kilo-based OpenStack server running 3 tenants.</p>
-<pre><code>                   
-[root@host ~]# netshow int
---------------------------------------------------------------------
-To view the legend,  rerun &quot;netshow&quot; cmd with the  &quot;--legend&quot; option
---------------------------------------------------------------------
-    Name            Speed    MTU    Mode            Summary
---  --------------  -------  -----  --------------  ---------------------------------------------------------------------
-UP  brq0b6f10c7-42  N/A      1500   Bridge/L2       802.1q Tag: 141
-                                                    STP: Disabled
-                                                    Untagged Members: tap079cf993-c7
-                                                    Tagged Members: eth1.141
-UP  brq8cdc0589-9b  N/A      1500   Bridge/L2       802.1q Tag: 155
-                                                    STP: Disabled
-                                                    Untagged Members: tap5353b20a-68
-                                                    Tagged Members: eth1.155
-UP  brq8ff99102-29  N/A      1500   Bridge/L2       802.1q Tag: 168
-                                                    STP: Disabled
-                                                    Untagged Members: tapfc2203e4-5b
-                                                    Tagged Members: eth1.168
-UP  eth0            N/A      1500   Interface/L3    IP: 192.168.0.105/24
-UP  eth1            N/A      1500   IntTypeUnknown
-UP  eth1            N/A      1500   Trunk/L2        Bridge Membership:
-                                                    Tagged: brq0b6f10c7-42(141), brq8cdc0589-9b(155), brq8ff99102-29(168)
-UP  lo              N/A      65536  Loopback        IP: 127.0.0.1/8, ::1/128
-UP  tap079cf993-c7  10M      1500   Access/L2       Untagged: brq0b6f10c7-42
-UP  tap5353b20a-68  10M      1500   Access/L2       Untagged: brq8cdc0589-9b
-UP  tapfc2203e4-5b  10M      1500   Access/L2       Untagged: brq8ff99102-29
-   
-    </code></pre>
-<p>OpenStack interface numbering is not the easiest read, but here <code>netshow</code> can quickly show you:</p>
-<ul>
-<li><p>A list of all the interfaces in admin UP state and carrier UP state</p></li>
-<li><p>3 bridges</p></li>
-<li><p>That STP is disabled for all the bridges</p></li>
-<li><p>An uplink trunk interface with 3 VLANs configured on it</p></li>
-<li><p>Many tap interfaces, most likely the virtual machines</p></li>
-</ul>
-<p>This output took about 5 seconds to get and another 1 minute to analyze. To get this same level of understanding using traditional tools such as:</p>
-<ul>
-<li><p>ip link show</p></li>
-<li><p>brctl show</p></li>
-<li><p>ip addr show</p></li>
-</ul>
-<p>... could take about 10 minutes. This is a significant improvement in productivity!</p>
-<p><code>netshow</code> uses a plugin architecture and can be easily expanded. An OpenStack interface discovery module is currently in development. If <code>netshow</code> is run on a hypervisor with OpenStack Keystone login environment variables like <code>OS_TENANT_NAME</code>, <code>netshow</code> should show the above output with a better interface discovery state, where <code>netshow</code> collects from OpenStack information from <code>libvirt</code>, <code>nova</code> and <code>neutron</code> to overlay the virtual machine and tenant subnet information over the interface kernel state information.</p>
-<p>Interface discovery is one of the most powerful features of <code>netshow</code>. The ability to expand its interface discovery capabilities further simplifies understanding basic network troubleshooting, making the Linux administrator more productive and improving time to resolution while investigating network problems.</p></td>
-</tr>
-</tbody>
-</table>
 
 ## Other Useful Features
 

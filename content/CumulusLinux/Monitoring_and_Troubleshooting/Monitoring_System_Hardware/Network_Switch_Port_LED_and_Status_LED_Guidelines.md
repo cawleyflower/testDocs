@@ -1,7 +1,7 @@
 ---
 title: Network Switch Port LED and Status LED Guidelines
 author: Unknown
-weight: 453
+weight: 431
 pageID: 8362595
 aliases:
  - /old/Network_Switch_Port_LED_and_Status_LED_Guidelines.html

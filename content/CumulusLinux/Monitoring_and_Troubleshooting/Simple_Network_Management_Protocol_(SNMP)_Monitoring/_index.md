@@ -1,7 +1,7 @@
 ---
 title: Simple Network Management Protocol (SNMP) Monitoring
 author: Unknown
-weight: 243
+weight: 231
 pageID: 8362608
 aliases:
  - /old/Simple_Network_Management_Protocol_(SNMP)_Monitoring.html

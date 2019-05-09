@@ -1,7 +1,7 @@
 ---
 title: Buffer and Queue Management
 author: Unknown
-weight: 95
+weight: 93
 pageID: 8363032
 aliases:
  - /old/Buffer_and_Queue_Management.html
@@ -55,7 +55,8 @@ service.
 
 {{%notice note%}}
 
-Quality of Service (QoS) for switches on the following platforms only:
+You can configure Quality of Service (QoS) for switches on the following
+platforms only:
 
   - Broadcom Helix4, Tomahawk, Trident II, Trident II+ and Trident3
 

@@ -1,7 +1,7 @@
 ---
 title: Redistribute Neighbor
 author: Unknown
-weight: 205
+weight: 193
 pageID: 8362959
 aliases:
  - /old/Redistribute_Neighbor.html

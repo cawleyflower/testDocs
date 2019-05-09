@@ -1,7 +1,7 @@
 ---
 title: Data Center Host to ToR Architecture
 author: Unknown
-weight: 261
+weight: 249
 pageID: 8362991
 aliases:
  - /old/Data_Center_Host_to_ToR_Architecture.html
@@ -16,7 +16,7 @@ server hosts.
 
 ### Single-attached Hosts
 
-{{%imgOld 0 %}}
+{{%imgOld 2 %}}
 
 <table>
 <colgroup>
@@ -117,7 +117,7 @@ iface eth1 inet static
 
 ### Redistribute Neighbor
 
-{{%imgOld 1 %}}
+{{%imgOld 3 %}}
 
 <table>
 <colgroup>
@@ -168,7 +168,9 @@ iface eth1 inet static
 
 ****
 
-{{%imgOld 2 %}}
+**{{%imgOld 4 %}}**
+
+****
 
 <table>
 <colgroup>
@@ -218,7 +220,7 @@ iface eth1 inet static
 
 ### Routing on the VM
 
-{{%imgOld 3 %}}
+{{%imgOld 5 %}}
 
 <table>
 <colgroup>
@@ -269,7 +271,7 @@ instead of one routing process, there are as many as there are VMs</p></li>
 
 ### Virtual Router
 
-{{%imgOld 4 %}}
+{{%imgOld 6 %}}
 
 <table>
 <colgroup>
@@ -284,7 +286,7 @@ instead of one routing process, there are as many as there are VMs</p></li>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Virtual router (vRouter) runs as a VM on the hypervisor/host, sends routes to the ToR using <a href="/old//pages/createpage.action?spaceKey=DOCS&amp;title=Configuring+Border+Gateway+Protocol+-+BGP&amp;linkCreation=true&amp;fromPageId=8362991" class="createlink">BGP</a> or <a href="/old/Open_Shortest_Path_First_-_OSPF.html">OSPF</a>.</p></td>
+<td><p>Virtual router (vRouter) runs as a VM on the hypervisor/host, sends routes to the ToR using <a href="/old/#src-8362991" class="unresolved">BGP</a> or <a href="/old/Open_Shortest_Path_First_-_OSPF.html">OSPF</a>.</p></td>
 <td><p><strong><strong>Benefits</strong></strong></p>
 <p>In addition to routing on a host:</p>
 <ul>
@@ -316,7 +318,7 @@ instead of one routing process, there are as many as there are VMs</p></li>
 
 ### Anycast with Manual Redistribution
 
-{{%imgOld 5 %}}
+{{%imgOld 7 %}}
 
 <table>
 <colgroup>
@@ -415,7 +417,7 @@ iface eth2 inet static
 
 **LNV with MLAG**
 
-{{%imgOld 6 %}}
+{{%imgOld 8 %}}
 
 <table>
 <colgroup>

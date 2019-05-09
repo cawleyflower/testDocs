@@ -1,7 +1,7 @@
 ---
 title: Switch Port Attributes
 author: Unknown
-weight: 321
+weight: 309
 pageID: 8363026
 aliases:
  - /old/Switch_Port_Attributes.html
@@ -377,6 +377,8 @@ iface swp1
 ```
 
 <div class="confbox admonition admonition-warning">
+
+<span class="admonition-icon confluence-information-macro-icon"></span>
 
 <div class="admonition-body">
 
@@ -1230,7 +1232,7 @@ Cumulus Linux has the ability to:
 
   - Break out 100G switch ports into the following with breakout cables:
     
-      - 2x50G, 4x25G, 4x10G
+      - 2x50G, 2x40G, 4x25G, 4x10G
 
   - Break out 40G switch ports into four separate 10G ports for use with
     breakout cables.
@@ -1244,16 +1246,35 @@ out then set the link speed:
 
 ``` 
                    
-cumulus@switch:~$ net add interface swp3 breakout 4x
-cumulus@switch:~$ net add interface swp3s0-3 link speed 25000
+cumulus@switch:~$ net add interface swp3 breakout 4x25G
 cumulus@switch:~$ net pending
 cumulus@switch:~$ net commit
    
     
 ```
 
-These commands create 4 interfaces in the `/etc/network/interfaces` file
-named as follows:
+{{%notice note%}}
+
+On Mellanox switches, you need to disable the next port (see below). In
+this example, you must run the following before committing the update
+with `net commit`:
+
+``` 
+                   
+cumulus@switch:~$ net add interface swp4 breakout disabled
+   
+    
+```
+
+Also, [see below](/old/#src-8363026_SwitchPortAttributes-mlnx_breakout)
+for how to configure breakout ports on Mellanox switches.
+
+{{%/notice%}}
+
+These commands break out the 100G interfaces to 4x25G interfaces in the
+`/etc/cumulus/ports.conf` file, restart the `switchd` process to
+reconfigure the ports and create four interfaces in the
+`/etc/network/interfaces` file named as follows:
 
 ``` 
                    
@@ -1277,87 +1298,6 @@ iface swp3s3
    
     
 ```
-
-{{%notice note%}}
-
-On [Dell switches with Maverick
-ASICs](https://cumulusnetworks.com/products/hardware-compatibility-list/?Brand=Dell&ASIC=Broadcom%20Maverick),
-you configure breakout ports on the 100G uplink ports by manually
-editing the `/etc/cumulus/ports.conf` file. You need to specify either
-*4x10* or *4x25* for the port speed. For example, on a Dell S4148F-ON
-switch, to break out swp26 into 4 25G ports, modify the line starting
-with "26=" in `ports.conf` as follows:
-
-``` 
-                   
-cumulus@switch:~$ sudo nano /etc/cumulus/ports.conf
- 
-...
- 
-# QSFP+ ports
-#
-#  = [4x10G|40G]
- 
-27=disabled
-28=disabled
- 
-# QSFP28 ports
-#
-#  = [4x10G|4x25G|2x50G|40G|50G|100G]
- 
-25=100G
-26=4x25G
-29=100G
-30=100G
- 
-...
-   
-    
-```
-
-Then you need to configure the breakout ports in the
-`/etc/network/interfaces` file:
-
-``` 
-                   
-cumulus@switch:~$ sudo nano /etc/network/interfaces
- 
-...
- 
-auto swp26s0
-iface swp26s0
- 
-auto swp26s1
-iface swp3s1
- 
-auto swp26s2
-iface swp26s2
- 
-auto swp26s3
-iface swp26s3
- 
-...
-   
-    
-```
-
-You cannot use NCLU to break out the uplink ports.
-
-{{%/notice%}}
-
-{{%notice note%}}
-
-On Mellanox switches, you need to disable the next port (see below). In
-this example, you also run the following before committing the update:
-
-``` 
-                   
-cumulus@switch:~$ net add interface swp4 breakout disabled
-   
-    
-```
-
-{{%/notice%}}
 
 {{%notice note%}}
 
@@ -1446,58 +1386,22 @@ cumulus@switch:~$ cat /etc/cumulus/ports.conf
     
 ```
 
-For switches with ports that support 100G speeds, you can break out any
-100G port into a variety of options: four 10G ports, four 25G ports, two
-40G ports or two 50G ports. You *cannot* have more than 128 total
-logical ports on a Broadcom switch.
+{{%/notice%}}
 
-<div class="confbox admonition admonition-note">
+### Break out a 100G Port to Four 10G Ports
 
-<div class="admonition-body">
-
-The Mellanox SN2700, SN2700B, SN2410, and SN2410B switches all have a
-limit of 64 logical ports in total. However, if you want to break out to
-4x25G or 4x10G, you must configure the logical ports as follows:
-
-  - You can only break out odd-numbered ports into 4 logical ports.
-
-  - You must disable the next even-numbered port.
-
-These restrictions do not apply to a 2x50G breakout configuration.
-
-For example, if you have a 100G Mellanox SN2700 switch and break out
-port 11 into 4 logical ports, you must disable port 12 by running `net
-add interface swp12 breakout disabled`, which results in this
-configuration in `/etc/cumulus/ports.conf`:
+If you want to support 10G speed modules or cables on 100G ports you
+must set up the port in 10G mode first by configuring breakout ports on
+the 100G ports using the following NCLU commands:
 
 ``` 
                    
-...
- 
-11=4x
-12=disabled
- 
-...
+cumulus@switch:~$ net add interface swp25 breakout 4x10G
+cumulus@switch:~$ net pending
+cumulus@switch:~$ net commit
    
     
 ```
-
-There is no limitation on any port if interfaces are configured in 2x50G
-mode.
-
-</div>
-
-</div>
-
-{{%/notice%}}
-
-{{%notice tip%}}
-
-Here is an example showing how to configure breakout cables for the
-[Mellanox Spectrum
-SN2700](https://community.mellanox.com/docs/DOC-2685).
-
-{{%/notice%}}
 
 ### Remove a Breakout Port
 
@@ -1584,14 +1488,20 @@ These commands create the following configuration snippet in the
 100G and 40G switches can support a certain number of logical ports,
 depending upon the manufacturer; these include:
 
-  - Mellanox SN2700 and SN2700B switches
+  - Mellanox SN2700, SN2700B, SN2410 and SN2410B switches
 
-  - Switches with Broadcom Tomahawk, Trident II, Trident II+, and
+  - Switches with Broadcom Tomahawk, Trident II, Trident II+ and
     Trident3 chipsets (check the
     [HCL](http://cumulusnetworks.com/support/linux-hardware-compatibility-list/))
 
+You *cannot* have more than 128 total logical ports on a Broadcom
+switch.
+
+The Mellanox SN2700, SN2700B, SN2410 and SN2410B switches all have a
+limit of 64 logical ports in total.
+
 Before you configure any logical/unganged ports on a switch, check the
-limitations listed in `/etc/cumulus/ports.conf`; this file is specific
+limitations listed in `/etc/cumulus/ports.conf` ; this file is specific
 to each manufacturer.
 
 For example, the Dell S6000 `ports.conf` file indicates the logical port
@@ -1629,9 +1539,45 @@ limitation like this:
 
 The means the maximum number of ports for this Dell S6000 is 104.
 
-Mellanox SN2700 and SN2700B switches have a limit of 64 logical ports in
-total. However, the logical ports must be configured in a specific way.
-See [the note](/old/#src-8363026_SwitchPortAttributes-breakout) above.
+### Mellanox Logical Port Limits and Breakout Configurations
+
+The Mellanox SN2700, SN2700B, SN2410 and SN2410B switches all have a
+limit of 64 logical ports in total. However, if you want to break out to
+4x25G or 4x10G, you must configure the logical ports as follows:
+
+  - You can only break out odd-numbered ports into 4 logical ports.
+
+  - You must disable the next even-numbered port.
+
+These restrictions do not apply to a 2x50G breakout configuration.
+
+For example, if you have a 100G Mellanox SN2700 switch and break out
+port 11 into 4 logical ports, you must disable port 12 by running `net
+add interface swp12 breakout disabled`, which results in this
+configuration in `/etc/cumulus/ports.conf`:
+
+``` 
+                   
+...
+ 
+11=4x
+12=disabled
+ 
+...
+   
+    
+```
+
+There is no limitation on any port if interfaces are configured in 2x50G
+mode.
+
+{{%notice tip%}}
+
+Here is an example showing how to configure breakout cables for the
+[Mellanox Spectrum
+SN2700](https://community.mellanox.com/docs/DOC-2685).
+
+{{%/notice%}}
 
 ## Configure Interfaces with ethtool
 
@@ -1734,21 +1680,22 @@ NIC statistics:
 
 ### Query SFP Port Information
 
-You can verify SFP settings using ` ethtool -m  `. The following example
-shows the output for 1G and 10G modules:
+You can verify SFP settings using [`ethtool
+-m`](/old/Monitoring_Interfaces_and_Transceivers_Using_ethtool.html).
+The following example shows the vendor, type and power output for the
+swp4 interface.
 
 ``` 
                    
-cumulus@switch:~$ sudo ethtool -m | egrep '(swp|RXPower :|TXPower :|EthernetComplianceCode)'
- 
-swp1: SFP detected
-              EthernetComplianceCodes : 1000BASE-LX
-              RXPower : -10.4479dBm
-              TXPower : 18.0409dBm
-swp3: SFP detected
-              10GEthernetComplianceCode : 10G Base-LR
-              RXPower : -3.2532dBm
-              TXPower : -2.0817dBm
+cumulus@switch:~$ sudo ethtool -m swp4 | egrep 'Vendor|type|power\s+:'
+        Transceiver type                          : 10G Ethernet: 10G Base-LR
+        Vendor name                               : FINISAR CORP.
+        Vendor OUI                                : 00:90:65
+        Vendor PN                                 : FTLX2071D327
+        Vendor rev                                : A
+        Vendor SN                                 : UY30DTX
+        Laser output power                        : 0.5230 mW / -2.81 dBm
+        Receiver signal average optical power     : 0.7285 mW / -1.38 dBm
    
     
 ```
@@ -1788,26 +1735,29 @@ order; for example, swp1, swp2, swp3, and swp4.
         
     ```
 
-2.  For 1G SFPs, set the port speed to 1000 Mbps using NCLU commands.  
-    This is *not* necessary for 10G SFPs.
+2.  [Restart
+    `switchd`](/old/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=8366282).
+
+3.  If you want to set the speed of any SFPs to 1G, set the port speed
+    to 1000 Mbps using NCLU commands; this is *not* necessary for 10G
+    SFPs. You don't need to set the port speed to 1G for all four ports.
+    For example, if you intend only for swp5 and swp6 to use 1G SFPs, do
+    the following:
     
     ``` 
                        
-    cumulus@switch:~$ net add interface swp1-swp4 link speed 1000 
+    cumulus@switch:~$ net add interface swp5-swp6 link speed 1000 
     cumulus@switch:~$ net pending
     cumulus@switch:~$ net commit
        
         
     ```
 
-3.  [Restart
-    `switchd`](/old/https://docs.cumulusnetworks.com/display/DRAFT40/Configuring+switchd#Configuringswitchd-restartswitchd).
-
 {{%notice note%}}
 
 25G and 100G cores do not support 1000Base-X auto-negotiation (Clause
-37) which is recommended for 1G Fiber optical modules. As a result, 1G
-fiber breaks cannot be detected. 1G Fiber modules are not recommended on
+37) which is recommended for 1G fiber optical modules. As a result, 1G
+fiber breaks cannot be detected. 1G fiber modules are not recommended on
 25G ports.
 
 {{%/notice%}}
@@ -1858,10 +1808,13 @@ the following switches:
 
 These ports appear as disabled in the `/etc/cumulus/ports.conf` file.
 
-### Unsupported Interfaces on the Dell S5248F Switch
+### 200G Interfaces on the Dell S5248F Switch
 
-On the Dell S5248F switch, the 2x 200G QSFP-DD interfaces numbered 49
-and 51 are not currently supported.
+On the Dell S5248F switch, the 2x200G QSFP-DD interfaces labeled 49/50
+and 51/52 are not supported natively at 200G speeds. The interfaces are
+supported with 100G cables; however, you can only use one 100G cable
+from each QSFP-DD port. The upper QSFP-DD port is named swp49 and the
+lower QSFP-DD port is named swp52.
 
 ### ethtool Shows Incorrect Port Speed on 100G Mellanox Switches
 

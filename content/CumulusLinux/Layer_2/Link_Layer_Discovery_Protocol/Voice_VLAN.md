@@ -1,7 +1,7 @@
 ---
 title: Voice VLAN
 author: Unknown
-weight: 345
+weight: 335
 pageID: 8362651
 aliases:
  - /old/Voice_VLAN.html
@@ -136,7 +136,7 @@ swp3              1  PVID, Egress Untagged
     
 ```
 
-You can get MAC address information using the net show bridge macs
+You can get MAC address information using the `net show bridge macs`
 command:
 
 ``` 

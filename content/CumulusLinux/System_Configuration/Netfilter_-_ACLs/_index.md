@@ -102,6 +102,8 @@ switch# net show configuration acl
 
 <div class="confbox admonition admonition-note">
 
+<span class="admonition-icon confluence-information-macro-icon"></span>
+
 <div class="admonition-body">
 
 The interfaces in the sample configuration in `net example acl` are
@@ -448,7 +450,7 @@ To always start `switchd` with nonatomic updates:
     ```
 
 3.  [Restart
-    `switchd`](/old/https://docs.cumulusnetworks.com/display/CL257/Configuring+switchd#Configuringswitchd-restartswitchd):
+    `switchd`](/old/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=5114824):
     
     ``` 
                        

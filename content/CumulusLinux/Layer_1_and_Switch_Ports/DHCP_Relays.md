@@ -1,7 +1,7 @@
 ---
 title: DHCP Relays
 author: Unknown
-weight: 97
+weight: 95
 pageID: 8363036
 aliases:
  - /old/DHCP_Relays.html
@@ -121,14 +121,15 @@ with anycast traffic, the SVI IP address is not unique to each rack; it
 is typically shared amongst all racks. Most EVPN ToR deployments only
 possess a single unique IP address, which is the loopback IP address.
 
-RFC 3527 enables the DHCP server to react to these environments by
-introducing a new parameter to the DHCP header called the link selection
-sub-option, which is built by the DHCP relay agent. The link selection
-sub-option takes on the normal role of the giaddr in relaying to the
-DHCP server which subnet is correlated to the DHCP request. When using
-this sub-option, the giaddr continues to be present but only relays the
-return IP address that is to be used by the DHCP server; the giaddr
-becomes the unique loopback IP address.
+[RFC 3527](https://tools.ietf.org/html/rfc3527) enables the DHCP server
+to react to these environments by introducing a new parameter to the
+DHCP header called the *link selection sub-option*, which is built by
+the DHCP relay agent. The link selection sub-option takes on the normal
+role of the giaddr in relaying to the DHCP server which subnet is
+correlated to the DHCP request. When using this sub-option, the giaddr
+continues to be present but only relays the return IP address that is to
+be used by the DHCP server; the giaddr becomes the unique loopback IP
+address.
 
 When enabling RFC 3527 support, you can specify an interface, such as
 the loopback interface or a switchport interface to be used as the
@@ -144,6 +145,10 @@ RFC 3527 is supported for IPv4 DHCP relays only.
 
 The following illustration demonstrates how you can control the giaddr
 with RFC 3527.
+
+{{%imgOld 1 %}}
+
+  
 
 To enable RFC 3527 support and control the giaddr, run the `net add dhcp
 relay giaddr-interface` command with interface/IP address you want to

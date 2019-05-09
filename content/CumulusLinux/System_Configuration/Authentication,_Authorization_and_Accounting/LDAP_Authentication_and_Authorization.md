@@ -1,7 +1,7 @@
 ---
 title: LDAP Authentication and Authorization
 author: Unknown
-weight: 291
+weight: 279
 pageID: 8362556
 aliases:
  - /old/LDAP_Authentication_and_Authorization.html

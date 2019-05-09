@@ -1,7 +1,7 @@
 ---
 title: DHCP Servers
 author: Unknown
-weight: 99
+weight: 97
 pageID: 8363042
 aliases:
  - /old/DHCP_Servers.html

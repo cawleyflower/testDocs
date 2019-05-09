@@ -1,7 +1,7 @@
 ---
 title: User Accounts
 author: Unknown
-weight: 287
+weight: 275
 pageID: 8362553
 aliases:
  - /old/User_Accounts.html
@@ -14,7 +14,7 @@ The *cumulus* account:
 
   - 
     
-    <div id="src-8362553_indexterm-CC51283F87775E890358DCD42C557486">
+    <div id="src-8362553_indexterm-CBB0F61FF7561EA617260FD5E28EAD34">
     
     Uses the default password *CumulusLinux\!*
     

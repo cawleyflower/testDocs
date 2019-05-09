@@ -1,7 +1,7 @@
 ---
 title: Introduction to Routing Protocols
 author: Unknown
-weight: 183
+weight: 171
 pageID: 8362913
 aliases:
  - /old/Introduction_to_Routing_Protocols.html

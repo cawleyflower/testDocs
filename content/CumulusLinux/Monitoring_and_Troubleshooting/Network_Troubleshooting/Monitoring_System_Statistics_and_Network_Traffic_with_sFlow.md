@@ -1,7 +1,7 @@
 ---
 title: Monitoring System Statistics and Network Traffic with sFlow
 author: Unknown
-weight: 493
+weight: 473
 pageID: 8362597
 aliases:
  - /old/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow.html
@@ -16,36 +16,23 @@ your switch state and performance metrics. An outside server, known as
 an *sFlow collector*, is required to collect and analyze this data.
 
 `hsflowd` is the daemon that samples and sends sFlow data to configured
-collectors. `hsflowd` is not included in the base Cumulus Linux
-installation. After installation, `hsflowd` will automatically start
-when the switch boots up.
-
-## Install hsflowd
-
-To download and install the `hsflowd` package, use `apt-get`:
-
-``` 
-                   
-cumulus@switch:~$ sudo -E apt-get update
-cumulus@switch:~$ sudo -E apt-get install -y hsflowd
-   
-    
-```
+collectors. By default, `hsflowd` is disabled and does *not* start
+automatically when the switch boots up.
 
 ## Configure sFlow
 
-You can configure `hsflowd` to send to the designated collectors via two
-methods:
+To configure `hsflowd` to send to the designated collectors, either:
 
-  - DNS service discovery (DNS-SD)
+  - Use DNS service discovery (DNS-SD)
 
-  - Manually configuring `/etc/hsflowd.conf`
+  - Manually configure the `/etc/hsflowd.conf` file
 
 ### Configure sFlow via DNS-SD
 
-With this method, you need to configure your DNS zone to advertise the
-collectors and polling information to all interested clients. Add the
-following content to the zone file on your DNS server:
+You can configure your DNS zone to advertise the collectors and polling
+information to all interested clients.
+
+Add the following content to the zone file on your DNS server:
 
 ``` 
                    
@@ -69,7 +56,7 @@ counters every 20 seconds and sample 1 out of every 2048 packets.
 {{%notice note%}}
 
 The maximum samples per second delivered from the hardware is limited to
-16K. You can configure the number of samples per scond in the
+16K. You can configure the number of samples per second in the
 `/etc/cumulus/datapath/traffic.conf` file, as shown below:
 
 ``` 
@@ -84,8 +71,7 @@ The maximum samples per second delivered from the hardware is limited to
 
 {{%/notice%}}
 
-After the initial configuration is ready, bring up the sFlow daemon by
-running:
+Start the sFlow daemon:
 
 ``` 
                    
@@ -98,8 +84,8 @@ No additional configuration is required in `/etc/hsflowd.conf`.
 
 ### Manually Configure /etc/hsflowd.conf
 
-With this method you will set up the collectors and variables on each
-switch.
+You can configure the `/etc/hsflowd.conf` file to set up the collectors
+and variables on each switch.
 
 Edit `/etc/hsflowd.conf` and change *DNSSD = on* to *DNSSD = off*:
 
@@ -110,7 +96,8 @@ DNSSD = off
     
 ```
 
-Then set up your collectors and sampling rates in `/etc/hsflowd.conf`:
+Set up your collectors and sampling rates in the `/etc/hsflowd.conf`
+file:
 
 ``` 
                    
@@ -138,15 +125,15 @@ Then set up your collectors and sampling rates in `/etc/hsflowd.conf`:
 ```
 
 This configuration polls the counters every 20 seconds, samples 1 of
-every 2048 packets and sends this information to a collector at
+every 2048 packets, and sends this information to a collector at
 192.0.2.100 on port 6343 and to another collector at 192.0.2.200 on port
 6344.
 
 {{%notice note%}}
 
 Some collectors require each source to transmit on a different port,
-others may listen on only one port. Please refer to the documentation
-for your collector for more information.
+others listen on only one port. Refer to the documentation for your
+collector for more information.
 
 {{%/notice%}}
 

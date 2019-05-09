@@ -1,7 +1,7 @@
 ---
 title: OVSDB Server High Availability
 author: Unknown
-weight: 417
+weight: 395
 pageID: 8362860
 aliases:
  - /old/OVSDB_Server_High_Availability.html

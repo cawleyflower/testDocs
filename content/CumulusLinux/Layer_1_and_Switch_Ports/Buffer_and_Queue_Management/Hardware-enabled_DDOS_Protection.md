@@ -1,7 +1,7 @@
 ---
 title: Hardware-enabled DDOS Protection
 author: Unknown
-weight: 333
+weight: 323
 pageID: 8363034
 aliases:
  - /old/Hardware-enabled_DDOS_Protection.html

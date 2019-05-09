@@ -285,9 +285,9 @@ To see which services are needed for networking, run:
 <tr class="odd">
 <td><pre><code>cumulus@switch:~$ systemctl list-dependencies --after network.target
 network.target</code></pre>
-<p>● <code>├─switchd.service</code><br />
-● <code>├─wd_keepalive.service</code><br />
-● <code>└─network-pre.target</code></p></td>
+<p><strong>●</strong> <code>├─switchd.service</code><br />
+<strong>●</strong> <code>├─wd_keepalive.service</code><br />
+<strong>●</strong> <code>└─network-pre.target</code></p></td>
 </tr>
 </tbody>
 </table>
@@ -303,11 +303,11 @@ To identify the services needed for a multi-user environment, run:
 <td><pre><code>cumulus@switch:~$ systemctl list-dependencies --before multi-user.target
 multi-user.target</code></pre>
 <p><code>● ├─bootlog.service</code><br />
-● <code>├─systemd-readahead-done.service</code><br />
-● <code>├─systemd-readahead-done.timer</code><br />
-● <code>├─systemd-update-utmp-runlevel.service</code><br />
-● <code>└─graphical.target</code><br />
-● <code>└─systemd-update-utmp-runlevel.service</code></p></td>
+<strong>●</strong> <code>├─systemd-readahead-done.service</code><br />
+<strong>●</strong> <code>├─systemd-readahead-done.timer</code><br />
+<strong>●</strong> <code>├─systemd-update-utmp-runlevel.service</code><br />
+<strong>●</strong> <code>└─graphical.target</code><br />
+<strong>●</strong> <code>└─systemd-update-utmp-runlevel.service</code></p></td>
 </tr>
 </tbody>
 </table>

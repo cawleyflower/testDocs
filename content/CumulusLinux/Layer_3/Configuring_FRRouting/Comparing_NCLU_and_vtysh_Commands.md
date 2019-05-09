@@ -1,7 +1,7 @@
 ---
 title: Comparing NCLU and vtysh Commands
 author: Unknown
-weight: 441
+weight: 419
 pageID: 8362920
 aliases:
  - /old/Comparing_NCLU_and_vtysh_Commands.html

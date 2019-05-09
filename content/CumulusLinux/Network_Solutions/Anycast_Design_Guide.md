@@ -1,7 +1,7 @@
 ---
 title: Anycast Design Guide
 author: Unknown
-weight: 269
+weight: 257
 pageID: 8363010
 aliases:
  - /old/Anycast_Design_Guide.html

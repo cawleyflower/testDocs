@@ -1,7 +1,7 @@
 ---
 title: VXLAN Active-Active Mode
 author: Unknown
-weight: 153
+weight: 147
 pageID: 8362725
 aliases:
  - /old/VXLAN_Active-Active_Mode.html
@@ -862,11 +862,3 @@ mode can function correctly.
         
           - [OVSDB Server High
             Availability](/old/OVSDB_Server_High_Availability.html)
-    
-      - [VXLAN Tunnel DSCP Operations
-        — DRAFT](/old/VXLAN_Tunnel_DSCP_Operations_—%C2%A0DRAFT.html)
-    
-      - [Eng Update of VXLAN
-        Hyperloop](/old/Eng_Update_of_VXLAN_Hyperloop.html)
-    
-      - [VXLAN Active-Active](/old/VXLAN_Active-Active.html)

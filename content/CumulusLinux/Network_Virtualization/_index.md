@@ -5,8 +5,6 @@ weight: 21
 pageID: 8362704
 aliases:
  - /old/Network_Virtualization.html
-topSection: true
-
 ---
 # Network Virtualization
 
@@ -14,9 +12,9 @@ Cumulus Linux supports these forms of [network
 virtualization](http://en.wikipedia.org/wiki/Network_virtualization):
 
   - [Static VXLAN Configurations](/old/Static_VXLAN_Configurations.html)
-
+    
       - [Static VXLAN Tunnels](/old/Static_VXLAN_Tunnels.html)
-
+    
       - [Static MAC Bindings with
         VXLAN](/old/Static_MAC_Bindings_with_VXLAN.html)
 
@@ -25,7 +23,7 @@ virtualization](http://en.wikipedia.org/wiki/Network_virtualization):
 
   - [Lightweight Network Virtualization
     Overview](/old/Lightweight_Network_Virtualization_Overview.html)
-
+    
       - [LNV Full Example](/old/LNV_Full_Example.html)
 
   - [VXLAN Active-Active Mode](/old/VXLAN_Active-Active_Mode.html)
@@ -40,26 +38,18 @@ virtualization](http://en.wikipedia.org/wiki/Network_virtualization):
   - [Troubleshooting VXLANs](/old/Troubleshooting_VXLANs.html)
 
   - [Virtualization Integrations](/old/Virtualization_Integrations.html)
-
+    
       - [Integrating Hardware VTEPs with Midokura MidoNet and
         OpenStack](/old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
-
+    
       - [Integrating Hardware VTEPs with VMware
         NSX-V](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
-
+    
       - [Integrating Hardware VTEPs with VMware
         NSX-MH](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
-
+    
       - [OVSDB Server High
         Availability](/old/OVSDB_Server_High_Availability.html)
-
-  - [VXLAN Tunnel DSCP Operations
-    — DRAFT](/old/VXLAN_Tunnel_DSCP_Operations_—%C2%A0DRAFT.html)
-
-  - [Eng Update of VXLAN
-    Hyperloop](/old/Eng_Update_of_VXLAN_Hyperloop.html)
-
-  - [VXLAN Active-Active](/old/VXLAN_Active-Active.html)
 
 *VXLAN* (Virtual Extensible LAN) is a standard overlay protocol that
 abstracts logical virtual networks from the physical network underneath.
@@ -126,6 +116,12 @@ should be 50 bytes smaller than the MTU for the physical interfaces on
 the switch. For more information on setting MTU, read [Layer 1 and
 Switch Port
 Attributes](/old/Switch_Port_Attributes.html#src-8363026_SwitchPortAttributes-mtu_vxlan).
+
+### VLANs and VXLANs Cannot Share the Same ID
+
+The layer 3 VNI and layer 2 VNI cannot share the same number space; that
+is, you cannot have *vlan10* and *vxlan10*, for example. Otherwise, the
+layer 2 VNI does not get created.
 
 ## Useful Links
 

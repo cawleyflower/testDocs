@@ -17,10 +17,6 @@ Image](/old/Installing_a_New_Cumulus_Linux_Image.html). For information
 on upgrading Cumulus Linux, refer to [Upgrading Cumulus
 Linux](/old/Upgrading_Cumulus_Linux.html).
 
-Contents
-
-This topic describes ...
-
 ## Determine the Switch Platform
 
 To determine if your switch is on an x86 or ARM platform, run the `uname

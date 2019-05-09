@@ -1,7 +1,7 @@
 ---
 title: Hybrid Cloud Connectivity with QinQ and VXLANs
 author: Unknown
-weight: 159
+weight: 153
 pageID: 8362784
 aliases:
  - /old/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html
@@ -349,16 +349,19 @@ custB-20-azr    8000.00020000004b       yes             swp3.200.20
 
 {{%notice info%}}
 
-You can try this out without the bridge being VXLAN-enabled. The
-configuration would look something like this:
+If the bridge is not VXLAN-enabled, the configuration looks like this:
 
 ``` 
                    
+auto swp5.100
+iface swp5.100
+    vlan-protocol 802.1ad
+ 
 auto swp5.100.10
 iface swp5.100.10
     mstpctl-portbpdufilter yes
     mstpctl-bpduguard yes
- 
+ 
 auto br10
 iface br10
     bridge-ports swp3.10  swp4  swp5.100.10

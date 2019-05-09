@@ -1,7 +1,7 @@
 ---
 title: Docker on Cumulus Linux
 author: Unknown
-weight: 265
+weight: 253
 pageID: 8362980
 aliases:
  - /old/Docker_on_Cumulus_Linux.html

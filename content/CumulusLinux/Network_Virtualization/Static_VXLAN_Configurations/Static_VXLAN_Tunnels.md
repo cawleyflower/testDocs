@@ -1,7 +1,7 @@
 ---
 title: Static VXLAN Tunnels
 author: Unknown
-weight: 385
+weight: 363
 pageID: 8362793
 aliases:
  - /old/Static_VXLAN_Tunnels.html

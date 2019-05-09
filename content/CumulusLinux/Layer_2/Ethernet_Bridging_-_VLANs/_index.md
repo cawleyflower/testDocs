@@ -1,7 +1,7 @@
 ---
 title: Ethernet Bridging - VLANs
 author: Unknown
-weight: 123
+weight: 121
 pageID: 8362655
 aliases:
  - /old/Ethernet_Bridging_-_VLANs.html

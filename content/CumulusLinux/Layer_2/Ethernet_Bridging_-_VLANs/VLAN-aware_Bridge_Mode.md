@@ -1,7 +1,7 @@
 ---
 title: VLAN-aware Bridge Mode
 author: Unknown
-weight: 357
+weight: 347
 pageID: 8362673
 aliases:
  - /old/VLAN-aware_Bridge_Mode.html
@@ -691,7 +691,7 @@ iface lo inet loopback
  
 auto bridge
 iface bridge
-    bridge-ports uplink regex vni.*
+    bridge-ports uplink vni-10000
     bridge-pvid 1
     bridge-vids 1-100
     bridge-vlan-aware yes

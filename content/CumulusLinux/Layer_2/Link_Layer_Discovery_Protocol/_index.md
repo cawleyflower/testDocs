@@ -1,7 +1,7 @@
 ---
 title: Link Layer Discovery Protocol
 author: Unknown
-weight: 119
+weight: 117
 pageID: 8362650
 aliases:
  - /old/Link_Layer_Discovery_Protocol.html

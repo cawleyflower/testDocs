@@ -1,7 +1,7 @@
 ---
 title: Single User Mode - Boot Recovery
 author: Unknown
-weight: 227
+weight: 215
 pageID: 8362606
 aliases:
  - /old/Single_User_Mode_-_Boot_Recovery.html
@@ -12,7 +12,7 @@ Use single user mode to assist in troubleshooting system boot issues or
 for password recovery. To enter single user mode, follow the steps
 below.
 
-1.  Boot the switch, as soon as you see the GRUB menu.
+1.  Boot the switch as soon as you see the GRUB menu.
     
     ``` 
                        

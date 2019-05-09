@@ -1,7 +1,7 @@
 ---
 title: Upgrading from Quagga to FRRouting
 author: Unknown
-weight: 429
+weight: 407
 pageID: 8362918
 aliases:
  - /old/Upgrading_from_Quagga_to_FRRouting.html

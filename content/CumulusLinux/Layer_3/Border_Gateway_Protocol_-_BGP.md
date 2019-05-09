@@ -1,7 +1,7 @@
 ---
 title: Border Gateway Protocol - BGP
 author: Unknown
-weight: 197
+weight: 185
 pageID: 8362926
 aliases:
  - /old/Border_Gateway_Protocol_-_BGP.html
@@ -1612,9 +1612,10 @@ No IPv6 neighbor is configured
 
 {{%notice note%}}
 
-The MD5 password configured against a BGP listen-range peer-group (used
-to accept and create dynamic BGP neighbors) is not enforced. This means
-that connections are accepted from peers that do not specify a password.
+In Cumulus Linux 3.7.5 and earlier, the MD5 password configured against
+a BGP listen-range peer-group (used to accept and create dynamic BGP
+neighbors) is not enforced. This means that connections are accepted
+from peers that do not specify a password.
 
 {{%/notice%}}
 

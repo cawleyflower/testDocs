@@ -1,7 +1,7 @@
 ---
 title: Management VRF
 author: Unknown
-weight: 209
+weight: 197
 pageID: 8362940
 aliases:
  - /old/Management_VRF.html
@@ -52,6 +52,8 @@ The example NCLU commands below create a VRF called *mgmt*:
 
 <div class="confbox admonition admonition-note">
 
+<span class="admonition-icon confluence-information-macro-icon"></span>
+
 <div class="admonition-body">
 
 The management VRF must be named `mgmt` to differentiate from a data
@@ -94,6 +96,8 @@ iface mgmt
 ```
 
 <div class="confbox admonition admonition-note">
+
+<span class="admonition-icon confluence-information-macro-icon"></span>
 
 <div class="admonition-body">
 
@@ -358,14 +362,13 @@ following steps to enable sFlow.
 
 By default, when you issue a `ping` or `traceroute`, the packet is sent
 to the dataplane network (the main routing table). To use `ping` or
-`traceroute` on the management network, use `ip vrf exec <vrf-name>` to
-choose the VRF where you want the command to run, followed by the
-utility you want to run. To select a source address within the selected
-VRF, use the `-I` flag for `ping` and `-s` for `traceroute`.
+`traceroute` on the management network, use `ping -I mgmt` or
+`traceroute -i mgmt`. To select a source address within the management
+VRF, use the `-s` flag for `traceroute`.
 
 ``` 
                    
-cumulus@switch:~$ sudo ip vrf exec mgmt ping -I 192.168.0.10 
+cumulus@switch:~$ ping -I 
    
     
 ```
@@ -374,10 +377,13 @@ Or:
 
 ``` 
                    
-cumulus@switch:~$ sudo ip vrf exec mgmt traceroute -s 192.168.0.10 
+cumulus@switch:~$ traceroute -s  
    
     
 ```
+
+For additional information on using `ping` and `traceroute`, see the
+[Network Troubleshooting chapter](/old/Network_Troubleshooting.html).
 
 ### Run Services as a Non-root User
 
