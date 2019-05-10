@@ -5,8 +5,6 @@
 @import "syntax";
 @import "notices";
 
-
-
 html {
   font-size: $font-size-base;
   letter-spacing: 0.31px;
@@ -62,7 +60,7 @@ img {
   vertical-align: middle;
 }
 
-
+//Menu Styles and Expand/Collapse
 aside nav ul {
   padding: 0;
   margin: 0;
@@ -107,6 +105,7 @@ aside nav ul {
 
 
 
+
 ul.pagination {
   display: flex;
   justify-content: center;
@@ -116,30 +115,21 @@ ul.pagination {
   }
 }
 
-main.flex.container {
-  margin: 0 0;
-  height: 100%;
-  flex-basis: max-content;
-}
-
 .book-brand {
   margin-top: 0;
 }
 
 .book-menu {
-  background-color: $nav-background;
   flex: 0 0 $menu-width;
   font-size: $font-size-14;
-
+  overflow-y: scroll;
   nav {
+    background-color: $nav-background;
     width: $menu-width;
     padding: $padding-8;
     a{
       display: block;
-
     }
-    @include fixed;
-
   }
 
   @include dark-links;
@@ -172,13 +162,19 @@ main.flex.container {
 .book-toc {
   flex: 0 0 $toc-width;
   font-size: $font-size-12;
-  background-color: $nav-background;
 
   nav {
     width: $toc-width;
     padding: $padding-16;
+    background-color: $nav-background;
+    position: fixed;
+    top: inherit;
+    overflow-x: hidden;
+    overflow-y: scroll;
 
-    @include fixed;
+    >ul>li>a:first-of-type{
+      font-weight: 400;
+    }
   }
 
   nav > ul > li {
