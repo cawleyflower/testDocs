@@ -1,7 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Cumulus Networks Documentation"
-theme = "netDocs"
+theme = ["netDocs", "book"]
 
 #URL fixes
 

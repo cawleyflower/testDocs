@@ -1,5 +1,6 @@
 ---
 title: "Cumulus Networks Documentation Home"
+layout: baseof
 aliases:
  - /old/Adding_and_Updating_Packages.html
 ---

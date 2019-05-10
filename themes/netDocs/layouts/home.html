@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{{- partial "docs/shared" -}}
+<html lang="{{ .Site.Language.Lang }}">
+
+<head>
+  {{ partial "docs/html-head" . }}
+  {{ partial "docs/inject/head" . }}
+</head>
+
+<body>
+  <main class="flex justify-center">
+
+    <div class="book-home markdown">
+      {{ .Content }}
+    </div>
+  </main>
+
+  {{ partial "docs/inject/body" . }}
+  {{ template "_internal/google_analytics_async.html" . }}
+</body>
+
+</html>
