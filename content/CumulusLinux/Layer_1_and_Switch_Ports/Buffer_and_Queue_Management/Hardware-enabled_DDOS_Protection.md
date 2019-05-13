@@ -122,7 +122,7 @@ Spectrum ASICs.
 
     ```
 
-    {{%notice note%}}
+    {{% notice note %}}
 
     Configuring any of the following settings affects the [BFD
     echo](/old/Bidirectional_Forwarding_Detection_-_BFD.html) function.
@@ -146,7 +146,7 @@ Spectrum ASICs.
 
     dos.udp\_ports\_eq
 
-    {{%/notice%}}
+    {{% /notice %}}
 
 4.  Restart `switchd` to enable DDOS protection:
 
@@ -156,5 +156,3 @@ Spectrum ASICs.
 
 
     ```
-
-End of Article

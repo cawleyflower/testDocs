@@ -5,7 +5,7 @@ theme = ["netDocs", "book"]
 
 #URL fixes
 
-
+[Params]
 #Book configuration
 disablePathToLower = true
 enableGitInfo= true
@@ -13,8 +13,6 @@ enableGitInfo= true
 #Syntax Highlighting
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-
-[params]
 
 ##Menu Params
 #sectionPagesMenu = main
