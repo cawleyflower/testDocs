@@ -3,6 +3,9 @@ title: Cumulus Linux 3.7
 author: Unknown
 weight: -1
 pageID:
+aliases:
+- /old/Cumulus_Linux.html
+
 ---
 # Cumulus Linux 3.7 Documentation
 

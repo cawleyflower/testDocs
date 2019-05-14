@@ -5,7 +5,6 @@ weight: 1
 pageID: 8362527
 aliases:
  - /old/Cumulus_Linux_User_Guide.html
- - /old/Cumulus_Linux.html
 ---
 # Cumulus Linux User Guide
 
