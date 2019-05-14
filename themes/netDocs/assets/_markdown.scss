@@ -39,13 +39,13 @@ $block-border-radius: 0.15rem;
     //font-family: 'Oxygen Mono', monospace;
 
     padding: 0 0;
-    background: $gray-300;
+  //  background: $cn-heather;
     border-radius: $block-border-radius;
   }
 
   pre {
     padding: $padding-16;
-    background: $gray-300;
+    background: $code-block-background;
     border-radius: $block-border-radius;
     font-size: $font-size-14;
     overflow-x: auto;
