@@ -29,11 +29,12 @@ guide](https://support.cumulusnetworks.com/hc/en-us/articles/201787636)
 to compare the Cumulus Linux CLI and configuration options, and their
 equivalent Cisco Nexus 3000 NX-OS commands and settings. You can also
 [watch a series of short
-videos](http://cumulusnetworks.com/technical-videos/) introducing you to
+videos](https://cumulusnetworks.com/technical-videos/) introducing you to
 Linux and Cumulus Linux-specific concepts.
 
 
 {{%/notice%}}
+
 
 ## Install Cumulus Linux
 

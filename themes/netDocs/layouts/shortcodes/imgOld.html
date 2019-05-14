@@ -1,3 +1,5 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+
 {{$ind := int (.Get 0)}}
 {{$pgid := string $.Page.Params.pageID}}
 {{$pg := index $.Site.Data.images.imgs $pgid }}
