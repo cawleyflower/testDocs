@@ -12,13 +12,21 @@ In order to run the site locally
 
 2. Verify Hugo is installed with `hugo version`
 
-3. Clone this repository
+3. Clone this repository with `git clone`
 
-4. Navigate to the testDocs directory
+  - Note the site is dependent on the Book theme,
+  added as a submodule in the /themes directory
 
-5. Start the hugo server with `hugo server`
+4. run `git submodule init`
 
-The site will be available at http://localhost:1313
+5. run `git submodule update`
+
+6. Navigate to the testDocs directory
+
+ 7. Start the hugo server with `hugo server`
+
+The site will be available at http://localhost:1313,
+hugo will watch and rebuild the site with any changes to the repo. 
 
 
 ## Content with Hugo
@@ -56,7 +64,7 @@ Hugo uses these parameters in the generation of the site.
 
 ### Organization
 
-Content is ordered by the weight parameter in the front matter. Hugo arranges lower weights first, and is relative per section.  
+Content is ordered by the weight parameter in the front matter. Hugo arranges lower weights first, and is relative per section.
 Articles with `draft: true` in the front matter will not be built when hugo server is run.
 Use `hugo server -D` to include drafts.
 
