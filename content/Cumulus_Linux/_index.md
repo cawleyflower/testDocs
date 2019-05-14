@@ -4,8 +4,7 @@ author: Unknown
 weight: -1
 pageID:
 aliases:
-- /old/CumulusLinux.html
-- /old/Cumulus_NetQ_2.1.html
+- /old/Cumulus_Linux.html
 
 ---
 # Cumulus Linux 3.7 Documentation
