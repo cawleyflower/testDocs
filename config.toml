@@ -1,7 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Cumulus Networks Documentation"
-theme = ["netDocs", "book"]
+theme =["netDocs", "book"]
 
 #URL fixes
 
@@ -57,3 +57,9 @@ showVisitedLinks = true
 
 [blackfriday]
 hrefTargetBlank = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  publication_type = "publication_types"
+  author = "authors"

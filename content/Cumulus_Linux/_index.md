@@ -3,6 +3,10 @@ title: Cumulus Linux 3.7
 author: Unknown
 weight: -1
 pageID:
+aliases:
+- /old/CumulusLinux.html
+- /old/Cumulus_NetQ_2.1.html
+
 ---
 # Cumulus Linux 3.7 Documentation
 

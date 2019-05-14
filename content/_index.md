@@ -9,7 +9,7 @@ aliases:
 
 ## Products
 
-[Cumulus Linux 3.7](/CumulusLinux)
+[Cumulus Linux 3.7](/old/Cumulus_Linux.html)
 
 
-[Cumulus NetQ 2.1](/NetQ)
+[Cumulus NetQ 2.1](/old/Cumulus_NetQ_2.1.html)

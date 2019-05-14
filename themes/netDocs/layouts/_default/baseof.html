@@ -19,7 +19,7 @@
       {{ partial "docs/mobile-header" . }}
       {{ template "main" . }}
       {{ partial "docs/git-footer" . }}
-
+      {{ partial "docs/inject/footer" . }}
     </div>
 
     {{ template "toc" . }}
@@ -28,5 +28,5 @@
   {{ partial "docs/inject/body" . }}
   {{ template "_internal/google_analytics_async.html" . }}
 </body>
-  {{ partial "docs/inject/footer" . }}
+
 </html>
