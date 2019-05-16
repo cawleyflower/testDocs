@@ -8,9 +8,9 @@ $padding-16: 1rem;
 
 $cumulus-font-family: "Gotham A", "Gotham B", "Helvetica", sans-serif;
 $font-size-base: 17px;
-$font-size-12: 0.75rem;
-$font-size-14: 0.875rem;
-$font-size-16: 1rem;
+$font-size-12: 0.70rem;
+$font-size-14: 0.823rem;
+$font-size-16: 0.941;
 
 // Grayscale
 $white: #ffffff;
@@ -42,6 +42,9 @@ $cn-radical-red :  #f1446f ;
 $cn-rarity :  #83389b ;
 $cn-seagull :  #1eb5bd  ;
 $cn-halfbaked :  #78cdd1 ;
+$cn-aquahaze: #f6f8fa;
+$cn-raven: #75828C;
+$cn-mystic: #e0e4ec;
 
 
 $color-link: $cn-jade;
@@ -57,12 +60,12 @@ $code-block-background: $cn-athens-gray;
 
 
 
-$nav-background: $cn-heather ;
+$nav-background: $cn-aquahaze ;
 $nav-link-color: $cn-limited-spruce;
 
 $header-height: 3.5rem;
-$menu-width: 20rem;
-$toc-width: 14rem;
+$menu-width: 18.53rem;
+$toc-width: 14.647rem;
 
 $container-min-width: $body-min-width;
 $container-max-width: 130rem;

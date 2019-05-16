@@ -83,7 +83,7 @@ aside nav ul {
   }
 
   li {
-    margin: 1em 0;
+    margin: 1.3em 0;
   }
 
   a {
@@ -99,7 +99,7 @@ aside nav ul {
 
   ul {
     padding-left: 3px;
-    margin-left: 10px;
+    margin-left: 15px;
   }
 }
 
@@ -117,6 +117,7 @@ ul.pagination {
 
 .book-brand {
   margin-top: 0;
+  display: none;
 }
 
 .book-menu {
@@ -125,10 +126,18 @@ ul.pagination {
   overflow-y: scroll;
   nav {
     background-color: $nav-background;
+    font-family: $cumulus-font-family;
+    font-weight: 400;
     width: $menu-width;
-    padding: $padding-8;
+    height: 100%;
+    padding: 2.2rem 1.2rem;
     a{
       display: block;
+    }
+    .expand {
+      .menuControl {
+        transform: rotate(-90deg);
+      }
     }
   }
 
@@ -150,7 +159,7 @@ ul.pagination {
 .book-page {
   min-width: $body-min-width;
   flex-grow: 1;
-  padding: $padding-16;
+  padding: 3.74rem 2.7rem;
   overflow-x: scroll;
 }
 
@@ -160,21 +169,33 @@ ul.pagination {
 }
 
 .book-toc {
+  border-left: 1px solid $cn-mystic;
   flex: 0 0 $toc-width;
   font-size: $font-size-12;
 
   nav {
     width: $toc-width;
     padding: $padding-16;
-    background-color: $nav-background;
+    background-color: transparent;
     position: fixed;
     top: inherit;
     overflow-x: hidden;
     overflow-y: scroll;
 
-    >ul>li>a:first-of-type{
+    a {
+      color: $cn-rolling-stone;
       font-weight: 400;
+      line-height: 22px;
     }
+
+    >ul>li>a:first-of-type{
+      color: $cn-jade;
+      font-weight: 600;
+    }
+  }
+
+  nav ul li {
+    margin: 1em;
   }
 
   nav > ul > li {
@@ -227,6 +248,8 @@ ul.pagination {
   padding-right: 5px;
   padding-bottom: 5px;
   color: $cn-limited-spruce;
+  position: relative;
+  top: -9px;
 }
 
 .menuControl.empty{
