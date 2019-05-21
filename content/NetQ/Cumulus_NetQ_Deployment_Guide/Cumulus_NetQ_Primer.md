@@ -4,7 +4,8 @@ author: Unknown
 weight: 63
 pageID: 10456102
 aliases:
- - /old/Cumulus_NetQ_Primer.html
+ - /old/Cumulus_NetQ/Cumulus_NetQ_Primer.html
+imgData: Cumulus_NetQ
 ---
 # Cumulus NetQ Primer
 
@@ -55,8 +56,7 @@ have a network-wide view of the overlay network, can correlate events
 with what is happening now or in the past, and have real-time data to
 fill out the complete picture of your network health and operation.
 
-In
-summary:
+In summary:
 
 | Without NetQ                               | With NetQ                                                           |
 | ------------------------------------------ | ------------------------------------------------------------------- |
@@ -156,8 +156,7 @@ verified providing additional information. It discovers
 misconfigurations along all of the hops in one go, speeding the time to
 resolution.
 
-In
-summary:
+In summary:
 
 | Without NetQ                                            | With NetQ                                                            |
 | ------------------------------------------------------- | -------------------------------------------------------------------- |
@@ -492,8 +491,7 @@ errors or misconfigurations are present, using the `netq show bgp`
 command displays the BGP configuration on each device so that you can
 compare and contrast each device, looking for potential causes. `netq
 check` and `netq show` commands are available for numerous components
-and services as shown in the following
-table.
+and services as shown in the following table.
 
 | Component or Service | Check                                                                                                                                                                                                                      | Show                                                                                                                                                                                                                       | Component or Service | Check                                                                                                                                                                                                                      | Show                                                                                                                                                                                                                       |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -932,6 +930,6 @@ resides in `/etc/netq` by default.
 
 Log files are stored in `/var/logs/` by default.
 
-Refer to [Investigate NetQ Issues](/old/Investigate_NetQ_Issues.html)
-for a complete listing of configuration files and logs for use in issue
-resolution.
+Refer to [Investigate NetQ
+Issues](/old/Cumulus_NetQ/Investigate_NetQ_Issues.html) for a complete
+listing of configuration files and logs for use in issue resolution.

@@ -1,5 +1,4 @@
-let elesSections = document.querySelectorAll('.cn-book-section-container')
-elesSections.forEach(node => {
+document.querySelectorAll('.cn-book-section-container').forEach(node => {
   if(node.querySelector('.active') != null){
     node.setAttribute('class', '.cn-book-section-container expand')
   }else{

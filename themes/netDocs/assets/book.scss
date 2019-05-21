@@ -162,13 +162,14 @@ ul.pagination {
 .book-toc {
   flex: 0 0 $toc-width;
   font-size: $font-size-12;
+  background-color: $white ;
+  width: $toc-width;
+  padding: $padding-16;
+  top: inherit;
+  right :0;
 
   nav {
-    width: $toc-width;
-    padding: $padding-16;
-    background-color: $nav-background;
-    position: fixed;
-    top: inherit;
+
     overflow-x: hidden;
     overflow-y: scroll;
 

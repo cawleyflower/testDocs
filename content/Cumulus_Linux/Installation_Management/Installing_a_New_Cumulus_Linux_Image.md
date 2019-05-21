@@ -4,7 +4,8 @@ author: Unknown
 weight: 43
 pageID: 8362643
 aliases:
- - /old/Installing_a_New_Cumulus_Linux_Image.html
+ - /old/Cumulus_Linux/Installing_a_New_Cumulus_Linux_Image.html
+imgData: Cumulus_Linux
 ---
 # Installing a New Cumulus Linux Image
 
@@ -58,8 +59,8 @@ installation proceeds as follows:
 3.  ONIE downloads the Cumulus Linux disk image, installs, and reboots.
 
 4.  Success\! You are now running Cumulus Linux.
-
-{{% imgOld 0 %}}
+    
+    {{%imgOld 0 %}}
 
 {{%notice note%}}
 
@@ -77,26 +78,26 @@ both articles list more supported DHCP options.
 Here is an example DHCP configuration with an [ISC DHCP
 server](http://www.isc.org/downloads/dhcp/):
 
-```
-
+``` 
+                   
 subnet 172.0.24.0 netmask 255.255.255.0 {
   range 172.0.24.20 172.0.24.200;
   option default-url = "http://172.0.24.14/onie-installer-[PLATFORM]";
 }
-
-
+   
+    
 ```
 
 Here is an example DHCP configuration with
 [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html) (static address
 assignment):
 
-```
-
+``` 
+                   
 dhcp-host=sw4,192.168.100.14,6c:64:1a:00:03:ba,set:sw4
 dhcp-option=tag:sw4,114,"http://roz.rtplab.test/onie-installer-[PLATFORM]"
-
-
+   
+    
 ```
 
 If you do not have a web server, you can use [this free Apache
@@ -114,4 +115,4 @@ example](https://www.apachefriends.org/index.html).
     Stick](https://cumulusnetworks.com/cumulus-on-a-stick/)
 
   - [Managing Cumulus Linux Disk
-    Images](/old/Managing_Cumulus_Linux_Disk_Images.html)
+    Images](/old/Cumulus_Linux/Managing_Cumulus_Linux_Disk_Images.html)

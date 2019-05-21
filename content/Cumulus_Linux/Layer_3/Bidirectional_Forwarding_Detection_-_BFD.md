@@ -4,7 +4,8 @@ author: Unknown
 weight: 189
 pageID: 8362938
 aliases:
- - /old/Bidirectional_Forwarding_Detection_-_BFD.html
+ - /old/Cumulus_Linux/Bidirectional_Forwarding_Detection_-_BFD.html
+imgData: Cumulus_Linux
 ---
 # Bidirectional Forwarding Detection - BFD
 
@@ -57,9 +58,9 @@ sessions:
 
 You configure BFD one of two ways: by specifying the configuration in
 the [PTM `topology.dot`
-file](/old/Prescriptive_Topology_Manager_-_PTM.html), or using
-[FRRouting](/old/FRRouting_Overview.html). However, the topology file
-has some limitations:
+file](/old/Cumulus_Linux/Prescriptive_Topology_Manager_-_PTM.html), or
+using [FRRouting](/old/Cumulus_Linux/FRRouting_Overview.html). However,
+the topology file has some limitations:
 
   - The `topology.dot` file supports creating BFD IPv4 and IPv6 single
     hop sessions only; you cannot specify IPv4 or IPv6 multihop sessions
@@ -73,7 +74,8 @@ has some limitations:
 
 You cannot specify BFD multihop sessions in the `topology.dot` file
 since you cannot specify the source and destination IP address pairs in
-that file. Use [FRRouting](/old/Configuring_FRRouting.html) to configure
+that file. Use
+[FRRouting](/old/Cumulus_Linux/Configuring_FRRouting.html) to configure
 multihop sessions.
 
 {{%/notice%}}
@@ -107,7 +109,8 @@ table before BFD can start sending control packets.
 ## BFD in BGP
 
 For FRRouting when using **BGP**, neighbors are registered and
-de-registered with [PTM](/old/Prescriptive_Topology_Manager_-_PTM.html)
+de-registered with
+[PTM](/old/Cumulus_Linux/Prescriptive_Topology_Manager_-_PTM.html)
 dynamically when you enable BFD in BGP using `net add bgp neighbor
 <neighbor|IP|interface> bfd`. For example:
 
@@ -173,12 +176,13 @@ cumulus@switch:~$ net commit
 ## BFD in OSPF
 
 For FRRouting using **OSFP**, neighbors are registered and de-registered
-dynamically with [PTM](/old/Prescriptive_Topology_Manager_-_PTM.html)
-when you enable or disable BFD in OSPF. A neighbor is registered with
-BFD when two-way adjacency is established and deregistered when
-adjacency goes down if the BFD is enabled on the interface. The BFD
-configuration is per interface and any IPv4 and IPv6 neighbors
-discovered on that interface inherit the configuration.
+dynamically with
+[PTM](/old/Cumulus_Linux/Prescriptive_Topology_Manager_-_PTM.html) when
+you enable or disable BFD in OSPF. A neighbor is registered with BFD
+when two-way adjacency is established and deregistered when adjacency
+goes down if the BFD is enabled on the interface. The BFD configuration
+is per interface and any IPv4 and IPv6 neighbors discovered on that
+interface inherit the configuration.
 
 ``` 
                     BFD in OSPF

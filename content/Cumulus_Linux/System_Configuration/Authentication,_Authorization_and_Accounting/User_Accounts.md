@@ -4,7 +4,8 @@ author: Unknown
 weight: 275
 pageID: 8362553
 aliases:
- - /old/User_Accounts.html
+ - /old/Cumulus_Linux/User_Accounts.html
+imgData: Cumulus_Linux
 ---
 # User Accounts
 
@@ -23,10 +24,10 @@ The *cumulus* account:
   - Is a user account in the *sudo* group with sudo privileges.
 
   - Can log in to the system through all the usual channels, such as
-    console and [SSH](/old/SSH_for_Remote_Access.html).
+    console and [SSH](/old/Cumulus_Linux/SSH_for_Remote_Access.html).
 
   - Along with the cumulus group, has both show and edit rights for
-    [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html).
+    [NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html).
 
 The *root* account:
 
@@ -42,15 +43,16 @@ command before you configure Cumulus Linux on the switch.
 
 You can add additional user accounts as needed. Like the *cumulus*
 account, these accounts must use `sudo` to [execute privileged
-commands](/old/Using_sudo_to_Delegate_Privileges.html); be sure to
-include them in the *sudo* group.
+commands](/old/Cumulus_Linux/Using_sudo_to_Delegate_Privileges.html); be
+sure to include them in the *sudo* group.
 
 To access the switch without a password, you need to [boot into a single
-shell/user mode](/old/Single_User_Mode_-_Boot_Recovery.html).
+shell/user
+mode](/old/Cumulus_Linux/Single_User_Mode_-_Boot_Recovery.html).
 
 You can add and configure user accounts in Cumulus Linux with read-only
 or edit permissions for NCLU. For more information, see [Configure User
-Accounts](/old/Network_Command_Line_Utility_-_NCLU.html#src-8362580_NetworkCommandLineUtility-NCLU-configure-user-accounts).
+Accounts](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html#src-8362580_NetworkCommandLineUtility-NCLU-configure-user-accounts).
 
 ## Enable Remote Access for the root User
 

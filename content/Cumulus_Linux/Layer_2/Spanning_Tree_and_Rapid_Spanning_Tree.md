@@ -4,7 +4,8 @@ author: Unknown
 weight: 115
 pageID: 8362689
 aliases:
- - /old/Spanning_Tree_and_Rapid_Spanning_Tree.html
+ - /old/Cumulus_Linux/Spanning_Tree_and_Rapid_Spanning_Tree.html
+imgData: Cumulus_Linux
 ---
 # Spanning Tree and Rapid Spanning Tree
 
@@ -19,13 +20,13 @@ The STP modes Cumulus Linux supports vary depending upon whether the
 traditional or VLAN-aware bridge driver mode is in use.
 
   - Bridges configured in
-    *[VLAN-aware](/old/VLAN-aware_Bridge_Mode.html)* mode operate
-    **only** in RSTP mode.
+    *[VLAN-aware](/old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html)* mode
+    operate **only** in RSTP mode.
 
   - Bridges configured in [*traditional*
-    mode](/old/Traditional_Bridge_Mode.html) operate in both PVST and
-    PVRST mode. The default is set to PVRST. Each traditional bridge has
-    its own separate STP instance.
+    mode](/old/Cumulus_Linux/Traditional_Bridge_Mode.html) operate in
+    both PVST and PVRST mode. The default is set to PVRST. Each
+    traditional bridge has its own separate STP instance.
 
 ### STP for a VLAN-aware Bridge
 
@@ -118,7 +119,8 @@ learning states to move immediately to forwarding.
 
 Using PortAdminEdge mode has the potential to cause loops if it is not
 accompanied by the [BPDU
-guard](/old/#src-8362689_SpanningTreeandRapidSpanningTree-bpdu) feature.
+guard](/old/Cumulus_Linux/#src-8362689_SpanningTreeandRapidSpanningTree-bpdu)
+feature.
 
 {{%/notice%}}
 
@@ -158,9 +160,9 @@ iface swp5
 
 {{%notice info has%}}
 
-For a bridge in [traditional mode](/old/Ethernet_Bridging_-_VLANs.html),
-configure `PortAdminEdge` under the bridge stanza in
-`/etc/network/interfaces`:
+For a bridge in [traditional
+mode](/old/Cumulus_Linux/Ethernet_Bridging_-_VLANs.html), configure
+`PortAdminEdge` under the bridge stanza in `/etc/network/interfaces`:
 
 ``` 
                    
@@ -462,9 +464,9 @@ iface swp6
 interfaces, which can cause poor network performance.
 
 You configure storm control for each physical port by [configuring
-`switchd`](/old/Configuring_switchd.html). For example, to enable
-unicast and multicast storm control at 400 packets per second (pps) and
-3000 pps, respectively, for swp1, run the following:
+`switchd`](/old/Cumulus_Linux/Configuring_switchd.html). For example, to
+enable unicast and multicast storm control at 400 packets per second
+(pps) and 3000 pps, respectively, for swp1, run the following:
 
 ``` 
                    
@@ -492,7 +494,7 @@ article](https://support.cumulusnetworks.com/hc/en-us/articles/206908397).
 Most of these parameters are blacklisted in the `ifupdown_blacklist`
 section of the`  /etc/ ``netd.conf` file. Before you configure these
 parameters, you must [edit the
-file](/old/Network_Command_Line_Utility_-_NCLU.html#src-8362580_NetworkCommandLineUtility-NCLU-conf)
+file](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html#src-8362580_NetworkCommandLineUtility-NCLU-conf)
 to remove them from the blacklist.
 
 {{%/notice%}}

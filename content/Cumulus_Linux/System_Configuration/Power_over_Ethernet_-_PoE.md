@@ -4,7 +4,8 @@ author: Unknown
 weight: 75
 pageID: 8362576
 aliases:
- - /old/Power_over_Ethernet_-_PoE.html
+ - /old/Cumulus_Linux/Power_over_Ethernet_-_PoE.html
+imgData: Cumulus_Linux
 ---
 # Power over Ethernet - PoE
 

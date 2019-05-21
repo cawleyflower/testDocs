@@ -4,7 +4,8 @@ author: Unknown
 weight: 117
 pageID: 8362650
 aliases:
- - /old/Link_Layer_Discovery_Protocol.html
+ - /old/Cumulus_Linux/Link_Layer_Discovery_Protocol.html
+imgData: Cumulus_Linux
 ---
 # Link Layer Discovery Protocol
 

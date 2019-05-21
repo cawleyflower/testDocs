@@ -4,20 +4,21 @@ author: Unknown
 weight: 147
 pageID: 8362725
 aliases:
- - /old/VXLAN_Active-Active_Mode.html
+ - /old/Cumulus_Linux/VXLAN_Active-Active_Mode.html
+imgData: Cumulus_Linux
 ---
 # VXLAN Active-Active Mode
 
 *VXLAN active-active mode* allows a pair of
-[MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html) switches to act
-as a single VTEP, providing active-active VXLAN termination for bare
-metal as well as virtualized workloads.
+[MLAG](/old/Cumulus_Linux/Multi-Chassis_Link_Aggregation_-_MLAG.html)
+switches to act as a single VTEP, providing active-active VXLAN
+termination for bare metal as well as virtualized workloads.
 
 There are some differences whether you're deploying this with
-[EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html) or
-[LNV](/old/Lightweight_Network_Virtualization_Overview.html). This
-chapter outlines the configurations for both
-options.
+[EVPN](/old/Cumulus_Linux/Ethernet_Virtual_Private_Network_-_EVPN.html)
+or
+[LNV](/old/Cumulus_Linux/Lightweight_Network_Virtualization_Overview.html).
+This chapter outlines the configurations for both options.
 
 ## Terminology
 
@@ -52,15 +53,15 @@ to work correctly.
 <tbody>
 <tr class="odd">
 <td><p>MLAG</p></td>
-<td><p>Refer to the <a href="/old/#src-8362725_VXLANActive-ActiveMode-configuring">MLAG chapter</a> for more detailed configuration information. Configurations for the demonstration are provided below.</p></td>
+<td><p>Refer to the <a href="/old/Cumulus_Linux/#src-8362725_VXLANActive-ActiveMode-configuring">MLAG chapter</a> for more detailed configuration information. Configurations for the demonstration are provided below.</p></td>
 </tr>
 <tr class="even">
 <td><p>OSPF or BGP</p></td>
-<td><p>Refer to the <a href="/old/https://docs.cumulusnetworks.com/display/DOCS/Open+Shortest+Path+First+-+OSPF+-+Protocol">OSPF chapter</a> or the <a href="/old/Border_Gateway_Protocol_-_BGP.html">BGP chapter</a> for more detailed configuration information. Configurations for the BGP demonstration are provided below.</p></td>
+<td><p>Refer to the <a href="/old/Cumulus_Linux/https://docs.cumulusnetworks.com/display/DOCS/Open+Shortest+Path+First+-+OSPF+-+Protocol">OSPF chapter</a> or the <a href="/old/Cumulus_Linux/Border_Gateway_Protocol_-_BGP.html">BGP chapter</a> for more detailed configuration information. Configurations for the BGP demonstration are provided below.</p></td>
 </tr>
 <tr class="odd">
 <td><p>STP</p></td>
-<td><p>You must enable <a href="/old/#src-8362725_VXLANActive-ActiveMode-bpdu">BPDU filter and BPDU guard</a> in the VXLAN interfaces if <a href="/old/#">STP</a> is enabled in the bridge that is connected to the VXLAN.<br />
+<td><p>You must enable <a href="/old/Cumulus_Linux/#src-8362725_VXLANActive-ActiveMode-bpdu">BPDU filter and BPDU guard</a> in the VXLAN interfaces if <a href="/old/Cumulus_Linux/#">STP</a> is enabled in the bridge that is connected to the VXLAN.<br />
 Configurations for the demonstration are provided below.</p></td>
 </tr>
 </tbody>
@@ -91,8 +92,7 @@ address as follows:
 {{%notice tip%}}
 
 In order for the anycast address to activate, you must configure a VXLAN
-interface on each switch in the MLAG
-pair.
+interface on each switch in the MLAG pair.
 
 {{%/notice%}}
 
@@ -169,10 +169,10 @@ changes to anycast upon MLAG peering.
 ### FRRouting Configuration
 
 You can configure the layer 3 fabric using
-[BGP](/old/Border_Gateway_Protocol_-_BGP.html) or
-[OSPF](/old/Open_Shortest_Path_First_-_OSPF.html). The following example
-uses BGP unnumbered. The MLAG switch configuration for the topology
-above is shown below.
+[BGP](/old/Cumulus_Linux/Border_Gateway_Protocol_-_BGP.html) or
+[OSPF](/old/Cumulus_Linux/Open_Shortest_Path_First_-_OSPF.html). The
+following example uses BGP unnumbered. The MLAG switch configuration for
+the topology above is shown below.
 
 ### Layer 3 IP Addressing
 
@@ -659,10 +659,10 @@ iface bond0.20 inet static
 ## Troubleshooting
 
 In addition to [troubleshooting single-attached
-configurations](/old/Troubleshooting_VXLANs.html), there is now the MLAG
-daemon (`clagd`) to consider. The `clagctl` command gives the output of
-MLAG behavior and any inconsistencies that might arise between a MLAG
-pair.
+configurations](/old/Cumulus_Linux/Troubleshooting_VXLANs.html), there
+is now the MLAG daemon (`clagd`) to consider. The `clagctl` command
+gives the output of MLAG behavior and any inconsistencies that might
+arise between a MLAG pair.
 
 ``` 
                    
@@ -685,8 +685,7 @@ Our Interface      Peer Interface     CLAG Id   Conflicts              Proto-Dow
     
 ```
 
-The additions to normal MLAG behavior are the
-following:
+The additions to normal MLAG behavior are the following:
 
 | Output                          | Explanation                                                                                             |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -728,7 +727,7 @@ Our Interface      Peer Interface     CLAG Id   Conflicts              Proto-Dow
 Do not reuse the VLAN used for the peer link layer 3 subinterface for
 any other interface in the system. A high VLAN ID value is recommended.
 For more information on VLAN ID ranges, refer to the [VLAN-aware bridge
-chapter](/old/VLAN-aware_Bridge_Mode.html#src-8362673_VLAN-awareBridgeMode-vlan_range).
+chapter](/old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html#src-8362673_VLAN-awareBridgeMode-vlan_range).
 
 ### Bonds with Vagrant in Cumulus VX
 
@@ -753,7 +752,7 @@ iface swp50
 
 For more information on using Cumulus VX and Vagrant, refer to the
 [Cumulus VX
-documentation](/old/https://docs.cumulusnetworks.com/display/VX).
+documentation](/old/Cumulus_Linux/https://docs.cumulusnetworks.com/display/VX).
 
 ### With LNV, Unique Node ID Required for vxrd in Cumulus VX
 
@@ -819,46 +818,48 @@ mode can function correctly.
 ## Related Information
 
   - [Network virtualization chapter, Cumulus Linux user
-    guide](/old/Network_Virtualization.html)
+    guide](/old/Cumulus_Linux/Network_Virtualization.html)
     
       - [Static VXLAN
-        Configurations](/old/Static_VXLAN_Configurations.html)
+        Configurations](/old/Cumulus_Linux/Static_VXLAN_Configurations.html)
         
-          - [Static VXLAN Tunnels](/old/Static_VXLAN_Tunnels.html)
+          - [Static VXLAN
+            Tunnels](/old/Cumulus_Linux/Static_VXLAN_Tunnels.html)
         
           - [Static MAC Bindings with
-            VXLAN](/old/Static_MAC_Bindings_with_VXLAN.html)
+            VXLAN](/old/Cumulus_Linux/Static_MAC_Bindings_with_VXLAN.html)
     
       - [Ethernet Virtual Private Network -
-        EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html)
+        EVPN](/old/Cumulus_Linux/Ethernet_Virtual_Private_Network_-_EVPN.html)
     
       - [Lightweight Network Virtualization
-        Overview](/old/Lightweight_Network_Virtualization_Overview.html)
+        Overview](/old/Cumulus_Linux/Lightweight_Network_Virtualization_Overview.html)
         
-          - [LNV Full Example](/old/LNV_Full_Example.html)
+          - [LNV Full Example](/old/Cumulus_Linux/LNV_Full_Example.html)
     
-      - [VXLAN Active-Active Mode](/old/#)
+      - [VXLAN Active-Active Mode](/old/Cumulus_Linux/#)
     
-      - [VXLAN Routing](/old/VXLAN_Routing.html)
+      - [VXLAN Routing](/old/Cumulus_Linux/VXLAN_Routing.html)
     
-      - [VXLAN Scale](/old/VXLAN_Scale.html)
+      - [VXLAN Scale](/old/Cumulus_Linux/VXLAN_Scale.html)
     
       - [Hybrid Cloud Connectivity with QinQ and
-        VXLANs](/old/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
+        VXLANs](/old/Cumulus_Linux/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
     
-      - [Troubleshooting VXLANs](/old/Troubleshooting_VXLANs.html)
+      - [Troubleshooting
+        VXLANs](/old/Cumulus_Linux/Troubleshooting_VXLANs.html)
     
       - [Virtualization
-        Integrations](/old/Virtualization_Integrations.html)
+        Integrations](/old/Cumulus_Linux/Virtualization_Integrations.html)
         
           - [Integrating Hardware VTEPs with Midokura MidoNet and
-            OpenStack](/old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
+            OpenStack](/old/Cumulus_Linux/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
         
           - [Integrating Hardware VTEPs with VMware
-            NSX-V](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
+            NSX-V](/old/Cumulus_Linux/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
         
           - [Integrating Hardware VTEPs with VMware
-            NSX-MH](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
+            NSX-MH](/old/Cumulus_Linux/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
         
           - [OVSDB Server High
-            Availability](/old/OVSDB_Server_High_Availability.html)
+            Availability](/old/Cumulus_Linux/OVSDB_Server_High_Availability.html)

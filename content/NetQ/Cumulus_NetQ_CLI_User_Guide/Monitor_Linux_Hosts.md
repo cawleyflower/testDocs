@@ -4,7 +4,8 @@ author: Unknown
 weight: 45
 pageID: 10456369
 aliases:
- - /old/Monitor_Linux_Hosts.html
+ - /old/Cumulus_NetQ/Monitor_Linux_Hosts.html
+imgData: Cumulus_NetQ
 ---
 # Monitor Linux Hosts
 
@@ -22,7 +23,7 @@ The NetQ Agent is supported on the following Linux hosts:
   - Ubuntu 16.04
 
 You need to [install the OS-specific NetQ
-metapack](/old/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=10456209)
+metapack](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=10456209)
 on every host you want to monitor with NetQ.
 
 The NetQ Agent monitors the following on Linux hosts:
@@ -38,7 +39,8 @@ The NetQ Agent monitors the following on Linux hosts:
   - systemctl for services
 
   - Docker containers — refer to the [Monitor Container
-    Environments](/old/Monitor_Container_Environments.html) topic
+    Environments](/old/Cumulus_NetQ/Monitor_Container_Environments.html)
+    topic
 
 Using NetQ on a Linux host is the same as using it on a Cumulus Linux
 switch. For example, if you want to check LLDP neighbor information

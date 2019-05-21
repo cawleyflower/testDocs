@@ -4,52 +4,58 @@ author: Unknown
 weight: 21
 pageID: 8362704
 aliases:
- - /old/Network_Virtualization.html
+ - /old/Cumulus_Linux/Network_Virtualization.html
+imgData: Cumulus_Linux
 ---
 # Network Virtualization
 
 Cumulus Linux supports these forms of [network
 virtualization](http://en.wikipedia.org/wiki/Network_virtualization):
 
-  - [Static VXLAN Configurations](/old/Static_VXLAN_Configurations.html)
+  - [Static VXLAN
+    Configurations](/old/Cumulus_Linux/Static_VXLAN_Configurations.html)
     
-      - [Static VXLAN Tunnels](/old/Static_VXLAN_Tunnels.html)
+      - [Static VXLAN
+        Tunnels](/old/Cumulus_Linux/Static_VXLAN_Tunnels.html)
     
       - [Static MAC Bindings with
-        VXLAN](/old/Static_MAC_Bindings_with_VXLAN.html)
+        VXLAN](/old/Cumulus_Linux/Static_MAC_Bindings_with_VXLAN.html)
 
   - [Ethernet Virtual Private Network -
-    EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html)
+    EVPN](/old/Cumulus_Linux/Ethernet_Virtual_Private_Network_-_EVPN.html)
 
   - [Lightweight Network Virtualization
-    Overview](/old/Lightweight_Network_Virtualization_Overview.html)
+    Overview](/old/Cumulus_Linux/Lightweight_Network_Virtualization_Overview.html)
     
-      - [LNV Full Example](/old/LNV_Full_Example.html)
+      - [LNV Full Example](/old/Cumulus_Linux/LNV_Full_Example.html)
 
-  - [VXLAN Active-Active Mode](/old/VXLAN_Active-Active_Mode.html)
+  - [VXLAN Active-Active
+    Mode](/old/Cumulus_Linux/VXLAN_Active-Active_Mode.html)
 
-  - [VXLAN Routing](/old/VXLAN_Routing.html)
+  - [VXLAN Routing](/old/Cumulus_Linux/VXLAN_Routing.html)
 
-  - [VXLAN Scale](/old/VXLAN_Scale.html)
+  - [VXLAN Scale](/old/Cumulus_Linux/VXLAN_Scale.html)
 
   - [Hybrid Cloud Connectivity with QinQ and
-    VXLANs](/old/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
+    VXLANs](/old/Cumulus_Linux/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
 
-  - [Troubleshooting VXLANs](/old/Troubleshooting_VXLANs.html)
+  - [Troubleshooting
+    VXLANs](/old/Cumulus_Linux/Troubleshooting_VXLANs.html)
 
-  - [Virtualization Integrations](/old/Virtualization_Integrations.html)
+  - [Virtualization
+    Integrations](/old/Cumulus_Linux/Virtualization_Integrations.html)
     
       - [Integrating Hardware VTEPs with Midokura MidoNet and
-        OpenStack](/old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
+        OpenStack](/old/Cumulus_Linux/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
     
       - [Integrating Hardware VTEPs with VMware
-        NSX-V](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
+        NSX-V](/old/Cumulus_Linux/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
     
       - [Integrating Hardware VTEPs with VMware
-        NSX-MH](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
+        NSX-MH](/old/Cumulus_Linux/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
     
       - [OVSDB Server High
-        Availability](/old/OVSDB_Server_High_Availability.html)
+        Availability](/old/Cumulus_Linux/OVSDB_Server_High_Availability.html)
 
 *VXLAN* (Virtual Extensible LAN) is a standard overlay protocol that
 abstracts logical virtual networks from the physical network underneath.
@@ -75,9 +81,9 @@ the original frame. The UDP destination port is the standard port 4789.
 
 Cumulus Linux includes the native Linux VXLAN kernel support and
 integrates with controller-based overlay solutions like [VMware
-NSX](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html) and
-[Midokura
-MidoNet](/old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html).
+NSX](/old/Cumulus_Linux/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
+and [Midokura
+MidoNet](/old/Cumulus_Linux/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html).
 
 VXLAN is supported only on switches in the [Cumulus Linux
 HCL](http://cumulusnetworks.com/support/hcl/) using the Broadcom
@@ -100,7 +106,7 @@ at least one layer 3 hop between the VXLAN source and destination.
 ### Cut-through Mode and Store and Forward Switching
 
 [Cut-through
-mode](/old/Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-cut_through_mode)
+mode](/old/Cumulus_Linux/Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-cut_through_mode)
 is **not** supported for VXLANs in Cumulus Linux on switches using
 Broadcom Tomahawk, Trident II, Trident II+, and Trident3 ASICs. Store
 and forward switching **is** supported on these ASICs.
@@ -115,7 +121,7 @@ The maximum transmission unit (MTU) size for a virtual network interface
 should be 50 bytes smaller than the MTU for the physical interfaces on
 the switch. For more information on setting MTU, read [Layer 1 and
 Switch Port
-Attributes](/old/Switch_Port_Attributes.html#src-8363026_SwitchPortAttributes-mtu_vxlan).
+Attributes](/old/Cumulus_Linux/Switch_Port_Attributes.html#src-8363026_SwitchPortAttributes-mtu_vxlan).
 
 ### VLANs and VXLANs Cannot Share the Same ID
 
@@ -125,7 +131,6 @@ layer 2 VNI does not get created.
 
 ## Useful Links
 
-  - [VXLAN -
-    RFC 7348](https://tools.ietf.org/html/rfc7348)
+  - [VXLAN - RFC 7348](https://tools.ietf.org/html/rfc7348)
 
   - [ovsdb-server](http://openvswitch.org/support/dist-docs/ovsdb-server.1.html)

@@ -4,7 +4,8 @@ author: Unknown
 weight: 91
 pageID: 10457177
 aliases:
- - /old/NetQ_Management.html
+ - /old/Cumulus_NetQ/NetQ_Management.html
+imgData: Cumulus_NetQ
 ---
 # NetQ Management
 
@@ -14,7 +15,7 @@ about the system server, all from a single workbench.
 
 Individual users have the ability to set preferences specific to their
 workspaces. This information is covered separately. Refer to [User
-Settings](/old/NetQ_User_Interface_Overview.html) .
+Settings](/old/Cumulus_NetQ/NetQ_User_Interface_Overview.html) .
 
 ## NetQ Management Workbench
 
@@ -154,8 +155,8 @@ To change a password:
 You cannot edit a user's email address, because this is the identifier
 the system uses for authentication. If you need to change an email
 address, you must create a new one for this user. Refer to [Add a New
-User Account](/old/#src-10457177_NetQManagement-AddUsrAct). The old
-account remains.
+User Account](/old/Cumulus_NetQ/#src-10457177_NetQManagement-AddUsrAct).
+The old account remains.
 
 ### Export a List of User Accounts
 
@@ -304,5 +305,5 @@ To add a scheduled validation:
 
 4.  Configure the request. Refer to [Validate Network Protocol and
     Service
-    Operations](/old/Validate_Network_Protocol_and_Service_Operations.html)
+    Operations](/old/Cumulus_NetQ/Validate_Network_Protocol_and_Service_Operations.html)
     for details.

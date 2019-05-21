@@ -4,7 +4,8 @@ author: Unknown
 weight: 125
 pageID: 10456923
 aliases:
- - /old/Validate_Network_Protocol_and_Service_Operations.html
+ - /old/Cumulus_NetQ/Validate_Network_Protocol_and_Service_Operations.html
+imgData: Cumulus_NetQ
 ---
 # Validate Network Protocol and Service Operations
 
@@ -19,8 +20,8 @@ This release supports validation of the following network protocols and
 services: Agents, BGP, CLAG, EVPN, Interfaces, License, and NTP.
 
 For a more general understanding of how well your network is operating,
-refer to the [Monitor Network Health](/old/Monitor_Network_Health.html)
-topic.
+refer to the [Monitor Network
+Health](/old/Cumulus_NetQ/Monitor_Network_Health.html) topic.
 
 ## Create Validation Requests
 
@@ -239,22 +240,22 @@ and is therefore described separately. The types are based on the intent
 of the request:
 
   - [Run an Existing Scheduled Validation Request On
-    Demand](/old/#src-10456923_ValidateNetworkProtocolandServiceOperations-SchValNow)
+    Demand](/old/Cumulus_NetQ/#src-10456923_ValidateNetworkProtocolandServiceOperations-SchValNow)
 
   - [Create a New On-demand Validation
-    Request](/old/#src-10456923_ValidateNetworkProtocolandServiceOperations-OndNow)
+    Request](/old/Cumulus_NetQ/#src-10456923_ValidateNetworkProtocolandServiceOperations-OndNow)
 
   - [Modify an On-demand Validation
-    Request](/old/#src-10456923_ValidateNetworkProtocolandServiceOperations-ModOndNow)
+    Request](/old/Cumulus_NetQ/#src-10456923_ValidateNetworkProtocolandServiceOperations-ModOndNow)
 
   - [Save and Schedule an On-demand Validation
-    Request](/old/#src-10456923_ValidateNetworkProtocolandServiceOperations-SchOnd)
+    Request](/old/Cumulus_NetQ/#src-10456923_ValidateNetworkProtocolandServiceOperations-SchOnd)
 
   - [Create a New Scheduled Validation
-    Request](/old/#src-10456923_ValidateNetworkProtocolandServiceOperations-SchNew)
+    Request](/old/Cumulus_NetQ/#src-10456923_ValidateNetworkProtocolandServiceOperations-SchNew)
 
   - [Modify a Scheduled Validation
-    Request](/old/#src-10456923_ValidateNetworkProtocolandServiceOperations-EditSchedVal)
+    Request](/old/Cumulus_NetQ/#src-10456923_ValidateNetworkProtocolandServiceOperations-EditSchedVal)
 
 ### Run an Existing Scheduled Validation Request On Demand
 
@@ -274,7 +275,7 @@ To run a scheduled validation now:
 3.  Click **Go** or **Run Now**.  
     The associated Validation Result card is opened on your workbench.
     Refer to [View On-demand Validation
-    Results](/old/#src-10456923_ValidateNetworkProtocolandServiceOperations-OndValRes).
+    Results](/old/Cumulus_NetQ/#src-10456923_ValidateNetworkProtocolandServiceOperations-OndValRes).
     
     {{%imgOld 11 %}}
 
@@ -295,7 +296,7 @@ To create and run a request for *a single* protocol or service:
 3.  Click **Go** or **Run Now**.  
     The associated Validation Result card is opened on your workbench.
     Refer to [View On-demand Validation
-    Results](/old/#src-10456923_ValidateNetworkProtocolandServiceOperations-OndValRes).
+    Results](/old/Cumulus_NetQ/#src-10456923_ValidateNetworkProtocolandServiceOperations-OndValRes).
 
 To create and run a request for *more than one* protocol and/or service:
 
@@ -317,7 +318,7 @@ To create and run a request for *more than one* protocol and/or service:
     The associated on-demand validation result cards (one per protocol
     or service selected) are opened on your current workbench. Refer to
     [View On-demand Validation
-    Results](/old/#src-10456923_ValidateNetworkProtocolandServiceOperations-OndValRes).
+    Results](/old/Cumulus_NetQ/#src-10456923_ValidateNetworkProtocolandServiceOperations-OndValRes).
     
     {{%imgOld 15 %}}
 
@@ -343,7 +344,7 @@ To modify an on-demand validation:
     The associated on-demand validation result cards (one per protocol
     or service selected) are opened on your current workbench. Refer to
     [View On-demand Validation
-    Results](/old/#src-10456923_ValidateNetworkProtocolandServiceOperations-OndValRes).
+    Results](/old/Cumulus_NetQ/#src-10456923_ValidateNetworkProtocolandServiceOperations-OndValRes).
 
 ### Save and Schedule an On-demand Validation Request
 
@@ -382,7 +383,7 @@ request and then follow the steps above.
 The validation can now be selected from the Validation listing and run
 immediately, or you can wait for it to run the first time according to
 the schedule you specified. Refer to [View Scheduled Validation
-Results](/old/#src-10456923_ValidateNetworkProtocolandServiceOperations-SchValRes).
+Results](/old/Cumulus_NetQ/#src-10456923_ValidateNetworkProtocolandServiceOperations-SchValRes).
 
 ### Create a New Scheduled Validation Request
 
@@ -431,7 +432,7 @@ The validation can now be selected from the Validation listing (on the
 small, medium or large size card) and run immediately using **Run Now**,
 or you can wait for it to run the first time according to the schedule
 you specified. Refer to [View Scheduled Validation
-Results](/old/#src-10456923_ValidateNetworkProtocolandServiceOperations-SchValRes).
+Results](/old/Cumulus_NetQ/#src-10456923_ValidateNetworkProtocolandServiceOperations-SchValRes).
 
 {{%imgOld 26 %}}
 
@@ -464,7 +465,7 @@ The validation can now be selected from the Validation listing (on the
 small, medium or large size card) and run immediately using **Run Now**,
 or you can wait for it to run the first time according to the schedule
 you specified. Refer to [View Scheduled Validation
-Results](/old/#src-10456923_ValidateNetworkProtocolandServiceOperations-SchValRes).
+Results](/old/Cumulus_NetQ/#src-10456923_ValidateNetworkProtocolandServiceOperations-SchValRes).
 
 ## View On-demand Validation Results
 
@@ -585,7 +586,7 @@ The medium Validation Result card displays:
 </tr>
 <tr class="odd">
 <td><p>Open &lt;Network Protocol or Service Name&gt; Service Card</p></td>
-<td><p>Click to open the corresponding medium Network Services card, where available. Refer to <a href="/old/Monitor_Network_Protocols_and_Services.html">Monitor Network Protocols and Services</a> for details about these cards and workflows.</p></td>
+<td><p>Click to open the corresponding medium Network Services card, where available. Refer to <a href="/old/Cumulus_NetQ/Monitor_Network_Protocols_and_Services.html">Monitor Network Protocols and Services</a> for details about these cards and workflows.</p></td>
 </tr>
 </tbody>
 </table>
@@ -642,7 +643,7 @@ The *Summary* tab displays:
 </tr>
 <tr class="odd">
 <td><p>Open &lt;Network Protocol or Service Name&gt; Service Card</p></td>
-<td><p>Click to open the corresponding medium Network Services card, when available. Refer to <a href="/old/Monitor_Network_Protocols_and_Services.html">Monitor Network Protocols and Services</a> for details about these cards and workflows.</p></td>
+<td><p>Click to open the corresponding medium Network Services card, when available. Refer to <a href="/old/Cumulus_NetQ/Monitor_Network_Protocols_and_Services.html">Monitor Network Protocols and Services</a> for details about these cards and workflows.</p></td>
 </tr>
 <tr class="even">
 <td><p>Table/Filter options</p></td>
@@ -664,8 +665,7 @@ The *Summary* tab displays:
 
 The *Configuration* tab displays:
 
-{{%imgOld 39
-%}}
+{{%imgOld 39 %}}
 
 | Item             | Description                                                                               |
 | ---------------- | ----------------------------------------------------------------------------------------- |
@@ -906,12 +906,12 @@ The medium Validation Result card displays:
 <td><p>Validation results, where:</p>
 <ul>
 <li><p><strong>Time period:</strong> Range of time in which the data on the heat map was collected</p></li>
-<li><p><strong>Heat map: A time segmented view of the results</strong>. For each time segment, the color represents the percentage of warning, passing, and failed results. Refer to <a href="/old/#src-10456923_ValidateNetworkProtocolandServiceOperations-DataGran">Granularity of Data Shown Based on Time Period</a> for details on how to interpret the results.</p></li>
+<li><p><strong>Heat map: A time segmented view of the results</strong>. For each time segment, the color represents the percentage of warning, passing, and failed results. Refer to <a href="/old/Cumulus_NetQ/#src-10456923_ValidateNetworkProtocolandServiceOperations-DataGran">Granularity of Data Shown Based on Time Period</a> for details on how to interpret the results.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p>Open &lt;Network Protocol or Service Name&gt; Service Card</p></td>
-<td><p>Click to open the corresponding medium Network Services card, when available. Refer to <a href="/old/Monitor_Network_Protocols_and_Services.html">Monitor Network Protocols and Services</a> for details about these cards and workflows.</p></td>
+<td><p>Click to open the corresponding medium Network Services card, when available. Refer to <a href="/old/Cumulus_NetQ/Monitor_Network_Protocols_and_Services.html">Monitor Network Protocols and Services</a> for details about these cards and workflows.</p></td>
 </tr>
 </tbody>
 </table>
@@ -965,12 +965,12 @@ The large Validation Result card contains two tabs.
 <td><p>Validation results, where:</p>
 <ul>
 <li><p><strong>Time period:</strong> Range of time in which the data on the heat map was collected</p></li>
-<li><p><strong>Heat map: A time segmented view of the results</strong>. For each time segment, the color represents the percentage of warning, passing, and failed results. Refer to <a href="/old/#src-10456923_ValidateNetworkProtocolandServiceOperations-DataGran">Granularity of Data Shown Based on Time Period</a> for details on how to interpret the results.</p></li>
+<li><p><strong>Heat map: A time segmented view of the results</strong>. For each time segment, the color represents the percentage of warning, passing, and failed results. Refer to <a href="/old/Cumulus_NetQ/#src-10456923_ValidateNetworkProtocolandServiceOperations-DataGran">Granularity of Data Shown Based on Time Period</a> for details on how to interpret the results.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><p>Open &lt;Network Protocol or Service Name&gt; Service Card</p></td>
-<td><p>Click to open the corresponding medium Network Services card, when available. Refer to <a href="/old/Monitor_Network_Protocols_and_Services.html">Monitor Network Protocols and Services</a> for details about these cards and workflows.</p></td>
+<td><p>Click to open the corresponding medium Network Services card, when available. Refer to <a href="/old/Cumulus_NetQ/Monitor_Network_Protocols_and_Services.html">Monitor Network Protocols and Services</a> for details about these cards and workflows.</p></td>
 </tr>
 <tr class="even">
 <td><p>Table/Filter options</p></td>
@@ -992,8 +992,7 @@ The large Validation Result card contains two tabs.
 
 The *Configuration* tab displays:
 
-{{%imgOld 66
-%}}
+{{%imgOld 66 %}}
 
 | Item             | Description                                                                        |
 | ---------------- | ---------------------------------------------------------------------------------- |
@@ -1084,8 +1083,7 @@ time period as well. An example set of heat maps for a time period of 24
 hours is shown here with the most common time periods in the table along
 with the resulting time blocks and regions.
 
-{{%imgOld 72
-%}}
+{{%imgOld 72 %}}
 
 | Time Period | Number of Runs | Number Time Blocks | Amount of Time in Each Block | Region Size | Number Blocks per Region | Total Number of Regions |
 | ----------- | -------------- | ------------------ | ---------------------------- | ----------- | ------------------------ | ----------------------- |
@@ -1182,7 +1180,7 @@ To view the results:
     open the large Validation Request card, pre-populated with the
     current configuration. Follow the instructions in [Modify an
     Existing Scheduled Validation
-    Request](/old/#src-10456923_ValidateNetworkProtocolandServiceOperations-EditSchedVal)
+    Request](/old/Cumulus_NetQ/#src-10456923_ValidateNetworkProtocolandServiceOperations-EditSchedVal)
     to make your changes.
 
 14. To view all data available for all scheduled validation results for

@@ -4,7 +4,8 @@ author: Unknown
 weight: 459
 pageID: 9018051
 aliases:
- - "/old/Monitoring_Interfaces_and_Transceivers_Using_ethtool_—\_ethtool_Counter_Definitions.html"
+ - "/old/Cumulus_Linux/Monitoring_Interfaces_and_Transceivers_Using_ethtool_—\_ethtool_Counter_Definitions.html"
+imgData: Cumulus_Linux
 ---
 # Monitoring Interfaces and Transceivers Using ethtool — ethtool Counter Definitions
 

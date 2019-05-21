@@ -4,7 +4,8 @@ author: Unknown
 weight: 107
 pageID: 10456383
 aliases:
- - /old/Methods_for_Diagnosing_Network_Issues.html
+ - /old/Cumulus_NetQ/Methods_for_Diagnosing_Network_Issues.html
+imgData: Cumulus_NetQ
 ---
 # Methods for Diagnosing Network Issues
 

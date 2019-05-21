@@ -4,7 +4,8 @@ author: Unknown
 weight: 145
 pageID: 10456618
 aliases:
- - /old/Monitor_the_BGP_Service.html
+ - /old/Cumulus_NetQ/Monitor_the_BGP_Service.html
+imgData: Cumulus_NetQ
 ---
 # Monitor the BGP Service
 
@@ -21,7 +22,7 @@ view switches with the most established and unestablished BGP sessions,
 and view alarms triggered by the BGP service. For an overview and how to
 configure BGP to run in your data center network, refer to [Border
 Gateway Protocol -
-BGP](/old/https://docs.cumulusnetworks.com/display/DOCS/Border+Gateway+Protocol+-+BGP).
+BGP](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Border+Gateway+Protocol+-+BGP).
 
 ### BGP Service Card Workflow
 
@@ -29,8 +30,7 @@ The small BGP Service card displays:
 
 {{%imgOld 0 %}}
 
-{{%imgOld 1
-%}}
+{{%imgOld 1 %}}
 
 | Item            | Description                                                                                       |
 | --------------- | ------------------------------------------------------------------------------------------------- |
@@ -44,8 +44,7 @@ The medium BGP Service card displays:
 
 {{%imgOld 5 %}}
 
-{{%imgOld 6
-%}}
+{{%imgOld 6 %}}
 
 | Item                       | Description                                                                                                           |
 | -------------------------- | --------------------------------------------------------------------------------------------------------------------- |
@@ -122,8 +121,7 @@ The *Sessions Summary* tab displays:
 
 The *Alarms* tab displays:
 
-{{%imgOld 15
-%}}
+{{%imgOld 15 %}}
 
 | Item                 | Description                                                                                                                                                                                                                        |
 | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -380,7 +378,7 @@ include:
     unestablished sessions, you might want to look more carefully at
     those switches using the Switches card workflow to determine
     probable causes. Refer to [Monitor
-    Switches](/old/Monitor_Switches.html).
+    Switches](/old/Cumulus_NetQ/Monitor_Switches.html).
 
   - Click **Show All Sessions** to investigate all BGP sessions with
     events in the full screen card.
@@ -506,8 +504,7 @@ here).
 
 {{%imgOld 43 %}}
 
-You can perform the following actions on the results
-list:
+You can perform the following actions on the results list:
 
 | Option             | Action or Behavior on Click                                                                                         |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -526,7 +523,7 @@ session state changes, and compare with alarms occurring at the same
 time, as well as monitor the running BGP configuration and changes to
 the configuration file. For an overview and how to configure BGP to run
 in your data center network, refer to [Border Gateway Protocol -
-BGP](/old/https://docs.cumulusnetworks.com/display/DOCS/Border+Gateway+Protocol+-+BGP).
+BGP](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Border+Gateway+Protocol+-+BGP).
 
 {{%notice info%}}
 
@@ -555,8 +552,7 @@ example set of heat maps for a time period of 24 hours is shown here
 with the most common time periods in the table along with the resulting
 time blocks and regions.
 
-{{%imgOld 44
-%}}
+{{%imgOld 44 %}}
 
 | Time Period | Number of Runs | Number Time Blocks | Amount of Time in Each Block | Region Size | Number Blocks per Region | Total Number of Regions |
 | ----------- | -------------- | ------------------ | ---------------------------- | ----------- | ------------------------ | ----------------------- |
@@ -652,7 +648,7 @@ The medium BGP Session card displays:
 </tr>
 <tr class="odd">
 <td><p>Session State Changes Chart</p></td>
-<td><p>Heat map of the state of the given session over the given time period. The status is sampled at a rate consistent with the time period. For example, for a 24 hour period, a status is collected every hour. Refer to <a href="/old/#src-10456618_MonitortheBGPService-TimePerGran">Granularity of Data Shown Based on Time Period</a>.</p></td>
+<td><p>Heat map of the state of the given session over the given time period. The status is sampled at a rate consistent with the time period. For example, for a 24 hour period, a status is collected every hour. Refer to <a href="/old/Cumulus_NetQ/#src-10456618_MonitortheBGPService-TimePerGran">Granularity of Data Shown Based on Time Period</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Peer Name</p></td>
@@ -717,7 +713,8 @@ Heat map of the state of the given session over the given time period.
 The status is sampled at a rate consistent with the time period. For
 example, for a 24 hour period, a status is collected every hour. Refer
 to [Granularity of Data Shown Based on Time
-Period](/old/#src-10456618_MonitortheBGPService-TimePerGran) .
+Period](/old/Cumulus_NetQ/#src-10456618_MonitortheBGPService-TimePerGran)
+.
 
 Connection Drop Count
 

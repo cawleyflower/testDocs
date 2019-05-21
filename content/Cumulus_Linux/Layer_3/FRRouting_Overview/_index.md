@@ -4,7 +4,8 @@ author: Unknown
 weight: 175
 pageID: 8362917
 aliases:
- - /old/FRRouting_Overview.html
+ - /old/Cumulus_Linux/FRRouting_Overview.html
+imgData: Cumulus_Linux
 ---
 # FRRouting Overview
 
@@ -13,10 +14,11 @@ dynamic routing. FRRouting provides many routing protocols, of which
 Cumulus Linux supports the following:
 
   - Open Shortest Path First
-    ([v2](/old/Open_Shortest_Path_First_-_OSPF.html) and
-    [v3](/old/Open_Shortest_Path_First_v3_-_OSPFv3.html))
+    ([v2](/old/Cumulus_Linux/Open_Shortest_Path_First_-_OSPF.html) and
+    [v3](/old/Cumulus_Linux/Open_Shortest_Path_First_v3_-_OSPFv3.html))
 
-  - [Border Gateway Protocol](/old/Border_Gateway_Protocol_-_BGP.html)
+  - [Border Gateway
+    Protocol](/old/Cumulus_Linux/Border_Gateway_Protocol_-_BGP.html)
 
 ## Architecture
 
@@ -31,10 +33,10 @@ the information exchanged.
 It is not uncommon to have more than one protocol daemon running at the
 same time. For example, at the edge of an enterprise, protocols internal
 to an enterprise (called IGP for Interior Gateway Protocol) such as
-[OSPF](/old/Open_Shortest_Path_First_-_OSPF.html) or RIP run alongside
-the protocols that connect an enterprise to the rest of the world
-(called EGP or Exterior Gateway Protocol) such as
-[BGP](/old/Border_Gateway_Protocol_-_BGP.html).
+[OSPF](/old/Cumulus_Linux/Open_Shortest_Path_First_-_OSPF.html) or RIP
+run alongside the protocols that connect an enterprise to the rest of
+the world (called EGP or Exterior Gateway Protocol) such as
+[BGP](/old/Cumulus_Linux/Border_Gateway_Protocol_-_BGP.html).
 
 ## About zebra
 

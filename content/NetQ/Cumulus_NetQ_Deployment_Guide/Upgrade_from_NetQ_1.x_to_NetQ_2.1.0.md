@@ -4,7 +4,8 @@ author: Unknown
 weight: 67
 pageID: 10456351
 aliases:
- - /old/Upgrade_from_NetQ_1.x_to_NetQ_2.1.0.html
+ - /old/Cumulus_NetQ/Upgrade_from_NetQ_1.x_to_NetQ_2.1.0.html
+imgData: Cumulus_NetQ
 ---
 # Upgrade from NetQ 1.x to NetQ 2.1.0
 
@@ -33,8 +34,7 @@ run properly.
 
 {{%/notice%}}
 
-In all cases, the NetQ software requires a server with the
-following:
+In all cases, the NetQ software requires a server with the following:
 
 | Requirement             | Description                                                                                                                    |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -83,7 +83,7 @@ NetQ 2.1.0 is supported on the following operating systems:
 Installation of NetQ involves installing the NetQ Platform, and
 installing and configuring the NetQ Agents. Additional steps are needed
 to [Integrate NetQ with Event Notification
-Applications](/old/Integrate_with_Third-party_Software_and_Hardware.html)
+Applications](/old/Cumulus_NetQ/Integrate_with_Third-party_Software_and_Hardware.html)
 . This flow chart shows the required steps to install and setup NetQ to
 start validating your network and the optional steps of integrating with
 event notification applications and monitoring hosts.
@@ -112,20 +112,20 @@ Instructions for installing the meta package on each node type are
 included here:
 
   - [Upgrade NetQ Agent on a Cumulus Linux
-    Switch](/old/#src-10456351_UpgradefromNetQ1.xtoNetQ2.1.0-AgentCL)
+    Switch](/old/Cumulus_NetQ/#src-10456351_UpgradefromNetQ1.xtoNetQ2.1.0-AgentCL)
 
   - [Upgrade NetQ Agent on an Ubuntu
-    Server](/old/#src-10456351_UpgradefromNetQ1.xtoNetQ2.1.0-AgentUbuntu)
+    Server](/old/Cumulus_NetQ/#src-10456351_UpgradefromNetQ1.xtoNetQ2.1.0-AgentUbuntu)
 
   - [Upgrade NetQ Agent on a Red Hat or CentOS
-    Server](/old/#src-10456351_UpgradefromNetQ1.xtoNetQ2.1.0-AgentRHC)
+    Server](/old/Cumulus_NetQ/#src-10456351_UpgradefromNetQ1.xtoNetQ2.1.0-AgentRHC)
 
 {{%notice info%}}
 
 If your network uses a proxy server for external connections, you should
 first <span style="color: #339966;"> [<span style="color: #339966;">
 configure a global proxy
-</span>](/old/https://docs.cumulusnetworks.com/display/DOCS/Configuring+a+Global+Proxy)
+</span>](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Configuring+a+Global+Proxy)
 </span> so `apt-get` can access the meta package on the Cumulus Networks
 repository .
 
@@ -534,13 +534,13 @@ for the other type of nodes. Depending on your deployment, follow the
 relevant additional instructions after the basic configuration steps:
 
   - [Basic
-    Configuration](/old/https://docs.cumulusnetworks.com/display/NETQ140DRAFT/Cumulus+NetQ+1.4+Installation+Guide#CumulusNetQ1.4InstallationGuide-BasicConfig)
+    Configuration](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/NETQ140DRAFT/Cumulus+NetQ+1.4+Installation+Guide#CumulusNetQ1.4InstallationGuide-BasicConfig)
 
   - [Configuring the Agent to Use a
-    VRF](/old/#src-10456351_UpgradefromNetQ1.xtoNetQ2.1.0-AgentVRF)
+    VRF](/old/Cumulus_NetQ/#src-10456351_UpgradefromNetQ1.xtoNetQ2.1.0-AgentVRF)
 
   - [Configuring the Agent to Communicate over a Specific
-    Port](/old/#src-10456351_UpgradefromNetQ1.xtoNetQ2.1.0-port)
+    Port](/old/Cumulus_NetQ/#src-10456351_UpgradefromNetQ1.xtoNetQ2.1.0-port)
 
 ### Basic Configuration
 
@@ -548,7 +548,7 @@ This is the minimum configuration required to properly monitor your
 nodes.
 
 1.  Verify that
-    [NTP](/old/https://docs.cumulusnetworks.com/display/DOCS/Setting+Date+and+Time)
+    [NTP](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Setting+Date+and+Time)
     is running on the host node. Nodes must be in time synchronization
     with the NetQ Platform to enable useful statistical analysis.
     
@@ -579,11 +579,11 @@ nodes.
     You must configure both the agent server and the cli server to link
     to the NetQ Platform. **Note:** If you intend to use VRF, skip to
     [Configure the Agent to Use
-    VRF](/old/#src-10456351_UpgradefromNetQ1.xtoNetQ2.1.0-AgentVRF). If
-    you intend to specify a port for communication, skip to [Configure
-    the Agent to Communicate over a Specific
-    Port](/old/#src-10456351_UpgradefromNetQ1.xtoNetQ2.1.0-port).In this
-    example, the IP address for the agent and cli servers is
+    VRF](/old/Cumulus_NetQ/#src-10456351_UpgradefromNetQ1.xtoNetQ2.1.0-AgentVRF).
+    If you intend to specify a port for communication, skip to
+    [Configure the Agent to Communicate over a Specific
+    Port](/old/Cumulus_NetQ/#src-10456351_UpgradefromNetQ1.xtoNetQ2.1.0-port).In
+    this example, the IP address for the agent and cli servers is
     *192.168.1.254*.
     
     ``` 
@@ -611,9 +611,9 @@ nodes.
 
 While optional, Cumulus strongly recommends that you configure NetQ
 Agents to communicate with the NetQ Platform only via a
-[VRF](/old/https://docs.cumulusnetworks.com/display/DOCS/Virtual+Routing+and+Forwarding+-+VRF),
+[VRF](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Virtual+Routing+and+Forwarding+-+VRF),
 including a [management
-VRF](/old/https://docs.cumulusnetworks.com/display/DOCS/Management+VRF).
+VRF](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Management+VRF).
 To do so, you need to specify the VRF name when configuring the NetQ
 Agent. For example, if the management VRF is configured and you want the
 agent to communicate with the NetQ Platform over it, configure the agent
@@ -667,7 +667,7 @@ integrate NetQ with the PagerDuty or Slack notification tools. To do so
 you need to configure both the notification application itself to
 receive the messages, and NetQ with what messages to send and where to
 send them. Refer to [Integrate NetQ with Event Notification
-Applications](/old/Integrate_with_Third-party_Software_and_Hardware.html)
+Applications](/old/Cumulus_NetQ/Integrate_with_Third-party_Software_and_Hardware.html)
 to use the CLI for configuration.
 
 ## Set Up Security

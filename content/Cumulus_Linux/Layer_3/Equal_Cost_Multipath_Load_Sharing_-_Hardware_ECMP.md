@@ -4,7 +4,8 @@ author: Unknown
 weight: 191
 pageID: 8362929
 aliases:
- - /old/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html
+ - /old/Cumulus_Linux/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html
+imgData: Cumulus_Linux
 ---
 # Equal Cost Multipath Load Sharing - Hardware ECMP
 
@@ -44,7 +45,7 @@ For routes to be considered equal they must:
 
 The BGP `maximum-paths` setting is enabled, so multiple routes are
 installed by default. See the [ECMP
-section](/old/Border_Gateway_Protocol_-_BGP.html#src-8362926_BorderGatewayProtocol-BGP-ecmp)
+section](/old/Cumulus_Linux/Border_Gateway_Protocol_-_BGP.html#src-8362926_BorderGatewayProtocol-BGP-ecmp)
 of the BGP chapter for more information.
 
 {{%/notice%}}
@@ -366,7 +367,7 @@ To enable resilient hashing, edit `/etc/cumulus/datapath/traffic.conf`:
         
     ```
 
-3.  [Restart](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
+3.  [Restart](/old/Cumulus_Linux/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
     the `switchd` service:
     
     ``` 

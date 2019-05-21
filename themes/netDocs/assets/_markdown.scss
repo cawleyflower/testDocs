@@ -65,6 +65,9 @@ $block-border-radius: 0.15rem;
     border-collapse: collapse;
 
     tr th, tr td {
+      :header{
+        background: $gray-200;
+      }
       padding: $padding-8 $padding-16;
       line-height: 1;
       border: 1px solid $gray-200;

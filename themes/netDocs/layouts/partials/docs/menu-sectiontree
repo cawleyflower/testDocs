@@ -1,7 +1,6 @@
 
-
 {{ $bookSection := default "docs" .Page.Params.BookSection  }}
-{{ $currentSect := .Page.Section}}
+{{ $currentSect := default .Page.Section .Page.Params.BookSection}}
 
 {{ $bookSections := where .Site.Sections "Section" $currentSect}}
 {{ .Scratch.Set "BookSections" $bookSections }}
@@ -35,7 +34,7 @@
 
 {{ define "book-section-children" }}
 {{ with .Section }}
-  <ul class="cn-book-section-container">
+  <ul class="cn-book-section-container" id = "docs">
     {{ range .Sections }}
       {{ template "book-section" (dict "Section" . "CurrentPage" $.CurrentPage ) }}
     {{ end }}

@@ -4,14 +4,17 @@ author: Unknown
 weight: 419
 pageID: 8362920
 aliases:
- - /old/Comparing_NCLU_and_vtysh_Commands.html
+ - /old/Cumulus_Linux/Comparing_NCLU_and_vtysh_Commands.html
+imgData: Cumulus_Linux
 ---
 # Comparing NCLU and vtysh Commands
 
-Using [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html) is the
-primary way to [configure routing](/old/Configuring_FRRouting.html) in
-Cumulus Linux. However, an alternative exists in the the `vtysh` modal
-CLI. The available commands are as follows:
+Using
+[NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html) is
+the primary way to [configure
+routing](/old/Cumulus_Linux/Configuring_FRRouting.html) in Cumulus
+Linux. However, an alternative exists in the the `vtysh` modal CLI. The
+available commands are as follows:
 
 The following table compares the various FRRouting commands with their
 Cumulus Linux NCLU counterparts.
@@ -67,7 +70,7 @@ switch(config-router)# redistribute static
     </code></pre></td>
 </tr>
 <tr class="even">
-<td><p>Define a <a href="/old/Routing.html">static route</a></p></td>
+<td><p>Define a <a href="/old/Cumulus_Linux/Routing.html">static route</a></p></td>
 <td><pre><code>                   
 cumulus@switch:~$ net add routing route 155.1.2.20/24 bridge 45
  
@@ -91,7 +94,7 @@ switch(config-if)# ipv6 address 3002:2123:1234:1abc::21/64
     </code></pre></td>
 </tr>
 <tr class="even">
-<td><p>Enable topology checking (<a href="/old/Prescriptive_Topology_Manager_-_PTM.html">PTM</a>)</p></td>
+<td><p>Enable topology checking (<a href="/old/Cumulus_Linux/Prescriptive_Topology_Manager_-_PTM.html">PTM</a>)</p></td>
 <td><pre><code>                   
 cumulus@switch:~$ net add routing ptm-enable
    
@@ -102,7 +105,7 @@ switch(config)# ptm-enable
     </code></pre></td>
 </tr>
 <tr class="odd">
-<td><p>Configure <a href="/old/Switch_Port_Attributes.html#src-8363026_SwitchPortAttributes-mtu">MTU</a> in IPv6 network discovery for an interface</p></td>
+<td><p>Configure <a href="/old/Cumulus_Linux/Switch_Port_Attributes.html#src-8363026_SwitchPortAttributes-mtu">MTU</a> in IPv6 network discovery for an interface</p></td>
 <td><pre><code>                   
 cumulus@switch:~$ sudo cl-ra interface swp3 set mtu 9000
    
@@ -150,7 +153,7 @@ switch(config-if)# ipv6 ospf6 hello-interval  60 
     </code></pre></td>
 </tr>
 <tr class="odd">
-<td><p>Display <a href="/old/Border_Gateway_Protocol_-_BGP.html">BGP</a> information</p></td>
+<td><p>Display <a href="/old/Cumulus_Linux/Border_Gateway_Protocol_-_BGP.html">BGP</a> information</p></td>
 <td><pre><code>                   
 cumulus@switch:~$ net show bgp summary
    

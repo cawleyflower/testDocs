@@ -4,7 +4,8 @@ author: Unknown
 weight: 147
 pageID: 10456678
 aliases:
- - /old/Monitor_the_EVPN_Service.html
+ - /old/Cumulus_NetQ/Monitor_the_EVPN_Service.html
+imgData: Cumulus_NetQ
 ---
 # Monitor the EVPN Service
 
@@ -21,14 +22,13 @@ view switches with the sessions, total number of VNIs, and alarms
 triggered by the EVPN service. For an overview and how to configure EVPN
 in your data center network, refer to [Ethernet Virtual Private Network
 -
-EVPN](/old/https://docs.cumulusnetworks.com/display/DOCS/Ethernet+Virtual+Private+Network+-+EVPN).
+EVPN](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Ethernet+Virtual+Private+Network+-+EVPN).
 
 ### EVPN Service Card Workflow Summary
 
 The small EVPN Service card displays:
 
-{{%imgOld 0
-%}}
+{{%imgOld 0 %}}
 
 | Item            | Description                                                                                        |
 | --------------- | -------------------------------------------------------------------------------------------------- |
@@ -40,8 +40,7 @@ The small EVPN Service card displays:
 
 The medium EVPN Service card displays:
 
-{{%imgOld 4
-%}}
+{{%imgOld 4 %}}
 
 | Item                      | Description                                                                                                         |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------- |
@@ -119,8 +118,7 @@ The *Sessions Summary* tab which displays:
 
 The *Alarms* tab which displays:
 
-{{%imgOld 12
-%}}
+{{%imgOld 12 %}}
 
 | Item                 | Description                                                                                                                                                                                                  |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -548,8 +546,7 @@ here).
 
 {{%imgOld 44 %}}
 
-You can perform the following actions on the results
-list:
+You can perform the following actions on the results list:
 
 | Option             | Action or Behavior on Click                                                                                         |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -567,7 +564,7 @@ With NetQ, you can monitor the performance of a single EVPN session,
 including the number of associated VNI, VTEPs and type. For an overview
 and how to configure EVPN in your data center network, refer to
 [Ethernet Virtual Private Network -
-EVPN](/old/https://docs.cumulusnetworks.com/display/DOCS/Ethernet+Virtual+Private+Network+-+EVPN).
+EVPN](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Ethernet+Virtual+Private+Network+-+EVPN).
 
 {{%notice info%}}
 
@@ -595,8 +592,7 @@ example set of heat maps for a time period of 24 hours is shown here
 with the most common time periods in the table along with the resulting
 time blocks and regions.
 
-{{%imgOld 45
-%}}
+{{%imgOld 45 %}}
 
 | Time Period | Number of Runs | Number Time Blocks | Amount of Time in Each Block | Region Size | Number Blocks per Region | Total Number of Regions |
 | ----------- | -------------- | ------------------ | ---------------------------- | ----------- | ------------------------ | ----------------------- |
@@ -613,8 +609,7 @@ time blocks and regions.
 
 The small EVPN Session card displays:
 
-{{%imgOld 46
-%}}
+{{%imgOld 46 %}}
 
 | Item              | Description                                                                                 |
 | ----------------- | ------------------------------------------------------------------------------------------- |
@@ -625,8 +620,7 @@ The small EVPN Session card displays:
 
 The medium EVPN Session card displays:
 
-{{%imgOld 48
-%}}
+{{%imgOld 48 %}}
 
 | Item                       | Description                                                                                                                          |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -642,8 +636,7 @@ The large EVPN Session card contains one tab.
 
 The *Session Summary* tab displays:
 
-{{%imgOld 50
-%}}
+{{%imgOld 50 %}}
 
 | Item                       | Description                                                                                                                          |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |

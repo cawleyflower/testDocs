@@ -4,7 +4,8 @@ author: Unknown
 weight: 151
 pageID: 8362768
 aliases:
- - /old/VXLAN_Scale.html
+ - /old/Cumulus_Linux/VXLAN_Scale.html
+imgData: Cumulus_Linux
 ---
 # VXLAN Scale
 
@@ -31,8 +32,9 @@ an upper limit of around 3000 VLANs you can configure before you hit the
 reserved range (Cumulus Linux uses 3000-3999 by default). Cumulus
 Networks typically uses a soft number because the math is unique to each
 environment. An internal VLAN is consumed by each layer 3 port,
-subinterface, [traditional bridge](/old/Traditional_Bridge_Mode.html),
-and the [VLAN-aware bridge](/old/VLAN-aware_Bridge_Mode.html).
+subinterface, [traditional
+bridge](/old/Cumulus_Linux/Traditional_Bridge_Mode.html), and the
+[VLAN-aware bridge](/old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html).
 Therefore, the number of configurable VLANs is:
 
 (total configurable 802.1q VLANs) - (reserved VLANS) - (physical or

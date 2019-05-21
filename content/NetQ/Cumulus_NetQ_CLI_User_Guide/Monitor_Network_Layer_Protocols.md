@@ -4,7 +4,8 @@ author: Unknown
 weight: 41
 pageID: 10456375
 aliases:
- - /old/Monitor_Network_Layer_Protocols.html
+ - /old/Cumulus_NetQ/Monitor_Network_Layer_Protocols.html
+imgData: Cumulus_NetQ
 ---
 # Monitor Network Layer Protocols
 

@@ -4,7 +4,8 @@ author: Unknown
 weight: 49
 pageID: 10456379
 aliases:
- - /old/Resolve_Issues.html
+ - /old/Cumulus_NetQ/Resolve_Issues.html
+imgData: Cumulus_NetQ
 ---
 # Resolve Issues
 
@@ -18,8 +19,9 @@ This topic describes some of the tools and commands you can use to
 troubleshoot issues with the network and NetQ itself.
 
   - [Methods for Diagnosing Network
-    Issues](/old/Methods_for_Diagnosing_Network_Issues.html)
+    Issues](/old/Cumulus_NetQ/Methods_for_Diagnosing_Network_Issues.html)
 
-  - [Resolve MLAG Issues](/old/Resolve_MLAG_Issues.html)
+  - [Resolve MLAG Issues](/old/Cumulus_NetQ/Resolve_MLAG_Issues.html)
 
-  - [Investigate NetQ Issues](/old/Investigate_NetQ_Issues.html)
+  - [Investigate NetQ
+    Issues](/old/Cumulus_NetQ/Investigate_NetQ_Issues.html)

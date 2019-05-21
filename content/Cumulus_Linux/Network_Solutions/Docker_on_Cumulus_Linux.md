@@ -4,7 +4,8 @@ author: Unknown
 weight: 253
 pageID: 8362980
 aliases:
- - /old/Docker_on_Cumulus_Linux.html
+ - /old/Cumulus_Linux/Docker_on_Cumulus_Linux.html
+imgData: Cumulus_Linux
 ---
 # Docker on Cumulus Linux
 

@@ -4,16 +4,17 @@ author: Unknown
 weight: 47
 pageID: 10456368
 aliases:
- - /old/Monitor_Container_Environments.html
+ - /old/Cumulus_NetQ/Monitor_Container_Environments.html
+imgData: Cumulus_NetQ
 ---
 # Monitor Container Environments
 
 The NetQ Agent monitors container environments the same way it monitors
-[physical servers](/old/Monitor_Linux_Hosts.html). There is no special
-implementation. The NetQ Agent pulls data from the container as it would
-pull data from a Cumulus Linux switch or Linux host. It can be installed
-on a Linux server or in a Linux VM. NetQ Agent integrates with the
-Kubernetes container orchestrator.
+[physical servers](/old/Cumulus_NetQ/Monitor_Linux_Hosts.html). There is
+no special implementation. The NetQ Agent pulls data from the container
+as it would pull data from a Cumulus Linux switch or Linux host. It can
+be installed on a Linux server or in a Linux VM. NetQ Agent integrates
+with the Kubernetes container orchestrator.
 
 NetQ monitors many aspects of containers on your network, including
 their:
@@ -113,7 +114,7 @@ following on the Kubernetes master node:
 
 1.  Configure the host to point to the NetQ Platform by its IP address.
     See the [Install NetQ (2.1.0
-    version)](/old/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=10456209)
+    version)](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=10456209)
     topic for details.
 
 2.  Enable Kubernetes monitoring by NetQ. You can specify a polling
@@ -138,7 +139,7 @@ following on the Kubernetes master node:
 
 Next, you must enable the NetQ Agent on all the worker nodes, as
 described in the [Install
-NetQ](/old/https://docs.cumulusnetworks.com/display/NETQ140DRAFT/Install+NetQ)
+NetQ](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/NETQ140DRAFT/Install+NetQ)
 topic, for complete insight into your container network.
 
 ### View Status of Kubernetes Clusters
@@ -734,10 +735,10 @@ calico-etcd -- calico-etcd-pfg9r -- server11:swp1:torbond1 -- swp6:hostbond2:tor
 ### View Kubernetes Cluster Configuration in the Past
 
 You can use the ["time machine"
-features](/old/Methods_for_Diagnosing_Network_Issues.html) of NetQ on a
-Kubernetes cluster, using the `around` keyword to go back in time to
-check the network status and identify any changes that occurred on the
-network.
+features](/old/Cumulus_NetQ/Methods_for_Diagnosing_Network_Issues.html)
+of NetQ on a Kubernetes cluster, using the `around` keyword to go back
+in time to check the network status and identify any changes that
+occurred on the network.
 
 This example shows the current state of the network. Notice there is a
 node named *server23*. server23 is there because the node *server22*

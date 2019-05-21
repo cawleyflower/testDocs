@@ -4,7 +4,8 @@ author: Unknown
 weight: 97
 pageID: 8363042
 aliases:
- - /old/DHCP_Servers.html
+ - /old/Cumulus_Linux/DHCP_Servers.html
+imgData: Cumulus_Linux
 ---
 # DHCP Servers
 

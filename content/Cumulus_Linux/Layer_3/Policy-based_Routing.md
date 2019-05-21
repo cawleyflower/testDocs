@@ -4,7 +4,8 @@ author: Unknown
 weight: 187
 pageID: 8362974
 aliases:
- - /old/Policy-based_Routing.html
+ - /old/Cumulus_Linux/Policy-based_Routing.html
+imgData: Cumulus_Linux
 ---
 # Policy-based Routing
 
@@ -77,7 +78,7 @@ operate in non-atomic mode, which offers better scaling as all TCAM
 resources are used to actively impact traffic. Add the line
 `acl.non_atomic_update_mode = TRUE` to the `/etc/cumulus/switchd.conf`
 file. For more information, see [Nonatomic Update Mode vs. Atomic Update
-Mode](/old/Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-nonatomic).
+Mode](/old/Cumulus_Linux/Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-nonatomic).
 
 {{%/notice%}}
 

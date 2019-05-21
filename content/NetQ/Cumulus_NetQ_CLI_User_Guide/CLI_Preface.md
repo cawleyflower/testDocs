@@ -4,7 +4,8 @@ author: Unknown
 weight: 29
 pageID: 10456386
 aliases:
- - /old/CLI_Preface.html
+ - /old/Cumulus_NetQ/CLI_Preface.html
+imgData: Cumulus_NetQ
 ---
 # CLI Preface
 
@@ -136,7 +137,8 @@ supported, with the following exceptions:
     available. Access the CLI directly through a terminal window.
 
 For additional details about changes to the CLI, refer to the [NetQ
-Command Line Overview](/old/NetQ_Command_Line_Overview.html).
+Command Line
+Overview](/old/Cumulus_NetQ/NetQ_Command_Line_Overview.html).
 
 For further information regarding bug fixes and known issues present in
 this release, refer to the [release
@@ -159,12 +161,13 @@ reading the other available documents.
 The following NetQ documents are available:
 
   - [Cumulus NetQ Deployment
-    Guide](/old/Cumulus_NetQ_Deployment_Guide.html)
+    Guide](/old/Cumulus_NetQ/Cumulus_NetQ_Deployment_Guide.html)
 
   - Cumulus NetQ CLI User Guide <span style="color: #353744;"> (this
     guide) </span>
 
-  - [Cumulus NetQ UI User Guide](/old/Cumulus_NetQ_UI_User_Guide.html)
+  - [Cumulus NetQ UI User
+    Guide](/old/Cumulus_NetQ/Cumulus_NetQ_UI_User_Guide.html)
 
   - [Cumulus NetQ Release
     Notes](https://support.cumulusnetworks.com/hc/en-us/articles/360017779214)
@@ -182,8 +185,7 @@ This guide uses the following typographical and note conventions.
 ### Typographical Conventions
 
 Throughout the guide, text formatting is used to convey contextual
-information about the
-content.
+information about the content.
 
 | **Text Format**                   | **Meaning**                                                                                                                                |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |

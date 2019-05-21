@@ -4,7 +4,8 @@ author: Unknown
 weight: 37
 pageID: 10456371
 aliases:
- - /old/Monitor_Physical_Layer_Components.html
+ - /old/Cumulus_NetQ/Monitor_Physical_Layer_Components.html
+imgData: Cumulus_NetQ
 ---
 # Monitor Physical Layer Components
 
@@ -33,7 +34,7 @@ It helps answer questions such as:
   - What is the peer for a given port?
 
 NetQ uses
-[LLDP](/old/https://docs.cumulusnetworks.com/display/DOCS/Link+Layer+Discovery+Protocol)
+[LLDP](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Link+Layer+Discovery+Protocol)
 (Link Layer Discovery Protocol) to collect port information. NetQ can
 also identify peer ports connected to DACs ( Direct Attached Cables) and
 AOCs (Active Optical Cables) without using LLDP, even if the link is not

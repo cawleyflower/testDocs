@@ -4,7 +4,8 @@ author: Unknown
 weight: 485
 pageID: 8362618
 aliases:
- - /old/Using_Nutanix_Prism_as_a_Monitoring_Tool.html
+ - /old/Cumulus_Linux/Using_Nutanix_Prism_as_a_Monitoring_Tool.html
+imgData: Cumulus_Linux
 ---
 # Using Nutanix Prism as a Monitoring Tool
 
@@ -110,8 +111,7 @@ take special steps within Cumulus Linux before you can configure Prism.
 4.  Fill out the **Network Switch Configuration** for the Top of Rack
     (ToR) switch configured for snmpd in the previous section:
     
-    {{%imgOld 3
-    %}}
+    {{%imgOld 3 %}}
     
     | Configuration Parameter         | Description                                                                                     | Value Used in Example                                   |
     | ------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------- |

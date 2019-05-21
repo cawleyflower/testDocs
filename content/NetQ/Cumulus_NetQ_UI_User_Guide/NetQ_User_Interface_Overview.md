@@ -4,7 +4,8 @@ author: Unknown
 weight: 89
 pageID: 10457097
 aliases:
- - /old/NetQ_User_Interface_Overview.html
+ - /old/Cumulus_NetQ/NetQ_User_Interface_Overview.html
+imgData: Cumulus_NetQ
 ---
 # NetQ User Interface Overview
 
@@ -58,7 +59,8 @@ To log out of the UI:
 
 1.  Click the user icon at the top right of the application.
 
-2.  Select **Log Out.**
+2.  Select **Log Out.
+    **
 
     **{{%imgOld 3 %}}**
 
@@ -81,7 +83,10 @@ The NetQ UI contains two areas:
 
 ## Main Menu
 
-Found in the application header, click{{%imgOld 5 %}}
+Found in the application header, click
+
+{{%imgOld 5 %}}
+
 to open the main menu which provides navigation to:
 
   - **Favorites**: contains list of links to workbenches that you have
@@ -105,7 +110,11 @@ Found in the header, the navigation history keeps track of every action
 you take on your workbench. This enables the user to go back to a
 previous state or repeat an action.
 
-To open the navigation history, click{{%imgOld 7 %}}. Click on any of the actions to perform that action again.
+To open the navigation history, click
+
+{{%imgOld 7 %}}
+
+. Click on any of the actions to perform that action again.
 
 {{%imgOld 8 %}}
 
@@ -129,7 +138,11 @@ Jade theme.
 
 To choose a theme:
 
-1.  Click{{%imgOld 10 %}}in the application header to open the **User Settings** options.
+1.  Click
+
+    {{%imgOld 10 %}}
+
+    in the application header to open the **User Settings** options.
 
     {{%imgOld 11 %}}
 
@@ -156,7 +169,7 @@ change the time zone by clicking
 
 . The following table presents a sample of time zones:
 
-|           |                                         |         |
+|   Time Zone |       Name                            |    Abbreviation     |
 | --------- | --------------------------------------- | ------- |
 | GMT +12   | New Zealand Standard Time               | NST     |
 | GMT +11   | Solomon Standard Time                   | SST     |
@@ -217,9 +230,9 @@ To create a new search:
 
     {{%notice info%}}
 
-  If you have more matches than fit in the window, click the **See All
-  \# Results** link to view all found matches. The count represents
-  the number of devices found. It does not include cards found.
+    If you have more matches than fit in the window, click the **See All
+    \# Results** link to view all found matches. The count represents
+    the number of devices found. It does not include cards found.
 
     {{%/notice%}}
 
@@ -237,13 +250,13 @@ To re-run a recent search:
 
     {{%imgOld 16 %}}
 
-  {{%notice info%}}
+    {{%notice info%}}
 
-  You may need to click **See All \# Results** to find the desired
-  search. If you do not find it in the list, you may still be able to
-  find it in the **Navigation History**.
+    You may need to click **See All \# Results** to find the desired
+    search. If you do not find it in the list, you may still be able to
+    find it in the **Navigation History**.
 
-  {{%/notice%}}
+    {{%/notice%}}
 
 ## Workbenches
 
@@ -253,7 +266,8 @@ you started. It contains Device Inventory, Switch Inventory, Alarm and
 Info Events, and Network Health cards. On initial login, this workbench
 is opened. You can modify a workbench by adding or removing cards or
 card decks, as described in [Add or Remove a
-Card](/old/#src-10457097_NetQUserInterfaceOverview-AddDelCard) .
+Card](/old/Cumulus_NetQ/#src-10457097_NetQUserInterfaceOverview-AddDelCard)
+.
 
 ## Cards
 
@@ -407,8 +421,7 @@ shown at the bottom of the card (shown enlarged here).
 
 {{%imgOld 29 %}}
 
-You can perform the following actions on the results
-list:
+You can perform the following actions on the results list:
 
 | Option             | Action or Behavior on Click                                                                                      |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------- |
@@ -474,7 +487,7 @@ You can quickly export all data to a .csv file in one of two ways:
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Primary Purpose</p></td>
+<td><p><strong>Primary Purpose</strong></p></td>
 <td><ul>
 <li><p>Quick view of status, typically at the level of good or bad</p></li>
 <li><p>Enable quick actions, run a validation or trace for example</p></li>
@@ -592,9 +605,7 @@ You can add or remove cards from a workbench at any time.
 To add a card:
 
 1.  Click
-
     {{%imgOld 38 %}}
-
     .
 
     {{%imgOld 39 %}}
@@ -743,10 +754,6 @@ The following table covers some basic terms used throughout the NetQ
 user documentation.
 
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th><p>Term</p></th>
@@ -821,7 +828,7 @@ user documentation.
 </tr>
 <tr class="odd">
 <td><p>Notification</p></td>
-<td><p>Item that informs a user of an event. In UI there are two types of notifications: Alert which is a n <span style="color: #000000;"> otification sent by system to inform a user about an event; specifically received through a third-party application, and Message which is a notification <span style="color: #000000;"> sent by a user to share content with another user. </span> </span></p></td>
+<td><p>Item that informs a user of an event. In UI there are two types of notifications: Alert which is a notification sent by system to inform a user about an event; specifically received through a third-party application, and Message which is a notification sent by a user to share content with another user. </p></td>
 </tr>
 <tr class="even">
 <td><p>Peerlink</p></td>

@@ -4,7 +4,8 @@ author: Unknown
 weight: 111
 pageID: 10456384
 aliases:
- - /old/Investigate_NetQ_Issues.html
+ - /old/Cumulus_NetQ/Investigate_NetQ_Issues.html
+imgData: Cumulus_NetQ
 ---
 # Investigate NetQ Issues
 
@@ -18,8 +19,7 @@ log to use in discussion with Cumulus Networks support team.
 
 To aid in troubleshooting issues with NetQ, there are the following
 configuration and log files that can provide insight into the root cause
-of the
-issue:
+of the issue:
 
 | File                      | Description                                                                                                                          |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |

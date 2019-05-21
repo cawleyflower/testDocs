@@ -4,7 +4,8 @@ author: Unknown
 weight: 365
 pageID: 8362790
 aliases:
- - /old/Static_MAC_Bindings_with_VXLAN.html
+ - /old/Cumulus_Linux/Static_MAC_Bindings_with_VXLAN.html
+imgData: Cumulus_Linux
 ---
 # Static MAC Bindings with VXLAN
 
@@ -35,11 +36,11 @@ Consider the following example:
 
 Preconfiguring remote MAC addresses does not scale. A better solution is
 to use the Cumulus Networks [Lightweight Network
-Virtualization](/old/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=2722663)
+Virtualization](/old/Cumulus_Linux/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=2722663)
 feature, or a controller-based option like [Midokura MidoNet and
-OpenStack](/old/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=2722662)
+OpenStack](/old/Cumulus_Linux/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=2722662)
 or [VMware
-NSX](/old/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=2722660).
+NSX](/old/Cumulus_Linux/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=2722660).
 
 {{%/notice%}}
 

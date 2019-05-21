@@ -4,7 +4,8 @@ author: Unknown
 weight: 17
 pageID: 10456388
 aliases:
- - /old/Cumulus_NetQ_UI_User_Guide.html
+ - /old/Cumulus_NetQ/Cumulus_NetQ_UI_User_Guide.html
+imgData: Cumulus_NetQ
 ---
 # Cumulus NetQ UI User Guide
 
@@ -16,4 +17,4 @@ This guide provides instructions and information about monitoring
 individual components of the network, the network as a whole, and the
 NetQ software itself using the NetQ graphical user interface (GUI). If
 you prefer to use a command line interface, refer to the [Cumulus NetQ
-CLI User Guide](/old/Cumulus_NetQ_CLI_User_Guide.html) .
+CLI User Guide](/old/Cumulus_NetQ/Cumulus_NetQ_CLI_User_Guide.html) .

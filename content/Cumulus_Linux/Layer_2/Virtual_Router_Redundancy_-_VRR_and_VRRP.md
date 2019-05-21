@@ -4,7 +4,8 @@ author: Unknown
 weight: 127
 pageID: 8362691
 aliases:
- - /old/Virtual_Router_Redundancy_-_VRR_and_VRRP.html
+ - /old/Cumulus_Linux/Virtual_Router_Redundancy_-_VRR_and_VRRP.html
+imgData: Cumulus_Linux
 ---
 # Virtual Router Redundancy - VRR and VRRP
 
@@ -40,7 +41,8 @@ configuration.
 The diagram below illustrates a basic VRR-enabled network configuration.
 The network includes several hosts and two routers running Cumulus Linux
 configured with [Multi-chassis Link
-Aggregation](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html) (MLAG).
+Aggregation](/old/Cumulus_Linux/Multi-Chassis_Link_Aggregation_-_MLAG.html)
+(MLAG).
 
 {{%notice note%}}
 
@@ -198,7 +200,8 @@ mode for First Hop Redundancy Protocol.
 
 ### Example VRR Configuration with MLAG
 
-To create an [MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html)
+To create an
+[MLAG](/old/Cumulus_Linux/Multi-Chassis_Link_Aggregation_-_MLAG.html)
 configuration that incorporates VRR, use a configuration like the
 following:
 
@@ -529,8 +532,7 @@ switch:
     address are redirected to a physical network interface.
 
 You can also set these optional parameters. If you do not set these
-parameters, the defaults are
-used:
+parameters, the defaults are used:
 
 | Optional Parameter       | Default Value     | Description                                                                                                                                                                                                                                                                                                                              |
 | ------------------------ | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

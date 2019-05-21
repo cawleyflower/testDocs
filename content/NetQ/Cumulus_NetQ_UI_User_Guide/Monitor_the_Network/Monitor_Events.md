@@ -4,7 +4,8 @@ author: Unknown
 weight: 129
 pageID: 10456500
 aliases:
- - /old/Monitor_Events.html
+ - /old/Cumulus_NetQ/Monitor_Events.html
+imgData: Cumulus_NetQ
 ---
 # Monitor Events
 
@@ -14,7 +15,7 @@ Alarms card workflow tracks critical severity events, whereas the Info
 card workflow tracks all warning, info, and debug severity events.
 
 To focus on events from a single device perspective, refer to [Monitor
-Switches](/old/Monitor_Switches.html) .
+Switches](/old/Cumulus_NetQ/Monitor_Switches.html) .
 
 ## Monitor Alarms
 
@@ -130,6 +131,7 @@ The large Alarms card has one tab.
 The *System, Trace and Interfaces* tab displays:
 
 {{%imgOld 5 %}}
+
 
 <table>
 <colgroup>
@@ -324,21 +326,21 @@ To compare two time periods:
     contain a large amount of data.
 
 4.  Hover over the card and click
-    
+
     {{%imgOld 15 %}}
-    
+
     .
-    
+
     {{%imgOld 16 %}}
 
-5.  Select a different time period.  
-    
+5.  Select a different time period.
+
     {{%imgOld 17 %}}
-    
+
     {{%imgOld 18 %}}
 
 6.  Compare the two cards with the **Devices by event count** filter
-    applied.  
+    applied.
     In this example, the total alarm count is down, but the same device
     has the most alarms in each time period, so it might be worth
     investigating this device in more detail.
@@ -377,8 +379,7 @@ informational alarms occurring anywhere in your network.
 
 The small Info card displays:
 
-{{%imgOld 22
-%}}
+{{%imgOld 22 %}}
 
 | Item             | Description                                                                           |
 | ---------------- | ------------------------------------------------------------------------------------- |
@@ -648,7 +649,7 @@ in any column header to toggle the sort order between A-Z and Z-A.
 The messages can be viewed through third-party notification
 applications. For details about configuring notifications using the NetQ
 CLI, refer to [Integrate with Third-party Software and
-Hardware](/old/Integrate_with_Third-party_Software_and_Hardware.html).
+Hardware](/old/Cumulus_NetQ/Integrate_with_Third-party_Software_and_Hardware.html).
 
 {{%/notice%}}
 

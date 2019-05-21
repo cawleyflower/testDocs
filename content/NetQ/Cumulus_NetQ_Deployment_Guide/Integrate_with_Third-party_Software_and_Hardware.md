@@ -4,7 +4,8 @@ author: Unknown
 weight: 73
 pageID: 10456260
 aliases:
- - /old/Integrate_with_Third-party_Software_and_Hardware.html
+ - /old/Cumulus_NetQ/Integrate_with_Third-party_Software_and_Hardware.html
+imgData: Cumulus_NetQ
 ---
 # Integrate with Third-party Software and Hardware
 
@@ -152,8 +153,7 @@ For example:
 To configure the NetQ notifier to send notifications to PagerDuty:
 
 1.  Configure the following options using the `netq``  add notification
-    channel `
-    command:
+    channel ` command:
     
     | Option                                   | Description                                                                                                                                                        |
     | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -1222,7 +1222,7 @@ Putting all of these channel, rule, and filter definitions together you
 create a complete notification configuration. The following are example
 notification configurations are created using the three-step process
 outlined above. Refer to [Integrate NetQ with an Event Notification
-Application](/old/#src-10456260_IntegratewithThird-partySoftwareandHardware-IntegrateNotification)
+Application](/old/Cumulus_NetQ/#src-10456260_IntegratewithThird-partySoftwareandHardware-IntegrateNotification)
 for details and instructions for creating channels, rules, and filters.
 
 ### Create a Notification for BGP Events from a Selected Switch

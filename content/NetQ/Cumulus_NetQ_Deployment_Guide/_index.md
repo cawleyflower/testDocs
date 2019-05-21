@@ -4,7 +4,8 @@ author: Unknown
 weight: 15
 pageID: 10456090
 aliases:
- - /old/Cumulus_NetQ_Deployment_Guide.html
+ - /old/Cumulus_NetQ/Cumulus_NetQ_Deployment_Guide.html
+imgData: Cumulus_NetQ
 ---
 # Cumulus NetQ Deployment Guide
 
@@ -20,9 +21,9 @@ switches and you are ready to add these NetQ capabilities.
 
 For information about monitoring and troubleshooting your network, refer
 to the [Cumulus NetQ CLI User
-Guide](/old/https://docs.cumulusnetworks.com/display/NETQ/Cumulus+NetQ+CLI+User+Guide)
+Guide](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/NETQ/Cumulus+NetQ+CLI+User+Guide)
 or the [Cumulus NetQ UI User
-Guide](/old/https://docs.cumulusnetworks.com/display/NETQ/Cumulus+NetQ+UI+User+Guide).
+Guide](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/NETQ/Cumulus+NetQ+UI+User+Guide).
 
 {{%notice tip%}}
 
