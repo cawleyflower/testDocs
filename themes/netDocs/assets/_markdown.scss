@@ -84,4 +84,14 @@ $block-border-radius: 0.15rem;
       background: $gray-100;
     }
   }
+
+  p code {
+    background: rgba(0, 173, 105, 0.1);
+    color: $cn-jade;
+  }
+
+  .notices p code {
+    background: transparent;
+    color: inherit;
+  }
 }
