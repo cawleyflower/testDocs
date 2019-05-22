@@ -4,7 +4,8 @@ author: Unknown
 weight: 311
 pageID: 8362693
 aliases:
- - /old/ifplugd.html
+ - /old/Cumulus_Linux/ifplugd.html
+imgData: Cumulus_Linux
 ---
 # ifplugd
 
@@ -56,8 +57,8 @@ MLAG environment.
 <div class="admonition-body">
 
 `ifplugd` is configured on both both the primary and secondary
-[MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html) switches in this
-example.
+[MLAG](/old/Cumulus_Linux/Multi-Chassis_Link_Aggregation_-_MLAG.html)
+switches in this example.
 
 </div>
 

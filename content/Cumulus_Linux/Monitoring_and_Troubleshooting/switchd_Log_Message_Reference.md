@@ -4,7 +4,8 @@ author: Unknown
 weight: 235
 pageID: 8362629
 aliases:
- - /old/switchd_Log_Message_Reference.html
+ - /old/Cumulus_Linux/switchd_Log_Message_Reference.html
+imgData: Cumulus_Linux
 ---
 # switchd Log Message Reference
 

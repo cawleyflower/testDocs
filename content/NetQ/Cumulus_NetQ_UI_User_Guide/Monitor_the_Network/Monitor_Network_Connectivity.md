@@ -4,7 +4,8 @@ author: Unknown
 weight: 133
 pageID: 10456855
 aliases:
- - /old/Monitor_Network_Connectivity.html
+ - /old/Cumulus_NetQ/Monitor_Network_Connectivity.html
+imgData: Cumulus_NetQ
 ---
 # Monitor Network Connectivity
 
@@ -36,8 +37,7 @@ The small Trace Request card displays:
 
 The medium Trace Request card displays:
 
-{{%imgOld 2
-%}}
+{{%imgOld 2 %}}
 
 | Item              | Description                                                                                    |
 | ----------------- | ---------------------------------------------------------------------------------------------- |
@@ -50,8 +50,7 @@ The medium Trace Request card displays:
 
 The large Trace Request card displays:
 
-{{%imgOld 4
-%}}
+{{%imgOld 4 %}}
 
 | Item            | Description                                                                                                                                                                                                             |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -157,8 +156,8 @@ To create the trace request:
 
 4.  Click **Run Trace**. A corresponding Trace Results card is opened on
     your workbench. Refer to [View Layer 2 Trace
-    Results](/old/#src-10456855_MonitorNetworkConnectivity-ODTL2) for
-    details.
+    Results](/old/Cumulus_NetQ/#src-10456855_MonitorNetworkConnectivity-ODTL2)
+    for details.
 
 ### Create a Layer 3 On-demand Trace Request
 
@@ -194,8 +193,8 @@ To create the trace request:
 
 4.  Click **Run Trace**. A corresponding Trace Results card is opened on
     your workbench. Refer to [View Layer 3 Trace
-    Results](/old/#src-10456855_MonitorNetworkConnectivity-ODTL3) for
-    details.
+    Results](/old/Cumulus_NetQ/#src-10456855_MonitorNetworkConnectivity-ODTL3)
+    for details.
 
 ### Create a Layer 2 Trace Through a Given VLAN
 
@@ -224,8 +223,8 @@ To create the trace request:
 
 5.  Click **Run Now**. A corresponding Trace Results card is opened on
     your workbench. Refer to [View Layer 2 Trace
-    Results](/old/#src-10456855_MonitorNetworkConnectivity-ODTL2) for
-    details.
+    Results](/old/Cumulus_NetQ/#src-10456855_MonitorNetworkConnectivity-ODTL2)
+    for details.
 
 ### Create a Layer 3 Trace Through a Given VRF
 
@@ -252,8 +251,8 @@ To create the trace request:
 
 5.  Click **Run Trace**. A corresponding Trace Results card is opened on
     your workbench. Refer to [View Layer 3 Trace
-    Results](/old/#src-10456855_MonitorNetworkConnectivity-ODTL3) for
-    details.
+    Results](/old/Cumulus_NetQ/#src-10456855_MonitorNetworkConnectivity-ODTL3)
+    for details.
 
 ### Create a Trace to Run on a Regular Basis
 

@@ -4,7 +4,8 @@ author: Unknown
 weight: 149
 pageID: 10456791
 aliases:
- - /old/Monitor_the_LLDP_Service.html
+ - /old/Cumulus_NetQ/Monitor_the_LLDP_Service.html
+imgData: Cumulus_NetQ
 ---
 # Monitor the LLDP Service
 
@@ -21,14 +22,13 @@ view nodes with the most LLDP neighbor nodes, those nodes with the least
 neighbor nodes, and view alarms triggered by the LLDP service. For an
 overview and how to configure LLDP in your data center network, refer to
 [Link Layer Discovery
-Protocol](/old/https://docs.cumulusnetworks.com/display/DOCS/Link+Layer+Discovery+Protocol).
+Protocol](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Link+Layer+Discovery+Protocol).
 
 ### LLDP Service Card Workflow Summary
 
 The small LLDP Service card displays:
 
-{{%imgOld 0
-%}}
+{{%imgOld 0 %}}
 
 | Item            | Description                                                                              |
 | --------------- | ---------------------------------------------------------------------------------------- |
@@ -40,8 +40,7 @@ The small LLDP Service card displays:
 
 The medium LLDP Service card displays:
 
-{{%imgOld 4
-%}}
+{{%imgOld 4 %}}
 
 | Item                      | Description                                                                                             |
 | ------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -118,8 +117,7 @@ The *Sessions Summary* tab which displays:
 
 The *Alarms* tab which displays:
 
-{{%imgOld 12
-%}}
+{{%imgOld 12 %}}
 
 | Item                 | Description                                                                                                                                                                                                     |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -389,7 +387,7 @@ include:
     unestablished sessions, you might want to look more carefully at
     those switches using the Switches card workflow to determine
     probable causes. Refer to [Monitor
-    Switches](/old/Monitor_Switches.html).
+    Switches](/old/Cumulus_NetQ/Monitor_Switches.html).
 
   - Click **Show All Sessions** to investigate all LLDP sessions with
     events in the full screen card.
@@ -519,8 +517,7 @@ here).
 
 {{%imgOld 40 %}}
 
-You can perform the following actions on the results
-list:
+You can perform the following actions on the results list:
 
 | Option             | Action or Behavior on Click                                                                                         |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -539,7 +536,7 @@ view neighbor state changes, and compare with events occurring at the
 same time, as well as monitor the running LLDP configuration and changes
 to the configuration file. For an overview and how to configure LLDP in
 your data center network, refer to [Link Layer Discovery
-Protocol](/old/https://docs.cumulusnetworks.com/display/DOCS/Link+Layer+Discovery+Protocol).
+Protocol](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Link+Layer+Discovery+Protocol).
 
 {{%notice info%}}
 
@@ -567,8 +564,7 @@ example set of heat maps for a time period of 24 hours is shown here
 with the most common time periods in the table along with the resulting
 time blocks and regions.
 
-{{%imgOld 41
-%}}
+{{%imgOld 41 %}}
 
 | Time Period | Number of Runs | Number Time Blocks | Amount of Time in Each Block | Region Size | Number Blocks per Region | Total Number of Regions |
 | ----------- | -------------- | ------------------ | ---------------------------- | ----------- | ------------------------ | ----------------------- |
@@ -930,7 +926,6 @@ include:
     
     {{%imgOld 71 %}}
     
-    in the top right
-corner
+    in the top right corner
 
-[](/old/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=9014295)
+[](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=9014295)

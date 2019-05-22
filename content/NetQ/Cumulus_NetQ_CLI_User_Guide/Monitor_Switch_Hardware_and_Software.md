@@ -4,7 +4,8 @@ author: Unknown
 weight: 35
 pageID: 10456387
 aliases:
- - /old/Monitor_Switch_Hardware_and_Software.html
+ - /old/Cumulus_NetQ/Monitor_Switch_Hardware_and_Software.html
+imgData: Cumulus_NetQ
 ---
 # Monitor Switch Hardware and Software
 
@@ -21,7 +22,7 @@ questions such as:
   - Do all switches have NetQ agents running?
 
 NetQ uses
-[LLDP](/old/https://docs.cumulusnetworks.com/display/DOCS/Link+Layer+Discovery+Protocol)
+[LLDP](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Link+Layer+Discovery+Protocol)
 (Link Layer Discovery Protocol) to collect port information. NetQ can
 also identify peer ports connected to DACs ( Direct Attached Cables) and
 AOCs (Active Optical Cables) without using LLDP, even if the link is not
@@ -1178,7 +1179,7 @@ leaf22            bgpd                 3536  default         yes     yes    yes 
 
 To view changes over a given time period, use the `netq` `show events`
 command. For more detailed information about events, refer to [Monitor
-Events](/old/Monitor_Events.html).
+Events](/old/Cumulus_NetQ/Monitor_Events.html).
 
 In this example, we want to view changes to the bgpd service in the last
 48 hours.

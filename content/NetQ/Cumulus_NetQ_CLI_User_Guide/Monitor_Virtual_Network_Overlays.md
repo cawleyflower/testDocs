@@ -4,7 +4,8 @@ author: Unknown
 weight: 43
 pageID: 10456377
 aliases:
- - /old/Monitor_Virtual_Network_Overlays.html
+ - /old/Cumulus_NetQ/Monitor_Virtual_Network_Overlays.html
+imgData: Cumulus_NetQ
 ---
 # Monitor Virtual Network Overlays
 
@@ -252,7 +253,7 @@ same unit of measure.
 
 For more information about and configuration of EVPN in your data
 center, refer to the [Cumulus Linux
-EVPN](/old/https://docs.cumulusnetworks.com/display/DOCS/Ethernet+Virtual+Private+Network+-+EVPN)
+EVPN](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Ethernet+Virtual+Private+Network+-+EVPN)
 topic.
 
 ### View the Status of EVPN
@@ -349,7 +350,7 @@ torc-22           evpn         info     VNI 39 state changed from down to u 1d:8
 ## Monitor LNV
 
 Lightweight Network Virtualization (LNV) is a technique for deploying
-[VXLANs](/old/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=8360752)
+[VXLANs](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=8360752)
 without a central controller on bare metal switches. LNV enables data
 center network administrators and operators to create a data path
 between bridges on top of a layer 3 fabric. With NetQ, you can monitor
@@ -420,5 +421,5 @@ leaf22            RD         HER      up         4      6�
 
 For more information about and configuration of LNV, refer to the
 [Cumulus Linux LNV
-Overview](/old/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=8360754)
+Overview](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=8360754)
 topic.

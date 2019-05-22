@@ -4,7 +4,8 @@ author: Unknown
 weight: 131
 pageID: 10456523
 aliases:
- - /old/Monitor_Network_Protocols_and_Services.html
+ - /old/Cumulus_NetQ/Monitor_Network_Protocols_and_Services.html
+imgData: Cumulus_NetQ
 ---
 # Monitor Network Protocols and Services
 
@@ -25,6 +26,6 @@ its own card workflow containing:
     sessions, alarms or other relevant data.
 
 Refer to [NetQ User Interface Overview (2.1.0
-version)](/old/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=10456402)
+version)](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=10456402)
 for information about navigating the card workflows and performing
 common actions.

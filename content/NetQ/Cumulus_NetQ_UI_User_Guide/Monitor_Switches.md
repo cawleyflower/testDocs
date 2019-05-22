@@ -4,7 +4,8 @@ author: Unknown
 weight: 95
 pageID: 10457038
 aliases:
- - /old/Monitor_Switches.html
+ - /old/Cumulus_NetQ/Monitor_Switches.html
+imgData: Cumulus_NetQ
 ---
 # Monitor Switches
 
@@ -16,7 +17,7 @@ compliance, and other planning tasks. Viewing individual switch health
 helps isolate performance issues.
 
 For network-wide monitoring, refer to [Monitor the
-Network](/old/Monitor_the_Network.html).
+Network](/old/Cumulus_NetQ/Monitor_the_Network.html).
 
 ## Monitor Switch Performance
 
@@ -86,8 +87,7 @@ The medium Switch card displays:
 
 {{%imgOld 3 %}}
 
-{{%imgOld 4
-%}}
+{{%imgOld 4 %}}
 
 | Item            | Description                                                                                                                                                                      |
 | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -100,8 +100,7 @@ The large Switch card contains two tabs:
 
 The *Attributes* tab displays:
 
-{{%imgOld 6
-%}}
+{{%imgOld 6 %}}
 
 | Item               | Description                                                                                                                                              |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -122,8 +121,7 @@ The *Attributes* tab displays:
 
 The Utilization tab displays:
 
-{{%imgOld 8
-%}}
+{{%imgOld 8 %}}
 
 | Item            | Description                                                                                                                 |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -427,8 +425,7 @@ accomplished through the Switch Inventory card.
 
 The small Switch Inventory card displays:
 
-{{%imgOld 28
-%}}
+{{%imgOld 28 %}}
 
 | Item             | Description                                                                                  |
 | ---------------- | -------------------------------------------------------------------------------------------- |
@@ -512,8 +509,7 @@ The *Summary* tab displays:
 
 The *ASIC* tab displays:
 
-{{%imgOld 34
-%}}
+{{%imgOld 34 %}}
 
 | Item             | Description                                                                                                                       |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -525,8 +521,7 @@ The *ASIC* tab displays:
 
 The *Platform* tab displays:
 
-{{%imgOld 36
-%}}
+{{%imgOld 36 %}}
 
 | Item                | Description                                                                                                                                  |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ .Page.Title }} | {{ .Site.Title -}}</title>
+
+  <!-- Fonts for the theme -->
+  <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
+
+  <!-- Theme stylesheet, you can customize scss by creatig `assets/custom.scss` in your website -->
+  {{ $styles := resources.Get "book.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+
+  <!-- Favicon -->
+  <link rel="icon" href="{{ "favicon.png" | relURL }}" type="image/x-icon">
+
+  <!-- RSS -->
+  {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+
+  {{ "<!--" | safeHTML }}
+  Made with Book Theme
+  https://github.com/alex-shpak/hugo-book
+  {{ "-->" | safeHTML }}
+
+</head>
+
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+
+      <nav role="navigation">
+        <h2 class="book-brand">
+          <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+        </h2>
+        {{ block "menu" . }}
+
+         {{ partial "docs/menu-sectiontree" . }}
+
+         {{ end }}
+      </nav>
+
+      <!-- js menu bundle -->
+      {{ $jsScroll := resources.Get "js/menu.js" }}
+      {{ $jsCollapse := resources.Get "js/collapse.js"}}
+      {{ $jsMenu := slice $jsScroll $jsCollapse | resources.Concat "js/menuBundle.js"}}
+
+      <script src = "{{ $jsMenu.Permalink }}"> </script>
+
+    </aside>
+
+    <div class="book-page">
+
+      <header class="align-center justify-between book-header">
+        <label for="menu-control">
+          <img src="{{ "svg/menu.svg" | relURL }}" alt="Menu" />
+        </label>
+        <strong>{{- .Page.Title -}}</strong>
+      </header>
+
+      {{ block "main" . }}
+
+
+      {{ end }}
+
+      {{ partial "docs/git-footer" . }}
+
+    </div>
+      {{ block "toc" .}}
+
+
+      {{ end }}
+  </main>
+
+  {{ template "_internal/google_analytics_async.html" . }}
+
+</body>
+
+</html>

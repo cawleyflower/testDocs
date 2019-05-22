@@ -4,7 +4,8 @@ author: Unknown
 weight: 99
 pageID: 8363049
 aliases:
- - /old/Facebook_Voyager_Optical_Interfaces.html
+ - /old/Cumulus_Linux/Facebook_Voyager_Optical_Interfaces.html
+imgData: Cumulus_Linux
 ---
 # Facebook Voyager Optical Interfaces
 

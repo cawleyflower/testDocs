@@ -4,7 +4,8 @@ author: Unknown
 weight: 227
 pageID: 8362603
 aliases:
- - /old/Troubleshooting_Network_Interfaces.html
+ - /old/Cumulus_Linux/Troubleshooting_Network_Interfaces.html
+imgData: Cumulus_Linux
 ---
 # Troubleshooting Network Interfaces
 
@@ -223,13 +224,12 @@ iface br0
 
 Notice that bond1 is a member of br0. If bond1 is removed, you must
 remove the reference to it from the br0 configuration. Otherwise, if you
-reload the configuration with `ifreload -a`, bond1 is still part of
-br0.
+reload the configuration with `ifreload -a`, bond1 is still part of br0.
 
 ## MTU Set on a Logical Interface Fails with Error: "Numerical result out of range"
 
 This error occurs when the
-[MTU](/old/Switch_Port_Attributes.html#src-8363026_SwitchPortAttributes-mtu)
+[MTU](/old/Cumulus_Linux/Switch_Port_Attributes.html#src-8363026_SwitchPortAttributes-mtu)
 you are trying to set on an interface is higher than the MTU of the
 lower interface or dependent interface. Linux expects the upper
 interface to have an MTU less than or equal to the MTU on the lower
@@ -291,4 +291,4 @@ Losing a large number of packets across an MLAG peerlink interface may
 not be a problem. Instead this could be occurring in order to prevent
 looping of BUM (broadcast, unknown unicast and multicast) packets. For
 more information, and how to detect these drops, read the [MLAG
-chapter](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html#src-8362677_Multi-ChassisLinkAggregation-MLAG-drops).
+chapter](/old/Cumulus_Linux/Multi-Chassis_Link_Aggregation_-_MLAG.html#src-8362677_Multi-ChassisLinkAggregation-MLAG-drops).

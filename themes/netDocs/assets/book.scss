@@ -172,6 +172,11 @@ ul.pagination {
   border-left: 1px solid $cn-mystic;
   flex: 0 0 $toc-width;
   font-size: $font-size-12;
+  background-color: $white ;
+  width: $toc-width;
+  padding: $padding-16;
+  top: inherit;
+  right :0;
 
   nav {
     width: $toc-width;

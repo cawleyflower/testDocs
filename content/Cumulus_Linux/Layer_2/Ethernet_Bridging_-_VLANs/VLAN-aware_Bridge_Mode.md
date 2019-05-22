@@ -4,7 +4,8 @@ author: Unknown
 weight: 347
 pageID: 8362673
 aliases:
- - /old/VLAN-aware_Bridge_Mode.html
+ - /old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html
+imgData: Cumulus_Linux
 ---
 # VLAN-aware Bridge Mode
 
@@ -12,24 +13,25 @@ The Cumulus Linux bridge driver supports two configuration modes, one
 that is VLAN-aware, and one that follows a more traditional Linux bridge
 model.
 
-For [traditional Linux bridges](/old/Traditional_Bridge_Mode.html), the
-kernel supports VLANs in the form of VLAN subinterfaces. Enabling
-bridging on multiple VLANs means configuring a bridge for each VLAN and,
-for each member port on a bridge, creating one or more VLAN
-subinterfaces out of that port. This mode poses scalability challenges
-in terms of configuration size as well as boot time and run time state
-management, when the number of ports times the number of VLANs becomes
-large.
+For [traditional Linux
+bridges](/old/Cumulus_Linux/Traditional_Bridge_Mode.html), the kernel
+supports VLANs in the form of VLAN subinterfaces. Enabling bridging on
+multiple VLANs means configuring a bridge for each VLAN and, for each
+member port on a bridge, creating one or more VLAN subinterfaces out of
+that port. This mode poses scalability challenges in terms of
+configuration size as well as boot time and run time state management,
+when the number of ports times the number of VLANs becomes large.
 
 The VLAN-aware mode in Cumulus Linux implements a configuration model
 for large-scale L2 environments, with **one single** **instance** of
-[Spanning Tree](/old/Spanning_Tree_and_Rapid_Spanning_Tree.html). Each
-physical bridge member port is configured with the list of allowed VLANs
-as well as its port VLAN ID (either PVID or native VLAN — see below).
-MAC address learning, filtering and forwarding are *VLAN-aware*. This
-significantly reduces the configuration size, and eliminates the large
-overhead of managing the port/VLAN instances as subinterfaces, replacing
-them with lightweight VLAN bitmaps and state updates.
+[Spanning
+Tree](/old/Cumulus_Linux/Spanning_Tree_and_Rapid_Spanning_Tree.html).
+Each physical bridge member port is configured with the list of allowed
+VLANs as well as its port VLAN ID (either PVID or native VLAN — see
+below). MAC address learning, filtering and forwarding are *VLAN-aware*.
+This significantly reduces the configuration size, and eliminates the
+large overhead of managing the port/VLAN instances as subinterfaces,
+replacing them with lightweight VLAN bitmaps and state updates.
 
 {{%notice tip%}}
 
@@ -42,11 +44,12 @@ VLAN-aware bridge on a given switch.
 ## Configure a VLAN-aware Bridge
 
 VLAN-aware bridges can be configured with the Network Command Line
-Utility ([NCLU](/old/Network_Command_Line_Utility_-_NCLU.html)). The
-example below shows the NCLU commands required to create a VLAN-aware
-bridge configured for STP, that contains two switch ports, and includes
-3 VLANs — the tagged VLANs 100 and 200 and the untagged (native) VLAN of
-1:
+Utility
+([NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html)).
+The example below shows the NCLU commands required to create a
+VLAN-aware bridge configured for STP, that contains two switch ports,
+and includes 3 VLANs — the tagged VLANs 100 and 200 and the untagged
+(native) VLAN of 1:
 
 <table>
 <colgroup>
@@ -674,8 +677,8 @@ VLAN-aware bridge to map VLANs to VNIs.
 
 {{%notice note%}}
 
-See the [VXLAN Scale](/old/VXLAN_Scale.html) topic for information about
-the number of VXLANs you can configure simultaneously.
+See the [VXLAN Scale](/old/Cumulus_Linux/VXLAN_Scale.html) topic for
+information about the number of VXLANs you can configure simultaneously.
 
 {{%/notice%}}
 

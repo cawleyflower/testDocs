@@ -4,13 +4,14 @@ author: Unknown
 weight: 109
 pageID: 10456381
 aliases:
- - /old/Resolve_MLAG_Issues.html
+ - /old/Cumulus_NetQ/Resolve_MLAG_Issues.html
+imgData: Cumulus_NetQ
 ---
 # Resolve MLAG Issues
 
 This topic outlines a few scenarios that illustrate how you use NetQ to
 troubleshoot
-[MLAG](/old/https://docs.cumulusnetworks.com/display/DOCS/Multi-Chassis+Link+Aggregation+-+MLAG)
+[MLAG](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Multi-Chassis+Link+Aggregation+-+MLAG)
 on Cumulus Linux switches. Each starts with a log message that indicates
 the current MLAG state.
 

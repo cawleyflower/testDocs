@@ -4,7 +4,8 @@ author: Unknown
 weight: 123
 pageID: 10456458
 aliases:
- - /old/Monitor_Network_Health.html
+ - /old/Cumulus_NetQ/Monitor_Network_Health.html
+imgData: Cumulus_NetQ
 ---
 # Monitor Network Health
 

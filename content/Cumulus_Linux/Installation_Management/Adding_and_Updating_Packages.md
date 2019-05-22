@@ -4,7 +4,8 @@ author: Unknown
 weight: 49
 pageID: 8362631
 aliases:
- - /old/Adding_and_Updating_Packages.html
+ - /old/Cumulus_Linux/Adding_and_Updating_Packages.html
+imgData: Cumulus_Linux
 ---
 # Adding and Updating Packages
 
@@ -36,7 +37,7 @@ packages. You must populate the cache initially, and then periodically
 update it with `-E apt-get update`:
 
 ``` 
-
+                   
 cumulus@switch:~$ sudo -E apt-get update
 Get:1 http://repo3.cumulusnetworks.com CumulusLinux-3 InRelease [7,624 B]
 Get:2 http://repo3.cumulusnetworks.com CumulusLinux-3-security-updates InRelease [7,555 B]
@@ -67,8 +68,8 @@ Ign http://repo3.cumulusnetworks.com CumulusLinux-3-updates/upstream Translation
 Ign http://repo3.cumulusnetworks.com CumulusLinux-3-updates/upstream Translation-en
 Fetched 1,011 kB in 1s (797 kB/s)
 Reading package lists... Done
-
-
+   
+    
 ```
 
 {{%notice tip%}}
@@ -87,8 +88,8 @@ cache and find the packages in which you are interested or to get
 information about an available package. Here are examples of the
 `search` and `show` sub-commands:
 
-```
-
+``` 
+                   
 cumulus@switch:~$ apt-cache search tcp
 socat - multipurpose relay for bidirectional data transfer
 fakeroot - tool for simulating superuser privileges
@@ -101,19 +102,19 @@ openssh-client - secure shell (SSH) client, for secure access to remote machines
 rsyslog - reliable system and kernel logging daemon
 libwrap0 - Wietse Venema's TCP wrappers library
 netbase - Basic TCP/IP networking system
-
-
+   
+    
 ```
 
-```
-
+``` 
+                   
 cumulus@switch:~$ apt-cache show tcpdump
 Package: tcpdump
 Status: install ok installed
 Priority: optional
 Section: net
 Installed-Size: 1092
-Maintainer: Romain Francoise
+Maintainer: Romain Francoise 
 Architecture: amd64
 Multi-Arch: foreign
 Version: 4.6.2-5+deb8u1
@@ -131,8 +132,8 @@ Description: command-line network traffic analyzer
 Description-md5: f01841bfda357d116d7ff7b7a47e8782
 Homepage: http://www.tcpdump.org/
 cumulus@switch:~$
-
-
+   
+    
 ```
 
 {{%notice note%}}
@@ -150,8 +151,8 @@ the repository. To see which packages are actually installed on your
 system, use `dpkg`. The following example lists all the package names on
 the system that contain `tcp`:
 
-```
-
+``` 
+                   
 cumulus@switch:~$ dpkg -l \*tcp\*
 Desired=Unknown/Install/Remove/Purge/Hold
 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
@@ -161,8 +162,8 @@ Desired=Unknown/Install/Remove/Purge/Hold
 un  tcpd                                                      (no description available)
 ii  tcpdump                       4.6.2-5+deb8u1      amd64               command-line network traffic analyzer
 cumulus@switch:~$
-
-
+   
+    
 ```
 
 ## Display the Version of a Package
@@ -172,12 +173,12 @@ the `net show package version <package>` command. For example, the
 following command shows which version of the `vrf` package is installed
 on the system:
 
-```
-
+``` 
+                   
 cumulus@switch:~$ net show package version vrf
 1.0-cl3u11
-
-
+   
+    
 ```
 
 As an alternative to the NCLU command described above, you can run the
@@ -186,8 +187,8 @@ Linux `dpkg -l <package_name>` command.
 To see a list of all packages installed on the system with their
 versions, run the `net show package version` command. For example:
 
-```
-
+``` 
+                   
 cumulus@switch:~$ net show package version
 Package                            Installed Version(s)
 ---------------------------------  -----------------------------------------------------------------------
@@ -203,8 +204,8 @@ apt-utils                          1.0.9.8.2-cl3u3~1532198712.6d9298c
 arping                             2.14-1
 arptables                          0.0.3.4-1
 ...
-
-
+   
+    
 ```
 
 ## Upgrade Packages
@@ -212,12 +213,12 @@ arptables                          0.0.3.4-1
 To upgrade all the packages installed on the system to their latest
 versions, run the following commands:
 
-```
-
+``` 
+                   
 cumulus@switch:~$ sudo -E apt-get update
 cumulus@switch:~$ sudo -E apt-get upgrade
-
-
+   
+    
 ```
 
 A list of packages that will be upgraded is displayed and you are
@@ -226,26 +227,27 @@ prompted to continue.
 The above commands upgrade all installed versions with their latest
 versions but do not install any new packages.
 
-Refer to [Upgrading Cumulus Linux](/old/Upgrading_Cumulus_Linux.html)
-for additional information.
+Refer to [Upgrading Cumulus
+Linux](/old/Cumulus_Linux/Upgrading_Cumulus_Linux.html) for additional
+information.
 
 ## Add New Packages
 
 To add a new package:
 
 1.  First ensure the package is not already installed on the system:
-
+    
+    ``` 
+                       
+    cumulus@switch:~$ dpkg -l | grep 
+       
+        
     ```
-
-    cumulus@switch:~$ dpkg -l | grep
-
-
-    ```
-
+    
     If the package is installed already, you can update the package from
     the Cumulus Linux repository as part of the package upgrade process,
     which upgrades all packages on the system. See [Upgrade
-    Packages](/old/#src-8362631_AddingandUpdatingPackages-upgrade-packages)
+    Packages](/old/Cumulus_Linux/#src-8362631_AddingandUpdatingPackages-upgrade-packages)
     above.
 
 2.  If the package is *not* already installed, add it by running `-E
@@ -253,9 +255,9 @@ To add a new package:
     the Cumulus Linux repository and installs it on your system together
     with any other packages on which this package might depend. The
     following example adds the `tcpreplay` package to the system:
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@switch:~$ sudo -E apt-get install tcpreplay
     Reading package lists... Done
     Building dependency tree
@@ -273,26 +275,26 @@ To add a new package:
     Processing triggers for man-db ...
     Setting up tcpreplay (4.6.2-5+deb8u1) ...
     cumulus@switch:~$
-
-
+       
+        
     ```
-
+    
     You can install several packages at the same time:
-
+    
+    ``` 
+                       
+    cumulus@switch:~$ sudo -E apt-get install   
+       
+        
     ```
-
-    cumulus@switch:~$ sudo -E apt-get install
-
-
-    ```
-
+    
     {{%notice tip%}}
-
+    
     In some cases, installing a new package might also upgrade
     additional existing packages due to dependencies. To view these
     additional packages before you install, run the `apt-get install
     --dry-run` command.
-
+    
     {{%/notice%}}
 
 ## Add Packages from Another Repository
@@ -332,25 +334,25 @@ To install a new package, complete the following steps:
 
 1.  Run the `dpkg` command to ensure that the package is not already
     installed on the system:
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@switch:~$ dpkg -l | grep {name of package}
-
-
+       
+        
     ```
 
 2.  If the package is installed already, ensure it is the version you
     need. If it is an older version, update the package from the Cumulus
     Linux repository:
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@switch:~$ sudo -E apt-get update
     cumulus@switch:~$ sudo -E apt-get install {name of package}
     cumulus@switch:~$ sudo -E apt-get upgrade
-
-
+       
+        
     ```
 
 3.  If the package is not on the system, the package source location is
@@ -359,45 +361,45 @@ To install a new package, complete the following steps:
     add the appropriate source to the file. For example, add the
     following if you want a package from the Debian repository that is
     **not** in the Cumulus Linux repository:
-
-    ```
-
+    
+    ``` 
+                       
     deb http://http.us.debian.org/debian jessie main
     deb http://security.debian.org/ jessie/updates main
-
-
+       
+        
     ```
-
+    
     Otherwise, the repository might be listed in `/etc/apt/sources.list`
     but is commented out, as can be the case with the early-access
     repository:
-
-    ```
-
+    
+    ``` 
+                       
     #deb http://repo3.cumulusnetworks.com/repo CumulusLinux-3-early-access cumulus
-
-
+       
+        
     ```
-
+    
     To uncomment the repository, remove the \# at the start of the line,
     then save the file:
-
-    ```
-
+    
+    ``` 
+                       
     deb http://repo3.cumulusnetworks.com/repo CumulusLinux-3-early-access cumulus
-
-
+       
+        
     ```
 
 4.  Run `-E apt-get update`, then install the package and upgrade:
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@switch:~$ sudo -E apt-get update
     cumulus@switch:~$ sudo -E apt-get install {name of package}
     cumulus@switch:~$ sudo -E apt-get upgrade
-
-
+       
+        
     ```
 
 ## Cumulus Supplemental Repository
@@ -458,40 +460,40 @@ repository:
 To enable the Supplemental Repository:
 
 1.  In a file editor, open the `/etc/apt/sources.list` file.
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@leaf01:~$ sudo nano /etc/apt/sources.list
-
-
+       
+        
     ```
 
 2.  Uncomment the following lines:
-
-    ```
-
+    
+    ``` 
+                       
     #deb http://repo3.cumulusnetworks.com/repo Jessie-supplemental upstream
     #deb-src http://repo3.cumulusnetworks.com/repo Jessie-supplemental upstream
-
-
+       
+        
     ```
 
 3.  Update the list of software packages:
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@leaf01:~$ sudo -E apt-get update -y
-
-
+       
+        
     ```
 
 4.  Install the software in which you are interested:
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@leaf01:~$ sudo -E apt-get install htop
-
-
+       
+        
     ```
 
 ## Related Information

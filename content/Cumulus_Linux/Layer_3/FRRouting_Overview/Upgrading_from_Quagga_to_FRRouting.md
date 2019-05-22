@@ -4,7 +4,8 @@ author: Unknown
 weight: 407
 pageID: 8362918
 aliases:
- - /old/Upgrading_from_Quagga_to_FRRouting.html
+ - /old/Cumulus_Linux/Upgrading_from_Quagga_to_FRRouting.html
+imgData: Cumulus_Linux
 ---
 # Upgrading from Quagga to FRRouting
 

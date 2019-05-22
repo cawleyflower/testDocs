@@ -4,7 +4,8 @@ author: Unknown
 weight: 233
 pageID: 8362625
 aliases:
- - /old/Monitoring_Best_Practices.html
+ - /old/Cumulus_Linux/Monitoring_Best_Practices.html
+imgData: Cumulus_Linux
 ---
 # Monitoring Best Practices
 
@@ -135,7 +136,7 @@ cumulus@switch:~$ ledmgrd -j</code></pre></td>
 
 Not all switch models include a sensor for monitoring power consumption
 and voltage. See [this
-note](/old/Monitoring_System_Hardware.html#src-8362594_MonitoringSystemHardware-smond)
+note](/old/Cumulus_Linux/Monitoring_System_Hardware.html#src-8362594_MonitoringSystemHardware-smond)
 for details.
 
 {{%/notice%}}
@@ -491,7 +492,7 @@ BFD, and associated logs are documented in the code.
 
 Cumulus Networks recommends that you track peering information through
 PTM. For more information, refer to the [Prescriptive Topology Manager
-documentation](/old/Prescriptive_Topology_Manager_-_PTM.html).
+documentation](/old/Cumulus_Linux/Prescriptive_Topology_Manager_-_PTM.html).
 
 {{%/notice%}}
 

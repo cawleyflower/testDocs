@@ -4,7 +4,8 @@ author: Unknown
 weight: 151
 pageID: 10456746
 aliases:
- - /old/Monitor_the_MLAG_Service.html
+ - /old/Cumulus_NetQ/Monitor_the_MLAG_Service.html
+imgData: Cumulus_NetQ
 ---
 # Monitor the MLAG Service
 
@@ -27,14 +28,13 @@ With NetQ, you can monitor the number of nodes running the CLAG service,
 view sessions running, and view alarms triggered by the CLAG service.
 For an overview and how to configure CLAG in your data center network,
 refer to [Multi-Chassis Link Aggregation -
-MLAG](/old/https://docs.cumulusnetworks.com/display/DOCS/Multi-Chassis+Link+Aggregation+-+MLAG).
+MLAG](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Multi-Chassis+Link+Aggregation+-+MLAG).
 
 ### CLAG Service Card Workflow Summary
 
 The small CLAG Service card displays:
 
-{{%imgOld 0
-%}}
+{{%imgOld 0 %}}
 
 | Item            | Description                                                                              |
 | --------------- | ---------------------------------------------------------------------------------------- |
@@ -46,8 +46,7 @@ The small CLAG Service card displays:
 
 The medium CLAG Service card displays:
 
-{{%imgOld 4
-%}}
+{{%imgOld 4 %}}
 
 | Item                      | Description                                                                                           |
 | ------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -367,7 +366,7 @@ include:
     unestablished sessions, you might want to look more carefully at
     those switches using the Switches card workflow to determine
     probable causes. Refer to [Monitor
-    Switches](/old/Monitor_Switches.html).
+    Switches](/old/Cumulus_NetQ/Monitor_Switches.html).
 
   - Click **Show All Sessions** to investigate all CLAG sessions with
     events in the full screen card.
@@ -488,8 +487,7 @@ here).
 
 {{%imgOld 38 %}}
 
-You can perform the following actions on the results
-list:
+You can perform the following actions on the results list:
 
 | Option             | Action or Behavior on Click                                                                                         |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -507,7 +505,7 @@ With NetQ, you can monitor the number of nodes running the CLAG service,
 view switches with the most peers alive and not alive, and view alarms
 triggered by the CLAG service. For an overview and how to configure CLAG
 in your data center network, refer to [Multi-Chassis Link Aggregation -
-MLAG](/old/https://docs.cumulusnetworks.com/display/DOCS/Multi-Chassis+Link+Aggregation+-+MLAG).
+MLAG](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Multi-Chassis+Link+Aggregation+-+MLAG).
 
 {{%notice info%}}
 
@@ -534,8 +532,7 @@ example set of heat maps for a time period of 24 hours is shown here
 with the most common time periods in the table along with the resulting
 time blocks and regions.
 
-{{%imgOld 39
-%}}
+{{%imgOld 39 %}}
 
 | Time Period | Number of Runs | Number Time Blocks | Amount of Time in Each Block | Region Size | Number Blocks per Region | Total Number of Regions |
 | ----------- | -------------- | ------------------ | ---------------------------- | ----------- | ------------------------ | ----------------------- |

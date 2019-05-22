@@ -4,7 +4,8 @@ author: Unknown
 weight: 173
 pageID: 8362915
 aliases:
- - /old/Network_Topology.html
+ - /old/Cumulus_Linux/Network_Topology.html
+imgData: Cumulus_Linux
 ---
 # Network Topology
 

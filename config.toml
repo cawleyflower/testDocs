@@ -4,19 +4,18 @@ title = "Cumulus Networks Documentation"
 theme =["netDocs", "book"]
 
 #URL fixes
-
-[Params]
 #Book configuration
 disablePathToLower = true
 enableGitInfo= true
 
+
+[Params]
 #Syntax Highlighting
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
-##Menu Params
-#sectionPagesMenu = main
-#CollapsibleMenu = true
+
+
 showVisitedLinks = true
 
 # (Optional, default true) Show or hide table of contents globally
@@ -48,7 +47,7 @@ showVisitedLinks = true
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Path must point to 'content' directory of repo.
-  #BookEditPath = edit/master/exampleSite/content
+  BookEditPath = "edit/dev/content"
 
   # Configure the date format used on the pages
   # - In git information

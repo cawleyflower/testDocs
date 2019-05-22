@@ -4,7 +4,8 @@ author: Unknown
 weight: 77
 pageID: 8362577
 aliases:
- - /old/Configuring_a_Global_Proxy.html
+ - /old/Cumulus_Linux/Configuring_a_Global_Proxy.html
+imgData: Cumulus_Linux
 ---
 # Configuring a Global Proxy
 

@@ -4,7 +4,8 @@ author: Unknown
 weight: 41
 pageID: 8362634
 aliases:
- - /old/Managing_Cumulus_Linux_Disk_Images.html
+ - /old/Cumulus_Linux/Managing_Cumulus_Linux_Disk_Images.html
+imgData: Cumulus_Linux
 ---
 # Managing Cumulus Linux Disk Images
 
@@ -13,9 +14,9 @@ image*. This section discusses how to manage the disk image.
 
 For information on installing a new Cumulus Linux disk image, refer to
 [Installing a New Cumulus Linux
-Image](/old/Installing_a_New_Cumulus_Linux_Image.html). For information
-on upgrading Cumulus Linux, refer to [Upgrading Cumulus
-Linux](/old/Upgrading_Cumulus_Linux.html).
+Image](/old/Cumulus_Linux/Installing_a_New_Cumulus_Linux_Image.html).
+For information on upgrading Cumulus Linux, refer to [Upgrading Cumulus
+Linux](/old/Cumulus_Linux/Upgrading_Cumulus_Linux.html).
 
 ## Determine the Switch Platform
 

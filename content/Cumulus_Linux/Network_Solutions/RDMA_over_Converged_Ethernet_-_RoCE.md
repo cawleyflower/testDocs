@@ -4,7 +4,8 @@ author: Unknown
 weight: 259
 pageID: 8363018
 aliases:
- - /old/RDMA_over_Converged_Ethernet_-_RoCE.html
+ - /old/Cumulus_Linux/RDMA_over_Converged_Ethernet_-_RoCE.html
+imgData: Cumulus_Linux
 ---
 # RDMA over Converged Ethernet - RoCE
 
@@ -25,12 +26,12 @@ stack:
 
   - RoCEv1, which runs at the link layer and cannot be run over a routed
     network. Therefore, it requires the link layer [priority flow
-    control](/old/Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-pfc)
+    control](/old/Cumulus_Linux/Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-pfc)
     (PFC) to be enabled.
 
   - RoCEv2, which runs over layer 3. Since it's a routed solution,
     Cumulus Networks recommends you use [explicit congestion
-    notification](/old/Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-ecn)
+    notification](/old/Cumulus_Linux/Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-ecn)
     (ECN) with RoCEv2 since ECN bits are communicated end-to-end across
     a routed network.
 
@@ -42,9 +43,10 @@ lossless Ethernet layer handles congestion hop by hop.
 
 To learn the Cumulus Linux settings you need to configure to support
 RoCEv1, see the example configuration in the
-[PFC](/old/Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-pfc)
+[PFC](/old/Cumulus_Linux/Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-pfc)
 section of the [Buffer and Queue
-Management](/old/Buffer_and_Queue_Management.html) chapter.
+Management](/old/Cumulus_Linux/Buffer_and_Queue_Management.html)
+chapter.
 
 {{%notice tip%}}
 
@@ -99,7 +101,7 @@ ecn_red.ROCE_ECN.probability = 100
 {{%notice note%}}
 
 While [link
-pause](/old/Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-pause)
+pause](/old/Cumulus_Linux/Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-pause)
 is another way to provide lossless ethernet, PFC is the preferred
 method. PFC allows more granular control by pausing the traffic flow for
 a given CoS group, rather than the entire link.
@@ -119,9 +121,10 @@ notification packet directed to the source of the packet.
 
 To learn the Cumulus Linux settings you need to configure to support
 RoCEv2, see the example configuration in the
-[ECN](/old/Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-ecn)
+[ECN](/old/Cumulus_Linux/Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-ecn)
 section of the [Buffer and Queue
-Management](/old/Buffer_and_Queue_Management.html) chapter.
+Management](/old/Cumulus_Linux/Buffer_and_Queue_Management.html)
+chapter.
 
 {{%notice tip%}}
 

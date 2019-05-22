@@ -4,7 +4,8 @@ author: Unknown
 weight: 127
 pageID: 10456478
 aliases:
- - /old/Monitor_Network_Inventory.html
+ - /old/Cumulus_NetQ/Monitor_Network_Inventory.html
+imgData: Cumulus_NetQ
 ---
 # Monitor Network Inventory
 
@@ -29,15 +30,14 @@ The Devices Inventory card workflow helps answer questions such as:
   - Are NetQ agents running on all of my switches?
 
 For monitoring inventory and performance on a switch-by-switch basis,
-refer to the [Monitor Switches](/old/Monitor_Switches.html)
+refer to the [Monitor Switches](/old/Cumulus_NetQ/Monitor_Switches.html)
 <span style="color: #333333;"> topic </span> .
 
 ## Devices Inventory Card Workflow Summary
 
 The small Devices Inventory card displays:
 
-{{%imgOld 0
-%}}
+{{%imgOld 0 %}}
 
 | Item            | Description                                                                                            |
 | --------------- | ------------------------------------------------------------------------------------------------------ |
@@ -48,8 +48,7 @@ The small Devices Inventory card displays:
 
 The medium Devices Inventory card displays:
 
-{{%imgOld 5
-%}}
+{{%imgOld 5 %}}
 
 | Item            | Description                                                                                            |
 | --------------- | ------------------------------------------------------------------------------------------------------ |
@@ -64,8 +63,7 @@ The large Devices Inventory card has one tab.
 
 The *Switches* tab displays:
 
-{{%imgOld 10
-%}}
+{{%imgOld 10 %}}
 
 | Item                | Description                                                                                                                                      |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |

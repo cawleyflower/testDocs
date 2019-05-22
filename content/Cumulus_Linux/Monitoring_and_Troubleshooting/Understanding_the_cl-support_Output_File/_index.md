@@ -4,7 +4,8 @@ author: Unknown
 weight: 225
 pageID: 8362600
 aliases:
- - /old/Understanding_the_cl-support_Output_File.html
+ - /old/Cumulus_Linux/Understanding_the_cl-support_Output_File.html
+imgData: Cumulus_Linux
 ---
 # Understanding the cl-support Output File
 
@@ -77,11 +78,12 @@ For information on the directories included in the `cl-support` archive,
 see:
 
   - [Troubleshooting the etc
-    Directory](/old/Troubleshooting_the_etc_Directory.html) — In terms
-    of the sheer number of files, `/etc` contains the largest number of
-    files to send to Cumulus Networks. However, log files might be
-    significantly larger in file size.
+    Directory](/old/Cumulus_Linux/Troubleshooting_the_etc_Directory.html)
+    — In terms of the sheer number of files, `/etc` contains the largest
+    number of files to send to Cumulus Networks. However, log files
+    might be significantly larger in file size.
 
-  - [Troubleshooting Log Files](/old/Troubleshooting_Log_Files.html) —
-    This guide highlights the most important log files to inspect. Keep
-    in mind, `cl-support` includes all of the log files.
+  - [Troubleshooting Log
+    Files](/old/Cumulus_Linux/Troubleshooting_Log_Files.html) — This
+    guide highlights the most important log files to inspect. Keep in
+    mind, `cl-support` includes all of the log files.

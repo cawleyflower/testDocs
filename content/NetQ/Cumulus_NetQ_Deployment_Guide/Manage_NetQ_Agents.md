@@ -4,7 +4,8 @@ author: Unknown
 weight: 75
 pageID: 10456297
 aliases:
- - /old/Manage_NetQ_Agents.html
+ - /old/Cumulus_NetQ/Manage_NetQ_Agents.html
+imgData: Cumulus_NetQ
 ---
 # Manage NetQ Agents
 
@@ -12,7 +13,7 @@ At various points in time, you might want to change which network nodes
 are being monitored by NetQ or look more closely at a network node for
 troubleshooting purposes. Adding the NetQ Agent to a switch or host is
 described in [Install NetQ (2.1.0
-version)](/old/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=10456209).
+version)](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=10456209).
 Disabling an Agent is described here and managing NetQ Agent logging is
 also presented.
 
@@ -79,8 +80,7 @@ are logged about the NetQ Agent on the switch or host.
 First, you need to decide what level of logging you want to configure.
 You can configure the logging level to be the same for every NetQ Agent,
 or selectively increase or decrease the logging level for a NetQ Agent
-on a problematic
-node.
+on a problematic node.
 
 | Logging Level | Description                                                                                                                                                 |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -92,8 +92,7 @@ node.
 You can view the NetQ Agent log directly. Messages have the following
 structure:
 
-`<timestamp> <node> <service>[PID]: <level>:
-<message>`
+`<timestamp> <node> <service>[PID]: <level>: <message>`
 
 | Element         | Description                                                                                  |
 | --------------- | -------------------------------------------------------------------------------------------- |

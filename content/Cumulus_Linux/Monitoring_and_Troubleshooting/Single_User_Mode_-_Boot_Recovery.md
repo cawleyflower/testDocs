@@ -4,7 +4,8 @@ author: Unknown
 weight: 215
 pageID: 8362606
 aliases:
- - /old/Single_User_Mode_-_Boot_Recovery.html
+ - /old/Cumulus_Linux/Single_User_Mode_-_Boot_Recovery.html
+imgData: Cumulus_Linux
 ---
 # Single User Mode - Boot Recovery
 

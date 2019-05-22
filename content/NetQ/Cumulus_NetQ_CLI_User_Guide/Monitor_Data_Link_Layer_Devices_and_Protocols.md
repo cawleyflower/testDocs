@@ -4,7 +4,8 @@ author: Unknown
 weight: 39
 pageID: 10456374
 aliases:
- - /old/Monitor_Data_Link_Layer_Devices_and_Protocols.html
+ - /old/Cumulus_NetQ/Monitor_Data_Link_Layer_Devices_and_Protocols.html
+imgData: Cumulus_NetQ
 ---
 # Monitor Data Link Layer Devices and Protocols
 
@@ -570,7 +571,7 @@ protocol, so we call it MLAG.
 {{%/notice%}}
 
 For instructions on configuring MLAG, refer to the
-[MLAG](/old/https://docs.cumulusnetworks.com/display/DOCS/Multi-Chassis+Link+Aggregation+-+MLAG)
+[MLAG](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Multi-Chassis+Link+Aggregation+-+MLAG)
 topic in the Cumulus Linux User Guide.
 
 With NetQ, you can view the configuration and operation of devices using

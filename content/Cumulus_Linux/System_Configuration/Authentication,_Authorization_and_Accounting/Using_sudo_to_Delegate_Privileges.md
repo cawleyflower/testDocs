@@ -4,7 +4,8 @@ author: Unknown
 weight: 277
 pageID: 8362554
 aliases:
- - /old/Using_sudo_to_Delegate_Privileges.html
+ - /old/Cumulus_Linux/Using_sudo_to_Delegate_Privileges.html
+imgData: Cumulus_Linux
 ---
 # Using sudo to Delegate Privileges
 

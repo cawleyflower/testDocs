@@ -4,7 +4,8 @@ author: Unknown
 weight: 255
 pageID: 8362989
 aliases:
- - /old/OpenStack_Neutron_ML2_and_Cumulus_Linux.html
+ - /old/Cumulus_Linux/OpenStack_Neutron_ML2_and_Cumulus_Linux.html
+imgData: Cumulus_Linux
 ---
 # OpenStack Neutron ML2 and Cumulus Linux
 
@@ -61,8 +62,7 @@ Cumulus Linux switches, you need the following:
     ```
 
 Additional REST API calls have been added to support the configuration
-of bridge using the bridge name instead of network
-ID.
+of bridge using the bridge name instead of network ID.
 
 ## Install and Configure the Cumulus Networks Modular Layer 2 Mechanism Driver
 
@@ -120,7 +120,7 @@ You configure them in the `/etc/neutron/plugins/ml2/ml2_conf.ini` file.
     value is *False*.
 
   - `new_bridge` — Enables/disables [VLAN-aware bridge
-    mode](/old/VLAN-aware_Bridge_Mode.html) for the bridge
+    mode](/old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html) for the bridge
     configuration. The default value is *False*, so a traditional mode
     bridge is created.
 
@@ -130,4 +130,4 @@ OpenStack Neutron is available as a preconfigured option with [Cumulus
 in the
 Cloud](https://cumulusnetworks.com/products/cumulus-in-the-cloud/). You
 just need to add the ML2 driver, as per the [instructions
-above](/old/#src-8362989_OpenStackNeutronML2andCumulusLinux-install).
+above](/old/Cumulus_Linux/#src-8362989_OpenStackNeutronML2andCumulusLinux-install).

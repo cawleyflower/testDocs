@@ -4,7 +4,8 @@ author: Unknown
 weight: 179
 pageID: 8362976
 aliases:
- - /old/Address_Resolution_Protocol_-_ARP.html
+ - /old/Cumulus_Linux/Address_Resolution_Protocol_-_ARP.html
+imgData: Cumulus_Linux
 ---
 # Address Resolution Protocol - ARP
 
@@ -79,7 +80,7 @@ Cumulus Networks chose the value used.
 <td><p><em>Define behavior for gratuitous ARP frames whose IP is not already present in the ARP table:</em></p>
 <p><em>0 - Don't create new entries in the ARP table.</em></p>
 <p><em>1 - Create new entries in the ARP table.</em></p>
-<p>Cumulus Linux uses the default <code>arp_accept</code> behavior of not creating new entries in the ARP table when a gratuitous ARP is seen on an interface or when an ARP reply packet is received. However, an individual interface can have the <code>arp_accept</code> behavior set differently than the remainder of the switch if needed. For information on how to apply this port-specific behavior, <a href="/old/#src-8362976_AddressResolutionProtocol-ARP-po">see below</a>.</p></td>
+<p>Cumulus Linux uses the default <code>arp_accept</code> behavior of not creating new entries in the ARP table when a gratuitous ARP is seen on an interface or when an ARP reply packet is received. However, an individual interface can have the <code>arp_accept</code> behavior set differently than the remainder of the switch if needed. For information on how to apply this port-specific behavior, <a href="/old/Cumulus_Linux/#src-8362976_AddressResolutionProtocol-ARP-po">see below</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>arp_announce</p></td>
@@ -100,7 +101,7 @@ Cumulus Networks chose the value used.
 <p><em>1 - Allows you to have multiple network interfaces on the same subnet, and have the ARPs for each interface be answered based on whether or not the kernel would route a packet from the ARP'd IP address out of that interface (therefore you must use source based routing for this to work). In other words, it allows control of which cards (usually 1) will respond to an ARP request.</em></p>
 <p><em>arp_filter for the interface will be enabled if at least one of conf/{all,interface}/arp_filter is set to TRUE, it will be disabled otherwise.</em></p>
 <p>Cumulus Linux uses the default Debian Linux arp_filter setting of <em>0</em>.</p>
-<p>The <code>arp_filter</code> is primarily used when multiple interfaces reside in the same subnet and is used to allow/disallow which interfaces respond to ARP requests. In the case of <a href="/old/Open_Shortest_Path_First_-_OSPF.html">OSPF</a> using IP unnumbered interfaces, many interfaces appear to be in the same subnet, and so actually contain the same address. If multiple interfaces are used between a pair of routers, having <code>arp_filter</code> set to 1 causes forwarding to fail.</p>
+<p>The <code>arp_filter</code> is primarily used when multiple interfaces reside in the same subnet and is used to allow/disallow which interfaces respond to ARP requests. In the case of <a href="/old/Cumulus_Linux/Open_Shortest_Path_First_-_OSPF.html">OSPF</a> using IP unnumbered interfaces, many interfaces appear to be in the same subnet, and so actually contain the same address. If multiple interfaces are used between a pair of routers, having <code>arp_filter</code> set to 1 causes forwarding to fail.</p>
 <p>The <code>arp_filter</code> parameter is set to allow a response on any interface in the subnet, where the <code>arp_ignore</code> setting (below) to limit cross-interface ARP behavior.</p></td>
 </tr>
 <tr class="even">
@@ -288,10 +289,10 @@ iface swp1
 
 If you're running two interfaces in the same broadcast domain, which is
 typically seen when using
-[VRR](/old/Virtual_Router_Redundancy_-_VRR_and_VRRP.html), as it creates
-a "-v0" interface in the same broadcast domain, make sure to use
-`sysctl` or `sysfs` to let the kernel know, so that both interfaces do
-not respond with proxy ARP replies. To do so, set
+[VRR](/old/Cumulus_Linux/Virtual_Router_Redundancy_-_VRR_and_VRRP.html),
+as it creates a "-v0" interface in the same broadcast domain, make sure
+to use `sysctl` or `sysfs` to let the kernel know, so that both
+interfaces do not respond with proxy ARP replies. To do so, set
 `/proc/sys/net/ipv4/conf/<INTERFACE>/medium_id` to *2* on both the
 interface and the -v0 interface. Continuing with the previous example:
 

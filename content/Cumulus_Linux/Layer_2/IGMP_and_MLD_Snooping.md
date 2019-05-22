@@ -4,7 +4,8 @@ author: Unknown
 weight: 129
 pageID: 8362696
 aliases:
- - /old/IGMP_and_MLD_Snooping.html
+ - /old/Cumulus_Linux/IGMP_and_MLD_Snooping.html
+imgData: Cumulus_Linux
 ---
 # IGMP and MLD Snooping
 
@@ -21,7 +22,7 @@ In Cumulus Linux 3.7.4 and later, IGMP and MLD snooping is supported
 over VXLAN bridges on Broadcom switches; however, this feature is *not*
 enabled by default. To enable IGMP and MLD over VXLAN, see [Configure
 IGMP/MLD Snooping over
-VXLAN](/old/#src-8362696_safe-id-SUdNUGFuZE1MRFNub29waW5nLUNvbmZpZ3VyZUlHTVAvTUxEU25vb3BpbmdvdmVyVlhMQU4).
+VXLAN](/old/Cumulus_Linux/#src-8362696_safe-id-SUdNUGFuZE1MRFNub29waW5nLUNvbmZpZ3VyZUlHTVAvTUxEU25vb3BpbmdvdmVyVlhMQU4).
 
 {{%/notice%}}
 
@@ -62,7 +63,7 @@ cumulus@switch:~$ net commit
 
 Cumulus Networks recommends that you also configure IGMP/MLD querier.
 See [Configure IGMP/MLD
-Querier](/old/#src-8362696_safe-id-SUdNUGFuZE1MRFNub29waW5nLUNvbmZpZ3VyZUlHTVAvTUxEUXVlcmllcg),
+Querier](/old/Cumulus_Linux/#src-8362696_safe-id-SUdNUGFuZE1MRFNub29waW5nLUNvbmZpZ3VyZUlHTVAvTUxEUXVlcmllcg),
 below.
 
 To disable IGMP/MLD snooping over VXLAN, run the `net add bridge
@@ -81,7 +82,8 @@ address of the queries to be the bridge IP address, configure
 For an explanation of the relevant parameters, see the
 `ifupdown-addons-interfaces` man page.
 
-For a [VLAN-aware bridge](/old/VLAN-aware_Bridge_Mode.html), use a
+For a [VLAN-aware
+bridge](/old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html), use a
 configuration like the following:
 
 ``` 
@@ -117,8 +119,9 @@ vlan bridge.[1-200]
     
 ```
 
-For a bridge in [traditional mode](/old/Ethernet_Bridging_-_VLANs.html),
-use a configuration like the following:
+For a bridge in [traditional
+mode](/old/Cumulus_Linux/Ethernet_Bridging_-_VLANs.html), use a
+configuration like the following:
 
 ``` 
                    

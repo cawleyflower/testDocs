@@ -4,7 +4,8 @@ author: Unknown
 weight: 203
 pageID: 8362962
 aliases:
- - /old/Segment_Routing.html
+ - /old/Cumulus_Linux/Segment_Routing.html
+imgData: Cumulus_Linux
 ---
 # Segment Routing
 
@@ -25,11 +26,11 @@ switching (MPLS) controllers program labels into the network for traffic
 engineering.
 
 Cumulus Linux provides full label-based forwarding, relying on
-[BGP](/old/Border_Gateway_Protocol_-_BGP.html) for label exchange.
-However, Cumulus Linux does not provide LDP interoperability for MPLS
-and it does not support
-[VRFs](/old/Virtual_Routing_and_Forwarding_-_VRF.html) for tenant
-isolation.
+[BGP](/old/Cumulus_Linux/Border_Gateway_Protocol_-_BGP.html) for label
+exchange. However, Cumulus Linux does not provide LDP interoperability
+for MPLS and it does not support
+[VRFs](/old/Cumulus_Linux/Virtual_Routing_and_Forwarding_-_VRF.html) for
+tenant isolation.
 
 ## Features
 
@@ -40,7 +41,7 @@ Segment routing supports the following features:
 
   - MPLS label edge router (LER) functionality for IPv4 and IPv6 routing
     with
-    [ECMP](/old/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html).
+    [ECMP](/old/Cumulus_Linux/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html).
     An ingress LER first adds an MPLS label to an IP packet. An egress
     LER removes the outermost MPLS label (also called *popping* the
     label).
@@ -48,9 +49,9 @@ Segment routing supports the following features:
   - MPLS label switch router (LSR) functionality with ECMP. The LSR
     receives a packet with a label and forwards it based on that label.
 
-  - [FRRouting](/old/FRRouting_Overview.html) support for MPLS transit
-    label switched paths (LSPs) and labeled routes (LER), both static
-    routes and routes using BGP labeled-unicast (LU).
+  - [FRRouting](/old/Cumulus_Linux/FRRouting_Overview.html) support for
+    MPLS transit label switched paths (LSPs) and labeled routes (LER),
+    both static routes and routes using BGP labeled-unicast (LU).
 
   - FRR support for BGP/MPLS segment routing based on
     [draft-ietf-idr-bgp-prefix-sid-06](https://datatracker.ietf.org/doc/draft-ietf-idr-bgp-prefix-sid/).
@@ -58,7 +59,8 @@ Segment routing supports the following features:
 ## Configure Segment Routing
 
 To configure the segment routing example above, use the `label-index`
-option in [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html).
+option in
+[NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html).
 Configure the following on each node:
 
 ``` 
@@ -76,9 +78,10 @@ cumulus@switch:~$ net commit
 
 Then, for each switch in the topology, define the *global-block* of
 labels to use for segment routing in
-[FRR](/old/Configuring_FRRouting.html). The default global-block is
-16000-23999. The example configuration uses global-block `100 200`. The
-*local label* is the MPLS label global-block plus the label-index.
+[FRR](/old/Cumulus_Linux/Configuring_FRRouting.html). The default
+global-block is 16000-23999. The example configuration uses global-block
+`100 200`. The *local label* is the MPLS label global-block plus the
+label-index.
 
 ``` 
                    

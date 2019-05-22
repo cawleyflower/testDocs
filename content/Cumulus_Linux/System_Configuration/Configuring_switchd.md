@@ -4,7 +4,8 @@ author: Unknown
 weight: 73
 pageID: 8362561
 aliases:
- - /old/Configuring_switchd.html
+ - /old/Cumulus_Linux/Configuring_switchd.html
+imgData: Cumulus_Linux
 ---
 # Configuring switchd
 

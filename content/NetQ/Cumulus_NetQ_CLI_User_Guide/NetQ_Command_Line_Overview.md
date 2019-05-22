@@ -4,7 +4,8 @@ author: Unknown
 weight: 31
 pageID: 10456367
 aliases:
- - /old/NetQ_Command_Line_Overview.html
+ - /old/Cumulus_NetQ/NetQ_Command_Line_Overview.html
+imgData: Cumulus_NetQ
 ---
 # NetQ Command Line Overview
 
@@ -31,7 +32,7 @@ and verify the value in the **Platforms** tab \> **CPU** column.
 
 When NetQ is installed, the CLI is also installed and enabled (refer to
 the [Install NetQ (2.1.0
-version)](/old/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=10456209)
+version)](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=10456209)
 topic). Simply log in to any network node to access the command line.
 
 To access the CLI from a switch or server:
@@ -79,23 +80,25 @@ This section describes the core structure and behavior of the NetQ CLI.
 It includes the following:
 
   - [Command Line
-    Structure](/old/#src-10456367_NetQCommandLineOverview-ComStruct)
+    Structure](/old/Cumulus_NetQ/#src-10456367_NetQCommandLineOverview-ComStruct)
 
   - [Command
-    Syntax](/old/#src-10456367_NetQCommandLineOverview-ComSyntax)
-
-  - [Command Output](/old/#src-10456367_NetQCommandLineOverview-ComOut)
+    Syntax](/old/Cumulus_NetQ/#src-10456367_NetQCommandLineOverview-ComSyntax)
 
   - [Command
-    Prompts](/old/#src-10456367_NetQCommandLineOverview-ComPrompt)
+    Output](/old/Cumulus_NetQ/#src-10456367_NetQCommandLineOverview-ComOut)
 
   - [Command
-    Completion](/old/#src-10456367_NetQCommandLineOverview-ComComp)
-
-  - [Command Help](/old/#src-10456367_NetQCommandLineOverview-ComHelp)
+    Prompts](/old/Cumulus_NetQ/#src-10456367_NetQCommandLineOverview-ComPrompt)
 
   - [Command
-    History](/old/#src-10456367_NetQCommandLineOverview-ComHist)
+    Completion](/old/Cumulus_NetQ/#src-10456367_NetQCommandLineOverview-ComComp)
+
+  - [Command
+    Help](/old/Cumulus_NetQ/#src-10456367_NetQCommandLineOverview-ComHelp)
+
+  - [Command
+    History](/old/Cumulus_NetQ/#src-10456367_NetQCommandLineOverview-ComHist)
 
 ### Command Line Structure
 
@@ -186,7 +189,7 @@ The switches must be running the Cumulus Linux operating system (OS),
 NetQ Platform software, and the NetQ Agent. The hosts must be running
 CentOS, RHEL, or Ubuntu OS and the NetQ Agent. Refer to the [Install
 NetQ (2.1.0
-version)](/old/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=10456209)
+version)](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=10456209)
 topic for details.
 
 ### Command Completion
@@ -262,16 +265,16 @@ While the CLI has a flat structure, the commands can be conceptually
 grouped into four functional categories:
 
   - [Validation
-    Commands](/old/#src-10456367_NetQCommandLineOverview-ChkCmds)
+    Commands](/old/Cumulus_NetQ/#src-10456367_NetQCommandLineOverview-ChkCmds)
 
   - [Monitoring
-    Commands](/old/#src-10456367_NetQCommandLineOverview-ShowCmds)
+    Commands](/old/Cumulus_NetQ/#src-10456367_NetQCommandLineOverview-ShowCmds)
 
   - [Configuration
-    Commands](/old/#src-10456367_NetQCommandLineOverview-ConfigCmds)  
+    Commands](/old/Cumulus_NetQ/#src-10456367_NetQCommandLineOverview-ConfigCmds)  
 
   - [Trace
-    Commands](/old/#src-10456367_NetQCommandLineOverview-TraceCmds)
+    Commands](/old/Cumulus_NetQ/#src-10456367_NetQCommandLineOverview-TraceCmds)
 
 ### Validation Commands
 
@@ -470,9 +473,10 @@ container monitoring, and event notification.
 
 The agent commands <span style="color: #353744;"> enable the network
 administrator to configure individual NetQ Agents. Refer to [Cumulus
-NetQ Primer](/old/Cumulus_NetQ_Primer.html) for a description of NetQ
-Agents and to [Manage NetQ Agents](/old/Manage_NetQ_Agents.html) for
-more detailed usage examples. </span>
+NetQ Primer](/old/Cumulus_NetQ/Cumulus_NetQ_Primer.html) for a
+description of NetQ Agents and to [Manage NetQ
+Agents](/old/Cumulus_NetQ/Manage_NetQ_Agents.html) for more detailed
+usage examples. </span>
 
 <span style="color: #353744;"> The agent configuration commands enable
 you to add and remove agents from switches and hosts, start and stop
@@ -615,7 +619,7 @@ Successfully added/updated channel pd-netq-events
 ```
 
 Refer to [Integrate with Third-party Software and
-Hardware](/old/Integrate_with_Third-party_Software_and_Hardware.html)
+Hardware](/old/Cumulus_NetQ/Integrate_with_Third-party_Software_and_Hardware.html)
 for details about using these commands and additional examples.
 
 ### Trace Commands
@@ -790,8 +794,7 @@ this release.
 ### Deprecated Commands
 
 The following table summarizes the commands that have been removed and a
-recommended alternative, if
-appropriate.
+recommended alternative, if appropriate.
 
 | Command                                                  | Alternative Command                                                                                                     |
 | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
