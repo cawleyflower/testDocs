@@ -4,7 +4,7 @@
   <ul class = "cn-book-section-container" id = "top">
     {{ with (index $sections 0) }}
         {{ range .Sections }}
-          {{if and .Params.subsection (eq .siteslug $slug)}}
+          {{if and .Params.subsection (eq .Params.siteslug $slug)}}
             {{ template "book-section" (dict "Section" . "CurrentPage" $.Permalink) }}
           {{end}}
       {{ end }}
