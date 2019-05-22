@@ -6,9 +6,8 @@ pageID: 8357534
 aliases:
  - /old/Cumulus_Linux_35/VXLAN_Scale.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# VXLAN Scale
-
 On Broadcom Trident II and Tomahawk (but not Trident II+ or Maverick)
 and Mellanox Spectrum switches running Cumulus Linux, there is a limit
 on the amount of VXLANs you can configure simultaneously. The limit most

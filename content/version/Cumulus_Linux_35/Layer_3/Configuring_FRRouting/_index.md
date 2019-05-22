@@ -6,9 +6,8 @@ pageID: 8357715
 aliases:
  - /old/Cumulus_Linux_35/Configuring_FRRouting.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Configuring FRRouting
-
 This section provides an overview of configuring FRRouting, the routing
 software package that provides a suite of routing protocols so you can
 configure routing on your switch.

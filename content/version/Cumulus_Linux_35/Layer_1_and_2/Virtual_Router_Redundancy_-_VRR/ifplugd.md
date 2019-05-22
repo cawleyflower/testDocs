@@ -6,9 +6,8 @@ pageID: 8357471
 aliases:
  - /old/Cumulus_Linux_35/ifplugd.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# ifplugd
-
 `ifplugd` is an Ethernet link-state monitoring daemon, that can execute
 user-specified scripts to configure an Ethernet device when a cable is
 plugged in, or automatically unconfigure it when a cable is removed.

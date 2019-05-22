@@ -6,9 +6,8 @@ pageID: 8357771
 aliases:
  - /old/Cumulus_Linux_35/Data_Center_Host_to_ToR_Architecture.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Data Center Host to ToR Architecture
-
 This chapter discusses the various architectures and strategies
 available from the top of rack (ToR) switches all the way down to the
 server hosts.

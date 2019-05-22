@@ -6,9 +6,8 @@ pageID: 8357754
 aliases:
  - /old/Cumulus_Linux_35/Segment_Routing.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Segment Routing
-
 Cumulus Linux supports *segment routing*, otherwise known as source
 routing, as it provides the ability for a source node to specify the
 path a packet should take — in other words, traffic engineering. In some

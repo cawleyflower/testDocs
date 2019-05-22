@@ -6,9 +6,8 @@ pageID: 8363019
 aliases:
  - /old/Cumulus_Linux/Layer_1_and_Switch_Ports.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Layer 1 and Switch Ports
-
   - [Interface Configuration and
     Management](/old/Cumulus_Linux/Interface_Configuration_and_Management.html)
     

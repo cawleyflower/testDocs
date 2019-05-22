@@ -6,9 +6,8 @@ pageID: 8362788
 aliases:
  - /old/Cumulus_Linux/Static_VXLAN_Configurations.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Static VXLAN Configurations
-
   - [Static VXLAN Tunnels](/old/Cumulus_Linux/Static_VXLAN_Tunnels.html)
 
   - [Static MAC Bindings with

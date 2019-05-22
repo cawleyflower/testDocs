@@ -6,9 +6,8 @@ pageID: 8362577
 aliases:
  - /old/Cumulus_Linux/Configuring_a_Global_Proxy.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Configuring a Global Proxy
-
 You configure [global HTTP and HTTPS
 proxies](https://wiki.archlinux.org/index.php/proxy_settings) in the
 `/etc/profile.d/` directory of Cumulus Linux. To do so, set the

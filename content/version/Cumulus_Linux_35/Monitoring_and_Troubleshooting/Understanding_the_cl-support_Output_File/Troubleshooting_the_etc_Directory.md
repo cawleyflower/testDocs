@@ -6,9 +6,8 @@ pageID: 8357383
 aliases:
  - /old/Cumulus_Linux_35/Troubleshooting_the_etc_Directory.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Troubleshooting the etc Directory
-
 The
 [`cl-support`](/old/Cumulus_Linux_35/Understanding_the_cl-support_Output_File.html)
 script replicates the /`etc` directory.

@@ -6,11 +6,9 @@ pageID: 8357317
 aliases:
  - /old/Cumulus_Linux_35/Cumulus_Linux_User_Guide.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 subsection: true
 ---
-
-# Cumulus Linux User Guide
-
 ## Introducing Cumulus Linux
 
 Cumulus Linux is the networking industry's first full-featured Linux

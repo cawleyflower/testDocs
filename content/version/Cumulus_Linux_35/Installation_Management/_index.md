@@ -6,9 +6,8 @@ pageID: 8357410
 aliases:
  - /old/Cumulus_Linux_35/Installation_Management.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Installation Management
-
 A Cumulus Linux switch can have only one image of the operating system
 installed. This section discusses installing new and updating existing
 Cumulus Linux disk images, and configuring those images with additional

@@ -6,9 +6,8 @@ pageID: 8357334
 aliases:
  - /old/Cumulus_Linux_35/User_Accounts.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# User Accounts
-
 By default, Cumulus Linux has two user accounts: *cumulus* and *root*.
 
 The *cumulus* account:

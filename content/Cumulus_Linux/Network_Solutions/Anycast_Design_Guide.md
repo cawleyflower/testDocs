@@ -6,9 +6,8 @@ pageID: 8363010
 aliases:
  - /old/Cumulus_Linux/Anycast_Design_Guide.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Anycast Design Guide
-
 Cumulus Networks' [Routing on the
 Host](/old/Cumulus_Linux/https://docs.cumulusnetworks.com/display/ROH/Routing+on+the+Host)
 provides the ability to run

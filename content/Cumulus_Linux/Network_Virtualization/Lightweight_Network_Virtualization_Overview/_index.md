@@ -6,9 +6,8 @@ pageID: 8362706
 aliases:
  - /old/Cumulus_Linux/Lightweight_Network_Virtualization_Overview.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Lightweight Network Virtualization Overview
-
 {{%notice warning%}}
 
 As of Cumulus Linux 3.7.4, the lightweight network virtualization

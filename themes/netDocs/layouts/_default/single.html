@@ -13,35 +13,11 @@
 
 {{ define "toc" }}
 
-
 {{ $showToC := default (default true .Site.Params.BookShowToC) .Params.bookshowtoc }}
   {{ if and ($showToC) (.Page.TableOfContents) }}
-  <aside class="book-toc fixed">
 
-    {{ if or .GitInfo .Site.Params.BookEditPath }}
-      {{ with .GitInfo }}
-        {{ $date := .AuthorDate.Local.Format (default "January 2, 2006" $.Site.Params.BookDateFormat) }}
-        <button>
-        <a href="{{ $.Site.Params.BookRepo }}/commit/{{ .Hash }}" title='Last modified {{ $date }} by {{ .AuthorName }}' target="_blank" rel="noopener">
-          <img src="{{ "svg/code-merge.svg" | relURL }}" alt="Changed" /> {{ $date }}
-        </a>
-      </button>
-      {{ end }}
-    {{ end }}
+    {{ partial "docs/toc" . }}
 
-    {{ .Page.TableOfContents }}
-
-    {{ with .Site.Params.BookEditPath }}
-        <button>
-        {{ if $.File }}<a href="{{ $.Site.Params.BookRepo }}/{{ . }}/{{ $.File.Path }}" target="_blank" rel="noopener">
-          <img src="{{ "svg/code-fork.svg" | relURL }}" alt="Edit" /> Edit this page
-        </a>{{ end }}
-      </button>      
 {{ end }}
-
-
-  </aside>
-{{ end }}
-
 
 {{ end }}

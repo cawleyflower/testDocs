@@ -6,9 +6,8 @@ pageID: 8362794
 aliases:
  - /old/Cumulus_Linux/Virtualization_Integrations.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Virtualization Integrations
-
 Cumulus Linux integrates with a number of VXLAN controller-based
 virtualization solutions.
 

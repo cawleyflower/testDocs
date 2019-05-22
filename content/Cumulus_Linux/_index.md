@@ -6,9 +6,8 @@ pageID: 8362527
 aliases:
  - /old/Cumulus_Linux/Cumulus_Linux_User_Guide.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Cumulus Linux User Guide
-
 ## What is Cumulus Linux?
 
 Cumulus Linux is the first full-featured Linux operating system for the

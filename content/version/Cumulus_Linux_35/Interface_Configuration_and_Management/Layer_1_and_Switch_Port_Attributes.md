@@ -6,9 +6,8 @@ pageID: 8357670
 aliases:
  - /old/Cumulus_Linux_35/Layer_1_and_Switch_Port_Attributes.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Layer 1 and Switch Port Attributes
-
 This chapter discusses the various network interfaces on a switch
 running Cumulus Linux, how to configure various interface-level settings
 (if needed) and some troubleshooting commands.

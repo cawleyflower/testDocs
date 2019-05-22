@@ -6,9 +6,8 @@ pageID: 8357328
 aliases:
  - /old/Cumulus_Linux_35/Quick_Start_Guide.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Quick Start Guide
-
 This quick start guide provides an end-to-end setup process for
 installing and running Cumulus Linux, as well as a collection of example
 commands for getting started once installation is complete.
@@ -25,7 +24,11 @@ Windows, you should use a Linux environment like
 [Cygwin](http://www.cygwin.com/) as your command line tool for
 interacting with Cumulus Linux.
 
-{{% notice tip %}}
+<div class="confbox admonition admonition-tip">
+
+<span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 If you're a networking engineer but are unfamiliar with Linux concepts,
 refer to [this reference
@@ -36,7 +39,8 @@ comparison. You can also [watch a series of short
 videos](http://cumulusnetworks.com/technical-videos/) introducing you to
 Linux in general and some Cumulus Linux-specific concepts in particular.
 
-{{% /notice %}}
+</div>
 
+</div>
 
 {{%/notice%}}

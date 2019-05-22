@@ -6,9 +6,8 @@ pageID: 8362732
 aliases:
  - /old/Cumulus_Linux/Ethernet_Virtual_Private_Network_-_EVPN.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Ethernet Virtual Private Network - EVPN
-
 VXLAN is the de facto technology for implementing network virtualization
 in the data center, enabling layer 2 segments to be extended over an IP
 core (the underlay). The initial definition of VXLAN

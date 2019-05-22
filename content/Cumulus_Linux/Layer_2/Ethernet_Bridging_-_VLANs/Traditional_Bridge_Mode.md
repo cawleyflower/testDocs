@@ -6,9 +6,8 @@ pageID: 8362670
 aliases:
  - /old/Cumulus_Linux/Traditional_Bridge_Mode.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Traditional Bridge Mode
-
 Cumulus Networks recommends you use a [VLAN-aware
 bridge](/old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html) on your switch.
 You use traditional mode bridges only if you need to run more than one

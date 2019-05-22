@@ -6,9 +6,8 @@ pageID: 8357411
 aliases:
  - /old/Cumulus_Linux_35/Adding_and_Updating_Packages.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Adding and Updating Packages
-
 You use the Advanced Packaging Tool (`apt`) to manage additional
 applications (in the form of packages) and to install the latest
 updates.

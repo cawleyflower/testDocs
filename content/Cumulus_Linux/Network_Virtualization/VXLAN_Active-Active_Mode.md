@@ -6,9 +6,8 @@ pageID: 8362725
 aliases:
  - /old/Cumulus_Linux/VXLAN_Active-Active_Mode.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# VXLAN Active-Active Mode
-
 *VXLAN active-active mode* allows a pair of
 [MLAG](/old/Cumulus_Linux/Multi-Chassis_Link_Aggregation_-_MLAG.html)
 switches to act as a single VTEP, providing active-active VXLAN

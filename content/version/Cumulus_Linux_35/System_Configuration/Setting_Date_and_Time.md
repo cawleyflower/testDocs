@@ -6,9 +6,8 @@ pageID: 8357330
 aliases:
  - /old/Cumulus_Linux_35/Setting_Date_and_Time.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Setting Date and Time
-
 Setting the time zone, date and time requires root privileges; use
 `sudo`.
 

@@ -6,9 +6,8 @@ pageID: 8363034
 aliases:
  - /old/Cumulus_Linux/Hardware-enabled_DDOS_Protection.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Hardware-enabled DDOS Protection
-
 It is crucial to also protect a switch’s control plane to ensure the
 proper control plane applications have access to the switch’s CPU.
 Failure to do so could increase vulnerabilities to a Denial of Service

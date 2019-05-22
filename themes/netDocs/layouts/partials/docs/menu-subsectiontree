@@ -1,15 +1,10 @@
-
-{{ $bookSection := default .Page.Section .Page.Params.subsection}}
-{{ $topSect := .Page.Section}}
-{{ $bookSections := where .Site.Sections "Section" $topSect}}
-{{ .Scratch.Set "BookSections" $bookSections }}
-{{ $sections := .Scratch.Get "BookSections" }}
-{{/* If there is only one section to render then render its children, else render all sections */}}
+{{ $slug := .Page.Params.siteslug}}
+{{ $sections := where .Site.Sections "Section" .Page.Section}}
 
   <ul class = "cn-book-section-container" id = "top">
     {{ with (index $sections 0) }}
         {{ range .Sections }}
-          {{if eq .Params.subsection $bookSection }}
+          {{if and .Params.subsection (eq .siteslug $slug)}}
             {{ template "book-section" (dict "Section" . "CurrentPage" $.Permalink) }}
           {{end}}
       {{ end }}

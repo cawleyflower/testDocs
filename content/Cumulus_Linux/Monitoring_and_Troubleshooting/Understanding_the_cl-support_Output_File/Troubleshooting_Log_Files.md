@@ -6,9 +6,8 @@ pageID: 8362602
 aliases:
  - /old/Cumulus_Linux/Troubleshooting_Log_Files.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Troubleshooting Log Files
-
 The only real unique entity for logging on Cumulus Linux compared to any
 other Linux distribution is `switchd.log`, which logs the HAL (hardware
 abstraction layer) from hardware like the Broadcom or Mellanox ASIC.

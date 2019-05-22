@@ -6,9 +6,8 @@ pageID: 8362922
 aliases:
  - /old/Cumulus_Linux/Open_Shortest_Path_First_-_OSPF.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Open Shortest Path First - OSPF
-
 OSPF maintains the view of the network topology conceptually as a
 directed graph. Each router represents a vertex in the graph. Each link
 between neighboring routers represents a unidirectional edge and each

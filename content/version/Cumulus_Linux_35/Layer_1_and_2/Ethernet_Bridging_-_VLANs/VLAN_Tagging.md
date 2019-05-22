@@ -6,9 +6,8 @@ pageID: 8357450
 aliases:
  - /old/Cumulus_Linux_35/VLAN_Tagging.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# VLAN Tagging
-
 This article shows two examples of VLAN tagging, one basic and one more
 advanced. They both demonstrate the streamlined interface configuration
 from `ifupdown2`.

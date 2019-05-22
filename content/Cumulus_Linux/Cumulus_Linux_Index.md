@@ -6,9 +6,8 @@ pageID: 8362977
 aliases:
  - /old/Cumulus_Linux/Cumulus_Linux_Index.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Cumulus Linux Index
-
 1.  A
     
       - [aaa](/old/Cumulus_Linux/https://docs.cumulusnetworks.com/label/DOCS/aaa)

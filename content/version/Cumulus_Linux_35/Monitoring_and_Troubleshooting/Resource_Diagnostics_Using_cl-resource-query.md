@@ -6,9 +6,8 @@ pageID: 8357375
 aliases:
  - /old/Cumulus_Linux_35/Resource_Diagnostics_Using_cl-resource-query.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Resource Diagnostics Using cl-resource-query
-
 You can use `cl-resource-query` to retrieve information about host
 entries, MAC entries, L2 and L3 routes, and ECMPs (equal-cost multi-path
 routes, see [Load

@@ -6,9 +6,8 @@ pageID: 8362591
 aliases:
  - /old/Cumulus_Linux/HTTP_API.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# HTTP API
-
 Cumulus Linux implements an HTTP application programing interface to
 [OpenStack ML2
 driver](/old/Cumulus_Linux/OpenStack_Neutron_ML2_and_Cumulus_Linux.html)

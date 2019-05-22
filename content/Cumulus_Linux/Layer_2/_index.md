@@ -6,9 +6,8 @@ pageID: 8362649
 aliases:
  - /old/Cumulus_Linux/Layer_2.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Layer 2
-
   - [Spanning Tree and Rapid Spanning
     Tree](/old/Cumulus_Linux/Spanning_Tree_and_Rapid_Spanning_Tree.html)
 

@@ -6,9 +6,8 @@ pageID: 8362790
 aliases:
  - /old/Cumulus_Linux/Static_MAC_Bindings_with_VXLAN.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Static MAC Bindings with VXLAN
-
 Cumulus Linux includes native Linux VXLAN kernel support.
 
 ## Requirements

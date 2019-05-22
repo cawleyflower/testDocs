@@ -6,9 +6,8 @@ pageID: 8357414
 aliases:
  - /old/Cumulus_Linux_35/Managing_Cumulus_Linux_Disk_Images.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Managing Cumulus Linux Disk Images
-
 The Cumulus Linux operating system resides on a switch as a *disk
 image*. This section discusses how to manage the image, including
 installation and upgrading.

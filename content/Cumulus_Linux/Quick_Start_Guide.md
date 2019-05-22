@@ -6,9 +6,8 @@ pageID: 8362542
 aliases:
  - /old/Cumulus_Linux/Quick_Start_Guide.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Quick Start Guide
-
 This quick start guide provides an end-to-end setup process for
 installing and running Cumulus Linux, as well as a collection of example
 commands for getting started after installation is complete.

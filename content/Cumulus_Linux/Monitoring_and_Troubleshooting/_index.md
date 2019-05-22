@@ -6,9 +6,8 @@ pageID: 8362592
 aliases:
  - /old/Cumulus_Linux/Monitoring_and_Troubleshooting.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Monitoring and Troubleshooting
-
 This chapter introduces monitoring and troubleshooting Cumulus Linux.
 
 ## Serial Console

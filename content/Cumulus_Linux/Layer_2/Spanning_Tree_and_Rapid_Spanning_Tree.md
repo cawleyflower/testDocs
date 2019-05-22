@@ -6,9 +6,8 @@ pageID: 8362689
 aliases:
  - /old/Cumulus_Linux/Spanning_Tree_and_Rapid_Spanning_Tree.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Spanning Tree and Rapid Spanning Tree
-
 Spanning tree protocol (STP) is always recommended in layer 2 topologies
 as it prevents bridge loops and broadcast radiation on a bridged
 network. STP also provides redundant links for automatic failover when

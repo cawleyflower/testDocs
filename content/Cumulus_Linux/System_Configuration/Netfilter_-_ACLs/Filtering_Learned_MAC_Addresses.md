@@ -6,9 +6,8 @@ pageID: 8362575
 aliases:
  - /old/Cumulus_Linux/Filtering_Learned_MAC_Addresses.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Filtering Learned MAC Addresses
-
 On Broadcom switches, a MAC address is learned on a bridge regardless of
 whether or not a received packet is dropped by an
 [ACL](/old/Cumulus_Linux/Netfilter_-_ACLs.html). This is due to how the

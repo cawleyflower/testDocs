@@ -6,9 +6,8 @@ pageID: 8357385
 aliases:
  - /old/Cumulus_Linux_35/Troubleshooting_Network_Interfaces.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Troubleshooting Network Interfaces
-
 The following sections describe various ways you can troubleshoot
 `ifupdown2`.
 

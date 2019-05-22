@@ -6,9 +6,8 @@ pageID: 8362897
 aliases:
  - /old/Cumulus_Linux/Layer_3.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Layer 3
-
   - [Routing](/old/Cumulus_Linux/Routing.html)
 
   - [Introduction to Routing

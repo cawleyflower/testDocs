@@ -6,9 +6,8 @@ pageID: 8362559
 aliases:
  - /old/Cumulus_Linux/RADIUS_AAA.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# RADIUS AAA
-
 Cumulus Networks offers add-on packages that enable
 [RADIUS](https://en.wikipedia.org/wiki/RADIUS) users to log in to
 Cumulus Linux switches in a transparent way with minimal configuration.

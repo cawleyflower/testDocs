@@ -6,9 +6,8 @@ pageID: 8363018
 aliases:
  - /old/Cumulus_Linux/RDMA_over_Converged_Ethernet_-_RoCE.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# RDMA over Converged Ethernet - RoCE
-
 *RDMA over Converged Ethernet*
 ([RoCE](https://en.wikipedia.org/wiki/RDMA_over_Converged_Ethernet))
 provides the ability to write to compute or storage elements using

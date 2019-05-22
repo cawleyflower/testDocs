@@ -6,9 +6,8 @@ pageID: 8357360
 aliases:
  - /old/Cumulus_Linux_35/Managing_Application_Daemons.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Managing Application Daemons
-
 You manage application daemons (services) in Cumulus Linux in the
 following ways:
 

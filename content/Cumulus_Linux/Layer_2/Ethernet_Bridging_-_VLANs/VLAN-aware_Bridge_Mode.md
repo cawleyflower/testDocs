@@ -6,9 +6,8 @@ pageID: 8362673
 aliases:
  - /old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# VLAN-aware Bridge Mode
-
 The Cumulus Linux bridge driver supports two configuration modes, one
 that is VLAN-aware, and one that follows a more traditional Linux bridge
 model.

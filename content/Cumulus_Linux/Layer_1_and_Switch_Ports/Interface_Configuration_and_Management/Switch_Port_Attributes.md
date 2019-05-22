@@ -6,9 +6,8 @@ pageID: 8363026
 aliases:
  - /old/Cumulus_Linux/Switch_Port_Attributes.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Switch Port Attributes
-
 Cumulus Linux exposes network interfaces for several types of physical
 and logical devices:
 

@@ -6,9 +6,8 @@ pageID: 8357362
 aliases:
  - /old/Cumulus_Linux_35/Network_Command_Line_Utility_-_NCLU.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Network Command Line Utility - NCLU
-
 <span class="error">The license could not be verified: License
 Certificate has expired\!</span>
 

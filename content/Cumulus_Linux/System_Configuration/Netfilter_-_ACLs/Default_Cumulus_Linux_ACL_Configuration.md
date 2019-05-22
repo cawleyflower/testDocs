@@ -6,9 +6,8 @@ pageID: 8362574
 aliases:
  - /old/Cumulus_Linux/Default_Cumulus_Linux_ACL_Configuration.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Default Cumulus Linux ACL Configuration
-
 The Cumulus Linux default ACL configuration is split into three parts,
 as outlined in the [netfilter ACL
 documentation](/old/Cumulus_Linux/Netfilter_-_ACLs.html): IP tables,

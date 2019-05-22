@@ -6,9 +6,8 @@ pageID: 8357559
 aliases:
  - /old/Cumulus_Linux_35/Static_VXLAN_Tunnels.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Static VXLAN Tunnels
-
 In VXLAN-based networks, there are a range of complexities and
 challenges in determining the destination *virtual tunnel endpoints*
 (VTEPs) for any given VXLAN. At scale, various solutions, including

@@ -6,9 +6,8 @@ pageID: 8357738
 aliases:
  - /old/Cumulus_Linux_35/Virtual_Routing_and_Forwarding_-_VRF.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Virtual Routing and Forwarding - VRF
-
 Cumulus Linux provides *virtual* *routing and forwarding* (VRF) to allow
 for the presence of multiple independent routing tables working
 simultaneously on the same router or switch. This permits multiple

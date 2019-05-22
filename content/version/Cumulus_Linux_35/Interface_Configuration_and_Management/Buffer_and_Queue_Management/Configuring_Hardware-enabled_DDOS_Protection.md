@@ -6,9 +6,8 @@ pageID: 8357680
 aliases:
  - /old/Cumulus_Linux_35/Configuring_Hardware-enabled_DDOS_Protection.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Configuring Hardware-enabled DDOS Protection
-
 The DDOS protection mechanism protects data plane, control plane and
 management plane traffic in the switch. It drops any packets that match
 one or more of the following criteria while incurring no performance

@@ -6,9 +6,8 @@ pageID: 8357554
 aliases:
  - /old/Cumulus_Linux_35/Static_VXLAN_Configurations.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Static VXLAN Configurations
-
   - [Static VXLAN
     Tunnels](/old/Cumulus_Linux_35/Static_VXLAN_Tunnels.html)
 

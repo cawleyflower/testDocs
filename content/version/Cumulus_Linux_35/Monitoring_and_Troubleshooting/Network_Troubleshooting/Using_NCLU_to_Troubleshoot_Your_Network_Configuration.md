@@ -6,9 +6,8 @@ pageID: 8357381
 aliases:
  - /old/Cumulus_Linux_35/Using_NCLU_to_Troubleshoot_Your_Network_Configuration.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Using NCLU to Troubleshoot Your Network Configuration
-
 The [network command line
 utility](/old/Cumulus_Linux_35/Network_Command_Line_Utility_-_NCLU.html)
 (NCLU) can quickly return a lot of information about your network

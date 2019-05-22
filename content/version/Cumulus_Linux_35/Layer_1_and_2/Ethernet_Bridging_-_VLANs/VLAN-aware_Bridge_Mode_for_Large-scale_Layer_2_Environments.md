@@ -6,9 +6,8 @@ pageID: 8357447
 aliases:
  - /old/Cumulus_Linux_35/VLAN-aware_Bridge_Mode_for_Large-scale_Layer_2_Environments.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# VLAN-aware Bridge Mode for Large-scale Layer 2 Environments
-
 The Cumulus Linux bridge driver supports two configuration modes, one
 that is VLAN-aware, and one that follows a more traditional Linux bridge
 model.

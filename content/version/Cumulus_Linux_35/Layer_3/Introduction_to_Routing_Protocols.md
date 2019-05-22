@@ -6,9 +6,8 @@ pageID: 8357709
 aliases:
  - /old/Cumulus_Linux_35/Introduction_to_Routing_Protocols.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Introduction to Routing Protocols
-
 This chapter discusses the various routing protocols, and how to
 configure them.
 

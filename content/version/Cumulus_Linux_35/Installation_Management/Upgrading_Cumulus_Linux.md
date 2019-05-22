@@ -6,9 +6,8 @@ pageID: 8357427
 aliases:
  - /old/Cumulus_Linux_35/Upgrading_Cumulus_Linux.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Upgrading Cumulus Linux
-
 Cumulus Networks software melds the Linux host world with the networking
 devices world. Each world comes with its own paradigm on how to upgrade
 software. Before we discuss the various ways to upgrade Cumulus Linux
@@ -18,7 +17,7 @@ upgrade network devices and Linux hosts.
 ## Upgrades: Comparing the Network Device Worldview vs. the Linux Host Worldview
 
 ### Manual vs. Automated Configuration
-ee
+
 Historically, *network devices* were configured in place, and most
 network devices required customized configurations, which led
 predominantly to configuring the hardware manually. A lack of
@@ -296,23 +295,23 @@ The upgrade path is as follows:
 2.  Set the switch in the secondary role into the primary role by
     setting its `clagd-priority` to a value lower than the
     `clagd-priority` setting on the switch in the primary role.
-
-    ```
-
-    cumulus@switch:~$ sudo clagctl priority VALUE
-
-
+    
+    ``` 
+                       
+    cumulus@switch:~$ sudo clagctl priority VALUE 
+       
+        
     ```
 
 3.  Upgrade the switch that just took on the secondary role.
 
 4.  Put that switch into the primary role again, if you so choose.
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@switch:~$ sudo clagctl priority VALUE
-
-
+       
+        
     ```
 
 For more information about setting the priority, see [Understanding
@@ -404,36 +403,36 @@ To upgrade the switch by updating the packages:
 1.  Back up the configurations off the switch.
 
 2.  Fetch the latest update meta-data from the repository.
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@switch$ sudo -E apt-get update
-
-
+       
+        
     ```
 
 3.  Upgrade all the packages to the latest distribution.
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@switch$ sudo -E apt-get upgrade
-
-
+       
+        
     ```
 
 4.  Reboot the switch if the upgrade messages indicate that a system
     restart is required.
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@switch$ sudo -E apt-get upgrade
           ... upgrade messages here ...
      
     *** System restart required ***
      
     cumulus@switch$ sudo reboot
-
-
+       
+        
     ```
 
 5.  Verify correct operation with the old configurations on new version.
@@ -488,12 +487,12 @@ Cons:
     is first booted, or soon afterwards via out-of-band management.
 
   - Moving the configuration file can go wrong in various ways:
-
+    
       - Identifying all the locations of config data is not always an
         easy task. See section above on [Understanding the Locations of
         Configuration
         Data](/old/Cumulus_Linux_35/#src-8357427_UpgradingCumulusLinux-UnderstandingLocations).
-
+    
       - Config file changes in the new version may cause merge conflicts
         that go undetected.
 
@@ -638,7 +637,7 @@ The following example excludes `/etc/apt`, `/etc/passwd` and
 `/etc/shadow` from the backup archive.
 
 1.  Back up the version 2.5.z files.
-
+    
     **Optional:** Use the Ansible playbook included with the [Config
     File Migration
     script](https://github.com/CumulusNetworks/config-backup-upgrade-helper)
@@ -646,17 +645,17 @@ The following example excludes `/etc/apt`, `/etc/passwd` and
     the section below on [Using Automation Tools to Backup
     Configurations](/old/Cumulus_Linux_35/#src-8357427_UpgradingCumulusLinux-Using_Automation_Tools)
     for more details.
-
-    ```
-
+    
+    ``` 
+                       
     # Make a temp dir
     loc=$(mktemp -d)
     # Create a backup archive to the temp dir
     sudo ./config_file_changes --backup --backup_dir $loc --exclude /etc/apt,/etc/passwd,/etc/shadow
     # Copy the archive and log file to an external server
     sudo scp -r $loc/* user@my_external_server:.
-
-
+       
+        
     ```
 
 2.  [Install Cumulus Linux 3.0 or later onto the switch using
@@ -664,25 +663,25 @@ The following example excludes `/etc/apt`, `/etc/passwd` and
 
 3.  Reinstall the files from the config file archive to the newly
     installed switch.
-
-    ```
-
+    
+    ``` 
+                       
     # On the switch, copy the config file archive back from the server:
     scp user@my_external_server:PATH/SWITCHNAME-config-archive-DATE_TIME.tar.gz .
     # Untar the archive to the root of the box
     sudo tar -C / -xvf SWITCHNAME-config-archive-DATE_TIME.tar.gz
-
-
+       
+        
     ```
-
+    
     {{%notice warning%}}
-
+    
     Be aware that version 2.5.z configurations are not guaranteed to
     work in Cumulus Linux 3.0 or later. You should test the restoration
     and proper operation of the Cumulus Linux 2.5.z configuration in
     Cumulus Linux 3.0 or later on a non-production switch or in a
     Cumulus VX image, since every deployment is unique.
-
+    
     {{%/notice%}}
 
 ## Using Automation Tools to Back Up 2.5.z Configurations

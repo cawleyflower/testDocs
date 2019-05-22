@@ -6,9 +6,8 @@ pageID: 8357407
 aliases:
  - /old/Cumulus_Linux_35/Monitoring_Best_Practices.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Monitoring Best Practices
-
 The following monitoring processes are considered best practices for
 reviewing and troubleshooting potential issues with Cumulus Linux
 environments. In addition, several of the more common issues have been

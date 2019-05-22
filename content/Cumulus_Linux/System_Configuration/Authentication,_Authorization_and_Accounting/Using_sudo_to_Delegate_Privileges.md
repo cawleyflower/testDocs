@@ -6,9 +6,8 @@ pageID: 8362554
 aliases:
  - /old/Cumulus_Linux/Using_sudo_to_Delegate_Privileges.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Using sudo to Delegate Privileges
-
 By default, Cumulus Linux has two user accounts: *root* and *cumulus*.
 The *cumulus* account is a normal user and is in the group *sudo*.
 

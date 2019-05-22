@@ -6,9 +6,8 @@ pageID: 8357503
 aliases:
  - /old/Cumulus_Linux_35/LNV_VXLAN_Active-Active_Mode.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# LNV VXLAN Active-Active Mode
-
 *LNV active-active mode* allows a pair of
 [MLAG](/old/Cumulus_Linux_35/https://docs.cumulusnetworks.com/display/DOCS/Multi-Chassis+Link+Aggregation+-+MLAG)
 switches to act as a single VTEP, providing active-active VXLAN

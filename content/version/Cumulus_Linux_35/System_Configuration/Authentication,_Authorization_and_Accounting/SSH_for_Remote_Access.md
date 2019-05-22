@@ -6,9 +6,8 @@ pageID: 8357332
 aliases:
  - /old/Cumulus_Linux_35/SSH_for_Remote_Access.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# SSH for Remote Access
-
 Authentication keys can be generated for securely accessing a Cumulus
 Linux switch with the ssh-keygen component of the Secure Shell (SSH)
 protocol. Cumulus Linux uses the OpenSSH package to provide this

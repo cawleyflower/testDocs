@@ -6,9 +6,8 @@ pageID: 8362545
 aliases:
  - /old/Cumulus_Linux/Setting_Date_and_Time.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Setting Date and Time
-
 Setting the time zone, date and time requires root privileges; use
 `sudo`.
 
@@ -24,12 +23,12 @@ You can use one of two methods to set the time zone on the switch:
 
 To see the current time zone, list the contents of `/etc/timezone`:
 
-```
-
+``` 
+                   
 cumulus@switch:~$ cat /etc/timezone
 US/Eastern
-
-
+   
+    
 ```
 
 Edit the file to add your desired time zone. A list of valid time zones
@@ -38,11 +37,11 @@ can be found at the following
 
 Use the following command to apply the new time zone immediately.
 
-```
-
+``` 
+                   
 cumulus@switch:~$ sudo dpkg-reconfigure --frontend noninteractive tzdata
-
-
+   
+    
 ```
 
 ### Use the Guided Wizard
@@ -50,17 +49,18 @@ cumulus@switch:~$ sudo dpkg-reconfigure --frontend noninteractive tzdata
 To set the time zone using the guided wizard, run `dpkg-reconfigure
 tzdata` as root:
 
-```
-
+``` 
+                   
 cumulus@switch:~$ sudo dpkg-reconfigure tzdata
-
-
+   
+    
 ```
 
 Then navigate the menus to enable the time zone you want. The following
 example selects the US/Pacific time zone:
-{{<highlight NetQ >}}
-```
+
+``` 
+                   
 cumulus@switch:~$ sudo dpkg-reconfigure tzdata
  
 Configuring tzdata
@@ -85,8 +85,9 @@ Time zone: 10
 Current default time zone: 'US/Pacific'
 Local time is now:      Mon Jun 17 09:27:45 PDT 2013.
 Universal Time is now:  Mon Jun 17 16:27:45 UTC 2013.
+   
+    
 ```
-{{</highlight>}}
 
 For more info see the Debian [System Administrator’s Manual –
 Time](http://www.debian.org/doc/manuals/system-administrator/ch-sysadmin-time.html).
@@ -106,11 +107,11 @@ clock is copied back to the battery backed hardware clock.
 You can set the date and time on the software clock using the `date`
 command. First, determine your current time zone:
 
-```
-
+``` 
+                   
 cumulus@switch$ date +%Z
-
-
+   
+    
 ```
 
 {{%notice note%}}
@@ -122,11 +123,11 @@ instructions above.
 
 Then, to set the system clock according to the time zone configured:
 
-```
-
+``` 
+                   
 cumulus@switch$ sudo date -s "Tue Jan 12 00:37:13 2016"
-
-
+   
+    
 ```
 
 See `man date(1)` for more information.
@@ -134,11 +135,11 @@ See `man date(1)` for more information.
 You can write the current value of the system (software) clock to the
 hardware clock using the `hwclock` command:
 
-```
-
+``` 
+                   
 cumulus@switch$ sudo hwclock -w
-
-
+   
+    
 ```
 
 See `man hwclock(8)` for more information.
@@ -163,30 +164,30 @@ specify the NTP server or servers you want to use with
 [NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html);
 include the `iburst` option to increase the sync speed.
 
-```
-
+``` 
+                   
 cumulus@switch:~$ net add time ntp server 4.cumulusnetworks.pool.ntp.org iburst
 cumulus@switch:~$ net pending
 cumulus@switch:~$ net commit
-
-
+   
+    
 ```
 
 These commands add the NTP server to the list of servers in
 `/etc/ntp.conf`:
 
-```
-
+``` 
+                   
 # pool.ntp.org maps to about 1000 low-stratum NTP servers.  Your server will
 # pick a different set every time it starts up.  Please consider joining the
-# pool:
+# pool: 
 server 0.cumulusnetworks.pool.ntp.org iburst
 server 1.cumulusnetworks.pool.ntp.org iburst
 server 2.cumulusnetworks.pool.ntp.org iburst
 server 3.cumulusnetworks.pool.ntp.org iburst
 server 4.cumulusnetworks.pool.ntp.org iburst
-
-
+   
+    
 ```
 
 To set the initial date and time via NTP before starting the `ntpd`
@@ -202,41 +203,41 @@ configuring `ntpd` using `ntp.conf`.
 
 To verify that `ntpd` is running on the system:
 
-```
-
+``` 
+                   
 cumulus@switch:~$ ps -ef | grep ntp
 ntp       4074     1  0 Jun20 ?        00:00:33 /usr/sbin/ntpd -p /var/run/ntpd.pid -g -u 101:102
-
-
+   
+    
 ```
 
 To check the NTP peer status:
 
-```
-
-cumulus@switch:~$ net show time ntp servers
+``` 
+                   
+cumulus@switch:~$ net show time ntp servers 
      remote           refid      st t when poll reach   delay   offset  jitter
 ==============================================================================
 +minime.fdf.net  58.180.158.150   3 u  140 1024  377   55.659    0.339   1.464
 +69.195.159.158  128.138.140.44   2 u  259 1024  377   41.587    1.011   1.677
 *chl.la          216.218.192.202  2 u  210 1024  377    4.008    1.277   1.628
 +vps3.drown.org  17.253.2.125     2 u  743 1024  377   39.319   -0.316   1.384
-
-
+   
+    
 ```
 
 To remove one or more NTP servers:
 
-```
-
+``` 
+                   
 cumulus@switch:~$ net del time ntp server 0.cumulusnetworks.pool.ntp.org iburst
 cumulus@switch:~$ net del time ntp server 1.cumulusnetworks.pool.ntp.org iburst
 cumulus@switch:~$ net del time ntp server 2.cumulusnetworks.pool.ntp.org iburst
 cumulus@switch:~$ net del time ntp server 3.cumulusnetworks.pool.ntp.org iburst
 cumulus@switch:~$ net pending
 cumulus@switch:~$ net commit
-
-
+   
+    
 ```
 
 ## Specify the NTP Source Interface
@@ -244,28 +245,28 @@ cumulus@switch:~$ net commit
 You can change the source interface that NTP uses if you want to use an
 interface other than eth0, which is the default.
 
-```
-
+``` 
+                   
 cumulus@switch:~$ net add time ntp source swp10
 cumulus@switch:~$ net pending
 cumulus@switch:~$ net commit
-
-
+   
+    
 ```
 
 These commands create the following configuration snippet in the
 `ntp.conf` file:
 
-```
-
+``` 
+                   
 ...
  
 # Specify interfaces
 interface listen swp10
  
 ...
-
-
+   
+    
 ```
 
 ## Precision Time Protocol (PTP) Boundary Clock
@@ -326,7 +327,7 @@ receive the time.
 
 {{%imgOld 0 %}}
 
-
+  
 
 ### Enable the PTP Boundary Clock on the Switch
 
@@ -334,21 +335,21 @@ To enable the PTP boundary clock on the switch:
 
 1.  Open the `/etc/cumulus/switchd.conf` file in a text editor and add
     the following line:
-
-    ```
-
+    
+    ``` 
+                       
     ptp.timestamping = TRUE
-
-
+       
+        
     ```
 
 2.  Restart `switchd`:
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@switch:~$ sudo systemctl restart switchd.service
-
-
+       
+        
     ```
 
 ### Configure the PTP Boundary Clock
@@ -358,48 +359,48 @@ To configure a boundary clock:
 1.  Configure the interfaces on the switch that you want to use for PTP.
     Each interface must be configured as a layer 3 routed interface with
     an IP address.
-
+    
     {{%notice note%}}
-
+    
     PTP *is* supported on BGP unnumbered interfaces.
-
+    
     PTP is *not* supported on switched virtual interfaces (SVIs).
-
+    
     {{%/notice%}}
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@switch:~$ net add interface swp13s0 ip address 10.0.0.9/32
     cumulus@switch:~$ net add interface swp13s1 ip address 10.0.0.10/32
-
-
+       
+        
     ```
 
 2.  Configure PTP options on the switch:
-
+    
       - Set the `gm-capable` option to `no` to configure the switch to
         be a boundary clock.
-
+    
       - Set the priority, which selects the best master clock. You can
         set priority 1 or 2. For each priority, you can use a number
         between 0 and 255. The default priority is 255. For the boundary
         clock, use a number above 128. The lower priority is applied
         first.
-
+    
       - Add the `time-stamping` parameter. The switch automatically
         enables hardware time-stamping to capture timestamps from an
         Ethernet frame at the physical layer. If you are testing PTP in
         a virtual environment, hardware time-stamping is not available;
         however the `time-stamping` parameter is still required.
-
+    
       - Add the PTP master and slave interfaces. You do not specify
         which is a master interface and which is a slave interface; this
         is determined by the PTP packet received.
-
+    
     The following commands provide an example configuration:
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@switch:~$ net add ptp global gm-capable no
     cumulus@switch:~$ net add ptp global priority2 254
     cumulus@switch:~$ net add ptp global priority1 254
@@ -408,30 +409,30 @@ To configure a boundary clock:
     cumulus@switch:~$ net add ptp interface swp13s1
     cumulus@switch:~$ net pending
     cumulus@switch:~$ net commit
-
-
+       
+        
     ```
-
+    
     The `ptp4l` man page describes all the configuration parameters.
 
 3.  Restart the `ptp4l` and `phc2sys` daemons:
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@switch:~$ sudo systemctl restart ptp4l.service phc2sys.service
-
-
+       
+        
     ```
-
+    
     The configuration is saved in the `/etc/ptp4l.conf` file.
 
 4.  Enable the services to start at boot time:
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@switch:~$ sudo systemctl enable ptp4l.service phc2sys.service
-
-
+       
+        
     ```
 
 ### Example Configuration
@@ -447,8 +448,8 @@ The configuration for the above example is shown below. The example
 assumes that you have already configured the layer 3 routed interfaces
 (`swp3s0`, `swp3s1`, `swp3s2`, and `swp3s3`) you want to use for PTP.
 
-```
-
+``` 
+                   
 cumulus@switch:~$ net add ptp global gm-capable no
 cumulus@switch:~$ net add ptp global priority2 254
 cumulus@switch:~$ net add ptp global priority1 254
@@ -459,8 +460,8 @@ cumulus@switch:~$ net add ptp interface swp3s2
 cumulus@switch:~$ net add ptp interface swp3s3
 cumulus@switch:~$ net pending
 cumulus@switch:~$ net commit
-
-
+   
+    
 ```
 
 ### Verify PTP Boundary Clock Configuration
@@ -468,50 +469,50 @@ cumulus@switch:~$ net commit
 To view a summary of the PTP configuration on the switch, run the `net
 show configuration ptp` command:
 
-```
-
+``` 
+                   
 cumulus@switch:~$ net show configuration ptp
-
+  
 ptp
   global
  
     slaveOnly
       0
-
+    
     priority1
       255
-
+    
     priority2
       255
-
+    
     domainNumber
       0
-
+    
     logging_level
       5
-
+    
     path_trace_enabled
       0
-
+    
     use_syslog
       1
-
+    
     verbose
       0
-
+    
     summary_interval
       0
-
+    
     time_stamping
       hardware
-
+    
     gmCapable
       0
   swp15s0
   swp15s1
 ...
-
-
+   
+    
 ```
 
 ### View PTP Status Information
@@ -519,8 +520,8 @@ ptp
 To view PTP status information, run the `net show ptp parent_data_set`
 command:
 
-```
-
+``` 
+                   
 cumulus@switch:~$ net show ptp parent_data_set
 parent_data_set
 ===============
@@ -534,16 +535,16 @@ gm.ClockAccuracy                      0xfe
 gm.OffsetScaledLogVariance            0xffff
 grandmasterPriority2                  127
 grandmasterIdentity                   000200.fffe.000001
-
-
+   
+    
 ```
 
 To view the additional PTP status information, including the delta in
 nanoseconds from the master clock, run the `sudo pmc -u -b 0 'GET
 TIME_STATUS_NP'` command:
 
-```
-
+``` 
+                   
 cumulus@switch:~$ sudo pmc -u -b 0 'GET TIME_STATUS_NP'
 sending: GET TIME_STATUS_NP
     7cfe90.fffe.f56dfc-0 seq 0 RESPONSE MANAGEMENT TIME_STATUS_NP
@@ -573,8 +574,8 @@ sending: GET TIME_STATUS_NP
         lastGmPhaseChange          0x0000'0000000000000000.0000
         gmPresent                  true
         gmIdentity                 000200.fffe.000005
-
-
+   
+    
 ```
 
 ### Delete PTP Boundary Clock Configuration
@@ -583,15 +584,15 @@ To delete PTP configuration, delete the PTP master and slave interfaces.
 The following example commands delete the PTP interfaces `swp3s0`,
 `swp3s1`, and `swp3s2`.
 
-```
-
+``` 
+                   
 cumulus@switch:~$ net del ptp interface swp3s0
 cumulus@switch:~$ net del ptp interface swp3s1
 cumulus@switch:~$ net del ptp interface swp3s2
 cumulus@switch:~$ net pending
 cumulus@switch:~$ net commit
-
-
+   
+    
 ```
 
 ## Use NTP in a DHCP Environment
@@ -615,8 +616,8 @@ Cumulus Linux, create a `systemd` unit override file called
 `/etc/systemd/system/ntp.service.d/config.conf` and add the following
 content:
 
-```
-
+``` 
+                   
 cumulus@switch:~$ sudo echo '
 [Service]
 ExecStart=
@@ -625,29 +626,29 @@ ExecStart=/usr/sbin/ntpd -n -u ntp:ntp -g -c /run/ntp.conf.dhcp
 sudo mkdir -p /etc/systemd/system/ntp.service.d
 sudo mv ~/over /etc/systemd/system/ntp.service.d/dhcp.conf
 sudo chown root:root /etc/systemd/system/ntp.service.d/dhcp.conf
-
-
+   
+    
 ```
 
 To validate that your configuration, run these commands:
 
-```
-
+``` 
+                   
 cumulus@switch:~$ sudo systemctl daemon-reload
 cumulus@switch:~$ sudo systemctl restart ntp
 cumulus@switch:~$ sudo systemctl status -n0 ntp.service
-
-
+   
+    
 ```
 
 If the state is not *Active*, or the alternate configuration file does
 not appear in the `ntp` command line — for example:
 
-```
-
+``` 
+                   
 cumulus@switch:~$ /usr/sbin/ntpd -n -u ntp:ntp -g -c /run/ntp.conf.dhcp
-
-
+   
+    
 ```
 
 — then it is likely that a mistake was made. In this case, correct the

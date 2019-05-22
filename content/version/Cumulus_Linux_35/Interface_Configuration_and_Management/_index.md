@@ -6,9 +6,8 @@ pageID: 8357667
 aliases:
  - /old/Cumulus_Linux_35/Interface_Configuration_and_Management.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Interface Configuration and Management
-
 `ifupdown` is the network interface manager for Cumulus Linux. Cumulus
 Linux 2.1 and later uses an updated version of this tool, `ifupdown2`.
 

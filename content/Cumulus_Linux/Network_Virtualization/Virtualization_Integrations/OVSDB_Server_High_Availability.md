@@ -6,9 +6,8 @@ pageID: 8362860
 aliases:
  - /old/Cumulus_Linux/OVSDB_Server_High_Availability.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# OVSDB Server High Availability
-
 {{%notice warning%}}
 
 OVSDB server high availability is an [early access

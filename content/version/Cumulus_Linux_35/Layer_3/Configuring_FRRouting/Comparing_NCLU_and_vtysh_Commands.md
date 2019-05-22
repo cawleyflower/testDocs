@@ -6,9 +6,8 @@ pageID: 8357716
 aliases:
  - /old/Cumulus_Linux_35/Comparing_NCLU_and_vtysh_Commands.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Comparing NCLU and vtysh Commands
-
 Using
 [NCLU](/old/Cumulus_Linux_35/Network_Command_Line_Utility_-_NCLU.html)
 is the primary way to [configure

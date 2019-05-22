@@ -6,9 +6,8 @@ pageID: 8362647
 aliases:
  - /old/Cumulus_Linux/Upgrading_Cumulus_Linux.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Upgrading Cumulus Linux
-
 This topic describes how to upgrade Cumulus Linux on your switches to a
 more recent release.
 

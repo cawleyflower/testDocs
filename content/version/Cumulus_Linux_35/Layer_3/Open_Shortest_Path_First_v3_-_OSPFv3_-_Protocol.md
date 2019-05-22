@@ -6,9 +6,8 @@ pageID: 8357720
 aliases:
  - /old/Cumulus_Linux_35/Open_Shortest_Path_First_v3_-_OSPFv3_-_Protocol.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Open Shortest Path First v3 - OSPFv3 - Protocol
-
 OSPFv3 is a revised version of OSPFv2 to support the IPv6 address
 family. Refer to [Open Shortest Path First (OSPF)
 Protocol](/old/Cumulus_Linux_35/Open_Shortest_Path_First_-_OSPF_-_Protocol.html)

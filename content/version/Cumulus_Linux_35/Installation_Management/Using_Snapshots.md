@@ -6,9 +6,8 @@ pageID: 8357428
 aliases:
  - /old/Cumulus_Linux_35/Using_Snapshots.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Using Snapshots
-
 Cumulus Linux supports the ability to take snapshots of the complete
 file system as well as the ability to roll back to a previous snapshot.
 Snapshots are performed automatically right before and after you upgrade

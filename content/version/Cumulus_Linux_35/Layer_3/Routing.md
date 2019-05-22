@@ -6,9 +6,8 @@ pageID: 8357708
 aliases:
  - /old/Cumulus_Linux_35/Routing.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Routing
-
 This chapter discusses routing on switches running Cumulus Linux.
 
 ## Managing Static Routes

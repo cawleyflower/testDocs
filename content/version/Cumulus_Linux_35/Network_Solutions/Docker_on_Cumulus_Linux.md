@@ -6,9 +6,8 @@ pageID: 8357760
 aliases:
  - /old/Cumulus_Linux_35/Docker_on_Cumulus_Linux.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Docker on Cumulus Linux
-
 Cumulus Linux 3.4 is based on Linux kernel 4.1, which supports the
 [Docker](https://www.docker.com/) engine. Docker can be installed
 directly on a Cumulus Linux switch, and Docker containers can be run

@@ -6,9 +6,8 @@ pageID: 8357718
 aliases:
  - /old/Cumulus_Linux_35/Open_Shortest_Path_First_-_OSPF_-_Protocol.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Open Shortest Path First - OSPF - Protocol
-
 OSPFv2 is a [link-state routing
 protocol](http://en.wikipedia.org/wiki/Link-state_routing_protocol) for
 IPv4. OSPF maintains the view of the network topology conceptually as a

@@ -6,9 +6,8 @@ pageID: 8362594
 aliases:
  - /old/Cumulus_Linux/Monitoring_System_Hardware.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Monitoring System Hardware
-
 You monitor system hardware in these ways, using:
 
   - `decode-syseeprom`

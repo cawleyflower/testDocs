@@ -6,9 +6,8 @@ pageID: 8357331
 aliases:
  - '/old/Cumulus_Linux_35/Authentication,_Authorization_and_Accounting.html'
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Authentication, Authorization and Accounting
-
   - [SSH for Remote
     Access](/old/Cumulus_Linux_35/SSH_for_Remote_Access.html)
 

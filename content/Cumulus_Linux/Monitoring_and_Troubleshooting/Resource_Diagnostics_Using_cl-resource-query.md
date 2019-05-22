@@ -6,9 +6,8 @@ pageID: 8362593
 aliases:
  - /old/Cumulus_Linux/Resource_Diagnostics_Using_cl-resource-query.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Resource Diagnostics Using cl-resource-query
-
 You can use the `cl-resource-query` command to retrieve information
 about host entries, MAC entries, layer 2 and layer 3 routes, and
 [ECMP](/old/Cumulus_Linux/Network_Topology.html#src-8362915_NetworkTopology-load_balancing)

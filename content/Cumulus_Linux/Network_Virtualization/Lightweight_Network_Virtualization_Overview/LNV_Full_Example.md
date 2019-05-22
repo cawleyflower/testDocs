@@ -6,9 +6,8 @@ pageID: 8362715
 aliases:
  - /old/Cumulus_Linux/LNV_Full_Example.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# LNV Full Example
-
 {{%notice warning%}}
 
 As of Cumulus Linux 3.7.4, the lightweight network virtualization

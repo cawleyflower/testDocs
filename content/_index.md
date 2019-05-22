@@ -11,7 +11,6 @@ aliases:
 
 [Cumulus Linux 3.7](/old/Cumulus_Linux/Cumulus_Linux_User_Guide.html)
 
-
 [Cumulus NetQ 2.1](/old/Cumulus_NetQ/Cumulus_NetQ_2.1.html)
 
 

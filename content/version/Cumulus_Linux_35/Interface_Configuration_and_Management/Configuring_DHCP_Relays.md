@@ -6,9 +6,8 @@ pageID: 8357682
 aliases:
  - /old/Cumulus_Linux_35/Configuring_DHCP_Relays.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Configuring DHCP Relays
-
 You can configure DHCP relays for IPv4 and IPv6.
 
 To run DHCP for both IPv4 and IPv6, initiate the DHCP relay once for

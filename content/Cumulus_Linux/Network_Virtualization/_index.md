@@ -6,9 +6,8 @@ pageID: 8362704
 aliases:
  - /old/Cumulus_Linux/Network_Virtualization.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Network Virtualization
-
 Cumulus Linux supports these forms of [network
 virtualization](http://en.wikipedia.org/wiki/Network_virtualization):
 

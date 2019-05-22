@@ -6,9 +6,8 @@ pageID: 8357408
 aliases:
  - /old/Cumulus_Linux_35/Buffer_Monitoring.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Buffer Monitoring
-
 Monitoring [packet
 buffers](/old/Cumulus_Linux_35/Buffer_and_Queue_Management.html) and
 their utilization is vital for proper traffic management on a network.

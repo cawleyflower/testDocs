@@ -6,9 +6,8 @@ pageID: 8357711
 aliases:
  - /old/Cumulus_Linux_35/Network_Topology.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Network Topology
-
 In computer networks, *topology* refers to the structure of
 interconnecting various nodes. Some commonly used topologies in networks
 are star, hub and spoke, leaf and spine, and broadcast.

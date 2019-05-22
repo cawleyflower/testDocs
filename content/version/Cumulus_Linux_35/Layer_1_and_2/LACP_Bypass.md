@@ -6,9 +6,8 @@ pageID: 8357472
 aliases:
  - /old/Cumulus_Linux_35/LACP_Bypass.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# LACP Bypass
-
 On Cumulus Linux, *LACP Bypass* is a feature that allows a
 [bond](/old/Cumulus_Linux_35/Bonding_-_Link_Aggregation.html) configured
 in 802.3ad mode to become active and forward traffic even when there is

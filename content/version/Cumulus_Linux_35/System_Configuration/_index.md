@@ -6,9 +6,8 @@ pageID: 8357329
 aliases:
  - /old/Cumulus_Linux_35/System_Configuration.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# System Configuration
-
   - [Network Command Line Utility -
     NCLU](/old/Cumulus_Linux_35/Network_Command_Line_Utility_-_NCLU.html)
     

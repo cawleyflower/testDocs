@@ -6,9 +6,8 @@ pageID: 8362978
 aliases:
  - /old/Cumulus_Linux/Network_Solutions.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Network Solutions
-
   - [Data Center Host to ToR
     Architecture](/old/Cumulus_Linux/Data_Center_Host_to_ToR_Architecture.html)
 

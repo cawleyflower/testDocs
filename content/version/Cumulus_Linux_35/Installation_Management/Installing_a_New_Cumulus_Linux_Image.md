@@ -6,9 +6,8 @@ pageID: 8357423
 aliases:
  - /old/Cumulus_Linux_35/Installing_a_New_Cumulus_Linux_Image.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Installing a New Cumulus Linux Image
-
 Before you install Cumulus Linux, the switch can be in two different
 states:
 

@@ -6,9 +6,8 @@ pageID: 8362962
 aliases:
  - /old/Cumulus_Linux/Segment_Routing.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Segment Routing
-
 {{%notice warning%}}
 
 Segment routing is an [early access

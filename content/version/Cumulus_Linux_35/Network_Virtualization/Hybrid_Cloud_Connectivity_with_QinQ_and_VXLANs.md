@@ -6,9 +6,8 @@ pageID: 8357550
 aliases:
  - /old/Cumulus_Linux_35/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Hybrid Cloud Connectivity with QinQ and VXLANs
-
 *QinQ* is an amendment to the [IEEE 802.1Q
 specification](http://www.ieee802.org/1/pages/802.1Q.html) that provides
 the capability for multiple [VLAN

@@ -6,9 +6,8 @@ pageID: 8357736
 aliases:
  - /old/Cumulus_Linux_35/Management_VRF.html
 imgData: Cumulus_Linux_35
+siteSlug: Cumulus_Linux_35
 ---
-# Management VRF
-
 *Management VRF* is a subset of
 [VRF](/old/Cumulus_Linux_35/Virtual_Routing_and_Forwarding_-_VRF.html)
 (virtual routing tables and forwarding) and provides a separation

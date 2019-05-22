@@ -6,9 +6,8 @@ pageID: 8362627
 aliases:
  - /old/Cumulus_Linux/ASIC_Monitoring.html
 imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# ASIC Monitoring
-
 Cumulus Linux provides an ASIC monitoring tool that collects and
 distributes data about the state of the ASIC. The monitoring tool polls
 for data at specific intervals and takes certain actions so that you can
