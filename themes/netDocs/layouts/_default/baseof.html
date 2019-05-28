@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Oxygen|Oxygen+Mono:300,400,700" rel="stylesheet">
 
   <!-- Theme stylesheet, you can customize scss by creatig `assets/custom.scss` in your website -->
+  <!-- WHERE Hugo pipes in and compiles book.scss-->
   {{ $styles := resources.Get "book.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 
@@ -33,6 +34,10 @@
 <body>
   <input type="checkbox" style="display: none" id="menu-control" />
   <main class="flex container">
+<!-- INSERT article page header -->
+    <header id = "header">
+
+    </header>
 
     <aside class="book-menu fixed">
 
@@ -40,14 +45,16 @@
         <h2 class="book-brand">
           <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
         </h2>
+        <!-- branch to list.html or single.html -->
         {{ block "menu" . }}
 
+        <!-- default menu partial IF no '{{define menu}}' in single/list.html-->
          {{ partial "docs/menu-sectiontree" . }}
 
          {{ end }}
       </nav>
 
-      <!-- js menu bundle -->
+      <!-- pipes in /assets/js and bundles into $jsMenu-->
       {{ $jsScroll := resources.Get "js/menu.js" }}
       {{ $jsCollapse := resources.Get "js/collapse.js"}}
       {{ $jsMenu := slice $jsScroll $jsCollapse | resources.Concat "js/menuBundle.js"}}
@@ -58,6 +65,7 @@
 
     <div class="book-page">
 
+      <!-- default mobile header from themes/book -->
       <header class="align-center justify-between book-header">
         <label for="menu-control">
           <img src="{{ "svg/menu.svg" | relURL }}" alt="Menu" />
@@ -65,6 +73,7 @@
         <strong>{{- .Page.Title -}}</strong>
       </header>
 
+      <!-- branch to list.html or single.html -->
       {{ block "main" . }}
 
 
@@ -72,12 +81,15 @@
 
 
     </div>
+    <!-- branch to list.html or single.html -->
+
       {{ block "toc" .}}
 
 
       {{ end }}
   </main>
 
+  <!-- internal Hugo template for google analytics -->
   {{ template "_internal/google_analytics_async.html" . }}
 
 </body>
