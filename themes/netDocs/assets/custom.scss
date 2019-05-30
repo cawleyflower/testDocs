@@ -1,2 +1,156 @@
 /* To be overridden by theme user */
 // @import "variables";
+#site-nav {
+  background: linear-gradient(-225deg, rgb(0, 173, 105) 0%, rgb(75, 192, 91) 100%);
+  position: relative;
+  
+  .header-wrapper {
+    font-family: $cumulus-font-family;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  a {
+    img {
+      max-height: 42px;
+      z-index: 1025;
+      position: relative;
+    }
+    .header-mobile {
+      width: 32px;
+      height: auto;
+      display: none;
+    }
+    span {
+      color: white;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 28px;
+      position: relative;
+      left: 26px;
+      z-index: 1025;
+
+      &:before {
+        content: "";
+        width: 1px;
+        height: 30px;
+        background-color: #fff;
+        opacity: .25;
+        position: absolute;
+        left: -16px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  ul {
+    color: white;
+    list-style: none;
+    margin-top: 0;
+
+    li {
+      a {
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1.75px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.burger-menu {
+  cursor: pointer;
+  display: none;
+  margin-right: 10px;
+  z-index: 1025;
+
+  span {
+    background-color: $white;
+    display: block;
+    width: 21px;
+    height: 1px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .burger-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  #site-nav {
+    ul {
+      background: linear-gradient(-225deg,#00ad69 0%,#4bc05b 100%);
+      display: none;
+      flex-direction: column;
+      padding: 80px 40px 100px;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      text-align: center;
+      z-index: 1024;
+
+      li {
+        line-height: 30px;
+      }
+    }
+
+    &.menu-opened {
+      ul {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #site-nav .header-wrapper {
+    padding: 35px 50px;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  #site-nav {
+    ul {
+      li {
+        padding-right: 26px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  #site-nav {
+    a {
+      span {
+        font-size: 22px;
+        line-height: 32px;
+        letter-spacing: -.15px;
+        top: 2px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #site-nav {
+    a {
+      img:not(.header-mobile) {
+        display: none;
+      }
+      .header-mobile {
+        display: inline-block;
+      }
+    }
+  }
+}
