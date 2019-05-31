@@ -16,11 +16,11 @@ Installing NetQ can be accomplished in one of three ways:
   - If you already have a Cumulus Linux switch (running version 3.3.0 or
     later) and you want to add NetQ functionality to it, installation
     involves three steps:
-    
+
       - Verify your server meets the hardware and software requirements.
-    
+
       - Load the software onto the switch.
-    
+
       - Load the NetQ Agent onto the hosts.
 
   - If you upgrading from a prior version of NetQ, please follow the
@@ -144,34 +144,34 @@ A simple process installs the NetQ Agent on a Cumulus switch.
 1.  Edit the `/etc/apt/sources.list` file to add the repository for
     Cumulus NetQ. **Note** that NetQ has a separate repository from
     Cumulus Linux.
-    
-    ``` 
-                       
+
+    ```
+
     cumulus@switch:~$ sudo nano /etc/apt/sources.list
     ...
     deb http://apps3.cumulusnetworks.com/repos/deb CumulusLinux-3 netq-2.1
     ...
-       
-        
+
+
     ```
-    
+
     {{%notice tip%}}
-    
+
     The repository `deb http://apps3.cumulusnetworks.com/repos/deb
     CumulusLinux-3 netq-latest` can be used if you want to always
     retrieve the latest posted version of NetQ.
-    
+
     {{%/notice%}}
 
 2.  Update the local `apt` repository, then install the NetQ meta
     package on the switch.
-    
-    ``` 
-                       
+
+    ```
+
     cumulus@switch:~$ sudo apt-get update
     cumulus@switch:~$ sudo apt-get install cumulus-netq
-       
-        
+
+
     ```
 
 Repeat these steps for each Cumulus switch, or use an automation tool to
@@ -189,114 +189,113 @@ following packages are installed and running these minimum versions:
   - lldpd 0.7.19-1 amd64
 
   - ntp 1:4.2.8p4+dfsg-3ubuntu5.6 amd64
-    
-    {{%notice info%}}
-    
-    Make sure you are running lldp**d**, not lldp**ad**. Ubuntu does not
-    include `lldpd` by default, which is required for the installation.
-    To install this package, run the following commands:
-    
-    ``` 
-                       
+
+  {{%notice info%}}
+      Make sure you are running lldp**d**, not lldp**ad**. Ubuntu does not
+      include `lldpd` by default, which is required for the installation.
+      To install this package, run the following commands:
+
+    ```
+
     root@ubuntu:~# apt-get update
     root@ubuntu:~# apt-get install lldpd
     root@ubuntu:~# systemctl enable lldpd.service
     root@ubuntu:~# systemctl start lldpd.service
-       
-        
+
+
     ```
-    
-    {{%/notice%}}
+
+  {{%/notice%}}
 
 To install the NetQ Agent on an Ubuntu server:
 
 1.  If you are upgrading from a prior version of NetQ, first purge the
     current NetQ Agent and application software from your switch or
     host; otherwise skip to Step 3.
-    
-    ``` 
-                       
+
+    ```
+
     root@ubuntu:~# sudo systemctl stop netq-agent
     root@ubuntu:~# sudo systemctl stop netqd
     root@ubuntu:~# yum remove netq-agent netq-apps
-       
-        
+
+
     ```
 
 2.  Verify you have removed all older NetQ packages. You should not see
     any older version files.
-    
-    ``` 
-                       
+
+    ```
+
     root@ubuntu:~# dpkg -l | grep netq
-       
-        
+
+
     ```
 
 3.  Reference and update the local `apt` repository.
-    
-    ``` 
-                       
+
+    ```
+
     root@ubuntu:~# wget -O- https://apps3.cumulusnetworks.com/setup/cumulus-apps-deb.pubkey | apt-key add -
-       
-        
+
+
     ```
 
 4.  Create the file
     `/etc/apt/sources.list.d/cumulus-host-ubuntu-xenial.list` and add
     the following lines:
-    
-    ``` 
-                       
+
+    ```
+
     root@ubuntu:~# vi /etc/apt/sources.list.d/cumulus-apps-deb-xenial.list
     ...
     deb [arch=amd64] https://apps3.cumulusnetworks.com/repos/deb xenial netq-latest
     ...
-       
-        
+
+
     ```
-    
+
     {{%notice note%}}
-    
+
     The use of `netq-latest` in this example means that a `get` to the
     repository always retrieves the lastest version of NetQ, even in the
     case where a major version update has been made. If you want to keep
     the repository on a specific version — such as `netq-2.1` — use that
     instead.
-    
+
     {{%/notice%}}
 
 5.  Install NTP on the server.
-    
-    ``` 
-                       
+
+    ```
+
     root@ubuntu:~# sudo apt-get install ntp
-       
-        
+
+
     ```
 
 6.  Configure the NTP server.
-    
+
     1.  Open the `/etc/ntp.conf` file in your text editor of choice.
-    
+
     2.  Under the Server section, specify the NTP server IP address or
         hostname.
 
 7.  Enable and start the NTP service.
-    
-    ``` 
-                       
+
+    ```
+
     root@ubuntu:~# sudo systemctl enable ntp.service
     root@ubuntu:~# sudo systemctl start ntp.service
-       
-        
+
+
     ```
 
 8.  Verify NTP is operating correctly. Look for an asterisk (\*) or a
     plus sign (+) that indicates the clock is synchronized.
-    
-    ``` 
-                       
+
+    ```
+
     root@ubuntu:~# ntpq -pn
          remote           refid      st t when poll reach   delay   offset  jitter
     ==============================================================================
@@ -304,28 +303,28 @@ To install the NetQ Agent on an Ubuntu server:
     +12.167.151.2    198.148.79.209   3 u  103  128  377   13.395   -4.025   0.198
      2a00:7600::41   .STEP.          16 u    - 1024    0    0.000    0.000   0.000
     *129.250.35.250  249.224.99.213   2 u  101  128  377   14.588   -0.299   0.243
-       
-        
+
+
     ```
 
 9.  Install the meta package on the server.
-    
-    ``` 
-                       
+
+    ```
+
     root@ubuntu:~# apt-get update
     root@ubuntu:~# apt-get install cumulus-netq
-       
-        
+
+
     ```
 
 10. Restart the NetQ daemon.
-    
-    ``` 
-                       
+
+    ```
+
     root@ubuntu:~# systemctl enable netqd
     root@ubuntu:~# systemctl restart netqd
-       
-        
+
+
     ```
 
 ### Install NetQ Agent on a Red Hat or CentOS Server (Optional)
@@ -337,26 +336,26 @@ versions:
   - iproute-3.10.0-54.el7\_2.1.x86\_64
 
   - lldpd-0.9.7-5.el7.x86\_64
-    
+
     {{%notice info%}}
-    
+
     Make sure you are running lldp**d**, not lldp**ad**.
-    
+
     CentOS does not include `lldpd` by default, nor does it include
     `wget`, which is required for the installation. To install this
     package, run the following commands:
-    
-    ``` 
-                       
+
+    ```
+
     root@centos:~# yum -y install epel-release
     root@centos:~# yum -y install lldpd
     root@centos:~# systemctl enable lldpd.service
     root@centos:~# systemctl start lldpd.service
     root@centos:~# yum install wget
-       
-        
+
+
     ```
-    
+
     {{%/notice%}}
 
   - ntp-4.2.6p5-25.el7.centos.2.x86\_64
@@ -368,46 +367,46 @@ To install the NetQ Agent on a Red Hat or CentOS server:
 1.  If you are upgrading from a prior version of NetQ, first purge the
     current NetQ Agent and application software from your switch or
     host; otherwise skip to Step 3.
-    
-    ``` 
-                       
+
+    ```
+
     root@rhel7:~# sudo systemctl stop netq-agent
     root@rhel7:~# sudo systemctl stop netqd
     root@rhel7:~# apt-get purge --auto-remove cumulus-netq netq-agent netq-apps
-       
-        
+
+
     ```
 
 2.  Verify you have removed all older NetQ packages. You should not see
     any older version files.
-    
-    ``` 
-                       
+
+    ```
+
     root@rhel7:~# dpkg -l | grep netq
-       
-        
+
+
     ```
 
 3.  Reference and update the local `yum` repository.
-    
-    ``` 
-                       
+
+    ```
+
     root@rhel7:~# rpm --import https://apps3.cumulusnetworks.com/setup/cumulus-apps-rpm.pubkey
     root@rhel7:~# wget -O- https://apps3.cumulusnetworks.com/setup/cumulus-apps-rpm-el7.repo > /etc/yum.repos.d/cumulus-host-el.repo
-       
-        
+
+
     ```
 
 4.  Edit `/etc/yum.repos.d/cumulus-host-el.repo` to set the `enabled=1`
     flag for the two NetQ repositories.
-    
-    ``` 
-                       
+
+    ```
+
     root@rhel7:~# vi /etc/yum.repos.d/cumulus-host-el.repo
-    ... 
+    ...
     [cumulus-arch-netq-2.1]
     name=Cumulus netq packages
-    baseurl=https://apps3.cumulusnetworks.com/repos/rpm/el/7/netq-2.1/$basearch 
+    baseurl=https://apps3.cumulusnetworks.com/repos/rpm/el/7/netq-2.1/$basearch
     gpgcheck=1
     enabled=1
     [cumulus-noarch-netq-2.1]
@@ -416,41 +415,41 @@ To install the NetQ Agent on a Red Hat or CentOS server:
     gpgcheck=1
     enabled=1
     ...
-       
-        
+
+
     ```
 
 5.  Install NTP on the server.
-    
-    ``` 
-                       
+
+    ```
+
     root@rhel7:~# yum install ntp
-       
-        
+
+
     ```
 
 6.  Configure the NTP server.
-    
+
     1.  Open the `/etc/ntp.conf` file in your text editor of choice.
-    
+
     2.  Under the Server section, specify the NTP server IP address or
         hostname.
 
 7.  Enable and start the NTP service.
-    
-    ``` 
-                       
+
+    ```
+
     root@rhel7:~# sudo systemctl enable ntpd.service
     root@rhel7:~# sudo systemctl start ntpd.service
-       
-        
+
+
     ```
 
 8.  Verify NTP is operating correctly. Look for an asterisk (\*) or a
     plus sign (+) that indicates the clock is synchronized.
-    
-    ``` 
-                       
+
+    ```
+
     root@rhel7:~# ntpq -pn
          remote           refid      st t when poll reach   delay   offset  jitter
     ==============================================================================
@@ -458,27 +457,27 @@ To install the NetQ Agent on a Red Hat or CentOS server:
     +12.167.151.2    198.148.79.209   3 u  103  128  377   13.395   -4.025   0.198
      2a00:7600::41   .STEP.          16 u    - 1024    0    0.000    0.000   0.000
     *129.250.35.250  249.224.99.213   2 u  101  128  377   14.588   -0.299   0.243
-       
-        
+
+
     ```
 
 9.  Install the Bash completion and NetQ meta packages on the server.
-    
-    ``` 
-                       
+
+    ```
+
     root@rhel7:~# yum -y install bash-completion
     root@rhel7:~# yum install cumulus-netq
-       
-        
+
+
     ```
 
 10. Restart the NetQ daemon.
-    
-    ``` 
-                       
+
+    ```
+
     root@rhel7:~# systemctl enable netqd ; systemctl restart netqd
-       
-        
+
+
     ```
 
 ## Set Up the NetQ Agents
@@ -508,9 +507,9 @@ nodes.
     [NTP](/old/Cumulus_NetQ/https://docs.cumulusnetworks.com/display/DOCS/Setting+Date+and+Time)
     is running on the host node. Nodes must be in time synchronization
     with the NetQ Platform to enable useful statistical analysis.
-    
-    ``` 
-                       
+
+    ```
+
     cumulus@switch:~$ sudo systemctl status ntp
     [sudo] password for cumulus:
     ● ntp.service - LSB: Start NTP daemon
@@ -519,20 +518,20 @@ nodes.
          Docs: man:systemd-sysv-generator(8)
        CGroup: /system.slice/ntp.service
                └─2873 /usr/sbin/ntpd -p /var/run/ntpd.pid -g -c /var/lib/ntp/ntp.conf.dhcp -u 109:114
-       
-        
+
+
     ```
 
 2.  Restart `rsyslog` so log files are sent to the correct destination.
-    
-    ``` 
-                       
-    cumulus@switch:~$ sudo systemctl restart rsyslog.service
-       
-        
+
     ```
 
-3.  Link the node to the NetQ Platform you configured above.  
+    cumulus@switch:~$ sudo systemctl restart rsyslog.service
+
+
+    ```
+
+3.  Link the node to the NetQ Platform you configured above.
     You must configure both the agent server and the cli server to link
     to the NetQ Platform. **Note:** If you intend to use VRF, skip to
     [Configure the Agent to Use
@@ -542,26 +541,26 @@ nodes.
     Port](/old/Cumulus_NetQ/#src-10456317_InstallNetQ-port).In this
     example, the IP address for the agent and cli servers is
     *192.168.1.254*.
-    
-    ``` 
-                       
+
+    ```
+
     cumulus@switch:~$ netq config add agent server 192.168.1.254
     cumulus@switch:~$ netq config add cli server 192.168.1.254
-       
-        
+
+
     ```
-    
+
     This command updates the configuration in the `/etc/netq/netq.yml`
     file and enables the NetQ CLI.
 
 4.  Restart NetQ Agent and CLI.
-    
-    ``` 
-                       
+
+    ```
+
     cumulus@switch:~$ netq config restart agent
     cumulus@switch:~$ netq config restart cli
-       
-        
+
+
     ```
 
 ### Configure the Agent to Use a VRF (Optional)
@@ -576,22 +575,22 @@ Agent. For example, if the management VRF is configured and you want the
 agent to communicate with the NetQ Platform over it, configure the agent
 like this:
 
-``` 
-                   
+```
+
 cumulus@leaf01:~$ netq config add agent server 192.168.1.254 vrf mgmt
 cumulus@leaf01:~$ netq config add cli server 192.168.254 vrf mgmt
-   
-    
+
+
 ```
 
 You then restart the agent:
 
-``` 
-                   
+```
+
 cumulus@leaf01:~$ netq config restart agent
 cumulus@leaf01:~$ netq config restart cli
-   
-    
+
+
 ```
 
 ### Configure the Agent to Communicate over a Specific Port (Optional)
@@ -601,20 +600,20 @@ Platform and NetQ Agents. If you want the NetQ Agent to communicate with
 the NetQ Platform via a different port, you need to specify the port
 number when configuring the NetQ Agent like this:
 
-``` 
-                   
+```
+
 cumulus@switch:~$ netq config add agent server 192.168.1.254 port 7379
-   
-    
+
+
 ```
 
 You then restart the agent:
 
-``` 
-                   
+```
+
 cumulus@leaf01:~$ netq config restart agent
-   
-    
+
+
 ```
 
 ## Integrate with Event Notification Tools
