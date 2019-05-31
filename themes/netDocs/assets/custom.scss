@@ -80,6 +80,45 @@
   }
 }
 
+#product-nav {
+  background: white;
+  border: 1px solid rgb(224, 228, 236);
+  box-shadow: 0px 2px 10px 0px rgba(175, 184, 197, 0.2);
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px;
+  position: relative;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      position: relative;
+      a {
+        color: $cn-limited-spruce;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: -0.1px;
+        line-height: 30px;
+      }
+
+      &.active {
+        &:after {
+          background-color: $cn-jade;
+          content: '';
+          width: calc(100% - 26px);
+          height: 2px;
+          position: absolute;
+          top: 56px;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .burger-menu {
     display: block;
@@ -117,10 +156,15 @@
   #site-nav .header-wrapper {
     padding: 35px 50px;
   }
+
+  #product-nav {
+    padding: 27px 50px;
+  }
 }
 
 @media only screen and (min-width: 801px) {
-  #site-nav {
+  #site-nav,
+  #product-nav {
     ul {
       li {
         padding-right: 26px;
