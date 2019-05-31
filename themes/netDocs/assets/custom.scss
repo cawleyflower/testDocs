@@ -117,6 +117,47 @@
       }
     }
   }
+
+  #doc-search-box {
+    position: relative;
+    span {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      button {
+        background-color: transparent;
+        border-top-right-radius: 21.5px;
+        border-bottom-right-radius: 21.5px;
+        border: 0;
+        padding: 0;
+        width: 39px;
+        height: 43px;
+      }
+    }
+  }
+
+  .doc-search-input {
+    background: rgb(246, 248, 250);
+    border: 0;
+    border-radius: 21.5px;
+    color: rgb(54, 66, 74);
+    font-weight: 400;
+    line-height: 30px;
+    position: relative;
+    padding: 10px 10px 10px 27px;
+    width: 260px;
+    height: 43px;
+
+    &::-moz-placeholder { color: rgb(54, 66, 74); opacity: 1;}
+    &:-ms-input-placeholder { color: rgb(54, 66, 74); }
+    &::-webkit-input-placeholder  {color: rgb(54, 66, 74); }
+
+    &:focus {
+      outline: 0;
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) {
