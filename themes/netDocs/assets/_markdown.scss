@@ -27,9 +27,18 @@ $block-border-radius: 0.15rem;
       color: $cn-limited-spruce;
     }
 
+// nested lists
+    ol, ul {
+      li{
+        ol, ul{
+          li{
+            list-style-type: lower-alpha;
+          }
+        }
+      }
+    }
+
     // remove padding at the beginning of page
-
-
   b, optgroup, strong {
     font-weight: 700;
   }

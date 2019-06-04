@@ -6,12 +6,14 @@ theme =["netDocs", "book"]
 #URL fixes
 #Book configuration
 disablePathToLower = true
-enableGitInfo= true
+## bug in local server, will enable in production
+enableGitInfo= false
+noChmod = true
 
 
 [Params]
 #Syntax Highlighting
-pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
 pygmentsUseClasses = true
 
 
@@ -62,3 +64,5 @@ hrefTargetBlank = true
   category = "categories"
   publication_type = "publication_types"
   author = "authors"
+[frontmatter]
+  lastmod = ["lastmod", ":defaut"]

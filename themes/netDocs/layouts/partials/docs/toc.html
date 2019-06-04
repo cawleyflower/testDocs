@@ -1,6 +1,6 @@
 <aside class="book-toc fixed">
 
-  {{ if or .GitInfo .Site.Params.BookEditPath }}
+  {{ if .GitInfo }}
     {{ with .GitInfo }}
       {{ $date := .AuthorDate.Local.Format (default "January 2, 2006" $.Site.Params.BookDateFormat) }}
       <button>
@@ -9,17 +9,34 @@
       </a>
     </button>
     {{ end }}
-  {{ end }}
+
 
   {{ .Page.TableOfContents }}
 
-  {{ with .Site.Params.BookEditPath }}
+
+    {{ with .Site.Params.BookEditPath }}
       <button>
       {{ if $.File }}<a href="{{ $.Site.Params.BookRepo }}/{{ . }}/{{ $.File.Path }}" target="_blank" rel="noopener">
         <img src="{{ "svg/code-fork.svg" | relURL }}" alt="Edit" /> Edit this page
       </a>{{ end }}
     </button>
-{{ end }}
+    {{ end }}
 
+  {{ else }}
+
+  <button> </button>
+
+      {{ .Page.TableOfContents }}
+
+      {{ with .Site.Params.BookEditPath }}
+      <button>
+      {{ if $.File }}<a href="{{ $.Site.Params.BookRepo }}/{{ . }}/{{ $.File.Path }}" target="_blank" rel="noopener">
+        <img src="{{ "svg/code-fork.svg" | relURL }}" alt="Edit" /> Edit this page
+      </a>{{ end }}
+    </button>
+    {{ end }}
+
+
+    {{ end }}
 
 </aside>
