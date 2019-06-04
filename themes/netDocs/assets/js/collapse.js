@@ -1,7 +1,11 @@
 document.querySelectorAll('.cn-book-section-container').forEach(node => {
-  if(node.querySelector('.active') != null){
-    node.setAttribute('class', '.cn-book-section-container expand')
-  }else{
+  // if(node.querySelector('.active') != null){
+  //   node.setAttribute('class', '.cn-book-section-container expand')
+  // }else{
+  //   node.setAttribute('class', '.cn-book-section-container collapse')
+  // }
+
+  if(node.querySelector('.active') == null){
     node.setAttribute('class', '.cn-book-section-container collapse')
   }
 
@@ -34,6 +38,6 @@ document.querySelectorAll('.cn-book-section-container').forEach(node => {
   let par = node.parentNode
   let lnk = par.querySelector('a')
   if(par.tagName == 'LI'){
-    par.insertBefore(eleToggler, lnk)
+    lnk.insertAdjacentElement('afterbegin',eleToggler)
   }
 })

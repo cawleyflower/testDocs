@@ -65,8 +65,8 @@ aside nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
-  transition: all 0.4s ease-in-out;
-  font-stretch: condensed;
+  // transition: all 0.4s ease-in-out;
+  // font-stretch: condensed;
 
   .expand{
     display: block;
@@ -98,8 +98,8 @@ aside nav ul {
   }
 
   ul {
-    padding-left: 3px;
-    margin-left: 15px;
+    padding-left: 0;
+    margin-left: 14px;
   }
 }
 
