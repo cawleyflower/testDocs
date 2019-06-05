@@ -23,7 +23,7 @@
 
 {{ define "book-section-children" }}
 {{ with .Section }}
-  <ul class="cn-book-section-container" id = "children">
+  <ul class="cn-book-section-container" id = "subsection">
     {{ range .Sections }}
       {{ template "book-section" (dict "Section" . "CurrentPage" $.CurrentPage ) }}
     {{ end }}

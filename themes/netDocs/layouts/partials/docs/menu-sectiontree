@@ -1,7 +1,7 @@
 {{ $currentSect := default .Page.Section .Page.Params.BookSection}}
 
 {{ $sections := where .Site.Sections "Section" .Page.Section}}
-  <ul class = "cn-book-section-container">
+  <ul id = "top" class = "cn-book-section-container">
   {{ range $sections }}
     {{ template "book-section" (dict "Section" . "CurrentPage" $.Permalink) }}
   {{ end }}
@@ -19,7 +19,7 @@
 
 {{ define "book-section-children" }}
 {{ with .Section }}
-  <ul class="cn-book-section-container">
+  <ul id = subsection class="cn-book-section-container">
     {{ range .Sections }}
       {{ template "book-section" (dict "Section" . "CurrentPage" $.CurrentPage ) }}
     {{ end }}
