@@ -5,27 +5,75 @@ $block-border-radius: 0.15rem;
 .markdown {
   color: $cn-raven;
   font-size: 0.882rem;
-  line-height: 1.7;
+  line-height: 1.764rem;
+  letter-spacing: -0.1px;
 
-    h1 {
-      font-size: 2.23rem;
-      margin-top: 0;
-      font-weight: 300;
-      line-height: 1em;
-    }
-    h2 {
-      font-weight: 300;
-    }
-    h3 {
-      transform: uppercase;
-    }
-    h4, h5 {
-      font-weight: 600;
-    }
+  h1 {
+    color: $cn-limited-spruce;
+    font-size: 2.235rem;
+    font-weight: 300;
+    letter-spacing: -0.7px;
+    line-height: 3.06rem;
+    margin-top: 0;
+    margin-bottom: 1.1rem
+  }
 
-    h1,h2,h3,h4,h5 {
-      color: $cn-limited-spruce;
+  h2 {
+    color: $black;
+    font-size: 1.294rem;
+    font-weight: 300;
+    letter-spacing: -0.15px;
+    line-height: 2rem;
+  }
+
+  p {
+    margin: 0 0 1.1rem;
+
+    + h2 {
+      margin-top: 2.3rem;
     }
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+
+    li {
+      padding-left: 25px;
+      position: relative;
+
+      &:before {
+        content: '';
+        background-color: $cn-limited-spruce;
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        left: 0;
+        top: 10px;
+      }
+    }
+  }
+
+    // h1 {
+    //   font-size: 2.23rem;
+    //   margin-top: 0;
+    //   font-weight: 300;
+    //   line-height: 1em;
+    // }
+    // h2 {
+    //   font-weight: 300;
+    // }
+    // h3 {
+    //   transform: uppercase;
+    // }
+    // h4, h5 {
+    //   font-weight: 600;
+    // }
+
+    // h1,h2,h3,h4,h5 {
+    //   color: $cn-limited-spruce;
+    // }
 
 // nested lists
     ol, ul {
@@ -52,6 +100,8 @@ $block-border-radius: 0.15rem;
   }
 
   code {
+    color: $cn-nevada;
+    font-size: .882rem;
     //font-family: 'Oxygen Mono', monospace;
 
     padding: 0 0;
@@ -62,8 +112,10 @@ $block-border-radius: 0.15rem;
   pre {
     padding: $padding-16;
     background: $code-block-background;
-    border-radius: $block-border-radius;
+    border: 1px solid #b5bdc9;
+    border-radius: 0;
     font-size: $font-size-14;
+    margin: 1.99rem 0;
     overflow-x: auto;
   }
 

@@ -1,5 +1,11 @@
 /* To be overridden by theme user */
 // @import "variables";
+
+body {
+  font-family: $cumulus-font-family;
+  font-weight: 400;
+}
+
 #site-nav {
   background: linear-gradient(-225deg, rgb(0, 173, 105) 0%, rgb(75, 192, 91) 100%);
   position: relative;
@@ -219,6 +225,10 @@ aside nav .expand>li:not(.cn-book-section) a {
   padding-left: 20px;
 }
 
+aside nav .expand>li.cn-book-section>a {
+  margin-bottom: 1.3em;
+}
+
 aside nav ul .expand {
   border-left: 0;
 }
@@ -231,17 +241,17 @@ aside nav ul .expand {
 
 .book-menu a.active {
   font-weight: 500;
-  margin-bottom: 1.3em;
+  //margin-bottom: 1.3em;
 }
 
 aside nav ul li a {
   line-height: 25px;
-  padding-left: 29px;
+  padding-left: 27px;
   position: relative;
 }
 
 aside nav ul .expand li>a {
-  padding-left: 29px;
+  padding-left: 27px;
 }
 
 .menuControl {
@@ -259,6 +269,51 @@ aside nav ul .expand li>a {
 .book-menu>nav .expand .active .menuControl {
   top: 0;
   transform: rotate(0);
+}
+
+.book-page {
+  padding: 4rem 2.7rem;
+}
+
+div.notices.note {
+  background-color: rgba(255, 200, 46, 0.3);
+  border: 1px solid #ffc82e;
+  margin: 1.99rem 0;
+  padding: 1.764rem;
+
+  p {
+    color: $cn-limited-spruce;
+    font-size: .882rem;
+    line-height: 1.764rem;
+    padding: 1.6rem 0 0;
+  }
+
+  a {
+    color: #ffc82e;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+div.notices.note>*:first-child:before {
+  content: '';
+  background-image: url(/icons/alert-triangle.png);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  top: 30px;
+  left: 30px;
+}
+
+div.notices.note>*:first-child:after {
+  font-size: .765rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  top: 26px;
+  left: 62px;
 }
 
 @media only screen and (min-width: 992px) {
