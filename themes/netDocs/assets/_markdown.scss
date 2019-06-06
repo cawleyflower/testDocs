@@ -86,9 +86,12 @@ $block-border-radius: 0.15rem;
 
 // nested lists
     ol, ul {
+      list-style-type: disc;
+      margin-left: 1rem;
       padding: 0;
       li{
         position: relative;
+        padding: 0;
         ol, ul{
           margin-left: 1rem;
           li{
