@@ -21,3 +21,7 @@ aliases:
 [Cumulus Linux 3.6](/old/Cumulus_Linux_36/Cumulus_Linux_User_Guide.html)
 
 [Cumuls Linux 3.5](/old/Cumulus_Linux_35/Cumulus_Linux_User_Guide.html)
+
+## Writing Guide
+
+{{< pageref Writing_Guide "Writing Guide" >}}

@@ -49,18 +49,18 @@ $block-border-radius: 0.15rem;
 
     li {
       padding-left: 25px;
-      position: relative;
 
-      &:before {
-        content: '';
-        background-color: $cn-limited-spruce;
-        border-radius: 50%;
-        width: 6px;
-        height: 6px;
-        position: absolute;
-        left: 0;
-        top: 10px;
-      }
+
+    //  &:before {
+    //  content: '';
+    //    background-color: $cn-limited-spruce;
+    //    border-radius: 50%;
+    //    width: 6px;
+    //    height: 6px;
+    //    position: absolute;
+    //    left: 0;
+    //    top: 10px;
+    //  }
     }
   }
 
@@ -86,10 +86,17 @@ $block-border-radius: 0.15rem;
 
 // nested lists
     ol, ul {
+      padding: 0;
       li{
+        position: relative;
         ol, ul{
+          margin-left: 1rem;
           li{
             list-style-type: lower-alpha;
+            padding: 0;
+            &:marker {
+              padding-right: 1rem
+            }
           }
         }
       }

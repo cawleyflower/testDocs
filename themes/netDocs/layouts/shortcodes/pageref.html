@@ -15,19 +15,30 @@
 {{ end }}
 
 {{ define "find-page" }}
+
 {{ with .Section }}
- {{ range .Sections }}
   {{ if eq .Title $.pageTitle }}
     {{ template "page-link" (dict "Page" .) }}
-  {{ else }}
+  {{ end }}
+
+  {{ range .Pages }}
+    {{ if eq .Title $.pageTitle }}
+      {{ template "page-link" (dict "Page" .) }}
+    {{ end }}
+  {{ end }}
+
+  {{ range .Sections}}
+  {{ if eq .Title $.pageTitle }}
+    {{ template "page-link" (dict "Page" .) }}
+  {{ end }}
     {{ range .Pages }}
       {{ if eq .Title $.pageTitle }}
         {{ template "page-link" (dict "Page" .) }}
+      {{ end }}
     {{ end }}
-  {{ end }}
-{{ end }}
-{{ end }}
-{{ end }}
+    {{ end }}
+    {{ end }}
+
 {{ end }}
 
 

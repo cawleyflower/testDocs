@@ -9,7 +9,7 @@ body {
 #site-nav {
   background: linear-gradient(-225deg, rgb(0, 173, 105) 0%, rgb(75, 192, 91) 100%);
   position: relative;
-  
+
   .header-wrapper {
     font-family: $cumulus-font-family;
     align-items: center;
@@ -233,7 +233,7 @@ aside nav ul .expand {
   border-left: 0;
 }
 
-// aside nav ul ul .expand, 
+// aside nav ul ul .expand,
 // aside nav ul ul ul .expand {
 //   border-left: solid $cn-jade;
 //   border-width: 1px;
@@ -275,7 +275,7 @@ aside nav ul .expand li>a {
   padding: 4rem 2.7rem;
 }
 
-div.notices.note {
+div.notices.info {
   background-color: rgba(255, 200, 46, 0.3);
   border: 1px solid #ffc82e;
   margin: 1.99rem 0;
@@ -297,7 +297,7 @@ div.notices.note {
   }
 }
 
-div.notices.note>*:first-child:before {
+div.notices.info>*:first-child:before {
   content: '';
   background-image: url(/icons/alert-triangle.png);
   background-repeat: no-repeat;
@@ -308,7 +308,7 @@ div.notices.note>*:first-child:before {
   left: 30px;
 }
 
-div.notices.note>*:first-child:after {
+div.notices.info>*:first-child:after {
   font-size: .765rem;
   font-weight: 500;
   text-transform: uppercase;

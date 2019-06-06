@@ -91,8 +91,8 @@ div.notices.tip > *:first-child:after{
   content: "Tip"
 }
 
-//Info Notice Block
-div.notices.info {
+//Note Notice Block
+div.notices.note {
     margin : 1rem;
     position: relative;
     display: block;
@@ -102,7 +102,7 @@ div.notices.info {
     border-radius:5px;
 }
 
-div.notices.info > *:first-child:before{
+div.notices.note > *:first-child:before{
   display: block;
   content:url('/icons/info-circle_20x20.png');
   position: absolute;
@@ -111,14 +111,15 @@ div.notices.info > *:first-child:before{
   right: 10px;
 
 }
-div.notices.info > *:first-child:after{
+div.notices.note > *:first-child:after{
   position: absolute;
   top: 2px;
   left: 2rem;
-  content: "Info"
+  content: "Note"
 }
-//Caution Notice Block
-div.notices.note {
+
+//Important Notice Block
+div.notices.info {
     margin : 1rem;
     position: relative;
     display: block;
@@ -129,7 +130,7 @@ div.notices.note {
 
 }
 
-div.notices.note > *:first-child:before{
+div.notices.info > *:first-child:before{
   display: block;
   content:url('/icons/alert-triangle_20x20.png');
   position: absolute;
@@ -139,9 +140,9 @@ div.notices.note > *:first-child:before{
 
 
 }
-div.notices.note > *:first-child:after{
+div.notices.info > *:first-child:after{
   position: absolute;
   top: 2px;
   left: 2rem;
-  content: "Caution"
+  content: "Important"
 }
