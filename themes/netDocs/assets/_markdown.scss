@@ -97,14 +97,14 @@ $block-border-radius: 0.15rem;
     // }
 
 // nested lists
-    ol, ul {
-      list-style-type: disc;
+  ul {
+      list-style:disc;
       margin-left: 1rem;
       padding: 0;
       li{
         position: relative;
         padding: 0;
-        ol, ul{
+        ul{
           margin-left: 1rem;
           li{
             list-style-type: lower-alpha;
@@ -116,6 +116,29 @@ $block-border-radius: 0.15rem;
         }
       }
     }
+
+    ol {
+        list-style: decimal;
+        margin-left: 1rem;
+        padding: 0;
+        li{
+          position: relative;
+          padding: 0;
+          ol{
+            margin-left: 1rem;
+            li{
+              list-style-type: decimal;
+              padding: 0;
+              &:marker {
+                padding-right: 1rem
+              }
+            }
+          }
+        }
+      }
+
+
+
 
     // remove padding at the beginning of page
   b, optgroup, strong {
