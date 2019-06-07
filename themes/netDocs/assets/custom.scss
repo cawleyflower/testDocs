@@ -399,6 +399,27 @@ div.notices.note>*:first-child:after {
   left: 62px;
 }
 
+.book-toc>button {
+  padding: 0 8px 15px;
+  top: 33px;
+}
+
+.book-toc nav {
+  top: 278px;
+}
+
+.book-toc ul ul {
+  margin-left: 0;
+}
+
+.book-toc ul li a {
+  padding-left: 0;
+}
+
+.book-toc nav ul li {
+  margin: 1em 0;
+}
+
 footer {
   background-color: black;
   position: relative;
