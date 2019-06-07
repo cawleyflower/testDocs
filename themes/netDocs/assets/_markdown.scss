@@ -51,6 +51,10 @@ $block-border-radius: 0.15rem;
     }
   }
 
+  h2 + h3 {
+    margin-top: 2rem;
+  }
+
   ul {
     padding: 0;
     list-style: none;
