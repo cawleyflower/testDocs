@@ -587,9 +587,38 @@ footer {
   display: flex;
   flex-direction: row;
   border-top: 1px solid rgb(81, 93, 104);
-  padding: 1.6rem 0;
+  padding: .941rem 0;
+
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media #{$sm-up} {
+    .container {
+        max-width: 540px;
+    }
+  }
+  @media #{$md-up} {
+    .container {
+        max-width: 720px;
+    }
+  }
+  @media #{$lg-up} {
+    .container {
+        max-width: 960px;
+    }
+  }
+  @media #{$xl-up} {
+    .container {
+        max-width: 1140px;
+    }
+  }
   
   ul {
+    margin-top: 0;
     margin-bottom: 0;
     padding: 0;
     li {
@@ -614,7 +643,7 @@ footer {
 
       a {
         color: white;
-        font-size: 1.5rem;
+        font-size: .882rem;
         font-weight: 300;
         line-height: 27px;
         letter-spacing: -0.1px;
