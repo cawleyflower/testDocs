@@ -38,20 +38,20 @@ To access the CLI from a switch or server:
 
 1.  Log in to the device. This example uses the default username of
     c*umulus* and a hostname of *switch*.  
-    
-    ``` 
-                       
+
+    ```
+
     :~$ ssh cumulus@switch
-       
-        
+
+
     ```
 
 2.  <span style="color: #353744;"> Enter your password to reach the
     command prompt. The default password is *CumulusLinux\!* For
     example: </span>
-    
-    ``` 
-                       
+
+    ```
+
     Enter passphrase for key '/Users//.ssh/id_rsa': 
     Welcome to Ubuntu 16.04.3 LTS (GNU/Linux 4.4.0-112-generic x86_64)
      * Documentation:  https://help.ubuntu.com
@@ -59,18 +59,18 @@ To access the CLI from a switch or server:
      * Support:        https://ubuntu.com/advantage
     Last login: Tue Feb 11 09:28:12 2019 from 10.0.0.14
     cumulus@switch:~$ 
-       
-        
+
+
     ```
 
 3.  Run commands. For example:  
-    
-    ``` 
-                       
+
+    ```
+
     @:~$ netq show agents
     @:~$ netq check bgp
-       
-        
+
+
     ```
 
 Command Line Basics
@@ -119,14 +119,14 @@ Cumulus NetQ commands fall into one of four syntax categories: </span>
 <span style="color: #000000;"> validation (check), monitoring (show),
 configuration, and trace </span> :
 
-``` 
-                   
-netq check  [options]
+```
+
+netq check <network-protocol-or-service>  [options]
 netq show  [options]
 netq config   [options]
 netq trace  from  [options]
-   
-    
+
+
 ```
 
 | Symbols               | Meaning                                                                                                                |
@@ -134,7 +134,7 @@ netq trace  from  [options]
 | Parentheses ( )       | Grouping of required parameters. Choose one.                                                                           |
 | Square brackets \[ \] | Single or group of optional parameters. If more than one object or keyword is available, choose one.                   |
 | Angle brackets \< \>  | Required variable. Value for a keyword or option; enter according to your deployment nomenclature.                     |
-| Pipe |                | Separates object and keyword options, also separates value options; enter one object or keyword and zero or one value. |
+| Pipe \|                | Separates object and keyword options, also separates value options; enter one object or keyword and zero or one value. |
 
 For example, in the `netq check` command:
 
@@ -199,8 +199,8 @@ example, using Tab completion with `netq check` displays the possible
 objects for the command, and returns you to the command prompt to
 complete the command.
 
-``` 
-                   
+```
+
 cumulus@switch:~$ netq check <>
     agents      :  Netq agent
     bgp         :  BGP info
@@ -216,36 +216,36 @@ cumulus@switch:~$ netq check <>
     vlan        :  VLAN
     vxlan       :  VXLAN data path
 cumulus@switch:~$ netq check 
-   
-    
+
+
 ```
 
 ### Command Help
 
 As you enter commands, you can get help with command syntax by entering
 *help* at various points within a command entry. For example, to find
-out what options are available for a BGP check, enter *h* *elp* after
+out what options are available for a BGP check, enter *help* after
 entering a portion of the `netq check` command. In this example, you can
 see that there are no additional required parameters and two optional
 parameters, *vrf* and *around*, that can be used with a BGP check.
 
-``` 
-                   
+```
+
 cumulus@switch:~$ netq check bgp help
 Commands:
    netq check bgp [vrf ] [around ] [json]
 cumulus@switch:~$
-   
-    
+
+
 ```
 
 To see an exhaustive list of commands, run:
 
-``` 
-                   
+```
+
 cumulus@switch:~$ netq help list verbose
-   
-    
+
+
 ```
 
 ### Command History
@@ -319,8 +319,8 @@ by the same command using the *json* option. If there had been any
 failures, they would be have been listed below the summary results or in
 the *failedNodes* section, respectively.
 
-``` 
-                   
+```
+
 cumulus@switch:~$ netq check bgp
 Total Nodes: 8, Failed Nodes: 0, Total Sessions: 30, Failed Sessions: 0
  
@@ -335,8 +335,8 @@ cumulus@switch:~$ netq check bgp json
         "totalSessionCount":30
     }
 }
-   
-    
+
+
 ```
 
 ### Monitoring Commands
@@ -398,8 +398,8 @@ for a selected device using the *hostname* variable.
 This example shows the standard and restricted output for the `netq show
 agents` command.
 
-``` 
-                   
+```
+
 cumulus@switch:~$ netq show agents
 Matching agents records:
 Hostname          Status           NTP Sync Version                              Sys Uptime                Agent Uptime              Reinitialize Time          Last Changed
@@ -417,7 +417,7 @@ server03          Fresh            yes      2.1.0-ub16.04u15~1555612152.6e34b56 
 server04          Fresh            yes      2.1.0-ub16.04u15~1555612152.6e34b56  2d:2h:46m:5s              2d:2h:45m:57s             2d:2h:45m:57s              Sun Apr 21 16:00:43 2019
 spine01           Fresh            yes      2.1.0-cl3u15~1555612272.6e34b56      2d:2h:48m:11s             2d:2h:48m:3s              2d:2h:48m:3s               Sun Apr 21 16:01:33 2019
 spine02           Fresh            yes      2.1.0-cl3u15~1555612272.6e34b56      2d:2h:48m:5s              2d:2h:47m:57s             2d:2h:47m:57s              Sun Apr 21 16:01:12 2019
-  
+
 cumulus@switch:~$ netq show agents json
 {
     "agents":[
@@ -452,14 +452,14 @@ cumulus@switch:~$ netq show agents json
             "agentUptime":1555689491.0
         },
 ...
-  
+
 cumulus@switch:~$ netq leaf01 show agents
 Matching agents records:
 Hostname          Status           NTP Sync Version                              Sys Uptime                Agent Uptime              Reinitialize Time          Last Changed
 ----------------- ---------------- -------- ------------------------------------ ------------------------- ------------------------- -------------------------- -------------------------
 leaf01            Fresh            yes      2.1.0-cl3u15~1555612272.6e34b56      2d:2h:49m:59s             2d:2h:49m:51s             2d:2h:49m:51s              Sun Apr 21 16:00:59 2019
-   
-    
+
+
 ```
 
 ### Configuration Commands
@@ -494,36 +494,36 @@ and are run from the switch or host where the NetQ Agent resides.
 <span style="color: #353744;"> The agent configuration commands include:
 </span>
 
-``` 
-                   
+```
+
 netq config (add|del|show) agent
 netq config (start|stop|status|restart) agent
-   
-    
+
+
 ```
 
 This example shows how to configure the agent to send sensor data.
 
-``` 
-                   
+```
+
 cumulus@switch~:$ netq config add agent sensors
-   
-    
+
+
 ```
 
 This example shows how to start monitoring with Kubernetes.
 
-``` 
-                   
+```
+
 cumulus@switch:~$ netq config add agent kubernetes-monitor poll-period 15
-   
-    
+
+
 ```
 
 This example show how to view the NetQ Agent configuration.
 
-``` 
-                   
+```
+
 cumulus@switch:~$ netq config show agent
 netq-agent             value      default
 ---------------------  ---------  ---------
@@ -535,8 +535,8 @@ exhibiturl
 vrf                    default    default
 agentport              8981       8981
 port                   31980      31980
-   
-    
+
+
 ```
 
 {{%notice info%}}
@@ -561,30 +561,30 @@ host where the CLI is run.
 
 The CLI configuration commands include:
 
-``` 
-                   
+```
+
 netq config (add|del|show) cli server
 netq config (start|restart) cli
-   
-    
+
+
 ```
 
 This example shows how to start the CLI instance.
 
-``` 
-                   
+```
+
 cumulus@switch~:$ netq config start cli
-   
-    
+
+
 ```
 
 This example shows how to associate a NetQ platform with the device.
 
-``` 
-                   
+```
+
 cumulus@switch~:$ netq config add cli server 10.1.3.101
-   
-    
+
+
 ```
 
 #### Event Notification Commands
@@ -594,13 +594,13 @@ show notification application integrations. These commands create the
 channels, filters, and rules needed to control event messaging. The
 commands include:
 
-``` 
-                   
+```
+
 netq (add|del|show) notification channel
 netq (add|del|show) notification rule
 netq (add|del|show) notification filter
-   
-    
+
+
 ```
 
 An integration includes at least one channel, PagerDuty or Slack.
@@ -609,12 +609,12 @@ filter, it must have at least one rule.
 
 This example shows how to configure a PagerDuty channel:
 
-``` 
-                   
+```
+
 cumulus@switch:~$ netq add notification channel pagerduty pd-netq-events integration-key c6d666e210a8425298ef7abde0d1998
 Successfully added/updated channel pd-netq-events
-   
-    
+
+
 ```
 
 Refer to [Integrate with Third-party Software and
@@ -636,40 +636,40 @@ output displays a table with a row for each path.
 
 The trace command syntax is:
 
-``` 
-                   
+```
+
 netq trace  [vlan <1-4096>] from (|) [vrf ] [around ] [json|detail|pretty] [debug]
 netq trace  from (|) [vrf ] [around ] [json|detail|pretty] [debug] 
-   
-    
+
+
 ```
 
 **Example**: Running a trace based on the destination IP address, in
 *pretty* output with a small number of resulting paths:
 
-``` 
-                   
+```
+
 cumulus@switch:~$ netq trace 10.0.0.11 from 10.0.0.14 pretty
 Number of Paths: 6
   Inconsistent PMTU among paths
 Number of Paths with Errors: 0
 Number of Paths with Warnings: 0
 Path MTU: 9000
- leaf04 swp52 -- swp4 spine02 swp2 -- swp52 leaf02 peerlink.4094 -- peerlink.4094 leaf01 lo 
-                                                   peerlink.4094 -- peerlink.4094 leaf01 lo 
- leaf04 swp51 -- swp4 spine01 swp2 -- swp51 leaf02 peerlink.4094 -- peerlink.4094 leaf01 lo 
-                                                   peerlink.4094 -- peerlink.4094 leaf01 lo 
- leaf04 swp52 -- swp4 spine02 swp1 -- swp52 leaf01 lo 
- leaf04 swp51 -- swp4 spine01 swp1 -- swp51 leaf01 lo 
-   
-    
+ leaf04 swp52 -- swp4 spine02 swp2 -- swp52 leaf02 peerlink.4094 -- peerlink.4094 leaf01 lo
+                                                   peerlink.4094 -- peerlink.4094 leaf01 lo
+ leaf04 swp51 -- swp4 spine01 swp2 -- swp51 leaf02 peerlink.4094 -- peerlink.4094 leaf01 lo
+                                                   peerlink.4094 -- peerlink.4094 leaf01 lo
+ leaf04 swp52 -- swp4 spine02 swp1 -- swp52 leaf01 lo
+ leaf04 swp51 -- swp4 spine01 swp1 -- swp51 leaf01 lo
+
+
 ```
 
 **Example**: Running a trace based on the destination IP address, in
 *detail* output with a small number of resulting paths:
 
-``` 
-                   
+```
+
 cumulus@oob-mgmt-server:~$ netq trace 10.0.0.11 from 10.0.0.14 detail
 Number of Paths: 6
   Inconsistent PMTU among paths
@@ -706,29 +706,29 @@ Id  Hop Hostname        InPort          InVlan InTunnel              InRtrIf    
     2   spine01         swp4                                         swp4            default         swp1            default                               swp1
     3   leaf01          swp51                                        swp51           default                                                               lo
 --- --- --------------- --------------- ------ --------------------- --------------- --------------- --------------- --------------- --------------------- --------------- -------
-   
-    
+
+
 ```
 
 **Example**: Running a trace based on the destination MAC address, in
 *pretty* output:
 
-``` 
-                   
+```
+
 cumulus@switch:~$ netq trace A0:00:00:00:00:11 vlan 1001 from Server03 pretty
 Number of Paths: 6
 Number of Paths with Errors: 0
 Number of Paths with Warnings: 0
 Path MTU: 9152
  
- Server03 bond1.1001 -- swp7  Leaf02 vni: 34 swp5 -- swp4 Spine03 swp7 -- swp5 vni: 34 Leaf04 swp6 -- swp1.1001 Server03 
-                                                       swp4 -- swp4 Spine02 swp7 -- swp4 vni: 34 Leaf04 swp6 -- swp1.1001 Server03 
-                                                       swp3 -- swp4 Spine01 swp7 -- swp3 vni: 34 Leaf04 swp6 -- swp1.1001 Server03 
-          bond1.1001 -- swp7  Leaf01 vni: 34 swp5 -- swp3 Spine03 swp7 -- swp5 vni: 34 Leaf04 swp6 -- swp1.1001 Server03 
-                                                       swp4 -- swp3 Spine02 swp7 -- swp4 vni: 34 Leaf04 swp6 -- swp1.1001 Server03 
-                                                       swp3 -- swp3 Spine01 swp7 -- swp3 vni: 34 Leaf04 swp6 -- swp1.1001 Server03 
-   
-    
+ Server03 bond1.1001 -- swp7  Leaf02 vni: 34 swp5 -- swp4 Spine03 swp7 -- swp5 vni: 34 Leaf04 swp6 -- swp1.1001 Server03
+                                                       swp4 -- swp4 Spine02 swp7 -- swp4 vni: 34 Leaf04 swp6 -- swp1.1001 Server03
+                                                       swp3 -- swp4 Spine01 swp7 -- swp3 vni: 34 Leaf04 swp6 -- swp1.1001 Server03
+          bond1.1001 -- swp7  Leaf01 vni: 34 swp5 -- swp3 Spine03 swp7 -- swp5 vni: 34 Leaf04 swp6 -- swp1.1001 Server03
+                                                       swp4 -- swp3 Spine02 swp7 -- swp4 vni: 34 Leaf04 swp6 -- swp1.1001 Server03
+                                                       swp3 -- swp3 Spine01 swp7 -- swp3 vni: 34 Leaf04 swp6 -- swp1.1001 Server03
+
+
 ```
 
 ## Command Changes
@@ -797,7 +797,7 @@ recommended alternative, if appropriate.
 
 | Command                                                  | Alternative Command                                                                                                     |
 | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `netq config ts (add\|del\|show) (notifier\|server)`     | `netq (add\|del\|show) notification` and `netq config (add\|del\|show) (agent\|cli server)`                             |
+| `netq config ts (add\|del\|show) (notifier\|server)`     | `netq (add|del|show) notification` and `netq config (add|del|show) (agent|cli server)`                             |
 | `netq config ts (start\|stop\|status\|restart) notifier` | None. No longer necessary.                                                                                              |
 | `netq config ts decommission`                            | `netq config del agent server`                                                                                          |
 | `netq [<hostname>] show docker`                          | `netq [<hostname>] show kubernetes`                                                                                     |

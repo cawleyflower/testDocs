@@ -35,22 +35,22 @@ To log in to the UI:
 
 2.  Enter the following URL into the Address bar: *http://* *\<
     netq-platform/appliance-ipaddress\>:32666.*
-    
+
     {{%imgOld 0 %}}
 
 3.  Select your language of choice (English or Spanish) from the
     dropdown at the top of the window.  
-    
+
     {{%imgOld 1 %}}
-    
-      
+
+
 
 4.  Enter your username and then your password ( *admin, admin* by
     default).  
-    
+
     {{%imgOld 2 %}}
-    
-      
+
+
     The default Cumulus Workbench opens, with your username showing in
     the upper right corner of the application.
 
@@ -58,13 +58,9 @@ To log out of the UI:
 
 1.  Click the user icon at the top right of the application.
 
-2.  Select **Log Out.  
-    **
-    
-    **{{%imgOld 3 %}}**
-    
-    **  
-    **
+2.  Select **Log Out**.
+
+    {{%imgOld 3 %}}
 
 ## Application Layout
 
@@ -138,16 +134,16 @@ Jade theme.
 To choose a theme:
 
 1.  Click
-    
+
     {{%imgOld 10 %}}
-    
+
     in the application header to open the **User Settings** options.
-    
+
     {{%imgOld 11 %}}
 
 2.  Select your choice of theme. It changes on selection. This figure
     shows the light theme.
-    
+
     {{%imgOld 12 %}}
 
 3.  Switch back and forth as desired.
@@ -224,15 +220,15 @@ To create a new search:
 
 3.  Click the device hostname or card workflow in the search list to
     open the associated information.  
-    
+
     {{%imgOld 15 %}}
-    
+
     {{%notice info%}}
-    
+
     If you have more matches than fit in the window, click the **See All
     \# Results** link to view all found matches. The count represents
     the number of devices found. It does not include cards found.
-    
+
     {{%/notice%}}
 
 ### Run a Recent Search
@@ -246,15 +242,15 @@ To re-run a recent search:
 
 2.  When the desired search appears in the suggested searches list,
     select it.  
-    
+
     {{%imgOld 16 %}}
-    
+
     {{%notice info%}}
-    
+
     You may need to click **See All \# Results** to find the desired
     search. If you do not find it in the list, you may still be able to
     find it in the **Navigation History**.
-    
+
     {{%/notice%}}
 
 ## Workbenches
@@ -360,9 +356,9 @@ Hover over a column header and click
 *Choose Columns to Display*
 
 1.  Click
-    
+
     {{%imgOld 23 %}}
-    
+
     at the top right of the card.
 
 2.  Click **Change Columns** from the **Display Settings**.
@@ -370,27 +366,27 @@ Hover over a column header and click
 3.  Click the checkbox next to each column name to toggle on/off the
     columns you would like displayed. Columns listed under **Active**
     are displayed. Columns listed under **Inactive** are not displayed.
-    
+
     {{%notice tip%}}
-    
+
     When you have a large number of possible columns for display, you
     can search for the column name using the **Quick Filter** to find
     and select or deselect the column more quickly.
-    
+
     {{%/notice%}}
 
 4.  Click
-    
+
     {{%imgOld 24 %}}
-    
+
     to close the selection box and view the updated data grid.
 
 *Change Order of Columns*
 
 1.  Click
-    
+
     {{%imgOld 25 %}}
-    
+
     and then click **Change Columns**.
 
 2.  Hover over a column name.
@@ -398,13 +394,13 @@ Hover over a column header and click
 3.  Point to the six dots to the left of the checkbox.
 
 4.  Click and drag the selected column up or down in the list.
-    
+
     {{%imgOld 26 %}}
 
 5.  Click
-    
+
     {{%imgOld 27 %}}
-    
+
     to close the selection box and view the updated data grid.
 
 *Take Actions on Items*
@@ -443,11 +439,11 @@ To export the data:
     items first.
 
 2.  Click **EXPORT**.
-    
+
     {{%imgOld 30 %}}
 
 3.  Select all data or selected data for export in the dialog box:
-    
+
     {{%imgOld 31 %}}
 
 4.  Select the export format.
@@ -538,13 +534,13 @@ To change the time period for a card:
 1.  Hover over any card.
 
 2.  Click
-    
+
     {{%imgOld 32 %}}
-    
+
     in the header .
 
 3.  Select a time period from the dropdown list.
-    
+
     {{%imgOld 33 %}}
 
 {{%notice tip%}}
@@ -566,9 +562,9 @@ To change the card size:
 
 2.  Hover over the Card Size Picker and move the cursor to the right or
     left until the desired size option is highlighted.
-    
+
     {{%imgOld 34 %}}
-    
+
     Single width opens a small card. Double width opens a medium card.
     Triple width opens large cards. Full width opens full-screen cards.
 
@@ -590,11 +586,11 @@ To move a card:
     highlighted with a dotted line. In this example, we are moving the
     medium Network Health card to the left of the medium Devices
     Inventory card.  
-    
+
     {{%imgOld 35 %}}
-    
+
     {{%imgOld 36 %}}
-    
+
     {{%imgOld 37 %}}
 
 ### Add or Remove a Card
@@ -604,11 +600,11 @@ You can add or remove cards from a workbench at any time.
 To add a card:
 
 1.  Click
-    
+
     {{%imgOld 38 %}}
-    
+
     .
-    
+
     {{%imgOld 39 %}}
 
 2.  Select a card from the available list.
@@ -623,13 +619,13 @@ To remove a card:
 1.  Hover over the card you want to remove.
 
 2.  Click
-    
+
     {{%imgOld 40 %}}
-    
+
     (*More Actions* menu).
 
 3.  Click **Remove**.
-    
+
     {{%imgOld 41 %}}
 
 The card is removed from the workbench, but not from the application.
@@ -689,13 +685,13 @@ need to scroll down to see the card you have just added.
 To open the card workflow through an existing workbench:
 
 1.  Click
-    
+
     {{%imgOld 42 %}}
-    
+
     in the workbench header .
 
 2.  Select the relevant workbench.
-    
+
     {{%imgOld 43 %}}
 
 The workbench opens, hiding your previous workbench.
@@ -713,9 +709,9 @@ The card appears on the current workbench, at the bottom.
 To access the card workflow by adding the card:
 
 1.  Click
-    
+
     {{%imgOld 44 %}}
-    
+
     .
 
 2.  Select the relevant card.
@@ -729,7 +725,7 @@ To access the card workflow by searching for the card:
 2.  Begin typing the name of the card.
 
 3.  Select it from the list.
-    
+
     {{%imgOld 45 %}}
 
 The card appears on a current workbench, at the bottom.

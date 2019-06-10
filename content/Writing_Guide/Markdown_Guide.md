@@ -46,9 +46,18 @@ Use one to italicize any text
 
 *This text will be italicized in the rendered text*
 
-Underscores may also be used in the place of asterisks
+Underscores may also be used in the place of asterisks, however the Cumulus
+Standard will be the **
+
+The ~ character can be used for strike throughs
+
+~~This text will have a strikethrough~~
+
+
+### Code Blocks and Syntax
 
 Use three backticks to signify a code block
+
 
 ```
 Formatter.prototype.removeSideandTopBar = function(){
@@ -64,4 +73,8 @@ $("div[class = 'section section-1']").has('p.expand-control-text').remove()
 
 inline code can be added with single backticks
 
-Run `git checkout -b dev` to add a new branch 
+**Example** Run `git checkout -b dev` to add a new branch
+
+#### Syntax Highlight
+
+To be continuted...

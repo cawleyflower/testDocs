@@ -107,7 +107,7 @@ $block-border-radius: 0.15rem;
         ul{
           margin-left: 1rem;
           li{
-            list-style-type: lower-alpha;
+            list-style-type: circle;
             padding: 0;
             &:marker {
               padding-right: 1rem
@@ -127,7 +127,7 @@ $block-border-radius: 0.15rem;
           ol{
             margin-left: 1rem;
             li{
-              list-style-type: decimal;
+              list-style-type: lower-alpha;
               padding: 0;
               &:marker {
                 padding-right: 1rem
