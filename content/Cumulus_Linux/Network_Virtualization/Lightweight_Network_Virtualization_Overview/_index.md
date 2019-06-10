@@ -4,31 +4,32 @@ author: Unknown
 weight: 145
 pageID: 8362706
 aliases:
- - /old/Lightweight_Network_Virtualization_Overview.html
+ - /old/Cumulus_Linux/Lightweight_Network_Virtualization_Overview.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Lightweight Network Virtualization Overview
-
 {{%notice warning%}}
 
 As of Cumulus Linux 3.7.4, the lightweight network virtualization
 feature (LNV) has been deprecated. The feature will be removed in
 Cumulus Linux 4.0. Cumulus Networks recommends you use [Ethernet virtual
 private network
-(EVPN)](/old/Ethernet_Virtual_Private_Network_-_EVPN.html) for network
-virtualization.
+(EVPN)](/old/Cumulus_Linux/Ethernet_Virtual_Private_Network_-_EVPN.html)
+for network virtualization.
 
 {{%/notice%}}
 
 Lightweight Network Virtualization (LNV) is a technique for deploying
-[VXLANs](/old/Network_Virtualization.html) without a central controller
-on bare metal switches. This solution requires no external controller or
-software suite; it runs the VXLAN service and registration daemons on
-Cumulus Linux itself. The data path between bridge entities is
-established on top of a layer 3 fabric by means of a simple service node
-coupled with traditional MAC address learning.
+[VXLANs](/old/Cumulus_Linux/Network_Virtualization.html) without a
+central controller on bare metal switches. This solution requires no
+external controller or software suite; it runs the VXLAN service and
+registration daemons on Cumulus Linux itself. The data path between
+bridge entities is established on top of a layer 3 fabric by means of a
+simple service node coupled with traditional MAC address learning.
 
 To see an example of a full solution before reading the following
-background information, [read this chapter](/old/LNV_Full_Example.html).
+background information, [read this
+chapter](/old/Cumulus_Linux/LNV_Full_Example.html).
 
 {{%notice note%}}
 
@@ -43,8 +44,8 @@ Cumulus Linux.
 {{%notice note%}}
 
 You cannot use LNV and
-[EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html) at the same
-time.
+[EVPN](/old/Cumulus_Linux/Ethernet_Virtual_Private_Network_-_EVPN.html)
+at the same time.
 
 {{%/notice%}}
 
@@ -539,8 +540,7 @@ cumulus@spine1:~$ sudo systemctl restart vxsnd.service
     
 ```
 
-The complete list of options you can configure is listed
-below:
+The complete list of options you can configure is listed below:
 
 | Name                  | Description                                                                                                                                                                                                             | Default            |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
@@ -884,8 +884,7 @@ anycast IP address gets removed from the loopback interface.
 To prevent this issue from occurring, specify an anycast IP address for
 the loopback interface in both the `/etc/network/interfaces` file and
 the `vxsnd.conf` file. This way, in case `vxsnd` fails, you can withdraw
-the IP
-    address.
+the IP address.
 
 ## Related Information
 
@@ -894,45 +893,49 @@ the IP
   - [en.wikipedia.org/wiki/Anycast](http://en.wikipedia.org/wiki/Anycast)
 
   - [Network virtualization chapter, Cumulus Linux user
-    guide](/old/Network_Virtualization.html)
+    guide](/old/Cumulus_Linux/Network_Virtualization.html)
     
       - [Static VXLAN
-        Configurations](/old/Static_VXLAN_Configurations.html)
+        Configurations](/old/Cumulus_Linux/Static_VXLAN_Configurations.html)
         
-          - [Static VXLAN Tunnels](/old/Static_VXLAN_Tunnels.html)
+          - [Static VXLAN
+            Tunnels](/old/Cumulus_Linux/Static_VXLAN_Tunnels.html)
         
           - [Static MAC Bindings with
-            VXLAN](/old/Static_MAC_Bindings_with_VXLAN.html)
+            VXLAN](/old/Cumulus_Linux/Static_MAC_Bindings_with_VXLAN.html)
     
       - [Ethernet Virtual Private Network -
-        EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html)
+        EVPN](/old/Cumulus_Linux/Ethernet_Virtual_Private_Network_-_EVPN.html)
     
-      - [Lightweight Network Virtualization Overview](/old/#)
+      - [Lightweight Network Virtualization
+        Overview](/old/Cumulus_Linux/#)
         
-          - [LNV Full Example](/old/LNV_Full_Example.html)
+          - [LNV Full Example](/old/Cumulus_Linux/LNV_Full_Example.html)
     
-      - [VXLAN Active-Active Mode](/old/VXLAN_Active-Active_Mode.html)
+      - [VXLAN Active-Active
+        Mode](/old/Cumulus_Linux/VXLAN_Active-Active_Mode.html)
     
-      - [VXLAN Routing](/old/VXLAN_Routing.html)
+      - [VXLAN Routing](/old/Cumulus_Linux/VXLAN_Routing.html)
     
-      - [VXLAN Scale](/old/VXLAN_Scale.html)
+      - [VXLAN Scale](/old/Cumulus_Linux/VXLAN_Scale.html)
     
       - [Hybrid Cloud Connectivity with QinQ and
-        VXLANs](/old/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
+        VXLANs](/old/Cumulus_Linux/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
     
-      - [Troubleshooting VXLANs](/old/Troubleshooting_VXLANs.html)
+      - [Troubleshooting
+        VXLANs](/old/Cumulus_Linux/Troubleshooting_VXLANs.html)
     
       - [Virtualization
-        Integrations](/old/Virtualization_Integrations.html)
+        Integrations](/old/Cumulus_Linux/Virtualization_Integrations.html)
         
           - [Integrating Hardware VTEPs with Midokura MidoNet and
-            OpenStack](/old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
+            OpenStack](/old/Cumulus_Linux/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
         
           - [Integrating Hardware VTEPs with VMware
-            NSX-V](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
+            NSX-V](/old/Cumulus_Linux/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
         
           - [Integrating Hardware VTEPs with VMware
-            NSX-MH](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
+            NSX-MH](/old/Cumulus_Linux/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
         
           - [OVSDB Server High
-            Availability](/old/OVSDB_Server_High_Availability.html)
+            Availability](/old/Cumulus_Linux/OVSDB_Server_High_Availability.html)

@@ -4,19 +4,20 @@ author: Unknown
 weight: 47
 pageID: 8362648
 aliases:
- - /old/Using_Snapshots.html
+ - /old/Cumulus_Linux/Using_Snapshots.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Using Snapshots
-
 Cumulus Linux supports the ability to take snapshots of the complete
 file system as well as the ability to roll back to a previous snapshot.
 Snapshots are performed automatically right before and after you upgrade
 Cumulus Linux using [package
-install](/old/Upgrading_Cumulus_Linux.html#src-8362647_UpgradingCumulusLinux-apt_upgrade),
+install](/old/Cumulus_Linux/Upgrading_Cumulus_Linux.html#src-8362647_UpgradingCumulusLinux-apt_upgrade),
 and right before and after you commit a switch configuration using
-[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html). In addition, you
-can take a snapshot at any time. You can roll back the entire file
-system to a specific snapshot or just retrieve specific files.
+[NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html). In
+addition, you can take a snapshot at any time. You can roll back the
+entire file system to a specific snapshot or just retrieve specific
+files.
 
 The primary snapshot components include:
 
@@ -30,10 +31,10 @@ The primary snapshot components include:
     back to earlier snapshots, view existing snapshots, or delete one or
     more snapshots.
 
-  - [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html) — takes
-    snapshots automatically before and after committing network
-    configurations. You can use NCLU to roll back to earlier snapshots,
-    view existing snapshots, or delete one or more snapshots.
+  - [NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html)
+    — takes snapshots automatically before and after committing
+    network configurations. You can use NCLU to roll back to earlier
+    snapshots, view existing snapshots, or delete one or more snapshots.
 
 ## Install the Snapshot Package
 
@@ -390,8 +391,7 @@ for each snapshot taken, which stores the snapshot data. While all
 snapshots are subvolumes, not all subvolumes are snapshots.
 
 Cumulus Linux excludes a number of directories when taking a snapshot of
-the root file system (and from any
-rollbacks):
+the root file system (and from any rollbacks):
 
 | Directory                                                         | Reason                                                                                                                                                                                                                  |
 | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

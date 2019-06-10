@@ -4,16 +4,16 @@ author: Unknown
 weight: 79
 pageID: 8362591
 aliases:
- - /old/HTTP_API.html
+ - /old/Cumulus_Linux/HTTP_API.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# HTTP API
-
 Cumulus Linux implements an HTTP application programing interface to
 [OpenStack ML2
-driver](/old/OpenStack_Neutron_ML2_and_Cumulus_Linux.html) and
-[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html). Rather than
-accessing Cumulus Linux using SSH, you can interact with the switch
-using an HTTP client, such as cURL, HTTPie or a web browser.
+driver](/old/Cumulus_Linux/OpenStack_Neutron_ML2_and_Cumulus_Linux.html)
+and [NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html).
+Rather than accessing Cumulus Linux using SSH, you can interact with the
+switch using an HTTP client, such as cURL, HTTPie or a web browser.
 
 {{%notice note%}}
 

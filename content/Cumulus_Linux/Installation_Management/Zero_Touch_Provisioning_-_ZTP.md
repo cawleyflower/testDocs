@@ -4,10 +4,10 @@ author: Unknown
 weight: 51
 pageID: 8362632
 aliases:
- - /old/Zero_Touch_Provisioning_-_ZTP.html
+ - /old/Cumulus_Linux/Zero_Touch_Provisioning_-_ZTP.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Zero Touch Provisioning - ZTP
-
 *Zero touch provisioning* (ZTP) enables you to deploy network devices
 quickly in large-scale environments. On first boot, Cumulus Linux
 invokes ZTP, which executes the provisioning automation used to deploy
@@ -111,7 +111,7 @@ Follow these steps to perform zero touch provisioning using a USB drive:
 
 3.  The contents of the script are parsed to ensure it contains the
     `CUMULUS-AUTOPROVISIONING` flag (see [example
-    scripts](/old/#src-8362632_ZeroTouchProvisioning-ZTP-example_scripts)).
+    scripts](/old/Cumulus_Linux/#src-8362632_ZeroTouchProvisioning-ZTP-example_scripts)).
 
 {{%notice note%}}
 
@@ -146,12 +146,12 @@ The zero touch provisioning process over DHCP follows these steps:
 
 4.  The zero touch provisioning process requests the contents of the
     script from the URL, sending additional [HTTP
-    headers](/old/#src-8362632_ZeroTouchProvisioning-ZTP-http_headers)
+    headers](/old/Cumulus_Linux/#src-8362632_ZeroTouchProvisioning-ZTP-http_headers)
     containing details about the switch.
 
 5.  The contents of the script are parsed to ensure it contains the
     `CUMULUS-AUTOPROVISIONING` flag (see [example
-    scripts](/old/#src-8362632_ZeroTouchProvisioning-ZTP-example_scripts)).
+    scripts](/old/Cumulus_Linux/#src-8362632_ZeroTouchProvisioning-ZTP-example_scripts)).
 
 6.  If provisioning is necessary, the script executes locally on the
     switch with root privileges.
@@ -265,8 +265,7 @@ Linux, such as:
 
 The script must return an exit code of 0 upon success, as this triggers
 the autoprovisioning process to be marked as complete in the
-autoprovisioning configuration
-file.
+autoprovisioning configuration file.
 
 <span id="src-8362632_ZeroTouchProvisioning-ZTP-example_scripts"></span>The
 following script installs Cumulus Linux and its license from a USB drive

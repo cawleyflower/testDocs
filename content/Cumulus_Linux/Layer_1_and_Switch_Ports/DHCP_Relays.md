@@ -4,10 +4,10 @@ author: Unknown
 weight: 95
 pageID: 8363036
 aliases:
- - /old/DHCP_Relays.html
+ - /old/Cumulus_Linux/DHCP_Relays.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# DHCP Relays
-
 You can configure DHCP relays for IPv4 and IPv6.
 
 To run DHCP for both IPv4 and IPv6, initiate the DHCP relay once for
@@ -27,9 +27,9 @@ services.
 ## Configure IPv4 DHCP Relays
 
 Configure `isc-dhcp-relay` using
-[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html), specifying the IP
-addresses to each DHCP server and the interfaces that are used as the
-uplinks.
+[NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html),
+specifying the IP addresses to each DHCP server and the interfaces that
+are used as the uplinks.
 
 In the examples below, the DHCP server IP address is 172.16.1.102, VLAN
 1 (the SVI is vlan1) and the uplinks are swp51 and swp52.

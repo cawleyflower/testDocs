@@ -4,21 +4,21 @@ author: Unknown
 weight: 121
 pageID: 8362655
 aliases:
- - /old/Ethernet_Bridging_-_VLANs.html
+ - /old/Cumulus_Linux/Ethernet_Bridging_-_VLANs.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Ethernet Bridging - VLANs
-
 Ethernet bridges provide a means for hosts to communicate through layer
 2, by connecting all of the physical and logical interfaces in the
 system into a single layer 2 domain. The bridge is a logical interface
 with a MAC address and an
-[MTU](/old/Switch_Port_Attributes.html#src-8363026_SwitchPortAttributes-mtu)
+[MTU](/old/Cumulus_Linux/Switch_Port_Attributes.html#src-8363026_SwitchPortAttributes-mtu)
 (maximum transmission unit). The bridge MTU is the minimum MTU among all
 its members. By default, the [bridge's MAC
 address](https://support.cumulusnetworks.com/hc/en-us/articles/360005695794)
 is the MAC address of the first port in the `bridge-ports` list. The
 bridge can also be assigned an IP address, as discussed
-[below](/old/#src-8362655_EthernetBridging-VLANs-svi).
+[below](/old/Cumulus_Linux/#src-8362655_EthernetBridging-VLANs-svi).
 
 {{%notice note%}}
 
@@ -32,8 +32,8 @@ interfaces that traverse an 802.1Q VLAN trunk.
 {{%notice tip%}}
 
 Cumulus Networks recommends using *[VLAN-aware
-mode](/old/VLAN-aware_Bridge_Mode.html)* bridges, rather than
-*traditional mode* bridges. The bridge driver in Cumulus Linux is
+mode](/old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html)* bridges, rather
+than *traditional mode* bridges. The bridge driver in Cumulus Linux is
 capable of VLAN filtering, which allows for configurations that are
 similar to incumbent network devices. While Cumulus Linux supports
 Ethernet bridges in traditional mode, Cumulus Networks **** recommends
@@ -66,12 +66,13 @@ VLAN-aware bridge on a given switch.
 ## Create a VLAN-aware Bridge
 
 To learn about VLAN-aware bridges and how to configure them, read
-[VLAN-aware Bridge Mode](/old/VLAN-aware_Bridge_Mode.html).
+[VLAN-aware Bridge
+Mode](/old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html).
 
 ## Create a Traditional Mode Bridge
 
 To create a traditional mode bridge, see [Traditional Bridge
-Mode](/old/Traditional_Bridge_Mode.html).
+Mode](/old/Cumulus_Linux/Traditional_Bridge_Mode.html).
 
 ## Configure Bridge MAC Addresses
 
@@ -104,11 +105,11 @@ table for 1800 seconds (30 minutes). You can change this setting using
 NCLU.
 
 The `bridge-ageing` option is in the [NCLU
-blacklist](/old/Network_Command_Line_Utility_-_NCLU.html#src-8362580_NetworkCommandLineUtility-NCLU-conf),
+blacklist](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html#src-8362580_NetworkCommandLineUtility-NCLU-conf),
 as it's not frequently used. To configure this setting, you need to
 remove the `bridge-ageing` keyword from the `ifupdown_blacklist` in
 `/etc/netd.conf`. [Restart the `netd`
-service](/old/Network_Command_Line_Utility_-_NCLU.html#src-8362580_NetworkCommandLineUtility-NCLU-restart)
+service](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html#src-8362580_NetworkCommandLineUtility-NCLU-restart)
 after you edit the file.
 
 Now you can change the setting using NCLU. For example, to change the
@@ -158,7 +159,7 @@ unreachable.
 {{%/notice%}}
 
 To configure the SVI, use
-[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html):
+[NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html):
 
 ``` 
                    

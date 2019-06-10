@@ -4,10 +4,10 @@ author: Unknown
 weight: 123
 pageID: 8362677
 aliases:
- - /old/Multi-Chassis_Link_Aggregation_-_MLAG.html
+ - /old/Cumulus_Linux/Multi-Chassis_Link_Aggregation_-_MLAG.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Multi-Chassis Link Aggregation - MLAG
-
 Multi-Chassis Link Aggregation (MLAG), enables a server or switch with a
 two-port bond, such as a link aggregation group/LAG, EtherChannel, port
 group or trunk, to connect those ports to different switches and operate
@@ -75,14 +75,14 @@ MLAG has these requirements:
 
   - The dual-connected devices (servers or switches) can use LACP (IEEE
     802.3ad/802.1ax) to form the
-    [bond](/old/Bonding_-_Link_Aggregation.html). In this case, the peer
-    switches must also use LACP.
+    [bond](/old/Cumulus_Linux/Bonding_-_Link_Aggregation.html). In this
+    case, the peer switches must also use LACP.
     
     {{%notice tip%}}
     
     If for some reason you cannot use LACP, you can also use
     [balance-xor
-    mode](/old/Bonding_-_Link_Aggregation.html#src-8362653_Bonding-LinkAggregation-balance_xor)
+    mode](/old/Cumulus_Linux/Bonding_-_Link_Aggregation.html#src-8362653_Bonding-LinkAggregation-balance_xor)
     to dual-connect host-facing bonds in an MLAG environment. If you do,
     you must still configure the same `clag_id` parameter on the MLAG
     bonds, and it must be the same on both MLAG switches. Otherwise, the
@@ -126,7 +126,7 @@ configuration requirement is to create a bond that is managed by LACP.
 
 However, if for some reason you cannot use LACP in your environment, you
 can configure the bonds in [balance-xor
-mode](/old/Bonding_-_Link_Aggregation.html#src-8362653_Bonding-LinkAggregation-balance_xor).
+mode](/old/Cumulus_Linux/Bonding_-_Link_Aggregation.html#src-8362653_Bonding-LinkAggregation-balance_xor).
 When using balance-xor mode to dual-connect host-facing bonds in an MLAG
 environment, you must configure the `clag_id` parameter on the MLAG
 bonds, which must be the same on both MLAG switches. Otherwise, the
@@ -176,9 +176,10 @@ example clag l2-with-server-vlan-trunks`.
 {{%imgOld 5 %}}
 
 You configure these interfaces using
-[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html), so the bridges
-are in [VLAN-aware mode](/old/VLAN-aware_Bridge_Mode.html). The bridges
-use these Cumulus Linux-specific keywords:
+[NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html), so
+the bridges are in [VLAN-aware
+mode](/old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html). The bridges use
+these Cumulus Linux-specific keywords:
 
   - `bridge-vids`, which defines the allowed list of tagged 802.1q VLAN
     IDs for all bridge member interfaces. You can specify non-contiguous
@@ -203,7 +204,7 @@ addresses used for managing the `clagd` service.
 At minimum, this VLAN subinterface should not be in your layer 2 domain,
 and you should give it a very high VLAN ID (up to 4094). Read more about
 the [range of VLAN IDs you can
-use](/old/VLAN-aware_Bridge_Mode.html#src-8362673_VLAN-awareBridgeMode-vlan_range).
+use](/old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html#src-8362673_VLAN-awareBridgeMode-vlan_range).
 
 {{%/notice%}}
 
@@ -747,14 +748,14 @@ each MLAG pair in the network. For more details, refer to `man clagd`.
 ## Configure MLAG with a Traditional Mode Bridge
 
 You can configure MLAG with a bridge in [traditional
-mode](/old/Traditional_Bridge_Mode.html) instead of [VLAN-aware
-mode](/old/VLAN-aware_Bridge_Mode.html).
+mode](/old/Cumulus_Linux/Traditional_Bridge_Mode.html) instead of
+[VLAN-aware mode](/old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html).
 
 To configure MLAG with a traditional mode bridge, the peer link and all
 dual-connected links must be configured as
-[untagged/native](/old/Traditional_Bridge_Mode.html) ports on a bridge
-(note the absence of any VLANs in the `bridge-ports` line and the lack
-of the `bridge-vlan-aware` parameter below):
+[untagged/native](/old/Cumulus_Linux/Traditional_Bridge_Mode.html) ports
+on a bridge (note the absence of any VLANs in the `bridge-ports` line
+and the lack of the `bridge-vlan-aware` parameter below):
 
 ``` 
                    
@@ -912,10 +913,10 @@ Our Interface      Peer Interface     CLAG Id   Conflicts              Proto-Dow
 ### Specify a Backup Link to a VRF
 
 You can configure the backup link to a
-[VRF](/old/Virtual_Routing_and_Forwarding_-_VRF.html) or [management
-VRF](/old/Management_VRF.html). Include the name of the VRF or
-management VRF with the ` clagd-backup-ip  `command. Here is a sample
-configuration:
+[VRF](/old/Cumulus_Linux/Virtual_Routing_and_Forwarding_-_VRF.html) or
+[management VRF](/old/Cumulus_Linux/Management_VRF.html). Include the
+name of the VRF or management VRF with the ` clagd-backup-ip  `command.
+Here is a sample configuration:
 
 {{%notice tip%}}
 
@@ -1085,20 +1086,20 @@ host4) each have a layer 2 connection up to the spine layer where the
 default gateway for the host subnets resides. However, since the spine
 switches as gateway devices communicate at layer 3, you need to
 configure a protocol such as
-[VRR](/old/Virtual_Router_Redundancy_-_VRR_and_VRRP.html) (virtual
-router redundancy) between the spine switch pair to support
+[VRR](/old/Cumulus_Linux/Virtual_Router_Redundancy_-_VRR_and_VRRP.html)
+(virtual router redundancy) between the spine switch pair to support
 active/active forwarding.
 
 Then, to connect the spine switches to the core switches, you need to
 determine whether the routing is static or dynamic. If it is dynamic,
 you must choose which protocol —
-[OSPF](/old/Open_Shortest_Path_First_-_OSPF.html) or
-[BGP](/old/Border_Gateway_Protocol_-_BGP.html) — to use. When enabling a
-routing protocol in an MLAG environment, it is also necessary to manage
-the uplinks, because by default MLAG is not aware of layer 3 uplink
-interfaces. In the event of a peer link failure, MLAG does not remove
-static routes or bring down a BGP or OSPF adjacency unless a separate
-link state daemon such as ` ifplugd  `is used.
+[OSPF](/old/Cumulus_Linux/Open_Shortest_Path_First_-_OSPF.html) or
+[BGP](/old/Cumulus_Linux/Border_Gateway_Protocol_-_BGP.html) — to use.
+When enabling a routing protocol in an MLAG environment, it is also
+necessary to manage the uplinks, because by default MLAG is not aware of
+layer 3 uplink interfaces. In the event of a peer link failure, MLAG
+does not remove static routes or bring down a BGP or OSPF adjacency
+unless a separate link state daemon such as ` ifplugd  `is used.
 
 {{%notice tip%}}
 
@@ -1109,9 +1110,9 @@ on one of the switches in the MLAG pair, egress traffic can be
 blackholed if it hashes to the leaf whose uplinks are down.
 
 To set up the adjacency, configure a
-[BGP](/old/Border_Gateway_Protocol_-_BGP.html#src-8362926_BorderGatewayProtocol-BGP-unnumbered)
+[BGP](/old/Cumulus_Linux/Border_Gateway_Protocol_-_BGP.html#src-8362926_BorderGatewayProtocol-BGP-unnumbered)
 or
-[OSPF](/old/Open_Shortest_Path_First_-_OSPF.html#src-8362922_OpenShortestPathFirst-OSPF-ospf_unnum)
+[OSPF](/old/Cumulus_Linux/Open_Shortest_Path_First_-_OSPF.html#src-8362922_OpenShortestPathFirst-OSPF-ospf_unnum)
 unnumbered peering, as appropriate for your network.
 
 For example, if you are using BGP, use a configuration like this:
@@ -1135,9 +1136,9 @@ cumulus@switch:~$ net commit
 ```
 
 If you are using
-[EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html) and MLAG, you
-need to enable the EVPN address family across the peerlink.4094
-interface as well:
+[EVPN](/old/Cumulus_Linux/Ethernet_Virtual_Private_Network_-_EVPN.html)
+and MLAG, you need to enable the EVPN address family across the
+peerlink.4094 interface as well:
 
 ``` 
                    
@@ -1167,18 +1168,19 @@ note 1222](https://support.cumulusnetworks.com/hc/en-us/articles/360007793174-Cu
 
 ## IGMP Snooping with MLAG
 
-[IGMP snooping](/old/IGMP_and_MLD_Snooping.html) processes IGMP reports
-received on a bridge port in a bridge to identify hosts that are
-configured to receive multicast traffic destined to that group. An IGMP
-query message received on a port is used to identify the port that is
-connected to a router and configured to receive multicast traffic.
+[IGMP snooping](/old/Cumulus_Linux/IGMP_and_MLD_Snooping.html) processes
+IGMP reports received on a bridge port in a bridge to identify hosts
+that are configured to receive multicast traffic destined to that group.
+An IGMP query message received on a port is used to identify the port
+that is connected to a router and configured to receive multicast
+traffic.
 
 IGMP snooping is enabled by default on the bridge. IGMP snooping
 multicast database entries and router port entries are synced to the
 peer MLAG switch. If there is no multicast router in the VLAN, you can
 configure the IGMP querier on the switch to generate IGMP query
 messages. For more information, read the [IGMP and MLD
-Snooping](/old/IGMP_and_MLD_Snooping.html) chapter.
+Snooping](/old/Cumulus_Linux/IGMP_and_MLD_Snooping.html) chapter.
 
 ## Monitor the Status of the clagd Service
 
@@ -1254,7 +1256,7 @@ network.
 With MLAG, Cumulus Networks recommends you enable BPDU guard on the
 host-facing bond interfaces. For more information about BPDU guard, see
 [BPDU Guard and Bridge
-Assurance](/old/Spanning_Tree_and_Rapid_Spanning_Tree.html#src-8362689_SpanningTreeandRapidSpanningTree-bpdu).
+Assurance](/old/Cumulus_Linux/Spanning_Tree_and_Rapid_Spanning_Tree.html#src-8362689_SpanningTreeandRapidSpanningTree-bpdu).
 
 {{%notice tip%}}
 
@@ -1296,10 +1298,11 @@ bridge:peerlink CIST info
         
     ```
 
-  - Use [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html) (`net`)
-    commands for all spanning tree configurations, including bridge
-    priority, path cost and so forth. Do not use `brctl` commands for
-    spanning tree, except for `brctl stp on/off`, as changes are not
+  - Use
+    [NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html)
+    (`net`) commands for all spanning tree configurations, including
+    bridge priority, path cost and so forth. Do not use `brctl` commands
+    for spanning tree, except for `brctl stp on/off`, as changes are not
     reflected to `mstpd` and can create conflicts.
 
 ## Troubleshooting
@@ -1339,9 +1342,10 @@ prevent loops. This results in a drop being recorded on the peer link.
 You can detect this issue by running the `net show counters` or `ethtool
 -S <interface>` command.
 
-Using [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html), the number
-of dropped packets is displayed in the RX\_DRP column when you run `net
-show counters`:
+Using
+[NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html), the
+number of dropped packets is displayed in the RX\_DRP column when you
+run `net show counters`:
 
 ``` 
                    

@@ -4,16 +4,15 @@ author: Unknown
 weight: 93
 pageID: 8363032
 aliases:
- - /old/Buffer_and_Queue_Management.html
+ - /old/Cumulus_Linux/Buffer_and_Queue_Management.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Buffer and Queue Management
-
 Hardware datapath configuration manages packet buffering, queueing and
 scheduling in hardware. There are two configuration input files:
 
   - `/etc/cumulus/datapath/traffic.conf`, which describes priority
-    groups and assigns the scheduling algorithm and
-    weights
+    groups and assigns the scheduling algorithm and weights
 
   - `/usr/lib/python2.7/dist-packages/cumulus/__chip_config/[bcm|mlx]/datapath.conf`,
     which assigns buffer space and egress queues
@@ -50,7 +49,7 @@ which are assigned equal scheduling weights.
 
 Datapath configuration takes effect when you initialize `switchd`.
 Changes to the `traffic.conf` file require you to [restart the
-`switchd`](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
+`switchd`](/old/Cumulus_Linux/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
 service.
 
 {{%notice note%}}
@@ -68,7 +67,7 @@ platforms only:
 
 If you modify the configuration in the
 `/etc/cumulus/datapath/traffic.conf` file, you must [restart
-`switchd`](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
+`switchd`](/old/Cumulus_Linux/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
 for the changes to take effect:
 
 ``` 
@@ -113,8 +112,7 @@ For `ebtables`, the setqos keyword must be in lowercase, as in:
     
 ```
 
-You can specify one of the following targets for
-SETQOS/setqos:
+You can specify one of the following targets for SETQOS/setqos:
 
 | Option                  | Description                                                                                                                                                 |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -332,7 +330,7 @@ sequences of contiguous ports; you can see which ports are contiguous in
     ```
 
 [Restart
-`switchd`](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
+`switchd`](/old/Cumulus_Linux/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
 to allow the PFC configuration changes to take effect:
 
 ``` 
@@ -357,8 +355,8 @@ ports can be configured to execute link pause by:
 
 Link pause is disabled by default. Enabling link pause requires
 configuring settings in `/etc/cumulus/datapath/traffic.conf`, similar to
-how you configure [priority flow control](/old/#). The settings are
-explained in that section as well.
+how you configure [priority flow control](/old/Cumulus_Linux/#). The
+settings are explained in that section as well.
 
 {{%notice tip%}}
 
@@ -399,7 +397,7 @@ link_pause.pause_port_group.tx_enable = true
 ```
 
 [Restart
-`switchd`](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
+`switchd`](/old/Cumulus_Linux/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
 to allow link pause configuration changes to take effect:
 
 ``` 
@@ -467,7 +465,8 @@ cut_through_enable = false
 
 On Mellanox switches, you can collect a fine-grained history of queue
 lengths using histograms maintained by the ASIC; see the [ASIC
-monitoring chapter](/old/ASIC_Monitoring.html) for details.
+monitoring chapter](/old/Cumulus_Linux/ASIC_Monitoring.html) for
+details.
 
 On Broadcom switches, the buffer status is not visible currently.
 

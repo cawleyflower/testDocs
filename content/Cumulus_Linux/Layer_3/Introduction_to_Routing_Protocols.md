@@ -4,10 +4,10 @@ author: Unknown
 weight: 171
 pageID: 8362913
 aliases:
- - /old/Introduction_to_Routing_Protocols.html
+ - /old/Cumulus_Linux/Introduction_to_Routing_Protocols.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Introduction to Routing Protocols
-
 This chapter discusses the various routing protocols, and how to
 configure them.
 
@@ -51,14 +51,15 @@ differently.
 The way they answer these questions affects the network design and
 thereby configuration. For example, in a link-state protocol such as
 OSPF (see [Open Shortest Path First (OSPF)
-Protocol](/old/Open_Shortest_Path_First_-_OSPF.html)) or IS-IS, complete
-local information (links and attached address prefixes) about a node is
-disseminated to every other node in the network. Since the state that a
-node has to keep grows rapidly in such a case, link-state protocols
-typically limit the number of nodes that communicate this way. They
-allow for bigger networks to be built by breaking up a network into a
-set of smaller subnetworks (which are called areas or levels), and by
-advertising summarized information about an area to other areas.
+Protocol](/old/Cumulus_Linux/Open_Shortest_Path_First_-_OSPF.html)) or
+IS-IS, complete local information (links and attached address prefixes)
+about a node is disseminated to every other node in the network. Since
+the state that a node has to keep grows rapidly in such a case,
+link-state protocols typically limit the number of nodes that
+communicate this way. They allow for bigger networks to be built by
+breaking up a network into a set of smaller subnetworks (which are
+called areas or levels), and by advertising summarized information about
+an area to other areas.
 
 Besides the two critical pieces of information mentioned above,
 protocols have other parameters that can be configured. These are

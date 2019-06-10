@@ -4,10 +4,10 @@ author: Unknown
 weight: 49
 pageID: 8362631
 aliases:
- - /old/Adding_and_Updating_Packages.html
+ - /old/Cumulus_Linux/Adding_and_Updating_Packages.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Adding and Updating Packages
-
 You use the Advanced Packaging Tool (`apt`) to manage additional
 applications (in the form of packages) and to install the latest
 updates.
@@ -35,7 +35,7 @@ To work properly, `apt` relies on a local cache of the available
 packages. You must populate the cache initially, and then periodically
 update it with `-E apt-get update`:
 
-``` 
+```
 
 cumulus@switch:~$ sudo -E apt-get update
 Get:1 http://repo3.cumulusnetworks.com CumulusLinux-3 InRelease [7,624 B]
@@ -226,8 +226,9 @@ prompted to continue.
 The above commands upgrade all installed versions with their latest
 versions but do not install any new packages.
 
-Refer to [Upgrading Cumulus Linux](/old/Upgrading_Cumulus_Linux.html)
-for additional information.
+Refer to [Upgrading Cumulus
+Linux](/old/Cumulus_Linux/Upgrading_Cumulus_Linux.html) for additional
+information.
 
 ## Add New Packages
 
@@ -245,7 +246,7 @@ To add a new package:
     If the package is installed already, you can update the package from
     the Cumulus Linux repository as part of the package upgrade process,
     which upgrades all packages on the system. See [Upgrade
-    Packages](/old/#src-8362631_AddingandUpdatingPackages-upgrade-packages)
+    Packages](/old/Cumulus_Linux/#src-8362631_AddingandUpdatingPackages-upgrade-packages)
     above.
 
 2.  If the package is *not* already installed, add it by running `-E

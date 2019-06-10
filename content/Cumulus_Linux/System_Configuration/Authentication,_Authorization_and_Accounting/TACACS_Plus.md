@@ -4,10 +4,10 @@ author: Unknown
 weight: 281
 pageID: 8362558
 aliases:
- - /old/TACACS_Plus.html
+ - /old/Cumulus_Linux/TACACS_Plus.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# TACACS Plus
-
 Cumulus Linux implements TACACS+ client AAA (Accounting, Authentication,
 and Authorization) in a transparent way with minimal configuration. The
 client implements the TACACS+ protocol as described in [this IETF
@@ -22,7 +22,8 @@ per-command authorization requires additional setup on the switch.
 
   - Runs over the eth0 management interface
 
-  - Ability to run in the [management VRF](/old/Management_VRF.html)
+  - Ability to run in the [management
+    VRF](/old/Cumulus_Linux/Management_VRF.html)
 
   - TACACS+ privilege 15 users can run any command with sudo using the
     `/etc/sudoers.d/tacplus` file that is installed by the
@@ -95,12 +96,11 @@ configuration to see the changed server list.
 
 You can also configure the IP address used as the source IP address when
 communicating with the TACACS+ server. See [TACACS Configuration
-Parameters](/old/#src-8362558_TACACSPlus-TACACS_config_params) below for
-the full list of TACACS+ parameters.
+Parameters](/old/Cumulus_Linux/#src-8362558_TACACSPlus-TACACS_config_params)
+below for the full list of TACACS+ parameters.
 
 Following is the complete list of the TACACS+ client configuration
-files, and their
-use.
+files, and their use.
 
 | Filename                                | Description                                                                                                                                                                                                                                                                                                                                                                                          |
 | --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -246,12 +246,12 @@ accounting. These records are installed as part of the package.
 
 `audisp-tacplus` installs the audit rules for command accounting.
 Modifying the configuration files is not usually necessary. However,
-when a [management VRF](/old/Management_VRF.html) is configured, the
-accounting configuration does need special modification because the
-`auditd` service starts prior to networking. It is necessary to add the
-*vrf* parameter and to signal the `audisp-tacplus` process to reread the
-configuration. The example below shows that the management VRF is named
-*mgmt*. You can place the *vrf* parameter in either the
+when a [management VRF](/old/Cumulus_Linux/Management_VRF.html) is
+configured, the accounting configuration does need special modification
+because the `auditd` service starts prior to networking. It is necessary
+to add the *vrf* parameter and to signal the `audisp-tacplus` process to
+reread the configuration. The example below shows that the management
+VRF is named *mgmt*. You can place the *vrf* parameter in either the
 `/etc/tacplus_servers` file or in the `/etc/audisp/audisp-tac_plus.conf`
 file.
 
@@ -742,8 +742,7 @@ cumulus@switch:~$ sudo systemctl restart auditd.service
 ### TACACS Component Software Descriptions
 
 The following table describes the different pieces of software involved
-with delivering
-TACACS.
+with delivering TACACS.
 
 | Package Name                    | Description                                                                                                                                                                                                                                                                                                                                                                      |
 | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -4,10 +4,10 @@ author: Unknown
 weight: 309
 pageID: 8363026
 aliases:
- - /old/Switch_Port_Attributes.html
+ - /old/Cumulus_Linux/Switch_Port_Attributes.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Switch Port Attributes
-
 Cumulus Linux exposes network interfaces for several types of physical
 and logical devices:
 
@@ -22,8 +22,7 @@ and logical devices:
   - (optional) bondN, bonds (IEEE 802.3ad link aggregation trunks, or
     port channels)
 
-Each physical network interface has a number of configurable
-    settings:
+Each physical network interface has a number of configurable settings:
 
   - [Auto-negotiation](http://en.wikipedia.org/wiki/Autonegotiation)
 
@@ -61,9 +60,9 @@ automatically configures the best link parameter settings based on the
 module type (speed, duplex, auto-negotiation, and FEC where supported).
 To understand the default configuration for the various port and cable
 types, see the [table
-below](/old/#src-8363026_SwitchPortAttributes-settings). If you need to
-troubleshoot further to bring the link up, follow the sections below to
-set the specific link parameters.
+below](/old/Cumulus_Linux/#src-8363026_SwitchPortAttributes-settings).
+If you need to troubleshoot further to bring the link up, follow the
+sections below to set the specific link parameters.
 
 ## Auto-negotiation
 
@@ -82,14 +81,14 @@ cumulus@switch:~$ net commit
 
 Any time you enable auto-negotiation, Cumulus Linux restores the default
 configuration settings specified in the [table
-below](/old/#src-8363026_SwitchPortAttributes-sett).
+below](/old/Cumulus_Linux/#src-8363026_SwitchPortAttributes-sett).
 
 By default on a Broadcom-based switch, auto-negotiation is disabled —
 except on 10G and 1000BASE-T fixed copper switch ports, where it is
 required for links to work. For RJ-45 SFP adapters, you need to manually
 configure the desired link speed and auto-negotiation as described in
 the [default settings table
-below](/old/#src-8363026_SwitchPortAttributes-settings).
+below](/old/Cumulus_Linux/#src-8363026_SwitchPortAttributes-settings).
 
 If you disable auto-negotiation later or never enable it, then you have
 to configure any settings that deviate from the port default — such as
@@ -117,16 +116,17 @@ If you do decide to disable auto-negotiation, be aware of the following:
 For 1000BASE-T RJ-45 SFP adapters, auto-negotiation is automatically
 done on the SFP PHY, so enabling auto-negotiation on the port settings
 is not required. You must manually configure these ports using the
-[settings below](/old/#src-8363026_SwitchPortAttributes-settings).
+[settings
+below](/old/Cumulus_Linux/#src-8363026_SwitchPortAttributes-settings).
 
 {{%/notice%}}
 
 Depending upon the connector used for a port, enabling auto-negotiation
 also enables forward error correction (FEC), if the cable requires it
 (see the [table
-below](/old/#src-8363026_SwitchPortAttributes-settings)). The correct
-FEC mode is set based on the speed of the cable when auto-negotiation is
-enabled.
+below](/old/Cumulus_Linux/#src-8363026_SwitchPortAttributes-settings)).
+The correct FEC mode is set based on the speed of the cable when
+auto-negotiation is enabled.
 
 ## Port Speed and Duplex Mode
 
@@ -140,8 +140,7 @@ you need to manually set the speed on a Broadcom-based switch, set it in
 terms of Mbps, where the setting for 1G is *1000*, 40G is *40000* and
 100G is *100000*, for example.
 
-You can configure ports to one speed less than their maximum
-speed.
+You can configure ports to one speed less than their maximum speed.
 
 | Switch Port Type | Lowest Configurable Speed                                 |
 | ---------------- | --------------------------------------------------------- |
@@ -152,7 +151,8 @@ speed.
 
 \*Requires the port to be converted into a breakout port. See
 [Configuring Breakout
-Ports](/old/#src-8363026_SwitchPortAttributes-breakout) below.
+Ports](/old/Cumulus_Linux/#src-8363026_SwitchPortAttributes-breakout)
+below.
 
 {{%notice info%}}
 
@@ -189,7 +189,8 @@ iface swp1
   - For 10G and 1G SFPs inserted in a 25G port on a Broadcom platform,
     you must edit the `/etc/cumulus/ports.conf` file and configure the
     four ports in the same core to be 10G. See [Caveats and
-    Errata](/old/#src-8363026_SwitchPortAttributes-caveats) below.
+    Errata](/old/Cumulus_Linux/#src-8363026_SwitchPortAttributes-caveats)
+    below.
 
   - On Edgecore AS7326-56X switches, all four switch ports in each port
     group must be set to the same link speed; otherwise, the links won't
@@ -341,18 +342,18 @@ from swp1. Therefore, specifying an MTU on swp1 ensures that swp1.100
 inherits the MTU setting for swp1.
 
 <span id="src-8363026_SwitchPortAttributes-mtu_vxlan"></span>If you are
-working with [VXLANs](/old/Network_Virtualization.html), the MTU for a
-virtual network interface (VNI) must be 50 bytes smaller than the MTU of
-the physical interfaces on the switch, as those 50 bytes are required
-for various headers and other data. Also, consider setting the MTU much
-higher than the default 1500.
+working with [VXLANs](/old/Cumulus_Linux/Network_Virtualization.html),
+the MTU for a virtual network interface (VNI) must be 50 bytes smaller
+than the MTU of the physical interfaces on the switch, as those 50 bytes
+are required for various headers and other data. Also, consider setting
+the MTU much higher than the default 1500.
 
 {{%notice info%}}
 
 In general, the policy file specified above handles default MTU settings
 for all interfaces on the switch. If you need to configure a different
 MTU setting for a subset of interfaces, use
-[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html).
+[NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html).
 
 The following commands configure an MTU minimum value of 9000 on swp1:
 
@@ -534,7 +535,8 @@ If a cable is manufactured to CA-25G-S classification and FEC is not
 enabled, the BER might be unacceptable in a production network. It is
 important to set the FEC according to the cable class (or better) to
 have acceptable bit error rates. See [Determining Cable
-Class](/old/#src-8363026_SwitchPortAttributes-cable_class) below.
+Class](/old/Cumulus_Linux/#src-8363026_SwitchPortAttributes-cable_class)
+below.
 
 You can check bit errors using `cl-netstat` (`RX_ERR` column) or
 `ethtool -S` (`HwIfInErrors` counter) after a large amount of traffic
@@ -877,7 +879,7 @@ iface swp1
     </code></pre></td>
 <td><ul>
 <li><p>10M or 100M speeds are possible with auto-negotiation OFF on both sides. Testing on an Edgecore AS4610-54P revealed the ASIC reporting auto-negotiation as ON.</p></li>
-<li><p><a href="/old/Power_over_Ethernet_-_PoE.html">Power over Ethernet</a> may require auto-negotiation to be ON.</p></li>
+<li><p><a href="/old/Cumulus_Linux/Power_over_Ethernet_-_PoE.html">Power over Ethernet</a> may require auto-negotiation to be ON.</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -1239,7 +1241,8 @@ Cumulus Linux has the ability to:
 
   - Combine (also called *aggregating* or *ganging*) four 10G switch
     ports into one 40G port for use with a breakout cable ([not to be
-    confused with a bond](/old/Bonding_-_Link_Aggregation.html)).
+    confused with a
+    bond](/old/Cumulus_Linux/Bonding_-_Link_Aggregation.html)).
 
 To configure a 4x25G breakout port, first configure the port to break
 out then set the link speed:
@@ -1266,7 +1269,8 @@ cumulus@switch:~$ net add interface swp4 breakout disabled
     
 ```
 
-Also, [see below](/old/#src-8363026_SwitchPortAttributes-mlnx_breakout)
+Also, [see
+below](/old/Cumulus_Linux/#src-8363026_SwitchPortAttributes-mlnx_breakout)
 for how to configure breakout ports on Mellanox switches.
 
 {{%/notice%}}
@@ -1303,7 +1307,7 @@ iface swp3s3
 
 When you commit your change configuring the breakout ports, `switchd`
 restarts to apply the changes. The restart [interrupts network
-services](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd).
+services](/old/Cumulus_Linux/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd).
 
 {{%/notice%}}
 
@@ -1442,7 +1446,7 @@ To remove a breakout port, you need to do the following:
     ```
 
 3.  [Restart
-    `switchd`](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd).
+    `switchd`](/old/Cumulus_Linux/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd).
 
 ### Combine Four 10G Ports into One 40G Port
 
@@ -1681,7 +1685,7 @@ NIC statistics:
 ### Query SFP Port Information
 
 You can verify SFP settings using [`ethtool
--m`](/old/Monitoring_Interfaces_and_Transceivers_Using_ethtool.html).
+-m`](/old/Cumulus_Linux/Monitoring_Interfaces_and_Transceivers_Using_ethtool.html).
 The following example shows the vendor, type and power output for the
 swp4 interface.
 
@@ -1736,7 +1740,7 @@ order; for example, swp1, swp2, swp3, and swp4.
     ```
 
 2.  [Restart
-    `switchd`](/old/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=8366282).
+    `switchd`](/old/Cumulus_Linux/https://docs.cumulusnetworks.com/pages/viewpage.action?pageId=8366282).
 
 3.  If you want to set the speed of any SFPs to 1G, set the port speed
     to 1000 Mbps using NCLU commands; this is *not* necessary for 10G
@@ -1770,7 +1774,7 @@ error occurs while removing and reinserting QSFP module.
 You cannot remove the QSFPx2 module while the switch is powered on, as
 it is not hot-swappable. However, if an *Operation timed out* error
 occurs, you can get the link to come up by [restarting
-`switchd`](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd);
+`switchd`](/old/Cumulus_Linux/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd);
 however, this disrupts your network.
 
 On the T3048-LY9, run the following commands:
@@ -1825,8 +1829,9 @@ This is a known issue where `ethtool` does not update after restarting
 `switchd`, so it continues to display the outdated port speed.
 
 To correctly set the port speed, use
-[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html) or `ethtool` to
-set the speed instead of manually editing the `ports.conf` file.
+[NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html) or
+`ethtool` to set the speed instead of manually editing the `ports.conf`
+file.
 
 For example, to set the speed to 40G using NCLU:
 

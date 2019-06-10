@@ -4,10 +4,10 @@ author: Unknown
 weight: 229
 pageID: 8362596
 aliases:
- - /old/Network_Troubleshooting.html
+ - /old/Cumulus_Linux/Network_Troubleshooting.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Network Troubleshooting
-
 Cumulus Linux contains a number of command line and analytical tools to
 help you troubleshoot issues with your network.
 
@@ -257,8 +257,9 @@ Mausezahn will send 4 frames...
 
 In Linux, all ACL rules are always counted. To create an ACL rule for
 counting purposes only, set the rule action to ACCEPT. See the
-[Netfilter](/old/Netfilter_-_ACLs.html) chapter for details on how to
-use `cl-acltool` to set up iptables-/ip6tables-/ebtables-based ACLs.
+[Netfilter](/old/Cumulus_Linux/Netfilter_-_ACLs.html) chapter for
+details on how to use `cl-acltool` to set up
+iptables-/ip6tables-/ebtables-based ACLs.
 
 {{%notice note%}}
 
@@ -335,14 +336,14 @@ packets may be discarded.
 {{%/notice%}}
 
 SPAN and ERSPAN are configured via `cl-acltool`, the [same utility for
-security ACL configuration](/old/Netfilter_-_ACLs.html). The match
-criteria for SPAN and ERSPAN is usually an interface; for more granular
-match terms, use [selective
-spanning](/old/#src-8362596_NetworkTroubleshooting-selective_spanning).
+security ACL configuration](/old/Cumulus_Linux/Netfilter_-_ACLs.html).
+The match criteria for SPAN and ERSPAN is usually an interface; for more
+granular match terms, use [selective
+spanning](/old/Cumulus_Linux/#src-8362596_NetworkTroubleshooting-selective_spanning).
 The SPAN source interface can be a port, a subinterface or a bond
 interface. Ingress traffic on interfaces can be matched, and on Mellanox
 Spectrum switches, egress traffic can be matched. See the [list of
-limitations](/old/#src-8362596_NetworkTroubleshooting-span_limits)
+limitations](/old/Cumulus_Linux/#src-8362596_NetworkTroubleshooting-span_limits)
 below.
 
 Cumulus Linux supports a maximum of 2 SPAN destinations. Multiple rules
@@ -374,7 +375,7 @@ Always place your rules files under `/etc/cumulus/acl/policy.d/`.
 
   - To configure SPAN or ERSPAN on a Tomahawk or Trident3 switch, you
     must enable [non-atomic update
-    mode](/old/Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-nonatomic-update-mode).
+    mode](/old/Cumulus_Linux/Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-nonatomic-update-mode).
 
   - Mellanox switches reject SPAN ACL rules for an output interface that
     is a subinterface.
@@ -488,8 +489,7 @@ done.
 
 Running the following command is incorrect and will remove **all**
 existing control-plane rules or other installed rules and only install
-the rules defined in
-    `span.rules`:
+the rules defined in `span.rules`:
 
     cumulus@switch:~$ sudo cl-acltool -i  -P /etc/cumulus/acl/policy.d/span.rules
 
@@ -583,7 +583,7 @@ from `swp1` to 12.0.0.2.
 {{%notice note%}}
 
 [Cut-through
-mode](/old/Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-cut_through_mode)
+mode](/old/Cumulus_Linux/Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-cut_through_mode)
 is **not** supported for ERSPAN in Cumulus Linux on switches using
 Broadcom Tomahawk, Trident II+ and Trident II ASICs.
 

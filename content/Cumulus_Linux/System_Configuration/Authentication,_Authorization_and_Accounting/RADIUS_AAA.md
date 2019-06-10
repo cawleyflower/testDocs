@@ -4,10 +4,10 @@ author: Unknown
 weight: 283
 pageID: 8362559
 aliases:
- - /old/RADIUS_AAA.html
+ - /old/Cumulus_Linux/RADIUS_AAA.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# RADIUS AAA
-
 Cumulus Networks offers add-on packages that enable
 [RADIUS](https://en.wikipedia.org/wiki/RADIUS) users to log in to
 Cumulus Linux switches in a transparent way with minimal configuration.
@@ -98,8 +98,8 @@ file:
     option, you must also specify the `timeout` option.
 
 4.  Set the `vrf-name` field. This is typically set to *mgmt* if you are
-    using a [management VRF](/old/Management_VRF.html). You cannot
-    specify more than one VRF.
+    using a [management VRF](/old/Cumulus_Linux/Management_VRF.html).
+    You cannot specify more than one VRF.
 
 The configuration file includes the `mapped_priv_user` field that sets
 the account used for privileged RADIUS users and the `priv-lvl` field
@@ -383,7 +383,7 @@ mapping file; this might be the first or second user that logged in.
 
 ## Related Information
 
-  - [TACACS+ client](/old/TACACS_Plus.html)
+  - [TACACS+ client](/old/Cumulus_Linux/TACACS_Plus.html)
 
   - [Cumulus Networks RADIUS demo on
     GitHub](https://github.com/CumulusNetworks/cldemo-radius)

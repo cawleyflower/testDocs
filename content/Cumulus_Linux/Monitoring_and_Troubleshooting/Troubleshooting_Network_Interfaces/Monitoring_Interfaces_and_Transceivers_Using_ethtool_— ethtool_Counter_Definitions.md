@@ -4,10 +4,10 @@ author: Unknown
 weight: 459
 pageID: 9018051
 aliases:
- - "/old/Monitoring_Interfaces_and_Transceivers_Using_ethtool_—\_ethtool_Counter_Definitions.html"
+ - "/old/Cumulus_Linux/Monitoring_Interfaces_and_Transceivers_Using_ethtool_—\_ethtool_Counter_Definitions.html"
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Monitoring Interfaces and Transceivers Using ethtool — ethtool Counter Definitions
-
 The `ethtool` command enables you to query or control the network driver
 and hardware settings. It takes the device name (like swp1) as an
 argument. When the device name is the only argument to `ethtool`, it

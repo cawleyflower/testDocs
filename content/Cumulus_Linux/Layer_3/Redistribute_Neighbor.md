@@ -4,10 +4,10 @@ author: Unknown
 weight: 193
 pageID: 8362959
 aliases:
- - /old/Redistribute_Neighbor.html
+ - /old/Cumulus_Linux/Redistribute_Neighbor.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Redistribute Neighbor
-
 *Redistribute neighbor* provides a mechanism for IP subnets to span
 racks without forcing the end hosts to run a routing protocol.
 
@@ -46,7 +46,7 @@ Redistribute neighbor was created with these use cases in mind:
 
   - Hosts that are dual connected to two leaf nodes without using
     proprietary protocols such as
-    [MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html)
+    [MLAG](/old/Cumulus_Linux/Multi-Chassis_Link_Aggregation_-_MLAG.html)
 
   - Anycast services needing dynamic advertisement from multiple hosts
 
@@ -126,13 +126,12 @@ This release of redistribute neighbor supports IPv4 only.
 ### VRFs Are not Supported
 
 This release of redistribute neighbor does not support
-[VRFs](/old/Virtual_Routing_and_Forwarding_-_VRF.html).
+[VRFs](/old/Cumulus_Linux/Virtual_Routing_and_Forwarding_-_VRF.html).
 
 ### Only 1024 Interfaces Supported
 
 Redistribute neighbor does not work with more than 1024 interfaces.
-Doing so can cause the `rdnbrd` service to
-crash.
+Doing so can cause the `rdnbrd` service to crash.
 
 ## Troubleshooting
 

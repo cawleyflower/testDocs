@@ -4,10 +4,10 @@ author: Unknown
 weight: 279
 pageID: 8362556
 aliases:
- - /old/LDAP_Authentication_and_Authorization.html
+ - /old/Cumulus_Linux/LDAP_Authentication_and_Authorization.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# LDAP Authentication and Authorization
-
 Cumulus Linux uses Pluggable Authentication Modules (PAM) and Name
 Service Switch (NSS) for user authentication.
 
@@ -61,7 +61,8 @@ and create the pre-seeded parameters using `debconf-set-selections` with
 the appropriate answers. Run `debconf-show <pkg>` to check the settings.
 Here is an [example of how to pre-seed answers to the installer
 questions using
-`debconf-set-selections`](/old/attachments_8362555_1_kb_debconf.txt) .
+`debconf-set-selections`](/old/Cumulus_Linux/attachments_8362555_1_kb_debconf.txt)
+.
 
 {{%/notice%}}
 
@@ -197,8 +198,8 @@ the manpage for `nslcd.conf` (such as *passwd* or *group*).
 ### Example Configuration
 
 Here is an [example
-configuration ](/old/attachments_8362557_1_nslcd.conf)using Cumulus
-Linux.
+configuration ](/old/Cumulus_Linux/attachments_8362557_1_nslcd.conf)using
+Cumulus Linux.
 
 ## Troubleshooting
 

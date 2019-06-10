@@ -4,10 +4,10 @@ author: Unknown
 weight: 65
 pageID: 8362545
 aliases:
- - /old/Setting_Date_and_Time.html
+ - /old/Cumulus_Linux/Setting_Date_and_Time.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Setting Date and Time
-
 Setting the time zone, date and time requires root privileges; use
 `sudo`.
 
@@ -161,8 +161,8 @@ explanation of the output.
 
 By default, `/etc/ntp.conf` contains some default time servers. You can
 specify the NTP server or servers you want to use with
-[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html); include the
-`iburst` option to increase the sync speed.
+[NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html);
+include the `iburst` option to increase the sync speed.
 
 ``` 
                    

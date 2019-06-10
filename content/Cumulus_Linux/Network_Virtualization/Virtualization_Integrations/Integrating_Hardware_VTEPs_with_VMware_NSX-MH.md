@@ -4,10 +4,10 @@ author: Unknown
 weight: 393
 pageID: 8362796
 aliases:
- - /old/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html
+ - /old/Cumulus_Linux/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Integrating Hardware VTEPs with VMware NSX-MH
-
 Switches running Cumulus Linux can integrate with VMware NSX
 Multi-Hypervisor (MH) to act as hardware VTEP gateways. The VMware
 NSX-MH controller provides consistent provisioning across virtual and
@@ -17,7 +17,7 @@ physical server infrastructures.
 
 Cumulus Linux also supports integration with VMware NSX in high
 availability mode. Refer to [OVSDB Server High
-Availability](/old/OVSDB_Server_High_Availability.html).
+Availability](/old/Cumulus_Linux/OVSDB_Server_High_Availability.html).
 
 ## Getting Started
 
@@ -25,7 +25,7 @@ Before you integrate VXLANs with NSX-MH, make sure you have a layer 2
 gateway; a Broadcom Tomahawk, Trident II+, Trident II, Maverick, or
 Mellanox Spectrum switch running Cumulus Linux. Cumulus Linux includes
 OVSDB server (`ovsdb-server`) and VTEPd (`ovs-vtepd`), which support
-[VLAN-aware bridges](/old/VLAN-aware_Bridge_Mode.html).
+[VLAN-aware bridges](/old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html).
 
 To integrate a VXLAN with NSX-MH, you need to:
 

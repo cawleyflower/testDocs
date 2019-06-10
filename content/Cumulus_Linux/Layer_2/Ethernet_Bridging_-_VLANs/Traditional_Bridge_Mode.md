@@ -4,20 +4,20 @@ author: Unknown
 weight: 349
 pageID: 8362670
 aliases:
- - /old/Traditional_Bridge_Mode.html
+ - /old/Cumulus_Linux/Traditional_Bridge_Mode.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Traditional Bridge Mode
-
 Cumulus Networks recommends you use a [VLAN-aware
-bridge](/old/VLAN-aware_Bridge_Mode.html) on your switch. You use
-traditional mode bridges only if you need to run more than one bridge on
-the switch or if you need to use PVSTP+.
+bridge](/old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html) on your switch.
+You use traditional mode bridges only if you need to run more than one
+bridge on the switch or if you need to use PVSTP+.
 
 ## Create a Traditional Mode Bridge
 
 You can configure a traditional mode bridge either using
-[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html) or manually
-editing the `/etc/network/interfaces` file.
+[NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html) or
+manually editing the `/etc/network/interfaces` file.
 
 ### Configure a Traditional Bridge with NCLU
 
@@ -27,8 +27,8 @@ NCLU has limited support for configuring bridges in traditional mode.
 
 The traditional bridge must be named something other than *bridge*, ****
 as that name is reserved for the single [VLAN-aware
-bridge](/old/VLAN-aware_Bridge_Mode.html) that you can configure on the
-switch.
+bridge](/old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html) that you can
+configure on the switch.
 
 {{%/notice%}}
 
@@ -171,7 +171,7 @@ To create a traditional mode bridge manually, you need to hand edit the
     <tr class="odd">
     <td><p>bridge-stp</p></td>
     <td><p>Enables spanning tree protocol on this bridge. The default spanning tree mode is Per VLAN Rapid Spanning Tree Protocol (PVRST).</p>
-    <p>For more information on spanning-tree configurations see the configuration section: <a href="/old/Spanning_Tree_and_Rapid_Spanning_Tree.html">Spanning Tree and Rapid Spanning Tree</a>.</p></td>
+    <p>For more information on spanning-tree configurations see the configuration section: <a href="/old/Cumulus_Linux/Spanning_Tree_and_Rapid_Spanning_Tree.html">Spanning Tree and Rapid Spanning Tree</a>.</p></td>
     <td><p>off</p></td>
     </tr>
     </tbody>
@@ -324,7 +324,7 @@ iface br-VLAN200
 ### VLAN Tagging Examples
 
 You can find more examples of VLAN tagging in [this
-chapter](/old/VLAN_Tagging.html).
+chapter](/old/Cumulus_Linux/VLAN_Tagging.html).
 
 ### Configure ARP Timers
 

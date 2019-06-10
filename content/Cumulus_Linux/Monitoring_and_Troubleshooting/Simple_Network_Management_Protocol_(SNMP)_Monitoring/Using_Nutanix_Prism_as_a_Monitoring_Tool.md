@@ -4,10 +4,10 @@ author: Unknown
 weight: 485
 pageID: 8362618
 aliases:
- - /old/Using_Nutanix_Prism_as_a_Monitoring_Tool.html
+ - /old/Cumulus_Linux/Using_Nutanix_Prism_as_a_Monitoring_Tool.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Using Nutanix Prism as a Monitoring Tool
-
 Nutanix Prism is a graphical user interface (GUI) for managing
 infrastructure and virtual environments. In order to use it, you need to
 take special steps within Cumulus Linux before you can configure Prism.
@@ -110,8 +110,7 @@ take special steps within Cumulus Linux before you can configure Prism.
 4.  Fill out the **Network Switch Configuration** for the Top of Rack
     (ToR) switch configured for snmpd in the previous section:
     
-    {{%imgOld 3
-    %}}
+    {{%imgOld 3 %}}
     
     | Configuration Parameter         | Description                                                                                     | Value Used in Example                                   |
     | ------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------- |

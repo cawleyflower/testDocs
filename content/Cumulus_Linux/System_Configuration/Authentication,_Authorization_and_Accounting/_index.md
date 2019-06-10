@@ -4,20 +4,21 @@ author: Unknown
 weight: 67
 pageID: 8362550
 aliases:
- - '/old/Authentication,_Authorization_and_Accounting.html'
+ - '/old/Cumulus_Linux/Authentication,_Authorization_and_Accounting.html'
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Authentication, Authorization and Accounting
+  - [SSH for Remote
+    Access](/old/Cumulus_Linux/SSH_for_Remote_Access.html)
 
-  - [SSH for Remote Access](/old/SSH_for_Remote_Access.html)
-
-  - [User Accounts](/old/User_Accounts.html)
+  - [User Accounts](/old/Cumulus_Linux/User_Accounts.html)
 
   - [Using sudo to Delegate
-    Privileges](/old/Using_sudo_to_Delegate_Privileges.html)
+    Privileges](/old/Cumulus_Linux/Using_sudo_to_Delegate_Privileges.html)
 
   - [LDAP Authentication and
-    Authorization](/old/LDAP_Authentication_and_Authorization.html)
+    Authorization](/old/Cumulus_Linux/LDAP_Authentication_and_Authorization.html)
 
-  - [TACACS Plus](/old/TACACS_Plus.html)
+  - [TACACS Plus](/old/Cumulus_Linux/TACACS_Plus.html)
 
-  - [RADIUS AAA](/old/RADIUS_AAA.html)
+  - [RADIUS AAA](/old/Cumulus_Linux/RADIUS_AAA.html)

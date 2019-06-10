@@ -23,10 +23,10 @@ In order to run the site locally
 
 6. Navigate to the testDocs directory
 
- 7. Start the hugo server with `hugo server`
+7. Start the hugo server with `hugo server`
 
 The site will be available at http://localhost:1313,
-hugo will watch and rebuild the site with any changes to the repo. 
+hugo will watch and rebuild the site with any changes to the repo.
 
 
 ## Content with Hugo

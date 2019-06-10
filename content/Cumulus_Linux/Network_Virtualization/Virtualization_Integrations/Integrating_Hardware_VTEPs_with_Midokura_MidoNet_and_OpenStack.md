@@ -4,10 +4,10 @@ author: Unknown
 weight: 389
 pageID: 8362812
 aliases:
- - /old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html
+ - /old/Cumulus_Linux/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Integrating Hardware VTEPs with Midokura MidoNet and OpenStack
-
 Cumulus Linux seamlessly integrates with the MidoNet OpenStack
 infrastructure, where the switches provide the VTEP gateway for
 terminating VXLAN tunnels from within MidoNet. MidoNet connects to the
@@ -23,7 +23,7 @@ between virtual and physical server infrastructures.
 Make sure you have a layer 2 gateway; a Tomahawk, Trident II+ or Trident
 II switch running Cumulus Linux. Cumulus Linux includes OVSDB server
 (`ovsdb-server`) and VTEPd (`ovs-vtepd`), which support [VLAN-aware
-bridges](/old/VLAN-aware_Bridge_Mode.html).
+bridges](/old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html).
 
 To integrate a VXLAN with MidoNet, you need to:
 
@@ -38,9 +38,10 @@ version 1.8 or later.
 
 {{%notice note%}}
 
-There is no support for [VXLAN routing](/old/VXLAN_Routing.html) in the
-Trident II chipset; use a loopback interface
-([hyperloop](/old/VXLAN_Routing.html#src-8362747_VXLANRouting-t2))
+There is no support for [VXLAN
+routing](/old/Cumulus_Linux/VXLAN_Routing.html) in the Trident II
+chipset; use a loopback interface
+([hyperloop](/old/Cumulus_Linux/VXLAN_Routing.html#src-8362747_VXLANRouting-t2))
 instead.
 
 {{%/notice%}}

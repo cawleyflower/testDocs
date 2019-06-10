@@ -4,10 +4,10 @@ author: Unknown
 weight: 103
 pageID: 8363021
 aliases:
- - /old/Prescriptive_Topology_Manager_-_PTM.html
+ - /old/Cumulus_Linux/Prescriptive_Topology_Manager_-_PTM.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Prescriptive Topology Manager - PTM
-
 In data center topologies, right cabling is a time-consuming endeavor
 and is error prone. Prescriptive Topology Manager (PTM) is a dynamic
 cabling verification tool to help detect and eliminate such errors. It
@@ -40,7 +40,8 @@ For more information, see `man ptmd(8)`.
     Detection](http://tools.ietf.org/html/rfc5880) (BFD); however,
     demand mode is not supported. For more information on how BFD
     operates in Cumulus Linux, read the [Bidirectional Forwarding
-    Detection - BFD](/old/Bidirectional_Forwarding_Detection_-_BFD.html)
+    Detection -
+    BFD](/old/Cumulus_Linux/Bidirectional_Forwarding_Detection_-_BFD.html)
     chapter and read `man ptmd(8)`.
 
   - Integration with FRRouting (PTM to FRRouting notification).
@@ -52,7 +53,7 @@ For more information, see `man ptmd(8)`.
   - Event notifications: see Scripts below.
 
   - User configuration via a `topology.dot` file; [see
-    below](/old/#src-8363021_PrescriptiveTopologyManager-PTM-configuring).
+    below](/old/Cumulus_Linux/#src-8363021_PrescriptiveTopologyManager-PTM-configuring).
 
 ## Configure PTM
 
@@ -109,7 +110,7 @@ change, running `if-topo-pass` when an LLDP or BFD check passes and
 running `if-topo-fails` when the check fails. The scripts receive an
 argument string that is the result of the `ptmctl` command, described in
 the [`ptmd` commands section
-below](/old/#src-8363021_PrescriptiveTopologyManager-PTM-ptmd_commands).
+below](/old/Cumulus_Linux/#src-8363021_PrescriptiveTopologyManager-PTM-ptmd_commands).
 
 You should modify these default scripts as needed.
 
@@ -327,7 +328,7 @@ detection over all media and protocol layers. Use BFD to detect failures
 for IPv4 and IPv6 single or multihop paths between any two network
 devices, including unidirectional path failure detection. For
 information about configuring BFD using PTM, see the [BFD
-topic](/old/Bidirectional_Forwarding_Detection_-_BFD.html).
+topic](/old/Cumulus_Linux/Bidirectional_Forwarding_Detection_-_BFD.html).
 
 ## Check Link State with FRRouting
 

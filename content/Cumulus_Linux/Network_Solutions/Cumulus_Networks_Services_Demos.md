@@ -4,10 +4,10 @@ author: Unknown
 weight: 251
 pageID: 8362987
 aliases:
- - /old/Cumulus_Networks_Services_Demos.html
+ - /old/Cumulus_Linux/Cumulus_Networks_Services_Demos.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Cumulus Networks Services Demos
-
 The Cumulus Networks Services team demos provide a virtual environment
 built using either VirtualBox or `libvirt` using Vagrant to manage the
 VMs. This environment utilizes the reference topology shown below.
@@ -19,13 +19,12 @@ code and simulate failure scenarios.
 
 The Cumulus Networks *reference topology* includes cabling (in DOT
 format for dual use with
-[PTM](/old/Prescriptive_Topology_Manager_-_PTM.html)), MAC addressing,
-IP addressing, switches and servers. This topology is blessed by the
-Professional Services Team at Cumulus Networks to fit a majority of
-designs seen in the field.
+[PTM](/old/Cumulus_Linux/Prescriptive_Topology_Manager_-_PTM.html)), MAC
+addressing, IP addressing, switches and servers. This topology is
+blessed by the Professional Services Team at Cumulus Networks to fit a
+majority of designs seen in the field.
 
-{{%imgOld 0
-%}}
+{{%imgOld 0 %}}
 
 ### IP and MAC Addressing
 

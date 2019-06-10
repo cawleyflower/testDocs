@@ -4,47 +4,51 @@ author: Unknown
 weight: 15
 pageID: 8362543
 aliases:
- - /old/System_Configuration.html
+ - /old/Cumulus_Linux/System_Configuration.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# System Configuration
-
   - [Network Command Line Utility -
-    NCLU](/old/Network_Command_Line_Utility_-_NCLU.html)
+    NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html)
 
-  - [Setting Date and Time](/old/Setting_Date_and_Time.html)
+  - [Setting Date and
+    Time](/old/Cumulus_Linux/Setting_Date_and_Time.html)
 
   - [Authentication, Authorization and
-    Accounting](/old/Authentication,_Authorization_and_Accounting.html)
+    Accounting](/old/Cumulus_Linux/Authentication,_Authorization_and_Accounting.html)
     
-      - [SSH for Remote Access](/old/SSH_for_Remote_Access.html)
+      - [SSH for Remote
+        Access](/old/Cumulus_Linux/SSH_for_Remote_Access.html)
     
-      - [User Accounts](/old/User_Accounts.html)
+      - [User Accounts](/old/Cumulus_Linux/User_Accounts.html)
     
       - [Using sudo to Delegate
-        Privileges](/old/Using_sudo_to_Delegate_Privileges.html)
+        Privileges](/old/Cumulus_Linux/Using_sudo_to_Delegate_Privileges.html)
     
       - [LDAP Authentication and
-        Authorization](/old/LDAP_Authentication_and_Authorization.html)
+        Authorization](/old/Cumulus_Linux/LDAP_Authentication_and_Authorization.html)
     
-      - [TACACS Plus](/old/TACACS_Plus.html)
+      - [TACACS Plus](/old/Cumulus_Linux/TACACS_Plus.html)
     
-      - [RADIUS AAA](/old/RADIUS_AAA.html)
+      - [RADIUS AAA](/old/Cumulus_Linux/RADIUS_AAA.html)
 
-  - [Netfilter - ACLs](/old/Netfilter_-_ACLs.html)
+  - [Netfilter - ACLs](/old/Cumulus_Linux/Netfilter_-_ACLs.html)
     
       - [Default Cumulus Linux ACL
-        Configuration](/old/Default_Cumulus_Linux_ACL_Configuration.html)
+        Configuration](/old/Cumulus_Linux/Default_Cumulus_Linux_ACL_Configuration.html)
     
       - [Filtering Learned MAC
-        Addresses](/old/Filtering_Learned_MAC_Addresses.html)
+        Addresses](/old/Cumulus_Linux/Filtering_Learned_MAC_Addresses.html)
 
   - [Services and Daemons in Cumulus
-    Linux](/old/Services_and_Daemons_in_Cumulus_Linux.html)
+    Linux](/old/Cumulus_Linux/Services_and_Daemons_in_Cumulus_Linux.html)
 
-  - [Configuring switchd](/old/Configuring_switchd.html)
+  - [Configuring switchd](/old/Cumulus_Linux/Configuring_switchd.html)
 
-  - [Power over Ethernet - PoE](/old/Power_over_Ethernet_-_PoE.html)
+  - [Power over Ethernet -
+    PoE](/old/Cumulus_Linux/Power_over_Ethernet_-_PoE.html)
 
-  - [Configuring a Global Proxy](/old/Configuring_a_Global_Proxy.html)
+  - [Configuring a Global
+    Proxy](/old/Cumulus_Linux/Configuring_a_Global_Proxy.html)
 
-  - [HTTP API](/old/HTTP_API.html)
+  - [HTTP API](/old/Cumulus_Linux/HTTP_API.html)

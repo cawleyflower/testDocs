@@ -4,32 +4,33 @@ author: Unknown
 weight: 149
 pageID: 8362747
 aliases:
- - /old/VXLAN_Routing.html
+ - /old/Cumulus_Linux/VXLAN_Routing.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# VXLAN Routing
-
 VXLAN routing, sometimes referred to as *inter-VXLAN routing*, provides
 IP routing between VXLAN VNIs in overlay networks. The routing of
 traffic is based on the inner header or the overlay tenant IP address.
 
 Because VXLAN routing is fundamentally routing, it is most commonly
 deployed with a control plane, such as Ethernet Virtual Private Network
-([EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html)). You can set
-up static routing too, either with or without the Cumulus [Lightweight
-Network
-Virtualization](/old/Lightweight_Network_Virtualization_Overview.html)
+([EVPN](/old/Cumulus_Linux/Ethernet_Virtual_Private_Network_-_EVPN.html)).
+You can set up static routing too, either with or without the Cumulus
+[Lightweight Network
+Virtualization](/old/Cumulus_Linux/Lightweight_Network_Virtualization_Overview.html)
 (LNV) for MAC distribution and BUM handling.
 
 This topic describes the platform and hardware considerations for VXLAN
 routing. For a detailed description of different VXLAN routing models
 and configuration examples, refer to
-[EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html).
+[EVPN](/old/Cumulus_Linux/Ethernet_Virtual_Private_Network_-_EVPN.html).
 
 VXLAN routing supports full layer 3 multi-tenancy; all routing occurs in
-the context of a [VRF](/old/Virtual_Routing_and_Forwarding_-_VRF.html).
+the context of a
+[VRF](/old/Cumulus_Linux/Virtual_Routing_and_Forwarding_-_VRF.html).
 Also, VXLAN routing is supported for dual-attached hosts where the
 associated VTEPs function in [active-active
-mode](/old/VXLAN_Active-Active_Mode.html).
+mode](/old/Cumulus_Linux/VXLAN_Active-Active_Mode.html).
 
 ## Supported Platforms
 
@@ -53,7 +54,7 @@ The following chipsets support VXLAN routing:
 
   - For additional restrictions and considerations for VXLAN routing
     with EVPN, refer to [the EVPN
-    chapter](/old/Ethernet_Virtual_Private_Network_-_EVPN.html).
+    chapter](/old/Cumulus_Linux/Ethernet_Virtual_Private_Network_-_EVPN.html).
 
 {{%/notice%}}
 
@@ -157,14 +158,15 @@ cumulus@switch:~$ sudo nano /etc/cumulus/ports.conf
 ```
 
 After you save your changes to the `ports.conf` file, [restart
-`switchd`](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
+`switchd`](/old/Cumulus_Linux/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
 for the changes to take effect.
 
 {{%notice note%}}
 
 VXLAN routing using internal loopback is supported only with [VLAN-aware
-bridges](/old/VLAN-aware_Bridge_Mode.html); you cannot use a bridge in
-[traditional mode](/old/Traditional_Bridge_Mode.html).
+bridges](/old/Cumulus_Linux/VLAN-aware_Bridge_Mode.html); you cannot use
+a bridge in [traditional
+mode](/old/Cumulus_Linux/Traditional_Bridge_Mode.html).
 
 {{%/notice%}}
 
@@ -208,9 +210,9 @@ interface (named *inside*) is a member of the bridge. The ports swp45
 and swp47 are bonded together (named *outside*) and act as the layer 3
 end with SVIs configured for VLANs 100 and 200 with the corresponding
 gateway IP addresses. Because the two layer 3 gateways are in an
-[MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html) configuration,
-they use a virtual IP address as the gateway IP. The relevant interface
-configuration on *exit01* is as follows:
+[MLAG](/old/Cumulus_Linux/Multi-Chassis_Link_Aggregation_-_MLAG.html)
+configuration, they use a virtual IP address as the gateway IP. The
+relevant interface configuration on *exit01* is as follows:
 
 ``` 
                    
@@ -277,7 +279,7 @@ hal.bcm.per_vlan_router_mac_lookup = TRUE
 ```
 
 After you save your changes to the `switchd.conf` file, [restart
-`switchd`](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
+`switchd`](/old/Cumulus_Linux/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
 for the change to take effect.
 
 {{%notice warning%}}

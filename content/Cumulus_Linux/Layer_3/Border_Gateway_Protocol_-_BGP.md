@@ -4,10 +4,10 @@ author: Unknown
 weight: 185
 pageID: 8362926
 aliases:
- - /old/Border_Gateway_Protocol_-_BGP.html
+ - /old/Cumulus_Linux/Border_Gateway_Protocol_-_BGP.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Border Gateway Protocol - BGP
-
 BGP is the routing protocol that runs the Internet. It is an
 increasingly popular protocol for use in the data center as it lends
 itself well to the rich interconnections in a Clos topology.
@@ -196,7 +196,7 @@ unnumbered interfaces to route maps.
 
 1.  Enable the BGP and Zebra daemons (`zebra` and `bgpd`), then enable
     the FRRouting service and start it, as described in [Configuring
-    FRRouting](/old/Configuring_FRRouting.html).
+    FRRouting](/old/Cumulus_Linux/Configuring_FRRouting.html).
 
 2.  Identify the BGP node by assigning an ASN and `router-id`:
     
@@ -319,7 +319,8 @@ address, as suggested by RFC 4291.
 Cumulus Linux 3.7.2 and later also supports advertising IPv4 prefixes
 with IPv6 next hop addresses while peering over IPv6 global unicast
 addresses. See [RFC 5549 Support with Global IPv6
-Peers](/old/#src-8362926_BorderGatewayProtocol-BGP-rfc-5549) below.
+Peers](/old/Cumulus_Linux/#src-8362926_BorderGatewayProtocol-BGP-rfc-5549)
+below.
 
 {{%/notice%}}
 
@@ -334,7 +335,7 @@ only for the link-local address peerings (as shown below). In Cumulus
 Linux 3.7.2 and later, extended next hop encoding can be sent for the
 both link-local and global unicast address peerings (see [RFC 5549
 Support with Global IPv6
-Peers](/old/#src-8362926_BorderGatewayProtocol-BGP-rfc-5549)).
+Peers](/old/Cumulus_Linux/#src-8362926_BorderGatewayProtocol-BGP-rfc-5549)).
 
 ``` 
                    
@@ -382,8 +383,8 @@ router bgp 65020
 
 For an unnumbered configuration, you can use a single command to
 configure a neighbor and attach it to a [peer
-group](/old/#src-8362926_BorderGatewayProtocol-BGP-peergroups) (making
-sure to substitute for the interface and peer group below):
+group](/old/Cumulus_Linux/#src-8362926_BorderGatewayProtocol-BGP-peergroups)
+(making sure to substitute for the interface and peer group below):
 
 ``` 
                    
@@ -639,8 +640,7 @@ recommendations in the Internet draft
       - Use the `sysctl` on the host —
         `net.ipv6.conf.all.accept_ra_defrtr`. However, this requires
         applying this setting on all hosts, which might mean many hosts,
-        especially if FRRouting is run on the
-hosts.
+        especially if FRRouting is run on the hosts.
 
 ## RFC 5549 Support with Global IPv6 Peers (Cumulus Linux 3.7.2 and later)
 
@@ -1843,14 +1843,14 @@ illustrates one way you can do so in a typical Clos architecture:
 
 You can run multiple routing tables (one for in-band/data plane traffic
 and one for out-of-band/management plane traffic) on the same switch
-using [management VRF](/old/Management_VRF.html) (multiple routing
-tables and forwarding).
+using [management VRF](/old/Cumulus_Linux/Management_VRF.html) (multiple
+routing tables and forwarding).
 
 {{%notice note%}}
 
 BGP and static routing (IPv4 and IPv6) are supported within a VRF
 context. For more information, refer to [Virtual Routing and Forwarding
-- VRF](/old/Virtual_Routing_and_Forwarding_-_VRF.html).
+- VRF](/old/Cumulus_Linux/Virtual_Routing_and_Forwarding_-_VRF.html).
 
 {{%/notice%}}
 
@@ -2508,7 +2508,7 @@ INGRESS_INTF = swp1
 {{%notice note%}}
 
 For more information about ACLs, see [Netfilter
-(ACLs)](/old/Netfilter_-_ACLs.html).
+(ACLs)](/old/Cumulus_Linux/Netfilter_-_ACLs.html).
 
 {{%/notice%}}
 
@@ -2520,8 +2520,8 @@ an already established peer, are not supported in Cumulus Linux.
 ### Related Information
 
   - [Bidirectional forwarding
-    detection](/old/Bidirectional_Forwarding_Detection_-_BFD.html) (BFD)
-    and BGP
+    detection](/old/Cumulus_Linux/Bidirectional_Forwarding_Detection_-_BFD.html)
+    (BFD) and BGP
 
   - [Wikipedia entry for
     BGP](http://en.wikipedia.org/wiki/Border_Gateway_Protocol) (includes

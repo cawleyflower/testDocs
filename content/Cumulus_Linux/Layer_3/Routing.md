@@ -4,17 +4,17 @@ author: Unknown
 weight: 169
 pageID: 8362912
 aliases:
- - /old/Routing.html
+ - /old/Cumulus_Linux/Routing.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Routing
-
 This chapter discusses routing on switches running Cumulus Linux.
 
 ## Manage Static Routes
 
 You manage static routes using
-[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html) or the Cumulus
-Linux `ip route` command. The routes are added to the
+[NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html) or
+the Cumulus Linux `ip route` command. The routes are added to the
 [FRRouting](https://frrouting.org) routing table, and are then updated
 into the kernel routing table as well.
 
@@ -253,7 +253,7 @@ Algorithm Longest Prefix Match (ALPM). In ALPM mode, the hardware can
 store significantly more route entries.
 
 You can use
-[`cl-resource-query`](/old/Resource_Diagnostics_Using_cl-resource-query.html)
+[`cl-resource-query`](/old/Cumulus_Linux/Resource_Diagnostics_Using_cl-resource-query.html)
 to determine the current table sizes on a given switch.
 
 ### Forwarding Table Profiles
@@ -283,7 +283,7 @@ forwarding_table.profile = default
 ```
 
 After you specify a different profile, [restart
-`switchd`](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
+`switchd`](/old/Cumulus_Linux/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
 for the change to take effect. You can see the forwarding table profile
 when you run `cl-resource-query`.
 
@@ -312,8 +312,7 @@ use.
 
 The values in the following tables reflect results from our testing on
 the different platforms we support, and may differ from published
-manufacturers' specifications provided about these
-chipsets.
+manufacturers' specifications provided about these chipsets.
 
 {{%/notice%}}
 
@@ -386,11 +385,11 @@ cumulus@switch:~$ cat /usr/lib/python2.7/dist-packages/cumulus/__chip_config/mlx
 ```
 
 After you specify a different profile, [restart
-`switchd`](/old/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
+`switchd`](/old/Cumulus_Linux/Configuring_switchd.html#src-8362561_Configuringswitchd-restartswitchd)
 for the change to take effect.
 
 When [nonatomic
-updates](/old/Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-nonatomic)
+updates](/old/Cumulus_Linux/Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-nonatomic)
 are enabled (that is, the `acl.non_atomic_update_mode` is set to *TRUE*
 in `/etc/cumulus/switchd.conf` file), the maximum number of mroute and
 ACL entries for each profile are as follows:
@@ -403,7 +402,7 @@ ACL entries for each profile are as follows:
 | ipmc-max   | 13000          | 1000 (IPv6) or 2000 (IPv4) |
 
 When [nonatomic
-updates](/old/Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-nonatomic)
+updates](/old/Cumulus_Linux/Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-nonatomic)
 are disabled (that is, the `acl.non_atomic_update_mode` is set to
 *FALSE* in `/etc/cumulus/switchd.conf` file), the maximum number of
 mroute and ACL entries for each profile are as follows:
@@ -423,8 +422,7 @@ Static routes added via FRRouting can be deleted via Linux shell. This
 operation, while possible, should be avoided. Routes added by FRRouting
 should only be deleted by FRRouting, otherwise FRRouting might not be
 able to clean up all its internal state completely and incorrect routing
-can occur as a
-result.
+can occur as a result.
 
 ### Add IPv6 Default Route with src Address on eth0 Fails without Adding Delay
 

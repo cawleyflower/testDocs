@@ -4,23 +4,23 @@ author: Unknown
 weight: 257
 pageID: 8363010
 aliases:
- - /old/Anycast_Design_Guide.html
+ - /old/Cumulus_Linux/Anycast_Design_Guide.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Anycast Design Guide
-
 Cumulus Networks' [Routing on the
-Host](/old/https://docs.cumulusnetworks.com/display/ROH/Routing+on+the+Host)
+Host](/old/Cumulus_Linux/https://docs.cumulusnetworks.com/display/ROH/Routing+on+the+Host)
 provides the ability to run
-[OSPF](/old/Open_Shortest_Path_First_-_OSPF.html) or
-[BGP](/old/Border_Gateway_Protocol_-_BGP.html) directly on server hosts.
-This can enable a network architecture known as *anycast*, where many
-servers can provide the same service without needing layer 2 extensions
-or load balancer appliances.
+[OSPF](/old/Cumulus_Linux/Open_Shortest_Path_First_-_OSPF.html) or
+[BGP](/old/Cumulus_Linux/Border_Gateway_Protocol_-_BGP.html) directly on
+server hosts. This can enable a network architecture known as *anycast*,
+where many servers can provide the same service without needing layer 2
+extensions or load balancer appliances.
 
 Anycast is not a new protocol or protocol implementation and does not
 require any additional network configuration. Anycast leverages the
 [equal cost
-multipath](/old/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html)
+multipath](/old/Cumulus_Linux/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html)
 (ECMP) capabilities inherent in layer 3 networks to provide stateless
 load sharing services.
 
@@ -118,7 +118,7 @@ impact of network changes or failures.
 ## Resilient Hashing
 
 [Resilient
-hashing](/old/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html#src-8362929_EqualCostMultipathLoadSharing-HardwareECMP-resilient_hashing)
+hashing](/old/Cumulus_Linux/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html#src-8362929_EqualCostMultipathLoadSharing-HardwareECMP-resilient_hashing)
 provides a method to prevent failures from impacting the hash result of
 unrelated flows. However, resilient hashing does not prevent rehashing
 when new next hops are added.
@@ -177,7 +177,7 @@ Although resilient hashing can prevent rehashing on next hop failure, it
 cannot prevent rehashing on next hop addition.
 
 You can read more information on resilient hashing in the [ECMP
-chapter](/old/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html).
+chapter](/old/Cumulus_Linux/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP.html).
 
 ## Applications for Anycast
 

@@ -4,29 +4,29 @@ author: Unknown
 weight: 377
 pageID: 8362715
 aliases:
- - /old/LNV_Full_Example.html
+ - /old/Cumulus_Linux/LNV_Full_Example.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# LNV Full Example
-
 {{%notice warning%}}
 
 As of Cumulus Linux 3.7.4, the lightweight network virtualization
 feature (LNV) has been deprecated. The feature will be removed in
 Cumulus Linux 4.0. Cumulus Networks recommends you use [Ethernet virtual
 private network
-(EVPN)](/old/Ethernet_Virtual_Private_Network_-_EVPN.html) for network
-virtualization.
+(EVPN)](/old/Cumulus_Linux/Ethernet_Virtual_Private_Network_-_EVPN.html)
+for network virtualization.
 
 {{%/notice%}}
 
 Lightweight Network Virtualization (LNV) is a technique for deploying
-[VXLANs](/old/Network_Virtualization.html) without a central controller
-on bare metal switches. This a full example complete with diagram. Refer
-to the [Lightweight Network Virtualization
-chapter](/old/Lightweight_Network_Virtualization_Overview.html) for more
-detailed information. This full example uses the **recommended way** of
-deploying LNV, which is to use anycast to load balance the service
-nodes.
+[VXLANs](/old/Cumulus_Linux/Network_Virtualization.html) without a
+central controller on bare metal switches. This a full example complete
+with diagram. Refer to the [Lightweight Network Virtualization
+chapter](/old/Cumulus_Linux/Lightweight_Network_Virtualization_Overview.html)
+for more detailed information. This full example uses the **recommended
+way** of deploying LNV, which is to use anycast to load balance the
+service nodes.
 
 {{%notice note%}}
 
@@ -272,9 +272,9 @@ iface br-30
 
 The service nodes and registration nodes must all be routable between
 each other. The layer 3 fabric on Cumulus Linux can either be
-[BGP](/old/Border_Gateway_Protocol_-_BGP.html) or
-[OSPF](/old/Open_Shortest_Path_First_-_OSPF.html). In this example, OSPF
-is used to demonstrate full reachability.
+[BGP](/old/Cumulus_Linux/Border_Gateway_Protocol_-_BGP.html) or
+[OSPF](/old/Cumulus_Linux/Open_Shortest_Path_First_-_OSPF.html). In this
+example, OSPF is used to demonstrate full reachability.
 
 Here is the FRRouting configuration using OSPF:
 
@@ -564,52 +564,55 @@ svcnode_peers = 10.2.1.3
   - [en.wikipedia.org/wiki/Anycast](http://en.wikipedia.org/wiki/Anycast)
 
   - [Detailed LNV Configuration
-    Guide](/old/Lightweight_Network_Virtualization_Overview.html)
+    Guide](/old/Cumulus_Linux/Lightweight_Network_Virtualization_Overview.html)
 
   - [Cumulus Networks
     Training](http://cumulusnetworks.com/education/instructor-led-training/)
 
   - [Network virtualization chapter, Cumulus Linux user
-    guide](/old/Network_Virtualization.html)
+    guide](/old/Cumulus_Linux/Network_Virtualization.html)
     
       - [Static VXLAN
-        Configurations](/old/Static_VXLAN_Configurations.html)
+        Configurations](/old/Cumulus_Linux/Static_VXLAN_Configurations.html)
         
-          - [Static VXLAN Tunnels](/old/Static_VXLAN_Tunnels.html)
+          - [Static VXLAN
+            Tunnels](/old/Cumulus_Linux/Static_VXLAN_Tunnels.html)
         
           - [Static MAC Bindings with
-            VXLAN](/old/Static_MAC_Bindings_with_VXLAN.html)
+            VXLAN](/old/Cumulus_Linux/Static_MAC_Bindings_with_VXLAN.html)
     
       - [Ethernet Virtual Private Network -
-        EVPN](/old/Ethernet_Virtual_Private_Network_-_EVPN.html)
+        EVPN](/old/Cumulus_Linux/Ethernet_Virtual_Private_Network_-_EVPN.html)
     
       - [Lightweight Network Virtualization
-        Overview](/old/Lightweight_Network_Virtualization_Overview.html)
+        Overview](/old/Cumulus_Linux/Lightweight_Network_Virtualization_Overview.html)
         
-          - [LNV Full Example](/old/#)
+          - [LNV Full Example](/old/Cumulus_Linux/#)
     
-      - [VXLAN Active-Active Mode](/old/VXLAN_Active-Active_Mode.html)
+      - [VXLAN Active-Active
+        Mode](/old/Cumulus_Linux/VXLAN_Active-Active_Mode.html)
     
-      - [VXLAN Routing](/old/VXLAN_Routing.html)
+      - [VXLAN Routing](/old/Cumulus_Linux/VXLAN_Routing.html)
     
-      - [VXLAN Scale](/old/VXLAN_Scale.html)
+      - [VXLAN Scale](/old/Cumulus_Linux/VXLAN_Scale.html)
     
       - [Hybrid Cloud Connectivity with QinQ and
-        VXLANs](/old/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
+        VXLANs](/old/Cumulus_Linux/Hybrid_Cloud_Connectivity_with_QinQ_and_VXLANs.html)
     
-      - [Troubleshooting VXLANs](/old/Troubleshooting_VXLANs.html)
+      - [Troubleshooting
+        VXLANs](/old/Cumulus_Linux/Troubleshooting_VXLANs.html)
     
       - [Virtualization
-        Integrations](/old/Virtualization_Integrations.html)
+        Integrations](/old/Cumulus_Linux/Virtualization_Integrations.html)
         
           - [Integrating Hardware VTEPs with Midokura MidoNet and
-            OpenStack](/old/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
+            OpenStack](/old/Cumulus_Linux/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack.html)
         
           - [Integrating Hardware VTEPs with VMware
-            NSX-V](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
+            NSX-V](/old/Cumulus_Linux/Integrating_Hardware_VTEPs_with_VMware_NSX-V.html)
         
           - [Integrating Hardware VTEPs with VMware
-            NSX-MH](/old/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
+            NSX-MH](/old/Cumulus_Linux/Integrating_Hardware_VTEPs_with_VMware_NSX-MH.html)
         
           - [OVSDB Server High
-            Availability](/old/OVSDB_Server_High_Availability.html)
+            Availability](/old/Cumulus_Linux/OVSDB_Server_High_Availability.html)

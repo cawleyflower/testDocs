@@ -4,10 +4,10 @@ author: Unknown
 weight: 201
 pageID: 8362899
 aliases:
- - /old/Protocol_Independent_Multicast_-_PIM.html
+ - /old/Cumulus_Linux/Protocol_Independent_Multicast_-_PIM.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Protocol Independent Multicast - PIM
-
 Protocol Independent Multicast (PIM) is a multicast control plane
 protocol that advertises multicast sources and receivers over a routed
 layer 3 network. Layer 3 multicast relies on PIM to advertise
@@ -52,7 +52,7 @@ Cumulus Linux supports only PIM Sparse Mode.
 <td><p>Rendezvous Point (RP)</p></td>
 <td><p>The RP allows for the discovery of multicast sources and multicast receivers. The RP is responsible for sending PIM Register Stop messages to FHRs. The PIM RP address must be globally routable.</p>
 <p>{{%notice warning%}}</p>
-<p>Do not use a spine switch as an RP. If you are running <a href="/old/Border_Gateway_Protocol_-_BGP.html">BGP</a> on a spine switch and it is configured for allow-as in origin, BGP does not accept routes learned through other spines that do not originate on the spine itself. The RP must route to a multicast source. During a single failure scenario, this is not possible if the RP is on the spine. This also applies to Multicast Source Discovery Protocol (MSDP — <a href="/old/#">see below</a>).</p>
+<p>Do not use a spine switch as an RP. If you are running <a href="/old/Cumulus_Linux/Border_Gateway_Protocol_-_BGP.html">BGP</a> on a spine switch and it is configured for allow-as in origin, BGP does not accept routes learned through other spines that do not originate on the spine itself. The RP must route to a multicast source. During a single failure scenario, this is not possible if the RP is on the spine. This also applies to Multicast Source Discovery Protocol (MSDP — <a href="/old/Cumulus_Linux/#">see below</a>).</p>
 <p>{{%/notice%}}</p></td>
 </tr>
 <tr class="even">
@@ -861,11 +861,11 @@ swp1      *               239.2.2.2       no         yes   no         yes       
 
 ## PIM in a VRF
 
-[VRFs](/old/Virtual_Routing_and_Forwarding_-_VRF.html) divide the
-routing table on a per-tenant basis, ultimately providing for separate
-layer 3 networks over a single layer 3 infrastructure. With a VRF, each
-tenant has its own virtualized layer 3 network, so IP addresses can
-overlap between tenants.
+[VRFs](/old/Cumulus_Linux/Virtual_Routing_and_Forwarding_-_VRF.html)
+divide the routing table on a per-tenant basis, ultimately providing for
+separate layer 3 networks over a single layer 3 infrastructure. With a
+VRF, each tenant has its own virtualized layer 3 network, so IP
+addresses can overlap between tenants.
 
 PIM in a VRF enables PIM trees and multicast data traffic to run inside
 a layer 3 virtualized network, with a separate tree per domain or
@@ -1013,9 +1013,9 @@ Source          Group           Proto  Input      Output     TTL  Uptime
 ## BFD for PIM Neighbors
 
 You can use [bidirectional forward
-detection](/old/Bidirectional_Forwarding_Detection_-_BFD.html) (BFD) for
-PIM neighbors to quickly detect link failures. When you configure an
-interface, include the `pim bfd` option:
+detection](/old/Cumulus_Linux/Bidirectional_Forwarding_Detection_-_BFD.html)
+(BFD) for PIM neighbors to quickly detect link failures. When you
+configure an interface, include the `pim bfd` option:
 
 ``` 
                    
@@ -1249,7 +1249,7 @@ cumulus@switch:~$ cl-resource-query  | grep Mcast
 ```
 
 For Mellanox chipsets, refer to [TCAM Resource Profiles for Mellanox
-Switches](/old/Routing.html#src-8362912_Routing-tcam).
+Switches](/old/Cumulus_Linux/Routing.html#src-8362912_Routing-tcam).
 
 ### Verify MSDP Session State
 

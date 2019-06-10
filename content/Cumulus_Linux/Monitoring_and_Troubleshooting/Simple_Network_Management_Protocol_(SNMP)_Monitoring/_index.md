@@ -4,10 +4,10 @@ author: Unknown
 weight: 231
 pageID: 8362608
 aliases:
- - /old/Simple_Network_Management_Protocol_(SNMP)_Monitoring.html
+ - /old/Cumulus_Linux/Simple_Network_Management_Protocol_(SNMP)_Monitoring.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Simple Network Management Protocol (SNMP) Monitoring
-
 Cumulus Linux uses the open source Net-SNMP agent `snmpd`, version 5.7,
 which provides support for most of the common industry-wide MIBs,
 including interface counters and TCP/UDP IP stack data.
@@ -24,7 +24,7 @@ project name changed to `net-snmp` and became a fully-fledged
 collaborative open source project. The version used by Cumulus Networks
 is based on the latest `net-snmp` 5.7 branch with added custom MIBs and
 pass-through and pass-persist scripts ([see
-below](/old/#src-8362608_safe-id-U2ltcGxlTmV0d29ya01hbmFnZW1lbnRQcm90b2NvbChTTk1QKU1vbml0b3JpbmctcGFzc3BlcnNpc3Q)
+below](/old/Cumulus_Linux/#src-8362608_safe-id-U2ltcGxlTmV0d29ya01hbmFnZW1lbnRQcm90b2NvbChTTk1QKU1vbml0b3JpbmctcGFzc3BlcnNpc3Q)
 for more information on pass persist scripts).
 
 ## Introduction to Simple Network Management Protocol
@@ -658,17 +658,18 @@ on the switch.
 
 ### Configure SNMP with Management VRF (used prior to Cumulus Linux 3.6)
 
-When you configure [Management VRF](/old/Management_VRF.html), you need
-to be aware of the interface IP addresses on which SNMP is listening. If
-you set listening-address to all, the `snmpd` daemon responds to
-incoming requests on all interfaces that are in the default VRF. If you
-prefer to listen on a limited number of IP addresses, Cumulus Networks
-recommends that you run only one instance of the `snmpd` daemon and
-specify the VRF name along with the listening-address. You can configure
-IP addresses in different VRFs and a single SNMP daemon listens on
-multiple IP addresses each with its own VRF. Because SNMP has native VRF
-awareness, using systemctl commands to manage snmpd in different VRFs is
-no longer necessary.
+When you configure [Management
+VRF](/old/Cumulus_Linux/Management_VRF.html), you need to be aware of
+the interface IP addresses on which SNMP is listening. If you set
+listening-address to all, the `snmpd` daemon responds to incoming
+requests on all interfaces that are in the default VRF. If you prefer to
+listen on a limited number of IP addresses, Cumulus Networks recommends
+that you run only one instance of the `snmpd` daemon and specify the VRF
+name along with the listening-address. You can configure IP addresses in
+different VRFs and a single SNMP daemon listens on multiple IP addresses
+each with its own VRF. Because SNMP has native VRF awareness, using
+systemctl commands to manage snmpd in different VRFs is no longer
+necessary.
 
 SNMP configuration in NCLU is VRF aware so you can configure the `snmpd`
 daemon to listen to incoming SNMP requests on a particular IP address
@@ -855,8 +856,9 @@ To enable read-only querying by a client:
 
 ## Enable SNMP Support for FRRouting
 
-SNMP supports Routing MIBs in [FRRouting](/old/FRRouting_Overview.html).
-To enable SNMP support for FRRouting, you need to:
+SNMP supports Routing MIBs in
+[FRRouting](/old/Cumulus_Linux/FRRouting_Overview.html). To enable SNMP
+support for FRRouting, you need to:
 
   - Configure [AgentX](http://www.net-snmp.org/docs/README.agentx.html)
     (ASX) access in FRRouting
@@ -1764,7 +1766,7 @@ for them. The overall Cumulus Linux MIB is defined in the
 <p><a href="https://cumulusnetworks.com/static/mibs/OSPFv2-MIB.txt" class="external-link">OSPFv2-MIB</a>,</p>
 <p><a href="https://cumulusnetworks.com/static/mibs/OSPFv3-MIB.txt" class="external-link">OSPFv3-MIB</a>,</p>
 <p><a href="https://cumulusnetworks.com/static/mibs/RIPv2-MIB.txt" class="external-link">RIPv2-MIB</a><span id="src-8362608_safe-id-U2ltcGxlTmV0d29ya01hbmFnZW1lbnRQcm90b2NvbChTTk1QKU1vbml0b3JpbmctYmdwNA"></span></p></td>
-<td><p>You can enable FRRouting SNMP support to provide support for OSPF-MIB (RFC-1850), OSPFV3-MIB (RFC-5643), and BGP4-MIB (RFC-1657). See the <a href="/old/#src-8362608_safe-id-U2ltcGxlTmV0d29ya01hbmFnZW1lbnRQcm90b2NvbChTTk1QKU1vbml0b3JpbmctZnJy">FRRouting section</a> above.</p></td>
+<td><p>You can enable FRRouting SNMP support to provide support for OSPF-MIB (RFC-1850), OSPFV3-MIB (RFC-5643), and BGP4-MIB (RFC-1657). See the <a href="/old/Cumulus_Linux/#src-8362608_safe-id-U2ltcGxlTmV0d29ya01hbmFnZW1lbnRQcm90b2NvbChTTk1QKU1vbml0b3JpbmctZnJy">FRRouting section</a> above.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="https://cumulusnetworks.com/static/mibs/CUMULUS-COUNTERS-MIB.txt" class="external-link">CUMULUS-COUNTERS-MIB</a></p></td>
@@ -1772,7 +1774,7 @@ for them. The overall Cumulus Linux MIB is defined in the
 </tr>
 <tr class="odd">
 <td><p><a href="https://cumulusnetworks.com/static/mibs/CUMULUS-POE-MIB.txt" class="external-link">CUMULUS-POE-MIB</a></p></td>
-<td><p>The Cumulus Networks custom <a href="/old/Power_over_Ethernet_-_PoE.html">Power over Ethernet</a> PoE MIB defined in the <code>/usr/share/snmp/mibs/Cumulus-POE-MIB.txt</code> file. For devices that provide PoE, this provides users with the system wide power information in <code>poeSystemValues</code> as well as per interface <code>PoeObjectsEntry</code> values for the <code>poeObjectsTable</code>. Most of this information comes from the <code>poectl</code> command. To enable this MIB, uncomment the following line in <code>/etc/snmp/snmpd.conf</code>:</p>
+<td><p>The Cumulus Networks custom <a href="/old/Cumulus_Linux/Power_over_Ethernet_-_PoE.html">Power over Ethernet</a> PoE MIB defined in the <code>/usr/share/snmp/mibs/Cumulus-POE-MIB.txt</code> file. For devices that provide PoE, this provides users with the system wide power information in <code>poeSystemValues</code> as well as per interface <code>PoeObjectsEntry</code> values for the <code>poeObjectsTable</code>. Most of this information comes from the <code>poectl</code> command. To enable this MIB, uncomment the following line in <code>/etc/snmp/snmpd.conf</code>:</p>
 <pre><code>                   
 #pass_persist .1.3.6.1.4.1.40310.3 /usr/share/snmp/cl_poe_pp.py
    
@@ -1843,7 +1845,7 @@ SNMPDOPTS=&#39;-LS 0-4 d -Lf /dev/null -u snmp -g snmp -I -smux -p /run/snmpd.pi
 </tr>
 <tr class="even">
 <td><p><a href="https://cumulusnetworks.com/static/mibs/LLDP-MIB.txt" class="external-link">LLDP-MIB</a></p></td>
-<td><p>Layer 2 neighbor information from <code>lldpd</code> (you need to <a href="/old/Link_Layer_Discovery_Protocol.html#src-8362650_LinkLayerDiscoveryProtocol-snmp">enable the SNMP subagent</a> in LLDP). You need to start <code>lldpd</code> with the <code>-x</code> option to enable connectivity to <code>snmpd</code> (AgentX).</p></td>
+<td><p>Layer 2 neighbor information from <code>lldpd</code> (you need to <a href="/old/Cumulus_Linux/Link_Layer_Discovery_Protocol.html#src-8362650_LinkLayerDiscoveryProtocol-snmp">enable the SNMP subagent</a> in LLDP). You need to start <code>lldpd</code> with the <code>-x</code> option to enable connectivity to <code>snmpd</code> (AgentX).</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="https://cumulusnetworks.com/static/mibs/LM-SENSORS-MIB.txt" class="external-link">LM-SENSORS MIB</a></p></td>
@@ -1935,12 +1937,12 @@ to Net-SNMP. The scripts are stored in `/usr/share/snmp` and include:
 All the scripts are enabled by default in Cumulus Linux, except for:
 
   - `bgp4_pp.py`, which is now handled by
-    [FRRouting](/old/FRRouting_Overview.html) instead of Quagga, so
-    monitoring has changed accordingly.
+    [FRRouting](/old/Cumulus_Linux/FRRouting_Overview.html) instead of
+    Quagga, so monitoring has changed accordingly.
 
   - `cl_poe_pp.py`, which is disabled by default as only certain
     platforms that Cumulus Linux supports are capable of doing [Power
-    over Ethernet](/old/Power_over_Ethernet_-_PoE.html).
+    over Ethernet](/old/Cumulus_Linux/Power_over_Ethernet_-_PoE.html).
 
 ## Troubleshooting
 

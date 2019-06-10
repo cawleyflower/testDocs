@@ -4,15 +4,15 @@ author: Unknown
 weight: 445
 pageID: 8362601
 aliases:
- - /old/Troubleshooting_the_etc_Directory.html
+ - /old/Cumulus_Linux/Troubleshooting_the_etc_Directory.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Troubleshooting the etc Directory
-
-The [`cl-support`](/old/Understanding_the_cl-support_Output_File.html)
+The
+[`cl-support`](/old/Cumulus_Linux/Understanding_the_cl-support_Output_File.html)
 script replicates the /`etc` directory.
 
-Files that `cl-support` deliberately excludes
-are:
+Files that `cl-support` deliberately excludes are:
 
 | File              | Description                                                                                                                                    |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |

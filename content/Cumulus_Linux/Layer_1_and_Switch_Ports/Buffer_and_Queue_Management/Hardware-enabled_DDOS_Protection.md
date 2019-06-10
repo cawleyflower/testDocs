@@ -4,10 +4,10 @@ author: Unknown
 weight: 323
 pageID: 8363034
 aliases:
- - /old/Hardware-enabled_DDOS_Protection.html
+ - /old/Cumulus_Linux/Hardware-enabled_DDOS_Protection.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Hardware-enabled DDOS Protection
-
 It is crucial to also protect a switch’s control plane to ensure the
 proper control plane applications have access to the switch’s CPU.
 Failure to do so could increase vulnerabilities to a Denial of Service
@@ -84,22 +84,22 @@ Spectrum ASICs.
 
 2.  Enable DOS prevention checks by changing the following value to
     `true`, and save the file:
-
-    ```
-
+    
+    ``` 
+                       
     # To turn on/off Denial of Service (DOS) prevention checks
     dos_enable = true
-
-
+       
+        
     ```
 
 3.  Open the
     `/usr/lib/python2.7/dist-packages/cumulus/__chip_config/bcm/datapath.conf`
     file in a text editor and set the following checks to *true*, and
     save the file:
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@switch:~$ sudo nano /usr/lib/python2.7/dist-packages/cumulus/__chip_config/bcm/datapath.conf
     # Enabling/disabling Denial of service (DOS) prevetion checks
     # To change the default configuration:
@@ -118,41 +118,41 @@ Spectrum ASICs.
     dos.icmpv4_length = true
     dos.icmpv6_length = true
     dos.ipv6_min_frag = true
-
-
+       
+        
     ```
-
-    {{% notice note %}}
-
+    
+    {{%notice note%}}
+    
     Configuring any of the following settings affects the [BFD
-    echo](/old/Bidirectional_Forwarding_Detection_-_BFD.html) function.
-    For example, if you enable `dos.udp_ports_eq`, all the BFD packets
-    will get dropped because the BFD protocol uses the same source and
-    destination UDP ports.
-
+    echo](/old/Cumulus_Linux/Bidirectional_Forwarding_Detection_-_BFD.html)
+    function. For example, if you enable `dos.udp_ports_eq`, all the BFD
+    packets will get dropped because the BFD protocol uses the same
+    source and destination UDP ports.
+    
     dos.sip\_eq\_dip
-
+    
     dos.smac\_eq\_dmac
-
+    
     dos.tcp\_ctrl0\_seq0
-
+    
     dos.tcp\_flags\_fup\_seq0
-
+    
     dos.tcp\_flags\_syn\_fin
-
+    
     dos.tcp\_ports\_eq
-
+    
     dos.tcp\_syn\_frag
-
+    
     dos.udp\_ports\_eq
-
-    {{% /notice %}}
+    
+    {{%/notice%}}
 
 4.  Restart `switchd` to enable DDOS protection:
-
-    ```
-
+    
+    ``` 
+                       
     cumulus@switch:~$ sudo systemctl restart switchd.service
-
-
+       
+        
     ```

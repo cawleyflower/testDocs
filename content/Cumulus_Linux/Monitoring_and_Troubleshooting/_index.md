@@ -4,10 +4,10 @@ author: Unknown
 weight: 25
 pageID: 8362592
 aliases:
- - /old/Monitoring_and_Troubleshooting.html
+ - /old/Cumulus_Linux/Monitoring_and_Troubleshooting.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Monitoring and Troubleshooting
-
 This chapter introduces monitoring and troubleshooting Cumulus Linux.
 
 ## Serial Console
@@ -173,7 +173,7 @@ You can use `cl-support` to generate a single export file that contains
 various details and the configuration from a switch. This is useful for
 remote debugging and troubleshooting. For more information about
 `cl-support`, read [Understanding the cl-support Output
-File](/old/Understanding_the_cl-support_Output_File.html).
+File](/old/Cumulus_Linux/Understanding_the_cl-support_Output_File.html).
 
 You should run `cl-support` before you submit a support request to
 Cumulus Networks as this file helps in the investigation of issues.
@@ -202,57 +202,61 @@ Options:
 The links below discuss more specific monitoring topics.
 
   - [Single User Mode - Boot
-    Recovery](/old/Single_User_Mode_-_Boot_Recovery.html)
+    Recovery](/old/Cumulus_Linux/Single_User_Mode_-_Boot_Recovery.html)
 
   - [Resource Diagnostics Using
-    cl-resource-query](/old/Resource_Diagnostics_Using_cl-resource-query.html)
+    cl-resource-query](/old/Cumulus_Linux/Resource_Diagnostics_Using_cl-resource-query.html)
 
-  - [Monitoring System Hardware](/old/Monitoring_System_Hardware.html)
+  - [Monitoring System
+    Hardware](/old/Cumulus_Linux/Monitoring_System_Hardware.html)
     
       - [Network Switch Port LED and Status LED
-        Guidelines](/old/Network_Switch_Port_LED_and_Status_LED_Guidelines.html)
+        Guidelines](/old/Cumulus_Linux/Network_Switch_Port_LED_and_Status_LED_Guidelines.html)
 
   - [Monitoring Virtual Device
-    Counters](/old/Monitoring_Virtual_Device_Counters.html)
+    Counters](/old/Cumulus_Linux/Monitoring_Virtual_Device_Counters.html)
 
-  - [ASIC Monitoring](/old/ASIC_Monitoring.html)
+  - [ASIC Monitoring](/old/Cumulus_Linux/ASIC_Monitoring.html)
 
   - [Understanding the cl-support Output
-    File](/old/Understanding_the_cl-support_Output_File.html)
+    File](/old/Cumulus_Linux/Understanding_the_cl-support_Output_File.html)
     
-      - [Troubleshooting Log Files](/old/Troubleshooting_Log_Files.html)
+      - [Troubleshooting Log
+        Files](/old/Cumulus_Linux/Troubleshooting_Log_Files.html)
     
       - [Troubleshooting the etc
-        Directory](/old/Troubleshooting_the_etc_Directory.html)
+        Directory](/old/Cumulus_Linux/Troubleshooting_the_etc_Directory.html)
 
   - [Troubleshooting Network
-    Interfaces](/old/Troubleshooting_Network_Interfaces.html)
+    Interfaces](/old/Cumulus_Linux/Troubleshooting_Network_Interfaces.html)
     
       - [Monitoring Interfaces and Transceivers Using
-        ethtool](/old/Monitoring_Interfaces_and_Transceivers_Using_ethtool.html)
+        ethtool](/old/Cumulus_Linux/Monitoring_Interfaces_and_Transceivers_Using_ethtool.html)
     
       - [Monitoring Interfaces and Transceivers Using ethtool — ethtool
         Counter
-        Definitions](/old/Monitoring_Interfaces_and_Transceivers_Using_ethtool_—%C2%A0ethtool_Counter_Definitions.html)
+        Definitions](/old/Cumulus_Linux/Monitoring_Interfaces_and_Transceivers_Using_ethtool_—%C2%A0ethtool_Counter_Definitions.html)
 
-  - [Network Troubleshooting](/old/Network_Troubleshooting.html)
+  - [Network
+    Troubleshooting](/old/Cumulus_Linux/Network_Troubleshooting.html)
     
       - [Using NCLU to Troubleshoot Your Network
-        Configuration](/old/Using_NCLU_to_Troubleshoot_Your_Network_Configuration.html)
+        Configuration](/old/Cumulus_Linux/Using_NCLU_to_Troubleshoot_Your_Network_Configuration.html)
     
       - [Monitoring System Statistics and Network Traffic with
-        sFlow](/old/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow.html)
+        sFlow](/old/Cumulus_Linux/Monitoring_System_Statistics_and_Network_Traffic_with_sFlow.html)
 
   - [Simple Network Management Protocol (SNMP)
-    Monitoring](/old/Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html)
+    Monitoring](/old/Cumulus_Linux/Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html)
     
       - [Using Nutanix Prism as a Monitoring
-        Tool](/old/Using_Nutanix_Prism_as_a_Monitoring_Tool.html)
+        Tool](/old/Cumulus_Linux/Using_Nutanix_Prism_as_a_Monitoring_Tool.html)
 
-  - [Monitoring Best Practices](/old/Monitoring_Best_Practices.html)
+  - [Monitoring Best
+    Practices](/old/Cumulus_Linux/Monitoring_Best_Practices.html)
 
   - [switchd Log Message
-    Reference](/old/switchd_Log_Message_Reference.html)
+    Reference](/old/Cumulus_Linux/switchd_Log_Message_Reference.html)
 
   - [FRRouting Log Message
-    Reference](/old/FRRouting_Log_Message_Reference.html)
+    Reference](/old/Cumulus_Linux/FRRouting_Log_Message_Reference.html)

@@ -4,13 +4,13 @@ author: Unknown
 weight: 217
 pageID: 8362593
 aliases:
- - /old/Resource_Diagnostics_Using_cl-resource-query.html
+ - /old/Cumulus_Linux/Resource_Diagnostics_Using_cl-resource-query.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Resource Diagnostics Using cl-resource-query
-
 You can use the `cl-resource-query` command to retrieve information
 about host entries, MAC entries, layer 2 and layer 3 routes, and
-[ECMP](/old/Network_Topology.html#src-8362915_NetworkTopology-load_balancing)
+[ECMP](/old/Cumulus_Linux/Network_Topology.html#src-8362915_NetworkTopology-load_balancing)
 routes that are in use. Because Cumulus Linux synchronizes routes
 between the kernel and the switching silicon, if the required resource
 pools in hardware fill up, new kernel routes can cause existing routes
@@ -122,7 +122,7 @@ ACL L4 port range checkers:             2,   8% of maximum value     24
 Ingress ACL and Egress ACL entries show the counts in single wide (*not*
 double-wide). For information about ACL entries, see [Estimate the
 Number of ACL
-Rules](/old/Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-estimate-rules).
+Rules](/old/Cumulus_Linux/Netfilter_-_ACLs.html#src-8362563_Netfilter-ACLs-estimate-rules).
 
 {{%/notice%}}
 

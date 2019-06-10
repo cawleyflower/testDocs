@@ -4,12 +4,11 @@ author: Unknown
 weight: 219
 pageID: 8362594
 aliases:
- - /old/Monitoring_System_Hardware.html
+ - /old/Cumulus_Linux/Monitoring_System_Hardware.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Monitoring System Hardware
-
-You monitor system hardware in these ways,
-    using:
+You monitor system hardware in these ways, using:
 
   - `decode-syseeprom`
 
@@ -17,7 +16,7 @@ You monitor system hardware in these ways,
 
   - `smond`
 
-  - [Net-SNMP](/old/Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html)
+  - [Net-SNMP](/old/Cumulus_Linux/Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html)
 
   - watchdog
 
@@ -56,8 +55,7 @@ CRC-32               0xFE   4 0x96543BC5
 
 ### Command Options
 
-Usage: `/usr/cumulus/bin/decode-syseeprom [-a][-r][-s
-[args]][-t]`
+Usage: `/usr/cumulus/bin/decode-syseeprom [-a][-r][-s [args]][-t]`
 
 | Option       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -120,8 +118,7 @@ number of sensors.
 
 The following table shows the `sensors` command options.
 
-Usage: `sensors [OPTION]...
-[CHIP]...`
+Usage: `sensors [OPTION]... [CHIP]...`
 
 | Option             | Description                                                                                                                                                   |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -151,7 +148,7 @@ printed. Example chip names include:
 ## Monitor Switch Hardware Using SNMP
 
 The Net-SNMP documentation is discussed
-[here](/old/Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html).
+[here](/old/Cumulus_Linux/Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html).
 
 ## Monitor System Units Using smond
 
@@ -225,8 +222,7 @@ PSU1:  OK
 
 The following table shows the `smonctl` command options.
 
-Usage: `smonctl [OPTION]...
-[CHIP]...`
+Usage: `smonctl [OPTION]... [CHIP]...`
 
 | Option                      | Description                              |
 | --------------------------- | ---------------------------------------- |

@@ -4,10 +4,10 @@ author: Unknown
 weight: 155
 pageID: 9014338
 aliases:
- - /old/Troubleshooting_VXLANs.html
+ - /old/Cumulus_Linux/Troubleshooting_VXLANs.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Troubleshooting VXLANs
-
 This topic discusses various ways you can verify and troubleshoot
 VXLANs.
 

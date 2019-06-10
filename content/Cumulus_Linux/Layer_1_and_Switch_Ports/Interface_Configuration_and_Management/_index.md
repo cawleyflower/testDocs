@@ -4,15 +4,15 @@ author: Unknown
 weight: 91
 pageID: 8363023
 aliases:
- - /old/Interface_Configuration_and_Management.html
+ - /old/Cumulus_Linux/Interface_Configuration_and_Management.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Interface Configuration and Management
-
 `ifupdown` is the network interface manager for Cumulus Linux. Cumulus
 Linux uses an updated version of this tool, `ifupdown2`.
 
 For more information on network interfaces, see [Switch Port
-Attributes](/old/Switch_Port_Attributes.html).
+Attributes](/old/Cumulus_Linux/Switch_Port_Attributes.html).
 
 {{%notice info%}}
 
@@ -137,14 +137,16 @@ cumulus@switch:~$ sudo ifreload -a
     
 ```
 
-If you are using [Management VRF](/old/Management_VRF.html), you can use
-the special interface class called *mgmt*, and put the management
-interface into that class.
+If you are using [Management
+VRF](/old/Cumulus_Linux/Management_VRF.html), you can use the special
+interface class called *mgmt*, and put the management interface into
+that class.
 
 {{%notice warning%}}
 
 The mgmt interface class is not supported if you are configuring Cumulus
-Linux using [NCLU](/old/Network_Command_Line_Utility_-_NCLU.html).
+Linux using
+[NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html).
 
 {{%/notice%}}
 
@@ -411,16 +413,18 @@ Linux configuration tools, most notably `ifupdown2` and its predecessor
 `ifupdown`, recognize such a name as a VLAN interface name.
 
 A VLAN subinterface only receives traffic
-[tagged](/old/VLAN_Tagging.html) for that VLAN, so swp1.100 only
-receives packets tagged with VLAN 100 on switch port swp1. Similarly,
-any transmits from swp1.100 result in tagging the packet with VLAN 100.
+[tagged](/old/Cumulus_Linux/VLAN_Tagging.html) for that VLAN, so
+swp1.100 only receives packets tagged with VLAN 100 on switch port swp1.
+Similarly, any transmits from swp1.100 result in tagging the packet with
+VLAN 100.
 
-For an [MLAG](/old/Multi-Chassis_Link_Aggregation_-_MLAG.html)
+For an
+[MLAG](/old/Cumulus_Linux/Multi-Chassis_Link_Aggregation_-_MLAG.html)
 deployment, the peerlink interface that connects the two switches in the
 MLAG pair has a VLAN subinterface named 4094 by default, provided you
 configured the subinterface with
-[NCLU](/old/Network_Command_Line_Utility_-_NCLU.html). The peerlink.4094
-subinterface only receives traffic tagged for VLAN 4094.
+[NCLU](/old/Cumulus_Linux/Network_Command_Line_Utility_-_NCLU.html). The
+peerlink.4094 subinterface only receives traffic tagged for VLAN 4094.
 
 ## ifup and Upper (Parent) Interfaces
 
@@ -689,7 +693,7 @@ reload the configuration with `ifreload -a`. If this happens, you must
 shut down and restart the interface with `ifup` and `ifdown`, or
 manually delete superfluous addresses with `ip address delete
 specify.ip.address.here/mask dev DEVICE`. See also the [Caveats and
-Errata](/old/#src-8363023_InterfaceConfigurationandManagement-caveats)
+Errata](/old/Cumulus_Linux/#src-8363023_InterfaceConfigurationandManagement-caveats)
 section below for some cautions about using multiple `iface` stanzas for
 the same interface.
 
@@ -1039,14 +1043,13 @@ hypervisor_port_1
 ```
 
 Interface descriptions also appear in the
-[SNMP](/old/Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html)
+[SNMP](/old/Cumulus_Linux/Simple_Network_Management_Protocol_\(SNMP\)_Monitoring.html)
 OID
 [IF-MIB::ifAlias](https://cumulusnetworks.com/static/mibs/IF-MIB.txt).
 
 {{%notice note%}}
 
-Aliases are limited to 256
-characters.
+Aliases are limited to 256 characters.
 
 {{%/notice%}}
 

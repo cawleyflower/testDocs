@@ -4,10 +4,10 @@ author: Unknown
 weight: 181
 pageID: 8362922
 aliases:
- - /old/Open_Shortest_Path_First_-_OSPF.html
+ - /old/Cumulus_Linux/Open_Shortest_Path_First_-_OSPF.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Open Shortest Path First - OSPF
-
 OSPF maintains the view of the network topology conceptually as a
 directed graph. Each router represents a vertex in the graph. Each link
 between neighboring routers represents a unidirectional edge and each
@@ -33,7 +33,7 @@ protocol’s correctness.
 This topic describes OSPFv2, which is a [link-state routing
 protocol](http://en.wikipedia.org/wiki/Link-state_routing_protocol) for
 IPv4. For IPv6 commands, refer to [Open Shortest Path First v3 -
-OSPFv3](/old/Open_Shortest_Path_First_v3_-_OSPFv3.html)
+OSPFv3](/old/Cumulus_Linux/Open_Shortest_Path_First_v3_-_OSPFv3.html)
 
 ## Scalability and Areas
 
@@ -82,8 +82,8 @@ To configure OSPF, you need to:
 ### Enable the OSPF and Zebra Daemons
 
 To enable OSPF, enable the `zebra` and `ospf` daemons, as described in
-[Configuring FRRouting](/old/Configuring_FRRouting.html), then start the
-FRRouting service:
+[Configuring FRRouting](/old/Cumulus_Linux/Configuring_FRRouting.html),
+then start the FRRouting service:
 
 ``` 
                    
@@ -363,8 +363,7 @@ cumulus@switch:~$ net add ospf area 0.0.0.1 stub no-summary
     
 ```
 
-Here is a brief tabular summary of the area type
-differences:
+Here is a brief tabular summary of the area type differences:
 
 | Type                  | Behavior                                                                            |
 | --------------------- | ----------------------------------------------------------------------------------- |
@@ -550,7 +549,7 @@ Don't specify a process ID unless you are using multi-instance OSPF.
 {{%notice note%}}
 
 If you disabled the
-[integrated](/old/Configuring_FRRouting.html#src-8362919_ConfiguringFRRouting-integrated_cfg)
+[integrated](/old/Cumulus_Linux/Configuring_FRRouting.html#src-8362919_ConfiguringFRRouting-integrated_cfg)
 FRRouting configuration, you must create a separate `ospfd`
 configuration file for each instance. The `ospfd.conf` file must include
 the instance ID in the file name. Continuing with our example, you would
@@ -839,9 +838,8 @@ lists all of the OSPF debug options.
 ## Related Information
 
   - [Bidirectional forwarding
-    detection](/old/Bidirectional_Forwarding_Detection_-_BFD.html) (BFD)
-    and
-    OSPF
+    detection](/old/Cumulus_Linux/Bidirectional_Forwarding_Detection_-_BFD.html)
+    (BFD) and OSPF
 
   - [en.wikipedia.org/wiki/Open\_Shortest\_Path\_First](http://en.wikipedia.org/wiki/Open_Shortest_Path_First)
 

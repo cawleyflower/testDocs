@@ -1,8 +1,11 @@
-let elesSections = document.querySelectorAll('.cn-book-section-container')
-elesSections.forEach(node => {
-  if(node.querySelector('.active') != null){
-    node.setAttribute('class', '.cn-book-section-container expand')
-  }else{
+document.querySelectorAll('.cn-book-section-container').forEach(node => {
+  // if(node.querySelector('.active') != null){
+  //   node.setAttribute('class', '.cn-book-section-container expand')
+  // }else{
+  //   node.setAttribute('class', '.cn-book-section-container collapse')
+  // }
+
+  if(node.querySelector('.active') == null){
     node.setAttribute('class', '.cn-book-section-container collapse')
   }
 
@@ -35,6 +38,6 @@ elesSections.forEach(node => {
   let par = node.parentNode
   let lnk = par.querySelector('a')
   if(par.tagName == 'LI'){
-    par.insertBefore(eleToggler, lnk)
+    lnk.insertAdjacentElement('afterbegin',eleToggler)
   }
 })

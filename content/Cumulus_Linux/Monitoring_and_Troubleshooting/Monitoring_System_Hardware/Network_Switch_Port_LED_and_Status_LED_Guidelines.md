@@ -4,10 +4,10 @@ author: Unknown
 weight: 431
 pageID: 8362595
 aliases:
- - /old/Network_Switch_Port_LED_and_Status_LED_Guidelines.html
+ - /old/Cumulus_Linux/Network_Switch_Port_LED_and_Status_LED_Guidelines.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Network Switch Port LED and Status LED Guidelines
-
 Data centers today have a large number of network switches manufactured
 by different hardware vendors running NOSes (network operating system)
 from different providers. This chapter provides a set of guidelines for
@@ -66,8 +66,7 @@ activity etc.. Here are the requirements for these LEDs
       - **Blinking amber** implies a blink rate of 33ms. *Slow blinking
         amber* indicates a blink rate of 500 ms, with a 50% on/off duty
         cycle. In other words, a slow blinking amber LED is amber for
-        500 ms and then off for
-        500ms.
+        500 ms and then off for 500ms.
         
         | Activity            | Max Speed indication | Lower Speed Indication |
         | ------------------- | -------------------- | ---------------------- |

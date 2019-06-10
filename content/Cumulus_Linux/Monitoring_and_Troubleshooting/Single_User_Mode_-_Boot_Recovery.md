@@ -4,10 +4,10 @@ author: Unknown
 weight: 215
 pageID: 8362606
 aliases:
- - /old/Single_User_Mode_-_Boot_Recovery.html
+ - /old/Cumulus_Linux/Single_User_Mode_-_Boot_Recovery.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# Single User Mode - Boot Recovery
-
 Use single user mode to assist in troubleshooting system boot issues or
 for password recovery. To enter single user mode, follow the steps
 below.

@@ -4,10 +4,10 @@ author: Unknown
 weight: 199
 pageID: 8362966
 aliases:
- - /old/GRE_Tunneling.html
+ - /old/Cumulus_Linux/GRE_Tunneling.html
+imgData: Cumulus_Linux
+siteSlug: Cumulus_Linux
 ---
-# GRE Tunneling
-
 {{%notice warning%}}
 
 GRE Tunneling is an [early access
