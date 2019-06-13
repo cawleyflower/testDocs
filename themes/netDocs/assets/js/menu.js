@@ -10,4 +10,22 @@
   burgerMenu.addEventListener('click', function() {
     siteNav.classList.toggle('menu-opened');
   });
+
+  toggleDropdown = (elem) => {
+    elem.parentNode.classList.toggle('show');
+  }
+
+  hideDropdown = () => {
+    var elem = document.querySelector('.dropdown');
+    if (elem.classList.contains('show')) elem.classList.remove('show');
+  }
+
+  document.addEventListener('click', function(e) {
+    var target = e.target;
+    if (target.closest('.dropdown')){ 
+      toggleDropdown(target); 
+    }else {
+      hideDropdown();
+    }
+  },false);
 })()
