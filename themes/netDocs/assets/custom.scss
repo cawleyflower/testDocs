@@ -483,6 +483,54 @@ div.notices.note>*:first-child:after {
   left: 62px;
 }
 
+div.notices.tip {
+  background: rgba(230, 249, 230, 0.9);
+  border: 1px solid #5cb85c;
+  border-radius: 0;
+  margin: 1.99rem 0;
+  padding: 1.764rem;
+
+  pre {
+    background: transparent;
+    border: 0;
+    padding: 0;
+  }
+
+  p {
+    color: $cn-limited-spruce;
+    font-size: .882rem;
+    line-height: 1.764rem;
+    padding: 1.6rem 0 0;
+  }
+
+  a {
+    color: #6ab0de;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+div.notices.tip>*:first-child:before {
+  content: '';
+  background-image: url(/icons/check-circle.png);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  top: 30px;
+  left: 30px;
+}
+
+div.notices.tip>*:first-child:after {
+  font-size: .765rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  top: 26px;
+  left: 62px;
+}
+
 .book-toc>button {
   padding: 0 8px 15px;
   top: 33px;
