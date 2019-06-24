@@ -381,6 +381,8 @@ action(type="omfwd" Target="10.0.0.1" Device="mgmt" Port="514" Protocol="udp")
     
 ```
 
+<details>
+
 ### Rate-limiting syslog Messages
 
 If you want to limit the number of `syslog` messages that can be written
@@ -433,6 +435,8 @@ root@leaf1:mgmt-vrf:/home/cumulus# tail -n 60 /var/log/syslog
    
     
 ```
+
+</details>
 
 ### Harmless syslog Error: Failed to reset devices.list
 

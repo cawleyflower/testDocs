@@ -93,6 +93,8 @@ Linux.
 
 ### Bootstrapping the OVSDB Server and VTEP
 
+<details>
+
 #### Automating with the Bootstrap Script
 
 The `vtep-bootstrap` script is available so you can do the bootstrapping
@@ -146,6 +148,8 @@ cumulus@switch:~$ sudo vtep-ctl del-manager
 ```
 
 {{%/notice%}}
+
+</details>
 
 #### Manually Bootstrapping
 
@@ -658,6 +662,8 @@ mcast-mac-remote
     
 ```
 
+<details>
+
 #### Getting Open Vswitch Database (OVSDB) Data
 
 The `ovsdb-client dump` command is large, but shows all of the
@@ -771,6 +777,8 @@ MAC _uuid ipaddr locator logical_switch
    
     
 ```
+
+</details>
 
 <article id="html-search-results" class="ht-content" style="display: none;">
 

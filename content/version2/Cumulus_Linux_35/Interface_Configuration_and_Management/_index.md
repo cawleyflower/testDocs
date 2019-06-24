@@ -248,6 +248,8 @@ The loopback interface *lo* must always be specified in
 
 {{%/notice%}}
 
+<details>
+
 ## ifupdown Behavior with Child Interfaces
 
 By default, `ifupdown` recognizes and uses any interface present on the
@@ -347,6 +349,8 @@ iface br-100
 For more information on the bridge in traditional mode vs the bridge in
 VLAN-aware mode, please read [this knowledge base
 article](https://support.cumulusnetworks.com/hc/en-us/articles/204909397).
+
+</details>
 
 ## ifupdown2 Interface Dependencies
 

@@ -68,6 +68,8 @@ cumulus@switch:~$ sudo systemctl restart switchd.service
     
 ```
 
+<details>
+
 ## Example Configuration File
 
 The following example `/etc/cumulus/datapath/traffic.conf` datapath
@@ -327,6 +329,8 @@ remark.egress_remark_group.cos_7.priority_remark.dscp = [58]
 ```
 
 {{%/notice%}}
+
+</details>
 
 ## Configuring Traffic Marking through ACL Rules
 
@@ -700,6 +704,8 @@ cut_through_enable = false
     
 ```
 
+<details>
+
 ## Configuring Explicit Congestion Notification
 
 *Explicit Congestion Notification* (ECN) is defined by
@@ -814,6 +820,8 @@ cumulus@switch:~$ sudo systemctl restart switchd.service
    
     
 ```
+
+</details>
 
 ## Related Information
 

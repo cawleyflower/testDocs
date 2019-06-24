@@ -134,13 +134,15 @@ iface br-20 inet manual
 </ul>
 <p><strong><br />
 </strong></p></td>
-<td><ul>
+<td><details>
+<ul>
 <li><p>ToR layer (recommended)</p></li>
 <li><p>Spine layer</p></li>
 <li><p>Core/edge/exit</p></li>
 </ul>
 <summary>More Info... </summary>
-<p>VRR can be configured on a pair of switches at any level in the network. However, the higher up the network you configure it, the larger the L2 domain becomes. The benefit here is L2 reachability. The drawback is the L2 domain is more difficult to troubleshoot, does not scale as well, and the pair of switches running VRR needs to carry the entire MAC address table of everything below it in the network. Minimizing the L2 domain as much as possible is recommended by Cumulus Professional Services. <a href="https://docs.google.com/presentation/d/1l1d_6iUF7RTUHTSAmGuLwm3WCUXTNdFjndCLLxzBSOU/edit?usp=sharing" class="external-link">Please see this presentation for more information</a>.</p></td>
+<p>VRR can be configured on a pair of switches at any level in the network. However, the higher up the network you configure it, the larger the L2 domain becomes. The benefit here is L2 reachability. The drawback is the L2 domain is more difficult to troubleshoot, does not scale as well, and the pair of switches running VRR needs to carry the entire MAC address table of everything below it in the network. Minimizing the L2 domain as much as possible is recommended by Cumulus Professional Services. <a href="https://docs.google.com/presentation/d/1l1d_6iUF7RTUHTSAmGuLwm3WCUXTNdFjndCLLxzBSOU/edit?usp=sharing" class="external-link">Please see this presentation for more information</a>.</p>
+</details></td>
 </tr>
 </tbody>
 </table>

@@ -471,6 +471,8 @@ Running the command `getent passwd` or `getent group` without a specific
 request, returns **all** local and LDAP entries for the *passwd* and
 *group* maps, respectively.
 
+<details>
+
 ### Using LDAP search
 
 The `ldapsearch` command performs LDAP operations directly on the LDAP
@@ -530,6 +532,8 @@ result: 0 Success
    
     
 ```
+
+</details>
 
 ### LDAP Browsers
 

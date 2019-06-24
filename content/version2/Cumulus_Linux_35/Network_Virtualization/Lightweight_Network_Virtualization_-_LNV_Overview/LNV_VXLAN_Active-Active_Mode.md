@@ -1178,7 +1178,8 @@ configuration file:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><strong>spine01:</strong> /etc/vxsnd.conf</p>
+<td><details>
+<p><strong>spine01:</strong> /etc/vxsnd.conf</p>
 <pre><code>                   
 svcnode_ip = 10.10.10.10
  
@@ -1244,8 +1245,10 @@ svcnode_peers = 10.0.0.21 10.0.0.22
 # Seconds to wait before checking the database to age out stale entries
 #age_check = 90
    
-    </code></pre></td>
-<td><p><strong>spine02:</strong> /etc/vxsnd.conf</p>
+    </code></pre>
+</details></td>
+<td><details>
+<p><strong>spine02:</strong> /etc/vxsnd.conf</p>
 <pre><code>                   
 svcnode_ip = 10.10.10.10
  
@@ -1311,7 +1314,8 @@ svcnode_peers = 10.0.0.21 10.0.0.22
 # Seconds to wait before checking the database to age out stale entries
 #age_check = 90
    
-    </code></pre></td>
+    </code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>

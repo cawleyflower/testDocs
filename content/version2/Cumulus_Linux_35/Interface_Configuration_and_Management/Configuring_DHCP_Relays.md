@@ -301,6 +301,8 @@ OPTIONS=""
     
 ```
 
+<details>
+
 ## Configuring the DHCP Relay Service Manually (Advanced)
 
 <summary>Configuring the DHCP service manually ... </summary>
@@ -341,6 +343,8 @@ using a [VLAN-aware
 bridge](/VLAN-aware_Bridge_Mode_for_Large-scale_Layer_2_Environments.html)
 (for example, vlan100), or the bridge name if using traditional bridging
 (for example, br100).
+
+</details>
 
 ## Troubleshooting the DHCP Relays
 

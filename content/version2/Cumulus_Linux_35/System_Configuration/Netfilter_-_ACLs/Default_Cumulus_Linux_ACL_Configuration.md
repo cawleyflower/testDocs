@@ -12,6 +12,8 @@ version: '3.5'
 imgData: Cumulus_Linux_35
 siteSlug: Cumulus_Linux_35
 ---
+<details>
+
 The Cumulus Linux default ACL configuration is split into three parts,
 as outlined in the [netfilter ACL
 documentation](https://docs.cumulusnetworks.com/display/DOCS/Netfilter+-+ACLs):
@@ -503,6 +505,8 @@ Set class is internal to the switch. It does not set any precedence
 bits.
 
 {{%/notice%}}
+
+</details>
 
 <article id="html-search-results" class="ht-content" style="display: none;">
 

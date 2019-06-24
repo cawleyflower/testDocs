@@ -106,6 +106,8 @@ by Cumulus Networks. Here is a diagram of the topology:
 
 {{% imgOld 0 %}}
 
+<details>
+
 ### Configuring the Leaf(s)
 
 The following steps demonstrate how to configure leaf01, but the same
@@ -253,6 +255,8 @@ line vty
    
     
 ```
+
+</details>
 
 ### Configuring the Host(s)
 

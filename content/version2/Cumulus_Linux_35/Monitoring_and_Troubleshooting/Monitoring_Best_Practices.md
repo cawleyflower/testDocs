@@ -200,6 +200,8 @@ for details.
 Cumulus Linux includes a number of ways to monitor various aspects of
 system data. In addition, alerts are issued in high risk situations.
 
+<details>
+
 ### CPU Idle Time
 
 When a CPU reports five high CPU alerts within a span of five minutes,
@@ -317,6 +319,8 @@ In Cumulus Linux 2.5, CPU and memory warnings are generated with `jdoo`.
 The configuration for the thresholds is stored in
 `/etc/jdoo/jdoorc.d/cl-utilities.rc`.
 
+</details>
+
 ### Disk Usage
 
 When monitoring disk utilization, you can exclude `tmpfs` from
@@ -343,6 +347,8 @@ monitoring.
 </tr>
 </tbody>
 </table>
+
+<details>
 
 ## Process Restart
 
@@ -401,6 +407,8 @@ called `jdoo` to monitor processes. If the process fails, `jdoo` invokes
 </tr>
 </tbody>
 </table>
+
+</details>
 
 ## Layer 1 Protocols and Interfaces
 

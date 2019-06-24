@@ -1968,7 +1968,8 @@ for leaf03, leaf04, server03, server04). Here is the topology diagram:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><summary>leaf01 /etc/network/interfaces </summary>
+<td><details>
+<summary>leaf01 /etc/network/interfaces </summary>
 <pre><code>                   
 auto lo
 iface lo inet loopback
@@ -2012,8 +2013,10 @@ iface vxlan10200
      bridge-access 200
      bridge-learning off
    
-    </code></pre></td>
-<td><summary>leaf02 /etc/network/interfaces </summary>
+    </code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/network/interfaces </summary>
 <pre><code>                   
 auto lo
 iface lo inet loopback
@@ -2057,10 +2060,12 @@ iface vxlan10200
     bridge-access 200
     bridge-learning off
    
-    </code></pre></td>
+    </code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td><summary>leaf01 /etc/frr/frr.conf </summary>
+<td><details>
+<summary>leaf01 /etc/frr/frr.conf </summary>
 <pre><code>                   
 !
 interface swp51
@@ -2108,8 +2113,10 @@ line vty
 !
 end
    
-    </code></pre></td>
-<td><summary>leaf02 /etc/frr/frr.conf </summary>
+    </code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/frr/frr.conf </summary>
 <pre><code>                   
 !
 interface swp51
@@ -2157,7 +2164,8 @@ line vty
 !
 end
    
-    </code></pre></td>
+    </code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -2171,7 +2179,8 @@ end
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><summary>spine01 /etc/network/interfaces </summary>
+<td><details>
+<summary>spine01 /etc/network/interfaces </summary>
 <pre><code>                   
 auto lo
 iface lo inet loopback
@@ -2193,8 +2202,10 @@ iface swp3
 auto swp4
 iface swp4
    
-    </code></pre></td>
-<td><summary>spine02 /etc/network/interfaces </summary>
+    </code></pre>
+</details></td>
+<td><details>
+<summary>spine02 /etc/network/interfaces </summary>
 <pre><code>                   
 auto lo
 iface lo inet loopback
@@ -2216,10 +2227,12 @@ iface swp3
 auto swp4
 iface swp4
    
-    </code></pre></td>
+    </code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td><summary>spine01 /etc/frr/frr.conf </summary>
+<td><details>
+<summary>spine01 /etc/frr/frr.conf </summary>
 <pre><code>                   
 !
 interface swp1
@@ -2274,8 +2287,10 @@ line vty
 !
 end
    
-    </code></pre></td>
-<td><summary>spine02 /etc/frr/frr.conf </summary>
+    </code></pre>
+</details></td>
+<td><details>
+<summary>spine02 /etc/frr/frr.conf </summary>
 <pre><code>                   
 !
 interface swp1
@@ -2330,7 +2345,8 @@ line vty
 !
 end
    
-    </code></pre></td>
+    </code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -2411,7 +2427,8 @@ leaf03, leaf04, server02, server04). Here is the topology diagram:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><summary>leaf01 /etc/network/interfaces </summary>
+<td><details>
+<summary>leaf01 /etc/network/interfaces </summary>
 <pre><code>                   
 cumulus@leaf01:~$ cat /etc/network/interfaces
  
@@ -2481,8 +2498,10 @@ iface vxlan10200
      bridge-access 200
      bridge-learning off
    
-    </code></pre></td>
-<td><summary>leaf02 /etc/network/interfaces </summary>
+    </code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/network/interfaces </summary>
 <pre><code>                   
 cumulus@leaf02:~$ cat /etc/network/interfaces
  
@@ -2552,10 +2571,12 @@ iface vxlan10200
      bridge-access 200
      bridge-learning off
    
-    </code></pre></td>
+    </code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td><summary>leaf01 /etc/frr/frr.conf </summary>
+<td><details>
+<summary>leaf01 /etc/frr/frr.conf </summary>
 <pre><code>                   
 cumulus@leaf01:~$ cat /etc/frr/frr.conf 
 !
@@ -2601,8 +2622,10 @@ line vty
 !
 end
    
-    </code></pre></td>
-<td><summary>leaf02 /etc/frr/frr.conf </summary>
+    </code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/frr/frr.conf </summary>
 <pre><code>                   
 cumulus@leaf02:~$ cat /etc/frr/frr.conf 
 !
@@ -2648,7 +2671,8 @@ line vty
 !
 end
    
-    </code></pre></td>
+    </code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -2712,7 +2736,8 @@ iface swp4
     </code></pre></td>
 </tr>
 <tr class="even">
-<td><summary>spine01 /etc/frr/frr.conf </summary>
+<td><details>
+<summary>spine01 /etc/frr/frr.conf </summary>
 <pre><code>                   
 cumulus@spine01:~$ cat /etc/frr/frr.conf 
 !
@@ -2766,8 +2791,10 @@ line vty
 !
 end
    
-    </code></pre></td>
-<td><summary>spine02 /etc/frr/frr.conf </summary>
+    </code></pre>
+</details></td>
+<td><details>
+<summary>spine02 /etc/frr/frr.conf </summary>
 <pre><code>                   
 cumulus@spine02:~$ cat /etc/frr/frr.conf 
 !
@@ -2821,7 +2848,8 @@ line vty
 !
 end
    
-    </code></pre></td>
+    </code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>

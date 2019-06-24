@@ -162,6 +162,8 @@ udp6       0      0 :::3784                 :::*                                
     
 ```
 
+<details>
+
 ## Identifying Daemons Currently Active or Stopped
 
 To determine which daemons are currently active or stopped, run
@@ -402,6 +404,8 @@ lines 147-194/194 (END)
    
     
 ```
+
+</details>
 
 ## Identifying Essential Services
 

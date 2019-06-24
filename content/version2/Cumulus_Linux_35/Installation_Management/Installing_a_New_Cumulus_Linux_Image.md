@@ -315,7 +315,11 @@ your switch after the installation finishes.
     platform from the [Cumulus Networks Downloads
     page](http://cumulusnetworks.com/downloads/).
 
-2.  Prepare your flash drive by formatting in one of the supported
+2.  
+    
+    <details>
+    
+    Prepare your flash drive by formatting in one of the supported
     formats: FAT32, vFAT or EXT2.
     
     <summary>Optional: Preparing a USB Drive inside Cumulus Linux
@@ -369,6 +373,8 @@ your switch after the installation finishes.
     </tr>
     </tbody>
     </table>
+    
+    </details>
 
 3.  Copy the image and license files over to the flash drive and rename
     the image file to:
@@ -394,6 +400,8 @@ your switch after the installation finishes.
 
 4.  Insert the USB stick into the switch, then continue with the
     appropriate instructions below for your x86 or ARM platform.
+
+<details>
 
 ### Instructions for x86 Platforms
 
@@ -526,6 +534,10 @@ your switch after the installation finishes.
        
         
     ```
+
+</details>
+
+<details>
 
 ### Instructions for ARM Platforms
 
@@ -691,6 +703,8 @@ your switch after the installation finishes.
        
         
     ```
+
+</details>
 
 ## Installing a New Image when Cumulus Linux Is already Installed
 

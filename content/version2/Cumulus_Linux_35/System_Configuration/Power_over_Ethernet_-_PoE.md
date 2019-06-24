@@ -66,6 +66,8 @@ a link is brought down on a particular port using `ip link <port> down`,
 power on that port is not turned off; however, LLDP negotiation is not
 possible.
 
+<details>
+
 ## Configuring PoE
 
 You use the `poectl` command utility to configure PoE on a [switch that
@@ -340,6 +342,8 @@ The `poectl` command takes the following arguments:
 </tr>
 </tbody>
 </table>
+
+</details>
 
 ## Troubleshooting PoE and PoE+
 

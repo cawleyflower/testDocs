@@ -264,6 +264,8 @@ interface listen swp10
     
 ```
 
+<details>
+
 ## NTP Default Configuration
 
 The default NTP configuration comprises the following servers, which are
@@ -345,6 +347,8 @@ interface listen eth0
    
     
 ```
+
+</details>
 
 ## Related Information
 

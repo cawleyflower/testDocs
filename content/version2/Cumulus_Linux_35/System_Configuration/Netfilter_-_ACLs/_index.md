@@ -12,6 +12,8 @@ version: '3.5'
 imgData: Cumulus_Linux_35
 siteSlug: Cumulus_Linux_35
 ---
+<details>
+
 [Netfilter](http://www.netfilter.org/) is the packet filtering framework
 in Cumulus Linux as well as most other Linux distributions. There are a
 number of tools available for configuring ACLs in Cumulus Linux,
@@ -1864,6 +1866,8 @@ failed.
 
 The Dell S3048-ON has a limit of 24576 MAC address entries, instead of
 32K for other 1G switches.
+
+</details>
 
 <article id="html-search-results" class="ht-content" style="display: none;">
 

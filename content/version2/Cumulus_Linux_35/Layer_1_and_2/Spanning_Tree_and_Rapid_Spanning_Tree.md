@@ -73,6 +73,8 @@ interoperability.
 
 {{%/notice%}}
 
+<details>
+
 ## Viewing Bridge and STP Status/Logs
 
 To check STP status for a bridge, run `net show bridge spanning-tree`:
@@ -286,6 +288,8 @@ cumulus@switch:~$ net show bridge spanning-tree
    
     
 ```
+
+</details>
 
 ## Customizing Spanning Tree Protocol
 

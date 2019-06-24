@@ -651,6 +651,8 @@ To configure PIM on a switch using FRR:
     
     {{%/notice%}}
 
+<details>
+
 ### Example Configurations
 
 <summary>Complete Multicast Network Configuration Example </summary>
@@ -781,6 +783,8 @@ end
    
     
 ```
+
+</details>
 
 ## Source Specific Multicast Mode (SSM)
 

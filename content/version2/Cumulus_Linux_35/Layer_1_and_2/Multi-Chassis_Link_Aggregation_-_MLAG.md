@@ -165,6 +165,8 @@ LACP partner MAC address by running `net show bridge macs`, or by
 looking in the `/sys/class/net/<bondname>/bonding/ad_partner_mac sysfs`
 file for each bond.
 
+<details>
+
 ## Configuring MLAG
 
 Configuring MLAG involves:
@@ -522,6 +524,8 @@ determined to be not alive, the switch in the secondary role will roll
 back the LACP system ID to be the bond interface MAC address instead of
 the `clagd-sys-mac` and the switch in primary role uses the
 `clagd-sys-mac` as the LACP system ID on the bonds.
+
+</details>
 
 ## Example MLAG Configuration
 
@@ -1140,6 +1144,8 @@ Our Interface      Peer Interface     CLAG Id   Conflicts              Proto-Dow
     
 ```
 
+<details>
+
 ### Using the clagd Command Line Interface
 
 A command line utility called `clagctl` is available for interacting
@@ -1168,6 +1174,8 @@ Our Interface      Peer Interface     CLAG Id   Conflicts              Proto-Dow
    
     
 ```
+
+</details>
 
 ## Configuring MLAG with a Traditional Mode Bridge
 

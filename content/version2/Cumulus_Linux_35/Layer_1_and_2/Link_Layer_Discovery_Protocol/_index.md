@@ -58,6 +58,8 @@ Aug  7 17:26:32 switch lldpd[1805]: NET-SNMP version 5.4.3 AgentX subagent conne
     
 ```
 
+<details>
+
 ## Example lldpcli Commands
 
 To see all neighbors on all ports/interfaces:
@@ -304,6 +306,8 @@ cumulus@switch:~$ sudo lldpcli configure system interface pattern ""
    
     
 ```
+
+</details>
 
 ## Enabling the SNMP Subagent in LLDP
 

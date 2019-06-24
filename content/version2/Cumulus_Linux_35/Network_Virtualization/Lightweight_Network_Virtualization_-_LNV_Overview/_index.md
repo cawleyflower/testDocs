@@ -427,6 +427,8 @@ iface swp1s3
 </tbody>
 </table>
 
+<details>
+
 ### Layer 3 Fabric
 
 The service nodes and registration nodes must all be routable between
@@ -611,6 +613,10 @@ router ospf
 </tbody>
 </table>
 
+</details>
+
+<details>
+
 ### Host Configuration
 
 In this example, the servers are running Ubuntu 14.04. There needs to be
@@ -680,6 +686,8 @@ Added VLAN with VID == 30 to IF -:eth3:-
    
     
 ```
+
+</details>
 
 ## Configuring the VLAN to VXLAN Mapping
 
@@ -958,6 +966,8 @@ May 11 11:42:55 cumulus vxrd[929]: INFO: Starting (pid 929) ...
     
 ```
 
+<details>
+
 ## Configuring the Registration Node
 
 The registration node was configured earlier in
@@ -1051,6 +1061,8 @@ Use *1*, *yes*, *true* or *on* for True for each relevant option. Use
 *0*, *no*, *false* or *off* for False.
 
 {{%/notice%}}
+
+</details>
 
 ## Configuring the Service Node
 
