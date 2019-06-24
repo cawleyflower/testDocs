@@ -3,12 +3,12 @@ languageCode = "en-us"
 title = "Cumulus Networks Documentation"
 theme =["netDocs", "book"]
 
-#URL fixes
 #Book configuration
 disablePathToLower = true
 ## bug in local server, will enable in production
 enableGitInfo= false
 noChmod = true
+
 
 
 [Params]
