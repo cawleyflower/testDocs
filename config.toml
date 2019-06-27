@@ -9,6 +9,8 @@ disablePathToLower = true
 enableGitInfo= false
 noChmod = true
 
+[permalinks]
+version2 = "/:sections/:filename"
 
 
 [Params]
