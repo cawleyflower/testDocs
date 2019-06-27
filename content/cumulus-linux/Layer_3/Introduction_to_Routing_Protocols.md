@@ -54,11 +54,11 @@ differently.
 The way they answer these questions affects the network design and
 thereby configuration. For example, in a link-state protocol such as
 OSPF (see [Open Shortest Path First (OSPF)
-Protocol](/version/cumulus-linux/Layer_3/Open_Shortest_Path_First_-_OSPF))
-or IS-IS, complete local information (links and attached address
-prefixes) about a node is disseminated to every other node in the
-network. Since the state that a node has to keep grows rapidly in such a
-case, link-state protocols typically limit the number of nodes that
+Protocol](/cumulus-linux/Layer_3/Open_Shortest_Path_First_-_OSPF)) or
+IS-IS, complete local information (links and attached address prefixes)
+about a node is disseminated to every other node in the network. Since
+the state that a node has to keep grows rapidly in such a case,
+link-state protocols typically limit the number of nodes that
 communicate this way. They allow for bigger networks to be built by
 breaking up a network into a set of smaller subnetworks (which are
 called areas or levels), and by advertising summarized information about

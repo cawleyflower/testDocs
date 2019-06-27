@@ -80,7 +80,7 @@ For an explanation of the relevant parameters, see the
 `ifupdown-addons-interfaces` man page.
 
 For a [VLAN-aware
-bridge](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode),
+bridge](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode),
 use a configuration like the following:
 
     auto bridge.100
@@ -107,7 +107,7 @@ You can specify a range of VLANs as well. For example:
       bridge-igmp-querier-src 123.1.1.1
 
 For a bridge in [traditional
-mode](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/), use a
+mode](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/), use a
 configuration like the following:
 
     auto br0

@@ -12,7 +12,7 @@ imgData: cumulus-linux
 siteSlug: cumulus-linux
 ---
 The
-[`cl-support`](/version/cumulus-linux/Monitoring_and_Troubleshooting/Understanding_the_cl-support_Output_File/)
+[`cl-support`](/cumulus-linux/Monitoring_and_Troubleshooting/Understanding_the_cl-support_Output_File/)
 script replicates the /`etc` directory.
 
 Files that `cl-support` deliberately excludes are:

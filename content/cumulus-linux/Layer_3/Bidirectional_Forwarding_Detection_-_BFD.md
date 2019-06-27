@@ -60,9 +60,8 @@ sessions:
 
 You configure BFD one of two ways: by specifying the configuration in
 the [PTM `topology.dot`
-file](/version/cumulus-linux/Layer_1_and_Switch_Ports/Prescriptive_Topology_Manager_-_PTM),
-or using
-[FRRouting](/version/cumulus-linux/Layer_3/FRRouting_Overview/).
+file](/cumulus-linux/Layer_1_and_Switch_Ports/Prescriptive_Topology_Manager_-_PTM),
+or using [FRRouting](/cumulus-linux/Layer_3/FRRouting_Overview/).
 However, the topology file has some limitations:
 
   - The `topology.dot` file supports creating BFD IPv4 and IPv6 single
@@ -78,8 +77,8 @@ However, the topology file has some limitations:
 You cannot specify BFD multihop sessions in the `topology.dot` file
 since you cannot specify the source and destination IP address pairs in
 that file. Use
-[FRRouting](/version/cumulus-linux/Layer_3/Configuring_FRRouting/) to
-configure multihop sessions.
+[FRRouting](/cumulus-linux/Layer_3/Configuring_FRRouting/) to configure
+multihop sessions.
 
 {{%/notice%}}
 
@@ -113,7 +112,7 @@ table before BFD can start sending control packets.
 
 For FRRouting when using **BGP**, neighbors are registered and
 de-registered with
-[PTM](/version/cumulus-linux/Layer_1_and_Switch_Ports/Prescriptive_Topology_Manager_-_PTM)
+[PTM](/cumulus-linux/Layer_1_and_Switch_Ports/Prescriptive_Topology_Manager_-_PTM)
 dynamically when you enable BFD in BGP using `net add bgp neighbor
 <neighbor|IP|interface> bfd`. For example:
 
@@ -159,7 +158,7 @@ parameters can be configured for each BGP neighbor. For example:
 
 For FRRouting using **OSFP**, neighbors are registered and de-registered
 dynamically with
-[PTM](/version/cumulus-linux/Layer_1_and_Switch_Ports/Prescriptive_Topology_Manager_-_PTM)
+[PTM](/cumulus-linux/Layer_1_and_Switch_Ports/Prescriptive_Topology_Manager_-_PTM)
 when you enable or disable BFD in OSPF. A neighbor is registered with
 BFD when two-way adjacency is established and deregistered when
 adjacency goes down if the BFD is enabled on the interface. The BFD

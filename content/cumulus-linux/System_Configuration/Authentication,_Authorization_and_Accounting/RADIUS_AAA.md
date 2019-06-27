@@ -96,9 +96,8 @@ file:
     option, you must also specify the `timeout` option.
 
 4.  Set the `vrf-name` field. This is typically set to *mgmt* if you are
-    using a [management
-    VRF](/version/cumulus-linux/Layer_3/Management_VRF). You cannot
-    specify more than one VRF.
+    using a [management VRF](/cumulus-linux/Layer_3/Management_VRF). You
+    cannot specify more than one VRF.
 
 The configuration file includes the `mapped_priv_user` field that sets
 the account used for privileged RADIUS users and the `priv-lvl` field
@@ -308,7 +307,7 @@ mapping file; this might be the first or second user that logged in.
 ## <span>Related Information</span>
 
   - [TACACS+
-    client](/version/cumulus-linux/System_Configuration/Authentication_Authorization_and_Accounting/TACACS_Plus)
+    client](/cumulus-linux/System_Configuration/Authentication_Authorization_and_Accounting/TACACS_Plus)
 
   - [Cumulus Networks RADIUS demo on
     GitHub](https://github.com/CumulusNetworks/cldemo-radius)

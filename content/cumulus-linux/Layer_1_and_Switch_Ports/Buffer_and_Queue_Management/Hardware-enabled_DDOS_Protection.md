@@ -118,7 +118,7 @@ Spectrum ASICs.
     {{%notice note%}}
     
     Configuring any of the following settings affects the [BFD
-    echo](/version/cumulus-linux/Layer_3/Bidirectional_Forwarding_Detection_-_BFD)
+    echo](/cumulus-linux/Layer_3/Bidirectional_Forwarding_Detection_-_BFD)
     function. For example, if you enable `dos.udp_ports_eq`, all the BFD
     packets will get dropped because the BFD protocol uses the same
     source and destination UDP ports.

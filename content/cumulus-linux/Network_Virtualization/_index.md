@@ -38,9 +38,9 @@ the original frame. The UDP destination port is the standard port 4789.
 
 Cumulus Linux includes the native Linux VXLAN kernel support and
 integrates with controller-based overlay solutions like [VMware
-NSX](/version/cumulus-linux/Network_Virtualization/Virtualization_Integrations/Integrating_Hardware_VTEPs_with_VMware_NSX-MH)
+NSX](/cumulus-linux/Network_Virtualization/Virtualization_Integrations/Integrating_Hardware_VTEPs_with_VMware_NSX-MH)
 and [Midokura
-MidoNet](/version/cumulus-linux/Network_Virtualization/Virtualization_Integrations/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack).
+MidoNet](/cumulus-linux/Network_Virtualization/Virtualization_Integrations/Integrating_Hardware_VTEPs_with_Midokura_MidoNet_and_OpenStack).
 
 VXLAN is supported only on switches in the [Cumulus Linux
 HCL](http://cumulusnetworks.com/support/hcl/) using the Broadcom

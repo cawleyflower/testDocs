@@ -41,12 +41,12 @@ For information on the directories included in the `cl-support` archive,
 see:
 
   - [Troubleshooting the etc
-    Directory](/version/cumulus-linux/Monitoring_and_Troubleshooting/Understanding_the_cl-support_Output_File/Troubleshooting_the_etc_Directory)
+    Directory](/cumulus-linux/Monitoring_and_Troubleshooting/Understanding_the_cl-support_Output_File/Troubleshooting_the_etc_Directory)
     — In terms of the sheer number of files, `/etc` contains the largest
     number of files to send to Cumulus Networks. However, log files
     might be significantly larger in file size.
 
   - [Troubleshooting Log
-    Files](/version/cumulus-linux/Monitoring_and_Troubleshooting/Understanding_the_cl-support_Output_File/Troubleshooting_Log_Files)
+    Files](/cumulus-linux/Monitoring_and_Troubleshooting/Understanding_the_cl-support_Output_File/Troubleshooting_Log_Files)
     — This guide highlights the most important log files to inspect.
     Keep in mind, `cl-support` includes all of the log files.

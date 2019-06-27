@@ -12,13 +12,13 @@ imgData: cumulus-linux
 siteSlug: cumulus-linux
 ---
 On Cumulus Linux, *LACP Bypass* is a feature that allows a
-[bond](/version/cumulus-linux/Layer_2/Bonding_-_Link_Aggregation)
-configured in 802.3ad mode to become active and forward traffic even
-when there is no LACP partner. A typical use case for this feature is to
-enable a host, without the capability to run LACP, to PXE boot while
-connected to a switch on a bond configured in 802.3ad mode. Once the
-pre-boot process finishes and the host is capable of running LACP, the
-normal 802.3ad link aggregation operation takes over.
+[bond](/cumulus-linux/Layer_2/Bonding_-_Link_Aggregation) configured in
+802.3ad mode to become active and forward traffic even when there is no
+LACP partner. A typical use case for this feature is to enable a host,
+without the capability to run LACP, to PXE boot while connected to a
+switch on a bond configured in 802.3ad mode. Once the pre-boot process
+finishes and the host is capable of running LACP, the normal 802.3ad
+link aggregation operation takes over.
 
 ## <span>LACP Bypass All-active Mode</span>
 
@@ -57,7 +57,7 @@ The following features are not supported:
 {{%notice note%}}
 
 In an [MLAG
-deployment](/version/cumulus-linux/Layer_2/Multi-Chassis_Link_Aggregation_-_MLAG)
+deployment](/cumulus-linux/Layer_2/Multi-Chassis_Link_Aggregation_-_MLAG)
 where bond slaves of a host are connected to two switches and the bond
 is in all-active mode, all the slaves of bond are active on both the
 primary and secondary MLAG nodes.
@@ -166,7 +166,7 @@ and its slave interfaces:
 
 The following configuration shows LACP bypass enabled for multiple
 active interfaces (all-active mode) with a bridge in [traditional bridge
-mode](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/Traditional_Bridge_Mode):
+mode](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/Traditional_Bridge_Mode):
 
     auto bond1
     iface bond1 

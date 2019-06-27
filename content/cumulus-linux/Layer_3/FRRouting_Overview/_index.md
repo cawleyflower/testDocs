@@ -16,12 +16,11 @@ dynamic routing. FRRouting provides many routing protocols, of which
 Cumulus Linux supports the following:
 
   - Open Shortest Path First
-    ([v2](/version/cumulus-linux/Layer_3/Open_Shortest_Path_First_-_OSPF)
-    and
-    [v3](/version/cumulus-linux/Layer_3/Open_Shortest_Path_First_v3_-_OSPFv3))
+    ([v2](/cumulus-linux/Layer_3/Open_Shortest_Path_First_-_OSPF) and
+    [v3](/cumulus-linux/Layer_3/Open_Shortest_Path_First_v3_-_OSPFv3))
 
   - [Border Gateway
-    Protocol](/version/cumulus-linux/Layer_3/Border_Gateway_Protocol_-_BGP)
+    Protocol](/cumulus-linux/Layer_3/Border_Gateway_Protocol_-_BGP)
 
 ## <span>Architecture</span>
 
@@ -36,10 +35,10 @@ the information exchanged.
 It is not uncommon to have more than one protocol daemon running at the
 same time. For example, at the edge of an enterprise, protocols internal
 to an enterprise (called IGP for Interior Gateway Protocol) such as
-[OSPF](/version/cumulus-linux/Layer_3/Open_Shortest_Path_First_-_OSPF)
-or RIP run alongside the protocols that connect an enterprise to the
-rest of the world (called EGP or Exterior Gateway Protocol) such as
-[BGP](/version/cumulus-linux/Layer_3/Border_Gateway_Protocol_-_BGP).
+[OSPF](/cumulus-linux/Layer_3/Open_Shortest_Path_First_-_OSPF) or RIP
+run alongside the protocols that connect an enterprise to the rest of
+the world (called EGP or Exterior Gateway Protocol) such as
+[BGP](/cumulus-linux/Layer_3/Border_Gateway_Protocol_-_BGP).
 
 ## <span>About zebra</span>
 

@@ -45,7 +45,7 @@ To check the status of an interface using `ethtool`:
 {{%notice note%}}
 
 The switch hardware contains the [active port
-settings](/version/cumulus-linux/Layer_1_and_Switch_Ports/Interface_Configuration_and_Management/Switch_Port_Attributes).
+settings](/cumulus-linux/Layer_1_and_Switch_Ports/Interface_Configuration_and_Management/Switch_Port_Attributes).
 The output of `ethtool swpXX` shows the port settings stored in the
 kernel. The `switchd` process keeps the hardware and kernel in sync for
 the important port settings (speed, auto-negotiation, and link detected)

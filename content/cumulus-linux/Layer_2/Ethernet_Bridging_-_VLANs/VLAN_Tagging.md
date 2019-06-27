@@ -296,10 +296,10 @@ with the VLAN ID translated.
 {{%notice note%}}
 
 A bridge in [VLAN-aware
-mode](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode)
+mode](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode)
 cannot have VLAN translation enabled for it; only bridges configured in
 [traditional
-mode](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/Traditional_Bridge_Mode)
+mode](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/Traditional_Bridge_Mode)
 can utilize VLAN translation.
 
 {{%/notice%}}

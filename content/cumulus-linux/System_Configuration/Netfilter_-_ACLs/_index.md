@@ -19,7 +19,7 @@ number of tools available for configuring ACLs in Cumulus Linux:
     used to administer filtering rules for IPv4 packets, IPv6 packets,
     and Ethernet frames (layer 2 using MAC addresses).
 
-  - [NCLU](/version/cumulus-linux/System_Configuration/Network_Command_Line_Utility_-_NCLU)
+  - [NCLU](/cumulus-linux/System_Configuration/Network_Command_Line_Utility_-_NCLU)
     is a Cumulus Linux-specific userspace tool used to configure custom
     ACLs.
 
@@ -500,9 +500,9 @@ entry is one of the following:
 
 Cumulus Linux supports matching ACL rules for both ingress and egress
 interfaces on both
-[VLAN-aware](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode)
+[VLAN-aware](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode)
 and [traditional
-mode](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/Traditional_Bridge_Mode)
+mode](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/Traditional_Bridge_Mode)
 bridges, including bridge SVIs ([switch VLAN
 interfaces](Ethernet_Bridging_-_VLANs.html#src-8362655_EthernetBridging-VLANs-svi))
 for input and output. However, keep the following in mind:
@@ -1705,7 +1705,7 @@ instead because:
 ### <span>Mellanox Spectrum Hardware Limitations</span>
 
 Due to hardware limitations in the Spectrum ASIC, [BFD
-policers](/version/cumulus-linux/Layer_3/Bidirectional_Forwarding_Detection_-_BFD)
+policers](/cumulus-linux/Layer_3/Bidirectional_Forwarding_Detection_-_BFD)
 are shared between all BFD-related control plane rules. Specifically the
 following default rules share the same policer in the
 `00control_plan.rules` file:

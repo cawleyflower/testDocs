@@ -36,7 +36,7 @@ protocol’s correctness.
 This topic describes OSPFv2, which is a [link-state routing
 protocol](http://en.wikipedia.org/wiki/Link-state_routing_protocol) for
 IPv4. For IPv6 commands, refer to [Open Shortest Path First v3 -
-OSPFv3](/version/cumulus-linux/Layer_3/Open_Shortest_Path_First_v3_-_OSPFv3)
+OSPFv3](/cumulus-linux/Layer_3/Open_Shortest_Path_First_v3_-_OSPFv3)
 
 ## <span>Scalability and Areas</span>
 
@@ -85,9 +85,8 @@ To configure OSPF, you need to:
 ### <span>Enable the OSPF and Zebra Daemons</span>
 
 To enable OSPF, enable the `zebra` and `ospf` daemons, as described in
-[Configuring
-FRRouting](/version/cumulus-linux/Layer_3/Configuring_FRRouting/), then
-start the FRRouting service:
+[Configuring FRRouting](/cumulus-linux/Layer_3/Configuring_FRRouting/),
+then start the FRRouting service:
 
     cumulus@switch:~$ sudo systemctl enable frr.service
     cumulus@switch:~$ sudo systemctl start frr.service
@@ -707,7 +706,7 @@ lists all of the OSPF debug options.
 ## <span>Related Information</span>
 
   - [Bidirectional forwarding
-    detection](/version/cumulus-linux/Layer_3/Bidirectional_Forwarding_Detection_-_BFD)
+    detection](/cumulus-linux/Layer_3/Bidirectional_Forwarding_Detection_-_BFD)
     (BFD) and OSPF
 
   - [en.wikipedia.org/wiki/Open\_Shortest\_Path\_First](http://en.wikipedia.org/wiki/Open_Shortest_Path_First)

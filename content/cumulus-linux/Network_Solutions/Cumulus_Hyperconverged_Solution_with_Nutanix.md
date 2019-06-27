@@ -22,7 +22,7 @@ In addition, you can augment the deployment with:
   - [Cumulus on a
     Stick](https://cumulusnetworks.com/cumulus-on-a-stick/) for [zero
     touch
-    provisioning](/version/cumulus-linux/Installation_Management/Zero_Touch_Provisioning_-_ZTP)
+    provisioning](/cumulus-linux/Installation_Management/Zero_Touch_Provisioning_-_ZTP)
     Nutanix and Cumulus HCS without any user interaction or additional
     equipment.
 
@@ -54,7 +54,7 @@ Cumulus HCS has two major components:
     automatically identifies the physical Nutanix server hosting the VM
     and discovers any VLANs required for the VM. The service then
     automatically adds these VLANs to the default [VLAN-aware
-    bridge](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode),
+    bridge](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode),
     the MLAG peer link and the automatically created bond to the Nutanix
     node. When a VM is powered off, removed or moved, and the associated
     VLAN has no other VMs, the VLAN is automatically removed from the
@@ -75,7 +75,7 @@ Cumulus HCS has two major components:
   - IP connectivity between the Cumulus Linux switches and the Nutanix
     controller VMs (CVMs)
 
-  - [MLAG](/version/cumulus-linux/Layer_2/Multi-Chassis_Link_Aggregation_-_MLAG)
+  - [MLAG](/cumulus-linux/Layer_2/Multi-Chassis_Link_Aggregation_-_MLAG)
     enabled on the Cumulus Linux switches
 
 Cumulus HCS runs on any platform. However, this chapter assumes a
@@ -92,7 +92,7 @@ typical Nutanix deployment with the following configuration:
   - Connections to other infrastructure are on ports swp51 and above
 
   - The eth0 management interface is configured for [management
-    VRF](/version/cumulus-linux/Layer_3/Management_VRF) via DHCP
+    VRF](/cumulus-linux/Layer_3/Management_VRF) via DHCP
 
   - For automatic configuration, the gateway IP addresses for all VMs,
     including the CVM, do not exist on the Cumulus Linux switches.
@@ -375,12 +375,12 @@ manually. ZTP does not add any gateway configuration. </span>
 <span style="color: #000000;"> To provide redundant gateways for the
 dual-attached Nutanix servers, Cumulus Linux relies on </span>
 <span style="color: #000000;"> [Virtual Router
-Redundancy](/version/cumulus-linux/Layer_2/Virtual_Router_Redundancy_-_VRR_and_VRRP)
+Redundancy](/cumulus-linux/Layer_2/Virtual_Router_Redundancy_-_VRR_and_VRRP)
 (VRR). VRR enables hosts to communicate with any redundant router
 without reconfiguration, running dynamic routing protocols, or running
 router redundancy protocols. This means that redundant routers will
 respond to [Address Resolution
-Protocol](/version/cumulus-linux/Layer_3/Address_Resolution_Protocol_-_ARP)
+Protocol](/cumulus-linux/Layer_3/Address_Resolution_Protocol_-_ARP)
 (ARP) requests from hosts. Routers are configured to respond in an
 identical manner, but if one fails, the other redundant routers will
 continue to respond, leaving the hosts with the impression that nothing
@@ -438,7 +438,7 @@ RMP switch. No additional configuration is required. </span>
 active/active connections across Cumulus RMP switches. Connections
 across more than one Cumulus RMP switch rely on traditional [spanning
 tree
-protocol](/version/cumulus-linux/Layer_2/Spanning_Tree_and_Rapid_Spanning_Tree)
+protocol](/cumulus-linux/Layer_2/Spanning_Tree_and_Rapid_Spanning_Tree)
 for redundancy. </span>
 
 ### <span>Other Cumulus Linux 1G Switches</span>
@@ -508,9 +508,9 @@ begins with *_bond\__* and ends with the interface name. </span>
 ### <span>Verify LLDP Messages Are Being Received</span>
 
 If bonds are not being created, then
-[LLDP](/version/cumulus-linux/Layer_2/Link_Layer_Discovery_Protocol/)
-messages may not be getting through. You can check for this possibility
-using the `net show lldp` command:
+[LLDP](/cumulus-linux/Layer_2/Link_Layer_Discovery_Protocol/) messages
+may not be getting through. You can check for this possibility using the
+`net show lldp` command:
 
     cumulus@leaf01:~$ net show lldp
     LocalPort  Speed  Mode           RemoteHost       RemotePort

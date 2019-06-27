@@ -47,7 +47,7 @@ To learn the Cumulus Linux settings you need to configure to support
 RoCEv1, see the example configuration in the
 [PFC](Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-pfc)
 section of the [Buffer and Queue
-Management](/version/cumulus-linux/Layer_1_and_Switch_Ports/Buffer_and_Queue_Management/)
+Management](/cumulus-linux/Layer_1_and_Switch_Ports/Buffer_and_Queue_Management/)
 chapter.
 
 {{%notice tip%}}
@@ -115,7 +115,7 @@ To learn the Cumulus Linux settings you need to configure to support
 RoCEv2, see the example configuration in the
 [ECN](Buffer_and_Queue_Management.html#src-8363032_BufferandQueueManagement-ecn)
 section of the [Buffer and Queue
-Management](/version/cumulus-linux/Layer_1_and_Switch_Ports/Buffer_and_Queue_Management/)
+Management](/cumulus-linux/Layer_1_and_Switch_Ports/Buffer_and_Queue_Management/)
 chapter.
 
 {{%notice tip%}}

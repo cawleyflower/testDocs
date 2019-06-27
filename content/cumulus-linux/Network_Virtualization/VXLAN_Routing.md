@@ -17,23 +17,23 @@ traffic is based on the inner header or the overlay tenant IP address.
 
 Because VXLAN routing is fundamentally routing, it is most commonly
 deployed with a control plane, such as Ethernet Virtual Private Network
-([EVPN](/version/cumulus-linux/Network_Virtualization/Ethernet_Virtual_Private_Network_-_EVPN)).
+([EVPN](/cumulus-linux/Network_Virtualization/Ethernet_Virtual_Private_Network_-_EVPN)).
 You can set up static routing too, either with or without the Cumulus
 [Lightweight Network
-Virtualization](/version/cumulus-linux/Network_Virtualization/Lightweight_Network_Virtualization_Overview/)
+Virtualization](/cumulus-linux/Network_Virtualization/Lightweight_Network_Virtualization_Overview/)
 (LNV) for MAC distribution and BUM handling.
 
 This topic describes the platform and hardware considerations for VXLAN
 routing. For a detailed description of different VXLAN routing models
 and configuration examples, refer to
-[EVPN](/version/cumulus-linux/Network_Virtualization/Ethernet_Virtual_Private_Network_-_EVPN).
+[EVPN](/cumulus-linux/Network_Virtualization/Ethernet_Virtual_Private_Network_-_EVPN).
 
 VXLAN routing supports full layer 3 multi-tenancy; all routing occurs in
 the context of a
-[VRF](/version/cumulus-linux/Layer_3/Virtual_Routing_and_Forwarding_-_VRF).
+[VRF](/cumulus-linux/Layer_3/Virtual_Routing_and_Forwarding_-_VRF).
 Also, VXLAN routing is supported for dual-attached hosts where the
 associated VTEPs function in [active-active
-mode](/version/cumulus-linux/Network_Virtualization/VXLAN_Active-Active_Mode).
+mode](/cumulus-linux/Network_Virtualization/VXLAN_Active-Active_Mode).
 
 ## <span>Supported Platforms</span>
 
@@ -57,7 +57,7 @@ The following chipsets support VXLAN routing:
 
   - For additional restrictions and considerations for VXLAN routing
     with EVPN, refer to [the EVPN
-    chapter](/version/cumulus-linux/Network_Virtualization/Ethernet_Virtual_Private_Network_-_EVPN).
+    chapter](/cumulus-linux/Network_Virtualization/Ethernet_Virtual_Private_Network_-_EVPN).
 
 {{%/notice%}}
 
@@ -157,9 +157,9 @@ for the changes to take effect.
 {{%notice note%}}
 
 VXLAN routing using internal loopback is supported only with [VLAN-aware
-bridges](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode);
+bridges](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode);
 you cannot use a bridge in [traditional
-mode](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/Traditional_Bridge_Mode).
+mode](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/Traditional_Bridge_Mode).
 
 {{%/notice%}}
 
@@ -203,7 +203,7 @@ interface (named *inside*) is a member of the bridge. The ports swp45
 and swp47 are bonded together (named *outside*) and act as the layer 3
 end with SVIs configured for VLANs 100 and 200 with the corresponding
 gateway IP addresses. Because the two layer 3 gateways are in an
-[MLAG](/version/cumulus-linux/Layer_2/Multi-Chassis_Link_Aggregation_-_MLAG)
+[MLAG](/cumulus-linux/Layer_2/Multi-Chassis_Link_Aggregation_-_MLAG)
 configuration, they use a virtual IP address as the gateway IP. The
 relevant interface configuration on *exit01* is as follows:
 

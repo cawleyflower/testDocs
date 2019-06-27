@@ -186,7 +186,7 @@ unnumbered interfaces to route maps.
 
 1.  Enable the BGP and Zebra daemons (`zebra` and `bgpd`), then enable
     the FRRouting service and start it, as described in [Configuring
-    FRRouting](/version/cumulus-linux/Layer_3/Configuring_FRRouting/).
+    FRRouting](/cumulus-linux/Layer_3/Configuring_FRRouting/).
 
 2.  Identify the BGP node by assigning an ASN and `router-id`:
     
@@ -1537,15 +1537,14 @@ illustrates one way you can do so in a typical Clos architecture:
 
 You can run multiple routing tables (one for in-band/data plane traffic
 and one for out-of-band/management plane traffic) on the same switch
-using [management VRF](/version/cumulus-linux/Layer_3/Management_VRF)
-(multiple routing tables and forwarding).
+using [management VRF](/cumulus-linux/Layer_3/Management_VRF) (multiple
+routing tables and forwarding).
 
 {{%notice note%}}
 
 BGP and static routing (IPv4 and IPv6) are supported within a VRF
 context. For more information, refer to [Virtual Routing and Forwarding
--
-VRF](/version/cumulus-linux/Layer_3/Virtual_Routing_and_Forwarding_-_VRF).
+- VRF](/cumulus-linux/Layer_3/Virtual_Routing_and_Forwarding_-_VRF).
 
 {{%/notice%}}
 
@@ -2093,7 +2092,7 @@ this for TTL:
 {{%notice note%}}
 
 For more information about ACLs, see [Netfilter
-(ACLs)](/version/cumulus-linux/System_Configuration/Netfilter_-_ACLs/).
+(ACLs)](/cumulus-linux/System_Configuration/Netfilter_-_ACLs/).
 
 {{%/notice%}}
 
@@ -2105,7 +2104,7 @@ an already established peer, are not supported in Cumulus Linux.
 ### <span>Related Information</span>
 
   - [Bidirectional forwarding
-    detection](/version/cumulus-linux/Layer_3/Bidirectional_Forwarding_Detection_-_BFD)
+    detection](/cumulus-linux/Layer_3/Bidirectional_Forwarding_Detection_-_BFD)
     (BFD) and BGP
 
   - [Wikipedia entry for

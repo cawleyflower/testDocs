@@ -17,16 +17,16 @@ As of Cumulus Linux 3.7.4, the lightweight network virtualization
 feature (LNV) has been deprecated. The feature will be removed in
 Cumulus Linux 4.0. Cumulus Networks recommends you use [Ethernet virtual
 private network
-(EVPN)](/version/cumulus-linux/Network_Virtualization/Ethernet_Virtual_Private_Network_-_EVPN)
+(EVPN)](/cumulus-linux/Network_Virtualization/Ethernet_Virtual_Private_Network_-_EVPN)
 for network virtualization.
 
 {{%/notice%}}
 
 Lightweight Network Virtualization (LNV) is a technique for deploying
-[VXLANs](/version/cumulus-linux/Network_Virtualization/) without a
-central controller on bare metal switches. This a full example complete
-with diagram. Refer to the [Lightweight Network Virtualization
-chapter](/version/cumulus-linux/Network_Virtualization/Lightweight_Network_Virtualization_Overview/)
+[VXLANs](/cumulus-linux/Network_Virtualization/) without a central
+controller on bare metal switches. This a full example complete with
+diagram. Refer to the [Lightweight Network Virtualization
+chapter](/cumulus-linux/Network_Virtualization/Lightweight_Network_Virtualization_Overview/)
 for more detailed information. This full example uses the **recommended
 way** of deploying LNV, which is to use anycast to load balance the
 service nodes.
@@ -263,9 +263,9 @@ iface br-30
 
 The service nodes and registration nodes must all be routable between
 each other. The layer 3 fabric on Cumulus Linux can either be
-[BGP](/version/cumulus-linux/Layer_3/Border_Gateway_Protocol_-_BGP) or
-[OSPF](/version/cumulus-linux/Layer_3/Open_Shortest_Path_First_-_OSPF).
-In this example, OSPF is used to demonstrate full reachability.
+[BGP](/cumulus-linux/Layer_3/Border_Gateway_Protocol_-_BGP) or
+[OSPF](/cumulus-linux/Layer_3/Open_Shortest_Path_First_-_OSPF). In this
+example, OSPF is used to demonstrate full reachability.
 
 Here is the FRRouting configuration using OSPF:
 
@@ -531,10 +531,10 @@ svcnode_peers = 10.2.1.3
   - [en.wikipedia.org/wiki/Anycast](http://en.wikipedia.org/wiki/Anycast)
 
   - [Detailed LNV Configuration
-    Guide](/version/cumulus-linux/Network_Virtualization/Lightweight_Network_Virtualization_Overview/)
+    Guide](/cumulus-linux/Network_Virtualization/Lightweight_Network_Virtualization_Overview/)
 
   - [Cumulus Networks
     Training](http://cumulusnetworks.com/education/instructor-led-training/)
 
   - [Network virtualization chapter, Cumulus Linux user
-    guide](/version/cumulus-linux/Network_Virtualization/)
+    guide](/cumulus-linux/Network_Virtualization/)

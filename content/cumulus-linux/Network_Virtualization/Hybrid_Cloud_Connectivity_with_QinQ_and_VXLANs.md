@@ -14,8 +14,8 @@ siteSlug: cumulus-linux
 *QinQ* is an amendment to the [IEEE 802.1Q
 specification](http://www.ieee802.org/1/pages/802.1Q.html) that provides
 the capability for multiple [VLAN
-tags](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN_Tagging)
-to be inserted into a single Ethernet frame.
+tags](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN_Tagging) to
+be inserted into a single Ethernet frame.
 
 The primary use case for QinQ with VXLAN is where a service provider who
 offers multi-tenant layer 2 connectivity between different customers’
@@ -38,7 +38,7 @@ QinQ is available on the following switches:
     Trident II switches.
 
   - Mellanox switches, only with [VLAN-aware
-    bridges](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode)
+    bridges](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode)
     with 802.1ad and only with single tag translation.
 
 ## <span>Remove the Early Access QinQ Metapackage</span>
@@ -60,7 +60,7 @@ to the provider. The public cloud handoff interface is a QinQ trunk
 where packets on the wire carry both the S-tag and the C-tag.
 
 Single tag translation leverages [VLAN-aware bridge
-mode](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode)
+mode](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode)
 with the use of the 802.1ad VLAN protocol (the only supported protocol
 at the time of writing). Hence, it is more scalable.
 
@@ -91,7 +91,7 @@ For the switch facing the public cloud:
     the C-tag is for the service.
 
 To configure the public cloud-facing switch, run the following
-[NCLU](/version/cumulus-linux/System_Configuration/Network_Command_Line_Utility_-_NCLU)
+[NCLU](/cumulus-linux/System_Configuration/Network_Command_Line_Utility_-_NCLU)
 commands:
 
     cumulus@switch:~$ net add vxlan vni-1000 vxlan id 1000
@@ -144,7 +144,7 @@ For the switch facing the customer:
     encapsulation.
 
 To configure the customer-facing switch, run the following
-[NCLU](/version/cumulus-linux/System_Configuration/Network_Command_Line_Utility_-_NCLU)
+[NCLU](/cumulus-linux/System_Configuration/Network_Command_Line_Utility_-_NCLU)
 commands:
 
     cumulus@switch:~$ net add interface swp3 bridge access 100
@@ -261,7 +261,7 @@ as swp3.100 in the example below.
 {{%notice note%}}
 
 Double tag translation only works with bridges in [traditional
-mode](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/Traditional_Bridge_Mode)
+mode](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/Traditional_Bridge_Mode)
 (not VLAN-aware mode).
 
 {{%/notice%}}
@@ -337,14 +337,14 @@ If the bridge is not VXLAN-enabled, the configuration looks like this:
   - Single-tagged translation supports only VLAN-aware bridge mode with
     the bridge’s VLAN 802.1ad protocol.
 
-  - [MLAG](/version/cumulus-linux/Layer_2/Multi-Chassis_Link_Aggregation_-_MLAG)
+  - [MLAG](/cumulus-linux/Layer_2/Multi-Chassis_Link_Aggregation_-_MLAG)
     is only supported with single-tagged translation.
 
   - Mixing 802.1Q and 802.1ad subinterfaces on the same switch port is
     not supported.
 
   - When configuring bridges in [traditional
-    mode](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/Traditional_Bridge_Mode),
+    mode](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/Traditional_Bridge_Mode),
     all VLANs that are members of the same switch port must use the same
     `vlan_protocol`.
 

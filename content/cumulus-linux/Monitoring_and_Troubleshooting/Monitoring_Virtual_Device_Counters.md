@@ -77,7 +77,7 @@ To get network statistics, run:
 ### <span>For VLANs Using the VLAN-aware Bridge Mode Driver</span>
 
 For a bridge using the [VLAN-aware bridge
-mode](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode)
+mode](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode)
 driver, the bridge is a just a container and each VLAN (VID/PVID) in the
 bridge is an independent L2 broadcast domain. As there is no netdev
 available to display these VLAN statistics, the `switchd` nodes are used
@@ -106,7 +106,7 @@ instead:
 ### <span>For VLANs Using the Traditional Bridge Mode Driver</span>
 
 For a bridge using the [traditional bridge
-mode](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/Traditional_Bridge_Mode)
+mode](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/Traditional_Bridge_Mode)
 driver, each bridge is a single L2 broadcast domain and is associated
 with an internal VLAN. This internal VLAN's counters are displayed as
 bridge netdev stats.
@@ -127,8 +127,8 @@ bridge netdev stats.
 
 These counters are enabled by default. To configure them, use `cl-cfg`
 and configure them as you would any other [`switchd`
-parameter](/version/cumulus-linux/System_Configuration/Configuring_switchd).
-The `switchd` parameters are as follows:
+parameter](/cumulus-linux/System_Configuration/Configuring_switchd). The
+`switchd` parameters are as follows:
 
   - `stats.vlan.aggregate`, which controls the statistics available for
     each VLAN. Its value defaults to *BRIEF*.

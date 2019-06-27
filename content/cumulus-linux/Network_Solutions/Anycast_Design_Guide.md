@@ -14,16 +14,16 @@ siteSlug: cumulus-linux
 Cumulus Networks' [Routing on the
 Host](https://docs.cumulusnetworks.com/display/ROH/Routing+on+the+Host)
 provides the ability to run
-[OSPF](/version/cumulus-linux/Layer_3/Open_Shortest_Path_First_-_OSPF)
-or [BGP](/version/cumulus-linux/Layer_3/Border_Gateway_Protocol_-_BGP)
-directly on server hosts. This can enable a network architecture known
-as *anycast*, where many servers can provide the same service without
-needing layer 2 extensions or load balancer appliances.
+[OSPF](/cumulus-linux/Layer_3/Open_Shortest_Path_First_-_OSPF) or
+[BGP](/cumulus-linux/Layer_3/Border_Gateway_Protocol_-_BGP) directly on
+server hosts. This can enable a network architecture known as *anycast*,
+where many servers can provide the same service without needing layer 2
+extensions or load balancer appliances.
 
 Anycast is not a new protocol or protocol implementation and does not
 require any additional network configuration. Anycast leverages the
 [equal cost
-multipath](/version/cumulus-linux/Layer_3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP)
+multipath](/cumulus-linux/Layer_3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP)
 (ECMP) capabilities inherent in layer 3 networks to provide stateless
 load sharing services.
 
@@ -170,7 +170,7 @@ Although resilient hashing can prevent rehashing on next hop failure, it
 cannot prevent rehashing on next hop addition.
 
 You can read more information on resilient hashing in the [ECMP
-chapter](/version/cumulus-linux/Layer_3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP).
+chapter](/cumulus-linux/Layer_3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP).
 
 ## <span>Applications for Anycast</span>
 

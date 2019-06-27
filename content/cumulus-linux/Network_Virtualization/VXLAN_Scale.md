@@ -35,9 +35,9 @@ reserved range (Cumulus Linux uses 3000-3999 by default). Cumulus
 Networks typically uses a soft number because the math is unique to each
 environment. An internal VLAN is consumed by each
 <span style="color: #222222;"> layer 3 port, subinterface, [traditional
-bridge](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/Traditional_Bridge_Mode),
+bridge](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/Traditional_Bridge_Mode),
 and the [VLAN-aware
-bridge](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode).
+bridge](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode).
 Therefore, the number of configurable VLANs is: </span>
 
 <span style="color: #222222;"> (total configurable 802.1q VLANs) -

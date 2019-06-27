@@ -26,7 +26,7 @@ between virtual and physical server infrastructures.
 Make sure you have a layer 2 gateway; a Tomahawk, Trident II+ or Trident
 II switch running Cumulus Linux. Cumulus Linux includes OVSDB server
 (`ovsdb-server`) and VTEPd (`ovs-vtepd`), which support [VLAN-aware
-bridges](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode).
+bridges](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode).
 
 To integrate a VXLAN with MidoNet, you need to:
 
@@ -42,8 +42,8 @@ version 1.8 or later.
 {{%notice note%}}
 
 There is no support for [VXLAN
-routing](/version/cumulus-linux/Network_Virtualization/VXLAN_Routing) in
-the Trident II chipset; use a loopback interface
+routing](/cumulus-linux/Network_Virtualization/VXLAN_Routing) in the
+Trident II chipset; use a loopback interface
 ([hyperloop](VXLAN_Routing.html#src-8362747_VXLANRouting-t2)) instead.
 
 {{%/notice%}}

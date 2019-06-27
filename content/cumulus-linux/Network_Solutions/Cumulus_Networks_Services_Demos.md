@@ -22,7 +22,7 @@ code and simulate failure scenarios.
 
 The Cumulus Networks *reference topology* includes cabling (in DOT
 format for dual use with
-[PTM](/version/cumulus-linux/Layer_1_and_Switch_Ports/Prescriptive_Topology_Manager_-_PTM)),
+[PTM](/cumulus-linux/Layer_1_and_Switch_Ports/Prescriptive_Topology_Manager_-_PTM)),
 MAC addressing, IP addressing, switches and servers. This topology is
 blessed by the Professional Services Team at Cumulus Networks to fit a
 majority of designs seen in the field.

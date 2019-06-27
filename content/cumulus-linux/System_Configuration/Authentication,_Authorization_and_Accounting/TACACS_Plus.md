@@ -26,7 +26,7 @@ per-command authorization requires additional setup on the switch.
   - Runs over the eth0 management interface
 
   - Ability to run in the [management
-    VRF](/version/cumulus-linux/Layer_3/Management_VRF)
+    VRF](/cumulus-linux/Layer_3/Management_VRF)
 
   - TACACS+ privilege 15 users can run any command with sudo using the
     `/etc/sudoers.d/tacplus` file that is installed by the
@@ -224,14 +224,14 @@ accounting. These records are installed as part of the package.
 
 `audisp-tacplus` installs the audit rules for command accounting.
 Modifying the configuration files is not usually necessary. However,
-when a [management VRF](/version/cumulus-linux/Layer_3/Management_VRF)
-is configured, the accounting configuration does need special
-modification because the `auditd` service starts prior to networking. It
-is necessary to add the *vrf* parameter and to signal the
-`audisp-tacplus` process to reread the configuration. The example below
-shows that the management VRF is named *mgmt*. You can place the *vrf*
-parameter in either the `/etc/tacplus_servers` file or in the
-`/etc/audisp/audisp-tac_plus.conf` file.
+when a [management VRF](/cumulus-linux/Layer_3/Management_VRF) is
+configured, the accounting configuration does need special modification
+because the `auditd` service starts prior to networking. It is necessary
+to add the *vrf* parameter and to signal the `audisp-tacplus` process to
+reread the configuration. The example below shows that the management
+VRF is named *mgmt*. You can place the *vrf* parameter in either the
+`/etc/tacplus_servers` file or in the `/etc/audisp/audisp-tac_plus.conf`
+file.
 
     vrf=mgmt
 

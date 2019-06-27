@@ -8,7 +8,9 @@ title: "Cumulus Networks Documentation Home"
 
 [Cumulus Linux 3.7](/cumulus-linux/)
 
-[Cumulus NetQ 2.1](/Cumulus-NetQ/)
+[Cumulus NetQ 2.1](/cumulus-netq/)
+
+[Cumulus VX](/cumulus-vx/)
 
 [Cumulus Chassis](/Chassis/Chassis_User_Guide.html)
 
@@ -32,6 +34,10 @@ title: "Cumulus Networks Documentation Home"
 [Cumulus Linux 3.0.1](/version/cumulus-linux-301/)
 
 [Cumulus Linux 2.5.12 ESR](/version/cumulus-linux-2512-esr/)
+
+[Cumulus VX 3.0](/version/cumulus-vx-30)
+
+
 
 
 ## Writing Guide

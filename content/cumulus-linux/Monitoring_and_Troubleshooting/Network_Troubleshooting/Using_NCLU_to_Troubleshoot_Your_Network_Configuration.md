@@ -12,7 +12,7 @@ imgData: cumulus-linux
 siteSlug: cumulus-linux
 ---
 The [network command line
-utility](/version/cumulus-linux/System_Configuration/Network_Command_Line_Utility_-_NCLU)
+utility](/cumulus-linux/System_Configuration/Network_Command_Line_Utility_-_NCLU)
 (NCLU) can quickly return a lot of information about your network
 configuration.
 

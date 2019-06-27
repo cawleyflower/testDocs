@@ -30,9 +30,9 @@ Cumulus Networks has not tested RIP, RIPv6, IS-IS and Babel.
 
 The `zebra` daemon must always be enabled. The others you can enable
 according to how you plan to route your network — using
-[BGP](/version/cumulus-linux/Layer_3/Border_Gateway_Protocol_-_BGP) for
-example, instead of
-[OSPF](/version/cumulus-linux/Layer_3/Open_Shortest_Path_First_-_OSPF).
+[BGP](/cumulus-linux/Layer_3/Border_Gateway_Protocol_-_BGP) for example,
+instead of
+[OSPF](/cumulus-linux/Layer_3/Open_Shortest_Path_First_-_OSPF).
 
 Before you start FRRouting, you need to enable the corresponding
 daemons. Edit the `/etc/frr/daemons` file and set to *yes* each daemon
@@ -71,7 +71,7 @@ any of the routing protocol daemons that are enabled and running.
 
 For more information on the `systemctl` command and changing the state
 of daemons, read [Services and Daemons in Cumulus
-Linux](/version/cumulus-linux/System_Configuration/Services_and_Daemons_in_Cumulus_Linux).
+Linux](/cumulus-linux/System_Configuration/Services_and_Daemons_in_Cumulus_Linux).
 
 {{%/notice%}}
 
@@ -159,7 +159,7 @@ is the recommended way to define the addresses; do **not** create
 interfaces using FRRouting. For more information, see [Configuring IP
 Addresses](Interface_Configuration_and_Management.html#src-8363023_InterfaceConfigurationandManagement-ip)
 and [Virtual Routing and Forwarding -
-VRF](/version/cumulus-linux/Layer_3/Virtual_Routing_and_Forwarding_-_VRF).
+VRF](/cumulus-linux/Layer_3/Virtual_Routing_and_Forwarding_-_VRF).
 
 ## <span id="src-8362919_ConfiguringFRRouting-vtysh" class="confluence-anchor-link"></span><span>FRRouting vtysh Modal CLI</span>
 
@@ -414,7 +414,7 @@ started, `vtysh` silently ignores those commands.
 
 Alternately, if you do not want to use a modal CLI to configure
 FRRouting, you can use a suite of [Cumulus Linux-specific
-commands](/version/cumulus-linux/Layer_3/Configuring_FRRouting/Comparing_NCLU_and_vtysh_Commands)
+commands](/cumulus-linux/Layer_3/Configuring_FRRouting/Comparing_NCLU_and_vtysh_Commands)
 instead.
 
 ## <span>Reload the FRRouting Configuration</span>

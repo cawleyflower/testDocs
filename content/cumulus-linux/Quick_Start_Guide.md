@@ -58,7 +58,7 @@ system choice, such as Cumulus Linux.
 
 If Cumulus Linux is already installed on your switch and you need to
 upgrade the software only, skip to [Upgrading Cumulus
-Linux](/version/cumulus-linux/Installation_Management/Upgrading_Cumulus_Linux).
+Linux](/cumulus-linux/Installation_Management/Upgrading_Cumulus_Linux).
 
 {{%/notice%}}
 
@@ -89,7 +89,7 @@ server typically completes in less than ten minutes.
 
 You have more options for installing Cumulus Linux with ONIE. Read
 [Installing a New Cumulus Linux
-Image](/version/cumulus-linux/Installation_Management/Installing_a_New_Cumulus_Linux_Image)
+Image](/cumulus-linux/Installation_Management/Installing_a_New_Cumulus_Linux_Image)
 to install Cumulus Linux using ONIE in the following ways:
 
   - DHCP/web server with and without DHCP options
@@ -152,7 +152,7 @@ All accounts except `root` are permitted remote SSH login; you can use
 change the system configuration require this elevated level of access.
 
 For more information about `sudo`, read [Using sudo to Delegate
-Privileges](/version/cumulus-linux/System_Configuration/Authentication_Authorization_and_Accounting/Using_sudo_to_Delegate_Privileges).
+Privileges](/cumulus-linux/System_Configuration/Authentication_Authorization_and_Accounting/Using_sudo_to_Delegate_Privileges).
 
 ### <span>Serial Console Management</span>
 
@@ -243,10 +243,10 @@ required.
 
 Before you install the license, verify that the date and time on the
 switch are correct. You must [correct the date and
-time](/version/cumulus-linux/System_Configuration/Setting_Date_and_Time)
-if they are incorrect. The wrong date and time can have impacts on the
-switch, such as the inability to synchronize with Puppet or return
-errors like this one after you restart `switchd`:
+time](/cumulus-linux/System_Configuration/Setting_Date_and_Time) if they
+are incorrect. The wrong date and time can have impacts on the switch,
+such as the inability to synchronize with Puppet or return errors like
+this one after you restart `switchd`:
 
 > Warning: Unit file of switchd.service changed on disk, 'systemctl
 > daemon-reload' recommended.

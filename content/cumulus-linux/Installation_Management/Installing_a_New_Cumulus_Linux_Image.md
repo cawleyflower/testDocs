@@ -522,4 +522,4 @@ Click to expand ARM instructions...
     Stick](https://cumulusnetworks.com/cumulus-on-a-stick/)
 
   - [Managing Cumulus Linux Disk
-    Images](/version/cumulus-linux/Installation_Management/Managing_Cumulus_Linux_Disk_Images)
+    Images](/cumulus-linux/Installation_Management/Managing_Cumulus_Linux_Disk_Images)

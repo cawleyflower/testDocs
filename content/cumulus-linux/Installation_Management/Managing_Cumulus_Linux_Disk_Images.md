@@ -16,9 +16,9 @@ image*. This section discusses how to manage the disk image.
 
 For information on installing a new Cumulus Linux disk image, refer to
 [Installing a New Cumulus Linux
-Image](/version/cumulus-linux/Installation_Management/Installing_a_New_Cumulus_Linux_Image).
+Image](/cumulus-linux/Installation_Management/Installing_a_New_Cumulus_Linux_Image).
 For information on upgrading Cumulus Linux, refer to [Upgrading Cumulus
-Linux](/version/cumulus-linux/Installation_Management/Upgrading_Cumulus_Linux).
+Linux](/cumulus-linux/Installation_Management/Upgrading_Cumulus_Linux).
 
 ## <span>Determine the Switch Platform</span>
 

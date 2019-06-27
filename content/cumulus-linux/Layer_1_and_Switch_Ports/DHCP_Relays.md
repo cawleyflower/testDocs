@@ -24,9 +24,9 @@ hosts, DHCP relay, and DHCP server using the following topology:
 The `dhcpd` and `dhcrelay` services are disabled by default. After you
 finish configuring the DHCP relays and servers, you need to start those
 services. If you intend to run these services within a
-[VRF](/version/cumulus-linux/Layer_3/Virtual_Routing_and_Forwarding_-_VRF),
-including the [management
-VRF](/version/cumulus-linux/Layer_3/Management_VRF), follow [these
+[VRF](/cumulus-linux/Layer_3/Virtual_Routing_and_Forwarding_-_VRF),
+including the [management VRF](/cumulus-linux/Layer_3/Management_VRF),
+follow [these
 steps](Management_VRF.html#src-8362940_ManagementVRF-services) for
 configuring them. See also the [VRF
 chapter](Virtual_Routing_and_Forwarding_-_VRF.html#src-8362942_VirtualRoutingandForwarding-VRF-dhcp).
@@ -36,7 +36,7 @@ chapter](Virtual_Routing_and_Forwarding_-_VRF.html#src-8362942_VirtualRoutingand
 ## <span>Configure IPv4 DHCP Relays</span>
 
 Configure `isc-dhcp-relay` using
-[NCLU](/version/cumulus-linux/System_Configuration/Network_Command_Line_Utility_-_NCLU),
+[NCLU](/cumulus-linux/System_Configuration/Network_Command_Line_Utility_-_NCLU),
 specifying the IP addresses to each DHCP server and the interfaces that
 are used as the uplinks.
 
@@ -319,7 +319,7 @@ interfaces participating in DHCP relay (facing the server and facing the
 client) and the IP address of the server. If the client-facing interface
 is a bridge port, specify the switch virtual interface (SVI) name if you
 are using a [VLAN-aware
-bridge](/version/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode)
+bridge](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/VLAN-aware_Bridge_Mode)
 (for example, vlan100), or the bridge name if you are using traditional
 bridging (for example, br100).
 

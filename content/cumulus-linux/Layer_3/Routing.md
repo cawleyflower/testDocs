@@ -16,7 +16,7 @@ This chapter discusses routing on switches running Cumulus Linux.
 ## <span>Manage Static Routes</span>
 
 You manage static routes using
-[NCLU](/version/cumulus-linux/System_Configuration/Network_Command_Line_Utility_-_NCLU)
+[NCLU](/cumulus-linux/System_Configuration/Network_Command_Line_Utility_-_NCLU)
 or the Cumulus Linux `ip route` command. The routes are added to the
 [FRRouting](https://frrouting.org) routing table, and are then updated
 into the kernel routing table as well.
@@ -191,7 +191,7 @@ Algorithm Longest Prefix Match (ALPM). In ALPM mode, the hardware can
 store significantly more route entries.
 
 You can use
-[`cl-resource-query`](/version/cumulus-linux/Monitoring_and_Troubleshooting/Resource_Diagnostics_Using_cl-resource-query)
+[`cl-resource-query`](/cumulus-linux/Monitoring_and_Troubleshooting/Resource_Diagnostics_Using_cl-resource-query)
 to determine the current table sizes on a given switch.
 
 ### <span id="src-8362912_Routing-uft" class="confluence-anchor-link"></span><span>Forwarding Table Profiles</span>

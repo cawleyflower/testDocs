@@ -49,7 +49,7 @@ Redistribute neighbor was created with these use cases in mind:
 
   - Hosts that are dual connected to two leaf nodes without using
     proprietary protocols such as
-    [MLAG](/version/cumulus-linux/Layer_2/Multi-Chassis_Link_Aggregation_-_MLAG)
+    [MLAG](/cumulus-linux/Layer_2/Multi-Chassis_Link_Aggregation_-_MLAG)
 
   - Anycast services needing dynamic advertisement from multiple hosts
 
@@ -218,7 +218,7 @@ Configure a host with the same /32 IP address on its loopback (lo) and
 uplinks (in this example, eth1 and eth2). This is done so both leaf
 switches advertise the same /32 regardless of the interface. Cumulus
 Linux relies on
-[ECMP](/version/cumulus-linux/Layer_3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP)
+[ECMP](/cumulus-linux/Layer_3/Equal_Cost_Multipath_Load_Sharing_-_Hardware_ECMP)
 to load balance across the interfaces southbound, and an equal cost
 static route (see the configuration below) for load balancing
 northbound.
@@ -263,7 +263,7 @@ via eth2. You should note:
 #### <span>Install ifplugd</span>
 
 Additionally, install and use
-[ifplugd](/version/cumulus-linux/Layer_1_and_Switch_Ports/Interface_Configuration_and_Management/ifplugd).
+[ifplugd](/cumulus-linux/Layer_1_and_Switch_Ports/Interface_Configuration_and_Management/ifplugd).
 `ifplugd` modifies the behavior of the Linux routing table when an
 interface undergoes a link transition (carrier up/down). The Linux
 kernel by default leaves routes up even when the physical interface is
@@ -314,7 +314,7 @@ This release of redistribute neighbor supports IPv4 only.
 ### <span>VRFs Are not Supported</span>
 
 This release of redistribute neighbor does not support
-[VRFs](/version/cumulus-linux/Layer_3/Virtual_Routing_and_Forwarding_-_VRF).
+[VRFs](/cumulus-linux/Layer_3/Virtual_Routing_and_Forwarding_-_VRF).
 
 ### <span>Only 1024 Interfaces Supported</span>
 

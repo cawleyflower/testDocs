@@ -49,7 +49,7 @@ MLAG environment.
 {{%notice info has%}}
 
 `ifplugd` is configured on both both the primary and secondary
-[MLAG](/version/cumulus-linux/Layer_2/Multi-Chassis_Link_Aggregation_-_MLAG)
+[MLAG](/cumulus-linux/Layer_2/Multi-Chassis_Link_Aggregation_-_MLAG)
 switches in this example.
 
 {{%/notice%}}

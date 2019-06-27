@@ -13,9 +13,9 @@ siteSlug: cumulus-linux
 ---
 Cumulus Linux implements an HTTP application programing interface to
 [OpenStack ML2
-driver](/version/cumulus-linux/Network_Solutions/OpenStack_Neutron_ML2_and_Cumulus_Linux)
+driver](/cumulus-linux/Network_Solutions/OpenStack_Neutron_ML2_and_Cumulus_Linux)
 and
-[NCLU](/version/cumulus-linux/System_Configuration/Network_Command_Line_Utility_-_NCLU).
+[NCLU](/cumulus-linux/System_Configuration/Network_Command_Line_Utility_-_NCLU).
 Rather than accessing Cumulus Linux using SSH, you can interact with the
 switch using an HTTP client, such as cURL, HTTPie or a web browser.
 

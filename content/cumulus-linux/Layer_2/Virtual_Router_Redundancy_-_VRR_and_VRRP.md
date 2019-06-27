@@ -43,7 +43,7 @@ configuration.
 The diagram below illustrates a basic VRR-enabled network configuration.
 The network includes several hosts and two routers running Cumulus Linux
 configured with [Multi-chassis Link
-Aggregation](/version/cumulus-linux/Layer_2/Multi-Chassis_Link_Aggregation_-_MLAG)
+Aggregation](/cumulus-linux/Layer_2/Multi-Chassis_Link_Aggregation_-_MLAG)
 (MLAG).
 
 {{%notice note%}}
@@ -189,7 +189,7 @@ mode for First Hop Redundancy Protocol.
 ### <span>Example VRR Configuration with MLAG</span>
 
 To create an
-[MLAG](/version/cumulus-linux/Layer_2/Multi-Chassis_Link_Aggregation_-_MLAG)
+[MLAG](/cumulus-linux/Layer_2/Multi-Chassis_Link_Aggregation_-_MLAG)
 configuration that incorporates VRR, use a configuration like the
 following:
 
