@@ -35,7 +35,7 @@
 {{ define "book-page-link" }}
 {{ with .Page }}
   <a href="{{ .RelPermalink }}" {{ if eq $.CurrentPage .Permalink }} class="active" {{ end }}>
-    {{ template "title" . }}
+    {{ .Title }}
   </a>
 
 {{ end }}

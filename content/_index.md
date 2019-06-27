@@ -1,26 +1,44 @@
 ---
 title: "Cumulus Networks Documentation Home"
-layout: baseof
-aliases:
- - /old/Adding_and_Updating_Packages.html
 ---
 # Cumulus Networks Documentation
 
 
 ## Products
 
-[Cumulus Linux 3.7](/old/Cumulus_Linux/Cumulus_Linux_User_Guide.html)
+[Cumulus Linux 3.7](/cumulus-linux/)
 
-[Cumulus NetQ 2.1](/old/Cumulus_NetQ/Cumulus_NetQ_2.1.html)
+[Cumulus NetQ 2.1](/cumulus-netq/)
 
-[Cumulus Chassis](/old/Chassis/Chassis_User_Guide.html)
+[Cumulus VX](/cumulus-vx/)
+
+[Cumulus Chassis](/Chassis/Chassis_User_Guide.html)
 
 
 ## Old Versions
 
-[Cumulus Linux 3.6](/old/Cumulus_Linux_36/Cumulus_Linux_User_Guide.html)
+[Cumulus Linux 3.6](/version/cumulus-linux-36/)
 
-[Cumulus Linux 3.5](/old/Cumulus_Linux_35/Cumulus_Linux_User_Guide.html)
+[Cumulus Linux 3.5](/version/cumulus-linux-35/)
+
+[Cumulus Linux 3.4.3](/version/cumulus-linux-343/)
+
+[Cumulus Linux 3.3.2](/version/cumulus-linux-332/)
+
+[Cumulus Linux 3.3.0](/version/cumulus-linux-330/)
+
+[Cumulus Linux 3.2.1](/version/cumulus-linux-321/)
+
+[Cumulus Linux 3.1.2](/version/cumulus-linux-312/)
+
+[Cumulus Linux 3.0.1](/version/cumulus-linux-301/)
+
+[Cumulus Linux 2.5.12 ESR](/version/cumulus-linux-2512-esr/)
+
+[Cumulus VX 3.0](/version/cumulus-vx-30)
+
+
+
 
 ## Writing Guide
 
