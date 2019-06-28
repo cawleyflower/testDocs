@@ -3,7 +3,7 @@ title: Cumulus RMP Index
 author: Cumulus Networks
 weight: 23
 aliases:
- - /display/RMP31/Cumulus+RMP+Index
+ - /display/RMP312/Cumulus+RMP+Index
  - /pages/viewpage.action?pageId=5122802
 pageID: 5122802
 product: Cumulus RMP
@@ -468,3 +468,11 @@ siteSlug: cumulus-rmp-312
       - [zero\_touch\_provisioning](https://docs.cumulusnetworks.com/label/RMP/zero_touch_provisioning)
     
       - [ztp](https://docs.cumulusnetworks.com/label/RMP/ztp)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

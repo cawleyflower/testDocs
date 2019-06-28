@@ -7,10 +7,12 @@ aliases:
  - /pages/viewpage.action?pageId=5118265
 pageID: 5118265
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
+<details>
+
 Before you install Cumulus Linux, the switch can be in two different
 states:
 
@@ -213,10 +215,15 @@ configuration of your switch after the installation finishes.
     platform from the [Cumulus Networks Downloads
     page](http://cumulusnetworks.com/downloads/).
 
-2.  Prepare your flash drive by formatting in one of the supported
+2.  
+    
+    <details>
+    
+    Prepare your flash drive by formatting in one of the supported
     formats: FAT32, vFAT or EXT2.
     
-    Optional: Preparing a USB Drive inside Cumulus Linux
+    <summary>Optional: Preparing a USB Drive inside Cumulus Linux
+    </summary>
     
     <table>
     <colgroup>
@@ -254,6 +261,8 @@ configuration of your switch after the installation finishes.
     </tr>
     </tbody>
     </table>
+    
+    </details>
 
 3.  Copy the image and license files over to the flash drive and rename
     the image file to:
@@ -282,7 +291,7 @@ configuration of your switch after the installation finishes.
 
 ### <span>Instructions for x86 Platforms</span>
 
-Click to expand x86 instructions...
+<summary>Click to expand x86 instructions... </summary>
 
 1.  Prepare the switch for installation:
     
@@ -397,7 +406,7 @@ Click to expand x86 instructions...
 
 ### <span>Instructions for ARM Platforms</span>
 
-Click to expand ARM instructions...
+<summary>Click to expand ARM instructions... </summary>
 
 1.  Prepare the switch for installation:
     
@@ -543,3 +552,13 @@ Follow these upgrade steps for both major and minor releases, where:
 
 For more information, see [Upgrading Cumulus
 Linux](Upgrading_Cumulus_Linux.html#src-5118269_UpgradingCumulusLinux-binary_upgrade).
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

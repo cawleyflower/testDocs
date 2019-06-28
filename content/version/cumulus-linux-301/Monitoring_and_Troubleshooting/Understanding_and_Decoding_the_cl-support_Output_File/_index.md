@@ -7,10 +7,12 @@ aliases:
  - /pages/viewpage.action?pageId=5118236
 pageID: 5118236
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
+<details>
+
 ## <span>The cl-support command generates a tar archive of useful information for troubleshooting that can be auto-generated or manually created. To manually create it, run the cl-support command. The cl-support file is automatically generated when:</span>
 
   - There is a [core file dump](http://linux.die.net/man/5/core) of any
@@ -40,7 +42,7 @@ Example output:
     cumulus@switch:~$ ls /var/support
     cl_support__switch_20141204_203833
 
-(Click to expand)
+<summary>(Click to expand) </summary>
 
 ## <span>Understanding the File Naming Scheme </span>
 
@@ -112,3 +114,13 @@ Here is more information on the file structure:
     Directory](/version/cumulus-linux-301/Monitoring_and_Troubleshooting/Understanding_and_Decoding_the_cl-support_Output_File/Troubleshooting_the_support_Directory)
     — This is an explanation of the `support` directory included in the
     `cl-support` output.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

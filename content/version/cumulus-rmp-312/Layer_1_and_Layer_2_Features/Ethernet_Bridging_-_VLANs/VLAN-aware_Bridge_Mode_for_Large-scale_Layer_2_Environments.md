@@ -3,7 +3,7 @@ title: VLAN-aware Bridge Mode for Large-scale Layer 2 Environments
 author: Cumulus Networks
 weight: 163
 aliases:
- - /display/RMP31/VLAN-aware+Bridge+Mode+for+Large-scale+Layer+2+Environments
+ - /display/RMP312/VLAN-aware+Bridge+Mode+for+Large-scale+Layer+2+Environments
  - /pages/viewpage.action?pageId=5122788
 pageID: 5122788
 product: Cumulus RMP
@@ -11,6 +11,8 @@ version: 3.1.2
 imgData: cumulus-rmp-312
 siteSlug: cumulus-rmp-312
 ---
+<details>
+
 The Cumulus RMP bridge driver supports two configuration modes, one that
 is VLAN-aware, and one that follows a more traditional Linux bridge
 model.
@@ -44,7 +46,7 @@ VLAN-aware bridge on a given switch.
 
 Contents
 
-This chapter covers ...
+<summary>This chapter covers ... </summary>
 
 ## <span>Defining VLAN-aware Bridge Attributes</span>
 
@@ -491,3 +493,13 @@ VLAN-aware one. To do the opposite, delete the VLAN-aware bridge in step
     translation enabled for it; only bridges configured in [traditional
     mode](/version/cumulus-rmp-312/Layer_1_and_Layer_2_Features/Ethernet_Bridging_-_VLANs/)
     can utilize VLAN translation.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

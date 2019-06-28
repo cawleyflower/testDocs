@@ -1104,13 +1104,14 @@ configuration file:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><strong>spine01:</strong> /etc/vxsnd.conf</p>
+<td><details>
+<p><strong>spine01:</strong> /etc/vxsnd.conf</p>
 <pre><code>svcnode_ip = 10.10.10.10
  
 src_ip = 10.0.0.21
  
 svcnode_peers = 10.0.0.21 10.0.0.22</code></pre>
-Full configuration of vxsnd.conf
+<summary>Full configuration of vxsnd.conf </summary>
 <pre><code>[common]
 # Log level is one of DEBUG, INFO, WARNING, ERROR, CRITICAL
 #loglevel = INFO
@@ -1164,14 +1165,16 @@ svcnode_peers = 10.0.0.21 10.0.0.22
 #install_svcnode_ip = false
  
 # Seconds to wait before checking the database to age out stale entries
-#age_check = 90</code></pre></td>
-<td><p><strong>spine02:</strong> /etc/vxsnd.conf</p>
+#age_check = 90</code></pre>
+</details></td>
+<td><details>
+<p><strong>spine02:</strong> /etc/vxsnd.conf</p>
 <pre><code>svcnode_ip = 10.10.10.10
  
 src_ip = 10.0.0.22
  
 svcnode_peers = 10.0.0.21 10.0.0.22</code></pre>
-Full configuration of vxsnd.conf
+<summary>Full configuration of vxsnd.conf </summary>
 <pre><code>[common]
 # Log level is one of DEBUG, INFO, WARNING, ERROR, CRITICAL
 #loglevel = INFO
@@ -1225,7 +1228,8 @@ svcnode_peers = 10.0.0.21 10.0.0.22
 #install_svcnode_ip = false
  
 # Seconds to wait before checking the database to age out stale entries
-#age_check = 90</code></pre></td>
+#age_check = 90</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -1392,3 +1396,11 @@ indicating that there is a `vxlan-id` mis-match on VXLAN10
 
   - [Network virtualization chapter, Cumulus Linux user
     guide](/version/cumulus-linux-35/Network_Virtualization/)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

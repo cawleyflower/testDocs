@@ -417,3 +417,11 @@ Some things you should note about the output:
 
   - [Comparing Traditional Bridge Mode to VLAN-aware Bridge
     Mode](https://support.cumulusnetworks.com/hc/en-us/articles/204909397)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

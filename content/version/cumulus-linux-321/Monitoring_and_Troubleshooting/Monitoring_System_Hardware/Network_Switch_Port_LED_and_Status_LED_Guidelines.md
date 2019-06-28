@@ -159,3 +159,12 @@ components for which the LEDs are there as just units for now.
     | --------------- | ------------- |
     | Locate enabled  | Blinking Blue |
     | Locate disabled | Off           |
+    
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

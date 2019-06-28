@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118269
 pageID: 5118269
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -603,3 +603,11 @@ For more details on integrating automation into your Cumulus Linux
 deployment, see the [Automation Solutions section on
 cumulusnetworks.com](https://cumulusnetworks.com/solutions/automation/)
 .
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

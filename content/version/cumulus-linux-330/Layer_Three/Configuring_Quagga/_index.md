@@ -3,7 +3,7 @@ title: Configuring Quagga
 author: Cumulus Networks
 weight: 169
 aliases:
- - /display/CL330/Configuring+Quagga
+ - /display/CL33/Configuring+Quagga
  - /pages/viewpage.action?pageId=5866431
 pageID: 5866431
 product: Cumulus Linux
@@ -467,3 +467,11 @@ supply the following information:
   - [www.nongnu.org/quagga/docs/docs-info.html\#IPv6-Support](http://www.nongnu.org/quagga/docs/docs-info.html#IPv6-Support)
 
   - [www.nongnu.org/quagga/docs/docs-info.html\#Zebra](http://www.nongnu.org/quagga/docs/docs-info.html#Zebra)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

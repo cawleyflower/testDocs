@@ -7,10 +7,12 @@ aliases:
  - /pages/viewpage.action?pageId=5116351
 pageID: 5116351
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
+<details>
+
 The Cumulus RMP bridge driver supports two configuration modes, one that
 is VLAN-aware, and one that follows a more traditional Linux bridge
 model.
@@ -44,7 +46,7 @@ VLAN-aware bridge on a given switch.
 
 Contents
 
-(Click to expand)
+<summary>(Click to expand) </summary>
 
 ## <span>Creating the Bridge</span>
 
@@ -437,3 +439,13 @@ bonds. The bond configurations are generated from a
     translation enabled for it; only bridges configured in [traditional
     mode](/version/cumulus-rmp-2512-esr/Layer_1_and_Layer_2_Features/Ethernet_Bridging_-_VLANs/)
     can utilize VLAN translation.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

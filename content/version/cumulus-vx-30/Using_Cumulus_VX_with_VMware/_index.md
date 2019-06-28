@@ -37,3 +37,11 @@ The resulting configuration contains four VMs:
     the network
 
 {{% imgOld 0 %}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

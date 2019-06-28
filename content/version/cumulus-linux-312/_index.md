@@ -55,3 +55,11 @@ documentation.
     Troubleshooting](/version/cumulus-linux-312/Monitoring_and_Troubleshooting/)
 
   - [Network Solutions](/version/cumulus-linux-312/Network_Solutions/)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

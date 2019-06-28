@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118359
 pageID: 5118359
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -127,3 +127,11 @@ mode](/version/cumulus-linux-301/Layer_1_and_Layer_2_Features/Ethernet_Bridging_
         bridge-ports bond1 bond2 bond3 bond4 peer5
         bridge-stp on
         mstpctl-bpduguard bond1=yes
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

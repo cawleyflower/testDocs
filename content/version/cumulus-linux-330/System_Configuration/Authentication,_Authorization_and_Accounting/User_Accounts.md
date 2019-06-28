@@ -3,7 +3,7 @@ title: User Accounts
 author: Cumulus Networks
 weight: 251
 aliases:
- - /display/CL330/User+Accounts
+ - /display/CL33/User+Accounts
  - /pages/viewpage.action?pageId=5866105
 pageID: 5866105
 product: Cumulus Linux
@@ -120,3 +120,11 @@ root account, you can do one of two things for the account:
 3.  Restart the `ssh` service:
     
         cumulus@switch:~$ sudo systemctl reload ssh.service
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -11,6 +11,8 @@ version: 3.1.2
 imgData: cumulus-linux-312
 siteSlug: cumulus-linux-312
 ---
+<details>
+
 This chapter discusses the various network interfaces on a switch
 running Cumulus Linux.
 
@@ -99,7 +101,7 @@ defaults to half duplex.
 
 You can also configure these settings at run time, using `ethtool`.
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 <table>
 <colgroup>
@@ -153,7 +155,7 @@ interfaces.
     iface swp1
        link-autoneg off
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 <table>
 <colgroup>
@@ -182,7 +184,7 @@ port, front panel port, bridge, VLAN subinterfaces and bonds.
     iface swp1
        mtu 9000
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 <table>
 <colgroup>
@@ -675,3 +677,13 @@ On the T5048-LY8, run the following commands:
   - [www.linuxfoundation.org/collaborate/workgroups/networking/bridge](http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge)
 
   - [www.linuxfoundation.org/collaborate/workgroups/networking/bonding](http://www.linuxfoundation.org/collaborate/workgroups/networking/bonding)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

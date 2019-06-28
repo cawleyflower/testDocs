@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116313
 pageID: 5116313
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
@@ -272,3 +272,11 @@ be prefixed with `sudo.`
 
   - [Adding Yourself to
     sudoers](http://rubypond.com/blog/adding-yourself-to-the-sudoers-file)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

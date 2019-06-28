@@ -171,3 +171,11 @@ entry under the **\# Specify interfaces** comment:
   - <http://en.wikipedia.org/wiki/Network_Time_Protocol>
 
   - <http://wiki.debian.org/NTP>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

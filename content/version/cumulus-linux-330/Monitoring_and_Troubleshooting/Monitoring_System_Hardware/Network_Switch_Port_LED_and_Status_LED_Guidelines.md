@@ -3,7 +3,7 @@ title: Network Switch Port LED and Status LED Guidelines
 author: Cumulus Networks
 weight: 349
 aliases:
- - /display/CL330/Network+Switch+Port+LED+and+Status+LED+Guidelines
+ - /display/CL33/Network+Switch+Port+LED+and+Status+LED+Guidelines
  - /pages/viewpage.action?pageId=5866132
 pageID: 5866132
 product: Cumulus Linux
@@ -184,3 +184,11 @@ This functionality is only supported on swp\* ports, not eth\*
 management interfaces.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

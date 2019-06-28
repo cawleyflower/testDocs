@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118242
 pageID: 5118242
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -204,3 +204,11 @@ hardware statistics via `switchd`:
     counters available via `netdev` are sufficient to display the
     vlan/vxlan counters currently supported in the hardware (only rx/tx
     packets/bytes are supported currently).
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

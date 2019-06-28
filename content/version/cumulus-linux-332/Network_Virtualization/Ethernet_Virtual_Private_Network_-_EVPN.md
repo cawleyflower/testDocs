@@ -11,6 +11,8 @@ version: 3.3.2
 imgData: cumulus-linux-332
 siteSlug: cumulus-linux-332
 ---
+<details>
+
 Ethernet Virtual Private Network (EVPN) provides a control plane for
 [VXLANs](/version/cumulus-linux-332/Network_Virtualization/) in Cumulus
 Linux, with the following functionality:
@@ -61,7 +63,7 @@ current, and you don't need to do anything.
 If the version is *1.0.0+cl3eau8* or any earlier *3eau* version, then
 you need to remove it.
 
-Removing an older EVPN version
+<summary>Removing an older EVPN version </summary>
 
 {{%notice note%}}
 
@@ -645,7 +647,7 @@ for leaf03, leaf04, server03, server04). Here is the topology diagram:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>leaf01 /etc/network/interfaces
+<td><summary>leaf01 /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.0.0.11/32
@@ -686,7 +688,7 @@ iface vxlan10200
      vxlan-local-tunnelip 10.0.0.11
      bridge-access 200
      bridge-learning off</code></pre></td>
-<td>leaf02 /etc/network/interfaces
+<td><summary>leaf02 /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.0.0.12/32
@@ -729,7 +731,7 @@ iface vxlan10200
     bridge-learning off</code></pre></td>
 </tr>
 <tr class="even">
-<td>leaf01 /etc/quagga/Quagga.conf
+<td><summary>leaf01 /etc/quagga/Quagga.conf </summary>
 <pre><code>!
 interface swp51
  ipv6 nd ra-interval 10
@@ -775,7 +777,7 @@ ip prefix-list dc-leaf-out seq 500 deny any
 line vty
 !
 end</code></pre></td>
-<td>leaf02 /etc/quagga/Quagga.conf
+<td><summary>leaf02 /etc/quagga/Quagga.conf </summary>
 <pre><code>!
 interface swp51
  ipv6 nd ra-interval 10
@@ -834,7 +836,7 @@ end</code></pre></td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>spine01 /etc/network/interfaces
+<td><summary>spine01 /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.0.0.21/32
@@ -854,7 +856,7 @@ iface swp3
  
 auto swp4
 iface swp4</code></pre></td>
-<td>spine02 /etc/network/interfaces
+<td><summary>spine02 /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.0.0.22/32
@@ -876,7 +878,7 @@ auto swp4
 iface swp4</code></pre></td>
 </tr>
 <tr class="even">
-<td>spine01 /etc/quagga/Quagga.conf
+<td><summary>spine01 /etc/quagga/Quagga.conf </summary>
 <pre><code>!
 interface swp1
  ipv6 nd ra-interval 10
@@ -929,7 +931,7 @@ ip prefix-list dc-spine seq 500 deny any
 line vty
 !
 end</code></pre></td>
-<td>spine02 /etc/quagga/Quagga.conf
+<td><summary>spine02 /etc/quagga/Quagga.conf </summary>
 <pre><code>!
 interface swp1
  ipv6 nd ra-interval 10
@@ -1087,7 +1089,7 @@ leaf03, leaf04, server02, server04). Here is the topology diagram:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>leaf01 /etc/network/interfaces
+<td><summary>leaf01 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf01:~$ cat /etc/network/interfaces
  
  
@@ -1167,7 +1169,7 @@ iface vxlan10200
      vxlan-local-tunnelip 10.0.0.11
      bridge-access 200
      bridge-learning off</code></pre></td>
-<td>leaf02 /etc/network/interfaces
+<td><summary>leaf02 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf02:~$ cat /etc/network/interfaces
  
  
@@ -1249,7 +1251,7 @@ iface vxlan10200
      bridge-learning off</code></pre></td>
 </tr>
 <tr class="even">
-<td>leaf01 /etc/quagga/Quagga.conf
+<td><summary>leaf01 /etc/quagga/Quagga.conf </summary>
 <pre><code>cumulus@leaf01:~$ cat /etc/quagga/Quagga.conf 
 !
 username cumulus nopassword
@@ -1293,7 +1295,7 @@ router bgp 65011
 line vty
 !
 end</code></pre></td>
-<td>leaf02 /etc/quagga/Quagga.conf
+<td><summary>leaf02 /etc/quagga/Quagga.conf </summary>
 <pre><code>cumulus@leaf02:~$ cat /etc/quagga/Quagga.conf 
 !
 username cumulus nopassword
@@ -1396,7 +1398,7 @@ auto swp4
 iface swp4</code></pre></td>
 </tr>
 <tr class="even">
-<td>spine01 /etc/quagga/Quagga.conf
+<td><summary>spine01 /etc/quagga/Quagga.conf </summary>
 <pre><code>cumulus@spine01:~$ cat /etc/quagga/Quagga.conf 
 !
 username cumulus nopassword
@@ -1448,7 +1450,7 @@ router bgp 65020
 line vty
 !
 end</code></pre></td>
-<td>spine02 /etc/quagga/Quagga.conf
+<td><summary>spine02 /etc/quagga/Quagga.conf </summary>
 <pre><code>cumulus@spine02:~$ cat /etc/quagga/Quagga.conf 
 !
 username cumulus nopassword
@@ -2308,3 +2310,13 @@ The following caveat applies to EVPN in Cumulus Linux 3.3:
     in an optimal manner, because the neighbor entries are not synced by
     a control plane. Thus, ARPs may not be suppressed sometimes. This
     has no impact on forwarding.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

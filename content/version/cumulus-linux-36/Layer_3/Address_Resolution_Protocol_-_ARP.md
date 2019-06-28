@@ -304,3 +304,11 @@ vlan100 is the VRR interface for the configuration above:
     cumulus@switch:~$ net add vlan 100 post-up "echo 1 > /proc/sys/net/ipv4/conf/swp1/proxy_arp && echo 1 > /proc/sys/net/ipv4/conf/swp1-v0/proxy_arp && echo 2 > /proc/sys/net/ipv4/conf/swp1/medium_id && echo 2 > /proc/sys/net/ipv4/conf/swp1-v0/medium_id"
     cumulus@switch:~$ net pending
     cumulus@switch:~$ net commit
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

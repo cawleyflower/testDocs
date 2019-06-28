@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116301
 pageID: 5116301
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 subsection: true
@@ -69,3 +69,11 @@ article](https://support.cumulusnetworks.com/hc/en-us/articles/217132357).
     Features](/version/cumulus-rmp-2512-esr/Layer_1_and_Layer_2_Features/)
 
   - [Routing](/version/cumulus-rmp-2512-esr/Routing)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

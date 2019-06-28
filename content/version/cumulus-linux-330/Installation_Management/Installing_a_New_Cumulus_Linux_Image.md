@@ -3,7 +3,7 @@ title: Installing a New Cumulus Linux Image
 author: Cumulus Networks
 weight: 43
 aliases:
- - /display/CL330/Installing+a+New+Cumulus+Linux+Image
+ - /display/CL33/Installing+a+New+Cumulus+Linux+Image
  - /pages/viewpage.action?pageId=5866177
 pageID: 5866177
 product: Cumulus Linux
@@ -11,6 +11,8 @@ version: 3.3.0
 imgData: cumulus-linux-330
 siteSlug: cumulus-linux-330
 ---
+<details>
+
 Before you install Cumulus Linux, the switch can be in two different
 states:
 
@@ -251,10 +253,15 @@ configuration of your switch after the installation finishes.
     platform from the [Cumulus Networks Downloads
     page](http://cumulusnetworks.com/downloads/).
 
-2.  Prepare your flash drive by formatting in one of the supported
+2.  
+    
+    <details>
+    
+    Prepare your flash drive by formatting in one of the supported
     formats: FAT32, vFAT or EXT2.
     
-    Optional: Preparing a USB Drive inside Cumulus Linux
+    <summary>Optional: Preparing a USB Drive inside Cumulus Linux
+    </summary>
     
     <table>
     <colgroup>
@@ -292,6 +299,8 @@ configuration of your switch after the installation finishes.
     </tr>
     </tbody>
     </table>
+    
+    </details>
 
 3.  Copy the image and license files over to the flash drive and rename
     the image file to:
@@ -320,7 +329,7 @@ configuration of your switch after the installation finishes.
 
 ### <span>Instructions for x86 Platforms</span>
 
-Click to expand x86 instructions...
+<summary>Click to expand x86 instructions... </summary>
 
 1.  Prepare the switch for installation:
     
@@ -427,7 +436,7 @@ Click to expand x86 instructions...
 
 ### <span>Instructions for ARM Platforms</span>
 
-Click to expand ARM instructions...
+<summary>Click to expand ARM instructions... </summary>
 
 1.  Prepare the switch for installation:
     
@@ -579,3 +588,13 @@ mode in one of two ways, using:
     
         cumulus@switch:~$ sudo onie-select -i
         cumulus@switch:~$ sudo reboot
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

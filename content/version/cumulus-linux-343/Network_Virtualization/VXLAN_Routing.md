@@ -11,6 +11,8 @@ version: 3.4.3
 imgData: cumulus-linux-343
 siteSlug: cumulus-linux-343
 ---
+<details>
+
 VXLAN routing, sometimes referred to as inter-VXLAN routing, provides IP
 routing between VXLAN VNIs in overlay networks. The routing of traffic
 is based on the inner header or the overlay tenant IP address.
@@ -539,7 +541,7 @@ the three nodes you configured above: leaf01, leaf03 and spine01.
 
 #### <span>leaf01</span>
 
-leaf01 /etc/network/interfaces
+<summary>leaf01 /etc/network/interfaces </summary>
 
     cumulus@leaf01:mgmt-vrf:~$ cat /etc/network/interfaces
     # This file describes the network interfaces available on your system
@@ -615,7 +617,7 @@ leaf01 /etc/network/interfaces
         vlan-id 200
         vlan-raw-device bridge
 
-leaf01 /etc/frr/frr.conf
+<summary>leaf01 /etc/frr/frr.conf </summary>
 
     cumulus@leaf01:mgmt-vrf:~$ sudo cat /etc/frr/frr.conf
     frr version 3.1+cl3u1
@@ -648,7 +650,7 @@ leaf01 /etc/frr/frr.conf
 
 #### <span>leaf03</span>
 
-leaf03 /etc/network/interfaces
+<summary>leaf03 /etc/network/interfaces </summary>
 
     cumulus@leaf03:mgmt-vrf:~$ cat /etc/network/interfaces
     # This file describes the network interfaces available on your system
@@ -722,7 +724,7 @@ leaf03 /etc/network/interfaces
         vlan-id 200
         vlan-raw-device bridge
 
-leaf03 /etc/frr/frr.conf
+<summary>leaf03 /etc/frr/frr.conf </summary>
 
     cumulus@leaf03:mgmt-vrf:~$ sudo cat /etc/frr/frr.conf
     frr version 3.1+cl3u1
@@ -755,7 +757,7 @@ leaf03 /etc/frr/frr.conf
 
 #### <span>spine01</span>
 
-spine01 /etc/network/interfaces
+<summary>spine01 /etc/network/interfaces </summary>
 
     cumulus@spine01:mgmt-vrf:~$ cat /etc/network/interfaces
     # This file describes the network interfaces available on your system
@@ -795,7 +797,7 @@ spine01 /etc/network/interfaces
         address 127.0.0.1/8
         vrf-table auto
 
-spine01 /etc/frr/frr.conf
+<summary>spine01 /etc/frr/frr.conf </summary>
 
     cumulus@spine01:mgmt-vrf:~$ sudo cat /etc/frr/frr.conf
     frr version 3.1+cl3u1
@@ -912,3 +914,13 @@ following commands:
   - net show l2vpn evpn mac vni \<vni\>
 
   - net show l2vpn evpn arp-cache vni \<vni\>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

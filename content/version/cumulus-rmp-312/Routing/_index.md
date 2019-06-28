@@ -3,7 +3,7 @@ title: Routing
 author: Cumulus Networks
 weight: 19
 aliases:
- - /display/RMP31/Routing
+ - /display/RMP312/Routing
  - /pages/viewpage.action?pageId=5122800
 pageID: 5122800
 product: Cumulus RMP
@@ -11,6 +11,8 @@ version: 3.1.2
 imgData: cumulus-rmp-312
 siteSlug: cumulus-rmp-312
 ---
+<details>
+
 This chapter discusses routing on switches running Cumulus RMP.
 
 ## <span>Commands</span>
@@ -67,7 +69,7 @@ To display the routing table:
     198.51.100.10/24 dev swp4  proto kernel  scope link  src 198.51.100.11
     198.51.100.20/24 dev br0  proto kernel  scope link  src 198.51.100.21
 
-Runtime configuration (Advanced)
+<summary>Runtime configuration (Advanced) </summary>
 
 {{%notice warning%}}
 
@@ -129,3 +131,13 @@ Configuration Files
   - [linux-ip.net/html/tools-ip-route.html](http://linux-ip.net/html/tools-ip-route.html)
 
   - [www.nongnu.org/quagga/docs/docs-info.html\#Static-Route-Commands](http://www.nongnu.org/quagga/docs/docs-info.html#Static-Route-Commands)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

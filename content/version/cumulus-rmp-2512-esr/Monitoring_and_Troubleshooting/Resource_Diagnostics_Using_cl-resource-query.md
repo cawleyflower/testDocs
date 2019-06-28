@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116325
 pageID: 5116325
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
@@ -52,3 +52,11 @@ command.
     Egress ACL counters:       36,   7% of maximum value    512
     Egress ACL meters:         18,   3% of maximum value    512
     Egress ACL slices:          2,  50% of maximum value      4
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

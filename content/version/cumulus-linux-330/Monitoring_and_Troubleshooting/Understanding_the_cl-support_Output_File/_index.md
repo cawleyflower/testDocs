@@ -3,7 +3,7 @@ title: Understanding the cl-support Output File
 author: Cumulus Networks
 weight: 209
 aliases:
- - /display/CL330/Understanding+the+cl-support+Output+File
+ - /display/CL33/Understanding+the+cl-support+Output+File
  - /pages/viewpage.action?pageId=5866137
 pageID: 5866137
 product: Cumulus Linux
@@ -73,3 +73,11 @@ file:
     Files](/version/cumulus-linux-330/Monitoring_and_Troubleshooting/Understanding_the_cl-support_Output_File/Troubleshooting_Log_Files)
     — This guide highlights the most important log files to look at.
     Keep in mind, `cl-support` includes all of the log files.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

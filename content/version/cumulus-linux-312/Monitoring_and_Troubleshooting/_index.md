@@ -311,3 +311,11 @@ upgrading packages.
 ## <span>Next Steps</span>
 
 The links below discuss more specific monitoring topics.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

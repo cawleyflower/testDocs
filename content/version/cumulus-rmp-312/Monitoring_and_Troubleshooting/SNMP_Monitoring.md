@@ -3,7 +3,7 @@ title: SNMP Monitoring
 author: Cumulus Networks
 weight: 115
 aliases:
- - /display/RMP31/SNMP+Monitoring
+ - /display/RMP312/SNMP+Monitoring
  - /pages/viewpage.action?pageId=5122764
 pageID: 5122764
 product: Cumulus RMP
@@ -968,3 +968,11 @@ The ENTITY MIB does not currently show the chassis information in
 Cumulus RMP 3.0.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -3,7 +3,7 @@ title: Configuring DHCP Relays
 author: Cumulus Networks
 weight: 93
 aliases:
- - /display/CL330/Configuring+DHCP+Relays
+ - /display/CL33/Configuring+DHCP+Relays
  - /pages/viewpage.action?pageId=5866401
 pageID: 5866401
 product: Cumulus Linux
@@ -11,6 +11,8 @@ version: 3.3.0
 imgData: cumulus-linux-330
 siteSlug: cumulus-linux-330
 ---
+<details>
+
 You can configure DHCP relays for IPv4 and IPv6.
 
 To run DHCP for both IPv4 and IPv6, initiate the DHCP relay once for
@@ -169,7 +171,7 @@ different upstreams.
 
 ## <span>Configuring the DHCP Relay Service Manually (Advanced)</span>
 
-Configuring the DHCP service manually ...
+<summary>Configuring the DHCP service manually ... </summary>
 
 By default, Cumulus Linux configures the DHCP relay service
 automatically. However, in older versions of Cumulus Linux, you needed
@@ -243,3 +245,13 @@ specify a time period:
     Dec 05 21:08:55 leaf01 dhcrelay[6152]: Relaying Renew from fe80::4638:39ff:fe00:3 port 546 going up.
     Dec 05 21:08:55 leaf01 dhcrelay[6152]: sending upstream swp52
     Dec 05 21:08:55 leaf01 dhcrelay[6152]: sending upstream swp51
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

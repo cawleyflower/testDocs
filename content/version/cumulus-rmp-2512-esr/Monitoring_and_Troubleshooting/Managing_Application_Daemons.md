@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116328
 pageID: 5116328
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
@@ -121,3 +121,11 @@ For example:
     lrwxrwxrwx 1 root root 15 Feb 13 17:35 S01snmpd -> ../init.d/snmpd
     lrwxrwxrwx 1 root root 15 Feb 13 17:35 S01snmpd -> ../init.d/snmpd
     lrwxrwxrwx 1 root root 15 Apr 4 2014 K02snmpd -> ../init.d/snmpd
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118207
 pageID: 5118207
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -479,3 +479,11 @@ Multiple loopback addresses can be configured by adding additional
     iface lo inet loopback
         address 10.1.1.1
         address 172.16.2.1/24
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

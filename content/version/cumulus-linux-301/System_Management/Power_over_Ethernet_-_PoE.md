@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118226
 pageID: 5118226
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -194,3 +194,11 @@ The `poed` service logs the following events to syslog:
   - When the power available to the switch changes
 
   - Errors
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

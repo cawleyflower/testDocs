@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118293
 pageID: 5118293
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -417,3 +417,11 @@ command works only for VXLANs integrated with NSX:
     other_config        : {}
     status              : {sec_since_connect="18223", sec_since_disconnect="18225", state=ACTIVE}
     target              : "ssl:192.168.100.17:6632"
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

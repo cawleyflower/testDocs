@@ -11,6 +11,8 @@ version: 3.1.2
 imgData: cumulus-linux-312
 siteSlug: cumulus-linux-312
 ---
+<details>
+
 Cumulus Linux seamlessly integrates with the MidoNet OpenStack
 infrastructure, where the switches provide the VTEP gateway for
 terminating VXLAN tunnels from within MidoNet. MidoNet connects to the
@@ -93,7 +95,7 @@ requires three parameters, in this order:
   - Management IP address: The IP address of the switch's management
     interface.
 
-For example, click here ...
+<summary>For example, click here ... </summary>
 
     cumulus@switch:~$ sudo vtep-bootstrap sw11 10.111.1.1 10.50.20.21 --no_encryption
     Executed: 
@@ -546,7 +548,7 @@ The `ovsdb-client dump` command is large, but shows all of the
 information and tables that are used in communication between the OVS
 client and server.
 
-Click to expand the output ...
+<summary>Click to expand the output ... </summary>
 
     cumulus@switch12:~$ ovsdb-client dump
     Arp_Sources_Local table
@@ -648,3 +650,13 @@ Click to expand the output ...
     MAC _uuid ipaddr locator logical_switch 
     ------------------- ------------------------------------ ------ ------------------------------------ ------------------------------------
     "fa:16:3e:14:04:2e" 65605488-9ee5-4c8e-93e5-7b1cc15cfcc7 "" 2fcf8b7e-e084-4bcb-b668-755ae7ac0bfb 44d162dc-0372-4749-a802-5b153c7120ec
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

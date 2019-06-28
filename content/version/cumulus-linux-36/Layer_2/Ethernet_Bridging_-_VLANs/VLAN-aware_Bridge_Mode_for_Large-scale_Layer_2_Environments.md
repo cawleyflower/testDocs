@@ -13,3 +13,11 @@ siteSlug: cumulus-linux-36
 ---
 <span class="error">The license could not be verified: License
 Certificate has expired\!</span>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

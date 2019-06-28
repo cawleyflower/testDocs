@@ -1604,3 +1604,11 @@ issues:
     net add snmp-server trap-link-up check-frequency 10
     net add snmp-server trap-snmp-auth-failures
     ...
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

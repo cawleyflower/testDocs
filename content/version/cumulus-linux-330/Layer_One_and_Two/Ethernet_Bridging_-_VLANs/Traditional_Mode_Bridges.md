@@ -3,7 +3,7 @@ title: Traditional Mode Bridges
 author: Cumulus Networks
 weight: 297
 aliases:
- - /display/CL330/Traditional+Mode+Bridges
+ - /display/CL33/Traditional+Mode+Bridges
  - /pages/viewpage.action?pageId=5866205
 pageID: 5866205
 product: Cumulus Linux
@@ -95,13 +95,21 @@ switch into multiple layer 2 domains. This allows for hosts to
 communicate with other hosts in the same domain, while separating them
 fro hosts in other domains.
 
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice info%}}
 
 You can create only one VLAN-aware bridge on a switch.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 The diagram below shows a multiple bridge configuration, where host-1
 and host-2 are connected to bridge-A, while host-3 and host-4 are
@@ -195,3 +203,11 @@ To create the above example, add the following configuration to the
 
 You can find more examples of VLAN tagging in [this
 chapter](/version/cumulus-linux-330/Layer_One_and_Two/Ethernet_Bridging_-_VLANs/VLAN_Tagging).
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -177,3 +177,11 @@ mode](/cumulus-linux/Layer_2/Ethernet_Bridging_-_VLANs/Traditional_Bridge_Mode):
     iface br0
         bridge-ports bond1 bond2 bond3 bond4 peer5
         mstpctl-bpduguard bond1=yes
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116317
 pageID: 5116317
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
@@ -138,3 +138,11 @@ restart `switchd` for the changes to take effect:
 ## <span>Configuration Files</span>
 
   - /etc/cumulus/switchd.conf
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

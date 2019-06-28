@@ -135,3 +135,11 @@ If you are using
 local static MAC addresses added to the local FDB are exported as static
 MAC addresses to remote switches. Remote MAC addresses are added as MAC
 addresses to the remote FDB.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

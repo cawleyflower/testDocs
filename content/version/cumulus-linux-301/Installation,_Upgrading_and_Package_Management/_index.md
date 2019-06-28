@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118252
 pageID: 5118252
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -18,3 +18,11 @@ applications (via packages) if desired.
 
 Zero touch provisioning is a way to quickly deploy and configure new
 switches in a large-scale environment.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

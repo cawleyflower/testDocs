@@ -3,7 +3,7 @@ title: VLAN Tagging
 author: Cumulus Networks
 weight: 299
 aliases:
- - /display/CL330/VLAN+Tagging
+ - /display/CL33/VLAN+Tagging
  - /pages/viewpage.action?pageId=5866203
 pageID: 5866203
 product: Cumulus Linux
@@ -337,3 +337,11 @@ VLAN ID translated from 100 to 200:
                                                             swp11.200
 
 {{% imgOld 2 %}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

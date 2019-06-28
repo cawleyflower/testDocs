@@ -278,3 +278,11 @@ ASIC.
 
 There is no special configuration required for VXLAN routing on the
 Mellanox Spectrum platform.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

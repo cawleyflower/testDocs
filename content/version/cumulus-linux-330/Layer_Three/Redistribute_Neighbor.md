@@ -3,7 +3,7 @@ title: Redistribute Neighbor
 author: Cumulus Networks
 weight: 181
 aliases:
- - /display/CL330/Redistribute+Neighbor
+ - /display/CL33/Redistribute+Neighbor
  - /pages/viewpage.action?pageId=5866467
 pageID: 5866467
 product: Cumulus Linux
@@ -488,3 +488,11 @@ imported/advertised:
     advertised.
     
         switch# show ip bgp
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

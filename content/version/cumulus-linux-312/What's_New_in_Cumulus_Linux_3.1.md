@@ -116,3 +116,11 @@ are included in Cumulus Linux 3.1.0:
   - [PIM-SM](/version/cumulus-linux-312/Layer_3_Features/Protocol_Independent_Multicast_-_PIM)
 
   - [TACACS+](/version/cumulus-linux-312/System_Management/Authentication_Authorization_and_Accounting/TACACS+)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

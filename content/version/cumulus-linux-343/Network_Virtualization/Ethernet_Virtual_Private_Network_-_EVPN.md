@@ -704,7 +704,8 @@ for leaf03, leaf04, server03, server04). Here is the topology diagram:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>leaf01 /etc/network/interfaces
+<td><details>
+<summary>leaf01 /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.0.0.11/32
@@ -745,8 +746,10 @@ iface vxlan10200
      vxlan-id 10200
      vxlan-local-tunnelip 10.0.0.11
      bridge-access 200
-     bridge-learning off</code></pre></td>
-<td>leaf02 /etc/network/interfaces
+     bridge-learning off</code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.0.0.12/32
@@ -787,10 +790,12 @@ iface vxlan10200
     vxlan-id 10200
     vxlan-local-tunnelip 10.0.0.12
     bridge-access 200
-    bridge-learning off</code></pre></td>
+    bridge-learning off</code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>leaf01 /etc/frr/frr.conf
+<td><details>
+<summary>leaf01 /etc/frr/frr.conf </summary>
 <pre><code>!
 interface swp51
  ipv6 nd ra-interval 10
@@ -835,8 +840,10 @@ ip prefix-list dc-leaf-out seq 500 deny any
 !
 line vty
 !
-end</code></pre></td>
-<td>leaf02 /etc/frr/frr.conf
+end</code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/frr/frr.conf </summary>
 <pre><code>!
 interface swp51
  ipv6 nd ra-interval 10
@@ -881,7 +888,8 @@ ip prefix-list dc-leaf-out seq 500 deny any
 !
 line vty
 !
-end</code></pre></td>
+end</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -895,7 +903,8 @@ end</code></pre></td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>spine01 /etc/network/interfaces
+<td><details>
+<summary>spine01 /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.0.0.21/32
@@ -914,8 +923,10 @@ auto swp3
 iface swp3
  
 auto swp4
-iface swp4</code></pre></td>
-<td>spine02 /etc/network/interfaces
+iface swp4</code></pre>
+</details></td>
+<td><details>
+<summary>spine02 /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.0.0.22/32
@@ -934,10 +945,12 @@ auto swp3
 iface swp3
  
 auto swp4
-iface swp4</code></pre></td>
+iface swp4</code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>spine01 /etc/frr/frr.conf
+<td><details>
+<summary>spine01 /etc/frr/frr.conf </summary>
 <pre><code>!
 interface swp1
  ipv6 nd ra-interval 10
@@ -989,8 +1002,10 @@ ip prefix-list dc-spine seq 500 deny any
 !
 line vty
 !
-end</code></pre></td>
-<td>spine02 /etc/frr/frr.conf
+end</code></pre>
+</details></td>
+<td><details>
+<summary>spine02 /etc/frr/frr.conf </summary>
 <pre><code>!
 interface swp1
  ipv6 nd ra-interval 10
@@ -1042,7 +1057,8 @@ ip prefix-list dc-spine seq 500 deny any
 !
 line vty
 !
-end</code></pre></td>
+end</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -1148,7 +1164,8 @@ leaf03, leaf04, server02, server04). Here is the topology diagram:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>leaf01 /etc/network/interfaces
+<td><details>
+<summary>leaf01 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf01:~$ cat /etc/network/interfaces
  
 auto lo
@@ -1215,8 +1232,10 @@ iface vxlan10200
      vxlan-id 10200
      vxlan-local-tunnelip 10.0.0.11
      bridge-access 200
-     bridge-learning off</code></pre></td>
-<td>leaf02 /etc/network/interfaces
+     bridge-learning off</code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf02:~$ cat /etc/network/interfaces
  
 auto lo
@@ -1283,10 +1302,12 @@ iface vxlan10200
      vxlan-id 10200
      vxlan-local-tunnelip 10.0.0.12
      bridge-access 200
-     bridge-learning off</code></pre></td>
+     bridge-learning off</code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>leaf01 /etc/frr/frr.conf
+<td><details>
+<summary>leaf01 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@leaf01:~$ cat /etc/frr/frr.conf 
 !
 username cumulus nopassword
@@ -1329,8 +1350,10 @@ router bgp 65011
 !
 line vty
 !
-end</code></pre></td>
-<td>leaf02 /etc/frr/frr.conf
+end</code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@leaf02:~$ cat /etc/frr/frr.conf 
 !
 username cumulus nopassword
@@ -1373,7 +1396,8 @@ router bgp 65012
 !
 line vty
 !
-end</code></pre></td>
+end</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -1429,7 +1453,8 @@ auto swp4
 iface swp4</code></pre></td>
 </tr>
 <tr class="even">
-<td>spine01 /etc/frr/frr.conf
+<td><details>
+<summary>spine01 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@spine01:~$ cat /etc/frr/frr.conf 
 !
 username cumulus nopassword
@@ -1480,8 +1505,10 @@ router bgp 65020
 !
 line vty
 !
-end</code></pre></td>
-<td>spine02 /etc/frr/frr.conf
+end</code></pre>
+</details></td>
+<td><details>
+<summary>spine02 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@spine02:~$ cat /etc/frr/frr.conf 
 !
 username cumulus nopassword
@@ -1532,7 +1559,8 @@ router bgp 65020
 !
 line vty
 !
-end</code></pre></td>
+end</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -2319,3 +2347,11 @@ The following caveat applies to EVPN in this version of Cumulus Linux:
     in an optimal manner, because the neighbor entries are not synced by
     a control plane. Thus, ARPs may not be suppressed sometimes. This
     has no impact on forwarding.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

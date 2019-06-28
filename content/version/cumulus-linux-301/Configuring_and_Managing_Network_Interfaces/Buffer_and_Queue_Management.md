@@ -7,10 +7,12 @@ aliases:
  - /pages/viewpage.action?pageId=5118374
 pageID: 5118374
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
+<details>
+
 Hardware datapath configuration manages packet buffering, queueing, and
 scheduling in hardware. There are two configuration input files:
 
@@ -79,7 +81,7 @@ II+ or Trident II platform).
   - `/etc/cumulus/datapath/traffic.conf`: The datapath configuration
     file.
 
-Sample traffic.conf file (Click to expand)
+<summary>Sample traffic.conf file (Click to expand) </summary>
 
 ``` 
 cumulus@switch:~$ cat /etc/cumulus/datapath/traffic.conf
@@ -318,3 +320,13 @@ to allow link pause configuration changes to take effect:
   - You can configure Quality of Service (QoS) for 10G, 40G, and 100G
     switches only; that is, any switch on the Tomahawk, Trident II+ or
     Trident II platform.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

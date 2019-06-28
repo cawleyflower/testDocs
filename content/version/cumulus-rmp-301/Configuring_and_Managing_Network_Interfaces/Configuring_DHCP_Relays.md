@@ -11,6 +11,8 @@ version: 3.0.1
 imgData: cumulus-rmp-301
 siteSlug: cumulus-rmp-301
 ---
+<details>
+
 You can configure an interface so it can make DHCP relay requests for
 IPv4 and IPv6.
 
@@ -21,7 +23,7 @@ host, leaf and DHCP server using the following topology:
 
 {{% imgOld 0 %}}
 
-This chapter discusses ...
+<summary>This chapter discusses ... </summary>
 
 ## <span>Configuring the Relays </span>
 
@@ -191,3 +193,13 @@ Here are sample configurations:
     subnet6 2001:db8:1::/64 {
             range6 2001:db8:1::100 2001:db8:1::200;
     }
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

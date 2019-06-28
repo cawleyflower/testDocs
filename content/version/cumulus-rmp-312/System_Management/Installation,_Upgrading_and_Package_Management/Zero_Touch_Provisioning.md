@@ -3,7 +3,7 @@ title: Zero Touch Provisioning
 author: Cumulus Networks
 weight: 149
 aliases:
- - /display/RMP31/Zero+Touch+Provisioning
+ - /display/RMP312/Zero+Touch+Provisioning
  - /pages/viewpage.action?pageId=5122747
 pageID: 5122747
 product: Cumulus RMP
@@ -525,3 +525,11 @@ To see the current `ztp` state, use the `-s` option:
 ## <span>Configuration Files</span>
 
   - /var/lib/cumulus/autoprovision.conf
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

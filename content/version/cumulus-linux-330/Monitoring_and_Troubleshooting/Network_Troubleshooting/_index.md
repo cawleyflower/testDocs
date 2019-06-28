@@ -3,7 +3,7 @@ title: Network Troubleshooting
 author: Cumulus Networks
 weight: 213
 aliases:
- - /display/CL330/Network+Troubleshooting
+ - /display/CL33/Network+Troubleshooting
  - /pages/viewpage.action?pageId=5866133
 pageID: 5866133
 product: Cumulus Linux
@@ -558,3 +558,11 @@ The following example incorporates a few `tcpdump` options:
   - [www.tcpdump.org](http://www.tcpdump.org)
 
   - [en.wikipedia.org/wiki/Traceroute](https://en.wikipedia.org/wiki/Traceroute)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

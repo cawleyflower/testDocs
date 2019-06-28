@@ -3,7 +3,7 @@ title: Monitoring Best Practices
 author: Cumulus Networks
 weight: 217
 aliases:
- - /display/CL330/Monitoring+Best+Practices
+ - /display/CL33/Monitoring+Best+Practices
  - /pages/viewpage.action?pageId=5866162
 pageID: 5866162
 product: Cumulus Linux
@@ -11,6 +11,8 @@ version: 3.3.0
 imgData: cumulus-linux-330
 siteSlug: cumulus-linux-330
 ---
+<details>
+
 The following monitoring processes are considered best practices for
 reviewing and troubleshooting potential issues with Cumulus Linux
 environments. In addition, several of the more common issues have been
@@ -251,8 +253,8 @@ sysmonitor`.
 | Use          | Alert: 90% Crit: 95%  |
 | Process Load | Alarm: 95% Crit: 125% |
 
-Click here to see differences between Cumulus Linux 2.5 ESR and 3.0 and
-later...
+<summary>Click here to see differences between Cumulus Linux 2.5 ESR and
+3.0 and later... </summary>
 
 <table>
 <colgroup>
@@ -340,7 +342,8 @@ and restarting processes.
 </tbody>
 </table>
 
-Click here to changes from Cumulus Linux 2.5 ESR to 3.0 and later...
+<summary>Click here to changes from Cumulus Linux 2.5 ESR to 3.0 and
+later... </summary>
 
 Cumulus Linux 2.5.2 through 2.5 ESR uses a forked version of `monit`
 called `jdoo` to monitor processes. If the process ever fails, `jdoo`
@@ -631,7 +634,7 @@ and associated logs are documented in the code.
 
 Peering information should be tracked through PTM. For more information,
 refer to the [Prescriptive Topology Manager
-documentation](/display/CL330/Prescriptive+Topology+Manager+-+PTM).
+documentation](/display/CL33/Prescriptive+Topology+Manager+-+PTM).
 
 {{%/notice%}}
 
@@ -1046,3 +1049,13 @@ sudo: pam_unix(sudo:session): session closed for user root</code></pre></td>
 </tr>
 </tbody>
 </table>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

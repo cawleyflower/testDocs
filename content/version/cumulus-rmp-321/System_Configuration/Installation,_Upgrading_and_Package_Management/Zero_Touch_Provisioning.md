@@ -518,3 +518,11 @@ To see the current `ztp` state, use the `-s` option:
   - You can use the Cumulus RMP `onie-select -i` command to cause the
     switch to reprovision itself and install a network operating system
     again using ONIE.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

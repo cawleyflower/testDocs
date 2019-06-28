@@ -3,7 +3,7 @@ title: Using Nutanix Prism as a Monitoring Tool
 author: Cumulus Networks
 weight: 401
 aliases:
- - /display/CL330/Using+Nutanix+Prism+as+a+Monitoring+Tool
+ - /display/CL33/Using+Nutanix+Prism+as+a+Monitoring+Tool
  - /pages/viewpage.action?pageId=5866155
 pageID: 5866155
 product: Cumulus Linux
@@ -329,3 +329,11 @@ each interface on the host. Refer to
             PortID:       ifname vmnic2
             PortDescr:    vmnic2
         -------------------------------------------------------------------------------
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

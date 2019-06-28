@@ -294,21 +294,81 @@ vendor-specific and has not been defined in the RFC. BFD echo packets
 that originate from Cumulus Linux are 8 bytes long and have the
 following format:
 
+<table class="confluenceTable">
+
+<thead class=" ">
+
+</thead>
+
+<tfoot class=" ">
+
+</tfoot>
+
+<tbody class=" ">
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 0
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 1
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 2
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 3
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Version
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 Length
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="2">
+
 Reserved
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="4">
+
 My Discriminator
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 Where:
 
@@ -411,3 +471,11 @@ IPv6-connected peer):
     <span style="color: #222222;"> <span style="color: #222222;">
     <span style="color: #222222;">  
     </span> </span> </span>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

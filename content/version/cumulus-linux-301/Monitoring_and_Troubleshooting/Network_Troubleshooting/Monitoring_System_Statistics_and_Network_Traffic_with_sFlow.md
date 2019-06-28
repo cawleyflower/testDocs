@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118233
 pageID: 5118233
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -144,3 +144,11 @@ article](https://support.cumulusnetworks.com/hc/en-us/articles/201787866--WIP-Co
   - [sFlow Collectors](http://www.sflow.org/products/collectors.php)
 
   - [sFlow Wikipedia page](http://en.wikipedia.org/wiki/SFlow)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

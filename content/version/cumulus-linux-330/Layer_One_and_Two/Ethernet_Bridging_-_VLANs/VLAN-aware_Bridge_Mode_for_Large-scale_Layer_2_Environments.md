@@ -3,7 +3,7 @@ title: VLAN-aware Bridge Mode for Large-scale Layer 2 Environments
 author: Cumulus Networks
 weight: 295
 aliases:
- - /display/CL330/VLAN-aware+Bridge+Mode+for+Large-scale+Layer+2+Environments
+ - /display/CL33/VLAN-aware+Bridge+Mode+for+Large-scale+Layer+2+Environments
  - /pages/viewpage.action?pageId=5866200
 pageID: 5866200
 product: Cumulus Linux
@@ -620,3 +620,11 @@ Traditional mode bridges cannot be automatically converted to/from a
 VLAN-aware bridge. The original configuration must be deleted, and all
 member switch ports must be brought down, then a new bridge can be
 created.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

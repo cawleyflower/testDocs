@@ -11,6 +11,8 @@ version: 3.7.7
 imgData: cumulus-linux
 siteSlug: cumulus-linux
 ---
+<details>
+
 *Services* (also known as *daemons*) and *processes* are at the heart of
 how a Linux system functions. Most of the time a service takes care of
 itself; you just enable and start it, then let it run. However, because
@@ -280,7 +282,7 @@ To determine which services are currently active or stopped, run the
 You can also run the `systemctl list-unit-files --type service` command
 to list all services on the switch and see which ones are enabled:
 
-Click here to see output of this command ...
+<summary>Click here to see output of this command ... </summary>
 
     cumulus@switch:~$ systemctl list-unit-files --type service
     UNIT FILE                              STATE   
@@ -561,3 +563,13 @@ The following table lists the most important services in Cumulus Linux.
 | lldpd        | Handles Tx/Rx of [LLDP](/cumulus-linux/Layer_2/Link_Layer_Discovery_Protocol/) information.                                                                                                                                                                                                                 | NO                                           |
 | smond        | Reads [platform sensors and fan information](/cumulus-linux/Monitoring_and_Troubleshooting/Monitoring_System_Hardware/) from pwmd.                                                                                                                                                                          | NO                                           |
 | pwmd         | Reads and sets fan speeds.                                                                                                                                                                                                                                                                                  | NO                                           |
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

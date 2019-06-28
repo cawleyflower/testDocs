@@ -3,7 +3,7 @@ title: Configuring switchd
 author: Cumulus Networks
 weight: 73
 aliases:
- - /display/CL330/Configuring+switchd
+ - /display/CL33/Configuring+switchd
  - /pages/viewpage.action?pageId=5866112
 pageID: 5866112
 product: Cumulus Linux
@@ -151,3 +151,11 @@ Restarting `switchd` causes all network ports to reset in addition to
 resetting the switch hardware configuration.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -282,7 +282,11 @@ These commands create the following code snippet:
     iface swp1
        mtu 9000
 
+<div class="confbox admonition admonition-warning">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice info%}}
 
@@ -291,6 +295,10 @@ conversation path. MTU mismatches will result in dropped or truncated
 packets, degrading or blocking network performance.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 {{%/notice%}}
 
@@ -392,3 +400,11 @@ shows the output for 1G and 10G modules:
 
   - [Linux Foundation -
     Bonds](http://www.linuxfoundation.org/collaborate/workgroups/networking/bonding)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

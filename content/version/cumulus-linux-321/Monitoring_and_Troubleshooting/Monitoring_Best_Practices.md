@@ -11,6 +11,8 @@ version: 3.2.1
 imgData: cumulus-linux-321
 siteSlug: cumulus-linux-321
 ---
+<details>
+
 The following monitoring processes are considered best practices for
 reviewing and troubleshooting potential issues with Cumulus Linux
 environments. In addition, several of the more common issues have been
@@ -251,8 +253,8 @@ sysmonitor`.
 | Use          | Alert: 90% Crit: 95%  |
 | Process Load | Alarm: 95% Crit: 125% |
 
-Click here to see differences between Cumulus Linux 2.5 ESR and 3.0 and
-later...
+<summary>Click here to see differences between Cumulus Linux 2.5 ESR and
+3.0 and later... </summary>
 
 <table>
 <colgroup>
@@ -340,7 +342,8 @@ and restarting processes.
 </tbody>
 </table>
 
-Click here to changes from Cumulus Linux 2.5 ESR to 3.0 and later...
+<summary>Click here to changes from Cumulus Linux 2.5 ESR to 3.0 and
+later... </summary>
 
 Cumulus Linux 2.5.2 through 2.5 ESR uses a forked version of `monit`
 called `jdoo` to monitor processes. If the process ever fails, `jdoo`
@@ -1046,3 +1049,13 @@ sudo: pam_unix(sudo:session): session closed for user root</code></pre></td>
 </tr>
 </tbody>
 </table>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

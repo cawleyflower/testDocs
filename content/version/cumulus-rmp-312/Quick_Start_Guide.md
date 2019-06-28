@@ -3,7 +3,7 @@ title: Quick Start Guide
 author: Cumulus Networks
 weight: 11
 aliases:
- - /display/RMP31/Quick+Start+Guide
+ - /display/RMP312/Quick+Start+Guide
  - /pages/viewpage.action?pageId=5122730
 pageID: 5122730
 product: Cumulus RMP
@@ -359,3 +359,11 @@ Multiple loopback addresses can be configured by adding additional
     iface lo inet loopback
         address 10.1.1.1
         address 172.16.2.1/24
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

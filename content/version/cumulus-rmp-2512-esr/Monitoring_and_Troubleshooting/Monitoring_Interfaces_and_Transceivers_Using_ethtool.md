@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116324
 pageID: 5116324
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
@@ -165,3 +165,11 @@ connector information, vendor data, and more:
         Laser rx power low alarm threshold        : 6.5535 mW / 8.16 dBm
         Laser rx power high warning threshold     : 6.5535 mW / 8.16 dBm
         Laser rx power low warning threshold      : 6.5535 mW / 8.16 dBm
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

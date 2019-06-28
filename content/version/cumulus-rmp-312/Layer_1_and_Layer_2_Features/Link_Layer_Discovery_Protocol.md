@@ -3,7 +3,7 @@ title: Link Layer Discovery Protocol
 author: Cumulus Networks
 weight: 73
 aliases:
- - /display/RMP31/Link+Layer+Discovery+Protocol
+ - /display/RMP312/Link+Layer+Discovery+Protocol
  - /pages/viewpage.action?pageId=5122772
 pageID: 5122772
 product: Cumulus RMP
@@ -11,6 +11,8 @@ version: 3.1.2
 imgData: cumulus-rmp-312
 siteSlug: cumulus-rmp-312
 ---
+<details>
+
 The `lldpd` daemon implements the IEEE802.1AB (Link Layer Discovery
 Protocol, or LLDP) standard. LLDP allows you to know which ports are
 neighbors of a given port. By default, `lldpd` runs as a daemon and is
@@ -207,7 +209,7 @@ To see the `lldpd` running configuration:
       LLDP-MED fast start interval: 1
     --------------------------------------------------------------------
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 {{%notice warning%}}
 
@@ -260,3 +262,13 @@ LLDP does not enable the SNMP subagent by default. You need to edit
 ## <span>Caveats and Errata</span>
 
   - Annex E (and hence Annex D) of IEEE802.1AB (lldp) is not supported.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

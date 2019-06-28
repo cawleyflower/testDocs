@@ -678,3 +678,11 @@ The following example incorporates a few `tcpdump` options:
   - [en.wikipedia.org/wiki/Traceroute](https://en.wikipedia.org/wiki/Traceroute)
 
   - [www.tcpdump.org](http://www.tcpdump.org)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

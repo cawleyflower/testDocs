@@ -11,6 +11,8 @@ version: '3.6'
 imgData: cumulus-linux-36
 siteSlug: cumulus-linux-36
 ---
+<details>
+
 Setting the time zone, date and time requires root privileges; use
 `sudo`.
 
@@ -216,7 +218,7 @@ listed in the `/etc/ntpd.conf` file:
 
 The contents of the `/etc/ntpd.conf` file are listed below.
 
-Default ntpd.conf file ...
+<summary>Default ntpd.conf file ... </summary>
 
     # /etc/ntp.conf, configuration for ntpd; see ntp.conf(5) for help
      
@@ -614,3 +616,13 @@ configuration file.
   - [wiki.debian.org/NTP](http://wiki.debian.org/NTP)
 
   - [en.wikipedia.org/wiki/Precision\_Time\_Protocol](https://en.wikipedia.org/wiki/Precision_Time_Protocol)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

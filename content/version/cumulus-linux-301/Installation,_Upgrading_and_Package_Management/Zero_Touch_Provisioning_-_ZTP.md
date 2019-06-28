@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118254
 pageID: 5118254
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -545,3 +545,11 @@ To see the current `ztp` state, use the `-s` option:
   - You can use the Cumulus Linux `onie-select -i` command to cause the
     switch to reprovision itself and install a network operating system
     again using ONIE.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

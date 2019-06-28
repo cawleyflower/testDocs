@@ -3,7 +3,7 @@ title: LNV VXLAN Active-Active Mode
 author: Cumulus Networks
 weight: 323
 aliases:
- - /display/CL330/LNV+VXLAN+Active-Active+Mode
+ - /display/CL33/LNV+VXLAN+Active-Active+Mode
  - /pages/viewpage.action?pageId=5866283
 pageID: 5866283
 product: Cumulus Linux
@@ -12,7 +12,7 @@ imgData: cumulus-linux-330
 siteSlug: cumulus-linux-330
 ---
 *LNV active-active mode* allows a pair of
-[MLAG](/display/CL330/Multi-Chassis+Link+Aggregation+-+MLAG) switches to
+[MLAG](/display/CL33/Multi-Chassis+Link+Aggregation+-+MLAG) switches to
 act as a single VTEP, providing active-active VXLAN termination for bare
 metal as well as virtualized workloads.
 
@@ -103,7 +103,7 @@ LNV requires the following underlying technologies to work correctly.
 </tr>
 <tr class="even">
 <td><p>OSPF or BGP</p></td>
-<td><p>Refer to the <a href="/display/CL330/Open+Shortest+Path+First+-+OSPF+-+Protocol">OSPF chapter</a> or the <a href="/display/CL330/Configuring+Border+Gateway+Protocol+-+BGP">BGP Chapter</a> for more detailed configuration information. Configurations for the demonstration are provided below.</p></td>
+<td><p>Refer to the <a href="/display/CL33/Open+Shortest+Path+First+-+OSPF+-+Protocol">OSPF chapter</a> or the <a href="/display/CL33/Configuring+Border+Gateway+Protocol+-+BGP">BGP Chapter</a> for more detailed configuration information. Configurations for the demonstration are provided below.</p></td>
 </tr>
 <tr class="odd">
 <td><p>LNV</p></td>
@@ -1104,13 +1104,14 @@ configuration file:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><strong>spine01:</strong> /etc/vxsnd.conf</p>
+<td><details>
+<p><strong>spine01:</strong> /etc/vxsnd.conf</p>
 <pre><code>svcnode_ip = 10.10.10.10
  
 src_ip = 10.0.0.21
  
 svcnode_peers = 10.0.0.21 10.0.0.22</code></pre>
-Full configuration of vxsnd.conf
+<summary>Full configuration of vxsnd.conf </summary>
 <pre><code>[common]
 # Log level is one of DEBUG, INFO, WARNING, ERROR, CRITICAL
 #loglevel = INFO
@@ -1164,14 +1165,16 @@ svcnode_peers = 10.0.0.21 10.0.0.22
 #install_svcnode_ip = false
  
 # Seconds to wait before checking the database to age out stale entries
-#age_check = 90</code></pre></td>
-<td><p><strong>spine02:</strong> /etc/vxsnd.conf</p>
+#age_check = 90</code></pre>
+</details></td>
+<td><details>
+<p><strong>spine02:</strong> /etc/vxsnd.conf</p>
 <pre><code>svcnode_ip = 10.10.10.10
  
 src_ip = 10.0.0.22
  
 svcnode_peers = 10.0.0.21 10.0.0.22</code></pre>
-Full configuration of vxsnd.conf
+<summary>Full configuration of vxsnd.conf </summary>
 <pre><code>[common]
 # Log level is one of DEBUG, INFO, WARNING, ERROR, CRITICAL
 #loglevel = INFO
@@ -1225,7 +1228,8 @@ svcnode_peers = 10.0.0.21 10.0.0.22
 #install_svcnode_ip = false
  
 # Seconds to wait before checking the database to age out stale entries
-#age_check = 90</code></pre></td>
+#age_check = 90</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -1305,7 +1309,7 @@ For more information on using Cumulus VX and Vagrant, refer to the
 ## <span>Troubleshooting with LNV Active-Active</span>
 
 In addition to the [troubleshooting for single-attached
-LNV](/display/CL330/Lightweight+Network+Virtualization+-+LNV#LightweightNetworkVirtualization-LNV-VerificationandTroubleshooting),
+LNV](/display/CL33/Lightweight+Network+Virtualization+-+LNV#LightweightNetworkVirtualization-LNV-VerificationandTroubleshooting),
 there is now the MLAG daemon (clagd) to consider. The `clagctl` command
 gives the output of MLAG behavior and any inconsistencies that may arise
 between a MLAG pair.
@@ -1392,3 +1396,11 @@ indicating that there is a `vxlan-id` mis-match on VXLAN10
 
   - [Network virtualization chapter, Cumulus Linux user
     guide](/version/cumulus-linux-330/Network_Virtualization/)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

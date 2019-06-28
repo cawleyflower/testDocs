@@ -73,3 +73,11 @@ file:
     Files](/version/cumulus-linux-321/Monitoring_and_Troubleshooting/Understanding_the_cl-support_Output_File/Troubleshooting_Log_Files)
     — This guide highlights the most important log files to look at.
     Keep in mind, `cl-support` includes all of the log files.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

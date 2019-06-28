@@ -3,7 +3,7 @@ title: LDAP Authentication and Authorization
 author: Cumulus Networks
 weight: 255
 aliases:
- - /display/CL330/LDAP+Authentication+and+Authorization
+ - /display/CL33/LDAP+Authentication+and+Authorization
  - /pages/viewpage.action?pageId=5866108
 pageID: 5866108
 product: Cumulus Linux
@@ -11,6 +11,8 @@ version: 3.3.0
 imgData: cumulus-linux-330
 siteSlug: cumulus-linux-330
 ---
+<details>
+
 Cumulus Linux uses Pluggable Authentication Modules (PAM) and Name
 Service Switch (NSS) for user authentication.
 
@@ -380,7 +382,7 @@ specifies the search DN and what attribute to lookup.
 
     cumulus@switch:~$ ldapsearch -H ldap://ldap.example.com -b dc=example,dc=com -x uid=myuser
 
-Click to expand the command output ...
+<summary>Click to expand the command output ... </summary>
 
     # extended LDIF
     #
@@ -442,3 +444,13 @@ database.
     file](https://raw.githubusercontent.com/arthurdejong/nss-pam-ldapd/master/nslcd.conf)
 
   - [Debian backports](http://backports.debian.org/Instructions/)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

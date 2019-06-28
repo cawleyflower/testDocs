@@ -7,10 +7,12 @@ aliases:
  - /pages/viewpage.action?pageId=5118277
 pageID: 5118277
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
+<details>
+
 Ethernet bridges provide a means for hosts to communicate at layer 2.
 Bridge members can be individual physical interfaces, bonds or logical
 interfaces that traverse an 802.1Q VLAN trunk. Cumulus Linux does not
@@ -111,7 +113,7 @@ To bring up the bridge my\_bridge, use the `ifreload` command:
 
     cumulus@switch:~$ sudo ifreload -a
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 {{%notice warning%}}
 
@@ -152,7 +154,7 @@ with eth0 and swp1, it will **not** work.
 
 {{%/notice%}}
 
-Using netshow to Display Bridge Information
+<summary>Using netshow to Display Bridge Information </summary>
 
 ` netshow  `is a Cumulus Linux tool for retrieving information about
 your network configuration.
@@ -253,7 +255,7 @@ command:
 
     cumulus@switch:~$ sudo ifreload -a
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 {{%notice warning%}}
 
@@ -290,7 +292,7 @@ you create here does not persist after you reboot the switch.
     98: bridge-B: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT
      link/ether 70:72:cf:9d:4e:37 brd ff:ff:ff:ff:ff:ff
 
-Using netshow to Display the Bridges
+<summary>Using netshow to Display the Bridges </summary>
 
 ` netshow  `is a Cumulus Linux tool for retrieving information about
 your network configuration.
@@ -374,7 +376,7 @@ To see all the routes on the switch use the `ip route show` command:
     192.168.2.0/24 dev bridge-A proto kernel scope link src 192.168.2.1
     192.168.3.0/24 dev bridge-B proto kernel scope link src 192.168.3.1
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 {{%notice warning%}}
 
@@ -389,7 +391,7 @@ To add an IP address to a bridge:
     
     cumulus@switch:~$ sudo ip addr add 192.0.2.102/24 dev bridge-B
 
-Using netshow to Display the SVI
+<summary>Using netshow to Display the SVI </summary>
 
 `netshow` is a Cumulus Linux tool for retrieving information about your
 network configuration.
@@ -477,7 +479,7 @@ To bring up br-VLAN100 and br-VLAN200, use the `ifreload` command:
     br-VLAN200  8000.7072cf9d4e35 yes         swp1.200
                                               swp2.200
 
-Using netshow to Display the Trunk
+<summary>Using netshow to Display the Trunk </summary>
 
 `netshow` is a Cumulus Linux tool for retrieving information about your
 network configuration.
@@ -524,3 +526,13 @@ chapter](/version/cumulus-linux-301/Layer_1_and_Layer_2_Features/Ethernet_Bridgi
   - The same bridge cannot contain multiple subinterfaces of the
     **same** port as members. Attempting to apply such a configuration
     will result in an error.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

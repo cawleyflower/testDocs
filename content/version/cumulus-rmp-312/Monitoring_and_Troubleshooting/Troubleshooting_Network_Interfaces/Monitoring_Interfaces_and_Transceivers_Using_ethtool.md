@@ -3,7 +3,7 @@ title: Monitoring Interfaces and Transceivers Using ethtool
 author: Cumulus Networks
 weight: 191
 aliases:
- - /display/RMP31/Monitoring+Interfaces+and+Transceivers+Using+ethtool
+ - /display/RMP312/Monitoring+Interfaces+and+Transceivers+Using+ethtool
  - /pages/viewpage.action?pageId=5122761
 pageID: 5122761
 product: Cumulus RMP
@@ -176,3 +176,11 @@ and alarm threshold settings.
         Laser rx power low alarm threshold        : 6.5535 mW / 8.16 dBm
         Laser rx power high warning threshold     : 6.5535 mW / 8.16 dBm
         Laser rx power low warning threshold      : 6.5535 mW / 8.16 dBm
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

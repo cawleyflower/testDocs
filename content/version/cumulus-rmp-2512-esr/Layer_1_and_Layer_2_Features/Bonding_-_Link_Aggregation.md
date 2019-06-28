@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116339
 pageID: 5116339
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
@@ -179,3 +179,11 @@ calculation is adjusted to steer traffic over available slaves.
 
   - A bond cannot enslave VLAN subinterfaces. A bond can have
     subinterfaces, but not the other way around.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

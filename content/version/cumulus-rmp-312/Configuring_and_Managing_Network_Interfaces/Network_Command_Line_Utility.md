@@ -3,7 +3,7 @@ title: Network Command Line Utility
 author: Cumulus Networks
 weight: 59
 aliases:
- - /display/RMP31/Network+Command+Line+Utility
+ - /display/RMP312/Network+Command+Line+Utility
  - /pages/viewpage.action?pageId=5122799
 pageID: 5122799
 product: Cumulus RMP
@@ -229,3 +229,11 @@ configuration setup:
     ============
     switch1# net show bridge
     switch1# net show l2
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

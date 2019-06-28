@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116332
 pageID: 5116332
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
@@ -117,3 +117,11 @@ last -f /var/log/btmp | more    </code></pre></td>
 </tr>
 </tbody>
 </table>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

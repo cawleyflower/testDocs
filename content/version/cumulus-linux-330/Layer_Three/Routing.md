@@ -3,7 +3,7 @@ title: Routing
 author: Cumulus Networks
 weight: 161
 aliases:
- - /display/CL330/Routing
+ - /display/CL33/Routing
  - /pages/viewpage.action?pageId=5866425
 pageID: 5866425
 product: Cumulus Linux
@@ -237,7 +237,7 @@ file.
            tcam_resource.profile = default
 
 After you specify a different profile, [restart
-`switchd`](/display/CL330/Configuring+switchd#Configuringswitchd-restartswitchd)
+`switchd`](/display/CL33/Configuring+switchd#Configuringswitchd-restartswitchd)
 for the change to take effect.
 
 When [nonatomic
@@ -365,3 +365,11 @@ There are two ways you can work around this issue.
 
   - [Quagga docs - static route
     commands](http://www.nongnu.org/quagga/docs/docs-info.html#Static-Route-Commands)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -212,3 +212,11 @@ this section to upgrade to FRR:
 
     cumulus@switch:~$ sudo systemctl reset-failed frr.service
     cumulus@switch:~$ sudo systemctl enable frr.service
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

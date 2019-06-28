@@ -49,7 +49,11 @@ To enable management VRF on eth0, complete the following steps:
     
     The example NCLU commands below create a VRF called *mgmt*:
     
+    <div class="confbox admonition admonition-note">
+    
     <span class="admonition-icon confluence-information-macro-icon"></span>
+    
+    <div class="admonition-body">
     
     {{%notice info%}}
     
@@ -57,6 +61,10 @@ To enable management VRF on eth0, complete the following steps:
     plane VRF.
     
     {{%/notice%}}
+    
+    </div>
+    
+    </div>
     
         cumulus@switch:~$ net add vrf mgmt address 127.0.0.1/8
         cumulus@switch:~$ net add vrf mgmt vrf-table auto
@@ -284,3 +292,11 @@ you run `ifreload -a`.
 Because DNS lookups are forced out of the management interface using FIB
 rules, this could affect data plane ports if there are overlapping
 addresses.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

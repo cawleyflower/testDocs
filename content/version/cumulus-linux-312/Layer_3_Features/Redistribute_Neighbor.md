@@ -483,3 +483,11 @@ imported/advertised:
     advertised.
     
         switch# show ip bgp
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

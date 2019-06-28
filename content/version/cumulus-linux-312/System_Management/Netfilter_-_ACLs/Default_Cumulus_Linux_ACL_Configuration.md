@@ -11,6 +11,8 @@ version: 3.1.2
 imgData: cumulus-linux-312
 siteSlug: cumulus-linux-312
 ---
+<details>
+
 The Cumulus Linux default ACL configuration is split into three parts,
 as outlined in the [netfilter ACL
 documentation](/display/CL31/Netfilter+-+ACLs): IP tables, IPv6 tables,
@@ -18,7 +20,7 @@ and EB tables. The sections below cover the default configurations for
 each part, while the default file can be seen by clicking the Default
 ACL Configuration link:
 
-Default ACL Configuration
+<summary>Default ACL Configuration </summary>
 
     root@r4u18:~# cl-acltool -L all
     -------------------------------
@@ -485,3 +487,13 @@ bits.
 bits.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

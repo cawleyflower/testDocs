@@ -114,7 +114,8 @@ The table below contains the configuration for all five nodes.
 <tbody>
 <tr class="odd">
 <td><p>r1</p></td>
-<td>Click to see the config ...
+<td><details>
+<summary>Click to see the config ... </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.1.1.1/32
@@ -142,8 +143,10 @@ iface eth0 inet dhcp
 auto mgmt
 iface mgmt
   address 127.0.0.1/8
-  vrf-table auto</code></pre></td>
-<td>Click to see the config ...
+  vrf-table auto</code></pre>
+</details></td>
+<td><details>
+<summary>Click to see the config ... </summary>
 <pre><code>frr version 4.0+cl3u9
 frr defaults datacenter
 hostname r1
@@ -176,11 +179,13 @@ router bgp 65111
 mpls label global-block 100 200
 !
 line vty
-!</code></pre></td>
+!</code></pre>
+</details></td>
 </tr>
 <tr class="even">
 <td><p>r2</p></td>
-<td>Click to see the config ...
+<td><details>
+<summary>Click to see the config ... </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.1.1.2/32
@@ -207,8 +212,10 @@ iface eth0 inet dhcp
 auto mgmt
 iface mgmt
   address 127.0.0.1/8
-  vrf-table auto</code></pre></td>
-<td>Click to see the config ...
+  vrf-table auto</code></pre>
+</details></td>
+<td><details>
+<summary>Click to see the config ... </summary>
 <pre><code>frr version 4.0+cl3u9
 frr defaults datacenter
 hostname r2
@@ -242,11 +249,13 @@ router bgp 65222
 mpls label global-block 100 200
 !
 line vty
-!</code></pre></td>
+!</code></pre>
+</details></td>
 </tr>
 <tr class="odd">
 <td><p>r3</p></td>
-<td>Click to see the config ...
+<td><details>
+<summary>Click to see the config ... </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.1.1.3/32
@@ -274,8 +283,10 @@ iface eth0 inet dhcp
 auto mgmt
 iface mgmt
   address 127.0.0.1/8
-  vrf-table auto</code></pre></td>
-<td>Click to see the config ...
+  vrf-table auto</code></pre>
+</details></td>
+<td><details>
+<summary>Click to see the config ... </summary>
 <pre><code>frr version 4.0+cl3u9
 frr defaults datacenter
 hostname r3
@@ -308,11 +319,13 @@ router bgp 65333
 mpls label global-block 100 200
 !
 line vty
-!</code></pre></td>
+!</code></pre>
+</details></td>
 </tr>
 <tr class="even">
 <td><p>r4</p></td>
-<td>Click to see the config ...
+<td><details>
+<summary>Click to see the config ... </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.1.1.4/32
@@ -335,8 +348,10 @@ iface eth0 inet dhcp
 auto mgmt
 iface mgmt
   address 127.0.0.1/8
-  vrf-table auto</code></pre></td>
-<td>Click to see the config ...
+  vrf-table auto</code></pre>
+</details></td>
+<td><details>
+<summary>Click to see the config ... </summary>
 <pre><code>frr version 4.0+cl3u9
 frr defaults datacenter
 hostname r4
@@ -369,11 +384,13 @@ router bgp 65444
 mpls label global-block 100 200
 !
 line vty
-!</code></pre></td>
+!</code></pre>
+</details></td>
 </tr>
 <tr class="odd">
 <td><p>r5</p></td>
-<td>Click to see the config ...
+<td><details>
+<summary>Click to see the config ... </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.1.1.5/32
@@ -401,8 +418,10 @@ iface eth0 inet dhcp
 auto mgmt
 iface mgmt
   address 127.0.0.1/8
-  vrf-table auto</code></pre></td>
-<td>Click to see the config ...
+  vrf-table auto</code></pre>
+</details></td>
+<td><details>
+<summary>Click to see the config ... </summary>
 <pre><code>frr version 4.0+cl3u9
 frr defaults datacenter
 hostname r5
@@ -437,7 +456,8 @@ router bgp 65555
 mpls label global-block 100 200
 !
 line vty
-!</code></pre></td>
+!</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -555,4 +575,12 @@ well:
     cumulus@r1:~$ 
     cumulus@r1:~$ ip -f mpls route show 104
     104 via inet6 fe80::202:ff:fe00:c dev swp3  proto zebra 
-    cumulus@r1:~$
+    cumulus@r1:~$ 
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

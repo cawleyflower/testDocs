@@ -20,3 +20,11 @@ A Cumulus RMP switch comes pre-installed with the operating system.
 
 Zero touch provisioning is a way to quickly deploy and configure new
 switches in a large-scale environment.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

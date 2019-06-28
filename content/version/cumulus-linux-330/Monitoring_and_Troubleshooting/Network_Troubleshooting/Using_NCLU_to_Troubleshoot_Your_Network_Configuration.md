@@ -3,7 +3,7 @@ title: Using NCLU to Troubleshoot Your Network Configuration
 author: Cumulus Networks
 weight: 387
 aliases:
- - /display/CL330/Using+NCLU+to+Troubleshoot+Your+Network+Configuration
+ - /display/CL33/Using+NCLU+to+Troubleshoot+Your+Network+Configuration
  - /pages/viewpage.action?pageId=5866136
 pageID: 5866136
 product: Cumulus Linux
@@ -143,3 +143,11 @@ recommends you use `netshow` to help troubleshoot servers. To install
 Debian and Red Hat packages will be available in the near future.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

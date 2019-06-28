@@ -11,6 +11,8 @@ version: 3.7.7
 imgData: cumulus-linux
 siteSlug: cumulus-linux
 ---
+<details>
+
 {{%notice warning%}}
 
 As of Cumulus Linux 3.7.4, the lightweight network virtualization
@@ -410,7 +412,7 @@ each other. The layer 3 fabric on Cumulus Linux can either be
 example, OSPF is used to demonstrate full reachability. Click to expand
 the FRRouting configurations below.
 
-Click to expand the OSPF configuration ...
+<summary>Click to expand the OSPF configuration ... </summary>
 
 FRRouting configuration using OSPF:
 
@@ -568,7 +570,7 @@ a trunk mapped from server1 and server2 to the respective switch. In
 Ubuntu this is done with subinterfaces. You can expand the
 configurations below.
 
-Click to expand the host configurations ...
+<summary>Click to expand the host configurations ... </summary>
 
 <table>
 <colgroup>
@@ -859,7 +861,8 @@ section above; no additional configuration is typically needed. However,
 if you need to modify the registration node configuration, edit
 `/etc/vxrd.conf`.
 
-Configuring the registration node in /etc/vxrd.conf ...
+<summary>Configuring the registration node in /etc/vxrd.conf ...
+</summary>
 
     cumulus@leaf1:~$ sudo nano /etc/vxrd.conf
 
@@ -888,7 +891,7 @@ Restart the daemon on leaf2:
 
 The complete list of options you can configure is listed below:
 
-Registration node options ...
+<summary>Registration node options ... </summary>
 
 | Name                | Description                                                                                                                                                                                                                       | Default            |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
@@ -1222,3 +1225,13 @@ the IP address.
 
   - [Network virtualization chapter, Cumulus Linux user
     guide](/cumulus-linux/Network_Virtualization/)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

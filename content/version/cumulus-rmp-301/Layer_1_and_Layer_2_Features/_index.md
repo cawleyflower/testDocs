@@ -11,4 +11,10 @@ version: 3.0.1
 imgData: cumulus-rmp-301
 siteSlug: cumulus-rmp-301
 ---
+<article id="html-search-results" class="ht-content" style="display: none;">
 
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -29,7 +29,11 @@ Windows, you should use a Linux environment like
 [Cygwin](http://www.cygwin.com/) as your command line tool for
 interacting with Cumulus Linux.
 
+<div class="confbox admonition admonition-tip">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice info%}}
 
@@ -43,6 +47,10 @@ videos](http://cumulusnetworks.com/technical-videos/) introducing you to
 Linux in general and some Cumulus Linux-specific concepts in particular.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 {{%/notice%}}
 
@@ -527,3 +535,11 @@ This creates the following snippet in `/etc/network/interfaces`:
     iface lo inet loopback
         address 10.1.1.1/32
         address 172.16.2.1/24
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

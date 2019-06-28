@@ -168,3 +168,11 @@ entry under the **\# Specify interfaces** comment:
   - [en.wikipedia.org/wiki/Network\_Time\_Protocol](http://en.wikipedia.org/wiki/Network_Time_Protocol)
 
   - [wiki.debian.org/NTP](http://wiki.debian.org/NTP)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

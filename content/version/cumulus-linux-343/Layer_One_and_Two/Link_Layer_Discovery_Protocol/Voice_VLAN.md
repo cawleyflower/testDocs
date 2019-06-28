@@ -174,3 +174,11 @@ computer (PC), and the tagged VLAN is configured for the voice over IP
 </tr>
 </tbody>
 </table>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

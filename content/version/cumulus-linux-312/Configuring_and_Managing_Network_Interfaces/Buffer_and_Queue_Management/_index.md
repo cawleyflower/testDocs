@@ -11,6 +11,8 @@ version: 3.1.2
 imgData: cumulus-linux-312
 siteSlug: cumulus-linux-312
 ---
+<details>
+
 Hardware datapath configuration manages packet buffering, queueing and
 scheduling in hardware. There are two configuration input files:
 
@@ -71,7 +73,7 @@ Tomahawk, Trident II+ or Trident II
   - `/etc/cumulus/datapath/traffic.conf`: The datapath configuration
     file.
 
-Click to view sample traffic.conf file ...
+<summary>Click to view sample traffic.conf file ... </summary>
 
     cumulus@switch:~$ cat /etc/cumulus/datapath/traffic.conf
     # 
@@ -452,7 +454,7 @@ Linux switch the ability to mark a packet to signal impending congestion
 instead of dropping the packet outright, which is how TCP typically
 behaves when ECN is not enabled.
 
-Click to learn how to configure ECN ...
+<summary>Click to learn how to configure ECN ... </summary>
 
 ECN is disabled by default in Cumulus Linux. Enabling ECN requires
 configuring the following settings in
@@ -492,3 +494,13 @@ to allow the ECN configuration changes to take effect:
 
   - You can configure Quality of Service (QoS) for 10G, 40G, and 100G
     switches on the Tomahawk, Trident II+ or Trident II platforms only.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

@@ -3,7 +3,7 @@ title: Open Shortest Path First - OSPF - Protocol
 author: Cumulus Networks
 weight: 171
 aliases:
- - /display/CL330/Open+Shortest+Path+First+-+OSPF+-+Protocol
+ - /display/CL33/Open+Shortest+Path+First+-+OSPF+-+Protocol
  - /pages/viewpage.action?pageId=5866434
 pageID: 5866434
 product: Cumulus Linux
@@ -743,3 +743,11 @@ Using `tcpdump` to capture OSPF packets:
 
   - Moy, John T. OSPF: Anatomy of an Internet Routing Protocol.
     Addison-Wesley.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

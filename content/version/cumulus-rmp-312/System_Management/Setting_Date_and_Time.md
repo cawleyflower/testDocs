@@ -3,7 +3,7 @@ title: Setting Date and Time
 author: Cumulus Networks
 weight: 35
 aliases:
- - /display/RMP31/Setting+Date+and+Time
+ - /display/RMP312/Setting+Date+and+Time
  - /pages/viewpage.action?pageId=5122732
 pageID: 5122732
 product: Cumulus RMP
@@ -183,3 +183,11 @@ entry under the **\# Specify interfaces** comment:
   - [en.wikipedia.org/wiki/Network\_Time\_Protocol](http://en.wikipedia.org/wiki/Network_Time_Protocol)
 
   - [wiki.debian.org/NTP](http://wiki.debian.org/NTP)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

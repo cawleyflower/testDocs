@@ -279,3 +279,11 @@ To install a new package, please complete the following steps:
     tools](http://www.debian.org/doc/manuals/debian-faq/ch-pkgtools.en.html)
 
   - man pages for apt-get, dpkg, sources.list, apt\_preferences
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

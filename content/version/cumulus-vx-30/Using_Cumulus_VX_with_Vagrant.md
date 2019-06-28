@@ -346,3 +346,11 @@ Extended Next-Hop Encoding (RFC-5549). Cumulus VX also enables the
 ability to specify whether the session is an iBGP or eBGP session,
 without specifying the remote node's ASN. Both of these simplifications
 lead to a phenomenal simplification in configuring BGP.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

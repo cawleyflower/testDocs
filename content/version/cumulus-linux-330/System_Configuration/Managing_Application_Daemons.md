@@ -3,7 +3,7 @@ title: Managing Application Daemons
 author: Cumulus Networks
 weight: 71
 aliases:
- - /display/CL330/Managing+Application+Daemons
+ - /display/CL33/Managing+Application+Daemons
  - /pages/viewpage.action?pageId=5866125
 pageID: 5866125
 product: Cumulus Linux
@@ -11,6 +11,8 @@ version: 3.3.0
 imgData: cumulus-linux-330
 siteSlug: cumulus-linux-330
 ---
+<details>
+
 You manage application daemons (services) in Cumulus Linux in the
 following ways:
 
@@ -169,7 +171,7 @@ To determine which daemons are currently active or stopped, run
 You can also run `systemctl list-unit-files --type service` to list all
 services on the switch and see which ones are enabled:
 
-Click here to see output of this command ...
+<summary>Click here to see output of this command ... </summary>
 
     cumulus@switch:~$ systemctl list-unit-files --type service
     UNIT FILE                              STATE   
@@ -411,3 +413,13 @@ multi-user.target</code></pre>
 </tr>
 </tbody>
 </table>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

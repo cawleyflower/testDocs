@@ -3,7 +3,7 @@ title: Ethernet Virtual Private Network - EVPN
 author: Cumulus Networks
 weight: 145
 aliases:
- - /display/CL330/Ethernet+Virtual+Private+Network+-+EVPN
+ - /display/CL33/Ethernet+Virtual+Private+Network+-+EVPN
  - /pages/viewpage.action?pageId=5866293
 pageID: 5866293
 product: Cumulus Linux
@@ -11,6 +11,8 @@ version: 3.3.0
 imgData: cumulus-linux-330
 siteSlug: cumulus-linux-330
 ---
+<details>
+
 Ethernet Virtual Private Network (EVPN) provides a control plane for
 [VXLANs](/version/cumulus-linux-330/Network_Virtualization/) in Cumulus
 Linux, with the following functionality:
@@ -61,7 +63,7 @@ current, and you don't need to do anything.
 If the version is *1.0.0+cl3eau8* or any earlier *3eau* version, then
 you need to remove it.
 
-Removing an older EVPN version
+<summary>Removing an older EVPN version </summary>
 
 {{%notice note%}}
 
@@ -613,7 +615,7 @@ Replication
 (HER)](Lightweight_Network_Virtualization_-_LNV_Overview.html#src-5866264_LightweightNetworkVirtualization-LNVOverview-head-end).
 HER is enabled by default, as it is when [Lightweight Network
 Virtualization
-(LNV)](/display/CL330/Lightweight+Network+Virtualization+-+LNV+Overview)
+(LNV)](/display/CL33/Lightweight+Network+Virtualization+-+LNV+Overview)
 is used.
 
 ## <span>EVPN and VXLAN Active-Active Mode</span>
@@ -651,7 +653,7 @@ for leaf03, leaf04, server03, server04). Here is the topology diagram:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>leaf01 /etc/network/interfaces
+<td><summary>leaf01 /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.0.0.11/32
@@ -692,7 +694,7 @@ iface vxlan10200
      vxlan-local-tunnelip 10.0.0.11
      bridge-access 200
      bridge-learning off</code></pre></td>
-<td>leaf02 /etc/network/interfaces
+<td><summary>leaf02 /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.0.0.12/32
@@ -735,7 +737,7 @@ iface vxlan10200
     bridge-learning off</code></pre></td>
 </tr>
 <tr class="even">
-<td>leaf01 /etc/quagga/Quagga.conf
+<td><summary>leaf01 /etc/quagga/Quagga.conf </summary>
 <pre><code>!
 interface swp51
  ipv6 nd ra-interval 10
@@ -781,7 +783,7 @@ ip prefix-list dc-leaf-out seq 500 deny any
 line vty
 !
 end</code></pre></td>
-<td>leaf02 /etc/quagga/Quagga.conf
+<td><summary>leaf02 /etc/quagga/Quagga.conf </summary>
 <pre><code>!
 interface swp51
  ipv6 nd ra-interval 10
@@ -840,7 +842,7 @@ end</code></pre></td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>spine01 /etc/network/interfaces
+<td><summary>spine01 /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.0.0.21/32
@@ -860,7 +862,7 @@ iface swp3
  
 auto swp4
 iface swp4</code></pre></td>
-<td>spine02 /etc/network/interfaces
+<td><summary>spine02 /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.0.0.22/32
@@ -882,7 +884,7 @@ auto swp4
 iface swp4</code></pre></td>
 </tr>
 <tr class="even">
-<td>spine01 /etc/quagga/Quagga.conf
+<td><summary>spine01 /etc/quagga/Quagga.conf </summary>
 <pre><code>!
 interface swp1
  ipv6 nd ra-interval 10
@@ -935,7 +937,7 @@ ip prefix-list dc-spine seq 500 deny any
 line vty
 !
 end</code></pre></td>
-<td>spine02 /etc/quagga/Quagga.conf
+<td><summary>spine02 /etc/quagga/Quagga.conf </summary>
 <pre><code>!
 interface swp1
  ipv6 nd ra-interval 10
@@ -1791,3 +1793,13 @@ The following caveat applies to EVPN in Cumulus Linux 3.3:
     in an optimal manner, because the neighbor entries are not synced by
     a control plane. Thus, ARPs may not be suppressed sometimes. This
     has no impact on forwarding.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

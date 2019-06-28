@@ -11,13 +11,15 @@ version: 3.0.1
 imgData: cumulus-rmp-301
 siteSlug: cumulus-rmp-301
 ---
+<details>
+
 `switchd` is the daemon at the heart of Cumulus RMP. It communicates
 between the switch and Cumulus RMP, and all the applications running on
 Cumulus RMP.
 
 The `switchd` configuration is stored in `/etc/cumulus/switchd.conf`.
 
-(Click to expand)
+<summary>(Click to expand) </summary>
 
 ## <span>The switchd File System</span>
 
@@ -155,3 +157,13 @@ resetting the switch hardware configuration.
 ## <span>Configuration Files</span>
 
   - /etc/cumulus/switchd.conf
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

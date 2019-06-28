@@ -185,3 +185,11 @@ This functionality is only supported on swp\* ports, not eth\*
 management interfaces.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

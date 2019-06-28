@@ -7,10 +7,12 @@ aliases:
  - /pages/viewpage.action?pageId=5118344
 pageID: 5118344
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
+<details>
+
 Multi-Chassis Link Aggregation, or MLAG, enables a server or switch with
 a two-port bond (such as a link aggregation group/LAG, EtherChannel,
 port group, or trunk) to connect those ports to different switches and
@@ -790,7 +792,7 @@ To display multicast group and router port information, use the `bridge
     dev br port bond0 vlan 100 grp 234.1.1.1 temp
     router ports on br: bond0
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 {{%notice warning%}}
 
@@ -1004,3 +1006,13 @@ primary.
 ## <span>Configuration Files</span>
 
   - /etc/network/interfaces
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

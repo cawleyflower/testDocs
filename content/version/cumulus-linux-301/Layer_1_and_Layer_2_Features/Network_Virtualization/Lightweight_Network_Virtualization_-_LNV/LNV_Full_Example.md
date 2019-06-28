@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118326
 pageID: 5118326
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -520,3 +520,11 @@ svcnode_peers = 10.2.1.3
 
   - [Cumulus Networks
     Training](http://cumulusnetworks.com/education/instructor-led-training/)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

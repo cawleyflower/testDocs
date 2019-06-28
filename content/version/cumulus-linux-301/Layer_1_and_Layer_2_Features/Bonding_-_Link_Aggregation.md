@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118275
 pageID: 5118275
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -155,3 +155,11 @@ calculation is adjusted to steer traffic over available slaves.
 
   - A bond cannot enslave VLAN subinterfaces. A bond can have
     subinterfaces, but not the other way around.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -3,7 +3,7 @@ title: Using sudo to Delegate Privileges
 author: Cumulus Networks
 weight: 131
 aliases:
- - /display/RMP31/Using+sudo+to+Delegate+Privileges
+ - /display/RMP312/Using+sudo+to+Delegate+Privileges
  - /pages/viewpage.action?pageId=5122736
 pageID: 5122736
 product: Cumulus RMP
@@ -260,3 +260,11 @@ be prefixed with `sudo.`
 
   - [Adding Yourself to
     sudoers](http://rubypond.com/blog/adding-yourself-to-the-sudoers-file)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

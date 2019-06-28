@@ -514,3 +514,11 @@ processes when terminated with a signal (via the `kill` system call or
 internal errors such as SIGSEGV). As a result, processes that exit on a
 signal that isn’t caught and handled may not generate a STOP accounting
 record.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

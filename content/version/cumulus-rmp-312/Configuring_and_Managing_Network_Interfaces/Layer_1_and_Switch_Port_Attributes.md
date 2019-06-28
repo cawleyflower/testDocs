@@ -3,7 +3,7 @@ title: Layer 1 and Switch Port Attributes
 author: Cumulus Networks
 weight: 55
 aliases:
- - /display/RMP31/Layer+1+and+Switch+Port+Attributes
+ - /display/RMP312/Layer+1+and+Switch+Port+Attributes
  - /pages/viewpage.action?pageId=5122796
 pageID: 5122796
 product: Cumulus RMP
@@ -11,6 +11,8 @@ version: 3.1.2
 imgData: cumulus-rmp-312
 siteSlug: cumulus-rmp-312
 ---
+<details>
+
 This chapter discusses the various network interfaces on a switch
 running Cumulus RMP.
 
@@ -96,7 +98,7 @@ defaults to half duplex.
 
 You can also configure these settings at run time, using `ethtool`.
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 <table>
 <colgroup>
@@ -139,7 +141,7 @@ is, set it *on* or *off*) on a switch port.
     iface swp1
        link-autoneg off
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 <table>
 <colgroup>
@@ -166,7 +168,7 @@ VLAN subinterfaces and bonds.
     iface swp1
        mtu 9000
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 <table>
 <colgroup>
@@ -296,3 +298,13 @@ shows the output for 1G and 10G modules:
   - [www.linuxfoundation.org/collaborate/workgroups/networking/bridge](http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge)
 
   - [www.linuxfoundation.org/collaborate/workgroups/networking/bonding](http://www.linuxfoundation.org/collaborate/workgroups/networking/bonding)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

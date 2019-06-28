@@ -11,6 +11,8 @@ version: '3.6'
 imgData: cumulus-linux-36
 siteSlug: cumulus-linux-36
 ---
+<details>
+
 {{%notice warning%}}
 
 **Early Access Feature**
@@ -62,7 +64,7 @@ the outer IPv4 header.
 
 ## <span> Contents</span>
 
-This chapter covers ...
+<summary>This chapter covers ... </summary>
 
 ## <span>Configuring GRE Tunneling</span>
 
@@ -187,3 +189,13 @@ command. Make sure you run the `ifreload - a` command after you update
 the interfaces file.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

@@ -11,6 +11,8 @@ version: 3.0.1
 imgData: cumulus-rmp-301
 siteSlug: cumulus-rmp-301
 ---
+<details>
+
 *Zero touch provisioning* (ZTP) enables network devices to be quickly
 deployed in large-scale environments. Data center engineers only need to
 rack and stack the switch, then connect it to the management network —
@@ -38,7 +40,7 @@ in this order:
 
 Each method is discussed in greater detail below.
 
-Contents
+<summary>Contents </summary>
 
 ## <span>Commands</span>
 
@@ -528,3 +530,13 @@ To see the current `ztp` state, use the `-s` option:
 ## <span>Configuration Files</span>
 
   - /var/lib/cumulus/autoprovision.conf
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

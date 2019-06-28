@@ -11,6 +11,8 @@ version: 3.7.7
 imgData: cumulus-linux
 siteSlug: cumulus-linux
 ---
+<details>
+
 Cumulus Linux provides an ASIC monitoring tool that collects and
 distributes data about the state of the ASIC. The monitoring tool polls
 for data at specific intervals and takes certain actions so that you can
@@ -30,7 +32,7 @@ ASIC monitoring is currently supported on Mellanox switches only.
 
 <span style="color: #36424a;"> Contents </span>
 
-This topic describes ...
+<summary>This topic describes ... </summary>
 
 ## <span>What Type of Statistics Can You Collect?</span>
 
@@ -552,3 +554,13 @@ In the following example, because the snapshot file count is set to 64, the firs
 </tr>
 </tbody>
 </table>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

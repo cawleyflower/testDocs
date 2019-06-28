@@ -3,7 +3,7 @@ title: Managing Application Daemons
 author: Cumulus Networks
 weight: 39
 aliases:
- - /display/RMP31/Managing+Application+Daemons
+ - /display/RMP312/Managing+Application+Daemons
  - /pages/viewpage.action?pageId=5122748
 pageID: 5122748
 product: Cumulus RMP
@@ -186,3 +186,11 @@ For example:
     lrwxrwxrwx 1 root root 15 Apr 4 2014 S01snmpd -> ../init.d/snmpd
     lrwxrwxrwx 1 root root 15 Apr 4 2014 S01snmpd -> ../init.d/snmpd
     lrwxrwxrwx 1 root root 15 Apr 4 2014 K02snmpd -> ../init.d/snmpd
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

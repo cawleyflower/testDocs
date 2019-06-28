@@ -7,10 +7,12 @@ aliases:
  - /pages/viewpage.action?pageId=5116319
 pageID: 5116319
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
+<details>
+
 The Cumulus RMP operating system resides on a switch as a *disk image*.
 Switches running Cumulus RMP can be configured with multiple disk
 images. This section discusses how to manage them.
@@ -140,7 +142,7 @@ This example assumes the new image is located in the current directory
 
     cumulus@switch:~$ sudo cl-img-install CumulusRMP-2.5.7-amd64.bin
 
-Click to expand full output
+<summary>Click to expand full output </summary>
 
     cumulus@switch$ sudo cl-img-install CumulusRMP-2.5.7-amd64.bin
     Defaulting to image slot 2 for install.
@@ -225,7 +227,8 @@ directories part of a persistent configuration.
 
 #### <span>Simple Bash Script Example</span>
 
-Example Bash script to automate /mnt/persist backup; click to expand...
+<summary>Example Bash script to automate /mnt/persist backup; click to
+expand... </summary>
 
 The following script is a Bash script that can help grab all the above
 files and push them to `/mnt/persist` automatically.
@@ -384,7 +387,8 @@ finishes.
 2.  Prepare your flash drive by formatting in one of the supported
     formats: FAT32, vFAT or EXT2.
     
-    Optional: Preparing a USB Drive inside Cumulus Linux
+    <summary>Optional: Preparing a USB Drive inside Cumulus Linux
+    </summary>
     
     <table>
     <colgroup>
@@ -794,3 +798,13 @@ You can also extract the image files to the current directory with the
 
   - [Open Network Install Environment (ONIE) Home
     Page](http://opencomputeproject.github.io/onie/)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

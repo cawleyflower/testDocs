@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116334
 pageID: 5116334
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
@@ -216,3 +216,11 @@ address.
 This can typically occur when the interface being added to the bridge is
 an incomplete bond; a bond without slaves is incomplete and does not
 have a valid hardware address.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

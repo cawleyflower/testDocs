@@ -12,7 +12,13 @@ title: "Cumulus Networks Documentation Home"
 
 [Cumulus VX](/cumulus-vx/)
 
-[Cumulus Chassis](/Chassis/Chassis_User_Guide.html)
+[Cumulus Chassis](/chassis/)
+
+[Cumulus RMP](/cumulus-rmp/)
+
+[Cumulus Host Pack](/host-pack/)
+
+[Cumulus Writing Guide](/writing-guide)
 
 
 ## Old Versions
@@ -36,6 +42,21 @@ title: "Cumulus Networks Documentation Home"
 [Cumulus Linux 2.5.12 ESR](/version/cumulus-linux-2512-esr/)
 
 [Cumulus VX 3.0](/version/cumulus-vx-30)
+
+[Cumulus VX 2.5](/version/cumulus-vx-25)
+
+[Cumulus RMP 3.2.1](/version/cumulus-rmp-321)
+
+[Cumulus RMP 3.1.2](/version/cumulus-rmp-312)
+
+[Cumulus RMP 3.0.1](/version/cumulus-rmp-301)
+
+[Cumulus RMP 2.5.12 ESR](/version/cumulus-rmp-2512-esr)
+
+
+
+
+
 
 
 

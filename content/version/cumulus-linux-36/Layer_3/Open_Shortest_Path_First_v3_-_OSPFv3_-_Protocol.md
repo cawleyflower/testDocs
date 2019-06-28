@@ -199,3 +199,11 @@ topology as computed by SPF to help visualize the network view.
   - [Auto-cost reference
     bandwidth](Open_Shortest_Path_First_-_OSPF_-_Protocol.html#src-8362392_OpenShortestPathFirst-OSPF-Protocol-acrb)
     (OSPFv2 chapter)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

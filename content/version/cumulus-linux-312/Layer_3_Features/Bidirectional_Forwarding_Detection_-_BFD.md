@@ -267,3 +267,11 @@ You should modify these default scripts as needed.
 To troubleshoot BFD, use `ptmctl -b`. For more information, see
 [Prescriptive Topology Manager -
 PTM](/version/cumulus-linux-312/Layer_1_and_Layer_2_Features/Prescriptive_Topology_Manager_-_PTM).
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

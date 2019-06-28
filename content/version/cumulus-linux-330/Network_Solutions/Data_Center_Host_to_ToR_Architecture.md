@@ -3,7 +3,7 @@ title: Data Center Host to ToR Architecture
 author: Cumulus Networks
 weight: 229
 aliases:
- - /display/CL330/Data+Center+Host+to+ToR+Architecture
+ - /display/CL33/Data+Center+Host+to+ToR+Architecture
  - /pages/viewpage.action?pageId=5866483
 pageID: 5866483
 product: Cumulus Linux
@@ -127,13 +127,15 @@ iface br-20 inet manual
 </ul>
 <p><strong><br />
 </strong></p></td>
-<td><ul>
+<td><details>
+<ul>
 <li><p>ToR layer (recommended)</p></li>
 <li><p>Spine layer</p></li>
 <li><p>Core/edge/exit</p></li>
 </ul>
-More Info...
-<p>VRR can be configured on a pair of switches at any level in the network. However, the higher up the network you configure it, the larger the L2 domain becomes. The benefit here is L2 reachability. The drawback is the L2 domain is more difficult to troubleshoot, does not scale as well, and the pair of switches running VRR needs to carry the entire MAC address table of everything below it in the network. Minimizing the L2 domain as much as possible is recommended by Cumulus Professional Services. <a href="https://docs.google.com/presentation/d/1l1d_6iUF7RTUHTSAmGuLwm3WCUXTNdFjndCLLxzBSOU/edit?usp=sharing" class="external-link">Please see this presentation for more information</a>.</p></td>
+<summary>More Info... </summary>
+<p>VRR can be configured on a pair of switches at any level in the network. However, the higher up the network you configure it, the larger the L2 domain becomes. The benefit here is L2 reachability. The drawback is the L2 domain is more difficult to troubleshoot, does not scale as well, and the pair of switches running VRR needs to carry the entire MAC address table of everything below it in the network. Minimizing the L2 domain as much as possible is recommended by Cumulus Professional Services. <a href="https://docs.google.com/presentation/d/1l1d_6iUF7RTUHTSAmGuLwm3WCUXTNdFjndCLLxzBSOU/edit?usp=sharing" class="external-link">Please see this presentation for more information</a>.</p>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -406,7 +408,7 @@ iface eth1 inet static
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Routing on the host means there is a routing application (such as <a href="/display/CL330/Quagga+Overview">Cumulus Networks Quagga</a>) either on the bare metal host (no VMs/containers) or the hypervisor (for example, Ubuntu with KVM). This is highly recommended by the Cumulus Networks Professional Services team.</p></td>
+<td><p>Routing on the host means there is a routing application (such as <a href="/display/CL33/Quagga+Overview">Cumulus Networks Quagga</a>) either on the bare metal host (no VMs/containers) or the hypervisor (for example, Ubuntu with KVM). This is highly recommended by the Cumulus Networks Professional Services team.</p></td>
 <td><p><strong>Benefits</strong></p>
 <ul>
 <li><p>No requirement for MLAG</p></li>
@@ -732,3 +734,11 @@ iface br-10
 </tr>
 </tbody>
 </table>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

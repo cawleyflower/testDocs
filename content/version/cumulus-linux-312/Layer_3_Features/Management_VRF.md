@@ -389,3 +389,11 @@ utility) has been deprecated, and the `cl-ns-mgmt` command has been
 removed.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

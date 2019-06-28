@@ -3,7 +3,7 @@ title: Power over Ethernet - PoE
 author: Cumulus Networks
 weight: 75
 aliases:
- - /display/CL330/Power+over+Ethernet+-+PoE
+ - /display/CL33/Power+over+Ethernet+-+PoE
  - /pages/viewpage.action?pageId=5866123
 pageID: 5866123
 product: Cumulus Linux
@@ -11,6 +11,8 @@ version: 3.3.0
 imgData: cumulus-linux-330
 siteSlug: cumulus-linux-330
 ---
+<details>
+
 Cumulus Linux supports Power over Ethernet (PoE) and PoE+, so certain
 Cumulus Linux switches can supply power from Ethernet switch ports to
 enabled devices over the Ethernet cables that connect them. Power over
@@ -79,7 +81,7 @@ The PoE configuration resides in `/etc/cumulus/poe.conf`. The file lists
 all the switch ports, whether PoE is enabled for those ports and the
 priority for each port.
 
-Sample poe.conf file ...
+<summary>Sample poe.conf file ... </summary>
 
     [enable]
     swp1 = enable
@@ -453,3 +455,13 @@ The `poed` service logs the following events to `syslog`:
   - When the power available to the switch changes
 
   - Errors
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

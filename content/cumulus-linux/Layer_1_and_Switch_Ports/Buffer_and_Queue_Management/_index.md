@@ -11,6 +11,8 @@ version: 3.7.7
 imgData: cumulus-linux
 siteSlug: cumulus-linux
 ---
+<details>
+
 Hardware datapath configuration manages packet buffering, queueing and
 scheduling in hardware. There are two configuration input files:
 
@@ -105,7 +107,7 @@ Keep in mind the following about the configuration:
   - Per-port remark packet fields and mapping apply to the designated
     set of ports.
 
-Click to view sample traffic.conf file ...
+<summary>Click to view sample traffic.conf file ... </summary>
 
     cumulus@switch:~$ cat /etc/cumulus/datapath/traffic.conf
     # 
@@ -722,7 +724,7 @@ ECN is supported on [Broadcom Tomahawk, Tomahawk2, Trident II, Trident
 II+ and Trident3, and Mellanox Spectrum
 switches](https://cumulusnetworks.com/hcl).
 
-Click to learn how to configure ECN ...
+<summary>Click to learn how to configure ECN ... </summary>
 
 ECN is disabled by default in Cumulus Linux. You can enable ECN for
 individual switch priorities on specific switch ports. ECN requires
@@ -789,3 +791,13 @@ On Broadcom switches, the buffer status is not visible currently.
 
   - [iptables-extensions man
     page](http://ipset.netfilter.org/iptables-extensions.man.html)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

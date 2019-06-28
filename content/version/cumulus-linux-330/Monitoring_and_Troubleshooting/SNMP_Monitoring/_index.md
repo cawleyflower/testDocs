@@ -3,7 +3,7 @@ title: SNMP Monitoring
 author: Cumulus Networks
 weight: 215
 aliases:
- - /display/CL330/SNMP+Monitoring
+ - /display/CL33/SNMP+Monitoring
  - /pages/viewpage.action?pageId=5866145
 pageID: 5866145
 product: Cumulus Linux
@@ -1148,3 +1148,11 @@ The ENTITY MIB does not currently show the chassis information in
 Cumulus Linux.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

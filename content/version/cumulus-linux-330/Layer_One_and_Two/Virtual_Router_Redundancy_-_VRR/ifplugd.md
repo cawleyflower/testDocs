@@ -3,7 +3,7 @@ title: ifplugd
 author: Cumulus Networks
 weight: 311
 aliases:
- - /display/CL330/ifplugd
+ - /display/CL33/ifplugd
  - /pages/viewpage.action?pageId=5866224
 pageID: 5866224
 product: Cumulus Linux
@@ -44,7 +44,11 @@ The example `ifplugd` configuration below show that `ifplugd` has been
 configured to bring down all uplinks when the peerbond goes down in an
 MLAG environment.
 
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice info has%}}
 
@@ -53,6 +57,10 @@ MLAG environment.
 switches in this example.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 1.  Open `/etc/default/ifplugd` in a text editor.
 
@@ -111,3 +119,11 @@ The default shell for `ifplugd` is `dash` (`/bin/sh`), rather than
 `bash`, as it provides a faster and more nimble shell. However, it
 contains less features than `bash` (such as being unable to handle
 multiple uplinks).
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

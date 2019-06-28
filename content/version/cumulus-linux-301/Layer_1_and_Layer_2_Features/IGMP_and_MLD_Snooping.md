@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118361
 pageID: 5118361
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -197,3 +197,11 @@ command. To display router ports and group information use the `bridge
   - <http://tools.ietf.org/search/rfc2710>
 
   - <http://tools.ietf.org/html/rfc3810>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

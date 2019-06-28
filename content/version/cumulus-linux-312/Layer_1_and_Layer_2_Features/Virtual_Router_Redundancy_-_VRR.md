@@ -255,3 +255,11 @@ The default shell is `/bin/sh`, which is `dash` and not `bash`. This
 makes for faster execution of the script since `dash` is small and
 quick, but consequently less featureful than `bash`. For example, it
 doesn't handle multiple uplinks.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

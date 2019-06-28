@@ -2466,7 +2466,8 @@ bridging.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>leaf01 /etc/network/interfaces
+<td><details>
+<summary>leaf01 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf01:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -2569,8 +2570,10 @@ auto vlan1001
 iface vlan1001
     vlan-id 1001
     vlan-raw-device VxLanA-1
-    ip-forward off</code></pre></td>
-<td>leaf02 /etc/network/interfaces
+    ip-forward off</code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf02:~$ cat /etc/network/interfaces 
  
 # This file describes the network interfaces available on your system
@@ -2673,10 +2676,12 @@ auto vlan1001
 iface vlan1001
     vlan-id 1001
     vlan-raw-device VxLanA-1
-    ip-forward off</code></pre></td>
+    ip-forward off</code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>leaf01 /etc/frr/frr.conf
+<td><details>
+<summary>leaf01 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@leaf01:~$ cat /etc/frr/frr.conf
  
 log file /var/log/frr/bgpd.log
@@ -2722,8 +2727,10 @@ router bgp 65542
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
-<td>leaf02 /etc/frr/frr.conf
+!</code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@leaf02:~$ cat /etc/frr/frr.conf
  
 log file /var/log/frr/bgpd.log
@@ -2769,7 +2776,8 @@ router bgp 65543
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
+!</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -2783,7 +2791,8 @@ line vty
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>leaf03 /etc/network/interfaces
+<td><details>
+<summary>leaf03 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf03:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -2887,8 +2896,10 @@ auto vlan1001
 iface vlan1001
     vlan-id 1001
     vlan-raw-device VxLanA-1
-    ip-forward off</code></pre></td>
-<td>leaf04 /etc/network/interfaces
+    ip-forward off</code></pre>
+</details></td>
+<td><details>
+<summary>leaf04 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf04:~$ cat /etc/network/interfaces 
  
 # This file describes the network interfaces available on your system
@@ -2992,10 +3003,12 @@ auto vlan1001
 iface vlan1001
     vlan-id 1001
     vlan-raw-device VxLanA-1
-    ip-forward off</code></pre></td>
+    ip-forward off</code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>leaf03 /etc/frr/frr.conf
+<td><details>
+<summary>leaf03 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@leaf03:~$ cat /etc/frr/frr.conf
  
 log file /var/log/frr/bgpd.log
@@ -3041,8 +3054,10 @@ router bgp 65544
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
-<td>leaf04 /etc/frr/frr.conf
+!</code></pre>
+</details></td>
+<td><details>
+<summary>leaf04 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@leaf04:~$ cat /etc/frr/frr.conf
  
 log file /var/log/frr/bgpd.log
@@ -3088,7 +3103,8 @@ router bgp 65545
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
+!</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -3102,7 +3118,8 @@ line vty
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>spine01 /etc/network/interfaces
+<td><details>
+<summary>spine01 /etc/network/interfaces </summary>
 <pre><code>cumulus@spine01:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -3137,8 +3154,10 @@ iface downlink-3
 auto downlink-4
 iface downlink-4
     bond-slaves swp7 swp8
-    mtu  9202</code></pre></td>
-<td>spine02 /etc/network/interfaces
+    mtu  9202</code></pre>
+</details></td>
+<td><details>
+<summary>spine02 /etc/network/interfaces </summary>
 <pre><code>cumulus@spine02:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -3174,10 +3193,12 @@ iface downlink-3
 auto downlink-4
 iface downlink-4
     bond-slaves swp7 swp8
-    mtu  9202</code></pre></td>
+    mtu  9202</code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>spine01 /etc/frr/frr.conf
+<td><details>
+<summary>spine01 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@spine01:~$ cat /etc/frr/frr.conf
  
 log file /var/log/frr/bgpd.log
@@ -3234,8 +3255,10 @@ router bgp 64435
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
-<td>spine02 /etc/frr/frr.conf
+!</code></pre>
+</details></td>
+<td><details>
+<summary>spine02 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@spine02:~$ cat /etc/frr/frr.conf
  
 log file /var/log/frr/bgpd.log
@@ -3292,7 +3315,8 @@ router bgp 64435
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
+!</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -3313,7 +3337,8 @@ centralized routing. MLAG is configured between leaf switches.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>leaf01 /etc/network/interfaces
+<td><details>
+<summary>leaf01 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf01:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -3465,8 +3490,10 @@ iface vlan1003
     vlan-id 1003
     vlan-raw-device bridge
     address-virtual 00:00:5e:00:01:01 45.0.3.1/24 2001:fee1:0:3::1/64
-    vrf vrf2</code></pre></td>
-<td>leaf02 /etc/network/interfaces
+    vrf vrf2</code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf02:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -3618,10 +3645,12 @@ iface vlan1003
     vlan-id 1003
     vlan-raw-device bridge
     address-virtual 00:00:5e:00:01:01 45.0.3.1/24 2001:fee1:0:3::1/64
-    vrf vrf2 </code></pre></td>
+    vrf vrf2 </code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>leaf01 /etc/frr/frr.conf
+<td><details>
+<summary>leaf01 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@leaf01:~$ cat /etc/frr/frr.conf 
  
 log file /var/log/frr/bgpd.log
@@ -3668,8 +3697,10 @@ router bgp 65542
 !
 line vty
  exec-timeout 0 0
-! </code></pre></td>
-<td>leaf02 /etc/frr/frr.conf
+! </code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@leaf02:~$ cat /etc/frr/frr.conf 
  
 log file /var/log/frr/bgpd.log
@@ -3716,7 +3747,8 @@ router bgp 65543
 !
 line vty
  exec-timeout 0 0
-! </code></pre></td>
+! </code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -3730,7 +3762,8 @@ line vty
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>leaf03 /etc/network/interfaces
+<td><details>
+<summary>leaf03 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf03:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -3870,8 +3903,10 @@ auto vlan1003
 iface vlan1003
     vlan-id 1003
     vlan-raw-device bridge
-    ip-forward off </code></pre></td>
-<td>leaf04 /etc/network/interfaces
+    ip-forward off </code></pre>
+</details></td>
+<td><details>
+<summary>leaf04 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf04:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -4011,10 +4046,12 @@ auto vlan1003
 iface vlan1003
     vlan-id 1003
     vlan-raw-device bridge
-    ip-forward off </code></pre></td>
+    ip-forward off </code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>leaf03 /etc/frr/frr.conf
+<td><details>
+<summary>leaf03 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@leaf03:~$ cat /etc/frr/frr.conf 
  
 log file /var/log/frr/bgpd.log
@@ -4060,8 +4097,10 @@ router bgp 65544
 !
 line vty
  exec-timeout 0 0
-! </code></pre></td>
-<td>leaf04 /etc/frr/frr.conf
+! </code></pre>
+</details></td>
+<td><details>
+<summary>leaf04 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@leaf04:~$ cat /etc/frr/frr.conf 
  
 log file /var/log/frr/bgpd.log
@@ -4107,7 +4146,8 @@ router bgp 65545
 !
 line vty
  exec-timeout 0 0
-! </code></pre></td>
+! </code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -4121,7 +4161,8 @@ line vty
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>spine01 /etc/network/interfaces
+<td><details>
+<summary>spine01 /etc/network/interfaces </summary>
 <pre><code>cumulus@spine01:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -4157,8 +4198,10 @@ iface downlink-3
 auto downlink-4
 iface downlink-4
     bond-slaves swp7 swp8
-    mtu  9202</code></pre></td>
-<td>spine02 /etc/network/interfaces
+    mtu  9202</code></pre>
+</details></td>
+<td><details>
+<summary>spine02 /etc/network/interfaces </summary>
 <pre><code>cumulus@spine02:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -4194,10 +4237,12 @@ iface downlink-3
 auto downlink-4
 iface downlink-4
     bond-slaves swp7 swp8
-    mtu  9202</code></pre></td>
+    mtu  9202</code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>spine01 /etc/frr/frr.conf
+<td><details>
+<summary>spine01 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@spine01:~$ cat /etc/frr/frr.conf 
  
 log file /var/log/frr/bgpd.log
@@ -4254,8 +4299,10 @@ router bgp 64435
 !
 line vty
  exec-timeout 0 0
-! </code></pre></td>
-<td>spine02 /etc/frr/frr.conf
+! </code></pre>
+</details></td>
+<td><details>
+<summary>spine02 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@spine02:~$ cat /etc/frr/frr.conf 
  
 log file /var/log/frr/bgpd.log
@@ -4312,7 +4359,8 @@ router bgp 64435
 !
 line vty
  exec-timeout 0 0
-! </code></pre></td>
+! </code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -4333,7 +4381,8 @@ asymmetric routing. MLAG is configured between leaf switches.
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>leaf01 /etc/network/interfaces
+<td><details>
+<summary>leaf01 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf01:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -4485,8 +4534,10 @@ iface vlan1003
     vlan-id 1003
     vlan-raw-device bridge
     address-virtual 00:00:5e:00:01:01 45.0.3.1/24 2001:fee1:0:3::1/64
-    vrf vrf2</code></pre></td>
-<td>leaf02 /etc/network/interfaces
+    vrf vrf2</code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf02:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -4638,10 +4689,12 @@ iface vlan1003
     vlan-id 1003
     vlan-raw-device bridge
     address-virtual 00:00:5e:00:01:01 45.0.3.1/24 2001:fee1:0:3::1/64
-    vrf vrf2</code></pre></td>
+    vrf vrf2</code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>leaf01 /etc/frr/frr.conf
+<td><details>
+<summary>leaf01 /etc/frr/frr.conf </summary>
 <pre><code> cumulus@leaf01:~$ cat /etc/frr/frr.conf
  
 log file /var/log/frr/bgpd.log
@@ -4687,8 +4740,10 @@ router bgp 65542
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
-<td>leaf02 /etc/frr/frr.conf
+!</code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@leaf02:~$ cat /etc/frr/frr.conf
  
 log file /var/log/frr/bgpd.log
@@ -4734,7 +4789,8 @@ router bgp 65543
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
+!</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -4748,7 +4804,8 @@ line vty
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>leaf03 /etc/network/interfaces
+<td><details>
+<summary>leaf03 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf03:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -4900,8 +4957,10 @@ iface vlan1003
     vlan-id 1003
     vlan-raw-device bridge
     address-virtual 00:00:5e:00:01:01 45.0.3.1/24 2001:fee1:0:3::1/64
-    vrf vrf2</code></pre></td>
-<td>leaf04 /etc/network/interfaces
+    vrf vrf2</code></pre>
+</details></td>
+<td><details>
+<summary>leaf04 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf04:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -5053,10 +5112,12 @@ iface vlan1003
     vlan-id 1003
     vlan-raw-device bridge
     address-virtual 00:00:5e:00:01:01 45.0.3.1/24 2001:fee1:0:3::1/64
-    vrf vrf2 </code></pre></td>
+    vrf vrf2 </code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>leaf03 /etc/frr/frr.conf
+<td><details>
+<summary>leaf03 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@leaf03:~$ cat /etc/frr/frr.conf 
  
 log file /var/log/frr/bgpd.log
@@ -5102,8 +5163,10 @@ router bgp 65544
 !
 line vty
  exec-timeout 0 0
-! </code></pre></td>
-<td>leaf04 /etc/frr/frr.conf
+! </code></pre>
+</details></td>
+<td><details>
+<summary>leaf04 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@leaf04:~$ cat /etc/frr/frr.conf 
  
 log file /var/log/frr/bgpd.log
@@ -5149,7 +5212,8 @@ router bgp 65545
 !
 line vty
  exec-timeout 0 0
-! </code></pre></td>
+! </code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -5163,7 +5227,8 @@ line vty
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>spine01 /etc/network/interfaces
+<td><details>
+<summary>spine01 /etc/network/interfaces </summary>
 <pre><code>cumulus@spine01:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -5198,8 +5263,10 @@ iface downlink-3
 auto downlink-4
 iface downlink-4
     bond-slaves swp7 swp8
-    mtu  9202</code></pre></td>
-<td>spine02 /etc/network/interfaces
+    mtu  9202</code></pre>
+</details></td>
+<td><details>
+<summary>spine02 /etc/network/interfaces </summary>
 <pre><code>cumulus@spine02:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -5235,10 +5302,12 @@ iface downlink-3
 auto downlink-4
 iface downlink-4
     bond-slaves swp7 swp8
-    mtu  9202</code></pre></td>
+    mtu  9202</code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>spine01 /etc/frr/frr.conf
+<td><details>
+<summary>spine01 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@spine01:~$ cat /etc/frr/frr.conf
  
 log file /var/log/frr/bgpd.log
@@ -5295,8 +5364,10 @@ router bgp 64435
 !
 line vty
  exec-timeout 0 0
-! </code></pre></td>
-<td>spine02 /etc/frr/frr.conf
+! </code></pre>
+</details></td>
+<td><details>
+<summary>spine02 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@spine02:~$ cat /etc/frr/frr.conf
  
 log file /var/log/frr/bgpd.log
@@ -5353,7 +5424,8 @@ router bgp 64435
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
+!</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -5376,7 +5448,8 @@ diagram:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>leaf01 /etc/network/interfaces
+<td><details>
+<summary>leaf01 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf01:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -5495,8 +5568,10 @@ auto vlan4002
 iface vlan4002
     vlan-id 4002
     vlan-raw-device bridge
-    vrf vrf2</code></pre></td>
-<td>leaf02 /etc/network/interfaces
+    vrf vrf2</code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf02:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -5615,10 +5690,12 @@ auto vlan4002
 iface vlan4002
     vlan-id 4002
     vlan-raw-device bridge
-    vrf vrf2</code></pre></td>
+    vrf vrf2</code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>leaf01 /etc/frr/frr.conf
+<td><details>
+<summary>leaf01 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@leaf01:~$ cat /etc/frr/frr.conf 
  
 log file /var/log/frr/frr.log
@@ -5659,8 +5736,10 @@ router bgp 65001
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
-<td>leaf02 /etc/frr/frr.conf
+!</code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@leaf02:~$ cat /etc/frr/frr.conf 
  
 log file /var/log/frr/frr.log
@@ -5701,7 +5780,8 @@ router bgp 65002
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
+!</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -5715,7 +5795,8 @@ line vty
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>leaf03 /etc/network/interfaces
+<td><details>
+<summary>leaf03 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf03:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -5834,8 +5915,10 @@ auto vlan4002
 iface vlan4002
     vlan-id 4002
     vlan-raw-device bridge
-    vrf vrf2</code></pre></td>
-<td>leaf04 /etc/network/interfaces
+    vrf vrf2</code></pre>
+</details></td>
+<td><details>
+<summary>leaf04 /etc/network/interfaces </summary>
 <pre><code>cumulus@leaf04:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -5954,10 +6037,12 @@ auto vlan4002
 iface vlan4002
     vlan-id 4002
     vlan-raw-device bridge
-    vrf vrf2</code></pre></td>
+    vrf vrf2</code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>leaf03 /etc/frr/frr.conf
+<td><details>
+<summary>leaf03 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@leaf03:~$ cat /etc/frr/frr.conf 
  
 log file /var/log/frr/frr.log
@@ -5998,8 +6083,10 @@ router bgp 65003
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
-<td>leaf04 /etc/frr/frr.conf
+!</code></pre>
+</details></td>
+<td><details>
+<summary>leaf04 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@leaf04:~$ cat /etc/frr/frr.conf 
  
 log file /var/log/frr/frr.log
@@ -6054,7 +6141,8 @@ router bgp 65004 vrf vrf2
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
+!</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -6068,7 +6156,8 @@ line vty
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>spine01 /etc/network/interfaces
+<td><details>
+<summary>spine01 /etc/network/interfaces </summary>
 <pre><code>cumulus@spine01:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -6103,8 +6192,10 @@ auto swp5
 iface swp5
  
 auto swp6
-iface swp6</code></pre></td>
-<td>spine02 /etc/network/interfaces
+iface swp6</code></pre>
+</details></td>
+<td><details>
+<summary>spine02 /etc/network/interfaces </summary>
 <pre><code>cumulus@spine02:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -6139,10 +6230,12 @@ auto swp5
 iface swp5
  
 auto swp6
-iface swp6</code></pre></td>
+iface swp6</code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>spine01 /etc/frr/frr.conf
+<td><details>
+<summary>spine01 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@spine01:~$ cat /etc/frr/frr.conf 
  
 log file /var/log/frr/frr.log
@@ -6183,8 +6276,10 @@ router bgp 65100
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
-<td>spine02 /etc/frr/frr.conf
+!</code></pre>
+</details></td>
+<td><details>
+<summary>spine02 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@spine02:~$ cat /etc/frr/frr.conf 
  
 log file /var/log/frr/frr.log
@@ -6225,7 +6320,8 @@ router bgp 65100
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
+!</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -6239,7 +6335,8 @@ line vty
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>border-leaf01 /etc/network/interfaces
+<td><details>
+<summary>border-leaf01 /etc/network/interfaces </summary>
 <pre><code>cumulus@border-leaf01:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -6395,8 +6492,10 @@ iface vni16002
     vxlan-id 16002
     vxlan-local-tunnelip 10.0.0.5
     bridge-learning off
-    bridge-access 2002</code></pre></td>
-<td>border-leaf02 /etc/network/interfaces
+    bridge-access 2002</code></pre>
+</details></td>
+<td><details>
+<summary>border-leaf02 /etc/network/interfaces </summary>
 <pre><code>cumulus@border-leaf02:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -6554,10 +6653,12 @@ iface vni16002
     vxlan-id 16002
     vxlan-local-tunnelip 10.0.0.6
     bridge-learning off
-    bridge-access 2002</code></pre></td>
+    bridge-access 2002</code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>border-leaf01 /etc/frr/frr.conf
+<td><details>
+<summary>border-leaf01 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@border-leaf01:~$ cat /etc/frr/frr.conf 
  
 log file /var/log/frr/frr.log
@@ -6622,8 +6723,10 @@ router bgp 65005 vrf vrf2
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
-<td>border-leaf02 /etc/frr/frr.conf
+!</code></pre>
+</details></td>
+<td><details>
+<summary>border-leaf02 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@border-leaf02:~$ cat /etc/frr/frr.conf 
  
 log file /var/log/frr/frr.log
@@ -6688,7 +6791,8 @@ router bgp 65005 vrf vrf2
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
+!</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -6701,7 +6805,8 @@ line vty
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>router01 /etc/network/interfaces
+<td><details>
+<summary>router01 /etc/network/interfaces </summary>
 <pre><code>cumulus@router01:~$ cat /etc/network/interfaces
  
 # This file describes the network interfaces available on your system
@@ -6759,10 +6864,12 @@ iface swp5
  
 auto swp6
 iface swp6
-    address 81.1.4.1/24</code></pre></td>
+    address 81.1.4.1/24</code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>router01 /etc/frr/frr.conf
+<td><details>
+<summary>router01 /etc/frr/frr.conf </summary>
 <pre><code>cumulus@router01:~$ cat /etc/frr/frr.conf 
  
 log file /var/log/frr/frr.log
@@ -6794,7 +6901,16 @@ route-map HOST_ALLOW permit 1
 !
 line vty
  exec-timeout 0 0
-!</code></pre></td>
+!</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116323
 pageID: 5116323
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
@@ -176,3 +176,11 @@ File](/version/cumulus-rmp-2512-esr/Monitoring_and_Troubleshooting/Understanding
 
 The links listed under Child Pages below discuss more specific
 monitoring topics.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

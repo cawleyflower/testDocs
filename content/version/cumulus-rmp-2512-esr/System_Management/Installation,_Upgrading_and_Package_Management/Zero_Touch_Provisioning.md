@@ -7,10 +7,12 @@ aliases:
  - /pages/viewpage.action?pageId=5116322
 pageID: 5116322
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
+<details>
+
 *Zero *touch provisioning** allows devices to be quickly deployed in
 large-scale environments. Data center engineers only need to rack and
 stack the switch, connect it to the management network, then install
@@ -33,7 +35,7 @@ initiated via a DHCP hook. A DHCP option is used to specify a
 configuration script. This script is then requested from the Web server
 and executed locally on the switch.
 
-(Click to expand)
+<summary>(Click to expand) </summary>
 
 ## <span>Commands</span>
 
@@ -219,3 +221,13 @@ the switch, use the ` -s  `option:
 ## <span>Configuration Files</span>
 
   - /var/lib/cumulus/autoprovision.conf
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>
