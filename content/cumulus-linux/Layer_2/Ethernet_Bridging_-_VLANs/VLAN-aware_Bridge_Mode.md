@@ -670,3 +670,11 @@ Traditional mode bridges cannot be automatically converted to/from a
 VLAN-aware bridge. The original configuration must be deleted, and all
 member switch ports must be brought down, then a new bridge can be
 created.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

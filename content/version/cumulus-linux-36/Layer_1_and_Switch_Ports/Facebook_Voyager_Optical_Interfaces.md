@@ -1153,6 +1153,7 @@ interface groups.
 <td><p><code>Location</code></p></td>
 <td><p>Integer: 0-1</p></td>
 <td><p>The location or index of the network interface within a module. The Voyager AC400 modules each have two network interfaces that are connected to the external ports as follows:</p>
+<div class="tablewrap">
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -1188,7 +1189,8 @@ interface groups.
 <td><p>L4</p></td>
 </tr>
 </tbody>
-</table></td>
+</table>
+</div></td>
 </tr>
 <tr class="even">
 <td><p><code>TxEnable</code></p></td>
@@ -1204,8 +1206,10 @@ interface groups.
 <tr class="even">
 <td><p><code>TxChannel</code></p></td>
 <td><p>Integer: 1-100</p></td>
-<td><p>The channel number upon which the network interface transmits and receives data.</p>
-Click here to see the frequency and wavelength per channel
+<td><details>
+<p>The channel number upon which the network interface transmits and receives data.</p>
+<summary>Click here to see the frequency and wavelength per channel </summary>
+<div class="tablewrap">
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -1724,7 +1728,9 @@ Number</p></th>
 <td><p>1,528.77</p></td>
 </tr>
 </tbody>
-</table></td>
+</table>
+</div>
+</details></td>
 </tr>
 <tr class="odd">
 <td><p><code>OutputPower</code></p></td>
@@ -1822,19 +1828,61 @@ of these attributes do not typically need to be changed.
 
 {{%/notice%}}
 
+<table class="confluenceTable">
+
+<thead class=" ">
+
+<tr>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Key
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Value Type
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Description
+
+</td>
+
+</tr>
+
+</thead>
+
+<tfoot class=" ">
+
+</tfoot>
+
+<tbody class=" ">
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 `Location`
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Integer: 0-3
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 The location or index of the client interface within a module. The
 Voyager AC400 modules each have four network interfaces that are
 connected to the Tomahawk ASIC as follows:
+
+<div class="tablewrap">
 
 | Module Location | Network Interface Location | Tomahawk Falcon Core |
 | --------------- | -------------------------- | -------------------- |
@@ -1847,73 +1895,255 @@ connected to the Tomahawk ASIC as follows:
 | 2               | 2                          | fc17                 |
 | 2               | 3                          | fc16                 |
 
+</div>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 `Rate`
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 String: `otu4` or `100ge`
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 The rate at which the client interface operates. Because the client
 interfaces on Voyager are always connected to a Tomahawk ASIC, always
 set this value to `100ge`.
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 `Enable`
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Boolean: `true` or `false`
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 Enables (`true`) or disables (`false`) the client interface.
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 `FecDecoder`
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Boolean: `true` or `false`
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 Enables (`true`) or disables (`false`) FEC decoding for data received
 from the Tomahawk switching ASIC.
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 `FecEncoder`
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Boolean: `true` or `false`
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 Enables (`true`) or disables (`false`) FEC encoding for data sent to the
 Tomahawk switching ASIC.
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 `DeserialLfCtleGain`
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Integer: 0-8
+
+</td>
+
+<td class="confluenceTd" rowspan="8" colspan="1">
 
 These attributes configure the SERDES of the client interface. The
 values for these attributes have been carefully determined by hardware
 engineers; do not change them.
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 `DeserialCtleGain`
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 Integer: 0-20
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 `DeserialDfeCoeff`
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 Integer: 0-63
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 `SerialTap0Gain`
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Integer: 0-7
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 `SerialTap0Delay`
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Integer: 0-7
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 `SerialTap1Gain`
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Integer: 0-7
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 `SerialTap2Gain`
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Integer: 0-15
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 `SerialTap2Delay`
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Integer: 0-7
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 `RxTributaryIndependent`
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Integer: 0-1
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 Defines which network interface maps to this client interface when
 `NetworkMode` for the client interface is set to `independent`. The
@@ -1923,9 +2153,25 @@ integer is the `Location` value of the network interface.
 this value. The Tomahawk switching ASIC should be configured to steer
 data from the appropriate network interface, not this attribute.
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 `RxTributaryCoupled`
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Integer: 0-1
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 Defines which network interface maps to this client interface when
 `NetworkMode` for the client interface is set to `coupled`. The integer
@@ -1934,6 +2180,14 @@ is the `Location` value of the network interface.
 **Note**: Cumulus Networks STRONGLY recommends that you do not change
 this value. The Tomahawk switching ASIC should be configured to steer
 data from the appropriate network interface, not this attribute.
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 The following example shows a sample configuration for a client
 interface group.
@@ -1992,3 +2246,11 @@ messages.
     2018-04-24T18:18:49.965701+00:00 cumulus voyager_tai_adapter[5793]: Setting FecEncoder (268435459) to false, was true
     ...
     2018-04-24T18:21:24.164981+00:00 cumulus voyager_tai_adapter[5793]: Config has been reloaded
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

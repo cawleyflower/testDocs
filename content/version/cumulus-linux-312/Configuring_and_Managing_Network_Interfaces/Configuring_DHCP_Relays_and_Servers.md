@@ -295,3 +295,11 @@ For example:
     cumulus@switch:~$ /usr/sbin/dhcrelay -6 -l bridge.100 -u 2001:db8:100::2%swp51
 
 See the `man dhcrelay` for more information.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

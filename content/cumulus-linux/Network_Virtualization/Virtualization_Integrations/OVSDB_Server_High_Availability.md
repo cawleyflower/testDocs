@@ -383,3 +383,11 @@ If you still encounter issues with high availability after you restart
 server.
 
     cumulus@switch:~$ sudo reboot
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

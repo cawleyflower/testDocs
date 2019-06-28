@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118213
 pageID: 5118213
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -278,3 +278,11 @@ be prefixed with `sudo.`
 
   - [Adding Yourself to
     sudoers](http://rubypond.com/blog/adding-yourself-to-the-sudoers-file)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -181,7 +181,11 @@ file:
         address 10.0.0.1/30
         bond-slaves swp1 swp2 swp3 swp4
 
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice info%}}
 
@@ -189,6 +193,10 @@ If you are intending that the bond become part of a bridge, you don't
 need to specify an IP address.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 {{%/notice%}}
 
@@ -247,3 +255,11 @@ address traffic to the bond.
 
   - [Wikipedia - Link
     aggregation](http://en.wikipedia.org/wiki/Link_aggregation)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

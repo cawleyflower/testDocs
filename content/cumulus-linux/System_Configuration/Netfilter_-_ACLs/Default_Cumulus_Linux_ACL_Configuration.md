@@ -11,6 +11,8 @@ version: 3.7.7
 imgData: cumulus-linux
 siteSlug: cumulus-linux
 ---
+<details>
+
 The Cumulus Linux default ACL configuration is split into three parts,
 as outlined in the [netfilter ACL
 documentation](/cumulus-linux/System_Configuration/Netfilter_-_ACLs/):
@@ -18,7 +20,7 @@ IP tables, IPv6 tables, and EB tables. The sections below describe the
 default configurations for each part. You can see the default file by
 clicking the Default ACL Configuration link:
 
-Default ACL Configuration
+<summary>Default ACL Configuration </summary>
 
     cumulus@switch:~$ sudo cl-acltool -L all
     -------------------------------
@@ -497,3 +499,13 @@ Set class is internal to the switch. It does not set any precedence
 bits.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

@@ -3,7 +3,7 @@ title: Static VXLAN Tunnels
 author: Cumulus Networks
 weight: 149
 aliases:
- - /display/CL330/Static+VXLAN+Tunnels
+ - /display/CL33/Static+VXLAN+Tunnels
  - /pages/viewpage.action?pageId=5866343
 pageID: 5866343
 product: Cumulus Linux
@@ -281,3 +281,11 @@ Once you configure all the leaf switches, check for replication entries:
     00:00:00:00:00:00 dev vni-10 dst 10.0.0.14 self permanent
     00:00:00:00:00:00 dev vni-10 dst 10.0.0.12 self permanent
     00:00:00:00:00:00 dev vni-10 dst 10.0.0.13 self permanent
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

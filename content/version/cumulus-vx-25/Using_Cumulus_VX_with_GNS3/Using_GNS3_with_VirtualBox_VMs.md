@@ -123,3 +123,11 @@ Start all the VMs.
 
 You should be able to ping between the VMs, and between the virtual PCs
 as well.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

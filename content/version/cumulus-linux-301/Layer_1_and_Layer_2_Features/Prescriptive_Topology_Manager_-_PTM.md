@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118273
 pageID: 5118273
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -364,21 +364,81 @@ vendor-specific and has not been defined in the RFC. BFD echo packets
 that originate from Cumulus Linux are 8 bytes long and have the
 following format:
 
+<table class="confluenceTable">
+
+<thead class=" ">
+
+</thead>
+
+<tfoot class=" ">
+
+</tfoot>
+
+<tbody class=" ">
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 0
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 1
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 2
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 3
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Version
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 Length
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="2">
+
 Reserved
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="4">
+
 My Discriminator
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 Where:
 
@@ -635,3 +695,11 @@ graph from working correctly.
     Sample `if-topo-pass` and `if-topo-fail` scripts are available in
     `/etc/ptm.d`. A sample `topology.dot` file is available in
     `/usr/share/doc/ptmd/examples`.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

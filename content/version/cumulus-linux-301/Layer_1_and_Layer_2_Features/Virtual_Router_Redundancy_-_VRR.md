@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118357
 pageID: 5118357
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -253,3 +253,11 @@ Finally, restart `ifplugd` for your changes to take effect:
     makes for faster execution of the script since `dash` is small and
     quick, but consequently less featureful than `bash`. For example, it
     doesn't handle multiple uplinks.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -79,3 +79,11 @@ You can find an up to date list of all the demos in the [cldemo-vagrant
 GitHub
 repository](https://github.com/CumulusNetworks/cldemo-vagrant#available-demos),
 which is available to anyone free of charge.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

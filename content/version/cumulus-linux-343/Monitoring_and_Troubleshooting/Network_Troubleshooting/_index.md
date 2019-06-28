@@ -571,3 +571,11 @@ The following example incorporates a few `tcpdump` options:
   - [www.tcpdump.org](http://www.tcpdump.org)
 
   - [en.wikipedia.org/wiki/Traceroute](https://en.wikipedia.org/wiki/Traceroute)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

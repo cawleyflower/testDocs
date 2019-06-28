@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116312
 pageID: 5116312
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
@@ -50,3 +50,11 @@ To access the switch without any password requires booting into a single
 shell/user mode. [Here are the
 instructions](/version/cumulus-rmp-2512-esr/Monitoring_and_Troubleshooting/Single_User_Mode_-_Boot_Recovery)
 on how to do this using PowerPC and x86 switches.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

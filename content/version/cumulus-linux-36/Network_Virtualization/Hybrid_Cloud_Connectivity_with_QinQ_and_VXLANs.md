@@ -395,3 +395,11 @@ configuration like the following:
     auto bridge101
     iface bridge101
         bridge-ports vlan1001-101 vxlan1000101
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

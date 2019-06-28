@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118253
 pageID: 5118253
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -273,3 +273,11 @@ To install a new package, please complete the following steps:
     tools](http://www.debian.org/doc/manuals/debian-faq/ch-pkgtools.en.html)
 
   - man pages for apt-get, dpkg, sources.list, apt\_preferences
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -146,3 +146,11 @@ on an interface.
 
   - Removing the `bridge-vids` or `bridge-pvid` configuration from a
     voice VLAN does not remove the VLAN from the bridge.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

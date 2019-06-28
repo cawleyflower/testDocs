@@ -3,7 +3,7 @@ title: Resource Diagnostics Using cl-resource-query
 author: Cumulus Networks
 weight: 201
 aliases:
- - /display/CL330/Resource+Diagnostics+Using+cl-resource-query
+ - /display/CL33/Resource+Diagnostics+Using+cl-resource-query
  - /pages/viewpage.action?pageId=5866130
 pageID: 5866130
 product: Cumulus Linux
@@ -78,3 +78,11 @@ command. Results vary between switches running on different chipsets.
     Total Routes:              31,   0% of maximum value  32768
     ECMP nexthops:              0,   0% of maximum value  16346
     MAC entries:               12,   0% of maximum value  32768
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

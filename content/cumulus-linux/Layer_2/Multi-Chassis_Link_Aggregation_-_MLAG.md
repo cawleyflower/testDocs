@@ -11,6 +11,8 @@ version: 3.7.7
 imgData: cumulus-linux
 siteSlug: cumulus-linux
 ---
+<details>
+
 Multi-Chassis Link Aggregation (MLAG) enables a server or switch with a
 two-port bond, such as a link aggregation group/LAG, EtherChannel, port
 group or trunk, to connect those ports to different switches and operate
@@ -192,7 +194,7 @@ configuration changes, including:
 You can verify the configuration of VLAN membership with the `net show
 clag verify-vlans` `verbose` command.
 
-Click to see the output ...
+<summary>Click to see the output ... </summary>
 
 ``` 
 cumulus@leaf01:~$ net show clag verify-vlans verbose
@@ -348,7 +350,11 @@ This creates the following configuration in the
       bridge-ports peerlink
       bridge-vlan-aware yes
 
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice tip%}}
 
@@ -358,6 +364,10 @@ the changes take effect when you bring the peer link interface up with
 new configuration.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 {{%/notice%}}
 
@@ -987,7 +997,7 @@ with a running `clagd` service to get status or alter operational
 behavior. For a detailed explanation of the utility, refer to the
 `clagctl(8)`man page.
 
-See the clagctl Output ...
+<summary>See the clagctl Output ... </summary>
 
 The following is a sample output of the MLAG operational status
 displayed by `clagctl`:
@@ -1080,7 +1090,11 @@ to check the health of the peer switch. To configure a backup link, add
     cumulus@spine01:~$ net pending
     cumulus@spine01:~$ net commit
 
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice tip%}}
 
@@ -1118,6 +1132,10 @@ IP address for this purpose. Which one should you choose?
     network).
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 You can also specify the backup UDP port. The port defaults to 5342, but
 you can configure it as an argument in `clagd-args` using `--backupPort
@@ -1162,13 +1180,21 @@ Here is a sample configuration:
     cumulus@spine01:~$ net pending
     cumulus@spine01:~$ net commit
 
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice tip%}}
 
 You cannot use the VRF on a peer link subinterface.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 Verify the backup link by running the `net show clag backup-ip` command:
 
@@ -1344,7 +1370,11 @@ peerlink.4094 interface as well:
     cumulus@switch:~$ net add bgp l2vpn evpn neighbor peerlink.4094 activate
     cumulus@switch:~$ net commit
 
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice tip%}}
 
@@ -1354,6 +1384,10 @@ peering, it creates an eBGP peering instead. For more information, see
 note 1222](https://support.cumulusnetworks.com/hc/en-us/articles/360007793174-Cumulus-Linux-3-7-Release-Notes#RN1222).
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 {{%/notice%}}
 
@@ -1454,7 +1488,7 @@ bytes, you must configure the MTU on each physical interface and bond
 interface that are members of the MLAG bridges in the entire bridged
 domain.
 
-For example ...
+<summary>For example ... </summary>
 
 For example, if an MTU of 9216 is desired through the MLAG domain in the
 example shown above, on all four leaf switches, configure `mtu 9216` for
@@ -1724,3 +1758,13 @@ cabling or configuration error.
   - MLAG is disabled on the chassis, including the [Facebook
     Backpack](https://cumulusnetworks.com/products/cumulus-express/getting-started/backpack/)
     and EdgeCore OMP-800.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

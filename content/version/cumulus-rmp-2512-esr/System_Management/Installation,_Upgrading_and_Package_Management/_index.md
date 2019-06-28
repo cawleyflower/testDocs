@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116318
 pageID: 5116318
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
@@ -29,3 +29,11 @@ switches in a large-scale environment.
 
   - [Zero Touch
     Provisioning](/version/cumulus-rmp-2512-esr/System_Management/Installation_Upgrading_and_Package_Management/Zero_Touch_Provisioning)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

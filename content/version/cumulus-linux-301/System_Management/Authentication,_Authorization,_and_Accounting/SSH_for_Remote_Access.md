@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118211
 pageID: 5118211
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -71,3 +71,11 @@ instructions.
 ## <span>Useful Links</span>
 
   - <http://www.debian-administration.org/articles/152>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

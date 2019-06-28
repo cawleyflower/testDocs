@@ -7,10 +7,12 @@ aliases:
  - /pages/viewpage.action?pageId=5118334
 pageID: 5118334
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
+<details>
+
 *LNV active-active mode* allows a pair of
 [MLAG](/version/cumulus-linux-301/Layer_1_and_Layer_2_Features/Multi-Chassis_Link_Aggregation_-_MLAG)
 switches to act as a single VTEP, providing active-active VXLAN
@@ -1110,13 +1112,14 @@ configuration file:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><strong>spine01:</strong> /etc/vxsnd.conf</p>
+<td><details>
+<p><strong>spine01:</strong> /etc/vxsnd.conf</p>
 <pre><code>svcnode_ip = 10.10.10.10
  
 src_ip = 10.0.0.21
  
 svcnode_peers = 10.0.0.21 10.0.0.22</code></pre>
-Full configuration of vxsnd.conf
+<summary>Full configuration of vxsnd.conf </summary>
 <pre><code>[common]
 # Log level is one of DEBUG, INFO, WARNING, ERROR, CRITICAL
 #loglevel = INFO
@@ -1170,14 +1173,16 @@ svcnode_peers = 10.0.0.21 10.0.0.22
 #install_svcnode_ip = false
  
 # Seconds to wait before checking the database to age out stale entries
-#age_check = 90</code></pre></td>
-<td><p><strong>spine02:</strong> <code>/etc/vxsnd.conf</code></p>
+#age_check = 90</code></pre>
+</details></td>
+<td><details>
+<p><strong>spine02:</strong> <code>/etc/vxsnd.conf</code></p>
 <pre><code>svcnode_ip = 10.10.10.10
  
 src_ip = 10.0.0.22
  
 svcnode_peers = 10.0.0.21 10.0.0.22</code></pre>
-Full configuration of vxsnd.conf
+<summary>Full configuration of vxsnd.conf </summary>
 <pre><code>[common]
 # Log level is one of DEBUG, INFO, WARNING, ERROR, CRITICAL
 #loglevel = INFO
@@ -1231,7 +1236,8 @@ svcnode_peers = 10.0.0.21 10.0.0.22
 #install_svcnode_ip = false
  
 # Seconds to wait before checking the database to age out stale entries
-#age_check = 90</code></pre></td>
+#age_check = 90</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -1243,7 +1249,7 @@ it describes a non-standard configuration where the service node and
 registration node reside on the same switch, which is not the supported
 use case.
 
-Read about north-south traffic in an LNV ...
+<summary>Read about north-south traffic in an LNV ... </summary>
 
 The table below covers some of the scenarios for configuring VXLAN
 gateways (for traffic to exit an L2 VXLAN), as well as a few
@@ -1377,7 +1383,7 @@ iface native
   bridge-stp on
   mstpctl-portbpdufilter vxlan1=yes
   mstpctl-bpduguard vxlan1=yes    </code></pre>
-Full Configuration for /etc/network/interfaces
+<summary>Full Configuration for /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
   address 10.0.0.41/32
@@ -1544,7 +1550,7 @@ iface native
   bridge-stp on
   mstpctl-portbpdufilter vxlan1=yes
   mstpctl-bpduguard vxlan1=yes  </code></pre>
-Full Configuration for /etc/network/interfaces
+<summary>Full Configuration for /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
   address 10.0.0.42/32
@@ -2236,3 +2242,13 @@ indicating that there is a `vxlan-id` mis-match on VXLAN10.
 
   - [LNV Full Example (Single
     Attached)](/version/cumulus-linux-301/Layer_1_and_Layer_2_Features/Network_Virtualization/Lightweight_Network_Virtualization_-_LNV/LNV_Full_Example)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

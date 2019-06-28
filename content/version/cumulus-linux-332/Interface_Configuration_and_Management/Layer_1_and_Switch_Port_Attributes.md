@@ -534,7 +534,11 @@ These commands create the following code snippet:
     iface swp1
        mtu 9000
 
+<div class="confbox admonition admonition-warning">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice info%}}
 
@@ -543,6 +547,10 @@ conversation path. MTU mismatches will result in dropped or truncated
 packets, degrading or blocking network performance.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 {{%/notice%}}
 
@@ -744,7 +752,11 @@ options: four 10G ports, four 25G ports or two 50G ports. Keep in mind
 that you cannot have more than 128 total logical ports on a Broadcom
 switch.
 
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice info%}}
 
@@ -774,6 +786,10 @@ There is no limitation on any port if interfaces are configured in 2x50G
 mode.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 {{%/notice%}}
 
@@ -1010,3 +1026,11 @@ These ports appear as disabled in the `/etc/cumulus/ports.conf` file.
 
   - [Linux Foundation -
     Bonds](http://www.linuxfoundation.org/collaborate/workgroups/networking/bonding)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

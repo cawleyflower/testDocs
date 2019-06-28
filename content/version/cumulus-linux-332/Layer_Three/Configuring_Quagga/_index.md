@@ -467,3 +467,11 @@ supply the following information:
   - [www.nongnu.org/quagga/docs/docs-info.html\#IPv6-Support](http://www.nongnu.org/quagga/docs/docs-info.html#IPv6-Support)
 
   - [www.nongnu.org/quagga/docs/docs-info.html\#Zebra](http://www.nongnu.org/quagga/docs/docs-info.html#Zebra)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

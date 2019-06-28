@@ -11,6 +11,8 @@ version: 3.7.7
 imgData: cumulus-linux
 siteSlug: cumulus-linux
 ---
+<details>
+
 This topic discusses how to install a new Cumulus Linux disk image using
 [ONIE](http://www.onie.org/), an open source project (equivalent to PXE
 on servers) that enables the installation of network operating systems
@@ -117,7 +119,7 @@ Follow the steps below if you have a laptop on the same network and the
 switch can pull DHCP from the corporate network, but you *cannot* modify
 DHCP options (maybe it is controlled by another team).
 
-Install from ONIE
+<summary>Install from ONIE </summary>
 
 1.  Place the Cumulus Linux disk image in a directory on the web server.
 
@@ -125,7 +127,7 @@ Install from ONIE
     
         ONIE:/ #onie-nos-install http://10.0.1.251/path/to/cumulus-install-[PLATFORM].bin
 
-Install from Cumulus Linux
+<summary>Install from Cumulus Linux </summary>
 
 1.  Place the Cumulus Linux disk image in a directory on the web server.
 
@@ -139,7 +141,7 @@ Install from Cumulus Linux
 Follow the steps below if your laptop is on the same network as the
 switch eth0 interface but *no* DHCP server is available.
 
-Install from ONIE
+<summary>Install from ONIE </summary>
 
 1.  ONIE is in [*discovery
     mode*](http://opencomputeproject.github.io/onie/design-spec/discovery.html#installer-discovery-methods).
@@ -163,7 +165,7 @@ Install from ONIE
     
         ONIE:/ #onie-nos-install http://10.0.1.251/path/to/cumulus-install-[PLATFORM].bin
 
-Install from Cumulus Linux
+<summary>Install from Cumulus Linux </summary>
 
 1.  Place the Cumulus Linux disk image in a directory on your web
     server.
@@ -178,7 +180,7 @@ Install from Cumulus Linux
 Follow the steps below if your laptop is on the same network as the
 switch eth0 interface but *no* DHCP server is available.
 
-Install from ONIE
+<summary>Install from ONIE </summary>
 
 1.  Set up DHCP or static addressing for eth0. The following example
     assigns a static address to eth0:
@@ -203,7 +205,7 @@ Install from ONIE
          
         ONIE# onie-nos-install tftp://local-tftp-server/cumulus-install-[PLATFORM].bin
 
-Install from Cumulus Linux
+<summary>Install from Cumulus Linux </summary>
 
 1.  Place the Cumulus Linux disk image into a TFTP or FTP directory.
 
@@ -219,7 +221,7 @@ Install from Cumulus Linux
 Follow the steps below to install the disk image referencing a local
 file.
 
-Install from ONIE
+<summary>Install from ONIE </summary>
 
 1.  Set up DHCP or static addressing for eth0. The following example
     assigns a static address to eth0:
@@ -243,7 +245,7 @@ Install from ONIE
     
         ONIE:/ #onie-nos-install /path/to/local/file/cumulus-install-[PLATFORM].bin
 
-Install from Cumulus Linux
+<summary>Install from Cumulus Linux </summary>
 
 1.  Copy the Cumulus Linux disk image to the switch.
 
@@ -285,7 +287,8 @@ USB drive. Instructions are provided for x86 and ARM platforms.
 2.  From a computer, prepare your USB drive by formatting it using one
     of the supported formats: FAT32, vFAT or EXT2.
     
-    Optional: Prepare a USB Drive inside Cumulus Linux
+    <summary>Optional: Prepare a USB Drive inside Cumulus Linux
+    </summary>
     
     <table>
     <colgroup>
@@ -351,7 +354,7 @@ USB drive. Instructions are provided for x86 and ARM platforms.
 
 ### <span>Instructions for x86 Platforms</span>
 
-Click to expand x86 instructions...
+<summary>Click to expand x86 instructions... </summary>
 
 1.  Prepare the switch for installation:
     
@@ -420,7 +423,7 @@ Click to expand x86 instructions...
 
 ### <span>Instructions for ARM Platforms</span>
 
-Click to expand ARM instructions...
+<summary>Click to expand ARM instructions... </summary>
 
 1.  Prepare the switch for installation:
     
@@ -523,3 +526,13 @@ Click to expand ARM instructions...
 
   - [Managing Cumulus Linux Disk
     Images](/cumulus-linux/Installation_Management/Managing_Cumulus_Linux_Disk_Images)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

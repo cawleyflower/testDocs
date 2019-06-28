@@ -11,6 +11,8 @@ version: 3.1.2
 imgData: cumulus-linux-312
 siteSlug: cumulus-linux-312
 ---
+<details>
+
 This chapter discusses routing on switches running Cumulus Linux.
 
 ## <span>Commands</span>
@@ -81,7 +83,7 @@ To display the routing table:
     198.51.100.10/24 dev swp4  proto kernel  scope link  src 198.51.100.11
     198.51.100.20/24 dev br0  proto kernel  scope link  src 198.51.100.21
 
-Runtime configuration (Advanced)
+<summary>Runtime configuration (Advanced) </summary>
 
 {{%notice warning%}}
 
@@ -392,4 +394,14 @@ There are two ways you can work around this issue.
         cumulus@switch:~$ ip -6 r s
         2001:620:5ca1:160::/64 dev eth0  proto kernel  metric 256 
         fe80::/64 dev eth0  proto kernel  metric 256 
-        default via 2001:620:5ca1:160::1 dev eth0  metric 1024
+        default via 2001:620:5ca1:160::1 dev eth0  metric 1024 
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

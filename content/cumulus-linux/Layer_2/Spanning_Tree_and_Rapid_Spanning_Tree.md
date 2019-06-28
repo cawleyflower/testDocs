@@ -11,6 +11,8 @@ version: 3.7.7
 imgData: cumulus-linux
 siteSlug: cumulus-linux
 ---
+<details>
+
 Spanning tree protocol (STP) is always recommended in layer 2 topologies
 as it prevents bridge loops and broadcast radiation on a bridged
 network. STP also provides redundant links for automatic failover when
@@ -80,7 +82,7 @@ interoperability.
 To check STP status for a bridge, run the `net show bridge
 spanning-tree` command:
 
-Click to reveal the output ...
+<summary>Click to reveal the output ... </summary>
 
     cumulus@switch:~$ net show bridge spanning-tree 
     bridge CIST info
@@ -192,7 +194,7 @@ Click to reveal the output ...
 
 Use Linux to check spanning tree status (advanced):
 
-Using Linux to check STP status ...
+<summary>Using Linux to check STP status ... </summary>
 
 `mstpctl` is the utility provided by the `mstpd` service to configure
 STP. The `mstpd` daemon is an open source project used by Cumulus Linux
@@ -767,3 +769,13 @@ below.
   - mstpctl(8)
 
   - mstpctl-utils-interfaces(5)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

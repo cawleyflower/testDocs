@@ -11,6 +11,8 @@ version: 3.3.2
 imgData: cumulus-linux-332
 siteSlug: cumulus-linux-332
 ---
+<details>
+
 Protocol Independent Multicast (PIM) is a multicast control plane
 protocol, that advertises multicast sources and receivers over a routed
 layer 3 network. Layer 3 multicast relies on PIM to advertise
@@ -421,7 +423,7 @@ PIM is included in the Quagga package. To configure PIM on a switch:
     
     {{%/notice%}}
 
-Complete Multicast Network Configuration Example
+<summary>Complete Multicast Network Configuration Example </summary>
 
 The following is example configuration:
 
@@ -1018,3 +1020,13 @@ MSDP peers:
 
   - Cumulus Linux does not currently build an S,G mroute when forwarding
     over an \*,G tree.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

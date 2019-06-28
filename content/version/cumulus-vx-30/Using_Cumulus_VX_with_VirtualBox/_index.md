@@ -182,3 +182,11 @@ documentation](https://www.virtualbox.org/manual/ch06.html) and
 [VBoxManage command
 reference](https://www.virtualbox.org/manual/ch08.html#idp104314528) for
 more information on configuring virtual NICs.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

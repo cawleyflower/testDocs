@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118419
 pageID: 5118419
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -111,3 +111,11 @@ returned:
 If you have a management VRF configured on a Cumulus Linux 3.0.z switch,
 you cannot run Docker commands that go to another node (for example,
 `docker pull`) over the management VRF.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

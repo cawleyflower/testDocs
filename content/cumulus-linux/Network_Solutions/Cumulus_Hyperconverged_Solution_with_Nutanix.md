@@ -571,3 +571,11 @@ LLDP details of the Nutanix node and verify the `SysDescr` field.
 
 <span style="color: #000000;">  
 </span>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

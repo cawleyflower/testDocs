@@ -3,7 +3,7 @@ title: Single User Mode - Boot Recovery
 author: Cumulus Networks
 weight: 199
 aliases:
- - /display/CL330/Single+User+Mode+-+Boot+Recovery
+ - /display/CL33/Single+User+Mode+-+Boot+Recovery
  - /pages/viewpage.action?pageId=5866143
 pageID: 5866143
 product: Cumulus Linux
@@ -58,4 +58,12 @@ below.
     
         cumulus@switch:~$ sudo btrfs filesystem sync /etc
         cumulus@switch:~$ sudo reboot -f
-        Restarting the system.
+        Restarting the system. 
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

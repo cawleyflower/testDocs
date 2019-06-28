@@ -3,7 +3,7 @@ title: 'Authentication, Authorization, and Accounting'
 author: Cumulus Networks
 weight: 37
 aliases:
- - '/display/RMP31/Authentication,+Authorization,+and+Accounting'
+ - '/display/RMP312/Authentication,+Authorization,+and+Accounting'
  - /pages/viewpage.action?pageId=5122733
 pageID: 5122733
 product: Cumulus RMP
@@ -22,3 +22,11 @@ siteSlug: cumulus-rmp-312
 
   - [PAM and
     NSS](/version/cumulus-rmp-312/System_Management/Authentication_Authorization_and_Accounting/LDAP_Authentication_and_Authorization)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

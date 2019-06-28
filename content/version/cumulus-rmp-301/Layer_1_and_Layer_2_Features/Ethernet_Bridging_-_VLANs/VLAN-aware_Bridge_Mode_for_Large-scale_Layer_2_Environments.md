@@ -11,6 +11,8 @@ version: 3.0.1
 imgData: cumulus-rmp-301
 siteSlug: cumulus-rmp-301
 ---
+<details>
+
 The Cumulus RMP bridge driver supports two configuration modes, one that
 is VLAN-aware, and one that follows a more traditional Linux bridge
 model.
@@ -44,7 +46,7 @@ VLAN-aware bridge on a given switch.
 
 Contents
 
-(Click to expand)
+<summary>(Click to expand) </summary>
 
 ## <span>Defining VLAN-aware Bridge Attributes</span>
 
@@ -491,3 +493,13 @@ VLAN-aware one. To do the opposite, delete the VLAN-aware bridge in step
     translation enabled for it; only bridges configured in [traditional
     mode](/version/cumulus-rmp-301/Layer_1_and_Layer_2_Features/Ethernet_Bridging_-_VLANs/)
     can utilize VLAN translation.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

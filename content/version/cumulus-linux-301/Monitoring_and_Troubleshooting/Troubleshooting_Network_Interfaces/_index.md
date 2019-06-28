@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118240
 pageID: 5118240
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -240,3 +240,11 @@ address.
 This can typically occur when the interface being added to the bridge is
 an incomplete bond; a bond without slaves is incomplete and does not
 have a valid hardware address.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

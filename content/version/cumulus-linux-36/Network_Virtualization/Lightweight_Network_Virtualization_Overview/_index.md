@@ -11,6 +11,8 @@ version: '3.6'
 imgData: cumulus-linux-36
 siteSlug: cumulus-linux-36
 ---
+<details>
+
 Lightweight Network Virtualization (LNV) is a technique for deploying
 [VXLANs](/version/cumulus-linux-36/Network_Virtualization/) without a
 central controller on bare metal switches. This solution requires no
@@ -400,7 +402,7 @@ or
 In this example, OSPF is used to demonstrate full reachability. Click to
 expand the FRRouting configurations below.
 
-Click to expand the OSPF configuration ...
+<summary>Click to expand the OSPF configuration ... </summary>
 
 FRRouting configuration using OSPF:
 
@@ -558,7 +560,7 @@ a trunk mapped from server1 and server2 to the respective switch. In
 Ubuntu this is done with subinterfaces. You can expand the
 configurations below.
 
-Click to expand the host configurations ...
+<summary>Click to expand the host configurations ... </summary>
 
 <table>
 <colgroup>
@@ -849,7 +851,8 @@ section above; no additional configuration is typically needed. However,
 if you need to modify the registration node configuration, edit
 `/etc/vxrd.conf`.
 
-Configuring the registration node in /etc/vxrd.conf ...
+<summary>Configuring the registration node in /etc/vxrd.conf ...
+</summary>
 
     cumulus@leaf1:~$ sudo nano /etc/vxrd.conf
 
@@ -878,7 +881,7 @@ Restart the daemon on leaf2:
 
 The complete list of options you can configure is listed below:
 
-Registration node options ...
+<summary>Registration node options ... </summary>
 
 | Name                | Description                                                                                                                                                                                                                       | Default            |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
@@ -1448,3 +1451,13 @@ the IP address.
 
   - [Network virtualization chapter, Cumulus Linux user
     guide](/version/cumulus-linux-36/Network_Virtualization/)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

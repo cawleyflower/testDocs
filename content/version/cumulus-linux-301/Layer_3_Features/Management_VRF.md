@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118405
 pageID: 5118405
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -322,3 +322,11 @@ utility) has been deprecated, and the `cl-ns-mgmt` command has been
 removed.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

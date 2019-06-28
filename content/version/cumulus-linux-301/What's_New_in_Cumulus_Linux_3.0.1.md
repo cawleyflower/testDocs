@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118422
 pageID: 5118422
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -365,481 +365,1609 @@ switches](http://cumulusnetworks.com/hcl/) at this time. These include:
 Cumulus Networks has tested and suggests using the following cables and
 transceivers with Mellanox switches at this time:
 
+<table class="confluenceTable">
+
+<thead class=" ">
+
+<tr>
+
+<td class="confluenceTh" rowspan="1" colspan="7">
+
 Speed: 10G (QSA Adapter Used)
+
+</td>
+
+</tr>
+
+</thead>
+
+<tfoot class=" ">
+
+</tfoot>
+
+<tbody class=" ">
+
+<tr>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Manufacturer
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Label (or internal EEPROM)
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Type
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Form Factor
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Supported Lengths
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Supported Speeds
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Known Issues?
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Mellanox
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 MFM1T02A-SR
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 SR
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 SFP
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 X
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 10G
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
  
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Mellanox
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 MFM1T02A-LR
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 LR
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 SFP
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 X
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 10G
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
  
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Mellanox
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 MC3309130
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 DAC
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 SFP
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 2M, 3M, 5M, 7M
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 10G
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTh" rowspan="1" colspan="7">
 
 Speed: 40G
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Manufacturer
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Label (or internal EEPROM)
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Type
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Form Factor
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Supported Lengths
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Supported Speeds
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Known Issues?
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 Finisar
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 FTL410QE2C
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 SR
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 QSFP
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 X
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 40G
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Mellanox
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 MC2210411-SR4
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 SR
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 QSFP
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 X
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 40G
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
  
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Mellanox
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 MC2210411-LR4
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 LR
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 QSFP
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 X
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 40G
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
  
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Mellanox
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 MC2210130
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 DAC
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 QSFP
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 1M, 3M, 5M
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 40G
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
  
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Mellanox
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 MC2210310
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 AoC
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 QSFP
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 10M
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 40G
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Ampehnol
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 APF14190032M3A
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 DAC
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 QSFP
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 3M
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 40G
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
  
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 JDSU
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 JQP—04SWAA1
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 SR
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 QSFP
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 X
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 40G
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTh" rowspan="1" colspan="7">
 
 Speed: 100G
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Manufacturer
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Label (or internal EEPROM)
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Type
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Form Factor
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Supported Lengths
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Supported Speeds
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Known Issues?
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Mellanox
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 MCP1600
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 DAC
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 QSFP
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 2M, 3M
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 40G/100G
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Mellanox
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 MMA1B00
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 SR
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 QSFP
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 X
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 40G/100G
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
  
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 TE Connectivity
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 2231368-1
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 DAC
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 QSFP
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 1M, 3M
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 40G/100G
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Ampehnol
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 NDAAFF
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 DAC
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 QSFP
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 1M
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 40G/100G
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTh" rowspan="1" colspan="7">
 
 Speed: 40G to 4x10G
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Manufacturer
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Label (or internal EEPROM)
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Type
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Form Factor
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Supported Lengths
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Supported Speeds
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Known Issues?
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Mellanox
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 MC2609130
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 DAC
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 QSFP to 4xSFP
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 1M
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 40G to 4x10G
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
  
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 Ampehnol
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 NDAQGF-0002 (internal)
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 DAC
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 QSFP to 4xSFP
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 1M, 3M
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 40G to 4x10G
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTh" rowspan="1" colspan="7">
 
 Speed: 100G to 4x25G
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Manufacturer
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Label (or internal EEPROM)
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Type
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Form Factor
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Supported Lengths
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Supported Speeds
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Known Issues?
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Mellanox
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 MCP7F00-A02A
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 DAC
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 QSFP to 4xSFP
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 3M
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 100G to 4x25G
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
  
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 10Gtek
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 CAB-ZQP/4ZSP-P1M
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 DAC
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 QSFP to 4xSFP
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 1M
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 100G to 4x25G
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTh" rowspan="1" colspan="7">
 
 Speed: 40G to 1x10G
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Manufacturer
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Label (or internal EEPROM)
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Type
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Form Factor
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Supported Lengths
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Supported Speeds
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Known Issues?
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Mellanox
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 MC2309130
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 DAC
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 QSFP to 1xSFP
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 3M, 5M
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 40G to 1x10G
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
 
- 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
  
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
+ 
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTh" rowspan="1" colspan="7">
 
 Speed: 100G to 2x50G
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Manufacturer
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Label (or internal EEPROM)
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Type
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Form Factor
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Supported Lengths
+
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
 
 Supported Speeds
 
+</td>
+
+<td class="confluenceTh" rowspan="1" colspan="1">
+
 Known Issues?
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 Mellanox
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 MCP7H00
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 DAC
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 QSFP to 2xQSFP
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 1M, 3M, 5M
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 100G to 2x50G
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Yes (with ConnectX4)
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 ## <span>Early Access Features</span>
 
@@ -888,3 +2016,11 @@ are included in Cumulus Linux 3.0:
   - `jdoo`. Use `systemd` and `systemctl` for
     [monitoring](/version/cumulus-linux-301/Monitoring_and_Troubleshooting/)
     your switches.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

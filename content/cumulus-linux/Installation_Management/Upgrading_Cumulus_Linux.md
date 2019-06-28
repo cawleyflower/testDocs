@@ -11,6 +11,8 @@ version: 3.7.7
 imgData: cumulus-linux
 siteSlug: cumulus-linux
 ---
+<details>
+
 This topic describes how to upgrade Cumulus Linux on your switches to a
 more recent release.
 
@@ -45,7 +47,7 @@ sure you examine any file that has been changed. Cumulus Networks
 recommends you consider making the following files and directories part
 of a backup strategy.
 
-Network Configuration Files
+<summary>Network Configuration Files </summary>
 
 | File Name and Location      | Explanation                                                                                          | Cumulus Linux Documentation                                                                                                                          | Debian Documentation                                                                                                         |
 | --------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
@@ -66,7 +68,7 @@ If you have custom user accounts, consider including
 
 {{%/notice%}}
 
-Additional Commonly Used Files
+<summary>Additional Commonly Used Files </summary>
 
 <table>
 <colgroup>
@@ -151,7 +153,7 @@ If you have custom user accounts, consider including
 
 {{%/notice%}}
 
-Files to Never Migrate between Versions or Switches
+<summary>Files to Never Migrate between Versions or Switches </summary>
 
 | File Name and Location   | Explanation                                                                        |
 | ------------------------ | ---------------------------------------------------------------------------------- |
@@ -662,3 +664,13 @@ any third party packages or any Cumulus Linux add-on packages, such as
 
   - [Zero Touch Provisioning -
     ZTP](/cumulus-linux/Installation_Management/Zero_Touch_Provisioning_-_ZTP)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

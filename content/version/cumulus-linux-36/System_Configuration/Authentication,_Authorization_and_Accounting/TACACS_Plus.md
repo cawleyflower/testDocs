@@ -637,3 +637,11 @@ users.
 
 Only use the `--remove-home` option when the `user_homedir=1`
 configuration command is in use.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -3,7 +3,7 @@ title: Using Snapshots
 author: Cumulus Networks
 weight: 47
 aliases:
- - /display/CL330/Using+Snapshots
+ - /display/CL33/Using+Snapshots
  - /pages/viewpage.action?pageId=5866182
 pageID: 5866182
 product: Cumulus Linux
@@ -295,3 +295,11 @@ of the root file system (and from any rollbacks):
 | /var/spool                                                       | Exclude this directory to avoid loss of mail after a rollback.                                                                                                                                        |
 | /var/lib/libvirt/images                                          | This is the default directory for libvirt VM images. Exclude from the snapshot. Additionally disable Copy-On-Write (COW) for this subvolume as COW and VM image I/O access patterns do not play nice. |
 | /boot/grub/i386-pc, /boot/grub/x86\_64-efi, /boot/grub/arm-uboot | The GRUB kernel modules must stay in sync with the GRUB kernel installed in the master boot record or UEFI system partition.                                                                          |
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

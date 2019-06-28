@@ -3,7 +3,7 @@ title: Monitoring and Troubleshooting
 author: Cumulus Networks
 weight: 21
 aliases:
- - /display/RMP31/Monitoring+and+Troubleshooting
+ - /display/RMP312/Monitoring+and+Troubleshooting
  - /pages/viewpage.action?pageId=5122749
 pageID: 5122749
 product: Cumulus RMP
@@ -170,7 +170,7 @@ external `syslog` server. High precision timestamps are enabled for all
 **Local logging:** Most logs within Cumulus RMP are sent to files in the
 `/var/log` directory. Most relevant information is placed within the
 `/var/log/syslog` file. For more information on specific log files, see
-[Troubleshooting Log Files](/display/RMP31/Troubleshooting+Log+Files).
+[Troubleshooting Log Files](/display/RMP312/Troubleshooting+Log+Files).
 
 **Export logging:** To send `syslog` files to an external `syslog`
 server, add a rule specifying to copy all messages (\*.\*) to the IP
@@ -262,3 +262,11 @@ match the value in `$InputFileTag`.
 ## <span>Next Steps</span>
 
 The links listed below discuss more specific monitoring topics.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

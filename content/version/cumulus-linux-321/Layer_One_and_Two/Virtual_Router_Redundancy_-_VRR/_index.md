@@ -61,7 +61,11 @@ prevent MAC address conflicts with other interfaces in the same bridged
 network. The reserved range is `00:00:5E:00:01:00` to
 `00:00:5E:00:01:ff`.
 
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice info%}}
 
@@ -70,7 +74,15 @@ when configuring VRR.
 
 {{%/notice%}}
 
+</div>
+
+</div>
+
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice info%}}
 
@@ -78,6 +90,10 @@ The reserved MAC address range for VRR is the same as for the Virtual
 Router Redundancy Protocol (VRRP), as they serve similar purposes.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 {{%/notice%}}
 
@@ -152,3 +168,11 @@ router; this default gateway address never changes.
 
 Configure the links between the hosts and the routers in *active-active*
 mode for First Hop Redundancy Protocol.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

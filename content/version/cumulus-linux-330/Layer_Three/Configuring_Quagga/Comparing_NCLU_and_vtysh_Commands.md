@@ -3,7 +3,7 @@ title: Comparing NCLU and vtysh Commands
 author: Cumulus Networks
 weight: 337
 aliases:
- - /display/CL330/Comparing+NCLU+and+vtysh+Commands
+ - /display/CL33/Comparing+NCLU+and+vtysh+Commands
  - /pages/viewpage.action?pageId=5866432
 pageID: 5866432
 product: Cumulus Linux
@@ -103,3 +103,11 @@ switch(config-if)# ipv6 ospf6 hello-interval  60 </code></pre></td>
 </tr>
 </tbody>
 </table>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

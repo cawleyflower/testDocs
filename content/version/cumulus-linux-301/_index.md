@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118197
 pageID: 5118197
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 subsection: true
@@ -59,3 +59,11 @@ documentation.
 
   - [Monitoring and
     Troubleshooting](/version/cumulus-linux-301/Monitoring_and_Troubleshooting/)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

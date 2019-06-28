@@ -11,6 +11,8 @@ version: 3.7.7
 imgData: cumulus-linux
 siteSlug: cumulus-linux
 ---
+<details>
+
 *Redistribute neighbor* provides a mechanism for IP subnets to span
 racks without forcing the end hosts to run a routing protocol.
 
@@ -171,7 +173,8 @@ steps can be applied to any of the leafs.
             cumulus@leaf01:~$ net pending
             cumulus@leaf01:~$ net commit
 
-Click here to expand the contents of /etc/frr/frr.conf
+<summary>Click here to expand the contents of /etc/frr/frr.conf
+</summary>
 
 This configuration uses OSPF as the routing protocol.
 
@@ -464,3 +467,13 @@ imported/advertised:
     advertised.
     
         switch# show ip bgp
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

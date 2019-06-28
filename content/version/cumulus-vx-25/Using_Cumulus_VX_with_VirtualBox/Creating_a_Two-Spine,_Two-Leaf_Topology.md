@@ -429,3 +429,11 @@ community articles, and the rest of the Cumulus Documentation:
 
   - Cumulus Linux documentation:  
     <http://docs.cumulusnetworks.com/display/DOCS/>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

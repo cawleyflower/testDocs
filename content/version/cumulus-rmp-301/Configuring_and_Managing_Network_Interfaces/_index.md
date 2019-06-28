@@ -11,6 +11,8 @@ version: 3.0.1
 imgData: cumulus-rmp-301
 siteSlug: cumulus-rmp-301
 ---
+<details>
+
 `ifupdown` is the network interface manager for Cumulus RMP. Cumulus RMP
 uses an updated version of this tool, `ifupdown2`.
 
@@ -64,7 +66,7 @@ To bring down a single interface, run:
 
     cumulus@switch:~$ sudo ifdown <ifname>
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 <table>
 <colgroup>
@@ -225,7 +227,7 @@ iface bridge
 </tbody>
 </table>
 
-Bridge in Traditional Mode - Example
+<summary>Bridge in Traditional Mode - Example </summary>
 
 For this example, swp1.100 and swp2.100 below do not need an entry in
 the `interfaces` file. The following stanzas defined in
@@ -481,7 +483,7 @@ You can specify both IPv4 and IPv6 addresses in the same `iface` stanza:
         address 192.0.2.2/30
         address 2001:DB8::1/126
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 <table>
 <colgroup>
@@ -721,3 +723,13 @@ interfaces with multiple `iface` stanzas.
   - <http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge>
 
   - <http://www.linuxfoundation.org/collaborate/workgroups/networking/vlan>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

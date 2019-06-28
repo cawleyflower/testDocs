@@ -3,7 +3,7 @@ title: LNV Full Example
 author: Cumulus Networks
 weight: 325
 aliases:
- - /display/CL330/LNV+Full+Example
+ - /display/CL33/LNV+Full+Example
  - /pages/viewpage.action?pageId=5866273
 pageID: 5866273
 product: Cumulus Linux
@@ -528,3 +528,11 @@ svcnode_peers = 10.2.1.3
 
   - [Network virtualization chapter, Cumulus Linux user
     guide](/version/cumulus-linux-330/Network_Virtualization/)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -7,10 +7,12 @@ aliases:
  - /pages/viewpage.action?pageId=5116337
 pageID: 5116337
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
+<details>
+
 The ` lldpd  `daemon implements the IEEE802.1AB (Link Layer Discovery
 Protocol, or LLDP) standard. LLDP allows you to know which ports are
 neighbors of a given port. By default, `lldpd` runs as a daemon and is
@@ -201,7 +203,7 @@ To see the `lldpd` running configuration:
       LLDP-MED fast start interval: 1
     --------------------------------------------------------------------
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 {{%notice warning%}}
 
@@ -259,3 +261,13 @@ LLDP does not enable the SNMP subagent by default. You need to edit
 ## <span>Caveats and Errata</span>
 
   - Annex E (and hence Annex D) of IEEE802.1AB (lldp) is not supported.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

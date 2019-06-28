@@ -11,6 +11,8 @@ version: 3.4.3
 imgData: cumulus-linux-343
 siteSlug: cumulus-linux-343
 ---
+<details>
+
 `ifupdown` is the network interface manager for Cumulus Linux. Cumulus
 Linux 2.1 and later uses an updated version of this tool, `ifupdown2`.
 
@@ -217,7 +219,7 @@ iface bridge
 </tbody>
 </table>
 
-Bridge in Traditional Mode - Example
+<summary>Bridge in Traditional Mode - Example </summary>
 
 For this example, swp1.100 and swp2.100 below do not need an entry in
 the `interfaces` file. The following stanzas defined in
@@ -453,13 +455,21 @@ addresses, and one IPv6 address.
     cumulus@switch:~$ net pending
     cumulus@switch:~$ net commit
 
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice info%}}
 
 You can specify both IPv4 and IPv6 addresses for the same interface.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 These commands create the following code snippet:
 
@@ -469,7 +479,11 @@ These commands create the following code snippet:
         address 12.0.0.2/30
         address 2001:DB8::1/126
 
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice info%}}
 
@@ -480,6 +494,10 @@ specifically when you are creating DHCP or loopback interfaces.
     iface lo inet loopback
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 {{%/notice%}}
 
@@ -863,3 +881,13 @@ interfaces with multiple `iface` stanzas.
   - man ifupdown-addons-interfaces(5)
 
   - man interfaces(5)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

@@ -407,3 +407,11 @@ There isn't a way to create this configuration using
 at this time.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

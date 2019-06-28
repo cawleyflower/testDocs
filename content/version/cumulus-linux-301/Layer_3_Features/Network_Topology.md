@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118383
 pageID: 5118383
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -124,3 +124,11 @@ destination (assuming that there is no link failure between the spine
 and the destination switch). Most routing protocols recognize that there
 are multiple equal-cost paths to a destination and enable any of them to
 be selected for a given traffic flow.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

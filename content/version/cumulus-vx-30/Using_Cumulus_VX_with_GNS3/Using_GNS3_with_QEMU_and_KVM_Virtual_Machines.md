@@ -211,3 +211,11 @@ To start Cumulus VX-leaf2:
       nic,vlan=1,macaddr=00:00:ab:e6:83:01,model=virtio -net udp,vlan=1,name=gns3-1,sport=10003,dport=10002,daddr=127.0.0.1 -net
       nic,vlan=2,macaddr=00:00:ab:e6:83:02,model=virtio -net udp,vlan=2,name=gns3-2,sport=10007,dport=10006,daddr=127.0.0.1 -net
       nic,vlan=3,macaddr=00:00:ab:e6:83:03,model=virtio &
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

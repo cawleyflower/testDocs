@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118232
 pageID: 5118232
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -564,3 +564,11 @@ The following example incorporates a few `tcpdump` options:
   - SPAN rules cannot match outgoing subinterfaces.
 
   - ERSPAN rules must include `ttl` for versions 1.5.1 and earlier.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118241
 pageID: 5118241
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -195,3 +195,11 @@ and alarm threshold settings.
             Laser rx power low alarm threshold        : 0.0100 mW / -20.00 dBm
             Laser rx power high warning threshold     : 1.0000 mW / 0.00 dBm
             Laser rx power low warning threshold      : 0.0200 mW / -16.99 dBm
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

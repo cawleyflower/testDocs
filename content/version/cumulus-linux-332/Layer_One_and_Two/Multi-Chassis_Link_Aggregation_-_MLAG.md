@@ -11,6 +11,8 @@ version: 3.3.2
 imgData: cumulus-linux-332
 siteSlug: cumulus-linux-332
 ---
+<details>
+
 Multi-Chassis Link Aggregation, or MLAG, enables a server or switch with
 a two-port bond (such as a link aggregation group/LAG, EtherChannel,
 port group or trunk) to connect those ports to different switches and
@@ -194,7 +196,7 @@ configuration changes, including:
 You can verify the configuration of VLAN membership using the `net show
 clag verify-vlans` command.
 
-Click to see the output ...
+<summary>Click to see the output ... </summary>
 
 ``` 
 cumulus@leaf01:~$ net show clag verify-vlans
@@ -403,7 +405,11 @@ The above commands produce the following configuration in the
       clagd-backup-ip 192.0.2.50
       clagd-sys-mac 44:38:39:FF:40:94
 
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice tip%}}
 
@@ -413,6 +419,10 @@ interface up with `ifup`. Do **not** use `systemctl restart
 clagd.service` to apply the new configuration.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 {{%/notice%}}
 
@@ -1040,7 +1050,7 @@ with a running `clagd` service to get status or alter operational
 behavior. For detailed explanation of the utility, please refer to the
 `clagctl(8)`man page.
 
-See the clagctl Output ...
+<summary>See the clagctl Output ... </summary>
 
 The following is a sample output of the MLAG operational status
 displayed by `clagctl`:
@@ -1142,7 +1152,11 @@ add ` clagd-backup-ip <ADDRESS>  `to the peer link configuration:
     cumulus@spine01:~$ net pending
     cumulus@spine01:~$ net commit
 
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice tip%}}
 
@@ -1155,6 +1169,10 @@ Cumulus Networks recommends you use the switch's management IP address
 for this purpose.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 You can also specify the backup UDP port. The port defaults to 5342, but
 you can configure it as an argument in `clagd-args` using `--backupPort
@@ -1200,13 +1218,21 @@ name of the VRF or management VRF when you specify `clagd-backup-ip
     cumulus@spine01:~$ net pending
     cumulus@spine01:~$ net commit
 
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice tip%}}
 
 You cannot use the VRF on a peer link subinterface.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 Verify the backup link by running `net show clag backup-ip`:
 
@@ -1699,3 +1725,13 @@ If both the backup and peer connectivity are lost within a 30-second
 window, the switch in the secondary role misinterprets the event
 sequence, believing the peer switch is down, so it takes over as the
 primary.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

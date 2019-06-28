@@ -7,10 +7,12 @@ aliases:
  - /pages/viewpage.action?pageId=5118373
 pageID: 5118373
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
+<details>
+
 This chapter discusses the various network interfaces on a switch
 running Cumulus Linux.
 
@@ -99,7 +101,7 @@ defaults to half duplex.
 
 You can also configure these settings at run time, using `ethtool`.
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 <table>
 <colgroup>
@@ -153,7 +155,7 @@ interfaces.
     iface swp1
        link-autoneg off
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 <table>
 <colgroup>
@@ -184,7 +186,7 @@ VLAN subinterfaces and bonds.
     iface swp1
        mtu 9000
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 <table>
 <colgroup>
@@ -639,3 +641,13 @@ shows the output for 1G and 10G modules:
   - <http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge>
 
   - <http://www.linuxfoundation.org/collaborate/workgroups/networking/bonding>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

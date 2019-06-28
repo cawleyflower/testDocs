@@ -167,3 +167,11 @@ More](https://docs.cumulusnetworks.com/plugins/recently-updated/changes.action?t
 
   - [Dan Cawley](https://docs.cumulusnetworks.com/display/~dcawley) (31
     minutes ago)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

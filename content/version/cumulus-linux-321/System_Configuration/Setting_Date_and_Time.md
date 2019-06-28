@@ -11,6 +11,8 @@ version: 3.2.1
 imgData: cumulus-linux-321
 siteSlug: cumulus-linux-321
 ---
+<details>
+
 Setting the time zone, date and time requires root privileges; use
 `sudo`.
 
@@ -176,7 +178,7 @@ listed in the `/etc/ntpd.conf` file:
 If you need to restore the default NTP configuration, its contents are
 listed below.
 
-Default ntpd.conf file ...
+<summary>Default ntpd.conf file ... </summary>
 
     # /etc/ntp.conf, configuration for ntpd; see ntp.conf(5) for help
      
@@ -247,3 +249,13 @@ Default ntpd.conf file ...
   - [en.wikipedia.org/wiki/Network\_Time\_Protocol](http://en.wikipedia.org/wiki/Network_Time_Protocol)
 
   - [wiki.debian.org/NTP](http://wiki.debian.org/NTP)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

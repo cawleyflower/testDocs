@@ -30,3 +30,11 @@ in mind:
 
   - Always reset your MAC addresses on the virtual NICs, unless you have
     a strong reason not to do so.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

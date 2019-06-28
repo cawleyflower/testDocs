@@ -125,3 +125,11 @@ following:
 3.  Restart the `ssh` service:
     
         cumulus@switch:~$ sudo systemctl reload ssh.service
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

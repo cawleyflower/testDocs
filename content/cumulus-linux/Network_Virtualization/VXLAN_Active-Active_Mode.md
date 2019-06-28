@@ -781,12 +781,13 @@ configuration file:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><pre><code>svcnode_ip = 10.10.10.10
+<td><details>
+<pre><code>svcnode_ip = 10.10.10.10
  
 src_ip = 10.0.0.21
  
 svcnode_peers = 10.0.0.21 10.0.0.22</code></pre>
-Full configuration of vxsnd.conf
+<summary>Full configuration of vxsnd.conf </summary>
 <pre><code>[common]
 # Log level is one of DEBUG, INFO, WARNING, ERROR, CRITICAL
 #loglevel = INFO
@@ -840,13 +841,15 @@ svcnode_peers = 10.0.0.21 10.0.0.22
 #install_svcnode_ip = false
  
 # Seconds to wait before checking the database to age out stale entries
-#age_check = 90</code></pre></td>
-<td><pre><code>svcnode_ip = 10.10.10.10
+#age_check = 90</code></pre>
+</details></td>
+<td><details>
+<pre><code>svcnode_ip = 10.10.10.10
  
 src_ip = 10.0.0.22
  
 svcnode_peers = 10.0.0.21 10.0.0.22</code></pre>
-Full configuration of vxsnd.conf
+<summary>Full configuration of vxsnd.conf </summary>
 <pre><code>[common]
 # Log level is one of DEBUG, INFO, WARNING, ERROR, CRITICAL
 #loglevel = INFO
@@ -900,7 +903,8 @@ svcnode_peers = 10.0.0.21 10.0.0.22
 #install_svcnode_ip = false
  
 # Seconds to wait before checking the database to age out stale entries
-#age_check = 90</code></pre></td>
+#age_check = 90</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -1042,3 +1046,11 @@ mode can function correctly.
 
   - [Network virtualization chapter, Cumulus Linux user
     guide](/cumulus-linux/Network_Virtualization/)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

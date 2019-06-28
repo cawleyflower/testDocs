@@ -7,10 +7,12 @@ aliases:
  - /pages/viewpage.action?pageId=5118219
 pageID: 5118219
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
+<details>
+
 [Netfilter](http://www.netfilter.org/) is the packet filtering framework
 in Cumulus Linux as well as most other Linux distributions. `iptables`,
 `ip6tables` and `ebtables` are userspace tools in Linux to administer
@@ -577,7 +579,8 @@ To learn more about any of the options shown in the tables below, run
 `iptables -h [name of option]`. The same help syntax works for options
 for `ip6tables` and `ebtables`.
 
-Click here to see Example of Help Syntax for an Ebtables target
+<summary>Click here to see Example of Help Syntax for an Ebtables target
+</summary>
 
     root@leaf1# ebtables -h tricolorpolice
     <...snip...>
@@ -1171,3 +1174,13 @@ following is displayed:
     error: hw sync failed (sync_acl hardware installation failed)
     Installing acl policy... Rolling back ..
     failed.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

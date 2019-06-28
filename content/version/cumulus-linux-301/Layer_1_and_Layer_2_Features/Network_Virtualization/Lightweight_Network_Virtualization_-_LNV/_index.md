@@ -7,10 +7,12 @@ aliases:
  - /pages/viewpage.action?pageId=5118319
 pageID: 5118319
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
+<details>
+
 Lightweight Network Virtualization (LNV) is a technique for deploying
 [VXLANs](/version/cumulus-linux-301/Layer_1_and_Layer_2_Features/Network_Virtualization/)
 without a central controller on bare metal switches. This solution
@@ -736,8 +738,8 @@ section above; no additional configuration is typically needed. However,
 if you need to modify the registration node configuration, edit
 `/etc/vxrd.conf`.
 
-Alternate location for configuration and additional knobs for the
-registration node are found in /etc/vxrd.conf
+<summary>Alternate location for configuration and additional knobs for
+the registration node are found in /etc/vxrd.conf </summary>
 
     cumulus@leaf1:~$ sudo nano /etc/vxrd.conf
 
@@ -1379,3 +1381,13 @@ For `vxrd`:
   - [tools.ietf.org/html/rfc7348](https://tools.ietf.org/html/rfc7348)
 
   - [en.wikipedia.org/wiki/Anycast](http://en.wikipedia.org/wiki/Anycast)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

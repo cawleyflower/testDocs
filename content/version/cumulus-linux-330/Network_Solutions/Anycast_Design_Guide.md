@@ -3,7 +3,7 @@ title: Anycast Design Guide
 author: Cumulus Networks
 weight: 237
 aliases:
- - /display/CL330/Anycast+Design+Guide
+ - /display/CL33/Anycast+Design+Guide
  - /pages/viewpage.action?pageId=5866502
 pageID: 5866502
 product: Cumulus Linux
@@ -248,3 +248,11 @@ services. However, the limitations inherent in network-based ECMP makes
 anycast challenging to integrate with some applications. An anycast
 architecture is best suited for stateless applications or applications
 that are able to share session state at the application layer.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -113,3 +113,11 @@ and running the complete option. For example:
 
 `net show int` runs `net show interface`  
 `net show sys` runs `net show system`
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

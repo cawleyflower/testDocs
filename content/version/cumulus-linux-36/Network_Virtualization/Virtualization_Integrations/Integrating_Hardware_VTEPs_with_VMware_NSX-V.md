@@ -413,3 +413,11 @@ connected to the switch:
     00:23:20:00:00:01 dev dummy0 master br-vxln0 permanent
     00:23:20:00:00:01 dev dummy 5000 master br-vxln5000 permanent
     7c:fe:90:0b:c5:7e dev swp2.16 master br-vxln5000 permanent
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

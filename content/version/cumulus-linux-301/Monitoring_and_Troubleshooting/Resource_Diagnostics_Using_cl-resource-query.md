@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118230
 pageID: 5118230
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -78,3 +78,11 @@ command. Results vary between switches running on different chipsets.
     Total Routes:              31,   0% of maximum value  32768
     ECMP nexthops:              0,   0% of maximum value  16346
     MAC entries:               12,   0% of maximum value  32768
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

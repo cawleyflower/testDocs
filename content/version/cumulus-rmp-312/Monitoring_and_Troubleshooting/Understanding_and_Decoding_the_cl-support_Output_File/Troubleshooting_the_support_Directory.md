@@ -3,7 +3,7 @@ title: Troubleshooting the support Directory
 author: Cumulus Networks
 weight: 179
 aliases:
- - /display/RMP31/Troubleshooting+the+support+Directory
+ - /display/RMP312/Troubleshooting+the+support+Directory
  - /pages/viewpage.action?pageId=5122759
 pageID: 5122759
 product: Cumulus RMP
@@ -18,3 +18,11 @@ commands. For example:
 | File            | Equivalent Command               | Description                                                                                                                  |
 | --------------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | support/ip.addr | `cumulus@switch:~$ ip addr show` | This shows you all the interfaces (including swp front panel ports), IP address information, admin state and physical state. |
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -210,3 +210,11 @@ To run `net show counters` on the host as a remote procedure call:
 To add a bridge using ML2:
 
     cumulus@switch:~$ curl -X PUT -k -u user:pw https://192.168.0.32:8080/ml2/v1/bridge/"br1"/200
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -3,7 +3,7 @@ title: Default Cumulus Linux ACL Configuration
 author: Cumulus Networks
 weight: 269
 aliases:
- - /display/CL330/Default+Cumulus+Linux+ACL+Configuration
+ - /display/CL33/Default+Cumulus+Linux+ACL+Configuration
  - /pages/viewpage.action?pageId=5866121
 pageID: 5866121
 product: Cumulus Linux
@@ -11,14 +11,16 @@ version: 3.3.0
 imgData: cumulus-linux-330
 siteSlug: cumulus-linux-330
 ---
+<details>
+
 The Cumulus Linux default ACL configuration is split into three parts,
 as outlined in the [netfilter ACL
-documentation](/display/CL330/Netfilter+-+ACLs): IP tables, IPv6 tables,
+documentation](/display/CL33/Netfilter+-+ACLs): IP tables, IPv6 tables,
 and EB tables. The sections below cover the default configurations for
 each part, while the default file can be seen by clicking the Default
 ACL Configuration link:
 
-Default ACL Configuration
+<summary>Default ACL Configuration </summary>
 
     cumulus@switch:~$ sudo cl-acltool -L all
     -------------------------------
@@ -497,3 +499,13 @@ Set class is internal to the switch. It does not set any precedence
 bits.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

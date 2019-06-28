@@ -196,3 +196,11 @@ More](https://docs.cumulusnetworks.com/plugins/recently-updated/changes.action?t
 
   - [Tom Wells](https://docs.cumulusnetworks.com/display/~tom) (1067
     days ago)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

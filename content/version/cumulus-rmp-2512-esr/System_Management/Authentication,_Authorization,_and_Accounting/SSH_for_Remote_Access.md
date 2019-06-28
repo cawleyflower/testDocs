@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116311
 pageID: 5116311
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
@@ -68,3 +68,11 @@ instructions.
 ## <span>Useful Links</span>
 
   - <http://www.debian-administration.org/articles/152>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

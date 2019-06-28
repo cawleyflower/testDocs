@@ -134,3 +134,11 @@ view.
   - [en.wikipedia.org/wiki/Open\_Shortest\_Path\_First](http://en.wikipedia.org/wiki/Open_Shortest_Path_First)
 
   - [www.nongnu.org/quagga/docs/docs-info.html\#OSPFv3](http://www.nongnu.org/quagga/docs/docs-info.html#OSPFv3)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

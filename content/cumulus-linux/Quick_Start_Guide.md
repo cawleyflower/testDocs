@@ -28,7 +28,11 @@ You must have access to a Linux or UNIX shell. If you are running
 Windows, use a Linux environment like [Cygwin](http://www.cygwin.com/)
 as your command line tool for interacting with Cumulus Linux.
 
+<div class="confbox admonition admonition-tip">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice info%}}
 
@@ -42,6 +46,10 @@ videos](http://cumulusnetworks.com/technical-videos/) introducing you to
 Linux and Cumulus Linux-specific concepts.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 {{%/notice%}}
 
@@ -545,3 +553,11 @@ The commands above produce the following snippet in the
     iface lo inet loopback
         address 10.1.1.1/32
         address 172.16.2.1/24
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116326
 pageID: 5116326
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
@@ -340,3 +340,11 @@ and scheduler priority — in its configuration file,
 
   - [Net-SNMP
     tutorials](http://net-snmp.sourceforge.net/wiki/index.php/Tutorials)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

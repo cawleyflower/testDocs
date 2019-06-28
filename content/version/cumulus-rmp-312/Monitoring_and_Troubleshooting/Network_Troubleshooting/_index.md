@@ -3,7 +3,7 @@ title: Network Troubleshooting
 author: Cumulus Networks
 weight: 113
 aliases:
- - /display/RMP31/Network+Troubleshooting
+ - /display/RMP312/Network+Troubleshooting
  - /pages/viewpage.action?pageId=5122752
 pageID: 5122752
 product: Cumulus RMP
@@ -137,3 +137,11 @@ source IP 11.0.0.1 and destination 11.0.0.2, do the following:
   - [en.wikipedia.org/wiki/Traceroute](https://en.wikipedia.org/wiki/Traceroute)
 
   - [www.perihel.at/sec/mz/mzguide.html](http://www.perihel.at/sec/mz/mzguide.html)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

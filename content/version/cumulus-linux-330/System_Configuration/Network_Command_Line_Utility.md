@@ -3,7 +3,7 @@ title: Network Command Line Utility
 author: Cumulus Networks
 weight: 63
 aliases:
- - /display/CL330/Network+Command+Line+Utility
+ - /display/CL33/Network+Command+Line+Utility
  - /pages/viewpage.action?pageId=5866127
 pageID: 5866127
 product: Cumulus Linux
@@ -345,3 +345,11 @@ output is directed. To only use `stdout`, set the NCLU\_TAB\_STDOUT
 environment variable to *true*. The value is not case sensitive.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

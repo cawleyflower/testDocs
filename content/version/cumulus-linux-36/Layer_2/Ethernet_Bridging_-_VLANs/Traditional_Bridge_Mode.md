@@ -189,13 +189,21 @@ switch into multiple layer 2 domains. This allows for hosts to
 communicate with other hosts in the same domain, while separating them
 fro hosts in other domains.
 
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice info%}}
 
 You can create only one VLAN-aware bridge on a switch.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 The diagram below shows a multiple bridge configuration, where host-1
 and host-2 are connected to bridge-A, while host-3 and host-4 are
@@ -308,3 +316,11 @@ The ARP refresh timer defaults to 1080 seconds (18 minutes). You can
 change this setting by following the procedures outlined in this
 [knowledge base
 article](https://support.cumulusnetworks.com/hc/en-us/articles/202012933).
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

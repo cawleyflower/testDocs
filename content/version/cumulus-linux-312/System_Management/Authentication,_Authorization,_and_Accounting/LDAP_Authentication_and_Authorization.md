@@ -11,6 +11,8 @@ version: 3.1.2
 imgData: cumulus-linux-312
 siteSlug: cumulus-linux-312
 ---
+<details>
+
 Cumulus Linux uses Pluggable Authentication Modules (PAM) and Name
 Service Switch (NSS) for user authentication.
 
@@ -401,7 +403,7 @@ specifies the search DN and what attribute to lookup.
 
     cumulus@switch:~$ ldapsearch -H ldap://ldap.example.com -b dc=example,dc=com -x uid=myuser
 
-Click to expand the command output ...
+<summary>Click to expand the command output ... </summary>
 
     # extended LDIF
     #
@@ -458,3 +460,13 @@ database.
   - [raw.githubusercontent.com/arthurdejong/nss-pam-ldapd/master/nslcd.conf](https://raw.githubusercontent.com/arthurdejong/nss-pam-ldapd/master/nslcd.conf)
 
   - [backports.debian.org/Instructions/](http://backports.debian.org/Instructions/)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

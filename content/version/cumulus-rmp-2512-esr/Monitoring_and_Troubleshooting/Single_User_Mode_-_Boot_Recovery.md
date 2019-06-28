@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116335
 pageID: 5116335
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
@@ -79,3 +79,11 @@ boot the switch back to a normal state:
     bash: cannot set terminal process group (-1): Inappropriate ioctl for device
     bash: no job control in this shell
     cumulus@switch:/# sudo reboot -f
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

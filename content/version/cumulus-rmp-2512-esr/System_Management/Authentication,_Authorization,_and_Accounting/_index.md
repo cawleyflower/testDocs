@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116310
 pageID: 5116310
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
@@ -22,3 +22,11 @@ siteSlug: cumulus-rmp-2512-esr
 
   - [PAM and
     NSS](/version/cumulus-rmp-2512-esr/System_Management/Authentication_Authorization_and_Accounting/LDAP_Authentication_and_Authorization)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

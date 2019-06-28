@@ -11,6 +11,8 @@ version: 3.1.2
 imgData: cumulus-linux-312
 siteSlug: cumulus-linux-312
 ---
+<details>
+
 Cumulus Linux provides *virtual* *routing and forwarding* (VRF) to allow
 for the presence of multiple independent routing tables working
 simultaneously on the same router or switch. This permits multiple
@@ -360,7 +362,7 @@ Display interfaces known to Quagga and attached to this VRF:
       ND router advertisement default router preference is medium
       Hosts use stateless autoconfig for addresses.
 
-To see more interfaces, click here.
+<summary>To see more interfaces, click here. </summary>
 
     Interface swp1.2 is up, line protocol is up
       PTM status: disabled
@@ -913,3 +915,13 @@ Or:
     BGP.
 
   - It is not possible to leak routes across VRFs within Quagga.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

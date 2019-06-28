@@ -467,3 +467,11 @@ supply the following information:
 
   - [frrouting.org/user-guide/Zebra.html\#Zeb](https://frrouting.org/user-guide/Zebra.html#Zebra)
     [frrouting.org/user-guide/Zebra.html\#Zebra](https://frrouting.org/user-guide/Zebra.html#Zebra)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

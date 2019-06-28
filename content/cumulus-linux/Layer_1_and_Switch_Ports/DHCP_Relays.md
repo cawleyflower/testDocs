@@ -11,6 +11,8 @@ version: 3.7.7
 imgData: cumulus-linux
 siteSlug: cumulus-linux
 ---
+<details>
+
 You can configure DHCP relays for IPv4 and IPv6.
 
 To run DHCP for both IPv4 and IPv6, initiate the DHCP relay once for
@@ -289,7 +291,7 @@ must run on the SVI and not on the -v0 interface. </span>
 
 ## <span>Configure the DHCP Relay Service Manually (Advanced)</span>
 
-Configuring the DHCP service manually ...
+<summary>Configuring the DHCP service manually ... </summary>
 
 By default, Cumulus Linux configures the DHCP relay service
 automatically. However, in older versions of Cumulus Linux, you needed
@@ -325,7 +327,8 @@ bridging (for example, br100).
 
 ## <span id="src-8363036_DHCPRelays-giaddr" class="confluence-anchor-link"></span><span>Use the Gateway IP Address as the Source IP for Relayed DHCP Packets (Advanced)</span>
 
-Using the gateway IP address as the source IP for relayed DHCP packets
+<summary>Using the gateway IP address as the source IP for relayed DHCP
+packets </summary>
 
 You can configure the `dhcrelay` service to forward IPv4 (only) DHCP
 packets to a server and ensure that the source IP address of the relayed
@@ -423,3 +426,13 @@ To resolve the issue, manually edit the `/etc/default/isc-dhcp-relay`
 file to remove the space, then run the `systemctl restart
 dhcrelay.service` command to restart the `dhcrelay` service and apply
 the configuration change.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

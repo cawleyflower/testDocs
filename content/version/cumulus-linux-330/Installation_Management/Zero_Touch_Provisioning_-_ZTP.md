@@ -3,7 +3,7 @@ title: Zero Touch Provisioning - ZTP
 author: Cumulus Networks
 weight: 51
 aliases:
- - /display/CL330/Zero+Touch+Provisioning+-+ZTP
+ - /display/CL33/Zero+Touch+Provisioning+-+ZTP
  - /pages/viewpage.action?pageId=5866166
 pageID: 5866166
 product: Cumulus Linux
@@ -543,3 +543,11 @@ To see the current `ztp` state, use the `-s` option:
   - You can use the Cumulus Linux `onie-select -i` command to cause the
     switch to reprovision itself and install a network operating system
     again using ONIE.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

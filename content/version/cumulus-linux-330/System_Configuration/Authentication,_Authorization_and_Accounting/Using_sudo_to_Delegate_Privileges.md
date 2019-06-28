@@ -3,7 +3,7 @@ title: Using sudo to Delegate Privileges
 author: Cumulus Networks
 weight: 253
 aliases:
- - /display/CL330/Using+sudo+to+Delegate+Privileges
+ - /display/CL33/Using+sudo+to+Delegate+Privileges
  - /pages/viewpage.action?pageId=5866106
 pageID: 5866106
 product: Cumulus Linux
@@ -272,3 +272,11 @@ be prefixed with `sudo.`
 
   - [Adding Yourself to
     sudoers](http://rubypond.com/blog/adding-yourself-to-the-sudoers-file)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

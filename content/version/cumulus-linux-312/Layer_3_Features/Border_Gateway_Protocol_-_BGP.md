@@ -11,6 +11,8 @@ version: 3.1.2
 imgData: cumulus-linux-312
 siteSlug: cumulus-linux-312
 ---
+<details>
+
 BGP is the routing protocol that runs the Internet. It is an
 increasingly popular protocol for use in the data center as it lends
 itself well to the rich interconnections in a Clos topology.
@@ -1084,7 +1086,7 @@ output:
 BGP ttl security is now configured. To review the resulting
 configuration, run the `show ip bgp neighbor` command.
 
-Example show ip bgp neighbor output
+<summary>Example show ip bgp neighbor output </summary>
 
     spine01#show ip bgp neighbor
     BGP neighbor is 10.1.2.1, remote AS 65001, local AS 65002, external link
@@ -1698,3 +1700,13 @@ For more information about ACLs and `cl-acltool`, see [Netfilter
 (ACLs)](/version/cumulus-linux-312/System_Management/Netfilter_-_ACLs/).
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

@@ -3,7 +3,7 @@ title: Upgrading Cumulus Linux
 author: Cumulus Networks
 weight: 45
 aliases:
- - /display/CL330/Upgrading+Cumulus+Linux
+ - /display/CL33/Upgrading+Cumulus+Linux
  - /pages/viewpage.action?pageId=5866181
 pageID: 5866181
 product: Cumulus Linux
@@ -659,3 +659,11 @@ For more details on integrating automation into your Cumulus Linux
 deployment, see the [Automation Solutions
 section](https://cumulusnetworks.com/solutions/automation/) on
 cumulusnetworks.com.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

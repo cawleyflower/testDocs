@@ -11,6 +11,8 @@ version: 3.1.2
 imgData: cumulus-linux-312
 siteSlug: cumulus-linux-312
 ---
+<details>
+
 Spanning tree protocol (STP) is always recommended in layer 2
 topologies, as it prevents bridge loops and broadcast radiation on a
 bridged network.
@@ -82,7 +84,7 @@ To enable the bridge and load the new configuration from
 
     cumulus@switch:~$ sudo ifreload -a
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 {{%notice warning%}}
 
@@ -261,7 +263,7 @@ To load the new configuration, run `ifreload -a`:
 
     cumulus@switch:~$ sudo ifreload -a
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 {{%notice warning%}}
 
@@ -304,7 +306,7 @@ To load the new configuration, run `ifreload -a`:
 
     cumulus@switch:~$ sudo ifreload -a
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 {{%notice warning%}}
 
@@ -425,7 +427,7 @@ To load the new configuration from `/etc/network/interfaces`, run
 
     cumulus@switch:~$ sudo ifreload -a
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 {{%notice warning%}}
 
@@ -477,7 +479,7 @@ To load the new configuration from `/etc/network/interfaces`, run
 
 For more information, see `man(5) ifupdown-addons-interfaces`.
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 {{%notice warning%}}
 
@@ -532,7 +534,7 @@ Then, reload the configuration:
 
     cumulus@switch:$ sudo ifreload -a
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 {{%notice warning%}}
 
@@ -827,3 +829,13 @@ sourceforge URL below.
 
   - MSTP is not supported currently. However, interoperability with MSTP
     networks can be accomplished using PVRSTP or PVSTP.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

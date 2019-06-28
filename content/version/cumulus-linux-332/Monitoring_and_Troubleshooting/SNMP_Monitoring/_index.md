@@ -1276,3 +1276,11 @@ The ENTITY MIB does not currently show the chassis information in
 Cumulus Linux.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

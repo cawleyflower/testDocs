@@ -11,6 +11,8 @@ version: 3.0.1
 imgData: cumulus-rmp-301
 siteSlug: cumulus-rmp-301
 ---
+<details>
+
 Cumulus RMP uses Pluggable Authentication Modules (PAM) and Name Service
 Switch (NSS) for user authentication.
 
@@ -404,7 +406,7 @@ specifies the search DN and what attribute to lookup.
 
     cumulus@switch:~$ ldapsearch -H ldap://ldap.example.com -b dc=example,dc=com -x uid=myuser
 
-Click here to expand output of command
+<summary>Click here to expand output of command </summary>
 
     # extended LDIF
     #
@@ -461,3 +463,13 @@ database.
   - <https://raw.githubusercontent.com/arthurdejong/nss-pam-ldapd/master/nslcd.conf>
 
   - <http://backports.debian.org/Instructions/>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

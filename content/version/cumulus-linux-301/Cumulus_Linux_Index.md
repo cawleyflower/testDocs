@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118414
 pageID: 5118414
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -772,3 +772,11 @@ siteSlug: cumulus-linux-301
       - [802\_1p](https://docs.cumulusnetworks.com/label/CL30/802_1p)
     
       - [802\_3ad](https://docs.cumulusnetworks.com/label/CL30/802_3ad)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

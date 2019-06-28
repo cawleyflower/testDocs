@@ -3,7 +3,7 @@ title: Buffer Monitoring
 author: Cumulus Networks
 weight: 207
 aliases:
- - /display/CL330/Buffer+Monitoring
+ - /display/CL33/Buffer+Monitoring
  - /pages/viewpage.action?pageId=5866163
 pageID: 5866163
 product: Cumulus Linux
@@ -298,3 +298,11 @@ Keep in mind that a lot of overhead is involved in collecting this data,
 hitting the CPU and SDK process, which can affect execution of
 `switchd`. Snapshots and logging can occupy a lot of disk space if
 you’re not limiting the number of files to copy.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

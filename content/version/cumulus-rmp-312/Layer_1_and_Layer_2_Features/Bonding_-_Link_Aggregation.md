@@ -3,7 +3,7 @@ title: Bonding - Link Aggregation
 author: Cumulus Networks
 weight: 77
 aliases:
- - /display/RMP31/Bonding+-+Link+Aggregation
+ - /display/RMP312/Bonding+-+Link+Aggregation
  - /pages/viewpage.action?pageId=5122776
 pageID: 5122776
 product: Cumulus RMP
@@ -155,3 +155,11 @@ calculation is adjusted to steer traffic over available slaves.
 
   - A bond cannot enslave VLAN subinterfaces. A bond can have
     subinterfaces, but not the other way around.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

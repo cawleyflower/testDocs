@@ -3,7 +3,7 @@ title: Configuring DHCP Relays and Servers
 author: Cumulus Networks
 weight: 57
 aliases:
- - /display/RMP31/Configuring+DHCP+Relays+and+Servers
+ - /display/RMP312/Configuring+DHCP+Relays+and+Servers
  - /pages/viewpage.action?pageId=5122798
 pageID: 5122798
 product: Cumulus RMP
@@ -217,3 +217,11 @@ For example:
     cumulus@switch:~$ /usr/sbin/dhcrelay -6 -l swp1 -u 2001:db8:100::2%swp51
 
 See the `man dhcrelay` for more information.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

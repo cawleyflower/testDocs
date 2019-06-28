@@ -3,7 +3,7 @@ title: Monitoring and Troubleshooting
 author: Cumulus Networks
 weight: 25
 aliases:
- - /display/CL330/Monitoring+and+Troubleshooting
+ - /display/CL33/Monitoring+and+Troubleshooting
  - /pages/viewpage.action?pageId=5866129
 pageID: 5866129
 product: Cumulus Linux
@@ -11,6 +11,8 @@ version: 3.3.0
 imgData: cumulus-linux-330
 siteSlug: cumulus-linux-330
 ---
+<details>
+
 This chapter introduces monitoring and troubleshooting Cumulus Linux.
 
 ## <span>Using the Serial Console</span>
@@ -297,7 +299,7 @@ log file.
 
 {{%/notice%}}
 
-Configuring advanced logging ...
+<summary>Configuring advanced logging ... </summary>
 
 Create a file and add content similar to the following:
 
@@ -346,8 +348,8 @@ documentation](http://www.rsyslog.com/doc/v8-stable/configuration/modules/imuxso
     module(load="imuxsock"
           SysSock.RateLimit.Interval="2" SysSock.RateLimit.Burst="50")
 
-The following test script shows an example of rate-limit output in
-Cumulus Linux ...
+<summary>The following test script shows an example of rate-limit output
+in Cumulus Linux ... </summary>
 
     root@leaf1:mgmt-vrf:/home/cumulus# cat ./syslog.py 
     #!/usr/bin/python
@@ -396,3 +398,13 @@ upgrading packages.
 ## <span>Next Steps</span>
 
 The links below discuss more specific monitoring topics.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

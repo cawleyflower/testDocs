@@ -3,7 +3,7 @@ title: IGMP and MLD Snooping
 author: Cumulus Networks
 weight: 125
 aliases:
- - /display/CL330/IGMP+and+MLD+Snooping
+ - /display/CL33/IGMP+and+MLD+Snooping
  - /pages/viewpage.action?pageId=5866227
 pageID: 5866227
 product: Cumulus Linux
@@ -196,3 +196,11 @@ command. To display router ports and group information use the `bridge
   - [tools.ietf.org/search/rfc2710](http://tools.ietf.org/search/rfc2710)
 
   - [tools.ietf.org/html/rfc3810](http://tools.ietf.org/html/rfc3810)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

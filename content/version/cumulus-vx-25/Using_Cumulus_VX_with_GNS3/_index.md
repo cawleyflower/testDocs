@@ -29,3 +29,11 @@ Mac OSX Darwin Kernel Version 14.1.0: Thu Feb 26 19:26:47 PST 2015;
 root:xnu-2782.10.73\~1/RELEASE\_X86\_64 x86\_64.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

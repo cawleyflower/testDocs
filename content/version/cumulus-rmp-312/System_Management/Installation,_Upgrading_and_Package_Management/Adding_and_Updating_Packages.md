@@ -3,7 +3,7 @@ title: Adding and Updating Packages
 author: Cumulus Networks
 weight: 147
 aliases:
- - /display/RMP31/Adding+and+Updating+Packages
+ - /display/RMP312/Adding+and+Updating+Packages
  - /pages/viewpage.action?pageId=5122746
 pageID: 5122746
 product: Cumulus RMP
@@ -277,3 +277,11 @@ To install a new package, please complete the following steps:
     tools](http://www.debian.org/doc/manuals/debian-faq/ch-pkgtools.en.html)
 
   - man pages for `apt-get`, `dpkg`, `sources.list`, `apt_preferences`
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

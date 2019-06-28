@@ -121,3 +121,11 @@ command shows the number of TCAM entries used by the different types of
 ACL resources.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

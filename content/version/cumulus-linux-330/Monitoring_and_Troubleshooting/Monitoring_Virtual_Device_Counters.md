@@ -3,7 +3,7 @@ title: Monitoring Virtual Device Counters
 author: Cumulus Networks
 weight: 205
 aliases:
- - /display/CL330/Monitoring+Virtual+Device+Counters
+ - /display/CL33/Monitoring+Virtual+Device+Counters
  - /pages/viewpage.action?pageId=5866142
 pageID: 5866142
 product: Cumulus Linux
@@ -204,3 +204,11 @@ hardware statistics via `switchd`:
     counters available via `netdev` are sufficient to display the
     vlan/vxlan counters currently supported in the hardware (only rx/tx
     packets/bytes are supported currently).
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

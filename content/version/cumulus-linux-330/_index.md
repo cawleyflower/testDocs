@@ -3,7 +3,7 @@ title: Cumulus Linux User Guide
 author: Cumulus Networks
 weight: 1
 aliases:
- - /display/CL330/Cumulus+Linux+User+Guide
+ - /display/CL33/Cumulus+Linux+User+Guide
  - /pages/viewpage.action?pageId=5866080
 pageID: 5866080
 product: Cumulus Linux
@@ -97,3 +97,11 @@ You can find the most up to date hardware compatibility list (HCL)
 your switch model is supported by Cumulus Networks. The HCL is updated
 regularly, listing products by port configuration, manufacturer, and SKU
 part number.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

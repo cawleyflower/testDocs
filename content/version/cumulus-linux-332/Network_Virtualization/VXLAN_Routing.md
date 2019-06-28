@@ -177,3 +177,11 @@ To view the forwarding database, use `bridge fdb show`:
     ba:08:bc:60:b2:15 dev VNI-11001 master bridge permanent
     00:00:5e:00:01:01 dev bridge vlan 1001 master bridge permanent
     00:00:5e:00:01:01 dev bridge vlan 1000 master bridge permanent
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -11,6 +11,8 @@ version: 3.0.1
 imgData: cumulus-rmp-301
 siteSlug: cumulus-rmp-301
 ---
+<details>
+
 Spanning tree protocol (STP) is always recommended in layer 2
 topologies, as it prevents bridge loops and broadcast radiation on a
 bridged network.
@@ -77,7 +79,7 @@ To enable the bridge, run `ifreload -a`:
 
     cumulus@switch:~$ sudo ifreload -a
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 `You use brctl` to create the bridge, add bridge ports in the bridge and
 configure STP on the bridge. `mstpctl` is used only when an admin needs
@@ -435,7 +437,7 @@ To load the new configuration, run `ifreload -a`:
 You can also configure BPDU guard on an individual port using a runtime
 configuration.
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 {{%notice warning%}}
 
@@ -545,7 +547,7 @@ To load the new configuration from `/etc/network/interfaces`, run
 
 For more information, see `man(5) ifupdown-addons-interfaces`.
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 {{%notice warning%}}
 
@@ -610,3 +612,13 @@ sourceforge URL below.
 
   - MSTP is not supported currently. However, interoperability with MSTP
     networks can be accomplished using PVRSTP or PVSTP.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

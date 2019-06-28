@@ -370,3 +370,11 @@ Network virtualization: Cumulus VX with VMware NSX
 
 Cumulus Linux Documentation  
 <http://docs.cumulusnetworks.com/display/DOCS/>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

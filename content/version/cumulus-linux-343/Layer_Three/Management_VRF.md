@@ -55,7 +55,11 @@ To enable management VRF on eth0, complete the following steps:
 
 The example NCLU commands below create a VRF called *mgmt*:
 
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice info has%}}
 
@@ -63,6 +67,10 @@ To differentiate from a data plane VRF, you must name the management VRF
 `mgmt`.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
     cumulus@switch:~$ net add vrf mgmt
     cumulus@switch:~$ net pending
@@ -86,7 +94,11 @@ The NCLU commands above create the following snippets in the
      
     ...
 
+<div class="confbox admonition admonition-note">
+
 <span class="admonition-icon confluence-information-macro-icon"></span>
+
+<div class="admonition-body">
 
 {{%notice info has%}}
 
@@ -95,6 +107,10 @@ over eth0 are dropped. This can impact any automation that might be
 running, such as Ansible or Puppet scripts.
 
 {{%/notice%}}
+
+</div>
+
+</div>
 
 {{%/notice%}}
 
@@ -442,3 +458,11 @@ utility) has been deprecated, and the `cl-ns-mgmt` command has been
 removed.
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

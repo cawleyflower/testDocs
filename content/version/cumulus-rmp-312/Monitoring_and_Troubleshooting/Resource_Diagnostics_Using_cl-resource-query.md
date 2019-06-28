@@ -3,7 +3,7 @@ title: Resource Diagnostics Using cl-resource-query
 author: Cumulus Networks
 weight: 105
 aliases:
- - /display/RMP31/Resource+Diagnostics+Using+cl-resource-query
+ - /display/RMP312/Resource+Diagnostics+Using+cl-resource-query
  - /pages/viewpage.action?pageId=5122750
 pageID: 5122750
 product: Cumulus RMP
@@ -43,3 +43,11 @@ command.
     IPv6 Routes:               18
     Total Routes:              31,   0% of maximum value  32768
     MAC entries:               12,   0% of maximum value  32768
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

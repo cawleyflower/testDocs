@@ -3,7 +3,7 @@ title: Bidirectional Forwarding Detection - BFD
 author: Cumulus Networks
 weight: 177
 aliases:
- - /display/CL330/Bidirectional+Forwarding+Detection+-+BFD
+ - /display/CL33/Bidirectional+Forwarding+Detection+-+BFD
  - /pages/viewpage.action?pageId=5866450
 pageID: 5866450
 product: Cumulus Linux
@@ -381,21 +381,81 @@ vendor-specific and has not been defined in the RFC. BFD echo packets
 that originate from Cumulus Linux are 8 bytes long and have the
 following format:
 
+<table class="confluenceTable">
+
+<thead class=" ">
+
+</thead>
+
+<tfoot class=" ">
+
+</tfoot>
+
+<tbody class=" ">
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 0
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 1
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 2
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 3
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Version
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 Length
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="2">
+
 Reserved
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="4">
+
 My Discriminator
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 Where:
 
@@ -443,3 +503,11 @@ the topology file at the global, template and port level:
 To troubleshoot BFD, use `ptmctl -b`. For more information, see
 [Prescriptive Topology Manager -
 PTM](/version/cumulus-linux-330/Layer_One_and_Two/Prescriptive_Topology_Manager_-_PTM).
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -3,7 +3,7 @@ title: Using netshow to Troubleshoot Your Network Configuration
 author: Cumulus Networks
 weight: 203
 aliases:
- - /display/RMP31/Using+netshow+to+Troubleshoot+Your+Network+Configuration
+ - /display/RMP312/Using+netshow+to+Troubleshoot+Your+Network+Configuration
  - /pages/viewpage.action?pageId=5122755
 pageID: 5122755
 product: Cumulus RMP
@@ -199,3 +199,11 @@ Home](https://github.com/CumulusNetworks/netshow-linux-lib/). You can
 find developer documentation at
 [netshow.readthedocs.org](http://netshow.readthedocs.org/). The
 documentation is still under development.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -3,7 +3,7 @@ title: Adding and Updating Packages
 author: Cumulus Networks
 weight: 49
 aliases:
- - /display/CL330/Adding+and+Updating+Packages
+ - /display/CL33/Adding+and+Updating+Packages
  - /pages/viewpage.action?pageId=5866165
 pageID: 5866165
 product: Cumulus Linux
@@ -313,3 +313,11 @@ To install a new package, please complete the following steps:
     tools](http://www.debian.org/doc/manuals/debian-faq/ch-pkgtools.en.html)
 
   - man pages for apt-get, dpkg, sources.list, apt\_preferences
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

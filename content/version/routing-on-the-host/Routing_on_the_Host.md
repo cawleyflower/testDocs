@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116581
 pageID: 5116581
 product: Routing on the Host
-version: '0.5'
+version: '1.0'
 imgData: routing-on-the-host
 siteSlug: routing-on-the-host
 subsection: true
@@ -223,3 +223,11 @@ To get started with Routing on the Host:
   - Learn how to
     [troubleshoot](Troubleshooting_Routing_on_the_Host.html) Routing on
     the Host
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

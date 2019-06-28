@@ -11,6 +11,8 @@ version: 3.2.1
 imgData: cumulus-rmp-321
 siteSlug: cumulus-rmp-321
 ---
+<details>
+
 The `cl-support` command generates a tar archive of useful information
 for troubleshooting that can be auto-generated or manually created. To
 manually create it, run the `cl-support` command. The `cl-support` file
@@ -42,7 +44,7 @@ experience with Cumulus RMP.
     cumulus@switch:~$ ls /var/support
     cl_support__switch_20141204_203833
 
-This chapter covers ...
+<summary>This chapter covers ... </summary>
 
 ## <span>Understanding the File Naming Scheme </span>
 
@@ -113,3 +115,13 @@ Here is more information on the file structure:
     Directory](/version/cumulus-rmp-321/Monitoring_and_Troubleshooting/Understanding_and_Decoding_the_cl-support_Output_File/Troubleshooting_the_support_Directory)
     — This is an explanation of the `support` directory included in the
     `cl-support` output.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

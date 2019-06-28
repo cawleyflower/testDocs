@@ -313,3 +313,11 @@ supported.
     bridge-access 258
     bridge-learning off
     mtu 9000
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

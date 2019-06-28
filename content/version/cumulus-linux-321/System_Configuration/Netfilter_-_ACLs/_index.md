@@ -11,6 +11,8 @@ version: 3.2.1
 imgData: cumulus-linux-321
 siteSlug: cumulus-linux-321
 ---
+<details>
+
 [Netfilter](http://www.netfilter.org/) is the packet filtering framework
 in Cumulus Linux as well as most other Linux distributions. There are a
 number of tools available for configuring ACLs in Cumulus Linux,
@@ -46,7 +48,7 @@ use which tool.
 If you need help getting started setting up ACLs, run `net example acl`
 to see a basic configuration:
 
-Click to see the example ...
+<summary>Click to see the example ... </summary>
 
     cumulus@leaf01:~$ net example acl 
      
@@ -785,7 +787,8 @@ To learn more about any of the options shown in the tables below, run
 `iptables -h [name of option]`. The same help syntax works for options
 for `ip6tables` and `ebtables`.
 
-Click to see an example of help syntax for an ebtables target
+<summary>Click to see an example of help syntax for an ebtables target
+</summary>
 
     root@leaf1# ebtables -h tricolorpolice
     <...snip...>
@@ -975,7 +978,7 @@ Here is another example of control plane ACL rules to lock down the
 switch. You specify them in
 `/etc/cumulus/acl/policy.d/00control_plane.rules`:
 
-View the contents of the file ...
+<summary>View the contents of the file ... </summary>
 
     INGRESS_INTF = swp+ 
     INGRESS_CHAIN = INPUT 
@@ -1419,3 +1422,13 @@ following is displayed:
 
 The Dell S3048-ON has a limit of 24576 MAC address entries, instead of
 32K for other 1G switches.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

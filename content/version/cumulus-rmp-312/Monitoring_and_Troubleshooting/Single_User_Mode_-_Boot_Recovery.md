@@ -3,7 +3,7 @@ title: Single User Mode - Boot Recovery
 author: Cumulus Networks
 weight: 103
 aliases:
- - /display/RMP31/Single+User+Mode+-+Boot+Recovery
+ - /display/RMP312/Single+User+Mode+-+Boot+Recovery
  - /pages/viewpage.action?pageId=5122762
 pageID: 5122762
 product: Cumulus RMP
@@ -60,3 +60,11 @@ for password recovery.
         # sync
         # reboot -f
         Restarting the system.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

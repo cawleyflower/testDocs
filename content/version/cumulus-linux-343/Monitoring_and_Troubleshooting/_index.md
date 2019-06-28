@@ -11,6 +11,8 @@ version: 3.4.3
 imgData: cumulus-linux-343
 siteSlug: cumulus-linux-343
 ---
+<details>
+
 This chapter introduces monitoring and troubleshooting Cumulus Linux.
 
 ## <span>Using the Serial Console</span>
@@ -316,8 +318,8 @@ documentation](http://www.rsyslog.com/doc/v8-stable/configuration/modules/imuxso
     module(load="imuxsock"
           SysSock.RateLimit.Interval="2" SysSock.RateLimit.Burst="50")
 
-The following test script shows an example of rate-limit output in
-Cumulus Linux ...
+<summary>The following test script shows an example of rate-limit output
+in Cumulus Linux ... </summary>
 
     root@leaf1:mgmt-vrf:/home/cumulus# cat ./syslog.py 
     #!/usr/bin/python
@@ -366,3 +368,13 @@ upgrading packages.
 ## <span>Next Steps</span>
 
 The links below discuss more specific monitoring topics.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

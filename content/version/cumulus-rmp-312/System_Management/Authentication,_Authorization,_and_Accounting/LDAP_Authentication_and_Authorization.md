@@ -3,7 +3,7 @@ title: LDAP Authentication and Authorization
 author: Cumulus Networks
 weight: 133
 aliases:
- - /display/RMP31/LDAP+Authentication+and+Authorization
+ - /display/RMP312/LDAP+Authentication+and+Authorization
  - /pages/viewpage.action?pageId=5122738
 pageID: 5122738
 product: Cumulus RMP
@@ -11,6 +11,8 @@ version: 3.1.2
 imgData: cumulus-rmp-312
 siteSlug: cumulus-rmp-312
 ---
+<details>
+
 Cumulus RMP uses Pluggable Authentication Modules (PAM) and Name Service
 Switch (NSS) for user authentication.
 
@@ -400,7 +402,7 @@ specifies the search DN and what attribute to lookup.
 
     cumulus@switch:~$ ldapsearch -H ldap://ldap.example.com -b dc=example,dc=com -x uid=myuser
 
-Click here to expand output of command
+<summary>Click here to expand output of command </summary>
 
     # extended LDIF
     #
@@ -457,3 +459,13 @@ database.
   - [raw.githubusercontent.com/arthurdejong/nss-pam-ldapd/master/nslcd.conf](https://raw.githubusercontent.com/arthurdejong/nss-pam-ldapd/master/nslcd.conf)
 
   - [backports.debian.org/Instructions/](http://backports.debian.org/Instructions/)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

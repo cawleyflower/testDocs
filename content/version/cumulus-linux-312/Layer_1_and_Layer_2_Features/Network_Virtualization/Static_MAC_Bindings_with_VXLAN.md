@@ -11,6 +11,8 @@ version: 3.1.2
 imgData: cumulus-linux-312
 siteSlug: cumulus-linux-312
 ---
+<details>
+
 Cumulus Linux includes native Linux VXLAN kernel support.
 
 ## <span>Requirements</span>
@@ -87,7 +89,7 @@ switch2:
         post-up bridge fdb add 00:00:10:00:00:0A dev vtep1000 dst 172.10.1.1 vni 1000
         post-up bridge fdb add 00:00:10:00:00:0B dev vtep1000 dst 172.10.1.1 vni 1000
 
-Runtime Configuration (Advanced)
+<summary>Runtime Configuration (Advanced) </summary>
 
 {{%notice warning%}}
 
@@ -229,4 +231,14 @@ Use the following commands to troubleshoot issues on the switch:
             designated_cost 0 designated_bridge 8000.c4:54:44:bd:1:71 designated_root 8000.c4:54:44:bd:1:71 
             hold_timer    0.00 message_age_timer    0.00 forward_delay_timer    0.00 
             topology_change_ack 0 config_pending 0 proxy_arp off proxy_arp_wifi off mcast_router 1 
-            mcast_fast_leave off addrgenmode eui64
+            mcast_fast_leave off addrgenmode eui64 
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

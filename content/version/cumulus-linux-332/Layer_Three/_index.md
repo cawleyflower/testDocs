@@ -11,4 +11,10 @@ version: 3.3.2
 imgData: cumulus-linux-332
 siteSlug: cumulus-linux-332
 ---
+<article id="html-search-results" class="ht-content" style="display: none;">
 
+</article>
+
+<footer id="ht-footer">
+
+</footer>

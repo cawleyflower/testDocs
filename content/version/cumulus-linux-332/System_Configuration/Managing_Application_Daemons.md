@@ -11,6 +11,8 @@ version: 3.3.2
 imgData: cumulus-linux-332
 siteSlug: cumulus-linux-332
 ---
+<details>
+
 You manage application daemons (services) in Cumulus Linux in the
 following ways:
 
@@ -169,7 +171,7 @@ To determine which daemons are currently active or stopped, run
 You can also run `systemctl list-unit-files --type service` to list all
 services on the switch and see which ones are enabled:
 
-Click here to see output of this command ...
+<summary>Click here to see output of this command ... </summary>
 
     cumulus@switch:~$ systemctl list-unit-files --type service
     UNIT FILE                              STATE   
@@ -411,3 +413,13 @@ multi-user.target</code></pre>
 </tr>
 </tbody>
 </table>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

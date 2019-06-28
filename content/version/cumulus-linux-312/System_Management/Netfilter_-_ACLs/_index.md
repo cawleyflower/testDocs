@@ -11,6 +11,8 @@ version: 3.1.2
 imgData: cumulus-linux-312
 siteSlug: cumulus-linux-312
 ---
+<details>
+
 [Netfilter](http://www.netfilter.org/) is the packet filtering framework
 in Cumulus Linux as well as most other Linux distributions. `iptables`,
 `ip6tables` and `ebtables` are userspace tools in Linux to administer
@@ -608,7 +610,8 @@ To learn more about any of the options shown in the tables below, run
 `iptables -h [name of option]`. The same help syntax works for options
 for `ip6tables` and `ebtables`.
 
-Click to see an example of help syntax for an ebtables target
+<summary>Click to see an example of help syntax for an ebtables target
+</summary>
 
     root@leaf1# ebtables -h tricolorpolice
     <...snip...>
@@ -801,7 +804,7 @@ Here is another example of control plane ACL rules to lock down the
 switch. You specify them in
 `/etc/cumulus/acl/policy.d/00control_plane.rules`:
 
-View the contents of the file ...
+<summary>View the contents of the file ... </summary>
 
     INGRESS_INTF = swp+ 
     INGRESS_CHAIN = INPUT 
@@ -1224,3 +1227,13 @@ following is displayed:
 
 <span style="color: #000000;"> The Dell S3048-ON has a limit of 24576
 MAC address entries, instead of 32K for other 1G switches. </span>
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
+
+</details>

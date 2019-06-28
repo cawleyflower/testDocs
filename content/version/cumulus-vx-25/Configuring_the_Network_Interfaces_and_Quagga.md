@@ -248,3 +248,11 @@ Once the VMs have been restarted, you can ping across VMs to test:
       - Ping `spine2`:
         
             root@leaf1:~# ping 10.2.1.4
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

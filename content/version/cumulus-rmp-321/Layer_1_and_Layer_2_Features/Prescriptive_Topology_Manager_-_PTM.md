@@ -353,21 +353,81 @@ vendor-specific and has not been defined in the RFC. BFD echo packets
 that originate from Cumulus RMP are 8 bytes long and have the following
 format:
 
+<table class="confluenceTable">
+
+<thead class=" ">
+
+</thead>
+
+<tfoot class=" ">
+
+</tfoot>
+
+<tbody class=" ">
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 0
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 1
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 2
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 3
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
+
 Version
+
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="1">
 
 Length
 
+</td>
+
+<td class="confluenceTd" rowspan="1" colspan="2">
+
 Reserved
 
+</td>
+
+</tr>
+
+<tr>
+
+<td class="confluenceTd" rowspan="1" colspan="4">
+
 My Discriminator
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 Where:
 
@@ -558,3 +618,11 @@ graph from working correctly.
     Wikipedia](http://en.wikipedia.org/wiki/Link_Layer_Discovery_Protocol)
 
   - [PTMd GitHub repo](https://github.com/CumulusNetworks/ptm)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

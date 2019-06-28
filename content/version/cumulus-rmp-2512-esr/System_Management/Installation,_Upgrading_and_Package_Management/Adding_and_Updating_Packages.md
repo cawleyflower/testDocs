@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5116321
 pageID: 5116321
 product: Cumulus RMP
-version: 2.5.12 ESR
+version: 2.5.12
 imgData: cumulus-rmp-2512-esr
 siteSlug: cumulus-rmp-2512-esr
 ---
@@ -266,3 +266,11 @@ To install a new package, please complete the following steps:
     tools](http://www.debian.org/doc/manuals/debian-faq/ch-pkgtools.en.html)
 
   - man pages for apt-get, dpkg, sources.list, apt\_preferences
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

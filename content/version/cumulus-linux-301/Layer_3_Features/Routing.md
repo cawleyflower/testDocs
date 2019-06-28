@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118380
 pageID: 5118380
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -274,3 +274,11 @@ switches:
     `quagga` should only be deleted by `quagga`, otherwise `quagga`
     might not be able to clean up all its internal state completely and
     incorrect routing can occur as a result.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

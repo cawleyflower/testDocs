@@ -505,3 +505,11 @@ graph from working correctly.
     Wikipedia](http://en.wikipedia.org/wiki/Link_Layer_Discovery_Protocol)
 
   - [PTMd GitHub repo](https://github.com/CumulusNetworks/ptm)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

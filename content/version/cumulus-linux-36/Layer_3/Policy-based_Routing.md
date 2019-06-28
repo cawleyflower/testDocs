@@ -285,3 +285,11 @@ interface is no longer receiving PBR traffic:
     cumulus@switch:~$ net del interface swp3 pbr-policy map1
     cumulus@switch:~$ net pending
     cumulus@switch:~$ net commit
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

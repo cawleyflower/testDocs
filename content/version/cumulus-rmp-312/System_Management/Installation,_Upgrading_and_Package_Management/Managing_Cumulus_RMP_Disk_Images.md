@@ -3,7 +3,7 @@ title: Managing Cumulus RMP Disk Images
 author: Cumulus Networks
 weight: 145
 aliases:
- - /display/RMP31/Managing+Cumulus+RMP+Disk+Images
+ - /display/RMP312/Managing+Cumulus+RMP+Disk+Images
  - /pages/viewpage.action?pageId=5122744
 pageID: 5122744
 product: Cumulus RMP
@@ -207,10 +207,15 @@ finishes.
 1.  Download the Cumulus RMP image from the [Cumulus Downloads
     page](http://cumulusnetworks.com/downloads/).
 
-2.  Prepare your flash drive by formatting in one of the supported
+2.  
+    
+    <details>
+    
+    Prepare your flash drive by formatting in one of the supported
     formats: FAT32, vFAT or EXT2.
     
-    Optional: Preparing a USB Drive inside Cumulus RMP
+    <summary>Optional: Preparing a USB Drive inside Cumulus RMP
+    </summary>
     
     <table>
     <colgroup>
@@ -245,6 +250,8 @@ finishes.
     </tr>
     </tbody>
     </table>
+    
+    </details>
 
 3.  Copy the image file over to the flash drive and rename the image
     file to `onie-installer_x86-64`.
@@ -383,3 +390,11 @@ To upgrade to a maintenance (X.Y.Z) release using `apt-get`:
 
   - [Open Network Install Environment (ONIE) Home
     Page](http://opencomputeproject.github.io/onie/)
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

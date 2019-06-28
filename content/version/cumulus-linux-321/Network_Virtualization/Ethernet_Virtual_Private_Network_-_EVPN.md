@@ -329,7 +329,8 @@ for leaf03, leaf04, server03, server04). Here is the topology diagram:
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>leaf01 /etc/network/interfaces
+<td><details>
+<summary>leaf01 /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
     alias loopback
@@ -394,8 +395,10 @@ iface vxlan10200
      vxlan-id 10200
      vxlan-local-tunnelip 10.0.0.11
      bridge-access 200
-     bridge-learning off</code></pre></td>
-<td>leaf02 /etc/network/interfaces
+     bridge-learning off</code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
     alias loopback
@@ -460,10 +463,12 @@ iface vxlan10200
      vxlan-id 10200
      vxlan-local-tunnelip 10.0.0.12
      bridge-access 200
-     bridge-learning off</code></pre></td>
+     bridge-learning off</code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>leaf01 /etc/quagga/Quagga.conf
+<td><details>
+<summary>leaf01 /etc/quagga/Quagga.conf </summary>
 <pre><code>!
 interface swp51
  ipv6 nd ra-interval 10
@@ -501,8 +506,10 @@ router bgp 65011
 !
 line vty
 !
-end</code></pre></td>
-<td>leaf02 /etc/quagga/Quagga.conf
+end</code></pre>
+</details></td>
+<td><details>
+<summary>leaf02 /etc/quagga/Quagga.conf </summary>
 <pre><code>!
 interface swp51
  ipv6 nd ra-interval 10
@@ -540,7 +547,8 @@ router bgp 65012
 !
 line vty
 !
-end</code></pre></td>
+end</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -554,7 +562,8 @@ end</code></pre></td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>spine01 /etc/network/interfaces
+<td><details>
+<summary>spine01 /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.0.0.21/32
@@ -573,8 +582,10 @@ auto swp3
 iface swp3
  
 auto swp4
-iface swp4</code></pre></td>
-<td>spine02 /etc/network/interfaces
+iface swp4</code></pre>
+</details></td>
+<td><details>
+<summary>spine02 /etc/network/interfaces </summary>
 <pre><code>auto lo
 iface lo inet loopback
     address 10.0.0.22/32
@@ -593,10 +604,12 @@ auto swp3
 iface swp3
  
 auto swp4
-iface swp4</code></pre></td>
+iface swp4</code></pre>
+</details></td>
 </tr>
 <tr class="even">
-<td>spine01 /etc/quagga/Quagga.conf
+<td><details>
+<summary>spine01 /etc/quagga/Quagga.conf </summary>
 <pre><code>!
 log syslog
 !
@@ -644,8 +657,10 @@ router bgp 65020
 !
 line vty
 !
-end</code></pre></td>
-<td>spine02 /etc/quagga/Quagga.conf
+end</code></pre>
+</details></td>
+<td><details>
+<summary>spine02 /etc/quagga/Quagga.conf </summary>
 <pre><code>!
 log syslog
 !
@@ -693,7 +708,8 @@ router bgp 65020
 !
 line vty
 !
-end</code></pre></td>
+end</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -707,7 +723,8 @@ end</code></pre></td>
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>server01 /etc/network/interfaces
+<td><details>
+<summary>server01 /etc/network/interfaces </summary>
 <pre><code>auto eth0
 iface eth0 inet dhcp
  
@@ -722,8 +739,10 @@ iface bond0.100
  
 auto bond0.200
 iface bond0.200
-    address 172.16.200.101/24</code></pre></td>
-<td>server02 /etc/network/interfaces
+    address 172.16.200.101/24</code></pre>
+</details></td>
+<td><details>
+<summary>server02 /etc/network/interfaces </summary>
 <pre><code>auto eth0
 iface eth0 inet dhcp
  
@@ -737,7 +756,8 @@ iface eth2.100
  
 auto eth2.200
 iface eth2.200
-    address 172.16.200.102/24</code></pre></td>
+    address 172.16.200.102/24</code></pre>
+</details></td>
 </tr>
 </tbody>
 </table>
@@ -1355,3 +1375,11 @@ The following caveat applies to EVPN in Cumulus Linux 3.2.x:
 
   - Support for one shot configuration of import and export RTs, using
     `route-target both <rt>` will be added in a future release.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -309,3 +309,11 @@ internal resource ID to the subinterface, which is expected for each
 VLAN subinterface.  
 To work around this issue, add a VXLAN on the bridge so that it does not
 require a real tunnel IP address.
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

@@ -3,7 +3,7 @@ title: Troubleshooting the etc Directory
 author: Cumulus Networks
 weight: 363
 aliases:
- - /display/CL330/Troubleshooting+the+etc+Directory
+ - /display/CL33/Troubleshooting+the+etc+Directory
  - /pages/viewpage.action?pageId=5866138
 pageID: 5866138
 product: Cumulus Linux
@@ -172,3 +172,11 @@ troubleshooting problems.
 | ufw                       |
 | vim                       |
 | wgetrc                    |
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

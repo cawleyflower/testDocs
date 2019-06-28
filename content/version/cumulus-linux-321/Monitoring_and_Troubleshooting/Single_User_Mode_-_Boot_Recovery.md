@@ -57,4 +57,12 @@ for password recovery. To enter single user mode, follow steps below.
     
         cumulus@switch:~$ sudo btrfs filesystem sync /etc
         cumulus@switch:~$ sudo reboot -f
-        Restarting the system.
+        Restarting the system. 
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>

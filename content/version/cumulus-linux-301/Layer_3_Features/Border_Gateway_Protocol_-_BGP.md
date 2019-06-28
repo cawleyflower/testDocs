@@ -7,7 +7,7 @@ aliases:
  - /pages/viewpage.action?pageId=5118393
 pageID: 5118393
 product: Cumulus Linux
-version: '3.0'
+version: 3.0.1
 imgData: cumulus-linux-301
 siteSlug: cumulus-linux-301
 ---
@@ -1330,3 +1330,11 @@ For more information about ACLs and `cl-acltool`, see [Netfilter
 (ACLs)](/version/cumulus-linux-301/System_Management/Netfilter_-_ACLs).
 
 {{%/notice%}}
+
+<article id="html-search-results" class="ht-content" style="display: none;">
+
+</article>
+
+<footer id="ht-footer">
+
+</footer>
